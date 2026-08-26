@@ -1,3 +1,6 @@
+# --- Node ---
+node_modules/
+
 # --- Duże/binarne pliki źródłowe (podręczniki, audio, dumpy) ---
 *.pdf
 *.apkg
