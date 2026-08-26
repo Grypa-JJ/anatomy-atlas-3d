@@ -1,0 +1,67 @@
+# --- Duże/binarne pliki źródłowe (podręczniki, audio, dumpy) ---
+*.pdf
+*.apkg
+*.mp3
+*.m4a
+*.zip
+*.db
+*.bak
+*.bvh
+__pycache__/
+
+# --- Baza pytań / dane wygenerowane (zawierają obrazki ze skanów podręczników) ---
+meta.json
+questions.json
+baza_pytan_eksport.json
+*_raw.json
+*_labeled.json
+*_notes.json
+*_gielda*.json
+*_enrichment.json
+bone_landmarks.json
+bones_final_list.json
+lower_limb_bones*.json
+newly_labeled_bones.json
+real_mesh_ids.json
+remaining_bones.json
+all_bones_labeled.json
+plan_zajec_prototype_blocks.json
+ta2_latin_lookup.json
+slownik_anatomiczny_umed_pl_en.json
+bodyparts3d_*.txt
+htmlbiochem.txt
+htmlhisto.txt
+TA2.csv
+_sem2_cw_747.json
+biochemia_source_dump.json
+sadowa_parsed.json
+
+# --- Foldery ze źródłami/materiałami (nie kod) ---
+netlify_deploy/
+_atlas_pilot/
+_bone_renders/
+r2_upload/
+redesign-preview/
+scratch_radio/
+csv/
+Rok 2 2024-2025/
+Rok 3 2025-2026/
+Giełdy tegoroczne/
+GIEŁDY Z SESJI EGZAMINACYJNYCH 2023-2024 ✅💻/
+Funkcjonowanie organizmu ludzkiego 🩻/
+Medycyna stanów nagłych 🏥/
+Mikrobiologia/
+Praktyczny Histologia/
+Wstęp do nauk klinicznych 💊💉/
+jeszcze trochę biochemii/
+bakteriologia szczegółowa skrypt/
+histologia/
+ang dokumenty/
+
+# --- Osobiste notatki/plany (nie część projektu-portfolio) ---
+PLAN-tygodniowy-cykl-nauki-i-powtorki.md
+Plan rozbudowy apki.md
+kalendarz_szkielet_rok2.md
+
+# --- Claude Code lokalne ustawienia ---
+.claude/settings.local.json
