@@ -119,3 +119,4 @@ _packaging/**/key.properties
 _packaging/**/*.keystore
 _packaging/atlas-assets.tar.gz
 _packaging/.atlas-assets.download*
+_packaging/dist-artifacts/
