@@ -1,0 +1,153 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Porównanie modeli serca — 3 źródła</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  body { margin:0; font:13px/1.4 system-ui,sans-serif; background:#141414; color:#e8e8e8; }
+  header { padding:8px 12px; background:#1e1e1e; border-bottom:1px solid #333; }
+  header b { font-size:15px; }
+  .grid { display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:#333; height:calc(100vh - 46px); }
+  .pane { background:#141414; display:flex; flex-direction:column; min-width:0; }
+  .pane h2 { margin:0; padding:6px 10px; font-size:13px; background:#232323; }
+  .pane h2 span { font-weight:normal; color:#9aa; }
+  .cv { flex:1; position:relative; min-height:0; }
+  canvas { display:block; width:100%; height:100%; }
+  .info { padding:6px 10px; background:#1b1b1b; border-top:1px solid #333; height:120px; overflow:auto; }
+  .info .pick { color:#7ec8ff; font-weight:bold; }
+  .info small { color:#888; }
+  .parts { font-size:11px; color:#bbb; column-count:2; }
+</style>
+</head>
+<body>
+<header><b>Serce — 3 źródła obok siebie</b> &nbsp; klik w strukturę = nazwa (dla modeli z podziałem). Kółko = zoom, przeciągnij = obrót.</header>
+<div class="grid">
+  <div class="pane">
+    <h2>A · Z-Anatomy <span>— 40 nazwanych brył, CC BY-SA</span></h2>
+    <div class="cv"><canvas id="cA"></canvas></div>
+    <div class="info" id="iA">ładowanie…</div>
+  </div>
+  <div class="pane">
+    <h2>B · Rodero (CT, tet→powierzchnie) <span>— 24 regiony, CC BY 4.0</span></h2>
+    <div class="cv"><canvas id="cB"></canvas></div>
+    <div class="info" id="iB">ładowanie…</div>
+  </div>
+  <div class="pane">
+    <h2>C · NIH 3D (biologynotesonline) <span>— 1 bryła bez nazw, Public Domain</span></h2>
+    <div class="cv"><canvas id="cC"></canvas></div>
+    <div class="info" id="iC">ładowanie…</div>
+  </div>
+</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+}}
+</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { STLLoader } from "three/addons/loaders/STLLoader.js";
+
+const PALETTE = [0xe15b64,0xf47e3e,0xf6c85f,0x6ecb63,0x4cb5ae,0x5d8cae,0x9b6fb0,0xd97ba8,
+                 0xc0ca33,0x26a69a,0x8d6e63,0x789262,0xef9a9a,0x90caf9,0xffcc80,0xa5d6a7];
+
+function makeViewer(canvasId, infoId){
+  const canvas = document.getElementById(canvasId);
+  const info = document.getElementById(infoId);
+  const renderer = new THREE.WebGLRenderer({canvas, antialias:true});
+  renderer.setPixelRatio(devicePixelRatio);
+  const scene = new THREE.Scene(); scene.background = new THREE.Color(0x141414);
+  const camera = new THREE.PerspectiveCamera(45, 1, 0.01, 5000);
+  camera.up.set(0,0,1);
+  const controls = new OrbitControls(camera, canvas);
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x334455, 1.4));
+  scene.add(new THREE.AmbientLight(0xffffff, 0.35));
+  const d = new THREE.DirectionalLight(0xffffff, 1.2); d.position.set(1,-2,2); scene.add(d);
+  const d2 = new THREE.DirectionalLight(0xffffff, 0.6); d2.position.set(-1.5,1,-1); scene.add(d2);
+  const ray = new THREE.Raycaster(); const mouse = new THREE.Vector2();
+  const pickable = [];
+  function resize(){
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    if (canvas.width!==w*devicePixelRatio || canvas.height!==h*devicePixelRatio){
+      renderer.setSize(w,h,false); camera.aspect = w/h; camera.updateProjectionMatrix();
+    }
+  }
+  function frame(obj, focusObjs){
+    // camera target = center of the focus meshes (myocardium) if given, else whole bbox
+    const fbox = new THREE.Box3();
+    (focusObjs && focusObjs.length ? focusObjs : [obj]).forEach(o=>fbox.expandByObject(o));
+    const c = fbox.getCenter(new THREE.Vector3());
+    const fs = fbox.getSize(new THREE.Vector3());
+    // distance from the full model extent so nothing is clipped
+    const full = new THREE.Box3().setFromObject(obj).getSize(new THREE.Vector3());
+    controls.target.copy(c);
+    const r = Math.max(fs.x,fs.y,fs.z), R = Math.max(full.x,full.y,full.z);
+    camera.position.copy(c).add(new THREE.Vector3(r*1.0, -r*1.5, r*0.9));
+    camera.near = r/200; camera.far = R*200; camera.updateProjectionMatrix();
+    controls.update();
+  }
+  canvas.addEventListener('pointerdown', e=>{
+    const rc = canvas.getBoundingClientRect();
+    mouse.x = ((e.clientX-rc.left)/rc.width)*2-1;
+    mouse.y = -((e.clientY-rc.top)/rc.height)*2+1;
+    ray.setFromCamera(mouse, camera);
+    const hit = ray.intersectObjects(pickable, true)[0];
+    if (hit){
+      const n = hit.object.userData.partName || hit.object.name || '(bez nazwy)';
+      info.querySelector('.pick').textContent = '▶ ' + n;
+    }
+  });
+  (function loop(){ requestAnimationFrame(loop); resize(); controls.update(); renderer.render(scene,camera); })();
+  return {scene, pickable, frame, info};
+}
+
+async function loadGLB(v, url, listLabel){
+  const g = await new GLTFLoader().loadAsync(url);
+  const names = [];
+  const focus = [];
+  let i = 0;
+  g.scene.traverse(o=>{
+    if (o.isMesh){
+      o.userData.partName = o.name;
+      names.push(o.name);
+      o.geometry.deleteAttribute('normal');
+      o.geometry.computeVertexNormals();
+      o.material = new THREE.MeshPhongMaterial({
+        color: PALETTE[i++ % PALETTE.length], shininess:8,
+        side: THREE.DoubleSide, flatShading:true });
+      v.pickable.push(o);
+      if (/ventricle|atrium|myocard/i.test(o.name) && !/papill|valve|leaflet|vein|artery/i.test(o.name))
+        focus.push(o);
+    }
+  });
+  v.scene.add(g.scene); v.frame(g.scene, focus);
+  names.sort();
+  v.info.innerHTML = `<div class="pick">klik w strukturę…</div>
+    <small>${names.length} ${listLabel}:</small>
+    <div class="parts">${names.map(n=>'· '+n).join('<br>')}</div>`;
+}
+
+async function loadSTL(v, url){
+  const geo = await new STLLoader().loadAsync(url);
+  geo.computeVertexNormals();
+  const m = new THREE.Mesh(geo, new THREE.MeshStandardMaterial({color:0xd06b5c, roughness:0.6, side:THREE.DoubleSide}));
+  m.userData.partName = 'całe serce (jeden mesh)';
+  v.pickable.push(m); v.scene.add(m); v.frame(m);
+  v.info.innerHTML = `<div class="pick">klik w strukturę…</div>
+    <small>1 bryła — ${(geo.attributes.position.count).toLocaleString()} wierzchołków, brak podziału na struktury.
+    Kliknięcie w dowolne miejsce zwraca to samo: „całe serce".</small>`;
+}
+
+const A = makeViewer('cA','iA'), B = makeViewer('cB','iB'), C = makeViewer('cC','iC');
+loadGLB(A, './z-anatomy-heart.glb', 'nazwanych struktur (łac./ang.)').catch(e=>A.info.textContent='err '+e);
+loadGLB(B, './rodero-heart.glb', 'regionów segmentacji CT').catch(e=>B.info.textContent='err '+e);
+loadSTL(C, './nih_heart.stl').catch(e=>C.info.textContent='err '+e);
+</script>
+</body>
+</html>

@@ -1,0 +1,146 @@
+[
+ {
+  "tag": 1,
+  "name": "LV_myocardium",
+  "vertices": 38486,
+  "faces": 76982
+ },
+ {
+  "tag": 2,
+  "name": "RV_myocardium",
+  "vertices": 37185,
+  "faces": 74380
+ },
+ {
+  "tag": 3,
+  "name": "LA_myocardium",
+  "vertices": 19280,
+  "faces": 38586
+ },
+ {
+  "tag": 4,
+  "name": "RA_myocardium",
+  "vertices": 22717,
+  "faces": 45444
+ },
+ {
+  "tag": 5,
+  "name": "Aorta",
+  "vertices": 8467,
+  "faces": 16938
+ },
+ {
+  "tag": 6,
+  "name": "Pulmonary_artery",
+  "vertices": 2661,
+  "faces": 5326
+ },
+ {
+  "tag": 7,
+  "name": "Mitral_valve",
+  "vertices": 1792,
+  "faces": 3584
+ },
+ {
+  "tag": 8,
+  "name": "Tricuspid_valve",
+  "vertices": 2231,
+  "faces": 4460
+ },
+ {
+  "tag": 9,
+  "name": "Aortic_valve",
+  "vertices": 1481,
+  "faces": 2958
+ },
+ {
+  "tag": 10,
+  "name": "Pulmonary_valve",
+  "vertices": 1668,
+  "faces": 3338
+ },
+ {
+  "tag": 11,
+  "name": "r11",
+  "vertices": 318,
+  "faces": 632
+ },
+ {
+  "tag": 12,
+  "name": "r12",
+  "vertices": 308,
+  "faces": 614
+ },
+ {
+  "tag": 13,
+  "name": "r13",
+  "vertices": 148,
+  "faces": 294
+ },
+ {
+  "tag": 14,
+  "name": "r14",
+  "vertices": 274,
+  "faces": 544
+ },
+ {
+  "tag": 15,
+  "name": "r15",
+  "vertices": 397,
+  "faces": 790
+ },
+ {
+  "tag": 16,
+  "name": "r16",
+  "vertices": 660,
+  "faces": 1320
+ },
+ {
+  "tag": 17,
+  "name": "r17",
+  "vertices": 1003,
+  "faces": 2002
+ },
+ {
+  "tag": 18,
+  "name": "r18",
+  "vertices": 395,
+  "faces": 790
+ },
+ {
+  "tag": 19,
+  "name": "r19",
+  "vertices": 411,
+  "faces": 824
+ },
+ {
+  "tag": 20,
+  "name": "r20",
+  "vertices": 214,
+  "faces": 428
+ },
+ {
+  "tag": 21,
+  "name": "r21",
+  "vertices": 399,
+  "faces": 804
+ },
+ {
+  "tag": 22,
+  "name": "r22",
+  "vertices": 458,
+  "faces": 920
+ },
+ {
+  "tag": 23,
+  "name": "r23",
+  "vertices": 464,
+  "faces": 928
+ },
+ {
+  "tag": 24,
+  "name": "r24",
+  "vertices": 597,
+  "faces": 1194
+ }
+]

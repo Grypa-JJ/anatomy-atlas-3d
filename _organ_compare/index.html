@@ -1,0 +1,1093 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Przeglądarka narządów — 3 źródła</title>
+<style>
+  :root { color-scheme: dark; }
+  * { box-sizing: border-box; }
+  html,body { margin:0; height:100%; overflow:hidden; font:13px/1.45 system-ui,'Segoe UI',sans-serif; background:#101216; color:#e9edf2; }
+  #app { display:grid; grid-template-columns:250px 1fr; height:100%; }
+
+  aside { background:#161a20; border-right:1px solid #262c36; overflow-y:auto; }
+  aside h1 { font-size:12px; letter-spacing:.04em; text-transform:uppercase; color:#8a94a4; margin:10px 12px 8px; font-weight:600; }
+  aside h1 a { color:#8a94a4; text-decoration:none; }
+  .allbtn { margin:0 8px 8px; padding:7px 10px; border-radius:7px; background:#232a35; cursor:pointer; font-weight:600; color:#cdd5e0; }
+  .allbtn:hover, .allbtn.active { background:#2b6cb0; color:#fff; }
+  .grp { margin:1px 6px; }
+  .ghead { padding:5px 8px; font-weight:600; color:#aeb9c9; cursor:pointer; border-radius:6px; display:flex; justify-content:space-between; user-select:none; }
+  .ghead:hover { background:#1e242e; }
+  .organ { padding:5px 8px 5px 20px; margin:1px 0; border-radius:6px; cursor:pointer; color:#cdd5e0; }
+  .organ:hover { background:#1e242e; }
+  .organ.active { background:#2b6cb0; color:#fff; }
+  .grp.collapsed .organ { display:none; }
+
+  main { display:flex; flex-direction:column; min-width:0; }
+  #bar { padding:6px 12px; background:#1a1f27; border-bottom:1px solid #262c36; display:flex; align-items:center; gap:14px; }
+  #bar b { font-size:14px; }
+  #bar label { color:#aeb9c9; display:flex; align-items:center; gap:5px; cursor:pointer; }
+  #bar .sel { color:#7ec8ff; font-weight:600; }
+  .panes { flex:1; display:grid; grid-template-columns:repeat(3,1fr); gap:1px; background:#262c36; min-height:0; }
+  .pane { background:#101216; display:flex; flex-direction:column; min-width:0; position:relative; }
+  .pane > h2 { margin:0; padding:6px 10px; font-size:12px; background:#1a1f27; border-bottom:1px solid #262c36; }
+  .pane > h2 span { color:#8a94a4; font-weight:normal; }
+  .pane > h2 select { background:#232a35; color:#dfe6ef; border:1px solid #3a4553; border-radius:4px; font-size:11px; padding:1px 3px; margin:0 4px; }
+  .cv { flex:1; position:relative; min-height:0; }
+  .cv canvas { display:block; width:100%; height:100%; }
+  .cv .badge { position:absolute; top:8px; left:8px; font-size:10.5px; color:#9aa4b4; background:#12151ac8; padding:2px 6px; border-radius:4px; }
+  .cv .subtog { position:absolute; top:8px; right:8px; display:flex; gap:4px; }
+  .cv .subtog button { font-size:10px; background:#1c222cdd; border:1px solid #313a47; color:#cdd5e0; border-radius:4px; padding:2px 6px; cursor:pointer; }
+  .cv .subtog button.on { background:#2b6cb0; border-color:#2b6cb0; color:#fff; }
+  .info { height:96px; overflow:auto; padding:6px 10px; background:#161a20; border-top:1px solid #262c36; font-size:11.5px; }
+  .info .pick { color:#7ec8ff; font-weight:700; }
+  .info .en { color:#8a94a4; }
+  .info .lst { margin-top:4px; color:#b3bccb; }
+  .info .lst span { display:inline-block; margin:1px 6px 1px 0; cursor:pointer; }
+  .info .lst span:hover { color:#fff; text-decoration:underline; }
+  #loading { position:absolute; inset:0; display:grid; place-items:center; background:#101216cc; color:#8a94a4; z-index:9; }
+  #w-mpr { display:none; }
+  #w-mpr.on { display:flex; gap:1px; background:#262c36; height:260px; flex:none; }
+  body.free #w-mpr.on { display:flex; height:auto; }
+  body.free #w-mpr:not(.on) { }
+  .mpr-cell { flex:1; }
+
+  /* ---- tryb swobodny: okna do przesuwania / zamykania ---- */
+  body.free #app { display:block; position:relative; }
+  body.free .win {
+    position:absolute; display:flex; flex-direction:column;
+    border:1px solid #3a4553; border-radius:8px; overflow:hidden;
+    box-shadow:0 10px 40px -12px #000a; background:#101216; min-width:180px; min-height:120px;
+    resize:both;
+  }
+  body.free .win.dragging { opacity:.92; }
+  body.free .win > .winbar {
+    display:flex; align-items:center; gap:6px; padding:4px 8px; cursor:move;
+    background:#1c2230; border-bottom:1px solid #2b3444; font-size:12px; font-weight:600; user-select:none; flex:none;
+  }
+  body.free .win > .winbar .x { margin-left:auto; cursor:pointer; color:#8a94a4; padding:0 4px; }
+  body.free .win > .winbar .x:hover { color:#ff7b72; }
+  .winbody { display:contents; }
+  body.free .win > .winbody { display:flex; flex-direction:column; flex:1; min-height:0; overflow:hidden; }
+  .winbar { display:none; }
+  body.free .winbar { display:flex; }
+  body.free .win.hidden { display:none; }
+  body.free aside.win, body.free .pane.win, body.free #w-mpr.win { }
+  body.free .winbody > h2 { display:none; }
+  body.free #w-mpr { height:auto; }
+  body.free #w-mpr .winbody { flex-direction:row !important; }
+  body.free .mpr-cell:last-child { max-width:120px; }
+  #panelmenu { position:relative; }
+  #panelmenu > button { background:#232a35; border:1px solid #3a4553; color:#dfe6ef; border-radius:6px; padding:4px 9px; cursor:pointer; font-size:12px; }
+  #panelmenu .drop { display:none; position:absolute; top:110%; left:0; background:#1a1f27; border:1px solid #333b48; border-radius:8px; padding:6px; z-index:50; min-width:190px; }
+  #panelmenu.open .drop { display:block; }
+  #panelmenu .drop label { display:flex; align-items:center; gap:6px; padding:4px 6px; border-radius:5px; cursor:pointer; white-space:nowrap; }
+  #panelmenu .drop label:hover { background:#242c38; }
+  #panelmenu .drop hr { border:none; border-top:1px solid #333b48; margin:5px 2px; }
+  .mpr-cell { background:#0c0e12; display:flex; flex-direction:column; align-items:center; padding:4px; min-width:0; }
+  .mpr-t { font-size:10.5px; color:#8a94a4; margin-bottom:2px; }
+  .mpr-cell canvas { flex:1; min-height:0; max-width:100%; object-fit:contain; image-rendering:auto; background:#000; }
+  .mpr-cell input[type=range] { width:92%; margin-top:3px; accent-color:#2b6cb0; }
+</style>
+</head>
+<body>
+<div id="app">
+  <aside id="w-aside">
+    <div class="winbar">Narządy <span class="x" data-win="w-aside">✕</span></div>
+    <div class="winbody">
+      <h1><a href="../atlas.html">‹ Atlas</a> · Narządy — porównanie</h1>
+      <div class="allbtn" id="btn-all">Cały układ trzewny</div>
+      <div id="tree"></div>
+    </div>
+  </aside>
+  <main>
+    <div id="bar">
+      <b>Narząd: <span class="sel" id="sel">—</span></b>
+      <label><input type="checkbox" id="sync"> zsynchronizuj obrót (wszystkie okna naraz)</label>
+      <label><input type="checkbox" id="mpr-tog"> przekroje CT (MPR)</label>
+      <span id="panelmenu"><button id="pm-btn">🪟 Okna ▾</button>
+        <div class="drop" id="pm-drop">
+          <label><input type="checkbox" id="pm-free"> układ swobodny (przesuwanie okien)</label>
+          <hr>
+          <label><input type="checkbox" data-win="w-aside" checked> lista narządów</label>
+          <label><input type="checkbox" data-win="w-za" checked> panel Z-Anatomy</label>
+          <label><input type="checkbox" data-win="w-ct" checked> panel CT</label>
+          <label><input type="checkbox" data-win="w-nih" checked> panel NIH</label>
+          <label><input type="checkbox" data-win="w-mpr"> panel MPR</label>
+          <hr>
+          <label id="pm-reset" style="color:#7ec8ff">↺ reset układu</label>
+        </div>
+      </span>
+      <span style="color:#8a94a4">klik = nazwa · przeciągnij = obrót</span>
+    </div>
+    <div class="panes">
+      <div class="pane" id="w-za">
+        <div class="winbar">Z-Anatomy <span class="x" data-win="w-za">✕</span></div>
+        <div class="winbody">
+          <h2>Z-Anatomy <span>· opisany, segmenty · CC BY-SA</span></h2>
+          <div class="cv"><canvas id="cZA"></canvas><div class="badge" id="bZA"></div>
+            <div class="subtog"><button id="tg-seg">segmenty</button><button id="tg-pin">🔖 szpilki</button><button id="tg-lab">powierzchnie</button><button id="tg-cut">🔪 skalpel</button><button id="cut-undo" style="display:none">↶ cofnij</button><button id="cut-all" style="display:none">↺ wróć</button></div>
+            <div id="skullctl" style="display:none;position:absolute;left:8px;bottom:8px;right:8px;background:#12151bdd;border:1px solid #313a47;border-radius:5px;padding:5px 8px;font-size:10.5px;color:#cdd5e0">
+              <label style="display:flex;align-items:center;gap:6px;white-space:nowrap">podstawa
+                <input type="range" id="skullclip" min="0" max="100" value="12" style="flex:1;accent-color:#2b6cb0">
+                cała czaszka</label>
+              <div style="margin-top:3px;display:flex;flex-wrap:wrap;gap:4px 10px">
+                <span><b style="color:#7ec8ff">■</b> dół przedni</span><span><b style="color:#f6c453">■</b> dół środkowy</span>
+                <span><b style="color:#e0776b">■</b> dół tylny</span><span><b style="color:#9d8ec9">■</b> podstawa zewn.</span>
+                <span style="color:#8a94a4">○ = pozycja przybliżona</span>
+              </div>
+            </div></div>
+          <div class="info" id="iZA"></div>
+        </div>
+      </div>
+      <div class="pane" id="w-ct">
+        <div class="winbar">CT pacjenta <span class="x" data-win="w-ct">✕</span></div>
+        <div class="winbody">
+          <h2>CT pacjenta
+            <select id="ct-subj">
+              <option value="s0086">s0086 · M · norma</option>
+              <option value="female">s0174 · K · norma</option>
+              <option value="tumor">s0429 · guz j. brzusznej</option>
+              <option value="male2">s0250 · M · norma (2)</option>
+            </select>
+            <span>· TotalSegmentator · CC BY 4.0</span>
+          </h2>
+          <div class="cv"><canvas id="cCT"></canvas><div class="badge" id="bCT"></div>
+            <div class="subtog"><button id="tg-vess">🩸 unaczynienie</button></div></div>
+          <div class="info" id="iCT"></div>
+        </div>
+      </div>
+      <div class="pane" id="w-nih">
+        <div class="winbar">NIH Visible Human <span class="x" data-win="w-nih">✕</span></div>
+        <div class="winbody">
+          <h2>NIH Visible Human <span>· bryła poglądowa · CC BY 4.0</span></h2>
+          <div class="cv"><canvas id="cNIH"></canvas><div class="badge" id="bNIH"></div></div>
+          <div class="info" id="iNIH"></div>
+        </div>
+      </div>
+    </div>
+    <div id="w-mpr" class="pane">
+      <div class="winbar">Przekroje CT (MPR) <span class="x" data-win="w-mpr">✕</span></div>
+      <div class="winbody" style="flex-direction:row!important;background:#262c36;gap:1px">
+        <div class="mpr-cell"><div class="mpr-t">oś poprzeczna (axial)</div><canvas id="mpr-ax"></canvas><input type="range" id="sl-ax" min="0" max="0" value="0"></div>
+        <div class="mpr-cell"><div class="mpr-t">czołowa (coronal)</div><canvas id="mpr-cor"></canvas><input type="range" id="sl-cor" min="0" max="0" value="0"></div>
+        <div class="mpr-cell"><div class="mpr-t">strzałkowa (sagittal)</div><canvas id="mpr-sag"></canvas><input type="range" id="sl-sag" min="0" max="0" value="0"></div>
+        <div class="mpr-cell" style="justify-content:center;color:#8a94a4;font-size:11px;gap:6px">
+          Osobnik <b id="mpr-subj">s0086</b>
+          <label style="cursor:pointer"><input type="checkbox" id="mpr-hu"> kolory wg gęstości (HU)</label>
+          <span id="mpr-mode">okno tkanek miękkich</span>
+          <div id="mpr-leg" style="display:none;text-align:left;line-height:1.5">
+            <span style="color:#e8d680">▉</span> tłuszcz &nbsp; <span style="color:#55a7c5">▉</span> płyn<br>
+            <span style="color:#96786a">▉</span> tk. miękka &nbsp; <span style="color:#b25252">▉</span> mięsień / narząd<br>
+            <span style="color:#e23630">▉</span> krew z kontrastem &nbsp; <span style="color:#d8c9a2">▉</span> kość<br>
+            <span style="color:#23305a">▉</span> płuco / powietrze
+          </div>
+          <span style="color:#7ec8ff">■</span> = wybrany narząd
+        </div>
+      </div>
+    </div>
+    <div id="loading">wczytywanie modeli…</div>
+  </main>
+</div>
+
+<script type="importmap">
+{ "imports": {
+  "three": "https://unpkg.com/three@0.160.0/build/three.module.js",
+  "three/addons/": "https://unpkg.com/three@0.160.0/examples/jsm/"
+}}
+</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
+
+const CB = '?b=' + (window.__BUILD || '77');
+const PAL = [0xd98c5f,0x6faed1,0x74c69d,0xe0b04a,0xcf7d8e,0x9d8ec9,0x8bbf5a,0x64b6ac,0xe08a6b,0x7fa8d9,0xbf9b56,0xcf9dc9,0x9ab04a,0x5fae9d];
+const sanitize = n => n.replace(/\s/g,'_').replace(/[.:\/\[\]]/g,'');
+const enName = n => (n||'').replace(/\.j$/,'').replace(/\.(l|r)$/,(_,s)=>' ('+(s=='l'?'left':'right')+')');
+const plShort = p => p && p.pl ? p.pl.split(';')[0].trim() : (p ? enName(p.name) : '');
+
+// ---- jeden panel 3D --------------------------------------------------------
+function makeViewer(canvasId, infoId, badgeId){
+  const canvas = document.getElementById(canvasId);
+  const info = document.getElementById(infoId);
+  const badge = document.getElementById(badgeId);
+  const renderer = new THREE.WebGLRenderer({ canvas, antialias:true });
+  renderer.setPixelRatio(Math.min(devicePixelRatio,2));
+  renderer.toneMapping = THREE.ACESFilmicToneMapping; renderer.toneMappingExposure = 1.05;
+  const scene = new THREE.Scene(); scene.background = new THREE.Color(0x101216);
+  const camera = new THREE.PerspectiveCamera(42, 1, 0.5, 100000);
+  camera.up.set(0,1,0);
+  const controls = new OrbitControls(camera, canvas);
+  controls.enableDamping = true;
+  scene.add(new THREE.HemisphereLight(0xffffff, 0x2a3340, 1.35));
+  const d1 = new THREE.DirectionalLight(0xffffff, 1.5); d1.position.set(400,600,800); scene.add(d1);
+  const d2 = new THREE.DirectionalLight(0xcfe0ff, 0.5); d2.position.set(-500,-200,-300); scene.add(d2);
+  const grp = new THREE.Group(); scene.add(grp);
+  const raycaster = new THREE.Raycaster(); const ptr = new THREE.Vector2();
+  const V = { scene, camera, controls, grp, renderer, canvas, info, badge, meshes:[], onpick:null };
+
+  function resize(){
+    const w = canvas.clientWidth, h = canvas.clientHeight;
+    if (w>0 && (canvas.width !== Math.floor(w*renderer.getPixelRatio()) || canvas.height !== Math.floor(h*renderer.getPixelRatio()))){
+      renderer.setSize(w,h,false); camera.aspect = w/h; camera.updateProjectionMatrix();
+    }
+  }
+  // frame() tylko zapisuje bbox — właściwe ustawienie kamery robi pętla render (po resize, gdy aspect jest pewny)
+  V.frame = (objs)=>{
+    if (V.suppressFrame){ V.suppressFrame = false; return; }   // klik w strukturę nie rusza kamery
+    if (objs && objs.isBox3){ V._pending = objs.isEmpty() ? null : objs.clone(); return; }
+    const box = new THREE.Box3();
+    (objs && objs.length ? objs : [grp]).forEach(o=>{ if(o.visible!==false) box.expandByObject(o); });
+    if (box.isEmpty()) { V._pending = null; return; }
+    V._pending = box.clone();
+  };
+  function applyFrame(box){
+    const c = box.getCenter(new THREE.Vector3());
+    const s = box.getSize(new THREE.Vector3());
+    const rad = 0.5 * Math.hypot(s.x, s.y, s.z) || 1;
+    const asp = (camera.aspect && isFinite(camera.aspect) && camera.aspect > 0.05) ? camera.aspect : 0.75;
+    const vFov = camera.fov * Math.PI/180;
+    const hFov = 2 * Math.atan(Math.tan(vFov/2) * asp);
+    const half = new THREE.Vector3(s.x/2, s.y/2, s.z/2);
+    // odległość, przy której rzut bboxa mieści się w obu FOV (z zapasem)
+    const dist = Math.max(
+      Math.max(half.x, half.z) / Math.tan(hFov/2),
+      half.y / Math.tan(vFov/2)
+    ) * 1.15 + rad*0.15;
+    const dir = (V.viewDir || new THREE.Vector3(0.25, 0.12, 1)).clone().normalize();
+    V._framing = true;
+    controls.target.copy(c);
+    camera.position.copy(c).add(dir.multiplyScalar(dist));
+    camera.near = Math.max(dist * 0.02, 0.05);
+    camera.far  = dist + rad * 8;
+    camera.updateProjectionMatrix();
+    controls.update();
+    V._framing = false;
+    V._r = rad;
+  }
+  V._applyFrame = applyFrame;
+  canvas.addEventListener('pointerdown', e=>{
+    const rc = canvas.getBoundingClientRect();
+    ptr.x = ((e.clientX-rc.left)/rc.width)*2-1;
+    ptr.y = -((e.clientY-rc.top)/rc.height)*2+1;
+    raycaster.setFromCamera(ptr, camera);
+    const pool = [...(V.meshesActive || V.meshes).filter(m=>m.visible), ...(V.extraPickable || [])];
+    const hit = raycaster.intersectObjects(pool, false)[0];
+    if (hit && V.onpick) V.onpick(hit.object);
+  });
+  (function loop(){
+    requestAnimationFrame(loop);
+    resize();
+    if (V._pending && canvas.clientWidth > 0){ applyFrame(V._pending); V._pending = null; }
+    controls.update();
+    renderer.render(scene,camera);
+  })();
+  return V;
+}
+
+async function loadGLBInto(V, url){
+  const g = await new GLTFLoader().loadAsync(url + CB);
+  const meshes = [];
+  g.scene.traverse(o=>{
+    if (o.isMesh){
+      o.geometry.deleteAttribute('normal'); o.geometry.computeVertexNormals();
+      o.material = new THREE.MeshStandardMaterial({ color:0x9aa3b0, roughness:0.62, metalness:0, side:THREE.DoubleSide });
+      o.material.emissive = new THREE.Color(0x000000);
+      o.name = sanitize(o.name);
+      meshes.push(o);
+    }
+  });
+  V.grp.add(g.scene);
+  return meshes;
+}
+
+const ZA  = makeViewer('cZA','iZA','bZA');
+const CT  = makeViewer('cCT','iCT','bCT');
+const NIH = makeViewer('cNIH','iNIH','bNIH');
+ZA.renderer.localClippingEnabled = true;
+const SKULL_CLIP = new THREE.Plane(new THREE.Vector3(0,-1,0), 1e4); // odcina sklepienie (y > -constant)
+// nice env
+const pmrem = new THREE.PMREMGenerator(ZA.renderer);
+const envTex = pmrem.fromScene(new RoomEnvironment(), 0.04).texture;
+[ZA,CT,NIH].forEach(v=> v.scene.environment = envTex);
+
+let MAN, CTMAN, NIHMAN;
+let ZA_BY = new Map(), CT_BY = new Map(), NIH_BY = new Map();
+let ORG_SEG = new Set();
+let current = null, sync = false;
+let showSeg = false, showLab = false, showPin = false, showVess = false;
+let selectedZA = null, selectedPin = null;
+let selMeshName = null, selPinKey = null, linkName = null;   // zaznaczenie: bryła / szpilka / powiązana struktura
+const GOLD = 0xffcf4d, PINGOLD = 0xffd24d;
+function clearSel(){ selMeshName = selPinKey = linkName = null; selectedZA = null; }
+function isGold(name){ return name && (name === selMeshName || name === linkName); }
+function markListSel(){
+  document.querySelectorAll('#iZA .lst span').forEach(s=>{
+    const on = (s.dataset.k && (s.dataset.k===selMeshName || s.dataset.k===selPinKey || s.dataset.k===linkName))
+             || (s.dataset.i!=null && skullPins[+s.dataset.i]?.userData.part.key===selPinKey);
+    s.style.background = on ? '#4a3a12' : '';
+    s.style.color = on ? '#ffd24d' : '';
+  });
+}
+
+// ---- szpilki (z powierzchni .j) ----------------------------------------
+const PIN_GRP = new THREE.Group(); ZA.scene.add(PIN_GRP);
+const PIN_CACHE = new Map();     // organ -> [pin meshes]
+const _pinGeo = new THREE.SphereGeometry(1, 14, 10);
+function pinsFor(organ){
+  if (PIN_CACHE.has(organ)) return PIN_CACHE.get(organ);
+  const jparts = MAN.parts.filter(p=>p.organ===organ && p.label);
+  // rozmiar szpilki wg gabarytu narządu
+  const obox = new THREE.Box3();
+  ZA.meshes.forEach(m=>{ const p=ZA_BY.get(m.name); if(p && p.organ===organ && !p.label) obox.expandByObject(m); });
+  const r = Math.max(0.6, obox.getSize(new THREE.Vector3()).length() * 0.012);
+  const pins = [];
+  for (const jp of jparts){
+    const mesh = ZA.meshes.find(m=>m.name===jp.key);
+    if (!mesh) continue;
+    const c = new THREE.Box3().setFromObject(mesh).getCenter(new THREE.Vector3());
+    const pin = new THREE.Mesh(_pinGeo, new THREE.MeshBasicMaterial({ color:0x2ec5ff }));
+    pin.scale.setScalar(r);
+    pin.position.copy(c);
+    pin.userData.part = jp;
+    pin.renderOrder = 999;
+    pins.push(pin);
+  }
+  PIN_CACHE.set(organ, pins);
+  return pins;
+}
+function showPinsForOrgan(organ){
+  PIN_GRP.clear(); selectedPin = null;
+  if (!organ){ ZA.extraPickable = []; return; }
+  pinsFor(organ).forEach(p=>{ p.material.color.setHex(0x2ec5ff); PIN_GRP.add(p); });
+  ZA.extraPickable = PIN_GRP.children;
+}
+
+function colorFor(mesh, byMap, organ, idxMap){
+  const p = byMap.get(mesh.name);
+  if (idxMap && idxMap.has(mesh.name)) return PAL[idxMap.get(mesh.name) % PAL.length];
+  return 0xc98a6f;
+}
+
+// ---- sterowanie widocznością Z-Anatomy ------------------------------------
+function renderZA(){
+  showPinsForOrgan(null);   // domyślnie brak szpilek; organ-path je odbuduje
+  ZA.viewDir = null;   // domyślny kierunek kamery; renderSkull ustawia własny
+  if (current !== 'Czaszka — podstawa') document.getElementById('skullctl').style.display = 'none';
+  // schowaj warstwy "extra" jeśli nie dotyczą bieżącego narządu
+  for (const [org,g] of Object.entries(ZA_EXTRA)) if (g.grp) g.grp.visible = (org===current);
+  ZA.meshesActive = ZA_EXTRA[current] ? ZA_EXTRA[current].meshes : ZA.meshes;
+  if (!current){ // cały układ
+    const HIDE = new Set(['Otrzewna, krezki, sieci','Inne / poziom układu']);
+    ZA.meshes.forEach(m=>{
+      const p = ZA_BY.get(m.name) || {};
+      let vis = (!HIDE.has(p.group) && !p.label && !p.segment) || m.name===linkName;
+      m.visible = vis;
+      const gold = isGold(m.name);
+      m.material.color.setHex(gold ? GOLD : (GROUP_COLORS[p.group] ?? 0x9aa3b0));
+      m.material.emissive.setHex(gold ? 0x3a2c00 : 0);
+    });
+    ZA.frame(ZA.meshes.filter(m=>m.visible));
+    ZA.badge.textContent = 'cały układ trzewny';
+    return;
+  }
+  // narządy spoza VisceralSystem (serce z CardioVascular itd.)
+  if (ZA_EXTRA[current]){ return renderZAExtra(ZA_EXTRA[current]); }
+  if (EXTRA_NO_ZA.has(current)){
+    ZA.meshes.forEach(m=> m.visible=false);
+    ZA.badge.textContent = 'brak w Z-Anatomy VisceralSystem';
+    ZA.info.innerHTML = '<span class="en">Ten narząd jest w innym pliku Z-Anatomy (LymphoidOrgans) — porównaj CT i NIH obok.</span>';
+    return;
+  }
+  const items = MAN.parts.filter(p=>p.organ===current);
+  const idx = new Map(items.filter(p=>!p.label).sort((a,b)=>(b.v||0)-(a.v||0)).map((p,i)=>[p.key,i]));
+  const hasSeg = items.some(p=>p.segment);
+  ZA.meshes.forEach(m=>{
+    const p = ZA_BY.get(m.name);
+    let vis = !!p && p.organ===current;
+    if (p && p.label && (!showLab || showPin)) vis = false;      // przy szpilkach chowamy pełne powierzchnie
+    if (p && p.segment && !showSeg) vis = false;
+    if (p && showSeg && hasSeg && !p.segment && !p.label) vis = false; // ukryj monolit gdy segmenty
+    if (m.name===linkName) vis = true;                            // powierzchnia powiązana ze szpilką
+    m.visible = vis;
+    const gold = isGold(m.name);
+    if (p) m.material.color.setHex(gold ? GOLD : (idx.has(p.key) ? PAL[idx.get(p.key)%PAL.length] : 0x8fb0c9));
+    m.material.emissive.setHex(gold ? 0x3a2c00 : 0);
+  });
+  showPinsForOrgan(showPin ? current : null);
+  ZA.frame(ZA.meshes.filter(m=>m.visible));
+  const n = items.filter(p=>!p.label&&!p.segment).length, ns = items.filter(p=>p.segment).length, nl = items.filter(p=>p.label).length;
+  ZA.badge.textContent = `${n} bryły` + (ns?` · ${ns} segm.`:'') + (nl?` · ${nl} ${showPin?'szpilek':'powierzchni'}`:'');
+  document.getElementById('tg-seg').classList.toggle('on', showSeg);
+  document.getElementById('tg-lab').classList.toggle('on', showLab);
+  document.getElementById('tg-pin').classList.toggle('on', showPin);
+  // lista w info
+  ZA.info.innerHTML = `<div class="pick" id="zpk">klik w strukturę…</div>
+    <div class="lst">${items.sort((a,b)=>(a.label-b.label)||(a.segment-b.segment)||(b.v-a.v))
+      .map(p=>`<span data-k="${p.key}" data-kind="${p.label?'lab':p.segment?'seg':'x'}">${plShort(p)}${p.label?' ▪':p.segment?' ◆':''}</span>`).join('')}</div>`;
+  ZA.info.querySelectorAll('span[data-k]').forEach(s=> s.onclick = ()=>{
+    if (showPin && s.dataset.kind==='lab'){
+      const pin = PIN_GRP.children.find(x=>x.userData.part?.key===s.dataset.k);
+      if (pin) return pickZA(pin);
+    }
+    if (s.dataset.kind==='lab' && !showLab){ showLab=true; ZA.suppressFrame=true; renderZA(); }
+    if (s.dataset.kind==='seg' && !showSeg){ showSeg=true; ZA.suppressFrame=true; renderZA(); }
+    pickZA(ZA.meshes.find(m=>m.name===s.dataset.k));
+  });
+}
+function pickZA(m){
+  if (!m) return;
+  // skalpel: klik chowa strukturę (odsłania to, co pod spodem)
+  if (cutMode && m && !(m.userData && m.userData.part)){
+    m.visible = false; cutStack.push(m);
+    updateCutBtns();
+    const el = document.getElementById('zpk');
+    const p = ZA_BY.get(m.name) || ZA.extraBy?.get(m.name);
+    if (el) el.innerHTML = `🔪 wycięto: ${p?plShort(p):enName(m.name)} <span class="en">(${cutStack.length} usuniętych)</span>`;
+    return;
+  }
+  const el = document.getElementById('zpk');
+  if (m.userData && m.userData.part){        // ---- szpilka ----
+    const p = m.userData.part;
+    selMeshName = null; selPinKey = p.key;
+    // struktura powiązana ze szpilką: kość czaszki (p.bone) albo własna powierzchnia .j (p.key)
+    linkName = p.bone || (ZA.meshes.some(x=>x.name===p.key) ? p.key : null);
+    ZA.suppressFrame = true; renderZA();
+    if (el) el.innerHTML = `🔖 ${plShort(p)} <span class="en">— ${enName(p.name)}${p.approx?' · pozycja przybliżona':''}</span>`
+      + (linkName ? ` <span class="en" style="color:#ffd24d">▸ ${plShort(ZA_BY.get(linkName)||ZA.extraBy?.get(linkName)) || enName(linkName)}</span>` : '');
+    markListSel();
+    return;
+  }
+  // ---- bryła ----
+  selPinKey = null; linkName = null; selMeshName = m.name; selectedZA = m;
+  ZA.suppressFrame = true; renderZA();
+  const p = ZA_BY.get(m.name) || ZA.extraBy?.get(m.name);
+  if (el) el.innerHTML = `▶ ${p?plShort(p):enName(m.name)} <span class="en">— ${enName(p?.name || p?.en || m.name)}</span>`;
+  markListSel();
+}
+
+// narządy spoza VisceralSystem
+const ZA_EXTRA = {
+  "Serce": { glb:'./alt/heart_za.glb', man:'./alt/heart_za_manifest.json', loaded:false, meshes:[], by:new Map() },
+  "Mózg":  { glb:'./alt/brain_za.glb', man:'./alt/brain_za_manifest.json', brain:true, loaded:false, meshes:[], by:new Map(), src:'Z-Anatomy (pełny blend)' },
+  "Oko":   { glb:'./alt/eye_za.glb', man:'./alt/eye_za_manifest.json', loaded:false, meshes:[], by:new Map(), src:'Z-Anatomy' },
+  "Ucho":  { glb:'./alt/ear_openear.glb', man:'./alt/ear_openear_manifest.json', loaded:false, meshes:[], by:new Map(), src:'OpenEar (micro-CT)' },
+  "Grasica": { glb:'./alt/thymus_za.glb', man:'./alt/thymus_za_manifest.json', loaded:false, meshes:[], by:new Map(), src:'Z-Anatomy' },
+  "Śledziona": { glb:'./alt/spleen_za.glb', man:'./alt/spleen_za_manifest.json', loaded:false, meshes:[], by:new Map(), src:'Z-Anatomy' },
+  "Czaszka — podstawa": { glb:'./alt/skull_za.glb', man:'./alt/skull_za_manifest.json', lm:'./alt/skull_landmarks.json', skull:true, loaded:false, meshes:[], by:new Map(), src:'Z-Anatomy (pełny blend)' },
+};
+const EXTRA_NO_ZA = new Set(["Żeńskie narządy płciowe","Sutek","Rdzeń kręgowy"]);
+const EXTRA_NO_CT = new Set(["Mózg","Oko","Ucho","Grasica","Żeńskie narządy płciowe","Sutek","Czaszka — podstawa"]);
+const EXTRA_NO_NIH = new Set(["Czaszka — podstawa"]);
+const FOSSA = { ant:{c:0x7ec8ff,pl:'dół przedni'}, med:{c:0xf6c453,pl:'dół środkowy'}, post:{c:0xe0776b,pl:'dół tylny'}, ext:{c:0x9d8ec9,pl:'podstawa zewnętrzna'} };
+async function renderZAExtra(E){
+  if (!E.loaded){
+    const man = await (await fetch(E.man + CB)).json();
+    man.parts.forEach(p=> E.by.set(p.key, p));
+    const { meshes } = await loadGLBMeshes(E.glb);
+    meshes.forEach(m=>{ m.name = sanitize(m.name); });
+    E.meshes = meshes; E.grp = new THREE.Group(); meshes.forEach(m=> E.grp.add(m));
+    ZA.scene.add(E.grp); E.loaded = true;
+  }
+  document.getElementById('skullctl').style.display = E.skull ? 'block' : 'none';
+  if (E.skull) return renderSkull(E);
+  if (E.brain) return renderBrain(E);
+  // schowaj główne meshe ZA, pokaż meshe extra
+  ZA.meshes.forEach(m=> m.visible = false);
+  for (const g of Object.values(ZA_EXTRA)) if (g.grp) g.grp.visible = (g===E);
+  ZA.extraBy = E.by; ZA.extraMeshes = E.meshes;
+  const idx = new Map(E.meshes.map((m,i)=>[m.name,i]));
+  const focus = [];
+  E.meshes.forEach(m=>{
+    const p = E.by.get(m.name) || {};
+    const gold = isGold(m.name);
+    m.visible = !cutStack.includes(m);
+    m.material.color.setHex(gold ? GOLD : PAL[(idx.get(m.name)||0)%PAL.length]);
+    m.material.transparent = !!p.context && !gold;
+    m.material.opacity = (p.context && !gold) ? 0.1 : 1;
+    m.material.depthWrite = !p.context || gold;
+    m.material.side = (p.context && !gold) ? THREE.BackSide : THREE.DoubleSide;
+    m.material.emissive.setHex(gold ? 0x3a2c00 : 0);
+    if (!p.context) focus.push(m);
+  });
+  ZA.meshesActive = E.meshes;           // do raycastu
+  ZA.frame(focus.length ? focus : E.meshes);
+  const nc = E.meshes.length - focus.length;
+  ZA.badge.textContent = `${focus.length} struktur${nc?` (+${nc} tło)`:''} · ${E.src || 'Z-Anatomy'}`;
+  document.getElementById('tg-seg').classList.remove('on');
+  document.getElementById('tg-lab').classList.remove('on');
+  document.getElementById('tg-pin').classList.remove('on');
+  ZA.info.innerHTML = `<div class="pick" id="zpk">klik w strukturę…</div>
+    <div class="lst">${[...E.by.values()].map(p=>`<span data-k="${p.key}">${plShort(p)}${p.context?' ▫':''}</span>`).join('')}</div>`;
+  ZA.info.querySelectorAll('span[data-k]').forEach(s=> s.onclick=()=> pickZA(E.meshes.find(m=>m.name===s.dataset.k)));
+  markListSel();
+}
+
+// ---- Czaszka: podstawa + otwory/wyrostki/kłykcie ------------------------
+const SKULL_PIN_GEO = new THREE.SphereGeometry(1, 16, 12);
+let skullPins = [];
+async function renderSkull(E){
+  if (!E.lmData) E.lmData = await (await fetch(E.lm + CB)).json();
+  ZA.meshes.forEach(m=> m.visible = false);
+  for (const g of Object.values(ZA_EXTRA)) if (g.grp) g.grp.visible = (g===E);
+  ZA.extraBy = E.by; ZA.extraMeshes = E.meshes;
+  E.meshes.forEach(m=>{
+    const gold = isGold(m.name);
+    if (!cutStack.includes(m)) m.visible = true;   // nie odsłaniaj tego, co wyciął skalpel
+    m.material.color.setHex(gold ? GOLD : 0xe9e2d2);
+    m.material.roughness = 0.85; m.material.metalness = 0;
+    m.material.transparent = false; m.material.opacity = 1;
+    m.material.emissive.setHex(gold ? 0x3a2c00 : 0);
+    m.material.clippingPlanes = [SKULL_CLIP];
+    m.material.clipShadows = true;
+  });
+  ZA.meshesActive = E.meshes;
+  // szpilki wg dołów czaszki (odbudowa — potem re-highlight wg selPinKey)
+  if (!E._pinsBuilt){
+    const box = new THREE.Box3(); E.meshes.forEach(m=> box.expandByObject(m));
+    const r = box.getSize(new THREE.Vector3()).length() * 0.010;
+    skullPins = [];
+    E.lmData.pins.forEach((p,i)=>{
+      const f = FOSSA[p.fossa] || FOSSA.med;
+      const pin = new THREE.Mesh(SKULL_PIN_GEO, new THREE.MeshBasicMaterial({ color:f.c, transparent:p.approx, opacity:p.approx?0.5:1 }));
+      pin.scale.setScalar(p.approx ? r*0.8 : r);
+      pin.position.set(p.pos[0], p.pos[1], p.pos[2]);
+      pin.renderOrder = 999;
+      pin.userData.part = { pl:p.pl + (p.approx?' ○':''), name:p.en, key:'skp'+i, fossa:p.fossa, approx:p.approx, bone:p.bone };
+      PIN_GRP.add(pin); skullPins.push(pin);
+    });
+    E._pinsBuilt = true;
+  } else {
+    PIN_GRP.clear(); skullPins.forEach(pin=> PIN_GRP.add(pin));
+  }
+  skullPins.forEach(pin=>{
+    const pp = pin.userData.part, f = FOSSA[pp.fossa] || FOSSA.med;
+    pin.material.color.setHex(pp.key===selPinKey ? PINGOLD : f.c);
+  });
+  ZA.extraPickable = PIN_GRP.children;
+  applySkullClip();
+  // widok: sama podstawa czaszki, od góry (jak norma basalis interna)
+  ZA.viewDir = new THREE.Vector3(0.05, 0.92, 0.16);
+  const sb = new THREE.Box3(); E.meshes.forEach(m=> sb.expandByObject(m));
+  sb.max.y = SKULL_CLIP.constant + 6;                  // kadruj tylko część poniżej cięcia
+  ZA.frame(sb);
+  ZA.badge.textContent = `${E.meshes.length} kości · ${E.lmData.pins.length} punktów (${E.lmData.pins.filter(x=>x.approx).length} przybl.) · ${E.src}`;
+  ['tg-seg','tg-lab','tg-pin'].forEach(id=> document.getElementById(id).classList.remove('on'));
+  // lista pogrupowana wg dołu
+  const order = ['ant','med','post','ext'];
+  const groups = order.map(fk=>{
+    const items = E.lmData.pins.map((p,i)=>({p,i})).filter(x=>x.p.fossa===fk);
+    if (!items.length) return '';
+    return `<div style="margin-top:5px;color:${'#'+FOSSA[fk].c.toString(16).padStart(6,'0')};font-weight:600">${FOSSA[fk].pl}</div>
+      <div class="lst">${items.map(x=>`<span data-i="${x.i}">${x.p.pl}${x.p.approx?' ○':''}</span>`).join('')}</div>`;
+  }).join('');
+  ZA.info.innerHTML = `<div class="pick" id="zpk">klik w otwór / wyrostek…</div>${groups}`;
+  ZA.info.querySelectorAll('span[data-i]').forEach(s=> s.onclick=()=> pickZA(skullPins[+s.dataset.i]));
+  markListSel();
+}
+function applySkullClip(){
+  const E = ZA_EXTRA["Czaszka — podstawa"]; if (!E || !E.loaded) return;
+  const box = new THREE.Box3(); E.meshes.forEach(m=> box.expandByObject(m));
+  const yMin = box.min.y, yMax = box.max.y;
+  const t = +document.getElementById('skullclip').value / 100;   // 1 = całość, 0 = tylko podstawa
+  const y = yMin + (yMax - yMin) * (0.30 + 0.68*t) + 2;
+  // Plane normal (0,-1,0): odrzuca punkty gdzie p.y > constant → constant = wysokość cięcia
+  SKULL_CLIP.constant = y;
+}
+
+// ---- Mózg: parcelacja kory / jądra / pień / móżdżek --------------------
+const BGRP = {
+  'kora-zakret':{c:0xd98c5f,pl:'Kora — zakręty'}, 'kora-bruzda':{c:0x6f8fae,pl:'Kora — bruzdy'},
+  'kora-plat':{c:0xe0b04a,pl:'Kora — płaty / pola'}, 'jadra-podstawy':{c:0xcf7d8e,pl:'Jądra podstawy'},
+  'miedzymozgowie':{c:0x9d8ec9,pl:'Międzymózgowie'}, 'pien':{c:0x74c69d,pl:'Pień mózgu'},
+  'mozdzek':{c:0x8bbf5a,pl:'Móżdżek'}, 'komory':{c:0x64b6ac,pl:'Układ komorowy'},
+  'drogi':{c:0xbfae8a,pl:'Istota biała / spoidła'}, 'jadra-nn':{c:0xc9a0d6,pl:'Jądra (inne)'}, 'inne':{c:0x9aa3b0,pl:'Inne'}
+};
+const brainHidden = new Set();
+async function renderBrain(E){
+  ZA.meshes.forEach(m=> m.visible=false);
+  for (const g of Object.values(ZA_EXTRA)) if (g.grp) g.grp.visible = (g===E);
+  ZA.extraBy = E.by; ZA.extraMeshes = E.meshes; ZA.meshesActive = E.meshes;
+  E.meshes.forEach(m=>{
+    m.material.clippingPlanes = null;
+    const p = E.by.get(m.name) || {};
+    const g = BGRP[p.group] || BGRP.inne;
+    const gold = isGold(m.name);
+    m.visible = !brainHidden.has(p.group) && !cutStack.includes(m);
+    m.material.color.setHex(gold ? GOLD : g.c);
+    m.material.roughness = 0.62; m.material.transparent=false; m.material.opacity=1;
+    m.material.emissive.setHex(gold ? 0x3a2c00 : 0);
+  });
+  ZA.frame(E.meshes.filter(m=>m.visible));
+  ['tg-seg','tg-lab','tg-pin'].forEach(id=> document.getElementById(id).classList.remove('on'));
+  const cnt = {}; E.by.forEach(p=> cnt[p.group]=(cnt[p.group]||0)+1);
+  const vis = E.meshes.filter(m=>m.visible).length;
+  ZA.badge.textContent = `${vis}/${E.meshes.length} struktur · parcelacja · ${E.src}`;
+  const order = ['kora-zakret','kora-bruzda','kora-plat','jadra-podstawy','miedzymozgowie','pien','mozdzek','komory','drogi','jadra-nn','inne'];
+  const blocks = order.filter(g=>cnt[g]).map(g=>{
+    const col = '#'+BGRP[g].c.toString(16).padStart(6,'0');
+    const off = brainHidden.has(g);
+    const items = [...E.by.values()].filter(p=>p.group===g).sort((a,b)=>a.pl.localeCompare(b.pl,'pl'));
+    return `<div class="bgh" data-g="${g}" style="margin-top:5px;cursor:pointer;font-weight:600;color:${off?'#5b6472':col}">
+        ${off?'▸':'▾'} ${BGRP[g].pl} <span style="opacity:.6">${cnt[g]}</span></div>
+      ${off?'':`<div class="lst">${items.map(p=>`<span data-k="${p.key}">${p.pl}</span>`).join('')}</div>`}`;
+  }).join('');
+  ZA.info.innerHTML = `<div class="pick" id="zpk">skalpel: klik chowa strukturę · klik nagłówka = ukryj grupę</div>${blocks}`;
+  ZA.info.querySelectorAll('.bgh').forEach(h=> h.onclick=()=>{
+    const g=h.dataset.g; brainHidden.has(g)?brainHidden.delete(g):brainHidden.add(g); ZA.suppressFrame=true; renderBrain(E);
+  });
+  ZA.info.querySelectorAll('span[data-k]').forEach(s=> s.onclick=()=> pickZA(E.meshes.find(m=>m.name===s.dataset.k)));
+  markListSel();
+}
+async function loadGLBMeshes(url){
+  const g = await new GLTFLoader().loadAsync(url + CB);
+  const meshes = [];
+  g.scene.traverse(o=>{ if(o.isMesh){
+    o.geometry.deleteAttribute('normal'); o.geometry.computeVertexNormals();
+    o.material = new THREE.MeshStandardMaterial({ color:0x9aa3b0, roughness:0.6, metalness:0, side:THREE.DoubleSide });
+    o.material.emissive = new THREE.Color(0x000000);
+    meshes.push(o);
+  }});
+  return { meshes };
+}
+
+// ---- CT ------------------------------------------------------------------
+function renderCT(){
+  if (EXTRA_NO_CT.has(current)){
+    CT.meshes.forEach(m=> m.visible=false);
+    const head = current==='Mózg'||current==='Oko'||current==='Ucho';
+    CT.badge.textContent = 'brak w segmentacji CT';
+    CT.info.innerHTML = `<span class="en">${head ? 'Skany CT dostępnych osobników nie sięgają głowy.' : 'TotalSegmentator nie segmentuje tej struktury — porównaj Z-Anatomy i NIH.'}</span>`;
+    return;
+  }
+  const wanted = current
+    ? CT.meshes.filter(m=> CT_BY.get(m.name)?.organ === current)
+    : CT.meshes;
+  const idx = new Map(wanted.map((m,i)=>[m.name,i]));
+  CT.meshes.forEach(m=>{
+    m.visible = wanted.includes(m);
+    m.material.color.setHex(current ? PAL[(idx.get(m.name)||0)%PAL.length] : (GROUP_COLORS[CT_BY.get(m.name)?.group] ?? 0xcf8a70));
+    m.material.emissive.setHex(0);
+  });
+  if (!wanted.length){
+    CT.badge.textContent = 'brak w tym osobniku CT';
+    CT.info.innerHTML = '<span class="en">Ten narząd nie mieści się w polu skanu s0086.</span>';
+    return;
+  }
+  CT.frame(wanted);
+  CT.badge.textContent = current ? `${wanted.length} bryła CT` : 'cały układ z CT';
+  CT.info.innerHTML = `<div class="pick" id="ctpk">klik w strukturę…</div>
+    <div class="lst">${wanted.map(m=>{const p=CT_BY.get(m.name);return `<span data-k="${m.name}">${p?p.pl:m.name}</span>`}).join('')}</div>`;
+  CT.info.querySelectorAll('span[data-k]').forEach(s=> s.onclick=()=>{ const m=CT.meshes.find(x=>x.name===s.dataset.k); pickCT(m); });
+}
+function pickCT(m){
+  if (!m) return;
+  if (m.userData && m.userData.vessel){
+    const el = document.getElementById('ctpk');
+    if (el) el.innerHTML = `🩸 ${m.userData.vessel} <span class="en">— ${m.userData.kind==='artery'?'tętnica':'żyła'} (Z-Anatomy, schemat)</span>`;
+    return;
+  }
+  CT.meshes.forEach(x=>{ x.material.emissive.setHex(x===m?0x3a2c00:0); });
+  const p = CT_BY.get(m.name);
+  const el = document.getElementById('ctpk');
+  if (el) el.innerHTML = `▶ ${p?p.pl:m.name} <span class="en">— segmentacja CT</span>`;
+  if (m.visible) CT.frame([m]);
+}
+
+// ---- unaczynienie (Z-Anatomy CardioVascular, zarejestrowane do CT s0086) ----
+const VESS = { loaded:false, man:null, meshes:[], byOrgan:new Map() };
+const VESS_GRP = new THREE.Group(); CT.scene.add(VESS_GRP);
+async function loadVess(){
+  if (VESS.loaded) return;
+  VESS.man = await (await fetch('./alt/vessels_manifest.json' + CB)).json();
+  const info = new Map(VESS.man.parts.map(p=>[p.key, p]));
+  const { meshes } = await loadGLBMeshes('./alt/vessels.glb');
+  meshes.forEach(m=>{
+    m.name = sanitize(m.name);
+    const p = info.get(m.name); if (!p) return;
+    m.userData.vessel = p.vessel; m.userData.kind = p.kind; m.userData.organ = p.organ;
+    m.material = new THREE.MeshStandardMaterial({
+      color: p.kind==='artery' ? 0xd6303a : 0x3576c4, roughness:0.45, metalness:0.05,
+      emissive: p.kind==='artery' ? 0x3a0a0c : 0x0a1e3a, side:THREE.DoubleSide });
+    VESS.meshes.push(m); VESS_GRP.add(m);
+    if (!VESS.byOrgan.has(p.organ)) VESS.byOrgan.set(p.organ, []);
+    VESS.byOrgan.get(p.organ).push(m);
+  });
+  VESS.loaded = true;
+}
+async function renderVess(){
+  const subj = document.getElementById('ct-subj').value;
+  VESS_GRP.visible = showVess && !!current && subj === 's0086';
+  document.getElementById('tg-vess').classList.toggle('on', showVess);
+  if (!VESS_GRP.visible){ VESS.meshes.forEach(m=> m.visible = false); CT.extraPickable = []; }
+  if (!showVess || !current) return;
+  if (subj !== 's0086'){
+    CT.info.innerHTML += '<div class="en" style="color:#d98c98">Nałożenie naczyń jest wykalibrowane tylko dla osobnika s0086.</div>';
+    return;
+  }
+  await loadVess();
+  const mine = VESS.byOrgan.get(current) || [];
+  VESS.meshes.forEach(m=> m.visible = mine.includes(m));
+  CT.extraPickable = mine.filter(m=>m.visible);
+  if (!mine.length){
+    CT.info.innerHTML += '<div class="en">Brak wyodrębnionego unaczynienia dla tego narządu.</div>';
+    return;
+  }
+  const organMeshes = CT.meshes.filter(m=> m.visible && CT_BY.get(m.name)?.organ === current);
+  CT.frame([...organMeshes, ...mine]);
+  const a = mine.filter(m=>m.userData.kind==='artery'), v = mine.filter(m=>m.userData.kind==='vein');
+  const names = k => [...new Set(k.map(m=>m.userData.vessel))].join(', ');
+  CT.info.innerHTML += `<div class="lst" style="margin-top:4px">
+    ${a.length?`<span style="border-color:#d6303a;color:#e77">tętnice: ${names(a)}</span>`:''}
+    ${v.length?`<span style="border-color:#3576c4;color:#7ab">żyły: ${names(v)}</span>`:''}</div>`;
+}
+
+// ---- NIH (lazy per-narząd) ----------------------------------------------
+async function renderNIH(){
+  NIH.meshes.forEach(m=> m.visible = false);
+  if (EXTRA_NO_NIH.has(current)){
+    NIH.badge.textContent = 'brak modelu NIH';
+    NIH.info.innerHTML = '<span class="en">Visible Human nie ma wydzielonej podstawy czaszki. Planowane drugie źródło: skan CT.</span>';
+    return;
+  }
+  if (!current){
+    NIH.badge.textContent = 'tylko pojedyncze narządy';
+    NIH.info.innerHTML = '<span class="en">Modele NIH nie mają wspólnego układu — wybierz konkretny narząd.</span>';
+    return;
+  }
+  const slugs = NIHMAN.byOrgan[current] || [];
+  if (!slugs.length){
+    NIH.badge.textContent = 'brak modelu NIH';
+    NIH.info.innerHTML = '<span class="en">Dla tego narządu nie ma modelu w zestawie Visible Human.</span>';
+    return;
+  }
+  NIH.badge.textContent = 'model poglądowy';
+  NIH.info.innerHTML = '<span class="en">wczytywanie…</span>';
+  const shown = [];
+  for (const slug of slugs){
+    if (!NIH.loaded?.has(slug)){
+      (NIH.loaded ||= new Set());
+      const g = await new GLTFLoader().loadAsync(`./alt/nih/${slug}.glb` + CB);
+      g.scene.traverse(o=>{ if(o.isMesh){
+        o.geometry.deleteAttribute('normal'); o.geometry.computeVertexNormals();
+        o.material = new THREE.MeshStandardMaterial({ color:0xcf8a7a, roughness:0.55, metalness:0, side:THREE.DoubleSide });
+        o.name = slug; o.userData.slug = slug; NIH.meshes.push(o);
+      }});
+      NIH.grp.add(g.scene); NIH.loaded.add(slug);
+    }
+    NIH.meshes.filter(m=>m.userData.slug===slug).forEach(m=>{ m.visible=true; shown.push(m); });
+  }
+  NIH.frame(shown);
+  NIH.info.innerHTML = `<div class="pick">${slugs.map(s=>NIHMAN.plBySlug[s]).join(', ')}</div>
+    <span class="en">Pojedyncza bryła z Visible Human — bez szpilek i pod-struktur.</span>`;
+}
+
+// ---- wybór narządu -----------------------------------------------------
+function showOrgan(organ){
+  current = organ; selectedZA = null;
+  cutStack.length = 0; updateCutBtns();   // nowy narząd = brak cięć
+  document.getElementById('sel').textContent = organ || 'cały układ trzewny';
+  document.querySelectorAll('.organ').forEach(o=>o.classList.toggle('active', o.dataset.o===organ));
+  document.getElementById('btn-all').classList.toggle('active', !organ);
+  renderZA(); renderCT(); renderNIH(); renderVess();
+  if (MPR.on) MPR.redrawAll();
+}
+
+// ---- MPR: przekroje CT ----------------------------------------------------
+const MPR = { on:false, color:false, man:null, cache:new Map(), base:'./alt/mpr/s0086/' };
+MPR.load = async ()=>{
+  if (MPR.man) return;
+  MPR.man = await (await fetch(MPR.base + '_manifest.json' + CB)).json();
+  for (const pl of ['ax','cor','sag']){
+    const info = MPR.man.planes[pl];
+    const sl = document.getElementById('sl-'+pl);
+    sl.max = info.count - 1;
+    sl.value = Math.floor(info.count/2);
+    sl.oninput = ()=> MPR.draw(pl);
+  }
+};
+MPR.img = (url)=> new Promise((res)=>{ const i=new Image(); i.onload=()=>res(i); i.onerror=()=>res(null); i.src=url; });
+MPR.draw = async (pl)=>{
+  const info = MPR.man.planes[pl];
+  const i = +document.getElementById('sl-'+pl).value;
+  const cv = document.getElementById('mpr-'+pl);
+  const ctx = cv.getContext('2d');
+  const tag = MPR.color ? '_hu' : '';
+  const base = await MPR.img(`${MPR.base}${pl}_${String(i).padStart(2,'0')}${tag}.jpg` + CB);
+  if (!base) return;
+  cv.width = base.width; cv.height = base.height;
+  ctx.drawImage(base, 0, 0);
+  // nakładka wybranego narządu
+  const labs = current && MPR.man.organ_labels[current];
+  if (labs && labs.length){
+    const lab = await MPR.img(`${MPR.base}${pl}_${String(i).padStart(2,'0')}_lab.png` + CB);
+    if (lab){
+      const t = document.createElement('canvas'); t.width=lab.width; t.height=lab.height;
+      const tc = t.getContext('2d'); tc.drawImage(lab,0,0);
+      const d = tc.getImageData(0,0,t.width,t.height); const px = d.data;
+      const set = new Set(labs);
+      const od = ctx.getImageData(0,0,cv.width,cv.height); const op = od.data;
+      const sx = cv.width/t.width, sy = cv.height/t.height;
+      for (let y=0;y<t.height;y++) for (let x=0;x<t.width;x++){
+        if (set.has(px[(y*t.width+x)*4])){
+          const ox=Math.floor(x*sx), oy=Math.floor(y*sy), oi=(oy*cv.width+ox)*4;
+          op[oi]   = op[oi]*0.35 + 0x2b*0.65;
+          op[oi+1] = op[oi+1]*0.35 + 0x9c*0.65;
+          op[oi+2] = op[oi+2]*0.35 + 0xff*0.65;
+        }
+      }
+      ctx.putImageData(od,0,0);
+    }
+  }
+};
+MPR.redrawAll = ()=> ['ax','cor','sag'].forEach(pl=> MPR.draw(pl));
+document.getElementById('mpr-hu').onchange = (e)=>{
+  MPR.color = e.target.checked;
+  document.getElementById('mpr-mode').textContent = MPR.color ? 'barwy wg klas tkanek (HU)' : 'okno tkanek miękkich';
+  document.getElementById('mpr-leg').style.display = MPR.color ? 'block' : 'none';
+  if (MPR.on) MPR.redrawAll();
+};
+document.getElementById('mpr-tog').onchange = async (e)=>{
+  MPR.on = e.target.checked;
+  document.getElementById('w-mpr').classList.toggle('on', MPR.on);
+  const wm = document.querySelector('#pm-drop [data-win="w-mpr"]'); if (wm) wm.checked = MPR.on;
+  if (MPR.on){ await MPR.load(); MPR.redrawAll(); }
+};
+
+// ==== menedżer okien (tryb swobodny) =====================================
+const WM = {
+  ids: ['w-aside','w-za','w-ct','w-nih','w-mpr'],
+  KEY: 'organ_layout_v2',
+  free: false,
+  save(){
+    const st = { free: WM.free, wins:{} };
+    for (const id of WM.ids){
+      const el = document.getElementById(id);
+      st.wins[id] = { hidden: el.classList.contains('hidden'),
+        x: el.style.left, y: el.style.top, w: el.style.width, h: el.style.height };
+    }
+    try { localStorage.setItem(WM.KEY, JSON.stringify(st)); } catch(e){}
+  },
+  load(){ try { return JSON.parse(localStorage.getItem(WM.KEY)); } catch(e){ return null; } },
+  tileDefault(){
+    const W = innerWidth, H = innerHeight - 40;
+    const lay = {
+      'w-aside':[6, 44, 230, H-8],
+      'w-za':   [244, 44, (W-260)/3, (H-8)*0.62],
+      'w-ct':   [244+(W-260)/3+4, 44, (W-260)/3, (H-8)*0.62],
+      'w-nih':  [244+2*((W-260)/3+4), 44, (W-260)/3, (H-8)*0.62],
+      'w-mpr':  [244, 44+(H-8)*0.62+6, W-260, (H-8)*0.36],
+    };
+    for (const [id,[x,y,w,h]] of Object.entries(lay)){
+      const el = document.getElementById(id);
+      el.style.left=x+'px'; el.style.top=y+'px'; el.style.width=w+'px'; el.style.height=h+'px';
+    }
+  },
+  setFree(on){
+    WM.free = on;
+    document.body.classList.toggle('free', on);
+    document.getElementById('pm-free').checked = on;
+    for (const id of WM.ids){
+      const el = document.getElementById(id);
+      el.classList.toggle('win', on);
+      if (!on){ el.style.left=el.style.top=el.style.width=el.style.height=el.style.zIndex=''; el.classList.remove('hidden'); }
+    }
+    if (!on){
+      // przywróć checkboxy paneli w menu
+      document.querySelectorAll('#pm-drop [data-win]').forEach(cb=> cb.checked = (cb.dataset.win!=='w-mpr'));
+    }
+    if (on){
+      const st = WM.load();
+      if (st && st.wins){
+        for (const id of WM.ids){
+          const s = st.wins[id], el = document.getElementById(id);
+          if (!s) continue;
+          if (s.x){ el.style.left=s.x; el.style.top=s.y; el.style.width=s.w; el.style.height=s.h; }
+          el.classList.toggle('hidden', !!s.hidden);
+          const cb = document.querySelector(`#pm-drop [data-win="${id}"]`); if (cb) cb.checked = !s.hidden;
+        }
+        if (!Object.values(st.wins).some(w=>w.x)) WM.tileDefault();
+      } else WM.tileDefault();
+    }
+    WM.save();
+  },
+  showWin(id, show){
+    document.getElementById(id).classList.toggle('hidden', !show);
+    const cb = document.querySelector(`#pm-drop [data-win="${id}"]`); if (cb) cb.checked = show;
+    if (id==='w-mpr'){
+      document.getElementById('mpr-tog').checked = show;
+      document.getElementById('w-mpr').classList.toggle('on', show);
+      if (show){ MPR.load().then(()=>MPR.redrawAll()); }
+    }
+    WM.save();
+  },
+};
+(function initWM(){
+  const pm = document.getElementById('panelmenu');
+  document.getElementById('pm-btn').onclick = ()=> pm.classList.toggle('open');
+  document.addEventListener('click', e=>{ if(!pm.contains(e.target)) pm.classList.remove('open'); });
+  document.getElementById('pm-free').onchange = e=> WM.setFree(e.target.checked);
+  document.getElementById('pm-reset').onclick = ()=>{ try{localStorage.removeItem(WM.KEY);}catch(e){} WM.tileDefault(); WM.save(); };
+  document.querySelectorAll('#pm-drop [data-win]').forEach(cb=>{
+    cb.onchange = ()=> WM.showWin(cb.dataset.win, cb.checked);
+  });
+  document.querySelectorAll('.winbar .x').forEach(x=>{
+    x.onclick = ()=> WM.showWin(x.dataset.win, false);
+  });
+  // przeciąganie po pasku tytułu
+  let drag = null;
+  document.addEventListener('mousedown', e=>{
+    const bar = e.target.closest('.winbar'); if (!bar || !WM.free || e.target.classList.contains('x')) return;
+    const el = bar.parentElement;
+    drag = { el, dx: e.clientX - el.offsetLeft, dy: e.clientY - el.offsetTop };
+    el.classList.add('dragging'); el.style.zIndex = ++WM.z || (WM.z=100);
+  });
+  document.addEventListener('mousemove', e=>{
+    if (!drag) return;
+    drag.el.style.left = Math.max(0, e.clientX - drag.dx) + 'px';
+    drag.el.style.top  = Math.max(0, e.clientY - drag.dy) + 'px';
+  });
+  document.addEventListener('mouseup', ()=>{ if (drag){ drag.el.classList.remove('dragging'); drag=null; WM.save(); } });
+  // zapis po resize (natywny CSS resize)
+  new ResizeObserver(()=>{ if (WM.free) clearTimeout(WM._t), WM._t=setTimeout(()=>WM.save(),400); })
+    .observe(document.getElementById('w-za'));
+  // wczytaj zapisany stan — domyślnie tryb swobodny (okna ruchome/zamykane)
+  const st = WM.load();
+  if (st) { if (st.free) WM.setFree(true); }
+  else WM.setFree(true);
+})();
+
+// ---- synchronizacja obrotu -------------------------------------------
+let syncing = false;
+function syncCams(from){
+  if (!sync || syncing || from._framing) return;
+  syncing = true;
+  const fromDir = from.camera.position.clone().sub(from.controls.target).normalize();
+  const fromDist = from.camera.position.distanceTo(from.controls.target);
+  const fromR = from._r || fromDist;
+  for (const V of [ZA,CT,NIH]){
+    if (V === from) continue;
+    // ten sam kierunek patrzenia; własny dystans przeskalowany proporcją promieni
+    const d = fromDist * ((V._r || fromR) / fromR);
+    V.camera.position.copy(V.controls.target).add(fromDir.clone().multiplyScalar(d));
+    V.camera.up.copy(from.camera.up);
+    V.camera.updateProjectionMatrix();
+    V.controls.update();
+  }
+  syncing = false;
+}
+[ZA,CT,NIH].forEach(V=> V.controls.addEventListener('change', ()=> syncCams(V)));
+document.getElementById('sync').onchange = e=> sync = e.target.checked;
+document.getElementById('tg-seg').onclick = ()=>{ showSeg=!showSeg; renderZA(); };
+document.getElementById('tg-lab').onclick = ()=>{ showLab=!showLab; if(showLab) showPin=false; renderZA(); };
+document.getElementById('tg-pin').onclick = ()=>{ showPin=!showPin; if(showPin) showLab=false; renderZA(); };
+document.getElementById('tg-vess').onclick = ()=>{ showVess=!showVess; document.getElementById('tg-vess').classList.toggle('on', showVess); renderCT(); renderVess(); };
+document.getElementById('skullclip').oninput = ()=>{
+  applySkullClip();
+  const E = ZA_EXTRA["Czaszka — podstawa"];
+  if (E && E.loaded){
+    const sb = new THREE.Box3(); E.meshes.forEach(m=> sb.expandByObject(m));
+    sb.max.y = SKULL_CLIP.constant + 6; ZA.viewDir = new THREE.Vector3(0.05, 0.92, 0.16); ZA.frame(sb);
+  }
+};
+document.getElementById('btn-all').onclick = ()=> showOrgan(null);
+
+// ---- skalpel (ZA) ------------------------------------------------------
+let cutMode = false; const cutStack = [];
+function updateCutBtns(){
+  document.getElementById('tg-cut').classList.toggle('on', cutMode);
+  document.getElementById('cut-undo').style.display = cutStack.length ? '' : 'none';
+  document.getElementById('cut-all').style.display  = cutStack.length ? '' : 'none';
+}
+function resetCuts(){ cutStack.forEach(m=> m.visible = true); cutStack.length = 0; updateCutBtns(); }
+document.getElementById('tg-cut').onclick = ()=>{ cutMode = !cutMode; ZA.canvas.style.cursor = cutMode ? 'crosshair' : ''; updateCutBtns(); };
+document.getElementById('cut-undo').onclick = ()=>{ const m = cutStack.pop(); if (m) m.visible = true; updateCutBtns(); };
+document.getElementById('cut-all').onclick  = ()=> resetCuts();
+
+ZA.onpick  = pickZA;
+CT.onpick  = pickCT;
+NIH.onpick = (m)=>{};
+
+const GROUP_COLORS = {
+  "Wątroba i drogi żółciowe":0x8d5a4a,"Trzustka":0xd9a441,"Przewód pokarmowy":0xc98a5b,
+  "Układ moczowy":0x6f9bd1,"Układ oddechowy":0xd98c98,"Gruczoły dokrewne":0x6ec4a8,
+  "Gruczoły ślinowe":0xb0c46e,"Męski układ płciowy":0x9b8ac4,"Gardło, jama ustna, nos":0xcf7d6b,
+  "Otrzewna, krezki, sieci":0x8a97a6,"Inne / poziom układu":0x8a97a6,
+};
+
+function buildTree(){
+  const tree = document.getElementById('tree');
+  const groups = {};
+  for (const org of MAN.organ_order){
+    const parts = MAN.parts.filter(p=>p.organ===org);
+    if (!parts.length) continue;
+    (groups[parts[0].group] ||= []).push([org, parts.filter(p=>!p.label).length]);
+  }
+  groups["Żeński układ płciowy"] = [["Żeńskie narządy płciowe",0],["Sutek",0]];
+  groups["Serce i śledziona"] = [["Serce",0],["Śledziona",0]];
+  groups["Chłonne / grasica"] = [["Grasica",0]];
+  groups["Układ nerwowy"] = [["Mózg",0],["Rdzeń kręgowy",0]];
+  groups["Narządy zmysłów"] = [["Oko",0],["Ucho",0]];
+  groups["Czaszka"] = [["Czaszka — podstawa",0]];
+  tree.innerHTML = Object.entries(groups).map(([g,orgs])=>`
+    <div class="grp collapsed"><div class="ghead">${g}<span>${orgs.length}</span></div>
+      ${orgs.map(([o,n])=>`<div class="organ" data-o="${o}">${o}</div>`).join('')}</div>`).join('');
+  tree.querySelectorAll('.ghead').forEach(h=> h.onclick=()=> h.parentElement.classList.toggle('collapsed'));
+  tree.querySelectorAll('.organ').forEach(d=> d.onclick=()=> showOrgan(d.dataset.o));
+}
+
+const CT_SLUG_ORGAN = {
+  sledziona:"Śledziona", nerka_prawa:"Nerki", nerka_lewa:"Nerki",
+  pecherzyk_zolciowy:"Pęcherzyk żółciowy i drogi żółciowe", watroba:"Wątroba", zoladek:"Żołądek",
+  trzustka:"Trzustka", nadnercze_prawe:"Nadnercza", nadnercze_lewe:"Nadnercza",
+  pluco_L_platGorny:"Płuca", pluco_L_platDolny:"Płuca", pluco_P_platGorny:"Płuca",
+  pluco_P_platSrodkowy:"Płuca", pluco_P_platDolny:"Płuca", przelyk:"Przełyk",
+  tchawica:"Drzewo oskrzelowe / tchawica", tarczyca:"Tarczyca i przytarczyce",
+  jelito_cienkie:"Jelito cienkie", dwunastnica:"Jelito cienkie", okreznica:"Jelito grube",
+  pecherz_moczowy:"Pęcherz moczowy i cewka", stercz:"Męskie narządy płciowe",
+  serce:"Serce", aorta:"Inne", zyly_plucne:"Płuca", zyla_glowna_gorna:"Inne",
+  zyla_glowna_dolna:"Inne", zyla_wrotna_sledzionowa:"Inne", rdzen_kregowy:"Rdzeń kręgowy",
+};
+async function loadCTSubject(subj){
+  const suffix = subj === 's0086' ? '' : '_' + subj;
+  const man = await (await fetch(`./alt/ct_manifest${suffix}.json` + CB)).json();
+  // wyczyść starą warstwę CT
+  CT.grp.clear(); CT.meshes = []; CT_BY.clear();
+  man.parts.forEach(p=>{
+    const key = sanitize(p.slug);
+    const organ = CT_SLUG_ORGAN[p.slug] || p.organ || 'Inne';
+    CT_BY.set(key, { name:p.slug, key, pl:p.pl, organ,
+      group:(MAN.parts.find(x=>x.organ===organ)||{}).group });
+  });
+  const meshes = await loadGLBInto(CT, `./alt/visceral_ct${suffix}.glb`);
+  meshes.forEach(m=> m.name = sanitize(m.name));
+  CT.meshes = meshes;
+  MPR.base = `./alt/mpr/${subj}/`; MPR.man = null;
+  document.getElementById('mpr-subj').textContent = subj;
+  if (MPR.on){ await MPR.load(); MPR.redrawAll(); }
+  renderCT(); renderVess();
+}
+document.getElementById('ct-subj').onchange = e=> loadCTSubject(e.target.value);
+
+async function init(){
+  MAN = await (await fetch('./visceral_manifest.json'+CB)).json();
+  MAN.parts.forEach(p=>{ p.key = sanitize(p.name); ZA_BY.set(p.key,p); if(p.segment) ORG_SEG.add(p.organ); });
+  const nm = await (await fetch('./alt/nih/_manifest.json'+CB)).json();
+  NIHMAN = { plBySlug:{}, byOrgan:{} };
+  nm.parts.forEach(p=>{ NIHMAN.plBySlug[p.slug]=p.pl; (NIHMAN.byOrgan[p.organ] ||= []).push(p.slug); });
+
+  ZA.meshes = await loadGLBInto(ZA, './visceral.glb');
+  await loadCTSubject('s0086');
+
+  buildTree();
+  document.getElementById('loading').remove();
+  window.__V = { ZA, CT, NIH, showOrgan, get current(){return current;} };
+  showOrgan(null);
+  document.querySelector('.grp')?.classList.remove('collapsed');
+}
+init().catch(e=>{ const l=document.getElementById('loading'); if(l) l.textContent='błąd: '+e.message; console.error(e); });
+</script>
+</body>
+</html>

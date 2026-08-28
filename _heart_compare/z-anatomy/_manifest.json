@@ -1,0 +1,244 @@
+{
+ "parts": [
+  {
+   "file": "Anterior_interventricular_artery.obj",
+   "name": "Anterior interventricular artery",
+   "vertices": 2635,
+   "faces": 4722
+  },
+  {
+   "file": "Anterior_papillary_muscle_of_right_ventricle.obj",
+   "name": "Anterior papillary muscle of right ventricle",
+   "vertices": 318,
+   "faces": 632
+  },
+  {
+   "file": "Anterior_semilunar_leaflet_of_pulmonary_valve.obj",
+   "name": "Anterior semilunar leaflet of pulmonary valve",
+   "vertices": 523,
+   "faces": 1042
+  },
+  {
+   "file": "Aortic_arch.obj",
+   "name": "Aortic arch",
+   "vertices": 139,
+   "faces": 236
+  },
+  {
+   "file": "Ascending_aorta.obj",
+   "name": "Ascending aorta",
+   "vertices": 138,
+   "faces": 236
+  },
+  {
+   "file": "Bifurcation_of_pulmonary_trunk.obj",
+   "name": "Bifurcation of pulmonary trunk",
+   "vertices": 286,
+   "faces": 472
+  },
+  {
+   "file": "Circumflex_artery_of_heart.obj",
+   "name": "Circumflex artery of heart",
+   "vertices": 3738,
+   "faces": 6730
+  },
+  {
+   "file": "Coronary_sinus.obj",
+   "name": "Coronary sinus",
+   "vertices": 332,
+   "faces": 590
+  },
+  {
+   "file": "Inferior_leaflet_of_right_atrioventricular_valve.obj",
+   "name": "Inferior leaflet of right atrioventricular valve",
+   "vertices": 2005,
+   "faces": 4038
+  },
+  {
+   "file": "Inferior_papillary_muscle_of_left_ventricle.obj",
+   "name": "Inferior papillary muscle of left ventricle",
+   "vertices": 321,
+   "faces": 638
+  },
+  {
+   "file": "Inferior_papillary_muscle_of_right_ventricle.obj",
+   "name": "Inferior papillary muscle of right ventricle",
+   "vertices": 225,
+   "faces": 446
+  },
+  {
+   "file": "Inferior_vein_of_left_ventricle.obj",
+   "name": "Inferior vein of left ventricle",
+   "vertices": 2662,
+   "faces": 4840
+  },
+  {
+   "file": "Inferior_vein_of_left_ventricle____Posterior.obj",
+   "name": "Inferior vein of left ventricle (//Posterior '')",
+   "vertices": 5077,
+   "faces": 9092
+  },
+  {
+   "file": "Left_atrium.obj",
+   "name": "Left atrium",
+   "vertices": 1090,
+   "faces": 2092
+  },
+  {
+   "file": "Left_coronary_artery.obj",
+   "name": "Left coronary artery",
+   "vertices": 143,
+   "faces": 236
+  },
+  {
+   "file": "Left_coronary_leaflet.obj",
+   "name": "Left coronary leaflet",
+   "vertices": 189,
+   "faces": 374
+  },
+  {
+   "file": "Left_inferior_pulmonary_vein.obj",
+   "name": "Left inferior pulmonary vein",
+   "vertices": 219,
+   "faces": 354
+  },
+  {
+   "file": "Left_pulmonary_artery.obj",
+   "name": "Left pulmonary artery",
+   "vertices": 462,
+   "faces": 826
+  },
+  {
+   "file": "Left_semilunar_leaflet_of_pulmonary_valve.obj",
+   "name": "Left semilunar leaflet of pulmonary valve",
+   "vertices": 410,
+   "faces": 816
+  },
+  {
+   "file": "Left_superior_pulmonary_vein.obj",
+   "name": "Left superior pulmonary vein",
+   "vertices": 232,
+   "faces": 354
+  },
+  {
+   "file": "Left_ventricle.obj",
+   "name": "Left ventricle",
+   "vertices": 4718,
+   "faces": 9122
+  },
+  {
+   "file": "Non-coronary_leaflet.obj",
+   "name": "Non-coronary leaflet",
+   "vertices": 66,
+   "faces": 128
+  },
+  {
+   "file": "Posterior_leaflet_of_left_atrioventricular_valve.obj",
+   "name": "Posterior leaflet of left atrioventricular valve",
+   "vertices": 1544,
+   "faces": 3132
+  },
+  {
+   "file": "Pulmonary_trunk.obj",
+   "name": "Pulmonary trunk",
+   "vertices": 61,
+   "faces": 93
+  },
+  {
+   "file": "Right_atrium.obj",
+   "name": "Right atrium",
+   "vertices": 4756,
+   "faces": 9298
+  },
+  {
+   "file": "Right_coronary_artery.obj",
+   "name": "Right coronary artery",
+   "vertices": 6155,
+   "faces": 11098
+  },
+  {
+   "file": "Right_coronary_leaflet.obj",
+   "name": "Right coronary leaflet",
+   "vertices": 190,
+   "faces": 376
+  },
+  {
+   "file": "Right_inferior_pulmonary_vein.obj",
+   "name": "Right inferior pulmonary vein",
+   "vertices": 156,
+   "faces": 236
+  },
+  {
+   "file": "Right_inferolateral_branch_of_right_coronary_artery.obj",
+   "name": "Right inferolateral branch of right coronary artery",
+   "vertices": 4244,
+   "faces": 7556
+  },
+  {
+   "file": "Right_pulmonary_artery.obj",
+   "name": "Right pulmonary artery",
+   "vertices": 143,
+   "faces": 236
+  },
+  {
+   "file": "Right_semilunar_leaflet_of_pulmonary_valve.obj",
+   "name": "Right semilunar leaflet of pulmonary valve",
+   "vertices": 565,
+   "faces": 1121
+  },
+  {
+   "file": "Right_superior_pulmonary_vein.obj",
+   "name": "Right superior pulmonary vein",
+   "vertices": 398,
+   "faces": 708
+  },
+  {
+   "file": "Right_ventricle.obj",
+   "name": "Right ventricle",
+   "vertices": 4726,
+   "faces": 9152
+  },
+  {
+   "file": "Septal_branches_of_anterior_interventricular_artery.obj",
+   "name": "Septal branches of anterior interventricular artery",
+   "vertices": 1631,
+   "faces": 2832
+  },
+  {
+   "file": "Septal_leaflet_of_right_atrioventricular_valve.obj",
+   "name": "Septal leaflet of right atrioventricular valve",
+   "vertices": 1839,
+   "faces": 3706
+  },
+  {
+   "file": "Septal_papillary_muscle_of_right_ventricle.obj",
+   "name": "Septal papillary muscle of right ventricle",
+   "vertices": 175,
+   "faces": 346
+  },
+  {
+   "file": "Superior_vena_cava.obj",
+   "name": "Superior vena cava",
+   "vertices": 77,
+   "faces": 118
+  }
+ ],
+ "chamber_center": [
+  0.0322,
+  1.2762,
+  0.0255
+ ],
+ "chamber_bounds": [
+  [
+   -0.0368,
+   1.2367,
+   -0.032
+  ],
+  [
+   0.0823,
+   1.3448,
+   0.0812
+  ]
+ ],
+ "note": "units = meters (x1000 for atlas mm); myocardium bbox center for camera focus"
+}
