@@ -1,0 +1,16 @@
+{
+  "name": "Atlas anatomiczny 3D",
+  "short_name": "Atlas 3D",
+  "description": "Interaktywny atlas anatomiczny 3D (Z-Anatomy) — szpilki, notatki wykladowe, przekroj, quiz.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#1a1a1a",
+  "theme_color": "#1a1a1a",
+  "lang": "pl",
+  "icons": [
+    { "src": "/icons/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any" },
+    { "src": "/icons/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" }
+  ]
+}

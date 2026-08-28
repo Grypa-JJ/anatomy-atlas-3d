@@ -1,0 +1,11 @@
+{
+  "name": "atlas3d-packaging",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "description": "Pakowanie atlasu anatomicznego 3D do aplikacji Windows (Tauri) i Android (Capacitor).",
+  "scripts": {
+    "assemble": "node assemble.mjs",
+    "serve": "node assemble.mjs && npx --yes serve web -l 9040"
+  }
+}

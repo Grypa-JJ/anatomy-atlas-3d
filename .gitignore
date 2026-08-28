@@ -28,6 +28,13 @@ _heart_compare/**/*.obj
 _heart_compare/**/*.stl
 _heart_compare/**/*.mtl
 _organ_compare/*.glb
+_organ_compare/vendor/
+
+# --- Atlas: spakowany bundle aplikacji (regenerowalny: node _packaging/assemble.mjs) ---
+_packaging/web/
+_packaging/node_modules/
+_packaging/src-tauri/target/
+_packaging/android/
 
 # --- Atlas: renderowane strony PDF (generowalne z _polmisek_atlas.pdf) ---
 _atlas_pages/

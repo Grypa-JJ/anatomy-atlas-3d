@@ -1,0 +1,23 @@
+{
+  "_comment": "WZÓR zdalnego manifestu aktualizacji. Skopiuj na R2 jako np. atlas/updates/latest.json i podmieniaj przy KAŻDYM wydaniu. Schemat 'version'+'notes'+'pub_date'+'platforms' jest zgodny z natywnym updaterem Tauri v2; klucze 'android' i 'web' Tauri ignoruje, a czyta je updater.js.",
+
+  "version": "0.2.0",
+  "notes": "Co nowego w tej wersji (jedna–dwie linijki, pokazuje się w banerze).",
+  "pub_date": "2026-09-01T12:00:00Z",
+
+  "platforms": {
+    "windows-x86_64": {
+      "signature": "<zawartosc pliku .sig wygenerowanego przez `npm run build` w _packaging/tauri>",
+      "url": "https://github.com/Grypa-JJ/medstudy/releases/download/atlas-v0.2.0/Atlas.anatomiczny.3D_0.2.0_x64-setup.exe"
+    }
+  },
+
+  "android": {
+    "url": "https://github.com/Grypa-JJ/medstudy/releases/download/atlas-v0.2.0/atlas-0.2.0.apk"
+  },
+
+  "web": {
+    "url": "https://REPLACE-ME.r2.dev/atlas/updates/web-0.2.0.zip",
+    "sha256": "<opcjonalnie, do weryfikacji integralnosci paczki OTA>"
+  }
+}

@@ -126,6 +126,7 @@
         <div class="winbody">
           <h2>Z-Anatomy <span>· opisany, segmenty · CC BY-SA</span></h2>
           <div class="cv"><canvas id="cZA"></canvas><div class="badge" id="bZA"></div>
+            <div id="za-sel" style="display:none;position:absolute;left:8px;top:8px;max-width:70%;background:#12151bF2;border:1px solid #3a4553;border-left:3px solid #ffcf4d;border-radius:5px;padding:5px 9px;font-size:12.5px;color:#f2f5f9;line-height:1.35"></div>
             <div class="subtog"><button id="tg-seg">segmenty</button><button id="tg-pin">🔖 szpilki</button><button id="tg-lab">powierzchnie</button><button id="tg-cut">🔪 skalpel</button><button id="cut-undo" style="display:none">↶ cofnij</button><button id="cut-all" style="display:none">↺ wróć</button></div>
             <div id="skullctl" style="display:none;position:absolute;left:8px;bottom:8px;right:8px;background:#12151bdd;border:1px solid #313a47;border-radius:5px;padding:5px 8px;font-size:10.5px;color:#cdd5e0">
               <label style="display:flex;align-items:center;gap:6px;white-space:nowrap">podstawa
@@ -189,6 +190,7 @@
     <div id="loading">wczytywanie modeli…</div>
   </main>
 </div>
+<div id="lm-tip" style="position:fixed;z-index:60;pointer-events:none;display:none;background:#12151bF2;border:1px solid #3a4553;border-radius:5px;padding:3px 7px;font-size:11.5px;color:#e9edf2;max-width:220px"></div>
 
 <script type="importmap">
 { "imports": {
@@ -202,7 +204,7 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 
-const CB = '?b=' + (window.__BUILD || '77');
+const CB = '?b=' + (window.__BUILD || '81');
 const PAL = [0xd98c5f,0x6faed1,0x74c69d,0xe0b04a,0xcf7d8e,0x9d8ec9,0x8bbf5a,0x64b6ac,0xe08a6b,0x7fa8d9,0xbf9b56,0xcf9dc9,0x9ab04a,0x5fae9d];
 const sanitize = n => n.replace(/\s/g,'_').replace(/[.:\/\[\]]/g,'');
 const enName = n => (n||'').replace(/\.j$/,'').replace(/\.(l|r)$/,(_,s)=>' ('+(s=='l'?'left':'right')+')');
@@ -275,7 +277,7 @@ function makeViewer(canvasId, infoId, badgeId){
     raycaster.setFromCamera(ptr, camera);
     const pool = [...(V.meshesActive || V.meshes).filter(m=>m.visible), ...(V.extraPickable || [])];
     const hit = raycaster.intersectObjects(pool, false)[0];
-    if (hit && V.onpick) V.onpick(hit.object);
+    if (V.onpick) V.onpick(hit ? hit.object : null);
   });
   (function loop(){
     requestAnimationFrame(loop);
@@ -320,9 +322,69 @@ let current = null, sync = false;
 let showSeg = false, showLab = false, showPin = false, showVess = false;
 let selectedZA = null, selectedPin = null;
 let selMeshName = null, selPinKey = null, linkName = null;   // zaznaczenie: bryła / szpilka / powiązana struktura
-const GOLD = 0xffcf4d, PINGOLD = 0xffd24d;
-function clearSel(){ selMeshName = selPinKey = linkName = null; selectedZA = null; }
+const GOLD = 0xffcf4d, PINGOLD = 0xffe066;
+function clearSel(){ selMeshName = selPinKey = linkName = null; selectedZA = null; undim(); if (typeof setSelLabel==='function') setSelLabel(null); }
 function isGold(name){ return name && (name === selMeshName || name === linkName); }
+
+// ---- przygaszanie tła (wzorzec z atlas v3): pokaż kontekst, wyróżnij wybraną strukturę ----
+const DIM_OP = 0.13;
+let _dimmed = [];
+function undim(){
+  for (const m of _dimmed){ if (m.userData._po!==undefined){ m.material.opacity = m.userData._po; m.material.transparent = m.userData._pt; } }
+  _dimmed = [];
+}
+function dimOthersExcept(keepName){
+  undim();
+  if (!keepName) return;
+  for (const m of (ZA.meshesActive || ZA.meshes)){
+    if (!m.visible || m.name===keepName) continue;
+    m.userData._po = m.material.opacity; m.userData._pt = m.material.transparent;
+    m.material.transparent = true; m.material.opacity = Math.min(m.material.opacity, DIM_OP);
+    _dimmed.push(m);
+  }
+}
+function setSelLabel(html){
+  const el = document.getElementById('za-sel');
+  if (!el) return;
+  if (!html){ el.style.display = 'none'; el.innerHTML = ''; return; }
+  el.innerHTML = html; el.style.display = 'block';
+}
+// ---- szpilki jako sprite-kropki z obwódką (wzorzec z atlas v3) ----------
+const _dotTex = {};
+function dotTex(hex, ring){
+  const k = hex + (ring ? 'R' : '');
+  if (_dotTex[k]) return _dotTex[k];
+  const S = 64, cv = document.createElement('canvas'); cv.width = cv.height = S;
+  const g = cv.getContext('2d'), col = '#' + (hex>>>0).toString(16).padStart(6,'0');
+  if (ring){ g.strokeStyle = '#ffe066'; g.lineWidth = 7; g.beginPath(); g.arc(S/2,S/2,26,0,7); g.stroke(); }
+  g.fillStyle = col; g.beginPath(); g.arc(S/2,S/2, ring?13:17, 0, 7); g.fill();
+  g.strokeStyle = 'rgba(0,0,0,.55)'; g.lineWidth = 3; g.beginPath(); g.arc(S/2,S/2, ring?13:17, 0, 7); g.stroke();
+  const t = new THREE.CanvasTexture(cv); t.anisotropy = 4; _dotTex[k] = t; return t;
+}
+function dotMat(hex, approx, ring){
+  return new THREE.SpriteMaterial({ map: dotTex(hex, ring), transparent:true,
+    opacity: approx ? 0.62 : 1, depthWrite:false, sizeAttenuation:true });
+}
+function makeDot(hex, r, approx){
+  const spr = new THREE.Sprite(dotMat(hex, approx, false));
+  spr.scale.setScalar(r); spr.renderOrder = 999;
+  spr.userData._r = r; spr.userData._hex = hex; spr.userData._approx = approx;
+  return spr;
+}
+function scalePins(){
+  PIN_GRP.children.forEach(pin=>{
+    const on = pin.userData.part?.key === selPinKey;
+    const hov = pin === _hovPin;
+    const r = pin.userData._r || pin.scale.x;
+    pin.userData._r = r;
+    pin.scale.setScalar(on ? r * 1.8 : (hov ? r * 1.35 : r));
+    if (pin.isSprite){
+      pin.material = on ? dotMat(0xffe066, false, true)
+                   : dotMat(pin.userData._hex, pin.userData._approx, hov);
+    } else pin.material.depthTest = false;
+  });
+}
+let _hovPin = null;
 function markListSel(){
   document.querySelectorAll('#iZA .lst span').forEach(s=>{
     const on = (s.dataset.k && (s.dataset.k===selMeshName || s.dataset.k===selPinKey || s.dataset.k===linkName))
@@ -348,11 +410,9 @@ function pinsFor(organ){
     const mesh = ZA.meshes.find(m=>m.name===jp.key);
     if (!mesh) continue;
     const c = new THREE.Box3().setFromObject(mesh).getCenter(new THREE.Vector3());
-    const pin = new THREE.Mesh(_pinGeo, new THREE.MeshBasicMaterial({ color:0x2ec5ff }));
-    pin.scale.setScalar(r);
+    const pin = makeDot(0x2ec5ff, r * 1.6, false);
     pin.position.copy(c);
     pin.userData.part = jp;
-    pin.renderOrder = 999;
     pins.push(pin);
   }
   PIN_CACHE.set(organ, pins);
@@ -361,8 +421,9 @@ function pinsFor(organ){
 function showPinsForOrgan(organ){
   PIN_GRP.clear(); selectedPin = null;
   if (!organ){ ZA.extraPickable = []; return; }
-  pinsFor(organ).forEach(p=>{ p.material.color.setHex(0x2ec5ff); PIN_GRP.add(p); });
+  pinsFor(organ).forEach(p=> PIN_GRP.add(p));
   ZA.extraPickable = PIN_GRP.children;
+  scalePins();
 }
 
 function colorFor(mesh, byMap, organ, idxMap){
@@ -438,7 +499,11 @@ function renderZA(){
   });
 }
 function pickZA(m){
-  if (!m) return;
+  if (!m){   // klik w pustkę = odznacz
+    if (selMeshName || selPinKey){ clearSel(); ZA.suppressFrame = true; renderZA(); scalePins(); setSelLabel(null);
+      const el = document.getElementById('zpk'); if (el) el.textContent = 'klik w strukturę…'; }
+    return;
+  }
   // skalpel: klik chowa strukturę (odsłania to, co pod spodem)
   if (cutMode && m && !(m.userData && m.userData.part)){
     m.visible = false; cutStack.push(m);
@@ -455,17 +520,23 @@ function pickZA(m){
     // struktura powiązana ze szpilką: kość czaszki (p.bone) albo własna powierzchnia .j (p.key)
     linkName = p.bone || (ZA.meshes.some(x=>x.name===p.key) ? p.key : null);
     ZA.suppressFrame = true; renderZA();
-    if (el) el.innerHTML = `🔖 ${plShort(p)} <span class="en">— ${enName(p.name)}${p.approx?' · pozycja przybliżona':''}</span>`
-      + (linkName ? ` <span class="en" style="color:#ffd24d">▸ ${plShort(ZA_BY.get(linkName)||ZA.extraBy?.get(linkName)) || enName(linkName)}</span>` : '');
-    markListSel();
+    const linkPl = linkName ? (plShort(ZA_BY.get(linkName)||ZA.extraBy?.get(linkName)) || enName(linkName)) : '';
+    const body = `🔖 <b>${plShort(p)}</b>${p.approx?' <span style="color:#8a94a4">○ pozycja przybliżona</span>':''}`
+      + `<br><span style="color:#9aa4b4;font-size:11px">${enName(p.name)}</span>`
+      + (linkPl ? `<br><span style="color:#ffd24d;font-size:11.5px">▸ ${linkPl}</span>` : '');
+    setSelLabel(body);
+    if (el) el.innerHTML = body;
+    dimOthersExcept(linkName); scalePins(); markListSel();
     return;
   }
   // ---- bryła ----
   selPinKey = null; linkName = null; selMeshName = m.name; selectedZA = m;
   ZA.suppressFrame = true; renderZA();
   const p = ZA_BY.get(m.name) || ZA.extraBy?.get(m.name);
-  if (el) el.innerHTML = `▶ ${p?plShort(p):enName(m.name)} <span class="en">— ${enName(p?.name || p?.en || m.name)}</span>`;
-  markListSel();
+  const body = `▶ <b>${p?plShort(p):enName(m.name)}</b><br><span style="color:#9aa4b4;font-size:11px">${enName(p?.name || p?.en || m.name)}</span>`;
+  setSelLabel(body);
+  if (el) el.innerHTML = body;
+  dimOthersExcept(selMeshName); scalePins(); markListSel();
 }
 
 // narządy spoza VisceralSystem
@@ -547,14 +618,12 @@ async function renderSkull(E){
   // szpilki wg dołów czaszki (odbudowa — potem re-highlight wg selPinKey)
   if (!E._pinsBuilt){
     const box = new THREE.Box3(); E.meshes.forEach(m=> box.expandByObject(m));
-    const r = box.getSize(new THREE.Vector3()).length() * 0.010;
+    const r = box.getSize(new THREE.Vector3()).length() * 0.016;
     skullPins = [];
     E.lmData.pins.forEach((p,i)=>{
       const f = FOSSA[p.fossa] || FOSSA.med;
-      const pin = new THREE.Mesh(SKULL_PIN_GEO, new THREE.MeshBasicMaterial({ color:f.c, transparent:p.approx, opacity:p.approx?0.5:1 }));
-      pin.scale.setScalar(p.approx ? r*0.8 : r);
+      const pin = makeDot(f.c, p.approx ? r*0.82 : r, p.approx);
       pin.position.set(p.pos[0], p.pos[1], p.pos[2]);
-      pin.renderOrder = 999;
       pin.userData.part = { pl:p.pl + (p.approx?' ○':''), name:p.en, key:'skp'+i, fossa:p.fossa, approx:p.approx, bone:p.bone };
       PIN_GRP.add(pin); skullPins.push(pin);
     });
@@ -562,11 +631,8 @@ async function renderSkull(E){
   } else {
     PIN_GRP.clear(); skullPins.forEach(pin=> PIN_GRP.add(pin));
   }
-  skullPins.forEach(pin=>{
-    const pp = pin.userData.part, f = FOSSA[pp.fossa] || FOSSA.med;
-    pin.material.color.setHex(pp.key===selPinKey ? PINGOLD : f.c);
-  });
   ZA.extraPickable = PIN_GRP.children;
+  scalePins();   // ustawia materiał (kolor/obwódkę) i skalę wg selPinKey
   applySkullClip();
   // widok: sama podstawa czaszki, od góry (jak norma basalis interna)
   ZA.viewDir = new THREE.Vector3(0.05, 0.92, 0.16);
@@ -585,7 +651,7 @@ async function renderSkull(E){
   }).join('');
   ZA.info.innerHTML = `<div class="pick" id="zpk">klik w otwór / wyrostek…</div>${groups}`;
   ZA.info.querySelectorAll('span[data-i]').forEach(s=> s.onclick=()=> pickZA(skullPins[+s.dataset.i]));
-  markListSel();
+  scalePins(); markListSel();
 }
 function applySkullClip(){
   const E = ZA_EXTRA["Czaszka — podstawa"]; if (!E || !E.loaded) return;
@@ -637,6 +703,7 @@ async function renderBrain(E){
   ZA.info.innerHTML = `<div class="pick" id="zpk">skalpel: klik chowa strukturę · klik nagłówka = ukryj grupę</div>${blocks}`;
   ZA.info.querySelectorAll('.bgh').forEach(h=> h.onclick=()=>{
     const g=h.dataset.g; brainHidden.has(g)?brainHidden.delete(g):brainHidden.add(g); ZA.suppressFrame=true; renderBrain(E);
+    if (selMeshName||linkName) dimOthersExcept(selMeshName||linkName);
   });
   ZA.info.querySelectorAll('span[data-k]').forEach(s=> s.onclick=()=> pickZA(E.meshes.find(m=>m.name===s.dataset.k)));
   markListSel();
@@ -788,6 +855,7 @@ async function renderNIH(){
 function showOrgan(organ){
   current = organ; selectedZA = null;
   cutStack.length = 0; updateCutBtns();   // nowy narząd = brak cięć
+  clearSel();
   document.getElementById('sel').textContent = organ || 'cały układ trzewny';
   document.querySelectorAll('.organ').forEach(o=>o.classList.toggle('active', o.dataset.o===organ));
   document.getElementById('btn-all').classList.toggle('active', !organ);
@@ -1006,6 +1074,27 @@ document.getElementById('tg-cut').onclick = ()=>{ cutMode = !cutMode; ZA.canvas.
 document.getElementById('cut-undo').onclick = ()=>{ const m = cutStack.pop(); if (m) m.visible = true; updateCutBtns(); };
 document.getElementById('cut-all').onclick  = ()=> resetCuts();
 
+// hover na szpilce → dymek z nazwą (wzorzec z atlas v3)
+(function(){
+  const tip = document.getElementById('lm-tip'); const rc = new THREE.Raycaster(), pt = new THREE.Vector2();
+  let last = 0, hov = null;
+  ZA.canvas.addEventListener('pointermove', e=>{
+    const now = performance.now(); if (now-last < 30) return; last = now;
+    const b = ZA.canvas.getBoundingClientRect();
+    pt.x = ((e.clientX-b.left)/b.width)*2-1; pt.y = -((e.clientY-b.top)/b.height)*2+1;
+    rc.setFromCamera(pt, ZA.camera);
+    const hit = rc.intersectObjects(ZA.extraPickable || [], false)[0];
+    const o = hit ? hit.object : null;
+    if (o === hov){ if (o){ tip.style.left = e.clientX+12+'px'; tip.style.top = e.clientY+'px'; } return; }
+    hov = o; _hovPin = (o && o.userData.part) ? o : null; scalePins();
+    if (o && o.userData.part){
+      tip.textContent = plShort(o.userData.part);
+      tip.style.left = e.clientX+12+'px'; tip.style.top = e.clientY+'px'; tip.style.display = 'block';
+      ZA.canvas.style.cursor = 'pointer';
+    } else { tip.style.display = 'none'; ZA.canvas.style.cursor = ''; }
+  });
+  ZA.canvas.addEventListener('pointerleave', ()=>{ tip.style.display = 'none'; hov = null; _hovPin = null; scalePins(); });
+})();
 ZA.onpick  = pickZA;
 CT.onpick  = pickCT;
 NIH.onpick = (m)=>{};

@@ -1,0 +1,6 @@
+{
+  "version": "0.1.0",
+  "channel": "beta",
+  "update_manifest_url": "https://REPLACE-ME.r2.dev/atlas/updates/latest.json",
+  "built_at": null
+}
