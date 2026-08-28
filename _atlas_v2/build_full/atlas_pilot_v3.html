@@ -315,6 +315,7 @@
     Warstwy:
     <label><input type="checkbox" id="layer-bones" checked> Kości</label>
     <label><input type="checkbox" id="layer-muscles"> Mięśnie</label>
+    <label title="Powięzi, troczki, rozcięgna, kaletki, pochewki ścięgien, przegrody międzymięśniowe. Domyślnie wyłączone - płachty powięzi zasłaniają mięśnie."><input type="checkbox" id="layer-fascia"> Powięzi ⓘ</label>
     <label><input type="checkbox" id="layer-vessels"> Naczynia</label>
     <label><input type="checkbox" id="layer-organs"> Narządy</label>
     <label><input type="checkbox" id="layer-teeth"> Zęby</label>
@@ -322,13 +323,8 @@
     <label><input type="checkbox" id="layer-brain"> Mózg</label>
     <label><input type="checkbox" id="layer-nerves"> Nerwy</label>
     <label><input type="checkbox" id="layer-lymph"> Układ chłonny</label>
-    <label title="Przybliżona, proceduralna powłoka (nie prawdziwe dane skóry - takich danych nie ma nigdzie za darmo), tylko dla kontekstu wizualnego"><input type="checkbox" id="layer-skin"> Skóra (przybliżona) ⓘ</label>
     <label style="margin-left:14px; padding-left:14px; border-left:1px solid #555;" title="Domyślnie punkty pokazują się automatycznie po kliknięciu struktury i wejściu w jej podgląd. Zaznacz, żeby pokazać je wszystkie naraz w widoku ogólnym."><input type="checkbox" id="layer-landmarks"> Punkty orientacyjne (w widoku ogólnym)</label>
     <span id="layers-status" style="opacity:0.7; font-size:0.85em; margin-left:6px;"></span>
-    <div style="width:100%; font-size:11px; opacity:0.75; margin-top:4px;">
-        <span style="color:#3bb3ff;">●</span> punkt zweryfikowany (realna pozycja z siatki 3D)
-        &nbsp;&nbsp;<span style="color:#8a8a8a;">●</span> punkt przybliżony ⚠ (dołączony do najbliższej znanej struktury, nie zmierzony)
-    </div>
 </div>
 <div id="tools-box">
     <div class="tools-row">
@@ -361,7 +357,6 @@
     <div class="pl" id="lbl-pl"><span id="lbl-pl-text"></span><button id="lbl-speak" title="Odsłuchaj nazwę">🔊</button></div>
     <div class="en" id="lbl-en"></div>
     <div id="lbl-id" style="font-size:11px; color:#888; font-family:monospace; margin-top:2px;"></div>
-    <div id="lbl-approx-warn" style="display:none; color:#e0c040; font-size:12px; margin-top:2px;">⚠ Punkt przybliżony — dołączony do najbliższej znanej struktury, nie zmierzony geometrycznie</div>
     <button id="lbl-notes-link">📝 Notatka wykładowa</button>
     <div class="hint" id="lbl-hint">kliknij inną kość, żeby zmienić / przeciągnij, żeby obrócić</div>
     <button id="open-bone-btn" style="display:none">🔍 Otwórz tę kość</button>
@@ -402,7 +397,6 @@ import { OrbitControls } from "three/addons/controls/OrbitControls.js";
 import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { DRACOLoader } from "three/addons/loaders/DRACOLoader.js";
-import { ConvexGeometry } from "three/addons/geometries/ConvexGeometry.js";
 
 const V2B = "?b=" + Date.now();
 // Atlas v3: geometria pakowana po JEDNYM pliku .glb (Draco) na warstwe zamiast
@@ -417,7 +411,7 @@ const _isLocal = _assetsParam ? _assetsParam === "local"
        || location.protocol === "file:" || !!window.__TAURI__ || !!window.Capacitor);
 const GLB_BASE = _isLocal ? "../dist/" : R2_ATLAS_BASE;
 const KIND_TO_GLB = {
-    bone: "bones.glb", muscle: "muscles.glb", vessel: "vessels.glb",
+    bone: "bones.glb", muscle: "muscles.glb", fascia: "fascia.glb", vessel: "vessels.glb",
     organ: "organs.glb", tooth: "teeth.glb", connective: "connective.glb",
     brain: "brain.glb", nerve: "nerves.glb", lymph: "lymph.glb",
 };
@@ -517,6 +511,7 @@ const VEIN_COLOR = 0x2255cc;
 const ORGAN_COLOR = 0xbb7755;
 const TOOTH_COLOR = 0xf0ead6;
 const CONNECTIVE_COLOR = 0xdddd88;
+const FASCIA_COLOR = 0xe8e2d0; // powięź - biaława tkanka łączna
 const BRAIN_COLOR = 0xd8a0a8;
 const NERVE_COLOR = 0xf5d020;
 const LYMPH_COLOR = 0x66cc99;
@@ -811,10 +806,10 @@ let selectedMesh = null;
 const group = new THREE.Group();
 scene.add(group);
 
-const KIND_LABEL_PL = { bone: "kość", muscle: "mięsień", vessel: "naczynie", organ: "narząd", tooth: "ząb", connective: "tkanka łączna", brain: "mózg", nerve: "nerw", lymph: "chłonny" };
+const KIND_LABEL_PL = { bone: "kość", muscle: "mięsień", fascia: "powięź", vessel: "naczynie", organ: "narząd", tooth: "ząb", connective: "tkanka łączna", brain: "mózg", nerve: "nerw", lymph: "chłonny" };
 const boneIdToKind = new Map();
 function layerCheckedFor(kind) {
-    const ids = { bone: "layer-bones", muscle: "layer-muscles", vessel: "layer-vessels", organ: "layer-organs", tooth: "layer-teeth", connective: "layer-connective", brain: "layer-brain", nerve: "layer-nerves", lymph: "layer-lymph" };
+    const ids = { bone: "layer-bones", muscle: "layer-muscles", fascia: "layer-fascia", vessel: "layer-vessels", organ: "layer-organs", tooth: "layer-teeth", connective: "layer-connective", brain: "layer-brain", nerve: "layer-nerves", lymph: "layer-lymph" };
     const el = document.getElementById(ids[kind]);
     return el ? el.checked : true;
 }
@@ -919,6 +914,7 @@ async function loadMeshesForKind(kind) {
     for (const { bone, obj } of loaded) {
         let baseColor = BONE_COLOR;
         if (bone.kind === "muscle") baseColor = MUSCLE_REGION_COLORS[classifyMuscleRegion(bone.en)];
+        else if (bone.kind === "fascia") baseColor = FASCIA_COLOR;
         else if (bone.kind === "vessel") baseColor = /Żył/.test(bone.pl) ? VEIN_COLOR : ARTERY_COLOR;
         else if (bone.kind === "organ") baseColor = ORGAN_COLOR;
         else if (bone.kind === "tooth") baseColor = TOOTH_COLOR;
@@ -932,6 +928,14 @@ async function loadMeshesForKind(kind) {
                 // normalne wzgledem konwencji three.js, wiec FrontSide (domyslny)
                 // czynilby czesc kosci niewidoczna/nietrafialna promieniem.
                 child.material = new THREE.MeshStandardMaterial({ color: baseColor, roughness: 0.6, metalness: 0.05, side: THREE.DoubleSide });
+                // Powięzi to cienkie płachty - domyślnie półprzezroczyste, żeby było
+                // widać co pod spodem (i mniej "krzaczyły"). Suwak przezroczystości
+                // kości ich nie dotyka.
+                if (bone.kind === "fascia") {
+                    child.material.transparent = true;
+                    child.material.opacity = 0.4;
+                    child.material.depthWrite = false;
+                }
                 child.userData.bone = bone;
                 // Kosci renderowane PIERWSZE (renderOrder=0), wszystko inne NA WIERZCHU
                 // (renderOrder=1) - bez tego przy wlaczonych kilku warstwach naraz
@@ -1020,6 +1024,13 @@ async function init() {
     } catch (e) {
         console.warn("Brak all_muscles_labeled.json - pomijam warstwe miesni:", e);
     }
+    let fasciaList = [];
+    try {
+        const fres = await fetch("all_fascia_labeled_v2.json" + V2B);
+        fasciaList = (await fres.json()).map(f => ({ ...f, kind: "fascia" }));
+    } catch (e) {
+        console.warn("Brak all_fascia_labeled.json - pomijam warstwe powiezi:", e);
+    }
     let vesselList = [];
     try {
         const vres = await fetch("all_vessels_labeled_v2.json" + V2B);
@@ -1069,7 +1080,7 @@ async function init() {
     } catch (e) {
         console.warn("Brak all_lymph_labeled.json - pomijam warstwe ukladu chlonnego:", e);
     }
-    bones = boneList.concat(muscleList, vesselList, organList, toothList, connectiveList, brainList, nerveList, lymphList);
+    bones = boneList.concat(muscleList, fasciaList, vesselList, organList, toothList, connectiveList, brainList, nerveList, lymphList);
     for (const b of bones) boneIdToKind.set(b.id, b.kind);
 
     const box = new THREE.Box3();
@@ -1263,7 +1274,6 @@ async function openBone(boneId) {
                     document.getElementById("lbl-pl-text").textContent = lm.pl;
                     document.getElementById("lbl-en").textContent = lm.en;
                     document.getElementById("lbl-id").textContent = "ID: " + lm.boneId + " (punkt)";
-                    const w = document.getElementById("lbl-approx-warn"); if (w) w.style.display = lm.approx ? "block" : "none";
                     const lb = document.getElementById("label-box"); if (lb) lb.style.display = "block";
                 }
                 showNotesButton(document.getElementById("sb-notes-link"), LANDMARK_NOTE_INDEX.get(lm.boneId + "|" + lm.pl), { kind: "bone", pl: lm.pl, en: lm.en });
@@ -1279,6 +1289,7 @@ function closeBone() {
     const layerChecked = {
         bone: document.getElementById("layer-bones").checked,
         muscle: document.getElementById("layer-muscles").checked,
+        fascia: document.getElementById("layer-fascia").checked,
         vessel: document.getElementById("layer-vessels").checked,
         organ: document.getElementById("layer-organs").checked,
         tooth: document.getElementById("layer-teeth").checked,
@@ -1426,7 +1437,11 @@ transparencySlider.addEventListener("input", () => {
     const pct = Number(transparencySlider.value);
     transparencyVal.textContent = pct + "%";
     const opacity = pct / 100;
-    for (const [, obj] of boneObjById) {
+    // TYLKO kości - suwak nazywa się "Przezroczystość kości". boneObjById trzyma
+    // WSZYSTKIE struktury (myląca nazwa), więc bez filtra po kind suwak robił
+    // przezroczysty cały model.
+    for (const [id, obj] of boneObjById) {
+        if (boneIdToKind.get(id) !== "bone") continue;
         obj.traverse(child => {
             if (child.isMesh) {
                 child.material.transparent = opacity < 1;
@@ -1471,7 +1486,7 @@ let userOverrodeBoneOpacity = false;
 transparencySlider.addEventListener("pointerdown", () => { userOverrodeBoneOpacity = true; });
 function updateBoneGhosting() {
     if (userOverrodeBoneOpacity) return;
-    const otherLayerOn = ["muscle", "vessel", "organ", "connective", "brain", "nerve", "lymph"].some(k => layerCheckedFor(k));
+    const otherLayerOn = ["muscle", "fascia", "vessel", "organ", "connective", "brain", "nerve", "lymph"].some(k => layerCheckedFor(k));
     const boneOn = layerCheckedFor("bone");
     const opacity = (boneOn && otherLayerOn) ? 0.35 : 1;
     for (const b of bones) {
@@ -1491,6 +1506,7 @@ function updateBoneGhosting() {
 }
 document.getElementById("layer-bones").addEventListener("change", (e) => setLayerVisible("bone", e.target.checked, e.target));
 document.getElementById("layer-muscles").addEventListener("change", (e) => setLayerVisible("muscle", e.target.checked, e.target));
+document.getElementById("layer-fascia").addEventListener("change", (e) => setLayerVisible("fascia", e.target.checked, e.target));
 document.getElementById("layer-vessels").addEventListener("change", (e) => setLayerVisible("vessel", e.target.checked, e.target));
 document.getElementById("layer-organs").addEventListener("change", (e) => setLayerVisible("organ", e.target.checked, e.target));
 document.getElementById("layer-teeth").addEventListener("change", (e) => setLayerVisible("tooth", e.target.checked, e.target));
@@ -1504,54 +1520,6 @@ document.getElementById("layer-landmarks").addEventListener("change", (e) => {
         for (const sphere of landmarkMeshes) sphere.visible = on && (sphere.userData.landmark.boneId === isolatedBoneId);
     } else {
         for (const sphere of landmarkMeshes) sphere.visible = on && layerCheckedFor(boneIdToKind.get(sphere.userData.landmark.boneId));
-    }
-});
-
-// "Skora" - NIE prawdziwe dane (takich nie ma nigdzie za darmo, sprawdzone),
-// tylko proceduralna otoczka wypukla (convex hull) po probce wierzcholkow
-// kosci+miesni, pol-przezroczysta, czysto dla wizualnego kontekstu "to jest
-// cialo" - technika z esma-dev-studio/anatomy-3d-viewer (przyblizona powloka
-// zamiast brakujacych danych skory).
-let skinMesh = null;
-async function buildSkinShell() {
-    if (skinMesh) { skinMesh.visible = true; return; }
-    if (!loadedKinds.has("muscle")) await ensureKindLoaded("muscle");
-    const points = [];
-    for (const b of bones) {
-        if (b.kind !== "bone" && b.kind !== "muscle") continue;
-        const obj = boneObjById.get(b.id);
-        if (!obj) continue;
-        obj.traverse(child => {
-            if (!child.isMesh) return;
-            const pos = child.geometry.attributes.position;
-            if (!pos) return;
-            const step = Math.max(1, Math.floor(pos.count / 30));
-            for (let i = 0; i < pos.count; i += step) {
-                points.push(new THREE.Vector3(pos.getX(i), pos.getY(i), pos.getZ(i)));
-            }
-        });
-    }
-    if (points.length < 4) return;
-    const geometry = new ConvexGeometry(points);
-    const material = new THREE.MeshStandardMaterial({
-        color: 0xd9a577, roughness: 0.75, metalness: 0.0,
-        transparent: true, opacity: 0.16, depthWrite: false,
-        side: THREE.DoubleSide,
-    });
-    skinMesh = new THREE.Mesh(geometry, material);
-    skinMesh.renderOrder = 2;
-    group.add(skinMesh);
-}
-document.getElementById("layer-skin").addEventListener("change", async (e) => {
-    if (e.target.checked) {
-        e.target.disabled = true;
-        const statusEl = document.getElementById("layers-status");
-        if (statusEl) statusEl.textContent = "budowanie powłoki…";
-        await buildSkinShell();
-        if (statusEl) statusEl.textContent = "";
-        e.target.disabled = false;
-    } else if (skinMesh) {
-        skinMesh.visible = false;
     }
 });
 
@@ -1877,6 +1845,7 @@ const pointer = new THREE.Vector2();
 function baseColorFor(bone) {
     if (!bone) return BONE_COLOR;
     if (bone.kind === "muscle") return MUSCLE_REGION_COLORS[classifyMuscleRegion(bone.en)];
+    if (bone.kind === "fascia") return FASCIA_COLOR;
     if (bone.kind === "vessel") return /Żył/.test(bone.pl) ? VEIN_COLOR : ARTERY_COLOR;
     if (bone.kind === "organ") return ORGAN_COLOR;
     if (bone.kind === "tooth") return TOOTH_COLOR;
@@ -2035,7 +2004,6 @@ renderer.domElement.addEventListener("click", (event) => {
         document.getElementById("lbl-pl-text").textContent = lm.pl;
         document.getElementById("lbl-en").textContent = lm.en;
         document.getElementById("lbl-id").textContent = "ID: " + lm.boneId + " (punkt)";
-        document.getElementById("lbl-approx-warn").style.display = lm.approx ? "block" : "none";
         currentSpeakName = lm.pl;
         openBtn.style.display = "none";
         document.getElementById("label-box").style.display = "block";
@@ -2049,7 +2017,6 @@ renderer.domElement.addEventListener("click", (event) => {
         document.getElementById("lbl-pl-text").textContent = bone.pl;
         document.getElementById("lbl-en").textContent = bone.en;
         document.getElementById("lbl-id").textContent = "ID: " + bone.id;
-        document.getElementById("lbl-approx-warn").style.display = "none";
         currentSpeakName = bone.pl;
         showNotesButton(document.getElementById("lbl-notes-link"), MESH_NOTE_INDEX.get(bone.id), bone);
         if (isolatedBoneId === null) dimOthersExcept(bone.id);
@@ -2240,7 +2207,7 @@ const KOLOKWIUM_META = {
     IV:  { title: "Kolokwium IV — mózg",                                         layers: ["brain", "vessel", "nerve", "organ", "connective"] },
 };
 const ALL_LAYER_KINDS = ["bone", "muscle", "vessel", "organ", "tooth", "connective", "brain", "nerve", "lymph"];
-const LAYER_CHECKBOX_ID = { bone: "layer-bones", muscle: "layer-muscles", vessel: "layer-vessels", organ: "layer-organs", tooth: "layer-teeth", connective: "layer-connective", brain: "layer-brain", nerve: "layer-nerves", lymph: "layer-lymph" };
+const LAYER_CHECKBOX_ID = { bone: "layer-bones", muscle: "layer-muscles", fascia: "layer-fascia", vessel: "layer-vessels", organ: "layer-organs", tooth: "layer-teeth", connective: "layer-connective", brain: "layer-brain", nerve: "layer-nerves", lymph: "layer-lymph" };
 
 let MESH_NOTE_INDEX = new Map();
 let LANDMARK_NOTE_INDEX = new Map();

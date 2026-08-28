@@ -188,12 +188,6 @@
  {
   "kolokwium": "I",
   "linkType": "landmark",
-  "text": "Wyrostek dziobiasty",
-  "matchedPl": "Wyrostek dziobiasty"
- },
- {
-  "kolokwium": "I",
-  "linkType": "landmark",
   "text": "Bruzda tętnicy podobojczykowej",
   "matchedPl": "Bruzda tętnicy podobojczykowej (prawe)"
  },
@@ -490,12 +484,6 @@
   "linkType": "landmark",
   "text": "Powierzchnia uchowata kości biodrowej",
   "matchedPl": "Powierzchnia uchowata"
- },
- {
-  "kolokwium": "I",
-  "linkType": "landmark",
-  "text": "Wcięcie szyjne mostka",
-  "matchedPl": "Wcięcie szyjne"
  },
  {
   "kolokwium": "II",
@@ -826,12 +814,6 @@
   "linkType": "landmark",
   "text": "Dół przysieczny",
   "matchedPl": "Dół przysieczny"
- },
- {
-  "kolokwium": "III",
-  "linkType": "landmark",
-  "text": "Wyrostek jarzmowy kości skroniowej",
-  "matchedPl": "Wyrostek jarzmowy kości skroniowej"
  },
  {
   "kolokwium": "III",

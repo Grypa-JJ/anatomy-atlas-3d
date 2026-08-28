@@ -8,7 +8,8 @@ DIST  = r"C:\Users\Jakub\Desktop\Prod\projekt w budowie\_atlas_v2\dist"
 os.makedirs(DIST, exist_ok=True)
 
 KMAP = {"bones":"all_bones_labeled_v2.json", "teeth":"all_teeth_labeled_v2.json",
-        "muscles":"all_muscles_labeled_v2.json", "connective":"all_connective_labeled_v2.json",
+        "muscles":"all_muscles_labeled_v2.json", "fascia":"all_fascia_labeled_v2.json",
+        "connective":"all_connective_labeled_v2.json",
         "vessels":"all_vessels_labeled_v2.json", "nerves":"all_nerves_labeled_v2.json",
         "brain":"all_brain_labeled_v2.json", "organs":"all_organs_labeled_v2.json",
         "lymph":"all_lymph_labeled_v2.json"}

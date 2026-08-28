@@ -236,6 +236,87 @@ POS = {  # positional / directional adjectives  (masc / fem / neut approximation
     "apicoposterior":("szczytowo-tylny","szczytowo-tylna","szczytowo-tylne"),
     "sagittal":("strzałkowy","strzałkowa","strzałkowe"), "coronal":("czołowy","czołowa","czołowe"),
 }
+# opisowe przymiotniki anatomiczne (nie kierunkowe) - żeby composer "<X> of <bone>"
+# NIE zjadał "zygomatic"/"styloid"/"mastoid" itd. (m / ż / n).
+DESC = {
+    "zygomatic":("jarzmowy","jarzmowa","jarzmowe"),
+    "mastoid":("sutkowaty","sutkowata","sutkowate"),
+    "styloid":("rylcowaty","rylcowata","rylcowate"),
+    "coronoid":("dziobiasty","dziobiasta","dziobiaste"),
+    "coracoid":("kruczy","krucza","krucze"),
+    "condylar":("kłykciowy","kłykciowa","kłykciowe"), "condyloid":("kłykciowy","kłykciowa","kłykciowe"),
+    "costal":("żebrowy","żebrowa","żebrowe"),
+    "spinous":("kolczysty","kolczysta","kolczyste"),
+    "pterygoid":("skrzydłowaty","skrzydłowata","skrzydłowate"),
+    "xiphoid":("mieczykowaty","mieczykowata","mieczykowate"),
+    "odontoid":("zębowy","zębowa","zębowe"),
+    "ethmoidal":("sitowy","sitowa","sitowe"),
+    "frontal":("czołowy","czołowa","czołowe"),
+    "nasal":("nosowy","nosowa","nosowe"),
+    "lacrimal":("łzowy","łzowa","łzowe"),
+    "palatine":("podniebienny","podniebienna","podniebienne"),
+    "alveolar":("zębodołowy","zębodołowa","zębodołowe"),
+    "mental":("bródkowy","bródkowa","bródkowe"),
+    "supraorbital":("nadoczodołowy","nadoczodołowa","nadoczodołowe"),
+    "supra-orbital":("nadoczodołowy","nadoczodołowa","nadoczodołowe"),
+    "infraorbital":("podoczodołowy","podoczodołowa","podoczodołowe"),
+    "infra-orbital":("podoczodołowy","podoczodołowa","podoczodołowe"),
+    "orbital":("oczodołowy","oczodołowa","oczodołowe"),
+    "sciatic":("kulszowy","kulszowa","kulszowe"),
+    "pubic":("łonowy","łonowa","łonowe"),
+    "iliac":("biodrowy","biodrowa","biodrowe"),
+    "ischial":("kulszowy","kulszowa","kulszowe"),
+    "deltoid":("naramienny","naramienna","naramienne"),
+    "radial":("promieniowy","promieniowa","promieniowe"),
+    "ulnar":("łokciowy","łokciowa","łokciowe"),
+    "fibular":("strzałkowy","strzałkowa","strzałkowe"), "peroneal":("strzałkowy","strzałkowa","strzałkowe"),
+    "tibial":("piszczelowy","piszczelowa","piszczelowe"),
+    "acromial":("barkowy","barkowa","barkowe"),
+    "trochlear":("bloczkowy","bloczkowa","bloczkowe"),
+    "jugular":("szyjny","szyjna","szyjne"),
+    "carotid":("szyjny","szyjna","szyjne"),
+    "petrous":("skalisty","skalista","skaliste"),
+    "tympanic":("bębenkowy","bębenkowa","bębenkowe"),
+    "glenoid":("stawowy","stawowa","stawowe"),
+    "supraspinous":("nadgrzebieniowy","nadgrzebieniowa","nadgrzebieniowe"),
+    "infraspinous":("podgrzebieniowy","podgrzebieniowa","podgrzebieniowe"),
+    "obturator":("zasłonowy","zasłonowa","zasłonowe"),
+    "olecranon":("łokciowy","łokciowa","łokciowe"),
+    "cribriform":("sitowy","sitowa","sitowe"),
+    "temporal":("skroniowy","skroniowa","skroniowe"),
+    "parietal":("ciemieniowy","ciemieniowa","ciemieniowe"),
+    "occipital":("potyliczny","potyliczna","potyliczne"),
+    "sphenoidal":("klinowy","klinowa","klinowe"),
+    "maxillary":("szczękowy","szczękowa","szczękowe"),
+    "mandibular":("żuchwowy","żuchwowa","żuchwowe"),
+    "vertebral":("kręgowy","kręgowa","kręgowe"),
+    "sacral":("krzyżowy","krzyżowa","krzyżowe"),
+    "nutrient":("odżywczy","odżywcza","odżywcze"),
+    "trigeminal":("trójdzielny","trójdzielna","trójdzielne"),
+    "digastric":("dwubrzuścowy","dwubrzuścowa","dwubrzuścowe"),
+    "hypoglossal":("podjęzykowy","podjęzykowa","podjęzykowe"),
+    "optic":("wzrokowy","wzrokowa","wzrokowe"),
+    "auditory":("słuchowy","słuchowa","słuchowe"),
+    "pharyngeal":("gardłowy","gardłowa","gardłowe"),
+    "pterygopalatine":("skrzydłowo-podniebienny","skrzydłowo-podniebienna","skrzydłowo-podniebienne"),
+    "intercondylar":("międzykłykciowy","międzykłykciowa","międzykłykciowe"),
+    "supracondylar":("nadkłykciowy","nadkłykciowa","nadkłykciowe"),
+    "epicondylar":("nadkłykciowy","nadkłykciowa","nadkłykciowe"),
+    "gluteal":("pośladkowy","pośladkowa","pośladkowe"),
+    "pectineal":("grzebieniowy","grzebieniowa","grzebieniowe"),
+    "soleal":("płaszczkowaty","płaszczkowata","płaszczkowate"),
+    "malleolar":("kostkowy","kostkowa","kostkowe"),
+    "pyramidal":("piramidowy","piramidowa","piramidowe"),
+    "uncinate":("haczykowaty","haczykowata","haczykowate"),
+    "clinoid":("pochyły","pochyła","pochyłe"),
+    "pterion":("skrzydłowy","skrzydłowa","skrzydłowe"),
+    "genial":("bródkowy","bródkowa","bródkowe"),
+    "cochlear":("ślimakowy","ślimakowa","ślimakowe"),
+    "vestibular":("przedsionkowy","przedsionkowa","przedsionkowe"),
+    "semilunar":("półksiężycowaty","półksiężycowata","półksiężycowate"),
+    "trapezoid":("czworoboczny","czworoboczna","czworoboczne"),
+    "quadrate":("czworoboczny","czworoboczna","czworoboczne"),
+}
 # head noun -> (PL, gender index 0=m,1=f,2=n)
 HEAD = {
     "sulcus":("Bruzda",1), "gyrus":("Zakręt",0), "lobule":("Płacik",0), "lobe":("Płat",0),
@@ -258,6 +339,11 @@ HEAD = {
     "membrane":("Błona",1), "vein":("Żyła",1), "artery":("Tętnica",1), "nerve":("Nerw",0),
     "plexus":("Splot",0), "ganglion":("Zwój",0), "duct":("Przewód",0), "canal":("Kanał",0),
     "foramen":("Otwór",0), "sinus":("Zatoka",1), "cavity":("Jama",1),
+    "trochanter":("Krętarz",0), "condyle":("Kłykieć",0), "epicondyle":("Nadkłykieć",0),
+    "malleolus":("Kostka",1), "eminence":("Wyniosłość",1), "protuberance":("Guzowatość",1),
+    "hamulus":("Haczyk",0), "cornu":("Róg",0), "promontory":("Wzgórek",0), "meatus":("Przewód",0),
+    "incisure":("Wcięcie",2), "sulci":("Bruzdy",1), "foramina":("Otwory",0), "canals":("Kanały",0),
+    "fovea":("Dołek",0), "pit":("Dołek",0), "prominence":("Wyniosłość",1),
 }
 GEN_OF = {   # genitive of common bone / structure names for "<feature> of <X>"
     "humerus":"kości ramiennej","scapula":"łopatki","femur":"kości udowej",
@@ -269,6 +355,11 @@ GEN_OF = {   # genitive of common bone / structure names for "<feature> of <X>"
     "occipital bone":"kości potylicznej","temporal bone":"kości skroniowej",
     "frontal bone":"kości czołowej","parietal bone":"kości ciemieniowej",
     "sphenoid bone":"kości klinowej","ethmoid bone":"kości sitowej","rib":"żebra",
+    "palatine bone":"kości podniebiennej","zygomatic bone":"kości jarzmowej",
+    "lacrimal bone":"kości łzowej","nasal bone":"kości nosowej","vomer":"lemiesza",
+    "hyoid bone":"kości gnykowej","inferior nasal concha":"małżowiny nosowej dolnej",
+    "first metatarsal bone":"kości śródstopia I","fifth metatarsal bone":"kości śródstopia V",
+    "first metacarpal bone":"kości śródręcza I","fifth metacarpal bone":"kości śródręcza V",
     "spinal cord":"rdzenia kręgowego","brain":"mózgu","cerebellum":"móżdżku","vermis":"robaka",
     "midbrain":"śródmózgowia","pons":"mostu","medulla oblongata":"rdzenia przedłużonego",
     "thalamus":"wzgórza","hypothalamus":"podwzgórza","cerebrum":"kresomózgowia",
@@ -587,11 +678,15 @@ TRACT_RE = re.compile(r'^(anterior|posterior|lateral|medial|superior|inferior)?\
     r'tectal|bulbar|rubral|nuclear|reticular)?\s*(tract|fasciculus)$')
 
 def _adj(word, gender):
-    t = POS.get(word)
+    t = POS.get(word) or DESC.get(word)
     return t[gender] if t else word
 
 # --- second-wave manual dictionary (standard PL for long-tail Z-Anatomy names) ---
 OVR2 = {
+ # mastoid: wyrostek jest "sutkowaty", ale kąt/brzeg/otwór "sutkowy"
+ "mastoid angle of parietal bone":"Kąt sutkowy kości ciemieniowej",
+ "mastoid angle":"Kąt sutkowy","mastoid foramen":"Otwór sutkowy",
+ "mastoid fontanelle":"Ciemiączko sutkowe","mastoid canaliculus":"Kanalik sutkowy",
  # pelvis / hip bone
  "iliac crest":"Grzebień biodrowy","iliac tubercle":"Guzek biodrowy","iliac fossa":"Dół biodrowy",
  "iliopubic eminence":"Wyniosłość biodrowo-łonowa","pubic tubercle":"Guzek łonowy",
@@ -1098,7 +1193,9 @@ def translate(en):
         toks = left.split()
         if toks and toks[-1] in HEAD:
             headpl, g = HEAD[toks[-1]]
-            adjs = " ".join(_adj(t, g) for t in toks[:-1] if t in POS)
+            # tłumacz przymiotniki kierunkowe (POS) ORAZ opisowe anatomiczne (DESC);
+            # nieznane pomiń (stare zachowanie - lepszy niepełny PL niż angielski)
+            adjs = " ".join(_adj(t, g) for t in toks[:-1] if t in POS or t in DESC)
             gen = GEN_OF.get(tail) or MUSCLE_GEN.get(tail)
             if gen is None and tail in EN2PL:
                 gen = EN2PL[tail].lower()

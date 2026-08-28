@@ -111,6 +111,15 @@
  },
  {
   "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Wyrostek dziobiasty",
+  "linkType": "landmark",
+  "boneId": "ulna_l",
+  "matchedPl": "Wyrostek dziobiasty kości łokciowej"
+ },
+ {
+  "kolokwium": "I",
   "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
   "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
   "text": "Dół krętarzowy",
@@ -578,7 +587,7 @@
   "noteCategory": "Mięśnie — kończyna dolna",
   "text": "Pasmo biodrowo-piszczelowe",
   "linkType": "mesh",
-  "kind": "muscle",
+  "kind": "fascia",
   "id": "iliotibial_tract_r",
   "matchedPl": "Pasmo biodrowo-piszczelowe"
  },
@@ -2284,8 +2293,8 @@
   "noteCategory": "Kości, stawy, więzadła — kończyna górna",
   "text": "Nadkłykieć przyśrodkowy kości ramiennej",
   "linkType": "landmark",
-  "boneId": "femur_l",
-  "matchedPl": "Nadkłykieć przyśrodkowy kości udowej"
+  "boneId": "humerus_l",
+  "matchedPl": "Nadkłykieć przyśrodkowy kości ramiennej"
  },
  {
   "kolokwium": "I",
@@ -2295,6 +2304,15 @@
   "linkType": "landmark",
   "boneId": "scapula_l",
   "matchedPl": "Wyrostek kruczy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "noteCategory": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "text": "Wcięcie szyjne mostka",
+  "linkType": "landmark",
+  "boneId": "occipital_bone",
+  "matchedPl": "Wcięcie szyjne kości potylicznej"
  },
  {
   "kolokwium": "I",
@@ -2767,6 +2785,15 @@
   "kind": "brain",
   "id": "declive",
   "matchedPl": "Stok (robak)"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Wyrostek jarzmowy kości skroniowej",
+  "linkType": "landmark",
+  "boneId": "frontal_bone",
+  "matchedPl": "Wyrostek jarzmowy kości czołowej"
  },
  {
   "kolokwium": "III",

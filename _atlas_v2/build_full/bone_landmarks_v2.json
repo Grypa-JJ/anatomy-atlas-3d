@@ -696,30 +696,6 @@
   "src": "feature"
  },
  {
-  "boneId": "antebrachial_fascia_r",
-  "en": "Deep part of posterior compartment of forearm",
-  "pl": "Deep part of posterior compartment of forearm",
-  "pos": [
-   -288.29,
-   19.89,
-   1045.18
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Deep part of posterior compartment of leg",
-  "pl": "Deep part of posterior compartment of leg",
-  "pos": [
-   -138.47,
-   53.48,
-   243.33
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "deltoid_fascia_r",
   "en": "Deltoid muscle",
   "pl": "Mięsień naramienny",
@@ -789,18 +765,6 @@
    1548.14
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "epicranial_aponeurosis_r",
-  "en": "Denticulate suture",
-  "pl": "Denticulate suture",
-  "pos": [
-   -14.86,
-   104.14,
-   1641.24
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -888,18 +852,6 @@
   "src": "feature"
  },
  {
-  "boneId": "transversalis_fascia",
-  "en": "Distal radio-ulnar joint",
-  "pl": "Distal radio-ulnar joint",
-  "pos": [
-   147.36,
-   -46.34,
-   926.16
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "lower_first_molar_tooth_l",
   "en": "Distal surface of tooth",
   "pl": "Powierzchnia dalsza zęba",
@@ -921,18 +873,6 @@
    1529.9
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_r",
-  "en": "Dorsal carpal tendon sheaths",
-  "pl": "Dorsal carpal tendon sheaths",
-  "pos": [
-   -318.05,
-   -36.59,
-   832.18
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -1020,18 +960,6 @@
   "src": "feature"
  },
  {
-  "boneId": "inferior_epigastric_artery_r",
-  "en": "Endo-abdominal fascia",
-  "pl": "Endo-abdominal fascia",
-  "pos": [
-   -33.0,
-   -84.9,
-   981.9
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "temporoparietalis_muscle_r",
   "en": "Ependyma",
   "pl": "Wyściółka",
@@ -1041,18 +969,6 @@
    1620.8
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "insular_branches_of_middle_cerebral_artery_m2_segment",
-  "en": "Epicranius muscle",
-  "pl": "Epicranius muscle",
-  "pos": [
-   57.58,
-   -11.14,
-   1626.72
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -1101,18 +1017,6 @@
    922.69
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "nasalis_muscle",
-  "en": "External nose",
-  "pl": "External nose",
-  "pos": [
-   -11.51,
-   -93.67,
-   1573.56
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -1284,66 +1188,6 @@
   "src": "feature"
  },
  {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Fasciae of abdomen",
-  "pl": "Fasciae of abdomen",
-  "pos": [
-   -35.34,
-   -115.8,
-   993.31
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "facial_nerve_vii_r",
-  "en": "Fasciae of head",
-  "pl": "Fasciae of head",
-  "pos": [
-   -74.09,
-   -30.24,
-   1577.97
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "fascia_lata_r",
-  "en": "Fasciae of lower limb",
-  "pl": "Fasciae of lower limb",
-  "pos": [
-   -138.61,
-   38.29,
-   442.36
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "body_of_sternum",
-  "en": "Fasciae of thorax",
-  "pl": "Fasciae of thorax",
-  "pos": [
-   1.56,
-   -109.55,
-   1327.54
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "antebrachial_fascia_r",
-  "en": "Fasciae of upper limb",
-  "pl": "Fasciae of upper limb",
-  "pos": [
-   -273.89,
-   29.5,
-   1107.08
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "left_superior_intercostal_vein",
   "en": "Fasciae",
   "pl": "Powięzie",
@@ -1485,18 +1329,6 @@
    96.85
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "superficial_fibular_nerve_r",
-  "en": "Fibular tarsal tendon sheaths",
-  "pl": "Fibular tarsal tendon sheaths",
-  "pos": [
-   -115.4,
-   26.75,
-   100.3
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -1730,7 +1562,7 @@
  {
   "boneId": "parietal_bone_r",
   "en": "Frontal angle of parietal bone",
-  "pl": "Kąt kości ciemieniowej",
+  "pl": "Kąt czołowy kości ciemieniowej",
   "pos": [
    4.66,
    -24.71,
@@ -1742,7 +1574,7 @@
  {
   "boneId": "parietal_bone_r",
   "en": "Frontal border of parietal bone",
-  "pl": "Brzeg kości ciemieniowej",
+  "pl": "Brzeg czołowy kości ciemieniowej",
   "pos": [
    -48.54,
    -31.86,
@@ -1790,7 +1622,7 @@
  {
   "boneId": "sphenoid_bone",
   "en": "Frontal margin of greater wing",
-  "pl": "Brzeg skrzydła większego",
+  "pl": "Brzeg czołowy skrzydła większego",
   "pos": [
    45.45,
    -42.32,
@@ -1922,7 +1754,7 @@
  {
   "boneId": "scapula_l",
   "en": "Glenoid process of scapula",
-  "pl": "Wyrostek łopatki",
+  "pl": "Wyrostek stawowy łopatki",
   "pos": [
    161.58,
    44.05,
@@ -1934,7 +1766,7 @@
  {
   "boneId": "scapula_r",
   "en": "Glenoid process of scapula",
-  "pl": "Wyrostek łopatki",
+  "pl": "Wyrostek stawowy łopatki",
   "pos": [
    -158.0,
    44.05,
@@ -1958,7 +1790,7 @@
  {
   "boneId": "hip_bone_l",
   "en": "Gluteal surface of ilium",
-  "pl": "Powierzchnia talerza biodrowego",
+  "pl": "Powierzchnia pośladkowa talerza biodrowego",
   "pos": [
    98.15,
    14.71,
@@ -1970,7 +1802,7 @@
  {
   "boneId": "hip_bone_r",
   "en": "Gluteal surface of ilium",
-  "pl": "Powierzchnia talerza biodrowego",
+  "pl": "Powierzchnia pośladkowa talerza biodrowego",
   "pos": [
    -88.1,
    23.3,
@@ -2042,7 +1874,7 @@
  {
   "boneId": "hyoid_bone",
   "en": "Greater horn of hyoid bone",
-  "pl": "Róg większy kość gnykowa",
+  "pl": "Róg większy kości gnykowej",
   "pos": [
    21.87,
    -13.72,
@@ -2469,18 +2301,6 @@
    867.49
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "frontal_bone",
-  "en": "Hairs",
-  "pl": "Hairs",
-  "pos": [
-   69.75,
-   -19.67,
-   1653.65
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -3588,30 +3408,6 @@
   "src": "feature"
  },
  {
-  "boneId": "crural_fascia_r",
-  "en": "Anterior compartment of leg",
-  "pl": "Anterior compartment of leg",
-  "pos": [
-   -140.32,
-   30.56,
-   324.93
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "lateral_femoral_cutaneous_nerve_r",
-  "en": "Anterior compartment of thigh",
-  "pl": "Anterior compartment of thigh",
-  "pos": [
-   -157.17,
-   -41.76,
-   642.36
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "spleen",
   "en": "Anterior extremity of spleen",
   "pl": "Koniec przedni śledziony",
@@ -4032,18 +3828,6 @@
   "src": "feature"
  },
  {
-  "boneId": "anterior_tibial_veins_r",
-  "en": "Anterior tarsal tendon sheaths",
-  "pl": "Anterior tarsal tendon sheaths",
-  "pos": [
-   -112.34,
-   21.04,
-   143.72
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "atlas_c1",
   "en": "Anterior tubercle of atlas",
   "pl": "Guzek przedni kręgu szczytowego",
@@ -4428,18 +4212,6 @@
   "src": "feature"
  },
  {
-  "boneId": "transversalis_fascia",
-  "en": "Infrasternal angle",
-  "pl": "Infrasternal angle",
-  "pos": [
-   -3.62,
-   -99.55,
-   1193.67
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "sphenoid_bone",
   "en": "Infratemporal surface of greater wing",
   "pl": "Powierzchnia skrzydła większego",
@@ -4629,18 +4401,6 @@
    465.01
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "internal_abdominal_oblique_muscle_r",
-  "en": "Intercostal space",
-  "pl": "Intercostal space",
-  "pos": [
-   -25.2,
-   -103.2,
-   1167.3
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -4845,18 +4605,6 @@
    215.53
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "articular_capsule_of_glenohumeral_joint_r",
-  "en": "Interosseous ligament",
-  "pl": "Interosseous ligament",
-  "pos": [
-   -153.3,
-   39.3,
-   1399.8
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -5114,7 +4862,7 @@
  {
   "boneId": "occipital_bone",
   "en": "Jugular notch of occipital bone",
-  "pl": "Wcięcie kości potylicznej",
+  "pl": "Wcięcie szyjne kości potylicznej",
   "pos": [
    29.4,
    8.4,
@@ -5361,18 +5109,6 @@
    85.56
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Lateral compartment of leg",
-  "pl": "Lateral compartment of leg",
-  "pos": [
-   -146.45,
-   51.63,
-   299.39
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -6014,7 +5750,7 @@
  {
   "boneId": "hyoid_bone",
   "en": "Lesser horn of hyoid bone",
-  "pl": "Róg mniejszy kość gnykowa",
+  "pl": "Róg mniejszy kości gnykowej",
   "pos": [
    15.2,
    -32.1,
@@ -6168,18 +5904,6 @@
   "src": "feature"
  },
  {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Limbous suture",
-  "pl": "Limbous suture",
-  "pos": [
-   -69.82,
-   -22.12,
-   1658.33
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "sphenoid_bone",
   "en": "Limbus of sphenoid",
   "pl": "Rąbek klinowy",
@@ -6288,18 +6012,6 @@
   "src": "feature"
  },
  {
-  "boneId": "palpebral_part_of_orbicularis_oculi_r",
-  "en": "Lower eyelid",
-  "pl": "Lower eyelid",
-  "pos": [
-   -28.68,
-   -80.92,
-   1584.08
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "jejunum",
   "en": "Lumbar plexus",
   "pl": "Splot lędźwiowy",
@@ -6333,18 +6045,6 @@
    1038.9
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Lumbosacral symphysis",
-  "pl": "Lumbosacral symphysis",
-  "pos": [
-   -0.0,
-   83.2,
-   968.0
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -6405,18 +6105,6 @@
    909.83
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "left_subclavian_artery",
-  "en": "Lymph nodes of neck",
-  "pl": "Lymph nodes of neck",
-  "pos": [
-   75.68,
-   2.22,
-   1430.25
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -6506,7 +6194,7 @@
  {
   "boneId": "fibula_l",
   "en": "Malleolar groove of fibula",
-  "pl": "Bruzda kości strzałkowej",
+  "pl": "Bruzda kostkowa kości strzałkowej",
   "pos": [
    97.7,
    49.6,
@@ -6518,7 +6206,7 @@
  {
   "boneId": "fibula_r",
   "en": "Malleolar groove of fibula",
-  "pl": "Bruzda kości strzałkowej",
+  "pl": "Bruzda kostkowa kości strzałkowej",
   "pos": [
    -97.7,
    49.6,
@@ -6530,7 +6218,7 @@
  {
   "boneId": "tibia_l",
   "en": "Malleolar groove of tibia",
-  "pl": "Bruzda kości piszczelowej",
+  "pl": "Bruzda kostkowa kości piszczelowej",
   "pos": [
    70.63,
    62.69,
@@ -6542,7 +6230,7 @@
  {
   "boneId": "tibia_r",
   "en": "Malleolar groove of tibia",
-  "pl": "Bruzda kości piszczelowej",
+  "pl": "Bruzda kostkowa kości piszczelowej",
   "pos": [
    -70.63,
    62.69,
@@ -6590,7 +6278,7 @@
  {
   "boneId": "parietal_bone_r",
   "en": "Mastoid angle of parietal bone",
-  "pl": "Kąt kości ciemieniowej",
+  "pl": "Kąt sutkowy kości ciemieniowej",
   "pos": [
    -60.1,
    51.9,
@@ -6686,7 +6374,7 @@
  {
   "boneId": "sphenoid_bone",
   "en": "Maxillary surface of greater wing",
-  "pl": "Powierzchnia skrzydła większego",
+  "pl": "Powierzchnia szczękowa skrzydła większego",
   "pos": [
    -13.23,
    -40.72,
@@ -6849,18 +6537,6 @@
    86.55
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "vastus_lateralis_muscle_r",
-  "en": "Medial compartment of thigh",
-  "pl": "Medial compartment of thigh",
-  "pos": [
-   -138.3,
-   16.9,
-   590.0
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -7478,7 +7154,7 @@
  {
   "boneId": "frontal_bone",
   "en": "Nasal spine of frontal bone",
-  "pl": "Kolec kości czołowej",
+  "pl": "Kolec nosowy kości czołowej",
   "pos": [
    0.0,
    -82.83,
@@ -7692,18 +7368,6 @@
   "src": "feature"
  },
  {
-  "boneId": "frontal_bone",
-  "en": "Neurocranium",
-  "pl": "Neurocranium",
-  "pos": [
-   65.72,
-   -21.65,
-   1652.82
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "nasal_septal_cartilage",
   "en": "Nose",
   "pl": "Nos",
@@ -7725,18 +7389,6 @@
    1148.46
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "diaphragm",
-  "en": "Notch of cardiac apex",
-  "pl": "Notch of cardiac apex",
-  "pos": [
-   80.5,
-   -67.5,
-   1231.2
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -7874,7 +7526,7 @@
  {
   "boneId": "parietal_bone_r",
   "en": "Occipital angle of parietal bone",
-  "pl": "Kąt kości ciemieniowej",
+  "pl": "Kąt potyliczny kości ciemieniowej",
   "pos": [
    4.16,
    90.86,
@@ -7886,7 +7538,7 @@
  {
   "boneId": "parietal_bone_r",
   "en": "Occipital border of parietal bone",
-  "pl": "Brzeg kości ciemieniowej",
+  "pl": "Brzeg potyliczny kości ciemieniowej",
   "pos": [
    -46.74,
    89.4,
@@ -8138,7 +7790,7 @@
  {
   "boneId": "frontal_bone",
   "en": "Orbital surface of frontal bone",
-  "pl": "Powierzchnia kości czołowej",
+  "pl": "Powierzchnia oczodołowa kości czołowej",
   "pos": [
    -36.5,
    -53.3,
@@ -8150,7 +7802,7 @@
  {
   "boneId": "sphenoid_bone",
   "en": "Orbital surface of greater wing",
-  "pl": "Powierzchnia skrzydła większego",
+  "pl": "Powierzchnia oczodołowa skrzydła większego",
   "pos": [
    27.1,
    -45.2,
@@ -8193,18 +7845,6 @@
    1543.66
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_r",
-  "en": "Palmar carpal tendon sheaths",
-  "pl": "Palmar carpal tendon sheaths",
-  "pos": [
-   -315.82,
-   -34.66,
-   835.74
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -8342,7 +7982,7 @@
  {
   "boneId": "frontal_bone",
   "en": "Parietal margin of frontal bone",
-  "pl": "Brzeg kości czołowej",
+  "pl": "Brzeg ciemieniowy kości czołowej",
   "pos": [
    -44.42,
    -26.43,
@@ -8354,7 +7994,7 @@
  {
   "boneId": "sphenoid_bone",
   "en": "Parietal margin of greater wing",
-  "pl": "Brzeg skrzydła większego",
+  "pl": "Brzeg ciemieniowy skrzydła większego",
   "pos": [
    55.44,
    -33.11,
@@ -8618,7 +8258,7 @@
  {
   "boneId": "temporal_bone_l",
   "en": "Petrous part of temporal bone",
-  "pl": "Część kości skroniowej",
+  "pl": "Część skalista kości skroniowej",
   "pos": [
    30.1,
    9.2,
@@ -8630,37 +8270,13 @@
  {
   "boneId": "temporal_bone_r",
   "en": "Petrous part of temporal bone",
-  "pl": "Część kości skroniowej",
+  "pl": "Część skalista kości skroniowej",
   "pos": [
    -32.7,
    9.2,
    1595.6
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Phalanges of foot",
-  "pl": "Phalanges of foot",
-  "pos": [
-   -61.93,
-   -103.79,
-   17.07
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "dorsal_digital_veins_of_hand_r",
-  "en": "Phalanges of hand",
-  "pl": "Phalanges of hand",
-  "pos": [
-   -222.26,
-   -59.73,
-   749.33
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -8949,30 +8565,6 @@
    1077.44
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Posterior compartment of leg",
-  "pl": "Posterior compartment of leg",
-  "pos": [
-   -143.75,
-   64.26,
-   283.6
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "iliotibial_tract_r",
-  "en": "Posterior compartment of thigh",
-  "pl": "Posterior compartment of thigh",
-  "pos": [
-   -148.07,
-   37.65,
-   620.33
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -9741,18 +9333,6 @@
    1429.59
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "lateral_process_of_nasal_septal_cartilage",
-  "en": "Apex of nose",
-  "pl": "Apex of nose",
-  "pos": [
-   -1.17,
-   -117.47,
-   1557.53
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -10836,18 +10416,6 @@
   "src": "feature"
  },
  {
-  "boneId": "transversalis_fascia",
-  "en": "Radiocarpal joint",
-  "pl": "Radiocarpal joint",
-  "pos": [
-   146.13,
-   -46.84,
-   923.78
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "radius_l",
   "en": "Radius",
   "pl": "Kość promieniowa",
@@ -10989,18 +10557,6 @@
    1269.2
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Ribs",
-  "pl": "Ribs",
-  "pos": [
-   -151.0,
-   -18.4,
-   1247.5
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -11352,18 +10908,6 @@
   "src": "feature"
  },
  {
-  "boneId": "epicranial_aponeurosis_r",
-  "en": "Sagittal planes",
-  "pl": "Sagittal planes",
-  "pos": [
-   -2.0,
-   63.86,
-   1706.56
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "sphenoid_bone",
   "en": "Scaphoid fossa",
   "pl": "Dół łódkowaty",
@@ -11424,42 +10968,6 @@
   "src": "feature"
  },
  {
-  "boneId": "deltoid_fascia_r",
-  "en": "Scapulohumeral mucles",
-  "pl": "Scapulohumeral mucles",
-  "pos": [
-   -230.03,
-   38.83,
-   1383.98
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "mucosa_of_nasal_cavity",
-  "en": "Schindylesis",
-  "pl": "Schindylesis",
-  "pos": [
-   0.0,
-   -100.0,
-   1561.1
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Serrate suture",
-  "pl": "Serrate suture",
-  "pos": [
-   -82.75,
-   14.92,
-   1621.46
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "investing_abdominal_fascia_r",
   "en": "Small intestine",
   "pl": "Jelito cienkie",
@@ -11498,7 +11006,7 @@
  {
   "boneId": "parietal_bone_r",
   "en": "Sphenoidal angle of parietal bone",
-  "pl": "Kąt kości ciemieniowej",
+  "pl": "Kąt klinowy kości ciemieniowej",
   "pos": [
    -55.03,
    -40.7,
@@ -11534,7 +11042,7 @@
  {
   "boneId": "frontal_bone",
   "en": "Sphenoidal margin of frontal bone",
-  "pl": "Brzeg kości czołowej",
+  "pl": "Brzeg klinowy kości czołowej",
   "pos": [
    22.7,
    -38.6,
@@ -11772,18 +11280,6 @@
   "src": "feature"
  },
  {
-  "boneId": "deltoid_fascia_r",
-  "en": "Sternochondral synchondrosis of first rib",
-  "pl": "Sternochondral synchondrosis of first rib",
-  "pos": [
-   -182.38,
-   -17.01,
-   1383.04
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "pectoral_fascia_r",
   "en": "Sternum",
   "pl": "Mostek",
@@ -11798,7 +11294,7 @@
  {
   "boneId": "temporal_bone_l",
   "en": "Styloid process of temporal bone",
-  "pl": "Wyrostek kości skroniowej",
+  "pl": "Wyrostek rylcowaty kości skroniowej",
   "pos": [
    39.02,
    -1.08,
@@ -11810,7 +11306,7 @@
  {
   "boneId": "temporal_bone_r",
   "en": "Styloid process of temporal bone",
-  "pl": "Wyrostek kości skroniowej",
+  "pl": "Wyrostek rylcowaty kości skroniowej",
   "pos": [
    -39.0,
    -1.1,
@@ -11822,7 +11318,7 @@
  {
   "boneId": "third_metacarpal_bone_l",
   "en": "Styloid process of third metacarpal bone",
-  "pl": "Wyrostek kości śródręcza III",
+  "pl": "Wyrostek rylcowaty kości śródręcza III",
   "pos": [
    270.76,
    -6.63,
@@ -11834,7 +11330,7 @@
  {
   "boneId": "third_metacarpal_bone_r",
   "en": "Styloid process of third metacarpal bone",
-  "pl": "Wyrostek kości śródręcza III",
+  "pl": "Wyrostek rylcowaty kości śródręcza III",
   "pos": [
    -271.0,
    -7.18,
@@ -11961,30 +11457,6 @@
    993.98
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "antebrachial_fascia_r",
-  "en": "Superficial part of posterior compartment of forearm",
-  "pl": "Superficial part of posterior compartment of forearm",
-  "pos": [
-   -289.16,
-   27.5,
-   1057.35
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Superficial part of posterior compartment of leg",
-  "pl": "Superficial part of posterior compartment of leg",
-  "pos": [
-   -140.83,
-   66.53,
-   264.2
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -12420,18 +11892,6 @@
   "src": "feature"
  },
  {
-  "boneId": "crural_fascia_r",
-  "en": "Superior tibiofibular joint",
-  "pl": "Superior tibiofibular joint",
-  "pos": [
-   -131.17,
-   39.76,
-   407.2
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "vertebra_l3",
   "en": "Superior vertebral notch",
   "pl": "Wcięcie kręgowe górne",
@@ -12648,18 +12108,6 @@
   "src": "feature"
  },
  {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Sutures",
-  "pl": "Sutures",
-  "pos": [
-   -63.21,
-   -22.14,
-   1669.47
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "hip_bone_l",
   "en": "Symphysial surface of pubis",
   "pl": "Powierzchnia kości łonowej",
@@ -12681,78 +12129,6 @@
    848.39
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "left_testicular_vein",
-  "en": "Symphysis",
-  "pl": "Symphysis",
-  "pos": [
-   69.29,
-   -43.4,
-   869.18
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "left_superior_intercostal_vein",
-  "en": "Synchondroses",
-  "pl": "Synchondroses",
-  "pos": [
-   127.95,
-   -59.9,
-   1265.67
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "accessory_parotid_gland_r",
-  "en": "Syndesmoses",
-  "pl": "Syndesmoses",
-  "pos": [
-   -59.31,
-   -53.47,
-   1550.09
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "descending_colon",
-  "en": "Synostosis",
-  "pl": "Synostosis",
-  "pos": [
-   101.22,
-   -3.65,
-   924.84
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "great_saphenous_vein_r",
-  "en": "Synovial bursae",
-  "pl": "Synovial bursae",
-  "pos": [
-   20.91,
-   35.76,
-   459.65
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "left_testicular_vein",
-  "en": "Synovial joint",
-  "pl": "Synovial joint",
-  "pos": [
-   66.29,
-   -46.72,
-   726.01
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -12914,7 +12290,7 @@
  {
   "boneId": "frontal_bone",
   "en": "Temporal surface of frontal bone",
-  "pl": "Powierzchnia kości czołowej",
+  "pl": "Powierzchnia skroniowa kości czołowej",
   "pos": [
    -54.55,
    -52.55,
@@ -12926,7 +12302,7 @@
  {
   "boneId": "sphenoid_bone",
   "en": "Temporal surface of greater wing",
-  "pl": "Powierzchnia skrzydła większego",
+  "pl": "Powierzchnia skroniowa skrzydła większego",
   "pos": [
    -50.52,
    -37.49,
@@ -12948,18 +12324,6 @@
   "src": "feature"
  },
  {
-  "boneId": "dorsal_fascia_of_hand_r",
-  "en": "Tendon sheaths of digits of hand",
-  "pl": "Tendon sheaths of digits of hand",
-  "pos": [
-   -340.5,
-   -67.26,
-   766.3
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "anterior_tibial_veins_r",
   "en": "Tendon sheaths of lower limb",
   "pl": "Pochewka ścięgna kończyna dolna",
@@ -12969,42 +12333,6 @@
    157.25
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Tendon sheaths of toes",
-  "pl": "Tendon sheaths of toes",
-  "pos": [
-   -119.2,
-   2.98,
-   68.79
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "flexor_retinaculum_of_wrist_r",
-  "en": "Tendon sheaths of upper limb",
-  "pl": "Tendon sheaths of upper limb",
-  "pos": [
-   -299.51,
-   -19.21,
-   876.05
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "subcutaneous_bursa_of_medial_malleolus_r",
-  "en": "Tendon sheaths",
-  "pl": "Tendon sheaths",
-  "pos": [
-   -5.56,
-   32.32,
-   83.88
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -13137,18 +12465,6 @@
    416.1
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "anterior_tibial_veins_r",
-  "en": "Tibial tarsal tendon sheaths",
-  "pl": "Tibial tarsal tendon sheaths",
-  "pos": [
-   -111.29,
-   20.29,
-   136.61
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -13670,7 +12986,7 @@
  {
   "boneId": "temporal_bone_l",
   "en": "Tympanic part of temporal bone",
-  "pl": "Część kości skroniowej",
+  "pl": "Część bębenkowa kości skroniowej",
   "pos": [
    64.95,
    12.74,
@@ -13682,7 +12998,7 @@
  {
   "boneId": "temporal_bone_r",
   "en": "Tympanic part of temporal bone",
-  "pl": "Część kości skroniowej",
+  "pl": "Część bębenkowa kości skroniowej",
   "pos": [
    -61.54,
    11.28,
@@ -13790,7 +13106,7 @@
  {
   "boneId": "pancreas",
   "en": "Uncinate process of pancreas",
-  "pl": "Wyrostek trzustki",
+  "pl": "Wyrostek haczykowaty trzustki",
   "pos": [
    -11.2,
    -27.38,
@@ -13809,18 +13125,6 @@
    1507.9
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "palpebral_part_of_orbicularis_oculi_r",
-  "en": "Upper eyelid",
-  "pl": "Upper eyelid",
-  "pos": [
-   -33.06,
-   -83.16,
-   1597.95
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -13848,30 +13152,6 @@
   "src": "feature"
  },
  {
-  "boneId": "left_superior_intercostal_vein",
-  "en": "Valvular complex of heart",
-  "pl": "Valvular complex of heart",
-  "pos": [
-   118.68,
-   -11.91,
-   1346.93
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "vertebra_l3",
-  "en": "Vertebra",
-  "pl": "Vertebra",
-  "pos": [
-   -16.68,
-   -15.87,
-   1036.63
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "vertebra_l3",
   "en": "Vertebral arch",
   "pl": "Łuk kręgu",
@@ -13893,18 +13173,6 @@
    1039.46
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Vertebral column",
-  "pl": "Vertebral column",
-  "pos": [
-   -9.77,
-   123.25,
-   1294.12
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -13980,18 +13248,6 @@
   "src": "feature"
  },
  {
-  "boneId": "gingiva",
-  "en": "Viscerocranium",
-  "pl": "Viscerocranium",
-  "pos": [
-   39.09,
-   -63.95,
-   1548.63
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "frontalis_muscle_r",
   "en": "Walls of lateral ventricle",
   "pl": "Ściany komory bocznej",
@@ -14042,7 +13298,7 @@
  {
   "boneId": "sphenoid_bone",
   "en": "Zygomatic margin of greater wing",
-  "pl": "Brzeg skrzydła większego",
+  "pl": "Brzeg jarzmowy skrzydła większego",
   "pos": [
    46.22,
    -53.39,
@@ -14054,7 +13310,7 @@
  {
   "boneId": "frontal_bone",
   "en": "Zygomatic process of frontal bone",
-  "pl": "Wyrostek kości czołowej",
+  "pl": "Wyrostek jarzmowy kości czołowej",
   "pos": [
    52.73,
    -62.69,
@@ -14210,7 +13466,7 @@
  {
   "boneId": "hyoid_bone",
   "en": "Body of hyoid bone",
-  "pl": "Trzon kość gnykowa",
+  "pl": "Trzon kości gnykowej",
   "pos": [
    -6.3,
    -34.4,
@@ -14544,18 +13800,6 @@
   "src": "feature"
  },
  {
-  "boneId": "gluteus_medius_muscle_r",
-  "en": "Bony pelvis",
-  "pl": "Bony pelvis",
-  "pos": [
-   -133.8,
-   13.7,
-   912.5
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "superficial_investing_cervical_fascia_r",
   "en": "Brachial plexus",
   "pl": "Splot ramienny",
@@ -14577,42 +13821,6 @@
    1365.93
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "parotid_gland_r",
-  "en": "Bursae of head",
-  "pl": "Bursae of head",
-  "pos": [
-   -69.14,
-   -23.36,
-   1571.33
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "genicular_veins_r",
-  "en": "Bursae of lower limb",
-  "pl": "Bursae of lower limb",
-  "pos": [
-   -122.56,
-   -2.54,
-   403.95
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "antebrachial_fascia_r",
-  "en": "Bursae of upper limb",
-  "pl": "Bursae of upper limb",
-  "pos": [
-   -288.87,
-   -16.49,
-   889.84
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -14808,18 +14016,6 @@
   "src": "feature"
  },
  {
-  "boneId": "flexor_retinaculum_of_wrist_r",
-  "en": "Carpal tendon sheaths",
-  "pl": "Carpal tendon sheaths",
-  "pos": [
-   -298.18,
-   -22.13,
-   858.77
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
   "boneId": "liver",
   "en": "Caudate lobe",
   "pl": "Płat ogoniasty",
@@ -14905,18 +14101,6 @@
  },
  {
   "boneId": "platysma_r",
-  "en": "Cervical bursae",
-  "pl": "Cervical bursae",
-  "pos": [
-   -51.15,
-   -21.82,
-   1493.78
-  ],
-  "approx": true,
-  "src": "feature"
- },
- {
-  "boneId": "platysma_r",
   "en": "Cervical fasciae",
   "pl": "Powięź szyi",
   "pos": [
@@ -14985,18 +14169,6 @@
    1607.1
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "platysma_r",
-  "en": "Chin",
-  "pl": "Chin",
-  "pos": [
-   -2.49,
-   -85.14,
-   1499.45
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -15278,7 +14450,7 @@
  {
   "boneId": "ulna_l",
   "en": "Coronoid process of ulna",
-  "pl": "Wyrostek kości łokciowej",
+  "pl": "Wyrostek dziobiasty kości łokciowej",
   "pos": [
    218.98,
    21.15,
@@ -15290,25 +14462,13 @@
  {
   "boneId": "ulna_r",
   "en": "Coronoid process of ulna",
-  "pl": "Wyrostek kości łokciowej",
+  "pl": "Wyrostek dziobiasty kości łokciowej",
   "pos": [
    -219.0,
    21.15,
    1093.05
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "rectus_abdominis_muscle_r",
-  "en": "Costal arch",
-  "pl": "Costal arch",
-  "pos": [
-   -29.1,
-   -103.2,
-   1177.5
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -15362,7 +14522,7 @@
  {
   "boneId": "superior_lobe_of_right_lung",
   "en": "Costal surface of lung",
-  "pl": "Powierzchnia płuca",
+  "pl": "Powierzchnia żebrowa płuca",
   "pos": [
    -58.21,
    -66.65,
@@ -15374,7 +14534,7 @@
  {
   "boneId": "scapula_l",
   "en": "Costal surface of scapula",
-  "pl": "Powierzchnia łopatki",
+  "pl": "Powierzchnia żebrowa łopatki",
   "pos": [
    68.32,
    92.65,
@@ -15386,25 +14546,13 @@
  {
   "boneId": "scapula_r",
   "en": "Costal surface of scapula",
-  "pl": "Powierzchnia łopatki",
+  "pl": "Powierzchnia żebrowa łopatki",
   "pos": [
    -85.7,
    85.2,
    1351.63
   ],
   "approx": false,
-  "src": "feature"
- },
- {
-  "boneId": "frontal_bone",
-  "en": "Cranium",
-  "pl": "Cranium",
-  "pos": [
-   62.86,
-   -21.19,
-   1659.17
-  ],
-  "approx": true,
   "src": "feature"
  },
  {
@@ -15516,18 +14664,6 @@
   "src": "feature"
  },
  {
-  "boneId": "antebrachial_fascia_l",
-  "en": "Abdominal lymph nodes.g",
-  "pl": "Abdominal lymph nodes.g",
-  "pos": [
-   288.84,
-   0.07,
-   1069.64
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "deltoid_fascia_l",
   "en": "Acromioclavicular joint.g",
   "pl": "Staw barkowo-obojczykowy",
@@ -15564,18 +14700,6 @@
   "src": "label"
  },
  {
-  "boneId": "deltoid_fascia_r",
-  "en": "Amphiarthrosis.g",
-  "pl": "Amphiarthrosis.g",
-  "pos": [
-   -232.31,
-   8.92,
-   1430.49
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "crural_fascia_l",
   "en": "Ankle joint.g",
   "pl": "Staw skokowo-goleniowy",
@@ -15585,18 +14709,6 @@
    107.0
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_l",
-  "en": "Anterior cervical nodes.g",
-  "pl": "Anterior cervical nodes.g",
-  "pos": [
-   160.68,
-   -0.37,
-   1417.77
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -15621,54 +14733,6 @@
    1016.72
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Anterior compartment of leg.g",
-  "pl": "Anterior compartment of leg.g",
-  "pos": [
-   -157.57,
-   39.0,
-   328.97
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_r",
-  "en": "Anterior compartment of thigh.g",
-  "pl": "Anterior compartment of thigh.g",
-  "pos": [
-   -279.85,
-   -83.31,
-   691.03
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_l",
-  "en": "Anterior funiculus.g",
-  "pl": "Anterior funiculus.g",
-  "pos": [
-   12.84,
-   128.4,
-   1313.12
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_l",
-  "en": "Anterior horn of spinal cord.g",
-  "pl": "Anterior horn of spinal cord.g",
-  "pos": [
-   2.76,
-   121.93,
-   1354.63
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -15720,42 +14784,6 @@
   "src": "label"
  },
  {
-  "boneId": "crural_fascia_r",
-  "en": "Anterior tarsal tendon sheaths.g",
-  "pl": "Anterior tarsal tendon sheaths.g",
-  "pos": [
-   -136.79,
-   38.0,
-   167.3
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "major_alar_cartilage",
-  "en": "Anterior teeth.g",
-  "pl": "Anterior teeth.g",
-  "pos": [
-   -2.35,
-   -117.74,
-   1547.93
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_l",
-  "en": "Aorta.g",
-  "pl": "Aorta.g",
-  "pos": [
-   15.78,
-   -124.61,
-   1217.82
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "investing_abdominal_fascia_l",
   "en": "Aortic bifurcation.g",
   "pl": "Rozdwojenie aorty",
@@ -15792,42 +14820,6 @@
   "src": "label"
  },
  {
-  "boneId": "nasal_septal_cartilage",
-  "en": "Apex of nose",
-  "pl": "Apex of nose",
-  "pos": [
-   -0.61,
-   -119.22,
-   1559.04
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "epicranial_aponeurosis_l",
-  "en": "Arachnoid.g",
-  "pl": "Arachnoid.g",
-  "pos": [
-   51.49,
-   9.2,
-   1691.44
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_l",
-  "en": "Articular capsule.g",
-  "pl": "Articular capsule.g",
-  "pos": [
-   280.67,
-   -84.3,
-   692.06
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "incus_l",
   "en": "Articular facet for malleus",
   "pl": "Powierzchnia stawowa dla młoteczka",
@@ -15840,30 +14832,6 @@
   "src": "label"
  },
  {
-  "boneId": "dorsal_fascia_of_hand_l",
-  "en": "Articular fibrocartilage.g",
-  "pl": "Articular fibrocartilage.g",
-  "pos": [
-   289.13,
-   -85.76,
-   689.02
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "distal_phalanx_of_third_finger_of_hand_l",
-  "en": "Articular recess.g",
-  "pl": "Articular recess.g",
-  "pos": [
-   284.78,
-   -88.47,
-   684.58
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "atlas_c1",
   "en": "Atlas (C1)",
   "pl": "Kręg szczytowy (atlas)",
@@ -15873,42 +14841,6 @@
    1544.19
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_l",
-  "en": "Axillary nodes.g",
-  "pl": "Axillary nodes.g",
-  "pos": [
-   231.44,
-   17.15,
-   1372.02
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_r",
-  "en": "Ball and socket joint.g",
-  "pl": "Ball and socket joint.g",
-  "pos": [
-   -236.06,
-   3.02,
-   1401.08
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "procerus_muscle",
-  "en": "Basal forebrain.g",
-  "pl": "Basal forebrain.g",
-  "pos": [
-   -9.23,
-   -92.48,
-   1616.39
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -15960,18 +14892,6 @@
   "src": "label"
  },
  {
-  "boneId": "deltoid_fascia_r",
-  "en": "Bicondylar joint.g",
-  "pl": "Bicondylar joint.g",
-  "pos": [
-   -236.06,
-   3.02,
-   1406.48
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "incus_r",
   "en": "Body of incus",
   "pl": "Trzon kowadełka",
@@ -15996,18 +14916,6 @@
   "src": "label"
  },
  {
-  "boneId": "iliotibial_tract_r",
-  "en": "Bony pelvis.g",
-  "pl": "Bony pelvis.g",
-  "pos": [
-   -158.08,
-   14.89,
-   913.54
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "platysma_r",
   "en": "Brachial plexus.g",
   "pl": "Splot ramienny",
@@ -16020,18 +14928,6 @@
   "src": "label"
  },
  {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Brain.g",
-  "pl": "Brain.g",
-  "pos": [
-   -81.53,
-   12.87,
-   1658.09
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "temporoparietalis_muscle_l",
   "en": "Brainstem.g",
   "pl": "Pień mózgu",
@@ -16041,66 +14937,6 @@
    1608.02
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "coracobrachial_bursa_r",
-  "en": "Bronchi.g",
-  "pl": "Bronchi.g",
-  "pos": [
-   -152.85,
-   13.44,
-   1364.57
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "superficial_temporal_artery_r",
-  "en": "Bursae of head.g",
-  "pl": "Bursae of head.g",
-  "pos": [
-   -89.38,
-   -7.12,
-   1592.13
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "genicular_veins_r",
-  "en": "Bursae of lower limb.g",
-  "pl": "Bursae of lower limb.g",
-  "pos": [
-   -141.49,
-   -0.63,
-   424.76
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "flexor_retinaculum_of_wrist_r",
-  "en": "Bursae of upper limb.g",
-  "pl": "Bursae of upper limb.g",
-  "pos": [
-   -307.84,
-   -19.21,
-   881.26
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_r",
-  "en": "Carpal tendon sheaths.g",
-  "pl": "Carpal tendon sheaths.g",
-  "pos": [
-   -330.77,
-   -39.34,
-   836.64
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -16176,30 +15012,6 @@
   "src": "label"
  },
  {
-  "boneId": "temporoparietalis_muscle_l",
-  "en": "Cerebrum.g",
-  "pl": "Cerebrum.g",
-  "pos": [
-   85.27,
-   22.09,
-   1645.24
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "articular_capsule_of_acromioclavicular_joint_r",
-  "en": "Cervical bursae.g",
-  "pl": "Cervical bursae.g",
-  "pos": [
-   -154.75,
-   13.67,
-   1436.17
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "articular_capsule_of_acromioclavicular_joint_r",
   "en": "Cervical fasciae.g",
   "pl": "Powięź szyi",
@@ -16248,78 +15060,6 @@
   "src": "label"
  },
  {
-  "boneId": "platysma_l",
-  "en": "Chin",
-  "pl": "Chin",
-  "pos": [
-   -0.01,
-   -86.72,
-   1500.59
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Colon.g",
-  "pl": "Colon.g",
-  "pos": [
-   -134.72,
-   -15.51,
-   1009.35
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "crural_fascia_l",
-  "en": "Colors.st",
-  "pl": "Colors.st",
-  "pos": [
-   116.25,
-   107.47,
-   244.41
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "white_matter_of_telencephalon_l",
-  "en": "Commissural fibres of telencephalon.g",
-  "pl": "Commissural fibres of telencephalon.g",
-  "pos": [
-   4.04,
-   -21.48,
-   1661.3
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "flexor_retinaculum_of_wrist_l",
-  "en": "Common iliac nodes.g",
-  "pl": "Common iliac nodes.g",
-  "pos": [
-   300.6,
-   -9.42,
-   879.88
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_r",
-  "en": "Complex joint.g",
-  "pl": "Complex joint.g",
-  "pos": [
-   -227.59,
-   4.48,
-   1422.07
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "cornea_r",
   "en": "Corneoscleral junction",
   "pl": "Rąbek rogówki",
@@ -16356,18 +15096,6 @@
   "src": "label"
  },
  {
-  "boneId": "internal_abdominal_oblique_muscle_r",
-  "en": "Costal arch.g",
-  "pl": "Costal arch.g",
-  "pos": [
-   -13.08,
-   -103.23,
-   1180.54
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "antebrachial_fascia_r",
   "en": "Costotransverse joint.g",
   "pl": "Staw żebrowo-porzeczny",
@@ -16377,66 +15105,6 @@
    1149.97
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "epicranial_aponeurosis_l",
-  "en": "Cranial dura.g",
-  "pl": "Cranial dura.g",
-  "pos": [
-   15.29,
-   7.3,
-   1710.55
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "epicranial_aponeurosis_l",
-  "en": "Cranial pia.g",
-  "pl": "Cranial pia.g",
-  "pos": [
-   53.84,
-   9.61,
-   1687.66
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "superficial_temporal_veins_r",
-  "en": "Cranial syndesmoses.g",
-  "pl": "Cranial syndesmoses.g",
-  "pos": [
-   -91.15,
-   -10.41,
-   1613.19
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Craniosacral part of autonomic division.g",
-  "pl": "Craniosacral part of autonomic division.g",
-  "pos": [
-   -46.33,
-   143.26,
-   1272.87
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_l",
-  "en": "Cranium.g",
-  "pl": "Cranium.g",
-  "pos": [
-   84.04,
-   12.11,
-   1659.3
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -16452,30 +15120,6 @@
   "src": "label"
  },
  {
-  "boneId": "crural_fascia_l",
-  "en": "Cross-sections.st",
-  "pl": "Cross-sections.st",
-  "pos": [
-   108.81,
-   76.78,
-   4.21
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_l",
-  "en": "Deep anterior cervical nodes.g",
-  "pl": "Deep anterior cervical nodes.g",
-  "pos": [
-   160.68,
-   -0.37,
-   1416.38
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "dorsal_digital_branches_of_radial_nerve_l",
   "en": "Deep inguinal nodes.g",
   "pl": "Węzły chłonne głębokie pachwinowe",
@@ -16485,90 +15129,6 @@
    793.38
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_l",
-  "en": "Deep parotid nodes.g",
-  "pl": "Deep parotid nodes.g",
-  "pos": [
-   92.88,
-   3.64,
-   1605.08
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "antebrachial_fascia_r",
-  "en": "Deep part of anterior compartment of forearm.g",
-  "pl": "Deep part of anterior compartment of forearm.g",
-  "pos": [
-   -305.01,
-   3.6,
-   976.91
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "antebrachial_fascia_r",
-  "en": "Deep part of posterior compartment of forearm.g",
-  "pl": "Deep part of posterior compartment of forearm.g",
-  "pos": [
-   -303.74,
-   19.89,
-   1046.04
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Deep part of posterior compartment of leg.g",
-  "pl": "Deep part of posterior compartment of leg.g",
-  "pos": [
-   -153.86,
-   51.95,
-   261.44
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "superior_lateral_brachial_cutaneous_nerve_r",
-  "en": "Deltoid muscle.g",
-  "pl": "Deltoid muscle.g",
-  "pos": [
-   -239.32,
-   41.66,
-   1368.71
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "epicranial_aponeurosis_r",
-  "en": "Denticulate suture.g",
-  "pl": "Denticulate suture.g",
-  "pos": [
-   -14.86,
-   107.23,
-   1642.04
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_r",
-  "en": "Diarthrosis.g",
-  "pl": "Diarthrosis.g",
-  "pos": [
-   -232.31,
-   8.92,
-   1427.85
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -16584,78 +15144,6 @@
   "src": "label"
  },
  {
-  "boneId": "platysma_l",
-  "en": "Digastric muscle.g",
-  "pl": "Digastric muscle.g",
-  "pos": [
-   51.24,
-   -36.63,
-   1519.34
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_l",
-  "en": "Digestive canal.g",
-  "pl": "Digestive canal.g",
-  "pos": [
-   4.9,
-   121.62,
-   1246.55
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "fibular_artery_l",
-  "en": "Display.st",
-  "pl": "Display.st",
-  "pos": [
-   111.3,
-   87.47,
-   90.38
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "flexor_retinaculum_of_wrist_l",
-  "en": "Distal radio-ulnar joint.g",
-  "pl": "Distal radio-ulnar joint.g",
-  "pos": [
-   302.33,
-   -15.72,
-   865.61
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_r",
-  "en": "Dorsal carpal tendon sheaths.g",
-  "pl": "Dorsal carpal tendon sheaths.g",
-  "pos": [
-   -332.82,
-   -43.08,
-   827.12
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Ear.g",
-  "pl": "Ear.g",
-  "pos": [
-   -74.0,
-   8.7,
-   1588.82
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "antebrachial_fascia_l",
   "en": "Elbow joint.g",
   "pl": "Staw łokciowy",
@@ -16665,54 +15153,6 @@
    1077.4
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_r",
-  "en": "Ellipsoid joint.g",
-  "pl": "Ellipsoid joint.g",
-  "pos": [
-   -236.06,
-   3.02,
-   1402.88
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Endo-abdominal fascia.g",
-  "pl": "Endo-abdominal fascia.g",
-  "pos": [
-   -35.81,
-   -119.55,
-   992.25
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Ependyma.g",
-  "pl": "Ependyma.g",
-  "pos": [
-   -86.82,
-   3.81,
-   1628.89
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_l",
-  "en": "Epicranius muscle.g",
-  "pl": "Epicranius muscle.g",
-  "pos": [
-   86.5,
-   11.31,
-   1633.97
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -16740,90 +15180,6 @@
   "src": "label"
  },
  {
-  "boneId": "flexor_retinaculum_of_wrist_l",
-  "en": "External iliac nodes.g",
-  "pl": "External iliac nodes.g",
-  "pos": [
-   302.33,
-   -11.05,
-   870.89
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "facial_nerve_vii_r",
-  "en": "External nose",
-  "pl": "External nose",
-  "pos": [
-   -18.79,
-   -86.06,
-   1573.64
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "frontal_bone",
-  "en": "External surface of squamous part of frontal bone",
-  "pl": "External surface of squamous part of frontal bone",
-  "pos": [
-   25.01,
-   -40.76,
-   1692.45
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Extrahepatic bile ducts.g",
-  "pl": "Extrahepatic bile ducts.g",
-  "pos": [
-   -17.48,
-   119.44,
-   1172.17
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "nasalis_muscle",
-  "en": "Eye.g",
-  "pl": "Eye.g",
-  "pos": [
-   10.49,
-   -101.5,
-   1583.46
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "nasalis_muscle",
-  "en": "Eyeball.g",
-  "pl": "Eyeball.g",
-  "pos": [
-   12.29,
-   -99.05,
-   1579.96
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "accessory_parotid_gland_l",
-  "en": "Facial nodes.g",
-  "pl": "Facial nodes.g",
-  "pos": [
-   77.95,
-   -48.64,
-   1555.52
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "investing_abdominal_fascia_r",
   "en": "False ribs.g",
   "pl": "Żebra rzekome",
@@ -16836,90 +15192,6 @@
   "src": "label"
  },
  {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Fasciae of abdomen.g",
-  "pl": "Fasciae of abdomen.g",
-  "pos": [
-   -32.74,
-   -124.95,
-   1003.24
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "superficial_temporal_veins_r",
-  "en": "Fasciae of head.g",
-  "pl": "Fasciae of head.g",
-  "pos": [
-   -93.25,
-   -9.25,
-   1605.52
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "fascia_lata_r",
-  "en": "Fasciae of lower limb.g",
-  "pl": "Fasciae of lower limb.g",
-  "pos": [
-   -150.57,
-   38.75,
-   454.68
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "body_of_sternum",
-  "en": "Fasciae of thorax.g",
-  "pl": "Fasciae of thorax.g",
-  "pos": [
-   -0.04,
-   -128.66,
-   1311.84
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "antebrachial_fascia_r",
-  "en": "Fasciae of upper limb.g",
-  "pl": "Fasciae of upper limb.g",
-  "pos": [
-   -284.28,
-   28.0,
-   1104.21
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "antebrachial_fascia_l",
-  "en": "Fasciae.g",
-  "pl": "Fasciae.g",
-  "pos": [
-   286.0,
-   22.44,
-   1079.23
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "facial_nerve_vii_l",
-  "en": "Fauces.g",
-  "pl": "Fauces.g",
-  "pos": [
-   51.1,
-   -18.32,
-   1519.87
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "platysma_l",
   "en": "Fibro-elastic membrane of larynx.g",
   "pl": "Błona włóknisto-sprężysta krtani",
@@ -16929,18 +15201,6 @@
    1491.68
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "superficial_fibular_nerve_r",
-  "en": "Fibular tarsal tendon sheaths.g",
-  "pl": "Fibular tarsal tendon sheaths.g",
-  "pos": [
-   -127.23,
-   26.75,
-   101.24
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -16982,7 +15242,7 @@
  {
   "boneId": "parietal_bone_l",
   "en": "Frontal angle of parietal bone",
-  "pl": "Kąt kości ciemieniowej",
+  "pl": "Kąt czołowy kości ciemieniowej",
   "pos": [
    29.49,
    -17.6,
@@ -17013,18 +15273,6 @@
    1344.91
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "extensor_retinaculum_of_wrist_l",
-  "en": "Gluteal nodes.g",
-  "pl": "Gluteal nodes.g",
-  "pos": [
-   303.85,
-   -14.53,
-   858.3
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -17073,78 +15321,6 @@
    1542.87
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "nasal_bone",
-  "en": "Grey matter of pontine tegmentum.g",
-  "pl": "Grey matter of pontine tegmentum.g",
-  "pos": [
-   0.09,
-   -94.98,
-   1588.14
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "superficial_investing_cervical_fascia_l",
-  "en": "Grey matter of spinal cord.g",
-  "pl": "Grey matter of spinal cord.g",
-  "pos": [
-   4.88,
-   125.26,
-   1380.77
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "epicranial_aponeurosis_l",
-  "en": "Grey matter of tegmentum of midbrain.g",
-  "pl": "Grey matter of tegmentum of midbrain.g",
-  "pos": [
-   0.78,
-   108.27,
-   1603.66
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Grey matter.g",
-  "pl": "Grey matter.g",
-  "pos": [
-   -86.22,
-   16.3,
-   1645.95
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_l",
-  "en": "Hairs.g",
-  "pl": "Hairs.g",
-  "pos": [
-   92.99,
-   17.23,
-   1647.45
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "pectoral_fascia_l",
-  "en": "Heart.g",
-  "pl": "Heart.g",
-  "pos": [
-   32.81,
-   -129.76,
-   1278.27
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -17232,54 +15408,6 @@
   "src": "label"
  },
  {
-  "boneId": "superficial_temporal_veins_l",
-  "en": "Hypophysis.g",
-  "pl": "Hypophysis.g",
-  "pos": [
-   80.66,
-   -7.0,
-   1609.39
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "superficial_epigastric_vein_r",
-  "en": "Iliopsoas muscle.g",
-  "pl": "Iliopsoas muscle.g",
-  "pos": [
-   -41.99,
-   -104.82,
-   934.22
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_l",
-  "en": "Inferior deep lateral cervical nodes.g",
-  "pl": "Inferior deep lateral cervical nodes.g",
-  "pos": [
-   167.09,
-   -5.44,
-   1407.13
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "left_pulmonary_artery",
-  "en": "Inferior lobar artery of left lung.g",
-  "pl": "Inferior lobar artery of left lung.g",
-  "pos": [
-   129.97,
-   27.36,
-   1272.04
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "antebrachial_fascia_r",
   "en": "Inferior mesenteric nodes.g",
   "pl": "Węzły krezkowe dolne",
@@ -17304,54 +15432,6 @@
   "src": "label"
  },
  {
-  "boneId": "deltoid_fascia_l",
-  "en": "Infrahyoid nodes.g",
-  "pl": "Infrahyoid nodes.g",
-  "pos": [
-   143.35,
-   -4.94,
-   1411.69
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "transversus_abdominis_muscle_l",
-  "en": "Infrasternal angle.g",
-  "pl": "Infrasternal angle.g",
-  "pos": [
-   4.35,
-   -100.42,
-   1156.93
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_l",
-  "en": "Inguinal nodes.g",
-  "pl": "Inguinal nodes.g",
-  "pos": [
-   342.08,
-   -58.55,
-   799.66
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Insula.g",
-  "pl": "Insula.g",
-  "pos": [
-   -71.2,
-   5.94,
-   1670.04
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "left_ventricle",
   "en": "Interatrial septum",
   "pl": "Przegroda międzyprzedsionkowa",
@@ -17361,30 +15441,6 @@
    1296.23
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "transversus_abdominis_muscle_l",
-  "en": "Intercostal space.g",
-  "pl": "Intercostal space.g",
-  "pos": [
-   4.21,
-   -100.11,
-   1170.24
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "epicranial_aponeurosis_r",
-  "en": "Interlobar sulci.g",
-  "pl": "Interlobar sulci.g",
-  "pos": [
-   -61.45,
-   17.85,
-   1685.75
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -17409,30 +15465,6 @@
    865.07
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "acromioclavicular_ligament_r",
-  "en": "Interosseous ligament.g",
-  "pl": "Interosseous ligament.g",
-  "pos": [
-   -149.24,
-   35.87,
-   1429.02
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Interosseous membrane.g",
-  "pl": "Interosseous membrane.g",
-  "pos": [
-   -141.91,
-   45.15,
-   263.85
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -17484,18 +15516,6 @@
   "src": "label"
  },
  {
-  "boneId": "platysma_r",
-  "en": "Larynx.g",
-  "pl": "Larynx.g",
-  "pos": [
-   -48.64,
-   -11.35,
-   1472.87
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "superficial_investing_cervical_fascia_r",
   "en": "Lateral atlanto-axial joint.g",
   "pl": "Staw szczytowo-obrotowy boczny",
@@ -17508,18 +15528,6 @@
   "src": "label"
  },
  {
-  "boneId": "deltoid_fascia_l",
-  "en": "Lateral cervical nodes.g",
-  "pl": "Lateral cervical nodes.g",
-  "pos": [
-   156.14,
-   -3.88,
-   1410.41
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "subcutaneous_bursa_of_lateral_malleolus_l",
   "en": "Lateral collateral ligament of ankle.g",
   "pl": "Więzadło poboczne strzałkowe",
@@ -17529,18 +15537,6 @@
    80.41
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Lateral compartment of leg.g",
-  "pl": "Lateral compartment of leg.g",
-  "pos": [
-   -158.25,
-   51.61,
-   304.1
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -17592,18 +15588,6 @@
   "src": "label"
  },
  {
-  "boneId": "small_saphenous_vein_l",
-  "en": "Layers.st",
-  "pl": "Layers.st",
-  "pos": [
-   106.58,
-   103.32,
-   189.11
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "deltoid_fascia_l",
   "en": "Left atrioventricular valve.g",
   "pl": "Zastawka przedsionkowo-komorowa prawa; Zastawka trójdzielna",
@@ -17625,18 +15609,6 @@
    1056.9
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "coracobrachialis_muscle_l",
-  "en": "Left lung.g",
-  "pl": "Left lung.g",
-  "pos": [
-   155.33,
-   9.88,
-   1361.88
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -17700,30 +15672,6 @@
   "src": "label"
  },
  {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Limbous suture.g",
-  "pl": "Limbous suture.g",
-  "pos": [
-   -77.01,
-   -19.39,
-   1657.13
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "medial_external_iliac_nodes_r",
-  "en": "Linea terminalis.g",
-  "pl": "Linea terminalis.g",
-  "pos": [
-   -34.55,
-   -1.99,
-   918.92
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "incus_l",
   "en": "Long limb of incus",
   "pl": "Odnoga długa kowadełka",
@@ -17733,30 +15681,6 @@
    1581.78
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "epicranial_aponeurosis_l",
-  "en": "Longitudinal planes.g",
-  "pl": "Longitudinal planes.g",
-  "pos": [
-   1.22,
-   60.61,
-   1712.98
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "nasalis_muscle",
-  "en": "Lower eyelid",
-  "pl": "Lower eyelid",
-  "pos": [
-   -11.97,
-   -98.42,
-   1579.95
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -17796,30 +15720,6 @@
   "src": "label"
  },
  {
-  "boneId": "investing_abdominal_fascia_l",
-  "en": "Lumbosacral symphysis.g",
-  "pl": "Lumbosacral symphysis.g",
-  "pos": [
-   1.92,
-   91.23,
-   968.87
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "articular_capsule_of_glenohumeral_joint_l",
-  "en": "Lungs.g",
-  "pl": "Lungs.g",
-  "pos": [
-   150.86,
-   10.26,
-   1377.03
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "temporoparietalis_muscle_l",
   "en": "Lymph nodes of head.g",
   "pl": "Węzły chłonne głowy",
@@ -17841,18 +15741,6 @@
    799.99
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "articular_capsule_of_acromioclavicular_joint_l",
-  "en": "Lymph nodes of neck.g",
-  "pl": "Lymph nodes of neck.g",
-  "pos": [
-   151.89,
-   22.99,
-   1432.32
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -17916,18 +15804,6 @@
   "src": "label"
  },
  {
-  "boneId": "subcutaneous_bursa_of_lateral_malleolus_l",
-  "en": "Manipulation.st",
-  "pl": "Manipulation.st",
-  "pos": [
-   121.59,
-   72.83,
-   64.29
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "kidney_l",
   "en": "Medial border of kidney",
   "pl": "Brzeg przyśrodkowy nerki",
@@ -17949,18 +15825,6 @@
    81.4
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "lateral_femoral_cutaneous_nerve_r",
-  "en": "Medial compartment of thigh.g",
-  "pl": "Medial compartment of thigh.g",
-  "pos": [
-   -176.55,
-   3.71,
-   594.46
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -18048,69 +15912,9 @@
   "src": "label"
  },
  {
-  "boneId": "temporoparietalis_muscle_l",
-  "en": "Midbrain.g",
-  "pl": "Midbrain.g",
-  "pos": [
-   81.42,
-   13.76,
-   1599.95
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "crural_fascia_l",
-  "en": "Navigation.st",
-  "pl": "Navigation.st",
-  "pos": [
-   117.2,
-   115.78,
-   275.19
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_l",
-  "en": "Neurocranium.g",
-  "pl": "Neurocranium.g",
-  "pos": [
-   88.16,
-   13.95,
-   1642.0
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "nasal_septal_cartilage",
-  "en": "Nose.g",
-  "pl": "Nose.g",
-  "pos": [
-   -0.12,
-   -115.56,
-   1567.94
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "sixth_rib_l",
-  "en": "Notch of cardiac apex",
-  "pl": "Notch of cardiac apex",
-  "pos": [
-   100.6,
-   -80.61,
-   1219.07
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "parietal_bone_l",
   "en": "Occipital angle of parietal bone",
-  "pl": "Kąt kości ciemieniowej",
+  "pl": "Kąt potyliczny kości ciemieniowej",
   "pos": [
    31.77,
    86.72,
@@ -18146,49 +15950,13 @@
  {
   "boneId": "pancreas",
   "en": "Omental eminence of pancreas",
-  "pl": "Omental eminence of pancreas",
+  "pl": "Wyniosłość trzustki",
   "pos": [
    8.05,
    -46.12,
    1134.71
   ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "crural_fascia_l",
-  "en": "Outliner.st",
-  "pl": "Outliner.st",
-  "pos": [
-   107.34,
-   81.22,
-   12.62
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "parotid_gland_l",
-  "en": "Palate.g",
-  "pl": "Palate.g",
-  "pos": [
-   65.16,
-   -34.2,
-   1555.8
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_r",
-  "en": "Palmar carpal tendon sheaths.g",
-  "pl": "Palmar carpal tendon sheaths.g",
-  "pos": [
-   -331.05,
-   -41.17,
-   832.08
-  ],
-  "approx": true,
+  "approx": false,
   "src": "label"
  },
  {
@@ -18228,18 +15996,6 @@
   "src": "label"
  },
  {
-  "boneId": "antebrachial_fascia_l",
-  "en": "Parietal abdominal lymph nodes.g",
-  "pl": "Parietal abdominal lymph nodes.g",
-  "pos": [
-   289.97,
-   -2.31,
-   1058.53
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "parietal_bone_l",
   "en": "Parietal foramen",
   "pl": "Otwór ciemieniowy",
@@ -18261,30 +16017,6 @@
    1692.44
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "flexor_retinaculum_of_wrist_l",
-  "en": "Parietal pelvic lymph nodes.g",
-  "pl": "Parietal pelvic lymph nodes.g",
-  "pos": [
-   302.7,
-   -9.42,
-   881.31
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_r",
-  "en": "Parietal thoracic lymph nodes.g",
-  "pl": "Parietal thoracic lymph nodes.g",
-  "pos": [
-   -246.16,
-   25.55,
-   1360.46
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -18324,18 +16056,6 @@
   "src": "label"
  },
  {
-  "boneId": "iliotibial_tract_l",
-  "en": "Pelvic girdle.g",
-  "pl": "Pelvic girdle.g",
-  "pos": [
-   155.58,
-   17.63,
-   929.31
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "cephalic_vein_l",
   "en": "Pelvic lymph nodes.g",
   "pl": "Węzły chłonne miednicy",
@@ -18357,54 +16077,6 @@
    1030.87
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "superficial_temporal_artery_r",
-  "en": "Pharyngeal lymphoid ring.g",
-  "pl": "Pharyngeal lymphoid ring.g",
-  "pos": [
-   -87.79,
-   -4.25,
-   1579.17
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "parotid_gland_l",
-  "en": "Pharynx.g",
-  "pl": "Pharynx.g",
-  "pos": [
-   67.73,
-   -18.53,
-   1568.36
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_r",
-  "en": "Plane joint.g",
-  "pl": "Plane joint.g",
-  "pos": [
-   -234.41,
-   6.73,
-   1415.16
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "facial_nerve_vii_r",
-  "en": "Plane suture.g",
-  "pl": "Plane suture.g",
-  "pos": [
-   -70.26,
-   -48.31,
-   1566.81
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -18444,54 +16116,6 @@
   "src": "label"
  },
  {
-  "boneId": "crural_fascia_r",
-  "en": "Posterior compartment of leg.g",
-  "pl": "Posterior compartment of leg.g",
-  "pos": [
-   -157.69,
-   55.92,
-   283.94
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "iliotibial_tract_r",
-  "en": "Posterior compartment of thigh.g",
-  "pl": "Posterior compartment of thigh.g",
-  "pos": [
-   -174.68,
-   26.48,
-   632.8
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_l",
-  "en": "Posterior horn of spinal cord.g",
-  "pl": "Posterior horn of spinal cord.g",
-  "pos": [
-   2.86,
-   121.76,
-   1365.99
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "orbicularis_oris_muscle_r",
-  "en": "Posterior teeth.g",
-  "pl": "Posterior teeth.g",
-  "pos": [
-   -15.8,
-   -96.18,
-   1535.32
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "antebrachial_fascia_l",
   "en": "Proximal radio-ulnar joint.g",
   "pl": "Staw promieniowo-łokciowy bliższy",
@@ -18513,30 +16137,6 @@
    793.19
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_l",
-  "en": "Radiocarpal joint.g",
-  "pl": "Radiocarpal joint.g",
-  "pos": [
-   320.74,
-   -34.4,
-   837.12
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "clavipectoral_fascia_r",
-  "en": "Ribs.g",
-  "pl": "Ribs.g",
-  "pos": [
-   -158.96,
-   -8.47,
-   1257.14
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -18588,42 +16188,6 @@
   "src": "label"
  },
  {
-  "boneId": "deltoid_fascia_r",
-  "en": "Saddle joint.g",
-  "pl": "Saddle joint.g",
-  "pos": [
-   -236.06,
-   3.02,
-   1404.68
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "epicranial_aponeurosis_l",
-  "en": "Sagittal planes.g",
-  "pl": "Sagittal planes.g",
-  "pos": [
-   1.22,
-   60.61,
-   1709.85
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_r",
-  "en": "Simple joint.g",
-  "pl": "Simple joint.g",
-  "pos": [
-   -227.59,
-   4.48,
-   1423.87
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "liver",
   "en": "Inferior interventricular sulcus",
   "pl": "Bruzda międzykomorowa przednia",
@@ -18636,66 +16200,6 @@
   "src": "label"
  },
  {
-  "boneId": "pectoral_fascia_r",
-  "en": "Infraclavicular part of brachial plexus.g",
-  "pl": "Infraclavicular part of brachial plexus.g",
-  "pos": [
-   -85.15,
-   -86.73,
-   1365.89
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "accessory_parotid_gland_r",
-  "en": "Mouth.g",
-  "pl": "Mouth.g",
-  "pos": [
-   -63.96,
-   -50.78,
-   1549.01
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "inferior_superficial_inguinal_nodes_l",
-  "en": "Penis.g",
-  "pl": "Penis.g",
-  "pos": [
-   60.5,
-   -53.83,
-   791.53
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "collateral_metatarsophalangeal_ligaments_l",
-  "en": "Phalanges of foot.g",
-  "pl": "Phalanges of foot.g",
-  "pos": [
-   48.7,
-   -90.27,
-   19.3
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "palmar_digital_veins_r",
-  "en": "Phalanges of hand.g",
-  "pl": "Phalanges of hand.g",
-  "pos": [
-   -218.45,
-   -60.61,
-   753.31
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "talus_r",
   "en": "Posterior process of talus",
   "pl": "Wyrostek tylny kości skokowej",
@@ -18705,18 +16209,6 @@
    62.82
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "white_matter_of_telencephalon_r",
-  "en": "Projection fibres of telencephalon.g",
-  "pl": "Projection fibres of telencephalon.g",
-  "pos": [
-   -15.32,
-   104.35,
-   1622.49
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -18840,30 +16332,6 @@
   "src": "label"
  },
  {
-  "boneId": "humerus_r",
-  "en": "Right lung.g",
-  "pl": "Right lung.g",
-  "pos": [
-   -157.57,
-   9.9,
-   1380.15
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_r",
-  "en": "Root of aorta.g",
-  "pl": "Root of aorta.g",
-  "pos": [
-   -242.37,
-   10.19,
-   1331.1
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "nasalis_muscle",
   "en": "Root of nose",
   "pl": "Nasada nosa",
@@ -18873,18 +16341,6 @@
    1589.87
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_l",
-  "en": "Root of pulmonary trunk.g",
-  "pl": "Root of pulmonary trunk.g",
-  "pos": [
-   239.79,
-   1.12,
-   1333.27
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -18912,42 +16368,6 @@
   "src": "label"
  },
  {
-  "boneId": "nasal_septal_cartilage",
-  "en": "Schindylesis.g",
-  "pl": "Schindylesis.g",
-  "pos": [
-   0.02,
-   -123.73,
-   1560.78
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "small_saphenous_vein_l",
-  "en": "Selection.st",
-  "pl": "Selection.st",
-  "pos": [
-   107.91,
-   95.83,
-   150.06
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Serrate suture.g",
-  "pl": "Serrate suture.g",
-  "pos": [
-   -87.81,
-   13.49,
-   1627.2
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "investing_abdominal_fascia_l",
   "en": "Small intestine.g",
   "pl": "Jelito cienkie",
@@ -18957,30 +16377,6 @@
    984.67
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "superficial_investing_cervical_fascia_l",
-  "en": "Spinal cord.g",
-  "pl": "Spinal cord.g",
-  "pos": [
-   4.15,
-   119.36,
-   1382.63
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_r",
-  "en": "Sternochondral synchondrosis of first rib.g",
-  "pl": "Sternochondral synchondrosis of first rib.g",
-  "pos": [
-   -246.43,
-   8.69,
-   1375.58
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -18996,18 +16392,6 @@
   "src": "label"
  },
  {
-  "boneId": "pectoral_fascia_l",
-  "en": "Sternum.g",
-  "pl": "Sternum.g",
-  "pos": [
-   14.86,
-   -126.34,
-   1260.38
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "body_of_sternum",
   "en": "Sternum",
   "pl": "Mostek",
@@ -19017,18 +16401,6 @@
    1300.4
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "subcutaneous_bursa_of_lateral_malleolus_l",
-  "en": "Stored views.st",
-  "pl": "Stored views.st",
-  "pos": [
-   123.3,
-   69.28,
-   54.8
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -19056,78 +16428,6 @@
   "src": "label"
  },
  {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_l",
-  "en": "Superficial inguinal nodes.g",
-  "pl": "Superficial inguinal nodes.g",
-  "pos": [
-   347.71,
-   -60.37,
-   795.76
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "antebrachial_fascia_r",
-  "en": "Superficial part of anterior compartment of forearm.g",
-  "pl": "Superficial part of anterior compartment of forearm.g",
-  "pos": [
-   -307.73,
-   4.4,
-   993.98
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "antebrachial_fascia_r",
-  "en": "Superficial part of posterior compartment of forearm.g",
-  "pl": "Superficial part of posterior compartment of forearm.g",
-  "pos": [
-   -304.69,
-   21.53,
-   1062.74
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Superficial part of posterior compartment of leg.g",
-  "pl": "Superficial part of posterior compartment of leg.g",
-  "pos": [
-   -157.65,
-   58.5,
-   272.86
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_l",
-  "en": "Superior deep lateral nodes.g",
-  "pl": "Superior deep lateral nodes.g",
-  "pos": [
-   167.03,
-   -5.44,
-   1408.42
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "left_pulmonary_artery",
-  "en": "Superior lobar artery of left lung.g",
-  "pl": "Superior lobar artery of left lung.g",
-  "pos": [
-   121.54,
-   28.62,
-   1307.18
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "antebrachial_fascia_r",
   "en": "Superior mesenteric nodes.g",
   "pl": "Węzły krezkowe górne",
@@ -19149,138 +16449,6 @@
    1417.96
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Superior tibiofibular joint.g",
-  "pl": "Superior tibiofibular joint.g",
-  "pos": [
-   -138.97,
-   39.97,
-   414.0
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "pectoral_fascia_r",
-  "en": "Supraclavicular part of brachial plexus.g",
-  "pl": "Supraclavicular part of brachial plexus.g",
-  "pos": [
-   -65.25,
-   -79.72,
-   1377.86
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "Sutures.g",
-  "pl": "Sutures.g",
-  "pos": [
-   -70.74,
-   -20.6,
-   1667.46
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "fascia_lata_l",
-  "en": "Symphysis.g",
-  "pl": "Symphysis.g",
-  "pos": [
-   156.33,
-   -34.6,
-   855.43
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "deltoid_fascia_r",
-  "en": "Synarthrosis.g",
-  "pl": "Synarthrosis.g",
-  "pos": [
-   -232.31,
-   8.92,
-   1433.35
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "brachial_fascia_l",
-  "en": "Synchondroses.g",
-  "pl": "Synchondroses.g",
-  "pos": [
-   240.69,
-   -20.51,
-   1255.86
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "accessory_parotid_gland_r",
-  "en": "Syndesmoses.g",
-  "pl": "Syndesmoses.g",
-  "pos": [
-   -70.62,
-   -50.6,
-   1553.45
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "iliotibial_tract_l",
-  "en": "Synostosis.g",
-  "pl": "Synostosis.g",
-  "pos": [
-   157.11,
-   10.94,
-   911.75
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "fascia_lata_l",
-  "en": "Synovial bursae.g",
-  "pl": "Synovial bursae.g",
-  "pos": [
-   161.48,
-   40.85,
-   447.87
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "dorsal_fascia_of_hand_l",
-  "en": "Synovial joint.g",
-  "pl": "Synovial joint.g",
-  "pos": [
-   279.74,
-   -74.77,
-   701.35
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Taeniae coli.g",
-  "pl": "Taeniae coli.g",
-  "pos": [
-   -135.81,
-   -5.56,
-   989.44
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -19320,66 +16488,6 @@
   "src": "label"
  },
  {
-  "boneId": "dorsal_fascia_of_hand_r",
-  "en": "Tendon sheaths of digits of hand.g",
-  "pl": "Tendon sheaths of digits of hand.g",
-  "pos": [
-   -352.48,
-   -67.27,
-   767.6
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "crural_fascia_r",
-  "en": "Tendon sheaths of lower limb.g",
-  "pl": "Tendon sheaths of lower limb.g",
-  "pos": [
-   -144.61,
-   39.57,
-   183.58
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "inferior_fibular_retinaculum_r",
-  "en": "Tendon sheaths of toes.g",
-  "pl": "Tendon sheaths of toes.g",
-  "pos": [
-   -129.22,
-   1.77,
-   66.78
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_r",
-  "en": "Tendon sheaths of upper limb.g",
-  "pl": "Tendon sheaths of upper limb.g",
-  "pos": [
-   -337.39,
-   -40.25,
-   839.08
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "fibularis_tertius_muscle_l",
-  "en": "Tendon sheaths.g",
-  "pl": "Tendon sheaths.g",
-  "pos": [
-   139.03,
-   2.13,
-   59.04
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "deltoid_fascia_r",
   "en": "Thoracic lymph nodes.g",
   "pl": "Węzły chłonne klatki piersiowej",
@@ -19416,30 +16524,6 @@
   "src": "label"
  },
  {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Thoracolumbar part of autonomic division.g",
-  "pl": "Thoracolumbar part of autonomic division.g",
-  "pos": [
-   -36.62,
-   140.16,
-   1285.33
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "body_of_sternum",
-  "en": "Thymus.g",
-  "pl": "Thymus.g",
-  "pos": [
-   7.51,
-   -112.29,
-   1329.19
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "platysma_l",
   "en": "Thyrohyoid membrane.g",
   "pl": "Błona tarczowo-gnykowa",
@@ -19452,18 +16536,6 @@
   "src": "label"
  },
  {
-  "boneId": "crural_fascia_r",
-  "en": "Tibial tarsal tendon sheaths.g",
-  "pl": "Tibial tarsal tendon sheaths.g",
-  "pos": [
-   -131.46,
-   38.4,
-   145.38
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "intermediate_dorsal_cutaneous_nerve_of_foot_r",
   "en": "Tibiofibular syndesmosis.g",
   "pl": "Więzozrost piszczelowo-strzałkowy",
@@ -19473,30 +16545,6 @@
    92.47
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_l",
-  "en": "Trapezius muscle.g",
-  "pl": "Trapezius muscle.g",
-  "pos": [
-   5.28,
-   122.66,
-   1342.96
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_l",
-  "en": "Tributaries of hepatic portal vein.g",
-  "pl": "Tributaries of hepatic portal vein.g",
-  "pos": [
-   11.57,
-   -135.74,
-   1134.39
-  ],
-  "approx": true,
   "src": "label"
  },
  {
@@ -19560,30 +16608,6 @@
   "src": "label"
  },
  {
-  "boneId": "deltoid_fascia_l",
-  "en": "Valvular complex of heart.g",
-  "pl": "Valvular complex of heart.g",
-  "pos": [
-   245.55,
-   8.9,
-   1346.19
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_l",
-  "en": "Vertebral column.g",
-  "pl": "Vertebral column.g",
-  "pos": [
-   26.95,
-   138.61,
-   1301.57
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
   "boneId": "lower_first_molar_tooth_r",
   "en": "Vestibular surface of tooth",
   "pl": "Powierzchnia przedsionkowa zęba",
@@ -19593,102 +16617,6 @@
    1527.48
   ],
   "approx": false,
-  "src": "label"
- },
- {
-  "boneId": "antebrachial_fascia_r",
-  "en": "Visceral abdominal lymph nodes.g",
-  "pl": "Visceral abdominal lymph nodes.g",
-  "pos": [
-   -280.5,
-   -7.64,
-   1105.07
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_r",
-  "en": "Visceral part of autonomic division.g",
-  "pl": "Visceral part of autonomic division.g",
-  "pos": [
-   -37.05,
-   140.45,
-   1291.23
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "dorsal_digital_branches_of_radial_nerve_l",
-  "en": "Visceral pelvic lymph nodes.g",
-  "pl": "Visceral pelvic lymph nodes.g",
-  "pos": [
-   321.16,
-   -28.63,
-   837.16
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "accessory_parotid_gland_l",
-  "en": "Viscerocranium.g",
-  "pl": "Viscerocranium.g",
-  "pos": [
-   67.44,
-   -50.6,
-   1554.4
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "frontalis_muscle_l",
-  "en": "Walls of lateral ventricle.g",
-  "pl": "Walls of lateral ventricle.g",
-  "pos": [
-   3.36,
-   -100.26,
-   1640.48
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "insula_subcentral_gyrus_and_ant_and_post_sulci_l",
-  "en": "White matter of diencephalon.g",
-  "pl": "White matter of diencephalon.g",
-  "pos": [
-   44.77,
-   6.25,
-   1633.01
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "investing_abdominal_fascia_l",
-  "en": "White matter of spinal cord.g",
-  "pl": "White matter of spinal cord.g",
-  "pos": [
-   21.35,
-   129.61,
-   1338.22
-  ],
-  "approx": true,
-  "src": "label"
- },
- {
-  "boneId": "temporoparietalis_muscle_r",
-  "en": "White matter.g",
-  "pl": "White matter.g",
-  "pos": [
-   -87.77,
-   24.49,
-   1631.7
-  ],
-  "approx": true,
   "src": "label"
  }
 ]

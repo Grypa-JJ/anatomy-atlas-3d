@@ -1545,7 +1545,7 @@
  },
  {
   "id": "frontal_branch_of_superficial_temporal_artery_l",
-  "pl": "Gałąź tętnica skroniowa powierzchowna",
+  "pl": "Gałąź czołowa tętnica skroniowa powierzchowna",
   "en": "Frontal branch of superficial temporal artery",
   "side": "l",
   "kind": "vessel",
@@ -1553,7 +1553,7 @@
  },
  {
   "id": "frontal_branch_of_superficial_temporal_artery_r",
-  "pl": "Gałąź tętnica skroniowa powierzchowna",
+  "pl": "Gałąź czołowa tętnica skroniowa powierzchowna",
   "en": "Frontal branch of superficial temporal artery",
   "side": "r",
   "kind": "vessel",
@@ -1561,7 +1561,7 @@
  },
  {
   "id": "frontal_branches_of_callosomarginal_artery",
-  "pl": "Gałęzie tętnica spoidłowo-brzeżna",
+  "pl": "Gałęzie czołowa tętnica spoidłowo-brzeżna",
   "en": "Frontal branches of callosomarginal artery",
   "side": "mid",
   "kind": "vessel",
@@ -2881,7 +2881,7 @@
  },
  {
   "id": "mental_branch_of_inferior_alveolar_artery",
-  "pl": "Gałąź tętnica zębodołowa dolna",
+  "pl": "Gałąź bródkowa tętnica zębodołowa dolna",
   "en": "Mental branch of inferior alveolar artery",
   "side": "mid",
   "kind": "vessel",
@@ -3177,7 +3177,7 @@
  },
  {
   "id": "parietal_branches_of_middle_cerebral_artery_l",
-  "pl": "Gałęzie tętnica środkowa mózgu",
+  "pl": "Gałęzie ciemieniowa tętnica środkowa mózgu",
   "en": "Parietal branches of middle cerebral artery",
   "side": "l",
   "kind": "vessel",
@@ -3185,7 +3185,7 @@
  },
  {
   "id": "parietal_branches_of_middle_cerebral_artery_r",
-  "pl": "Gałęzie tętnica środkowa mózgu",
+  "pl": "Gałęzie ciemieniowa tętnica środkowa mózgu",
   "en": "Parietal branches of middle cerebral artery",
   "side": "r",
   "kind": "vessel",
@@ -3649,7 +3649,7 @@
  },
  {
   "id": "posterior_lateral_nasal_branches_of_sphenopalatine_artery",
-  "pl": "Gałęzie tylna boczna tętnica klinowo-podniebienna",
+  "pl": "Gałęzie tylna boczna nosowa tętnica klinowo-podniebienna",
   "en": "Posterior lateral nasal branches of sphenopalatine artery.",
   "side": "mid",
   "kind": "vessel",
@@ -4849,7 +4849,7 @@
  },
  {
   "id": "temporal_branches_of_middle_cerebral_artery_l",
-  "pl": "Gałęzie tętnica środkowa mózgu",
+  "pl": "Gałęzie skroniowa tętnica środkowa mózgu",
   "en": "Temporal branches of middle cerebral artery",
   "side": "l",
   "kind": "vessel",
@@ -4857,7 +4857,7 @@
  },
  {
   "id": "temporal_branches_of_middle_cerebral_artery_r",
-  "pl": "Gałęzie tętnica środkowa mózgu",
+  "pl": "Gałęzie skroniowa tętnica środkowa mózgu",
   "en": "Temporal branches of middle cerebral artery",
   "side": "r",
   "kind": "vessel",

@@ -46,6 +46,19 @@ def strip_us(b): return RX_US.sub('', b)
 # ---------- layer classification ----------
 TOOTH = re.compile(r'\b(incisor|canine|premolar|molar|wisdom tooth|deciduous tooth)\b', re.I)
 CARTILAGE = re.compile(r'\bcartilage\b|\bmeniscus\b|\blabrum\b|intervertebral disc|\bdisc of\b', re.I)
+# powięzi / troczki / rozcięgna / kaletki / pochewki / przegrody międzymięśniowe —
+# Z-Anatomy trzyma je w kolekcji "Muscular system", ale to nie mięśnie: osobna
+# warstwa "fascia" (domyślnie wyłączona, bo płachty powięzi zasłaniają mięśnie).
+# UWAGA: "fasciae" (tensor fasciae latae) NIE łapie się na \bfascia\b.
+# UWAGA: "tensor fasciae latae" (mięsień) NIE może się tu złapać — stąd \bfascia\b
+# (samo "fascia", nie "fasciae") i wykluczenie "tensor".
+FASCIA = re.compile(r'(?<!tensor )\bfascia\b|\bfasciae\b(?<!tensor fasciae)|retinacul|aponeuros|'
+    r'intermuscular septum|\bseptum of\b|tendon sheath|fibrous sheath|synovial sheath|'
+    r'\bsheath\b|\bbursa\b|\braphe\b|tendinous arch|arcus tendineus|iliotibial (tract|band)|'
+    r'linea alba', re.I)
+def is_fascia(name):
+    if re.search(r'\btensor\b', name, re.I): return False   # tensor fasciae latae / tympani
+    return bool(FASCIA.search(name))
 def layer_of(o):
     s = o["system"]; p = (o["path"] or "")
     name = o["name"]
@@ -53,7 +66,8 @@ def layer_of(o):
         if TOOTH.search(name): return "tooth"
         if CARTILAGE.search(name): return "connective"
         return "bone"
-    if s == "4: Muscular system": return "muscle"
+    if s == "4: Muscular system":
+        return "fascia" if is_fascia(name) else "muscle"
     if s == "2: Muscular insertions": return "muscle"     # attach points live here
     if s == "3: Joints": return "connective"
     if s == "6: Lymphoid organs": return "lymph"
@@ -153,7 +167,7 @@ for (layer, base), items in sorted(bodies.items()):
 print(f"catalog bodies: {len(catalog)}   by kind: {collections.Counter(c['kind'] for c in catalog)}")
 
 # ---- landmarks: .i/.j feature meshes + FONT .t/.s labels ----
-route_objs = [c for c in catalog if c["kind"] in ("bone","tooth","ossicle","muscle","connective","organ","brain","nerve","vessel","lymph")]
+route_objs = [c for c in catalog if c["kind"] in ("bone","tooth","ossicle","muscle","fascia","connective","organ","brain","nerve","vessel","lymph")]
 def side_trees():
     T={}
     for side_key,pred in (("l", lambda o:o["side"] in ("l","mid")), ("r", lambda o:o["side"] in ("r","mid"))):
@@ -282,14 +296,18 @@ print(f"landmarks snapped to surface: {snapped}/{len(landmarks)}")
 
 # ---- write per-kind catalogues + combined landmarks ----
 def dump(p,d): json.dump(d, io.open(p,"w",encoding="utf-8"), ensure_ascii=False, indent=1)
-KMAP={"bone":"bones","tooth":"teeth","muscle":"muscles","connective":"connective","vessel":"vessels",
+KMAP={"bone":"bones","tooth":"teeth","muscle":"muscles","fascia":"fascia","connective":"connective","vessel":"vessels",
       "nerve":"nerves","brain":"brain","organ":"organs","lymph":"lymph","region":"regions"}
 for kind,fk in KMAP.items():
     rows=[{k:c[k] for k in ("id","pl","en","side","kind","pl_from")} for c in catalog if c["kind"]==kind]
     if rows: dump(f"{BUILD}\\all_{fk}_labeled_v2.json", rows)
+# Punkty "approx" = brak polskiej nazwy / dopasowane tylko przez sąsiedztwo w
+# słowniku (nie zweryfikowana geometrycznie pozycja). Decyzja usera: nie
+# pokazujemy ich wcale — z listy wypadają, atlas jest czytelniejszy.
+kept_lm=[l for l in landmarks if not l["approx"]]
 dump(f"{BUILD}\\bone_landmarks_v2.json",
-     [{k:l[k] for k in ("boneId","en","pl","pos","approx","src")} for l in landmarks])
+     [{k:l[k] for k in ("boneId","en","pl","pos","approx","src")} for l in kept_lm])
 
 tot=len(catalog); un=sum(1 for c in catalog if c["pl_from"]=="none")
 lun=sum(1 for l in landmarks if l["approx"])
-print(f"TOTAL objects {tot} ({un} EN)   landmarks {len(landmarks)} ({lun} EN)")
+print(f"TOTAL objects {tot} ({un} EN)   landmarks {len(kept_lm)} (odrzucono {lun} przybliżonych)")
