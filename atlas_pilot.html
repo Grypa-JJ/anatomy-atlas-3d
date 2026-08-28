@@ -102,6 +102,22 @@
     }
     #measure-toggle.active { background: #3b7bff; border-color: #3b7bff; }
     #measure-clear { background: #444; color: #fff; border: none; border-radius: 4px; padding: 4px 8px; cursor: pointer; }
+    #scalpel-toggle {
+        background: #333; color: #fff; border: 1px solid #444; border-radius: 6px;
+        padding: 6px 10px; font-size: 12px; cursor: pointer;
+    }
+    #scalpel-toggle.active { background: #d4392c; border-color: #d4392c; }
+    #scalpel-undo, #scalpel-restore-all { background: #444; color: #fff; border: none; border-radius: 4px; padding: 4px 8px; cursor: pointer; }
+    .id-label {
+        position: absolute; transform: translate(-50%, -50%);
+        background: rgba(0,0,0,0.75); color: #7bdcff; font-family: monospace;
+        font-size: 10px; padding: 1px 4px; border-radius: 3px; white-space: nowrap;
+        border: 1px solid rgba(123,220,255,0.4);
+    }
+    .id-label-anchor-dot {
+        position: absolute; width: 4px; height: 4px; margin: -2px 0 0 -2px;
+        background: #7bdcff; border-radius: 50%; box-shadow: 0 0 3px rgba(123,220,255,0.9);
+    }
     #measure-result { color: #ffe066; font-weight: 600; min-width: 70px; }
     #split-toggle {
         background: #333; color: #fff; border: 1px solid #444; border-radius: 6px;
@@ -138,6 +154,45 @@
     #quiz-feedback.correct { color: #6f6; }
     #quiz-feedback.wrong { color: #f66; }
     #quiz-score { color: #888; font-size: 11px; }
+    #kolokwium-buttons { display: flex; flex-wrap: wrap; gap: 4px; }
+    #kolokwium-buttons button { flex: 1 1 40%; }
+    #kolokwium-buttons button.active { background: #3b7bff; border-color: #3b7bff; }
+    #kolokwium-status { font-size: 11px; color: #9cf; margin-top: 2px; }
+    #kolokwium-panel {
+        position: absolute; top: 16px; left: 250px; z-index: 10; width: 340px;
+        background: rgba(20,20,20,0.93); color: #fff; border-radius: 10px; border: 1px solid #444;
+        padding: 14px 16px; max-height: 88vh; overflow-y: auto; display: none; font-size: 13px;
+    }
+    #kolokwium-panel h3 { margin: 0 0 2px; font-size: 16px; }
+    #kolokwium-panel .kw-sub { color: #9cf; font-size: 12px; margin-bottom: 10px; }
+    .kw-category { margin-top: 14px; }
+    .kw-category:first-of-type { margin-top: 4px; }
+    .kw-cat-header { display: flex; align-items: center; justify-content: space-between; gap: 6px; border-bottom: 1px solid #444; padding-bottom: 4px; margin-bottom: 6px; }
+    .kw-cat-header .kw-cat-name { font-weight: 600; color: #ddd; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.03em; }
+    .kw-note-btn { background: #2a4d6e; color: #bfe3ff; border: 1px solid #3b7bff; border-radius: 5px; padding: 2px 7px; font-size: 11px; cursor: pointer; white-space: nowrap; }
+    .kw-note-btn:hover { background: #3b7bff; color: #fff; }
+    .kw-item { padding: 5px 8px; border-radius: 5px; cursor: pointer; margin-bottom: 2px; }
+    .kw-item:hover { background: rgba(59,179,255,0.2); }
+    .kw-item.todo { color: #777; font-style: italic; cursor: default; }
+    .kw-item .kw-item-badge { font-size: 10px; color: #666; margin-left: 4px; }
+    #notes-modal {
+        position: fixed; inset: 0; z-index: 30; background: rgba(0,0,0,0.6);
+        display: none; align-items: center; justify-content: center;
+    }
+    #notes-modal-card {
+        background: #1e1e1e; color: #eee; width: min(680px, 90vw); max-height: 82vh; overflow-y: auto;
+        border-radius: 12px; border: 1px solid #3b7bff; padding: 22px 26px; box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+    }
+    #notes-modal-card h2 { margin: 0 0 4px; font-size: 19px; color: #fff; }
+    #notes-modal-card .nm-sub { color: #9cf; font-size: 12.5px; margin-bottom: 14px; }
+    #notes-modal-card .nm-body { font-size: 14px; line-height: 1.6; color: #ddd; white-space: pre-line; }
+    #notes-modal-card .nm-body strong { color: #ffe066; }
+    #notes-modal-close { margin-top: 18px; background: #3b7bff; color: #fff; border: none; border-radius: 6px; padding: 8px 16px; font-size: 13px; cursor: pointer; }
+    #notes-modal-close:hover { background: #5590ff; }
+    #lbl-notes-link { display: none; margin-top: 8px; background: #a8862b; }
+    #lbl-notes-link:hover { background: #c79f36; }
+    #sb-notes-link { display: none; background: #a8862b; }
+    #sb-notes-link:hover { background: #c79f36; }
 </style>
 </head>
 <body>
@@ -168,10 +223,22 @@
         </div>
     </div>
     <div>
+        <h4>📌 Kolokwia</h4>
+        <div id="kolokwium-buttons">
+            <button data-kolokwium="I">I — kończyny/tułów</button>
+            <button data-kolokwium="II">II — trzewia</button>
+            <button data-kolokwium="III">III — głowa/szyja</button>
+            <button data-kolokwium="IV">IV — mózg</button>
+            <button data-kolokwium="off" style="flex-basis:100%;">✕ Wyłącz tryb kolokwium</button>
+        </div>
+        <div id="kolokwium-status"></div>
+    </div>
+    <div>
         <h4>Demo</h4>
         <button id="dance-toggle">💃 Zatańcz</button>
     </div>
 </div>
+<div id="kolokwium-panel"></div>
 <div id="topbar">
     <div id="search-wrap">
         <input id="search-input" type="text" placeholder="🔎 Szukaj struktury (PL/EN)..." autocomplete="off">
@@ -191,7 +258,10 @@
     Przezroczystość kości
     <input type="range" id="transparency-slider" min="0" max="100" value="100">
     <span id="transparency-val">100%</span>
+    <label style="margin-left:14px;" title="Pokazuje ID kazdej widocznej struktury bezposrednio na scenie, bez potrzeby klikania"><input type="checkbox" id="show-id-labels"> 🏷️ Pokaż ID na scenie</label>
 </div>
+<svg id="id-labels-leader-layer" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:4; overflow:hidden;"></svg>
+<div id="id-labels-layer" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:5; overflow:hidden;"></div>
 <div id="layers-box">
     Warstwy:
     <label><input type="checkbox" id="layer-bones" checked> Kości</label>
@@ -227,6 +297,12 @@
         <button id="measure-clear" style="display:none">✕</button>
     </div>
     <div class="tools-row">
+        <button id="scalpel-toggle" title="Włącz i klikaj struktury, żeby je usuwać z widoku (nie ma to wpływu na dane, tylko na widoczność)">🔪 Skalpel</button>
+        <span id="scalpel-status" style="opacity:0.7; font-size:0.85em;"></span>
+        <button id="scalpel-undo" style="display:none" title="Przywróć ostatnio wyciętą strukturę">↩ Cofnij cięcie</button>
+        <button id="scalpel-restore-all" style="display:none" title="Przywróć wszystkie wycięte struktury">♻ Przywróć wszystko</button>
+    </div>
+    <div class="tools-row">
         <button id="split-toggle">🔲 Porównaj (podziel ekran)</button>
     </div>
 </div>
@@ -234,17 +310,27 @@
 <div id="label-box" style="display:none">
     <div class="pl" id="lbl-pl"><span id="lbl-pl-text"></span><button id="lbl-speak" title="Odsłuchaj nazwę">🔊</button></div>
     <div class="en" id="lbl-en"></div>
+    <div id="lbl-id" style="font-size:11px; color:#888; font-family:monospace; margin-top:2px;"></div>
     <div id="lbl-approx-warn" style="display:none; color:#e0c040; font-size:12px; margin-top:2px;">⚠ Punkt przybliżony — dołączony do najbliższej znanej struktury, nie zmierzony geometrycznie</div>
-    <a id="lbl-wiki-link" href="#" target="_blank" rel="noopener noreferrer" style="display:none; font-size:12px; color:#3bb3ff; margin-top:4px;">📖 Wikipedia (EN) ↗</a>
-    <div id="lbl-color-swatches" style="display:flex; gap:4px; margin-top:6px; flex-wrap:wrap;"></div>
+    <button id="lbl-notes-link">📝 Notatka wykładowa</button>
     <div class="hint" id="lbl-hint">kliknij inną kość, żeby zmienić / przeciągnij, żeby obrócić</div>
     <button id="open-bone-btn" style="display:none">🔍 Otwórz tę kość</button>
 </div>
 <div id="sidebar">
     <h3 id="sb-pl"></h3>
     <div class="en-title" id="sb-en"></div>
+    <div id="sb-id" style="font-size:11px; color:#888; font-family:monospace; margin-bottom:6px;"></div>
     <div id="sb-landmarks"></div>
+    <button id="sb-notes-link">📝 Notatka wykładowa</button>
     <button id="close-bone-btn">← Wróć do całego układu</button>
+</div>
+<div id="notes-modal">
+    <div id="notes-modal-card">
+        <h2 id="notes-modal-title"></h2>
+        <div class="nm-sub" id="notes-modal-sub"></div>
+        <div class="nm-body" id="notes-modal-body"></div>
+        <button id="notes-modal-close">Zamknij</button>
+    </div>
 </div>
 <div id="credit">
     Geometria: BodyParts3D, (c) The Database Center for Life Science, licencja CC BY-SA 2.1 Japan.
@@ -376,8 +462,291 @@ const NERVE_COLOR = 0xf5d020;
 const LYMPH_COLOR = 0x66cc99;
 const HIGHLIGHT_COLOR = 0xffb347;
 
+// Reczne korekty pozycji dla pojedynczych siatek ze zdiagnozowanym bledem
+// osadzenia w zrodlowych danych (Z-Anatomy/R2), ktorych nie da sie naprawic
+// lokalnie (to pliki .obj hostowane zdalnie, nie mamy do nich pipeline'u w
+// tym repo - patrz brak folderu "naczynia"/"nerwy" w _atlas_pilot/). Wykryte
+// porownaniem X-owego srodka bbox kazdej pary lewa/prawa struktura w calym
+// zbiorze naczyn+nerwow: dla prawidlowo sparowanych struktur suma
+// (Lx + Rx) jest STALA (~37, bo srodek modelu po wysrodkowaniu na starcie
+// nie pokrywa sie idealnie z anatomiczna linia posrodkowa) - odchylenie od
+// tej stalej ujawnia siatke, ktora NIE zostala odbita na wlasciwa strone.
+// Format: id -> { mirrorX: stala C, do wzoru x' = C - x (odbicie + przesuniecie,
+// nie samo odwrocenie znaku - patrz uzasadnienie w notatce sesji) }.
+const MESH_POSITION_CORRECTIONS = {
+    // Nerw błędny prawy (X) - centrowal sie po tej samej (lewej) stronie co
+    // nerw błędny lewy (Lx=34, Rx=39.2 - obie DODATNIE), podczas gdy KAZDA inna
+    // para naczynie/nerw w zbiorze ma Lx+Rx =~ 37 (potwierdzone tez na kosciach
+    // parzystych, np. kosci srodreka: 36.1-36.2). C=37.5 wziete ze sredniej
+    // najblizszych sasiadow w tej samej okolicy (t. szyjna wspólna: 39.3,
+    // ż. szyjna wewnętrzna: 35.4).
+    "ZAC403": { mirrorX: 37.5 },
+    // Nerw podjęzykowy (XII) L/P - koniec bliższy (najbardziej z tylu/do gory,
+    // domniemany punkt wyjscia z czaszki) siedzial w world Y=111.1, podczas gdy
+    // zaufany, geometrycznie wykryty punkt "Kanał nerwu podjęzykowego" (kosc
+    // potyliczna, FMA - wiec "zawsze OK" wg WSKAZOWKI pkt 8) jest w Y=8.17 - Z
+    // obu punktow niemal identyczne (719.5 vs 712.6, 7mm), co potwierdza ze to
+    // wlasnie ten koniec nerwu powinien tam siedziec. Roznica ~103mm w Y idealnie
+    // pasuje do udokumentowanego bledu importu Z-Anatomy "~98mm za daleko do
+    // tylu" (WSKAZOWKI pkt 8) - przesuwamy caly nerw o ta wartosc do przodu.
+    "ZAC406": { translateY: -103 },
+    "ZAC407": { translateY: -103 },
+    // Ślinianka przyuszna L/P - X niemal idealnie pokrywa sie z zaufanym punktem
+    // "Otwór rylcowo-sutkowy" (miejsce wyjscia n. VII, FMA - "zawsze OK"): roznica
+    // <1.1mm, co potwierdza ze to ta sama okolica ciala. Ale Z jest o ~57-66mm ZA
+    // WYSOKO (703.5 wzgledem otworu rylcowo-sutkowego ~646 i kata zuchwy ~608) -
+    // dokladnie udokumentowany w WSKAZOWKI pkt 8 blad "~66mm za wysoko" dla
+    // podgrupy organy/tkanka laczna/mozg (ten sam typ bledu co przy gałce ocznej
+    // i chrzastce malzowiny usznej, ktore siedzialy "na czole").
+    "ZA582": { translateZ: -66 },
+    "ZA583": { translateZ: -66 },
+    // Naczynia mozgowe/oponowe glowy - ten sam blok bledu co wyzej ("~66mm za
+    // wysoko", WSKAZOWKI pkt 8, podgrupa mozg/tkanka laczna - te naczynia sa
+    // anatomicznie oponowe/korowe wiec pochodza z tego samego importu). Dowod
+    // twardy: zaufana kosc ciemieniowa (FMA, "zawsze OK") ma szczyt w Z=789.0 -
+    // ponizsze naczynia siedzialy z maxZ 803-852, czyli 14-63mm NAD kostna
+    // pokrywa czaszki - fizycznie niemozliwe (zatoka strzalkowa gorna/dolna i
+    // t. okolospoidlowa sa WEWNATRZ czaszki, t. skroniowa/potyliczna to
+    // naczynia boczne, ktore tez nie powinny siegac ponad szczyt). Po -66
+    // wszystkie miesza sie ponizej 789, spojnie.
+    "ZAC473": { translateZ: -66 }, // Zatoka strzałkowa górna
+    "ZAC474": { translateZ: -66 }, // Zatoka strzałkowa dolna
+    "ZAC427": { translateZ: -66 }, "ZAC428": { translateZ: -66 }, // Tętnica okołospoidłowa L/P
+    "ZAC425": { translateZ: -66 }, "ZAC426": { translateZ: -66 }, // Tętnica spoidłowo-brzeżna L/P
+    "ZAC447": { translateZ: -66, translateY: -66 }, "ZAC448": { translateZ: -66, translateY: -66 }, // Tętnica bruzdy środkowej L/P - MIAŁA TEŻ błąd Y (maxY 125->59)
+    "ZAC445": { translateZ: -66 }, "ZAC446": { translateZ: -66 }, // Tętnica bruzdy przedśrodkowej L/P
+    "ZAC302": { translateZ: -66, translateY: -66 }, "ZAC303": { translateZ: -66, translateY: -66 }, // Tętnica skroniowa powierzchowna L/P - MIAŁA TEŻ błąd Y (maxY 146.9!->80.9)
+    "ZAC443": { translateZ: -66 }, "ZAC444": { translateZ: -66 }, // Tętnica przedczołowa L/P
+    "ZAC300": { translateZ: -66, translateY: -66 }, "ZAC301": { translateZ: -66, translateY: -66 }, // Tętnica potyliczna L/P - MIAŁA TEŻ błąd Y
+    "ZAC338": { translateZ: -66, translateY: -66 }, "ZAC339": { translateZ: -66, translateY: -66 }, // Żyły skroniowe powierzchowne L/P - MIAŁA TEŻ błąd Y (maxY 111->45)
+    "ZAC449": { translateZ: -66 }, "ZAC450": { translateZ: -66 }, // Tętnica ciemieniowa tylna L/P
+    "ZAC298": { translateZ: -66 }, "ZAC299": { translateZ: -66 }, // Tętnica kątowa L/P
+    "ZAC441": { translateZ: -66 }, "ZAC442": { translateZ: -66 }, // Tętnica czołowo-podstawna boczna L/P
+    // Kolejna, ODDZIELNA podgrupa naczyn glowy z bledem TYLKO w osi Y (nie Z) -
+    // zaufana kosc potyliczna (FMA, "zawsze OK") ma tyl czaszki (max Y) = 92.3.
+    // (a) Tetnice krazenia tylnego mozgu (przy pniu mozgu/klivusie) - dowod
+    // twardy: podstawna(ZAC453) siedziala Y~87 srodek, a zaufany punkt "Stok"
+    // (Clivus, dodany wczesniej z polmiska rozmaitosci) jest w Y=-10 - roznica
+    // 97mm, niemal idealnie 98mm (ten sam typ bledu co reszta importu ZAC).
+    "ZAC453": { translateY: -98 }, // Tętnica podstawna
+    "ZAC454": { translateY: -98 }, "ZAC455": { translateY: -98 }, // Tętnica tylna mózgu (PCA) L/P
+    "ZAC460": { translateY: -98 }, "ZAC461": { translateY: -98 }, // Tętnica dolna tylna móżdżku (PICA) L/P
+    "ZAC462": { translateY: -98 }, "ZAC463": { translateY: -98 }, // Tętnica rdzeniowa przednia L/P
+    "ZAC464": { translateY: -98 }, "ZAC465": { translateY: -98 }, // Tętnica dolna przednia móżdżku (AICA) L/P
+    "ZAC466": { translateY: -98 }, "ZAC467": { translateY: -98 }, // Tętnica górna móżdżku (SCA) L/P
+    // (b) Zatoki oponowe dolu tylnego + gałąź skroniowa przednia MCA - za blisko
+    // zaufanej zatoki poprzecznej (ZAC468, NIETKNIETA, maxY=72.7 - poprawna) zeby
+    // pasowac -98 (przesunelo by je NIEFIZJOLOGICZNIE za bardzo do przodu, przed
+    // zatoke poprzeczna z ktora sie lacza) - za to -66 (ten sam magnitud co reszta
+    // tej partii importu) sprowadza kazda z nich WYGODNIE pod twarda granice 92.3.
+    "ZAC433": { translateY: -66 }, "ZAC434": { translateY: -66 }, // Gałąź skroniowa przednia (MCA) L/P
+    "ZAC470": { translateY: -66 }, // Zatoka potyliczna
+    "ZAC471": { translateY: -66 }, "ZAC472": { translateY: -66 }, // Zatoka esowata L/P
+    "ZAC475": { translateY: -66 }, // Zatoka prosta
+    "ZAC476": { translateY: -66 }, "ZAC477": { translateY: -66 }, // Zatoka skalista dolna L/P
+    "ZAC478": { translateY: -66 }, "ZAC479": { translateY: -66 }, // Zatoka skalista górna L/P
+    // Kolejne pojedyncze obiekty ze ZNANYM bledem "~98mm za daleko do tylu"
+    // (WSKAZOWKI-TECHNICZNE-WSPOLNE.md pkt 8 - oryginalny sweep 188 obiektow
+    // ich nie zlapal). Zdiagnozowane metoda z pkt 8: CALA siatka (nie tylko
+    // centroid) siedziala w jednej, zbyt-tylnej polowie (np. tetnica
+    // nabrzuszna dolna miala Y w zakresie [-6,+82] zamiast byc mocno przednia
+    // jak reszta sciany brzucha [-124,-51]) - odjecie 98mm daje wynik
+    // pokrywajacy sie z zaufanym sasiadem (m. prosty brzucha / watroba /
+    // n. udowy obok tej samej tetnicy/zyly).
+    "ZAC1": { translateY: -98 },   // Tętnica nabrzuszna dolna (lewa)
+    "ZAC258": { translateY: -98 }, // Tętnica zasłonowa (lewa)
+    "ZAC99": { translateY: -98 },  // Tętnica pachowa (lewa)
+    "ZAC279": { translateY: -98 }, // Żyła wrotna wątroby
+    "ZAC13": { translateY: -98 },  // Żyła udowa (lewa)
+    "ZAC3": { translateY: -98 },   // Tętnica udowa (lewa) - ten sam blok co żyła udowa, biegną razem
+    // Prawe odpowiedniki powyzszych 5 par - przeoczone w poprzedniej turze
+    // (sprawdzano tylko strone lewa). Zweryfikowane wprost: cy prawej wersji
+    // roznil sie od juz-poprawionej (zaufanej) lewej wersji o dokladnie 98.0mm
+    // (np. t. udowa: L cy=-24.3 vs R cy=73.7, roznica 98.0) - identyczny podpis
+    // bledu co wyzej, wiec ta sama poprawka.
+    "ZAC2": { translateY: -98 },   // Tętnica nabrzuszna dolna (prawa)
+    "ZAC259": { translateY: -98 }, // Tętnica zasłonowa (prawa)
+    "ZAC100": { translateY: -98 }, // Tętnica pachowa (prawa)
+    "ZAC14": { translateY: -98 },  // Żyła udowa (prawa)
+    "ZAC4": { translateY: -98 },   // Tętnica udowa (prawa)
+    // Tętnice międzyżebrowe tylne (wiazka, L+P) - centrX Y=82.5, siegajace az do
+    // Y=180.7 (dalej w tyl niz trzon kregu piersiowego Th4-8, cy~55, i dalej niz
+    // jakikolwiek inny szkielet w tej okolicy - fizycznie poza tulowiem). Wzgledem
+    // juz naprawionego nerwu miedzyzebrowego (ZAC203/204, ta sama wiazka) roznica
+    // centroidow = 104-106mm, prawie dokladnie 98mm. Ten sam blok bledu co wyzej.
+    "ZAC226": { translateY: -98 }, // Tętnice międzyżebrowe tylne (lewe)
+    "ZAC227": { translateY: -98 }, // Tętnice międzyżebrowe tylne (prawe)
+    // Kolejna runda tego samego "-98 Y" bledu, znaleziona przez porownanie kazdej
+    // pary do zaufanego sasiada (t./z. podobojczykowa - natywne FMA - dla pachowych,
+    // FMA3784 "czesc zstepujaca aorty" - natywna, poprawna - dla duplikatu ZAC224/243,
+    // trzon kregowy dla ledzwiowych). Kazda ponizej sprawdzona osobno.
+    "ZAC145": { translateY: -98 }, "ZAC146": { translateY: -98 }, // Żyła pachowa L/P (raw cy=90.6, zaufana ż.podobojczykowa cy~-24 - po -98 => -7.4, spojnie bardziej przednio niz tetnica pachowa jak w ż./t. podobojczykowej)
+    "ZAC101": { translateY: -98 }, "ZAC102": { translateY: -98 }, // Tętnica piersiowo-barkowa (gałąź t.pachowej) L/P
+    "ZAC224": { translateY: -98 }, // Aorta piersiowa (duplikat FMA3784 "część zstępująca aorty" - natywna/poprawna, cy~0 - ten ZAC-owy import mial cy=115.3)
+    "ZAC243": { translateY: -98 }, // Aorta brzuszna (ten sam typ duplikatu co wyzej)
+    "ZAC245": { translateY: -98 }, "ZAC246": { translateY: -98 }, // Tętnice lędźwiowe L/P
+    "ZAC266": { translateY: -98 }, "ZAC267": { translateY: -98 }, // Żyły lędźwiowe L/P
+    "ZAC277": { translateY: -98 }, "ZAC278": { translateY: -98 }, // Żyła sromowa wewnętrzna L/P
+    // Żyła nieparzysta + dopływy - NIE jest to juz sztywne przesuniecie, patrz
+    // MESH_SHEAR_CORRECTIONS ponizej (potwierdzone w atlasie: "zatacza łuk").
+    // Runda 3 tego samego "-98" bledu, znaleziona ze zrzutow ekranu usera
+    // (okolica klatki/przepony/miednicy - identyczny wzorzec: siega daleko za
+    // trzon kregowy/kosc krzyzowa, twardo niemozliwe).
+    "ZAC217": { translateY: -98 }, "ZAC218": { translateY: -98 }, // Tętnica międzyżebrowa tylna druga L/P
+    "ZAC244": { translateY: -98 }, // Tętnica przeponowa dolna
+    "ZAC225": { translateY: -98 }, // Tętnice przeponowe górne
+    "ZAC268": { translateY: -98 }, // Żyły wątrobowe (po -98: Y[-45.7,-20] niemal idealnie pokrywa sie z zaufana natywna Żyłą główną dolną Y[-43.4,-13.4] - do niej wpadaja)
+    "ZAC269": { translateY: -98 }, "ZAC270": { translateY: -98 }, // Żyła biodrowo-lędźwiowa L/P (towarzyszaca tetnica ZAC256/257 juz poprawna, cy~13-18 - żyła byla 73mm dalej z tylu)
+    "ZAC254": { translateY: -98 }, "ZAC255": { translateY: -98 }, // Tętnica nadnerczowa dolna L/P
+    "ZAC105": { translateY: -98 }, "ZAC106": { translateY: -98 }, // Tętnica podłopatkowa L/P (galaz t.pachowej - zaufana axillary cy~-0.7, ta siedziala ~100mm z tylu)
+    "ZAC155": { translateY: -98 }, "ZAC156": { translateY: -98 }, // Żyła okalająca ramię przednia L/P
+    // Powierzchowny uklad zylny ramienia - odlokciowa/basilica (ZAC161/162) juz
+    // poprawna (cy=0.7), ale odpromieniowa/cephalica i posrodkowe sa przesuniete:
+    // koniec bliszy (proksymalny, przy barku) t.odpromieniowej sprawdzony wprost
+    // (Y=79.2 vs zaufana zyla pachowa do ktorej wpada Y=-7.4, przy niemal
+    // identycznym X=144.4 vs 142.9 - to na pewno ta sama okolica ciala, tylko
+    // zle Y). Po -98 konce zbiegaja sie sensownie.
+    "ZAC159": { translateY: -98 }, "ZAC160": { translateY: -98 }, // Żyła odpromieniowa (cephalica) L/P
+    "ZAC163": { translateY: -98 }, "ZAC164": { translateY: -98 }, // Żyła łokciowa pośrodkowa L/P
+    "ZAC165": { translateY: -98 }, "ZAC166": { translateY: -98 }, // Żyła pośrodkowa przedramienia L/P
+    "ZAC111": { translateY: -98 }, "ZAC112": { translateY: -98 }, // Tętnica okalająca ramię przednia L/P (ARTERIA - osobne ID od zyly ZAC155/156 ktora juz poprawiona; ten sam blok)
+    // Cala odnoga krezkowa/okreznicza (SMA/IMA dystalne galezie) - dowod twardy:
+    // zaufana natywna "Tętnica krezkowa dolna" (FMA) ma Y=[-58,-34]; te
+    // ponizsze to jej BEZPOSREDNIE galezie/doplywy, a siedzialy w Y=50-83 (107-
+    // 133mm za daleko z tylu, identyczny podpis bledu). Wczesniej bledna ocena
+    // "OK" dla ZAC223/251/280 byla oparta o slabszy dowod (trzon kregowy) -
+    // porownanie do wlasnego naczynia macierzystego jest znacznie mocniejsze.
+    "ZAC249": { translateY: -98 }, // Tętnica trzustkowo-dwunastnicza dolna
+    "ZAC250": { translateY: -98 }, // Tętnica krętniczo-okrężnicza
+    "ZAC251": { translateY: -98 }, // Tętnica wyrostka robaczkowego
+    "ZAC252": { translateY: -98 }, // Tętnica okrężnicza środkowa
+    "ZAC253": { translateY: -98 }, // Tętnice esicze
+    "ZAC223": { translateY: -98 }, // Gałąź brzeżna lewa
+    "ZAC280": { translateY: -98 }, // Żyła okrężnicza środkowa
+    "ZAC281": { translateY: -98 }, // Żyła krezkowa dolna
+    "ZAC282": { translateY: -98 }, // Żyły esicze
+    "ZAC103": { translateY: -98 }, "ZAC104": { translateY: -98 }, // Tętnica piersiowa boczna L/P (wskazane przez usera - vs zaufana t.piersiowo-grzbietowa ZAC107/108 cy=16.1, gap 43mm)
+    "ZAC157": { translateY: -98 }, "ZAC158": { translateY: -98 }, // Żyła piersiowa boczna L/P (towarzyszaca tetnicy powyzej)
+    // Znalezione automatycznym sweepem (wszystkie ZAC1-290 z cy>60, wykluczajac
+    // juz-poprawione i juz-zweryfikowane-jako-OK stopy/Siec rzepki/gałaz brzezna):
+    "ZAC147": { translateY: -98 }, "ZAC148": { translateY: -98 }, // Żyła podłopatkowa L/P (ZYLA - artria ZAC105/106 juz poprawiona osobno)
+    "ZAC151": { translateY: -98 }, "ZAC152": { translateY: -98 }, // Żyła piersiowo-grzbietowa L/P (ZYLA - artria ZAC107/108 juz OK/nietkniete)
+    "ZAC215": { translateY: -98 }, "ZAC216": { translateY: -98 }, // Tętnica międzyżebrowa tylna pierwsza L/P
+    // Naczynia szyi - ten sam blad. Dowod twardy: zaufane kregi szyjne C3-C7
+    // (natywne FMA) maja max Y (najbardziej z tylu, z wyrostkiem kolczystym)
+    // tylko 43.5-67.2 - ponizsze siedzialy wyzej niz TO na dowolnym poziomie
+    // szyi, czyli fizycznie za kregoslupem. Zyla szyjna przednia (prawdziwie
+    // bardzo przednia struktura) po -98 spada do Y=-29.4 - doskonale pasuje.
+    "ZAC415": { translateY: -98 }, "ZAC416": { translateY: -98 }, // Tętnica kręgowa L/P
+    "ZAC417": { translateY: -98 }, "ZAC418": { translateY: -98 }, // Pień tarczowo-szyjny L/P
+    "ZAC370": { translateY: -98 }, "ZAC371": { translateY: -98 }, // Tętnica szyjna zewnętrzna L/P
+    "ZAC413": { translateY: -98 }, "ZAC414": { translateY: -98 }, // Żyła tarczowa górna L/P
+    "ZAC326": { translateY: -98 }, "ZAC327": { translateY: -98 }, // Tętnica szyjna wewnętrzna L/P
+    "ZAC346": { translateY: -98 }, "ZAC347": { translateY: -98 }, // Żyła szyjna przednia L/P
+    "ZAC372": { translateY: -98 }, "ZAC373": { translateY: -98 }, // Tętnica gardłowa wstępująca L/P
+    "ZAC411": { translateY: -98 }, "ZAC412": { translateY: -98 }, // Żyła językowa L/P
+};
+
+// Nerwy czaszkowe III/IV/V (+galezie V1-V3)/VIII/IX kolo podstawy czaszki maja
+// POPRAWNY przebieg (sciezke) - sprawdzone geometrycznie wzgledem kosci
+// skroniowej/klinowej, patrz WSKAZOWKI-TECHNICZNE-WSPOLNE.md pkt 8 - ale siatka
+// importu Z-Anatomy jest za DUZA (ten sam typ bledu skali co przy mozgu,
+// naprawiony tam wczesniej ponownym eksportem; tu nie mamy dostepu do
+// zrodlowych .obj w tym repo, wiec korekta jest runtime), przez co lokalnie
+// "wystaja" poza czaszke i tworza wizualny "klebek" zamiast czytelnych,
+// cienkich pnia nerwowych. Skalujemy KAZDY obiekt WOKOL WLASNEGO centroidu
+// (nie wokol 0,0,0 grupy) - stad position ponizej to nie przypadkowe liczby,
+// tylko precyzyjnie wyliczone przesuniecie kompensujace skalowanie (patrz
+// scaleAroundOwnCentroid nizej), zeby nerw zostal na swoim miejscu, tylko
+// mniejszy.
+const MESH_SCALE_CORRECTIONS = {
+    "ZAC378": 0.45, "ZAC379": 0.45, // Nerw okoruchowy (III)
+    "ZAC380": 0.45, "ZAC381": 0.45, // Nerw bloczkowy (IV)
+    "ZAC382": 0.45, "ZAC383": 0.45, // Nerw trójdzielny (V)
+    "ZAC384": 0.45, "ZAC385": 0.45, // Nerw oczny (V1)
+    "ZAC386": 0.45, "ZAC387": 0.45, // Nerw szczękowy (V2)
+    "ZAC388": 0.45, "ZAC389": 0.45, // Nerw policzkowy (gałąź V3)
+    "ZAC390": 0.45, "ZAC391": 0.45, // Nerw językowy (gałąź V3)
+    "ZAC392": 0.45, "ZAC393": 0.45, // Nerw zębodołowy dolny (gałąź V3)
+    "ZAC394": 0.45, "ZAC395": 0.45, // Nerw bródkowy (gałąź V3)
+    "ZAC396": 0.45, "ZAC397": 0.45, // Nerw twarzowy (VII)
+    "ZAC398": 0.45, "ZAC399": 0.45, // Struna bębenkowa (gałąź VII, biegnie z V3)
+    "ZAC400": 0.45, "ZAC401": 0.45, // Nerw językowo-gardłowy (IX)
+    "ZAC374": 0.45, "ZAC375": 0.45, // Nerw przedsionkowo-ślimakowy (VIII)
+    "ZAC376": 0.45, "ZAC377": 0.45, // Nerw przedsionkowy (gałąź VIII)
+    "ZA707": 0.45, // Nerw ślimakowy (gałąź VIII)
+};
+
+// Korekty gdzie sama korekta "wokol wlasnego centroidu" (jak wyzej) nie
+// wystarcza, bo trzeba PRZY OKAZJI zeskalowania zakotwiczyc konkretny koniec
+// siatki do konkretnej, zweryfikowanej pozycji kostnej (nie tylko zachowac
+// srodek) - position i scale ponizej sa juz gotowymi, wyliczonymi wartosciami
+// (nie formula do przeliczenia w locie), bo wymagaly danych z live sceny
+// (bbox sąsiednich żeber) w momencie liczenia, patrz notatka w kazdym wpisie.
+const MESH_AFFINE_CORRECTIONS = {
+    // Nerwy międzyżebrowe (Th1-Th12, cala wiazka jako jeden obiekt na strone) -
+    // siegaly od Z=586 (WYZEJ niz żebro I, Z=510) do Z=132 (okolica uda) -
+    // rozciagniecie 453mm zamiast realnego zasiegu klatki piersiowej. Sprawdzone
+    // wizualnie wzgledem ryciny w "26.08.26/S_ półmisek rozmaitości.pdf" str. 290
+    // (Rozdzial XXV) - nerwy międzyżebrowe biegna w WASKIM poziomym pasie
+    // Th1-Th12, nie w chmurze. Przeskalowane (a=0.7088) tak, zeby rozpietosc
+    // odpowiadala dystansowi żebro I -> żebro XII (+ mały zapas na n.
+    // podżebrowy pod żebrem XII), i przesuniete tak, zeby gorny koniec
+    // (najbardziej z tylu/gory) pokrywal sie z żebrem I.
+    "ZAC203": { scale: 0.7088, position: [21.72, -30.71, 341.55] },  // lewe
+    "ZAC204": { scale: 0.7088, position: [-21.72, -30.71, 341.55] }, // prawe
+};
+
+// Naczynia, ktorych blad NIE jest sztywnym przesunieciem tylko WYGIETYM
+// ksztaltem siatki (rosnie/maleje wzdluz dlugosci obiektu) - pojedynczy
+// translateY (jak w MESH_POSITION_CORRECTIONS) albo nie naprawia jednego konca,
+// albo przesuwa drugi za daleko. Kazdy wpis: przesuniecie Y interpolowane
+// LINIOWO wzdluz WLASNEGO lokalnego zakresu Z obiektu (dolny koniec ->
+// bottomShift, gorny koniec -> topShift), aplikowane per-wierzcholek.
+const MESH_SHEAR_CORRECTIONS = {
+    // Żyła nieparzysta (+ krotka/krotka dodatkowa) - potwierdzone w "półmisku
+    // rozmaitości" str.324 ("Nad korzeniem płuca prawego przebiega żyła
+    // nieparzysta, która ZATACZA ŁUK i uchodzi do żyły głównej górnej") - czyli
+    // to LUK, nie prosta. Dolny koniec (przy przeponie/kregach ledzwiowych)
+    // powinien zostac blisko kregoslupa - mala poprawka. Gorny koniec (przy
+    // luku nad wneka prawego pluca) powinien podejsc pod zaufana natywna Żyłę
+    // główną górną (FMA4720, Y=[-37,-13]) do ktorej sie wlewa - duza poprawka
+    // (surowy gorny koniec Y=128, cel ok. -20 => ~-148).
+    "ZAC238": { bottomShift: -25, topShift: -148 }, // Żyła nieparzysta
+    "ZAC239": { bottomShift: -25, topShift: -148 }, // Żyła nieparzysta krótka
+    "ZAC240": { bottomShift: -25, topShift: -148 }, // Żyła nieparzysta krótka dodatkowa
+};
+function applyShearCorrection(obj, shear) {
+    let minZ = Infinity, maxZ = -Infinity;
+    obj.traverse((n) => {
+        if (!n.isMesh) return;
+        const pos = n.geometry.attributes.position;
+        for (let i = 0; i < pos.count; i++) {
+            const z = pos.getZ(i);
+            if (z < minZ) minZ = z;
+            if (z > maxZ) maxZ = z;
+        }
+    });
+    const span = maxZ - minZ || 1;
+    obj.traverse((n) => {
+        if (!n.isMesh) return;
+        const pos = n.geometry.attributes.position;
+        for (let i = 0; i < pos.count; i++) {
+            const t = (pos.getZ(i) - minZ) / span; // 0 na dole, 1 na gorze
+            const shiftY = shear.bottomShift + (shear.topShift - shear.bottomShift) * t;
+            pos.setY(i, pos.getY(i) + shiftY);
+        }
+        pos.needsUpdate = true;
+        n.geometry.computeBoundingBox();
+        n.geometry.computeBoundingSphere();
+    });
+}
+
 let bones = [];
 let allLandmarks = [];
+let szpilkiMap = []; // linked szpilki (kolokwia) - patrz build_szpilki_data.js / SZPILKI-2024-2025-lista.md
+let szpilkiTodo = []; // szpilki jeszcze bez dopasowanej struktury w atlasie
+let notatkiWykladowe = {}; // kolokwium -> kategoria notatki -> tekst (SZPILKI-2024-2025-notatki-wykladowe.md)
 let selectedMesh = null;
 const group = new THREE.Group();
 scene.add(group);
@@ -500,6 +869,48 @@ async function loadMeshesForKind(kind) {
                 child.receiveShadow = true;
             }
         });
+        const correction = MESH_POSITION_CORRECTIONS[bone.id];
+        if (correction && correction.mirrorX !== undefined) {
+            // Chcemy, zeby WORLD-SPACE x (to co faktycznie widac/mierzy sie w
+            // scenie, po doliczeniu przesuniecia calej `group` z centrowania w
+            // init()) spelnialo x' = C - x. Ale `obj` jest DZIECKIEM `group` -
+            // scale/position ustawione tutaj dzialaja w przestrzeni LOKALNEJ
+            // (przed doliczeniem group.position), wiec samo position.x=C daje
+            // world x' = C - x + group.position.x (o group.position.x za duzo) -
+            // trzeba odjac je PODWOJNIE (raz bo x sam juz je zawiera, raz bo
+            // dodaje sie ponownie przy skladaniu z group.matrixWorld).
+            obj.scale.x = -1;
+            obj.position.x = correction.mirrorX - 2 * group.position.x;
+        }
+        // Proste przesuniecie (bez odbicia/skalowania) - w przestrzeni lokalnej
+        // dzialaja tak samo jak w world-space (group tylko translatuje, nie
+        // skaluje/obraca), wiec nie trzeba dodatkowej matematyki jak przy mirrorX.
+        if (correction && correction.translateX) obj.position.x += correction.translateX;
+        if (correction && correction.translateY) obj.position.y += correction.translateY;
+        if (correction && correction.translateZ) obj.position.z += correction.translateZ;
+        const scaleCorrection = MESH_SCALE_CORRECTIONS[bone.id];
+        if (scaleCorrection) {
+            // W tym miejscu `obj` NIE jest jeszcze dzieckiem `group` (dodajemy je
+            // kilka linii nizej), wiec Box3.setFromObject(obj) daje surowe/lokalne
+            // wspolrzedne (bez przesuniecia grupy) - dokladnie to, czego trzeba do
+            // przeskalowania WOKOL WLASNEGO srodka: dla x' = s*x + P*(1-s) srodek
+            // P zostaje na miejscu, tylko geometria sie kurczy/rosnie wokol niego
+            // (samo scale.setScalar() bez tej korekty position skurczyloby siatke
+            // do (0,0,0) calego modelu, przesuwajac nerw daleko od jego realnej
+            // pozycji).
+            const localCenter = new THREE.Box3().setFromObject(obj).getCenter(new THREE.Vector3());
+            obj.scale.setScalar(scaleCorrection);
+            obj.position.copy(localCenter).multiplyScalar(1 - scaleCorrection);
+        }
+        const affineCorrection = MESH_AFFINE_CORRECTIONS[bone.id];
+        if (affineCorrection) {
+            // Gotowe, wyliczone wczesniej wartosci (patrz komentarz przy
+            // MESH_AFFINE_CORRECTIONS) - zadnej dodatkowej matematyki tutaj.
+            obj.scale.setScalar(affineCorrection.scale);
+            obj.position.set(affineCorrection.position[0], affineCorrection.position[1], affineCorrection.position[2]);
+        }
+        const shearCorrection = MESH_SHEAR_CORRECTIONS[bone.id];
+        if (shearCorrection) applyShearCorrection(obj, shearCorrection);
         obj.visible = false; // widocznosc ustawia wolajacy (ensureKindLoaded/openBone) po zakonczeniu ladowania
         group.add(obj);
         boneObjById.set(bone.id, obj);
@@ -597,7 +1008,17 @@ async function init() {
     // zadziala na nie automatycznie.
     try {
         const lmRes = await fetch("bone_landmarks.json");
-        allLandmarks = await lmRes.json();
+        const rawLandmarks = await lmRes.json();
+        // "(z: Kość X)" oznacza punkty wykryte geometrycznie tam, gdzie dwie
+        // siatki sie stykaja (patrz _landmark_detect.mjs) - "Szew (z: ...)",
+        // "Powierzchnia stawowa (z: ...)", "Powierzchnia stawowa — staw
+        // skroniowo-żuchwowy (z: ...)", "Powierzchnia międzykręgowa (z: ...)".
+        // Te NIE maja wlasnej, unikalnej nazwy anatomicznej (w przeciwienstwie do
+        // np. "Szew wiencowy"/"Szew czolowo-nosowy", ktore ZOSTAJA, bo nie maja
+        // "(z: ...)" w nazwie), wiec nikt nie zapyta o nie na kolokwium -
+        // odfiltrowujemy 886 takich pozycji zamiast zaśmiecac liste/wyszukiwarke.
+        const GENERIC_TOUCH_RE = /\(z:\s/i;
+        allLandmarks = rawLandmarks.filter(lm => !GENERIC_TOUCH_RE.test(lm.pl));
         const FORAMEN_RE = /^Otwór|^Kanał/;
         for (const lm of allLandmarks) {
             const isForamen = FORAMEN_RE.test(lm.pl);
@@ -644,6 +1065,20 @@ async function init() {
     box.setFromObject(group);
     const center = box.getCenter(new THREE.Vector3());
     group.position.sub(center);
+
+    // Dane szpilek z kolokwiow (opcjonalne - patrz tryb kolokwium nizej) - brak
+    // tych plikow nie powinien blokowac reszty atlasu, stad osobny try/catch.
+    try {
+        const [smRes, stRes, nwRes] = await Promise.all([
+            fetch("szpilki_map.json"), fetch("szpilki_todo.json"), fetch("notatki_wykladowe.json"),
+        ]);
+        szpilkiMap = await smRes.json();
+        szpilkiTodo = await stRes.json();
+        notatkiWykladowe = await nwRes.json();
+        buildKolokwiumIndexes();
+    } catch (e) {
+        console.warn("Brak danych szpilek/notatek kolokwiow - tryb kolokwium bedzie niedostepny:", e);
+    }
 
     everFittedProperly = fitCameraToSkeleton();
     document.getElementById("loading").style.display = "none";
@@ -707,6 +1142,8 @@ async function openBone(boneId) {
     const boneLandmarks = allLandmarks.filter(lm => lm.boneId === boneId);
     document.getElementById("sb-pl").textContent = bone.pl;
     document.getElementById("sb-en").textContent = bone.en;
+    document.getElementById("sb-id").textContent = "ID: " + bone.id;
+    showNotesButton(document.getElementById("sb-notes-link"), MESH_NOTE_INDEX.get(bone.id), bone);
     const listEl = document.getElementById("sb-landmarks");
     listEl.innerHTML = "";
     if (boneLandmarks.length === 0) {
@@ -730,6 +1167,7 @@ async function openBone(boneId) {
                     sphere.material.color.setHex(LANDMARK_HIGHLIGHT);
                     selectedMesh = sphere;
                 }
+                showNotesButton(document.getElementById("sb-notes-link"), LANDMARK_NOTE_INDEX.get(lm.boneId + "|" + lm.pl), { kind: "bone", pl: lm.pl, en: lm.en });
             };
             listEl.appendChild(item);
         }
@@ -1087,6 +1525,46 @@ function addMeasurePoint(worldPos) {
     }
 }
 
+// ===== Skalpel - w trybie skalpela klikniecie w strukture chowa ja (tylko
+// widocznosc, nie usuwa zadnych danych), zeby moc "obierac warstwy" jak przy
+// prawdziwej preparacji. Stos wycietych struktur pozwala cofac pojedynczo
+// (w kolejnosci od najnowszej) albo przywrocic wszystko naraz. =====
+let scalpelMode = false;
+let cutStack = []; // [{boneId, obj}]
+const scalpelToggleBtn = document.getElementById("scalpel-toggle");
+const scalpelStatusEl = document.getElementById("scalpel-status");
+const scalpelUndoBtn = document.getElementById("scalpel-undo");
+const scalpelRestoreAllBtn = document.getElementById("scalpel-restore-all");
+
+function updateScalpelUI() {
+    scalpelStatusEl.textContent = cutStack.length > 0 ? `wycięto: ${cutStack.length}` : "";
+    scalpelUndoBtn.style.display = cutStack.length > 0 ? "inline-block" : "none";
+    scalpelRestoreAllBtn.style.display = cutStack.length > 0 ? "inline-block" : "none";
+}
+
+function cutBone(boneId) {
+    const obj = boneObjById.get(boneId);
+    if (!obj || !obj.visible) return;
+    obj.visible = false;
+    cutStack.push({ boneId, obj });
+    updateScalpelUI();
+}
+
+scalpelToggleBtn.addEventListener("click", () => {
+    scalpelMode = !scalpelMode;
+    scalpelToggleBtn.classList.toggle("active", scalpelMode);
+});
+scalpelUndoBtn.addEventListener("click", () => {
+    const last = cutStack.pop();
+    if (last) last.obj.visible = true;
+    updateScalpelUI();
+});
+scalpelRestoreAllBtn.addEventListener("click", () => {
+    for (const { obj } of cutStack) obj.visible = true;
+    cutStack = [];
+    updateScalpelUI();
+});
+
 // ===== Zakladki (localStorage) - zapisuja pozycje/cel kamery + ew. otwarta
 // (izolowana) kosc, zeby wrocic dokladnie do tego samego kadru pozniej =====
 const BOOKMARKS_KEY = "atlas3d_bookmarks_v1";
@@ -1313,66 +1791,9 @@ function resetSelection() {
     undimAll();
     if (!selectedMesh) return;
     const wasLandmark = !!selectedMesh.userData.landmark;
-    const customColor = selectedMesh.userData.customColor;
-    selectedMesh.material.color.setHex(customColor !== undefined ? customColor : (wasLandmark ? LANDMARK_COLOR : baseColorFor(selectedMesh.userData.bone)));
+    selectedMesh.material.color.setHex(wasLandmark ? LANDMARK_COLOR : baseColorFor(selectedMesh.userData.bone));
     selectedMesh = null;
 }
-
-// Link do Wikipedii (EN) - oczyszczamy nazwe angielska z "left/right/part of"
-// itp zeby wyszukiwanie trafialo w ogolny artykul o strukturze, nie w cos
-// bardzo specyficznego czego prawdopodobnie nie ma (wzorzec z BodyExplorer).
-function cleanNameForSearch(en) {
-    if (!en) return "";
-    return en.toLowerCase()
-        .replace(/\s*\(\d+\)\s*$/, "")
-        .replace(/\b(left|right)\b/g, "")
-        .replace(/\b\w+\s+part\s+of\s+/g, "")
-        .replace(/\b\w+\s+head\s+of\s+/g, "")
-        .replace(/\b\w+\s+belly\s+of\s+/g, "")
-        .replace(/\bset\s+of\b/g, "")
-        .replace(/\s+/g, " ").trim();
-}
-function showWikiLink(en) {
-    const link = document.getElementById("lbl-wiki-link");
-    const term = cleanNameForSearch(en);
-    if (!term) { link.style.display = "none"; return; }
-    link.href = "https://en.wikipedia.org/w/index.php?search=" + encodeURIComponent(term + " anatomy");
-    link.style.display = "block";
-}
-
-// Paleta kolorow do recznego oznaczania struktur (np. do powtorek przed
-// egzaminem) - wzorzec z BodyExplorer. Klikniecie swatcha nadpisuje kolor
-// materialu NA STALE (przetrwa odznaczenie), niezaleznie od domyslnego
-// koloru wg typu/regionu.
-const HIGHLIGHT_SWATCHES = [0xe74c3c, 0xe67e22, 0xf1c40f, 0x2ecc71, 0x1abc9c, 0x3498db, 0x9b59b6, 0xe91e90];
-function renderColorSwatches() {
-    const box = document.getElementById("lbl-color-swatches");
-    box.innerHTML = "";
-    for (const hex of HIGHLIGHT_SWATCHES) {
-        const sw = document.createElement("div");
-        const cssHex = "#" + hex.toString(16).padStart(6, "0");
-        sw.style.cssText = "width:18px;height:18px;border-radius:3px;cursor:pointer;border:1px solid #0006;background:" + cssHex;
-        sw.title = "Oznacz tym kolorem";
-        sw.onclick = () => {
-            if (!selectedMesh) return;
-            selectedMesh.userData.customColor = hex;
-            selectedMesh.material.color.setHex(hex);
-        };
-        box.appendChild(sw);
-    }
-    const clearBtn = document.createElement("div");
-    clearBtn.textContent = "✕";
-    clearBtn.title = "Usuń oznaczenie koloru";
-    clearBtn.style.cssText = "width:18px;height:18px;border-radius:3px;cursor:pointer;border:1px solid #0006;display:flex;align-items:center;justify-content:center;font-size:11px;color:#aaa;";
-    clearBtn.onclick = () => {
-        if (!selectedMesh) return;
-        delete selectedMesh.userData.customColor;
-        const wasLandmark = !!selectedMesh.userData.landmark;
-        selectedMesh.material.color.setHex(wasLandmark ? LANDMARK_HIGHLIGHT : HIGHLIGHT_COLOR);
-    };
-    box.appendChild(clearBtn);
-}
-renderColorSwatches();
 
 // Zoom scrollem W STRONE punktu pod kursorem (nie do stalego srodka orbity) -
 // technika z BodyExplorer. Wylaczamy domyslny zoom OrbitControls i liczymy
@@ -1470,13 +1891,23 @@ renderer.domElement.addEventListener("click", (event) => {
     // widocznosci kazdego trafienia.
     const landmarkHitsRaw = raycaster.intersectObjects(landmarkMeshes, false);
     const boneHitsRaw = raycaster.intersectObjects(group.children, true);
-    const landmarkHits = landmarkHitsRaw.filter(h => h.object.visible);
+    // Raycaster tez nie wie NIC o material.clippingPlanes (to efekt shadera przy
+    // rasteryzacji, nie geometrii) - bez tego filtra klikniecie trafialoby w
+    // czesc struktury odcieta (niewidoczna) przez suwak Przekroju.
+    const clipOk = (point) => !sectionToggle.checked || sectionPlane.distanceToPoint(point) >= 0;
+    const landmarkHits = landmarkHitsRaw.filter(h => h.object.visible && clipOk(h.point));
     const boneHits = boneHitsRaw.filter(h => {
         const bone = h.object.userData.bone;
         if (!bone) return false;
         const parentObj = boneObjById.get(bone.id);
-        return parentObj ? parentObj.visible : false;
+        return (parentObj ? parentObj.visible : false) && clipOk(h.point);
     });
+
+    if (scalpelMode) {
+        const hit = boneHits[0];
+        if (hit) cutBone(hit.object.userData.bone.id);
+        return;
+    }
 
     if (measureMode) {
         const hit = landmarkHits[0] || boneHits[0];
@@ -1503,11 +1934,12 @@ renderer.domElement.addEventListener("click", (event) => {
         const lm = mesh.userData.landmark;
         document.getElementById("lbl-pl-text").textContent = lm.pl;
         document.getElementById("lbl-en").textContent = lm.en;
+        document.getElementById("lbl-id").textContent = "ID: " + lm.boneId + " (punkt)";
         document.getElementById("lbl-approx-warn").style.display = lm.approx ? "block" : "none";
         currentSpeakName = lm.pl;
         openBtn.style.display = "none";
         document.getElementById("label-box").style.display = "block";
-        showWikiLink(lm.en);
+        showNotesButton(document.getElementById("lbl-notes-link"), LANDMARK_NOTE_INDEX.get(lm.boneId + "|" + lm.pl), { kind: "bone", pl: lm.pl, en: lm.en });
         if (isolatedBoneId === null) dimOthersExcept(lm.boneId);
     } else if (boneHits.length > 0) {
         const mesh = boneHits[0].object;
@@ -1516,9 +1948,10 @@ renderer.domElement.addEventListener("click", (event) => {
         const bone = mesh.userData.bone;
         document.getElementById("lbl-pl-text").textContent = bone.pl;
         document.getElementById("lbl-en").textContent = bone.en;
+        document.getElementById("lbl-id").textContent = "ID: " + bone.id;
         document.getElementById("lbl-approx-warn").style.display = "none";
         currentSpeakName = bone.pl;
-        showWikiLink(bone.en);
+        showNotesButton(document.getElementById("lbl-notes-link"), MESH_NOTE_INDEX.get(bone.id), bone);
         if (isolatedBoneId === null) dimOthersExcept(bone.id);
         if (isolatedBoneId === null) {
             openBtn.style.display = "block";
@@ -1529,6 +1962,7 @@ renderer.domElement.addEventListener("click", (event) => {
         document.getElementById("label-box").style.display = "block";
     } else {
         document.getElementById("label-box").style.display = "none";
+        document.getElementById("lbl-notes-link").style.display = "none";
     }
 });
 
@@ -1545,17 +1979,21 @@ window.addEventListener("resize", () => {
 // ===== Tryb tanca (demo/easter egg) - podpinamy 203 kosci szkieletu pod
 // uproszczony rig stawow (Hips/Spine/Arm/Leg... jak w typowym rigu motion-
 // capture) i odtwarzamy na nim ROTACJE z darmowego pliku BVH (CMU Mocap,
-// domena publiczna, "Robot dance" #120_21, https://mocap.cs.cmu.edu -
-// zrodlo: https://github.com/una-dinosauria/cmu-mocap). Kosci nie sa
+// domena publiczna, "Macarena Dance" #143_35, https://mocap.cs.cmu.edu -
+// zrodlo: https://github.com/una-dinosauria/cmu-mocap, konwersja BVH
+// B. Hahne/cgspeed). Wybrany zamiast "Robot dance" bo jest czytelniejszy
+// jako taniec (skrzyzowania rak, kolysanie bioder, cwiartka obrotu) i
+// prawie nie przemieszcza root-a (~10 cm zakresu) - patrz nizej, Hips
+// celowo NIE jest translowany. Kosci nie sa
 // naszkieletowane/rigowane (BodyParts3D to statyczne, oddzielne siatki), wiec
 // budujemy WLASNA hierarchie pivotow z rzeczywistych rozmiarow naszego
 // szkieletu (a NIE z proporcji BVH) i kopiujemy z pliku BVH tylko LOKALNE
 // ROTACJE stawow (wzgledem pozy z klatki 0) - dzieki temu kosci nie
 // "rozjezdzaja sie" w stawach mimo ze mocap ma inne proporcje ciala niz nasz
 // model. Pozycja (Hips) celowo NIE jest animowana (patrz uzasadnienie przy
-// DANCE_BVH_URL) - taniec "Robot" jest w duzej mierze stacjonarny, wiec efekt
+// DANCE_BVH_URL) - "Macarena" jest w duzej mierze stacjonarna, wiec efekt
 // i tak czytelnie wyglada jak taniec.
-const DANCE_BVH_URL = "dance_robot.bvh";
+const DANCE_BVH_URL = "dance_macarena.bvh";
 
 // Kolejnosc = kolejnosc budowy (rodzic MUSI powstac przed dzieckiem).
 const DANCE_JOINT_PARENT = {
@@ -1707,15 +2145,77 @@ async function buildDanceRig() {
     const result = await loader.loadAsync(DANCE_BVH_URL);
     danceBvhBonesByName = new Map();
     result.skeleton.bones.forEach(b => danceBvhBonesByName.set(b.name, b));
-    danceBindQuats = new Map();
-    for (const jointName of dancePivots.keys()) {
-        const bvhBone = danceBvhBonesByName.get(jointName);
-        danceBindQuats.set(jointName, bvhBone ? bvhBone.quaternion.clone() : new THREE.Quaternion());
-    }
+
     danceMixer = new THREE.AnimationMixer(result.skeleton.bones[0]);
     danceMixer.clipAction(result.clip).play();
 
+    // BIND = SREDNIA poza calego klipu per staw (a NIE klatka 0). W 143_35
+    // klatka 0 to nietypowa klatka kalibracyjna (T-poza) - realna "neutralna"
+    // poza szkieletu CMU ma na stale ~35 st. zgiecia w kostce, ~23 st. w
+    // kolanie i rozkrok w biodrze, ktorych klatka 0 NIE pokazuje. Gdybysmy
+    // odejmowali klatke 0, te offsety wchodzilyby do kazdej klatki i szkielet
+    // tanczylby na palcach w przysiadzie. Srednia kwaternionu = suma z
+    // wyrownaniem znaku + normalizacja (przyblizenie Markleya) - dla nog/stop
+    // wychodzi ich staly offset, dla rak srodek zakresu machania (a Macarena i
+    // tak nigdy nie ma rak "w dol").
+    danceBindQuats = new Map();
+    const _bindAcc = new Map(), _bindRef = new Map(), _bindTmp = new THREE.Quaternion();
+    for (const jn of dancePivots.keys()) _bindAcc.set(jn, [0, 0, 0, 0]);
+    const BIND_SAMPLES = 160;
+    for (let i = 0; i < BIND_SAMPLES; i++) {
+        danceMixer.setTime((i + 0.5) / BIND_SAMPLES * result.clip.duration);
+        for (const jn of dancePivots.keys()) {
+            danceChainQuat(jn, _bindTmp);
+            let ref = _bindRef.get(jn);
+            if (!ref) { ref = _bindTmp.clone(); _bindRef.set(jn, ref); }
+            const sgn = (_bindTmp.x * ref.x + _bindTmp.y * ref.y + _bindTmp.z * ref.z + _bindTmp.w * ref.w) < 0 ? -1 : 1;
+            const a = _bindAcc.get(jn);
+            a[0] += sgn * _bindTmp.x; a[1] += sgn * _bindTmp.y; a[2] += sgn * _bindTmp.z; a[3] += sgn * _bindTmp.w;
+        }
+    }
+    for (const jn of dancePivots.keys()) {
+        const a = _bindAcc.get(jn);
+        danceBindQuats.set(jn, new THREE.Quaternion(a[0], a[1], a[2], a[3]).normalize());
+    }
+    danceMixer.setTime(1.0); // start w srodku tanca, nie na klatce kalibracyjnej
+
     danceRigReady = true;
+}
+
+// Nasz uproszczony rig POMIJA kilka stawow posrednich BVH (Spine1 miedzy
+// Spine a barkami/szyja, Neck1 miedzy Neck a Head, L/RHipJoint miedzy Hips a
+// udem). Ich rotacja musi zostac "zlozona" w staw-rodzica naszego rigu,
+// inaczej po prostu ginie (szkielet nie klania sie / nie skreca tulowia tak
+// jak mocap). Ponizej: dla kazdego stawu naszego rigu lista kosci BVH,
+// ktorych LOKALNE kwaterniony trzeba przemnozyc (rodzic * dziecko) zeby
+// dostac efektywna rotacje lokalna wzgledem rodzica w NASZYM rigu.
+const DANCE_JOINT_BVH_CHAIN = {
+    // Hips: [] celowo - root CMU w 143_35 obraca sie o ~150 st. w yaw juz w
+    // 1. sekundzie (cwiartki obrotu Macareny + dziwny uklad klatki 0), przez
+    // co caly szkielet wirowalby w miejscu bokiem/tylem do kamery. Zostawiamy
+    // biodra nieruchomo (tak jak pozycje) - taniec i tak czytelnie widac po
+    // rekach/tulowiu/nogach.
+    Hips: [], LowerBack: ["LowerBack"], Spine: ["Spine", "Spine1"],
+    LeftShoulder: ["LeftShoulder"], RightShoulder: ["RightShoulder"],
+    Neck: ["Neck", "Neck1"], Head: ["Head"],
+    LeftArm: ["LeftArm"], RightArm: ["RightArm"],
+    LeftForeArm: ["LeftForeArm"], RightForeArm: ["RightForeArm"],
+    LeftHand: ["LeftHand"], RightHand: ["RightHand"],
+    LeftFingerBase: ["LeftFingerBase"], RightFingerBase: ["RightFingerBase"],
+    LeftUpLeg: ["LHipJoint", "LeftUpLeg"], RightUpLeg: ["RHipJoint", "RightUpLeg"],
+    LeftLeg: ["LeftLeg"], RightLeg: ["RightLeg"],
+    LeftFoot: ["LeftFoot"], RightFoot: ["RightFoot"],
+    LeftToeBase: ["LeftToeBase"], RightToeBase: ["RightToeBase"],
+};
+
+function danceChainQuat(jointName, target) {
+    const chain = DANCE_JOINT_BVH_CHAIN[jointName] || [jointName];
+    target.identity();
+    for (const bn of chain) {
+        const b = danceBvhBonesByName.get(bn);
+        if (b) target.multiply(b.quaternion);
+    }
+    return target;
 }
 
 // BVH (CMU) uzywa konwencji Y-up (Z-do-przodu), a nasz caly model jest Z-up
@@ -1729,16 +2229,20 @@ async function buildDanceRig() {
 const DANCE_AXIS_FIX = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI / 2);
 const DANCE_AXIS_FIX_INV = DANCE_AXIS_FIX.clone().invert();
 const _danceDelta = new THREE.Quaternion();
+const _danceNow = new THREE.Quaternion();
 
 function updateDancePose() {
     for (const [jointName, pivot] of dancePivots) {
-        const bvhBone = danceBvhBonesByName.get(jointName);
-        if (!bvhBone) continue;
         const bind = danceBindQuats.get(jointName);
+        if (!bind) continue;
+        // rotacja lokalna stawu TERAZ (zlozona po pominietych kosciach BVH,
+        // patrz DANCE_JOINT_BVH_CHAIN).
+        danceChainQuat(jointName, _danceNow);
         // delta = rotacja_teraz * odwrotnosc(rotacja_klatka_0) - "ile staw
-        // obrocil sie WZGLEDEM swojej pozy poczatkowej z pliku BVH", wyrazone
-        // jeszcze w UKLADZIE BVH.
-        _danceDelta.copy(bind).invert().premultiply(bvhBone.quaternion);
+        // obrocil sie WZGLEDEM swojej pozy z klatki 0", wyrazone jeszcze w
+        // UKLADZIE BVH. (BVH nie ma pozy rest -> rest = identycznosc -> delta
+        // sklada sie w ukladzie rodzica jako premultiply.)
+        _danceDelta.copy(bind).invert().premultiply(_danceNow);
         // Przeliczenie na nasz uklad Z-up (patrz komentarz DANCE_AXIS_FIX), i
         // dopiero to naklada sie na pivot (ktorego wlasna poza spoczynkowa to
         // tozsamosc - patrz attachPreservingWorld).
@@ -1780,9 +2284,431 @@ document.getElementById("dance-toggle").addEventListener("click", async () => {
     for (const mesh of landmarkMeshes) mesh.visible = false; // punkty orientacyjne zostaja na miejscu (nie sa czescia rigu) - ukrywamy, zeby nie "wisialy" w powietrzu
 });
 
+// ===== Etykiety ID na scenie - zamiast klikac kazda strukture osobno zeby
+// przeczytac jej ID (przydatne gdy trzeba zglosic wiele bledow naraz z jednego
+// zrzutu ekranu), rysujemy male "chmurki" z ID bezposrednio nad kazda
+// widoczna struktura, aktualizowane co klatke wg pozycji kamery. Pozycja
+// (world-space center) jest liczona raz i cache'owana - Box3().setFromObject
+// przy setce+ obiektow co klatke bylby zauwazalnie wolny. =====
+let showIdLabels = false;
+const idLabelPositionCache = new Map(); // boneId -> world-space Vector3
+const idLabelDivs = new Map(); // boneId -> HTMLElement
+const idLabelDots = new Map(); // boneId -> HTMLElement (kropka na realnym punkcie kotwicy)
+const idLabelLines = new Map(); // boneId -> SVGLineElement (leader line kotwica->etykieta)
+const idLabelsLayer = document.getElementById("id-labels-layer");
+const idLabelsLeaderLayer = document.getElementById("id-labels-leader-layer");
+document.getElementById("show-id-labels").addEventListener("change", (e) => {
+    showIdLabels = e.target.checked;
+    if (!showIdLabels) {
+        for (const div of idLabelDivs.values()) div.remove();
+        for (const dot of idLabelDots.values()) dot.remove();
+        for (const line of idLabelLines.values()) line.remove();
+        idLabelDivs.clear(); idLabelDots.clear(); idLabelLines.clear();
+    }
+});
+function getIdLabelWorldPos(boneId, obj) {
+    let pos = idLabelPositionCache.get(boneId);
+    if (!pos) {
+        const box = new THREE.Box3().setFromObject(obj);
+        pos = box.getCenter(new THREE.Vector3());
+        idLabelPositionCache.set(boneId, pos);
+    }
+    return pos;
+}
+// Etykiety "chmurki" z ID potrafily zachodzic na siebie masowo przy gestych
+// skupiskach (np. tetnice kory mozgu) - nieczytelne na zrzutach ekranu, ktore
+// sa glownym narzedziem lapania bledow pozycji (patrz WSKAZOWKI pkt 8). Zamiast
+// tego kazda etykieta ma teraz: (a) maly kropkowy znacznik DOKLADNIE na
+// realnej pozycji kotwicy, (b) sama "chmurka" wypychana promieniscie w
+// pierwsze wolne miejsce zeby nie zachodzic na juz-umieszczone etykiety w tej
+// klatce, (c) cienka linia laczaca kropke z chmurka, gdy zostala przesunieta.
+// Kolejnosc prob: promien rosnie co ~1/3 wysokosci etykiety, na kazdym
+// promieniu probujemy 10 katow - to daje ciasne, ale bez nachodzenia,
+// "rozkwitniecie" etykiet wokol gestego skupiska (user: "niech chmurki
+// uciekaja na okolo").
+function rectsOverlap(a, b, pad) {
+    return !(a.x2 + pad < b.x1 || b.x2 + pad < a.x1 || a.y2 + pad < b.y1 || b.y2 + pad < a.y1);
+}
+function findFreeLabelSpot(anchorX, anchorY, boxW, boxH, placedRects) {
+    const pad = 2;
+    const tryAt = (cx, cy) => {
+        const r = { x1: cx - boxW / 2, y1: cy - boxH / 2, x2: cx + boxW / 2, y2: cy + boxH / 2 };
+        for (const p of placedRects) if (rectsOverlap(r, p, pad)) return null;
+        return r;
+    };
+    let r = tryAt(anchorX, anchorY);
+    if (r) return { x: anchorX, y: anchorY, rect: r };
+    const ringStep = Math.max(boxH, 10);
+    const anglesPerRing = 10;
+    for (let ring = 1; ring <= 14; ring++) {
+        const radius = ring * ringStep * 0.75;
+        for (let a = 0; a < anglesPerRing; a++) {
+            const theta = (a / anglesPerRing) * Math.PI * 2 + ring * 0.35; // offset per ring zeby unikac "promieni" ustawionych w linii
+            const cx = anchorX + Math.cos(theta) * radius;
+            const cy = anchorY + Math.sin(theta) * radius;
+            r = tryAt(cx, cy);
+            if (r) return { x: cx, y: cy, rect: r };
+        }
+    }
+    return { x: anchorX, y: anchorY, rect: { x1: anchorX - boxW / 2, y1: anchorY - boxH / 2, x2: anchorX + boxW / 2, y2: anchorY + boxH / 2 } };
+}
+let lastIdLabelDeclutterAt = 0;
+function updateIdLabels() {
+    if (!showIdLabels) return;
+    // Pelne rozpychanie (spiral search po wszystkich widocznych etykietach) jest
+    // kosztowne przy setkach obiektow - odswiezamy je z throttlem (~6 razy/s),
+    // miedzy klatkami etykiety zostaja tam gdzie byly (lekkie opoznienie za
+    // kamera przy obrocie jest akceptowalne dla narzedzia debugowego).
+    const now = performance.now();
+    const doDeclutter = (now - lastIdLabelDeclutterAt) > 160;
+    if (doDeclutter) lastIdLabelDeclutterAt = now;
+    const seen = new Set();
+    const w = window.innerWidth, h = window.innerHeight;
+    const halfW = splitMode ? w / 2 : w;
+    const placedRects = [];
+    for (const [boneId, obj] of boneObjById) {
+        if (!obj.visible) continue;
+        const worldPos = getIdLabelWorldPos(boneId, obj);
+        // Etykieta ma respektowac Przekroj tak samo jak sama geometria - bez
+        // tego pokazywalaby ID rzeczy odcietych/niewidocznych suwakiem.
+        if (sectionToggle.checked && sectionPlane.distanceToPoint(worldPos) < 0) continue;
+        seen.add(boneId);
+        const proj = worldPos.clone().project(camera);
+        if (proj.z > 1 || proj.z < -1) {
+            const d = idLabelDivs.get(boneId); if (d) d.style.display = "none";
+            const dot = idLabelDots.get(boneId); if (dot) dot.style.display = "none";
+            const line = idLabelLines.get(boneId); if (line) line.style.display = "none";
+            continue;
+        }
+        const sx = (proj.x + 1) / 2 * halfW;
+        const sy = (1 - proj.y) / 2 * h;
+        let div = idLabelDivs.get(boneId);
+        if (!div) {
+            div = document.createElement("div");
+            div.className = "id-label";
+            div.textContent = boneId;
+            idLabelsLayer.appendChild(div);
+            idLabelDivs.set(boneId, div);
+        }
+        let dot = idLabelDots.get(boneId);
+        if (!dot) {
+            dot = document.createElement("div");
+            dot.className = "id-label-anchor-dot";
+            idLabelsLayer.appendChild(dot);
+            idLabelDots.set(boneId, dot);
+        }
+        let line = idLabelLines.get(boneId);
+        if (!line) {
+            line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("stroke", "rgba(123,220,255,0.55)");
+            line.setAttribute("stroke-width", "1");
+            idLabelsLeaderLayer.appendChild(line);
+            idLabelLines.set(boneId, line);
+        }
+        div.style.display = "block"; dot.style.display = "block"; line.style.display = "block";
+        dot.style.left = sx + "px"; dot.style.top = sy + "px";
+        if (doDeclutter || !div.dataset.placed) {
+            div.style.left = sx + "px"; div.style.top = sy + "px"; // tymczasowo na kotwicy, zeby zmierzyc rozmiar
+            const boxW = div.offsetWidth + 4, boxH = div.offsetHeight + 4;
+            const spot = findFreeLabelSpot(sx, sy, boxW, boxH, placedRects);
+            placedRects.push(spot.rect);
+            div.style.left = spot.x + "px"; div.style.top = spot.y + "px";
+            div.dataset.placed = "1"; div.dataset.lx = spot.x; div.dataset.ly = spot.y;
+        } else {
+            // miedzy declutterami trzymamy ostatnia znalezniona pozycje etykiety
+            // wzgledem BIEZACEJ (nowej) pozycji kotwicy nie zmieniamy - kotwica
+            // (kropka) i tak sledzi kamere co klatke, tylko sama "chmurka" laguje.
+            div.style.left = div.dataset.lx + "px"; div.style.top = div.dataset.ly + "px";
+            placedRects.push({ x1: +div.dataset.lx - div.offsetWidth/2, y1: +div.dataset.ly - div.offsetHeight/2, x2: +div.dataset.lx + div.offsetWidth/2, y2: +div.dataset.ly + div.offsetHeight/2 });
+        }
+        const lx = +div.dataset.lx, ly = +div.dataset.ly;
+        const moved = Math.hypot(lx - sx, ly - sy) > 6;
+        line.style.display = moved ? "block" : "none";
+        if (moved) { line.setAttribute("x1", sx); line.setAttribute("y1", sy); line.setAttribute("x2", lx); line.setAttribute("y2", ly); }
+    }
+    for (const [boneId, div] of idLabelDivs) {
+        if (!seen.has(boneId)) {
+            div.remove(); idLabelDivs.delete(boneId);
+            const dot = idLabelDots.get(boneId); if (dot) dot.remove(); idLabelDots.delete(boneId);
+            const line = idLabelLines.get(boneId); if (line) line.remove(); idLabelLines.delete(boneId);
+        }
+    }
+}
+
+// ===== Tryb kolokwium - lista szpilek z SZPILKI-2024-2025-lista.md pogrupowana
+// wg kategorii, dopasowana do struktur atlasu przez build_szpilki_data.js
+// (szpilki_map.json = dopasowane, szpilki_todo.json = jeszcze nie dodane).
+// Klikniecie szpilki otwiera/izoluje strukture (ta sama sciezka co wyszukiwarka
+// - openBone + selectLandmarkInSidebar), przycisk "Notatka" pokazuje parafraze
+// wykladu dla calej grupy struktur (notatki_wykladowe.json). =====
+const KOLOKWIUM_META = {
+    I:   { title: "Kolokwium I — kończyny i tułów",                              layers: ["bone", "muscle", "nerve", "connective"] },
+    II:  { title: "Kolokwium II — trzewia klatki piersiowej, brzucha i miednicy", layers: ["bone", "vessel", "organ", "connective"] },
+    III: { title: "Kolokwium III — głowa i szyja",                               layers: ["bone", "muscle", "nerve", "vessel", "organ", "connective", "tooth"] },
+    IV:  { title: "Kolokwium IV — mózg",                                         layers: ["brain", "vessel", "nerve", "organ", "connective"] },
+};
+const ALL_LAYER_KINDS = ["bone", "muscle", "vessel", "organ", "tooth", "connective", "brain", "nerve", "lymph"];
+const LAYER_CHECKBOX_ID = { bone: "layer-bones", muscle: "layer-muscles", vessel: "layer-vessels", organ: "layer-organs", tooth: "layer-teeth", connective: "layer-connective", brain: "layer-brain", nerve: "layer-nerves", lymph: "layer-lymph" };
+
+let MESH_NOTE_INDEX = new Map();
+let LANDMARK_NOTE_INDEX = new Map();
+let KOLOKWIUM_GROUPS = {}; // kolokwium -> Map(kategoria -> {noteCategory, items:[...]})
+
+function buildKolokwiumIndexes() {
+    MESH_NOTE_INDEX = new Map();
+    LANDMARK_NOTE_INDEX = new Map();
+    for (const it of szpilkiMap) {
+        if (it.linkType === "mesh") MESH_NOTE_INDEX.set(it.id, it);
+        else if (it.linkType === "landmark") LANDMARK_NOTE_INDEX.set(it.boneId + "|" + it.matchedPl, it);
+    }
+    KOLOKWIUM_GROUPS = {};
+    for (const it of szpilkiMap.concat(szpilkiTodo)) {
+        const groups = (KOLOKWIUM_GROUPS[it.kolokwium] = KOLOKWIUM_GROUPS[it.kolokwium] || new Map());
+        if (!groups.has(it.category)) groups.set(it.category, { noteCategory: it.noteCategory, items: [] });
+        groups.get(it.category).items.push(it);
+    }
+}
+
+// Wiekszosc struktur w atlasie NIE jest doslownie wymieniona jako szpilka
+// (np. sama "Kość ciemieniowa" nigdy nie jest szpilka - tylko konkretne
+// punkty NA niej sa), ale student i tak chce zobaczyc kontekst z wykladu przy
+// KAZDEJ strukturze. Ten klasyfikator to zapasowa (mniej pewna niz dokladne
+// dopasowanie szpilki) heurystyka po nazwie PL/EN + rodzaju struktury, ktora
+// zgaduje najbliższa kategorie notatki wg regionu ciala. W razie watpliwosci
+// zwraca null (brak notatki) zamiast zgadywac na sile - lepiej pokazac nic niz
+// zle dopasowana tresc.
+const NOTE_FALLBACK_RULES = {
+    bone: [
+        [/czaszk|ciemieniow|czołow|potylicz|skroniow|klinow|sitow|jarzmow|nosow|łzow|podniebienn|żuchw|szczęk|lemiesz|małżowin|gnykow/i, "III", "Czaszka — kości, otwory, kanały"],
+        [/kręg szyjny|kręg szczytow|kręg obrotow|atlas \(kręg|obrotowy \(kręg/i, "III", "Kręgosłup szyjny, opony, rdzeń kręgowy (odcinek głowowy)"],
+        [/łopatk|obojczyk|ramien|promieniow|łokciow|nadgarst|śródręcz|kość ręki|paliczek.*(ręk|palca ręki)/i, "I", "Kości, stawy, więzadła — kończyna górna"],
+        [/biodrow|kulszow|łonow|udow|rzepk|piszczel|strzałk|stęp|śródstop|kość stopy|paliczek.*stop/i, "I", "Kości, stawy, więzadła — kończyna dolna i miednica"],
+        [/żebro|mostek|kręg piersiow|kręg lędźwiow|krzyżow|guzicz/i, "I", "Kości, więzadła — klatka piersiowa, kręgosłup"],
+    ],
+    nerve: [
+        [/wzrokow|okoruchow|bloczkow|trójdziel|(^|\s)oczny|szczękow|żuchwow|odwodząc|twarzow|przedsionkow|ślimakow|językowo-gardłow|błędn|dodatkow|podjęzykow|policzkow|(^|\s)językow|zębodołow|bródkow|struna bębenkow/i, "III", "Nerwy głowy i szyi (nerw trójdzielny i twarzowy)"],
+        [/łokciow|promieniow|pośrodkow|pachow|mięśniowo-skórn|piersiow|przeponow|współczuln|międzyżebrow|biodrowo-podbrzuszn|biodrowo-pachwinow|płciowo-udow|skórny.*uda|udow|zasłonow|pośladkow|sromow|kulszow|piszczelow|strzałkow|łydkow|podeszwow/i, "I", "Nerwy"],
+    ],
+    vessel: [
+        [/zatok|opon/i, "IV", "Opony i zatoki żylne"],
+        [/mózgu|móżdżku|willisa|łącząca|podstawn(a|ej)? tętnic/i, "IV", "Naczynia mózgu"],
+        [/szyjn|twarzow|językow|potylicz|szczękow|tarczow|oczn|uszn|skroniow|gardłow|zębodołow/i, "III", "Naczynia głowy i szyi"],
+        [/aort|wieńcow|płucn|żołądkow|wątrobow|śledzion|krezkow|nerkow|biodrow|wrotn|nabrzuszn|sromow|maciczn|jądrow|jajnikow|pęcherzykow|odbytnicz|główna (dolna|górna)|nieparzyst|ramienno-głow|podobojczykow|tarczowo-szyjn/i, "II", "Tętnice i żyły — plan ogólny"],
+    ],
+    organ: [
+        [/ślinian/i, "III", "Ślinianki"],
+        [/oko\b|oczn|gałka oczna|rogówk|soczewk|twardówk|siatkówk/i, "III", "Oko"],
+        [/ucho\b|uszn|błędnik|kosteczk/i, "III", "Ucho"],
+        [/gardł|migdałek|język/i, "III", "Jama ustna, język, gardło"],
+        [/krtań|tarczyc/i, "III", "Krtań i tarczyca"],
+        [/^serce|osierdzi/i, "II", "Serce i osierdzie"],
+        [/płuc|oskrzel|tchawic|opłucn/i, "II", "Płuca, oskrzela, opłucna"],
+        [/przełyk|żołądek|żołądkow/i, "II", "Przełyk, żołądek"],
+        [/jelit|okrężnic|wyrostek robaczkow|odbytnic/i, "II", "Jelita"],
+        [/wątrob|pęcherzyk żółciow|trzustk|śledzion/i, "II", "Wątroba, trzustka, śledziona, drogi żółciowe"],
+        [/nerk|moczowod|pęcherz moczow|nadnercz/i, "II", "Nerki, moczowody, pęcherz moczowy, nadnercza"],
+        [/jądr|najądrz|nasieniowod|prąci|gruczoł krokow/i, "II", "Układ rozrodczy męski"],
+        [/jajnik|jajowod|macic|pochw/i, "II", "Układ rozrodczy żeński"],
+        [/przysadk/i, "IV", "Międzymózgowie"],
+    ],
+    brain: [
+        [/opuszka węchow|pasmo węchow|hipokamp|zakręt zębat|węchomózgowi/i, "IV", "Układ węchowy i limbiczny"],
+        [/jądro ogoniast|torebk|ciało modzelowat|sklepieni|skorup|prążkowi|przedmurz|ciało migdałowat/i, "IV", "Kresomózgowie — struktury głębokie"],
+        [/zakręt|bruzd|płat (czołow|ciemieniow|skroniow|potyliczn)|kora mózgu/i, "IV", "Kresomózgowie — zakręty i bruzdy kory"],
+        [/wzgórz|podwzgórz|szyszynk|zawzgórz|nadwzgórz/i, "IV", "Międzymózgowie"],
+        [/śródmózgowi|konar mózgu|istota czarn|wzgórek/i, "IV", "Śródmózgowie"],
+        [/^most\b|mostu\b/i, "IV", "Most"],
+        [/móżdżk/i, "IV", "Móżdżek"],
+        [/rdzeń przedłużon|piramid|oliwk|stożek rdzeniow|nić końcow/i, "IV", "Rdzeń przedłużony i przejście w rdzeń kręgowy"],
+        [/komor|splot naczyniówkow/i, "IV", "Komory mózgu i sploty naczyniówkowe"],
+        [/opon|sierp|namiot/i, "IV", "Opony i zatoki żylne"],
+    ],
+    muscle: [
+        [null, "I", null], // rozwiazywane ponizej przez classifyMuscleRegion, nie regex
+    ],
+    tooth: [
+        [/.*/i, "III", "Ząb, kość gnykowa"],
+    ],
+};
+const MUSCLE_REGION_TO_NOTE = {
+    head_neck: ["III", "Mięśnie głowy i szyi"],
+    trunk_anterior: ["I", "Mięśnie — tułów"],
+    trunk_posterior: ["I", "Mięśnie — tułów"],
+    shoulder_arm: ["I", "Mięśnie — kończyna górna"],
+    forearm_hand: ["I", "Mięśnie — kończyna górna"],
+    hip_thigh: ["I", "Mięśnie — kończyna dolna"],
+    leg_foot: ["I", "Mięśnie — kończyna dolna"],
+    other: null,
+};
+function classifyToNoteCategory(item) {
+    if (!item) return null;
+    if (item.kind === "muscle") {
+        const region = classifyMuscleRegion(item.en);
+        const mapped = MUSCLE_REGION_TO_NOTE[region];
+        return mapped ? { kolokwium: mapped[0], noteCategory: mapped[1] } : null;
+    }
+    const rules = NOTE_FALLBACK_RULES[item.kind];
+    if (!rules) return null;
+    for (const [re, kolokwium, noteCategory] of rules) {
+        if (re && re.test(item.pl)) return { kolokwium, noteCategory };
+    }
+    return null;
+}
+
+function showNotesButton(btnEl, entry, fallbackItem) {
+    if (!btnEl) return;
+    const resolved = (entry && entry.noteCategory) ? entry : classifyToNoteCategory(fallbackItem);
+    if (!resolved || !resolved.noteCategory || !(notatkiWykladowe[resolved.kolokwium] || {})[resolved.noteCategory]) {
+        btnEl.style.display = "none";
+        return;
+    }
+    btnEl.style.display = (btnEl.id === "sb-notes-link") ? "block" : "inline-block";
+    btnEl.onclick = () => openNotesModal(resolved.kolokwium, resolved.noteCategory);
+}
+
+function formatNoteText(text) {
+    const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return esc(text || "").replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+}
+function openNotesModal(kolokwium, noteCategory) {
+    const text = (notatkiWykladowe[kolokwium] || {})[noteCategory];
+    document.getElementById("notes-modal-title").textContent = noteCategory;
+    document.getElementById("notes-modal-sub").textContent = (KOLOKWIUM_META[kolokwium] || {}).title || ("Kolokwium " + kolokwium);
+    document.getElementById("notes-modal-body").innerHTML = text ? formatNoteText(text) : "Brak jeszcze notatki dla tej grupy struktur.";
+    document.getElementById("notes-modal").style.display = "flex";
+}
+function closeNotesModal() { document.getElementById("notes-modal").style.display = "none"; }
+document.getElementById("notes-modal-close").addEventListener("click", closeNotesModal);
+document.getElementById("notes-modal").addEventListener("click", (e) => { if (e.target.id === "notes-modal") closeNotesModal(); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeNotesModal(); });
+
+let activeKolokwium = null;
+let savedLayerCheckboxState = null;
+
+function setKolokwiumLayers(k) {
+    const wanted = new Set(KOLOKWIUM_META[k].layers);
+    for (const kind of ALL_LAYER_KINDS) {
+        const el = document.getElementById(LAYER_CHECKBOX_ID[kind]);
+        if (!el) continue;
+        const want = wanted.has(kind);
+        if (el.checked !== want) { el.checked = want; el.dispatchEvent(new Event("change")); }
+    }
+}
+function restoreLayers() {
+    if (!savedLayerCheckboxState) return;
+    for (const kind of ALL_LAYER_KINDS) {
+        const el = document.getElementById(LAYER_CHECKBOX_ID[kind]);
+        if (!el) continue;
+        const want = !!savedLayerCheckboxState[kind];
+        if (el.checked !== want) { el.checked = want; el.dispatchEvent(new Event("change")); }
+    }
+    savedLayerCheckboxState = null;
+}
+
+async function selectKolokwiumItem(it) {
+    if (it.linkType === "mesh") {
+        await ensureKindLoaded(it.kind);
+        await openBone(it.id);
+    } else if (it.linkType === "landmark") {
+        await ensureKindLoaded("bone");
+        await openBone(it.boneId);
+        // Dopasowanie po boneId+pl (nie po zapisanym indeksie) - bone_landmarks.json
+        // moze byc w miedzyczasie nadpisany przez rownolegla sesje (patrz
+        // WSKAZOWKI-TECHNICZNE-WSPOLNE.md pkt 3), wiec indeks moglby wskazywac
+        // na zupelnie inny punkt niz w momencie budowania szpilki_map.json.
+        const lm = allLandmarks.find(l => l.boneId === it.boneId && l.pl === it.matchedPl);
+        if (lm) selectLandmarkInSidebar(lm);
+    }
+}
+
+function renderKolokwiumPanel(k) {
+    const panel = document.getElementById("kolokwium-panel");
+    const groups = KOLOKWIUM_GROUPS[k];
+    if (!groups) { panel.style.display = "none"; return; }
+    panel.innerHTML = "";
+    const meta = KOLOKWIUM_META[k];
+    const h3 = document.createElement("h3");
+    h3.textContent = meta.title;
+    panel.appendChild(h3);
+
+    let total = 0, linked = 0;
+    for (const [, g] of groups) { total += g.items.length; linked += g.items.filter(it => it.id || it.boneId).length; }
+    const sub = document.createElement("div");
+    sub.className = "kw-sub";
+    sub.textContent = linked + "/" + total + " struktur dostępnych w atlasie — kliknij, żeby przejść do struktury";
+    panel.appendChild(sub);
+
+    for (const [category, g] of groups) {
+        const wrap = document.createElement("div");
+        wrap.className = "kw-category";
+        const header = document.createElement("div");
+        header.className = "kw-cat-header";
+        const name = document.createElement("span");
+        name.className = "kw-cat-name";
+        name.textContent = category;
+        header.appendChild(name);
+        if (g.noteCategory && (notatkiWykladowe[k] || {})[g.noteCategory]) {
+            const noteBtn = document.createElement("button");
+            noteBtn.className = "kw-note-btn";
+            noteBtn.textContent = "📝 Notatka";
+            noteBtn.onclick = () => openNotesModal(k, g.noteCategory);
+            header.appendChild(noteBtn);
+        }
+        wrap.appendChild(header);
+        for (const it of g.items) {
+            const isLinked = it.linkType === "mesh" || it.linkType === "landmark";
+            const div = document.createElement("div");
+            div.className = "kw-item" + (isLinked ? "" : " todo");
+            div.textContent = it.text;
+            if (isLinked) {
+                div.onclick = () => selectKolokwiumItem(it);
+            } else {
+                const badge = document.createElement("span");
+                badge.className = "kw-item-badge";
+                badge.textContent = "(jeszcze nie w atlasie)";
+                div.appendChild(badge);
+            }
+            wrap.appendChild(div);
+        }
+        panel.appendChild(wrap);
+    }
+    panel.style.display = "block";
+}
+
+document.querySelectorAll("#kolokwium-buttons button").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const k = btn.dataset.kolokwium;
+        const statusEl = document.getElementById("kolokwium-status");
+        if (k === "off" || activeKolokwium === k) {
+            activeKolokwium = null;
+            document.querySelectorAll("#kolokwium-buttons button").forEach(b => b.classList.remove("active"));
+            document.getElementById("kolokwium-panel").style.display = "none";
+            statusEl.textContent = "";
+            if (isolatedBoneId !== null) closeBone();
+            restoreLayers();
+            return;
+        }
+        if (!KOLOKWIUM_GROUPS[k]) {
+            statusEl.textContent = "Brak danych szpilek (szpilki_map.json się nie wczytał).";
+            return;
+        }
+        if (activeKolokwium === null) {
+            savedLayerCheckboxState = {};
+            for (const kind of ALL_LAYER_KINDS) savedLayerCheckboxState[kind] = document.getElementById(LAYER_CHECKBOX_ID[kind]).checked;
+        }
+        activeKolokwium = k;
+        document.querySelectorAll("#kolokwium-buttons button").forEach(b => b.classList.toggle("active", b.dataset.kolokwium === k));
+        statusEl.textContent = "Ładowanie warstw…";
+        setKolokwiumLayers(k);
+        renderKolokwiumPanel(k);
+        statusEl.textContent = "";
+    });
+});
+
 function animate() {
     requestAnimationFrame(animate);
     controls.update();
+    updateIdLabels();
     if (danceActive && danceMixer) {
         danceMixer.update(danceClock.getDelta());
         updateDancePose();
@@ -1814,6 +2740,29 @@ window.__dbgDance = {
     getMixer: () => danceMixer, getBvhNames: () => danceBvhBonesByName ? Array.from(danceBvhBonesByName.keys()) : null,
     getClock: () => danceClock, getBvhBonesByName: () => danceBvhBonesByName, getBindQuats: () => danceBindQuats,
     forceUpdate: (dt) => { danceMixer.update(dt); updateDancePose(); },
+};
+// TEMP DEBUG (usunac przed uznaniem za gotowe) - podglad renderu bez panelu przegladarki
+window.__dbgRender = {
+    grab: (dt) => {
+        if (dt && danceActive && danceMixer) { danceMixer.update(dt); updateDancePose(); }
+        renderer.render(scene, camera);
+        return renderer.domElement.toDataURL('image/png');
+    },
+    fitCam: () => { try { fitCameraToSkeleton(); } catch(e){} },
+    scene: () => scene, camera: () => camera, renderer: () => renderer,
+    bvhWorldQuatAtRest: () => {
+        // world rotation of each BVH bone using bind (frame-0) local quats
+        const res = {};
+        const bb = danceBvhBonesByName;
+        for (const [n,b] of bb) {
+            let q = new THREE.Quaternion(); let cur = b; const chain=[];
+            while (cur) { chain.unshift(cur); cur = cur.parent && cur.parent.isBone ? cur.parent : null; }
+            for (const c of chain) q.multiply(danceBindQuats.get(c.name) || c.quaternion);
+            const e = new THREE.Euler().setFromQuaternion(q);
+            res[n] = [e.x,e.y,e.z].map(v=>+(v*180/Math.PI).toFixed(1));
+        }
+        return res;
+    },
 };
 animate();
 </script>
