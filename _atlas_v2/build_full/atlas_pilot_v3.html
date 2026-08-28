@@ -129,7 +129,7 @@
         background: #444; z-index: 5; pointer-events: none;
     }
     #left-panel {
-        position: absolute; top: 16px; left: 16px; z-index: 10; width: 220px;
+        position: absolute; top: 48px; left: 16px; z-index: 10; width: 220px;
         background: rgba(20,20,20,0.85); color: #fff; border-radius: 8px; border: 1px solid #444;
         padding: 10px 14px; font-size: 12px; display: flex; flex-direction: column; gap: 10px;
     }
@@ -146,8 +146,6 @@
     .bm-item .bm-go { flex: 1; text-align: left; }
     .bm-item .bm-del { width: auto; padding: 4px 7px; background: #522; }
     #quiz-toggle.active { background: #3b7bff; border-color: #3b7bff; }
-    #dance-toggle.active { background: #ff5fa8; border-color: #ff5fa8; }
-    #dance-toggle.loading { opacity: 0.6; cursor: wait; }
     #quiz-box { display: none; flex-direction: column; gap: 6px; }
     #quiz-question { font-size: 13px; }
     #quiz-feedback { font-weight: 600; min-height: 16px; }
@@ -202,10 +200,55 @@
     transform: translate(-50%, calc(-100% - 16px)); white-space: nowrap;
   }
   #lm-tooltip .en { color: #97a0ad; font-size: 11px; font-weight: 400; display:block; white-space:normal; }
+
+  /* ===== menedżer okien: panele ruchome / zamykane / przywracalne ===== */
+  .win { padding-top: 26px !important; resize: both; overflow: auto; }
+  #topbar.win { resize: none; overflow: visible; }
+  .win > .winbar {
+    position: absolute; top: 0; left: 0; right: 0; height: 22px;
+    display: flex; align-items: center; gap: 6px; padding: 0 6px;
+    background: rgba(40,46,60,0.95); border-bottom: 1px solid #2b3444;
+    border-radius: 8px 8px 0 0; cursor: move; user-select: none;
+    font-size: 11px; font-weight: 600; color: #b9c2d0;
+  }
+  .win > .winbar .wb-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+  .win > .winbar .wb-x { margin-left: auto; cursor: pointer; color: #8a94a4; padding: 0 5px; font-size: 13px; line-height: 1; }
+  .win > .winbar .wb-x:hover { color: #ff7b72; }
+  .win.win-hidden { display: none !important; }
+  .win.dragging { opacity: 0.92; }
+  #winmenu { position: fixed; top: 10px; left: 16px; z-index: 60; font: 12px system-ui, sans-serif; }
+  #winmenu > button {
+    background: rgba(20,20,20,0.85); border: 1px solid #444; color: #dfe6ef;
+    border-radius: 8px; padding: 6px 11px; cursor: pointer; font-size: 12px;
+  }
+  #winmenu > button:hover { border-color: #3b7bff; }
+  #winmenu .wm-drop {
+    display: none; position: absolute; top: calc(100% + 4px); left: 0;
+    background: rgba(20,22,28,0.98); border: 1px solid #333b48; border-radius: 8px;
+    padding: 6px; min-width: 220px;
+  }
+  #winmenu.open .wm-drop { display: block; }
+  #winmenu .wm-drop label { display: flex; align-items: center; gap: 7px; padding: 5px 7px; border-radius: 5px; cursor: pointer; white-space: nowrap; color: #dfe6ef; }
+  #winmenu .wm-drop label:hover { background: #242c38; }
+  #winmenu .wm-drop hr { border: none; border-top: 1px solid #333b48; margin: 5px 2px; }
+  #winmenu .wm-reset { color: #7ec8ff; padding: 5px 7px; border-radius: 5px; cursor: pointer; }
+  #winmenu .wm-reset:hover { background: #242c38; }
 </style>
 </head>
 <body>
 <div style="position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:9999;background:#3f5b86;color:#fff;font:11px sans-serif;padding:2px 10px;border-radius:0 0 6px 6px">ATLAS v3 — PEŁNY Z-Anatomy (.blend)</div>
+<div id="winmenu">
+    <button id="wm-btn">🪟 Okna ▾</button>
+    <div class="wm-drop" id="wm-drop">
+        <label><input type="checkbox" data-win="left-panel" checked> Panel boczny (zakładki / nauka / kolokwia)</label>
+        <label><input type="checkbox" data-win="topbar" checked> Wyszukiwarka + widoki</label>
+        <label><input type="checkbox" data-win="layers-box" checked> Warstwy</label>
+        <label><input type="checkbox" data-win="tools-box" checked> Narzędzia (przekrój / skalpel / pomiar)</label>
+        <label><input type="checkbox" data-win="transparency-box" checked> Przezroczystość</label>
+        <hr>
+        <div class="wm-reset" id="wm-reset">↺ Reset układu okien</div>
+    </div>
+</div>
 <div id="loading">Ładowanie kości (203 struktury)...</div>
 <div id="canvas-wrap"></div>
 <div id="left-panel">
@@ -242,10 +285,6 @@
             <button data-kolokwium="off" style="flex-basis:100%;">✕ Wyłącz tryb kolokwium</button>
         </div>
         <div id="kolokwium-status"></div>
-    </div>
-    <div>
-        <h4>Demo</h4>
-        <button id="dance-toggle">💃 Zatańcz</button>
     </div>
 </div>
 <div id="kolokwium-panel"></div>
@@ -364,7 +403,6 @@ import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
 import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { DRACOLoader } from "three/addons/loaders/DRACOLoader.js";
 import { ConvexGeometry } from "three/addons/geometries/ConvexGeometry.js";
-import { BVHLoader } from "three/addons/loaders/BVHLoader.js";
 
 const V2B = "?b=" + Date.now();
 // Atlas v3: geometria pakowana po JEDNYM pliku .glb (Draco) na warstwe zamiast
@@ -2031,314 +2069,6 @@ window.addEventListener("resize", () => {
     }
 });
 
-// ===== Tryb tanca (demo/easter egg) - podpinamy 203 kosci szkieletu pod
-// uproszczony rig stawow (Hips/Spine/Arm/Leg... jak w typowym rigu motion-
-// capture) i odtwarzamy na nim ROTACJE z darmowego pliku BVH (CMU Mocap,
-// domena publiczna, "Macarena Dance" #143_35, https://mocap.cs.cmu.edu -
-// zrodlo: https://github.com/una-dinosauria/cmu-mocap, konwersja BVH
-// B. Hahne/cgspeed). Wybrany zamiast "Robot dance" bo jest czytelniejszy
-// jako taniec (skrzyzowania rak, kolysanie bioder, cwiartka obrotu) i
-// prawie nie przemieszcza root-a (~10 cm zakresu) - patrz nizej, Hips
-// celowo NIE jest translowany. Kosci nie sa
-// naszkieletowane/rigowane (BodyParts3D to statyczne, oddzielne siatki), wiec
-// budujemy WLASNA hierarchie pivotow z rzeczywistych rozmiarow naszego
-// szkieletu (a NIE z proporcji BVH) i kopiujemy z pliku BVH tylko LOKALNE
-// ROTACJE stawow (wzgledem pozy z klatki 0) - dzieki temu kosci nie
-// "rozjezdzaja sie" w stawach mimo ze mocap ma inne proporcje ciala niz nasz
-// model. Pozycja (Hips) celowo NIE jest animowana (patrz uzasadnienie przy
-// DANCE_BVH_URL) - "Macarena" jest w duzej mierze stacjonarna, wiec efekt
-// i tak czytelnie wyglada jak taniec.
-const DANCE_BVH_URL = "dance_macarena.bvh";
-
-// Kolejnosc = kolejnosc budowy (rodzic MUSI powstac przed dzieckiem).
-const DANCE_JOINT_PARENT = {
-    Hips: null,
-    LowerBack: "Hips", Spine: "LowerBack",
-    LeftShoulder: "Spine", RightShoulder: "Spine",
-    Neck: "Spine", Head: "Neck",
-    LeftArm: "LeftShoulder", RightArm: "RightShoulder",
-    LeftForeArm: "LeftArm", RightForeArm: "RightArm",
-    LeftHand: "LeftForeArm", RightHand: "RightForeArm",
-    LeftFingerBase: "LeftHand", RightFingerBase: "RightHand",
-    LeftUpLeg: "Hips", RightUpLeg: "Hips",
-    LeftLeg: "LeftUpLeg", RightLeg: "RightUpLeg",
-    LeftFoot: "LeftLeg", RightFoot: "RightLeg",
-    LeftToeBase: "LeftFoot", RightToeBase: "RightFoot",
-};
-// Dla stawow "koncowych" (koniec dlugiej kosci) pivot NIE jest centroidem
-// wlasnej grupy, tylko skrajnym punktem (gorny/dolny) BBOX innej, referencyjnej
-// grupy - np. LeftLeg (podudzie) obraca sie wokol KOLANA, czyli dolnego konca
-// KOSCI UDOWEJ (grupy LeftUpLeg), nie wokol centrum piszczeli. Wszystkie
-// pozostale stawy (Hips/LowerBack/Spine/Neck/Head/Shoulder) uzywaja centroidu
-// wlasnej grupy (skupiska kregow/klatki/czaszki/obojczyka - nie sa "koncem"
-// jednej kosci).
-const DANCE_ANCHOR_RULES = {
-    LeftUpLeg: { ref: "LeftUpLeg", end: "top" }, RightUpLeg: { ref: "RightUpLeg", end: "top" },
-    LeftLeg: { ref: "LeftUpLeg", end: "bottom" }, RightLeg: { ref: "RightUpLeg", end: "bottom" },
-    LeftFoot: { ref: "LeftLeg", end: "bottom" }, RightFoot: { ref: "RightLeg", end: "bottom" },
-    LeftToeBase: { ref: "LeftFoot", end: "bottom" }, RightToeBase: { ref: "RightFoot", end: "bottom" },
-    LeftArm: { ref: "LeftArm", end: "top" }, RightArm: { ref: "RightArm", end: "top" },
-    LeftForeArm: { ref: "LeftArm", end: "bottom" }, RightForeArm: { ref: "RightArm", end: "bottom" },
-    LeftHand: { ref: "LeftForeArm", end: "bottom" }, RightHand: { ref: "RightForeArm", end: "bottom" },
-    LeftFingerBase: { ref: "LeftHand", end: "bottom" }, RightFingerBase: { ref: "RightHand", end: "bottom" },
-};
-
-function classifyDanceJoint(en) {
-    const s = en.toLowerCase();
-    const side = /\bleft\b/.test(s) ? "Left" : /\bright\b/.test(s) ? "Right" : "";
-    if (/phalanx of .*toe/.test(s)) return side + "ToeBase";
-    if (/metatarsal/.test(s)) return side + "Foot";
-    if (/\b(talus|calcaneus|navicular|cuboid|cuneiform|sesamoid)\b/.test(s)) return side + "Foot";
-    if (/\bfemur\b/.test(s)) return side + "UpLeg";
-    if (/\b(tibia|fibula|patella)\b/.test(s)) return side + "Leg";
-    if (/phalanx of .*(finger|thumb)/.test(s)) return side + "FingerBase";
-    if (/metacarpal/.test(s)) return side + "Hand";
-    if (/\b(scaphoid|lunate|triquetral|pisiform|trapezium|trapezoid|capitate|hamate)\b/.test(s)) return side + "Hand";
-    if (/\bhumerus\b/.test(s)) return side + "Arm";
-    if (/\b(radius|ulna)\b/.test(s)) return side + "ForeArm";
-    if (/\b(clavicle|scapula)\b/.test(s)) return side + "Shoulder";
-    if (/\b(hip bone|sacrum)\b/.test(s)) return "Hips";
-    if (/lumbar vertebra/.test(s)) return "LowerBack";
-    if (/thoracic vertebra|\brib\b|sternum|manubrium|xiphoid/.test(s)) return "Spine";
-    if (/cervical vertebra|\batlas\b|\baxis\b/.test(s)) return "Neck";
-    // reszta koscii czaszki/twarzy: occipital, frontal, parietal, temporal,
-    // sphenoid, ethmoid, mandible, maxilla, zygomatic, nasal, lacrimal,
-    // palatine, inferior nasal concha, vomer, hyoid.
-    return "Head";
-}
-
-let danceActive = false;
-let danceRigReady = false;
-let danceMixer = null;
-let danceBvhBonesByName = null;
-let danceBindQuats = null; // Map<jointName, Quaternion> - poza z klatki 0 pliku BVH
-let dancePivots = null; // Map<jointName, THREE.Group>
-const danceClock = new THREE.Clock();
-
-function attachPreservingWorld(child, newParent) {
-    newParent.updateWorldMatrix(true, false);
-    child.updateWorldMatrix(true, false);
-    const parentInv = new THREE.Matrix4().copy(newParent.matrixWorld).invert();
-    const localMatrix = parentInv.multiply(child.matrixWorld);
-    newParent.add(child);
-    localMatrix.decompose(child.position, child.quaternion, child.scale);
-}
-
-function addPivotAtWorldPos(worldPos, parentObj) {
-    const pivot = new THREE.Group();
-    parentObj.updateWorldMatrix(true, false);
-    const parentInv = new THREE.Matrix4().copy(parentObj.matrixWorld).invert();
-    pivot.position.copy(worldPos).applyMatrix4(parentInv);
-    parentObj.add(pivot);
-    return pivot;
-}
-
-let danceBoneGroups = null; // jointName -> [Object3D, ...] - kosci w naszym rigu (obliczone raz, w pozycji spoczynkowej)
-
-function attachBonesToRig() {
-    for (const [jointName, objs] of danceBoneGroups) {
-        const pivot = dancePivots.get(jointName);
-        if (!pivot) continue; // nie powinno sie zdarzyc - kazdy klucz z classifyDanceJoint ma pivot
-        for (const obj of objs) attachPreservingWorld(obj, pivot);
-    }
-}
-
-function detachBonesFromRig() {
-    // Powrot do pozy spoczynkowej: kosci wracaja jako bezposrednie dzieci
-    // `group` z tozsamosciowa transformacja (dokladnie tak jak zostaly
-    // pierwotnie zaladowane w init()) - bez tego `group` zostalby "pusty" dla
-    // fitCameraToSkeleton()/box.setFromObject(group), bo kosci wisialyby pod
-    // rigiem tanca (dziecko `scene`, nie `group`) na stale.
-    for (const objs of danceBoneGroups.values()) {
-        for (const obj of objs) {
-            group.add(obj);
-            obj.position.set(0, 0, 0);
-            obj.quaternion.identity();
-            obj.scale.set(1, 1, 1);
-        }
-    }
-}
-
-async function buildDanceRig() {
-    const skeletonBones = bones.filter(b => b.kind === "bone");
-    danceBoneGroups = new Map(); // jointName -> [Object3D, ...]
-    for (const b of skeletonBones) {
-        const obj = boneObjById.get(b.id);
-        if (!obj) continue;
-        const joint = classifyDanceJoint(b.en);
-        if (!danceBoneGroups.has(joint)) danceBoneGroups.set(joint, []);
-        danceBoneGroups.get(joint).push(obj);
-    }
-    function groupBbox(jointName) {
-        const box = new THREE.Box3();
-        for (const obj of (danceBoneGroups.get(jointName) || [])) box.expandByObject(obj);
-        return box;
-    }
-    function pivotWorldPos(jointName) {
-        const rule = DANCE_ANCHOR_RULES[jointName];
-        const box = rule ? groupBbox(rule.ref) : groupBbox(jointName);
-        if (box.isEmpty()) return new THREE.Vector3();
-        const cx = (box.min.x + box.max.x) / 2, cy = (box.min.y + box.max.y) / 2;
-        const z = rule ? (rule.end === "top" ? box.max.z : box.min.z) : (box.min.z + box.max.z) / 2;
-        return new THREE.Vector3(cx, cy, z);
-    }
-
-    // WAZNE: pozycje pivotow licza sie TERAZ, zanim jakiekolwiek kosci zostana
-    // przepiete - box.expandByObject czyta AKTUALNA (spoczynkowa) pozycje
-    // siatek pod `group`.
-    dancePivots = new Map();
-    for (const jointName of Object.keys(DANCE_JOINT_PARENT)) {
-        const parentName = DANCE_JOINT_PARENT[jointName];
-        const parentObj = parentName ? dancePivots.get(parentName) : scene;
-        const pivot = addPivotAtWorldPos(pivotWorldPos(jointName), parentObj);
-        pivot.name = jointName;
-        dancePivots.set(jointName, pivot);
-    }
-    attachBonesToRig();
-
-    const loader = new BVHLoader();
-    const result = await loader.loadAsync(DANCE_BVH_URL);
-    danceBvhBonesByName = new Map();
-    result.skeleton.bones.forEach(b => danceBvhBonesByName.set(b.name, b));
-
-    danceMixer = new THREE.AnimationMixer(result.skeleton.bones[0]);
-    danceMixer.clipAction(result.clip).play();
-
-    // BIND = SREDNIA poza calego klipu per staw (a NIE klatka 0). W 143_35
-    // klatka 0 to nietypowa klatka kalibracyjna (T-poza) - realna "neutralna"
-    // poza szkieletu CMU ma na stale ~35 st. zgiecia w kostce, ~23 st. w
-    // kolanie i rozkrok w biodrze, ktorych klatka 0 NIE pokazuje. Gdybysmy
-    // odejmowali klatke 0, te offsety wchodzilyby do kazdej klatki i szkielet
-    // tanczylby na palcach w przysiadzie. Srednia kwaternionu = suma z
-    // wyrownaniem znaku + normalizacja (przyblizenie Markleya) - dla nog/stop
-    // wychodzi ich staly offset, dla rak srodek zakresu machania (a Macarena i
-    // tak nigdy nie ma rak "w dol").
-    danceBindQuats = new Map();
-    const _bindAcc = new Map(), _bindRef = new Map(), _bindTmp = new THREE.Quaternion();
-    for (const jn of dancePivots.keys()) _bindAcc.set(jn, [0, 0, 0, 0]);
-    const BIND_SAMPLES = 160;
-    for (let i = 0; i < BIND_SAMPLES; i++) {
-        danceMixer.setTime((i + 0.5) / BIND_SAMPLES * result.clip.duration);
-        for (const jn of dancePivots.keys()) {
-            danceChainQuat(jn, _bindTmp);
-            let ref = _bindRef.get(jn);
-            if (!ref) { ref = _bindTmp.clone(); _bindRef.set(jn, ref); }
-            const sgn = (_bindTmp.x * ref.x + _bindTmp.y * ref.y + _bindTmp.z * ref.z + _bindTmp.w * ref.w) < 0 ? -1 : 1;
-            const a = _bindAcc.get(jn);
-            a[0] += sgn * _bindTmp.x; a[1] += sgn * _bindTmp.y; a[2] += sgn * _bindTmp.z; a[3] += sgn * _bindTmp.w;
-        }
-    }
-    for (const jn of dancePivots.keys()) {
-        const a = _bindAcc.get(jn);
-        danceBindQuats.set(jn, new THREE.Quaternion(a[0], a[1], a[2], a[3]).normalize());
-    }
-    danceMixer.setTime(1.0); // start w srodku tanca, nie na klatce kalibracyjnej
-
-    danceRigReady = true;
-}
-
-// Nasz uproszczony rig POMIJA kilka stawow posrednich BVH (Spine1 miedzy
-// Spine a barkami/szyja, Neck1 miedzy Neck a Head, L/RHipJoint miedzy Hips a
-// udem). Ich rotacja musi zostac "zlozona" w staw-rodzica naszego rigu,
-// inaczej po prostu ginie (szkielet nie klania sie / nie skreca tulowia tak
-// jak mocap). Ponizej: dla kazdego stawu naszego rigu lista kosci BVH,
-// ktorych LOKALNE kwaterniony trzeba przemnozyc (rodzic * dziecko) zeby
-// dostac efektywna rotacje lokalna wzgledem rodzica w NASZYM rigu.
-const DANCE_JOINT_BVH_CHAIN = {
-    // Hips: [] celowo - root CMU w 143_35 obraca sie o ~150 st. w yaw juz w
-    // 1. sekundzie (cwiartki obrotu Macareny + dziwny uklad klatki 0), przez
-    // co caly szkielet wirowalby w miejscu bokiem/tylem do kamery. Zostawiamy
-    // biodra nieruchomo (tak jak pozycje) - taniec i tak czytelnie widac po
-    // rekach/tulowiu/nogach.
-    Hips: [], LowerBack: ["LowerBack"], Spine: ["Spine", "Spine1"],
-    LeftShoulder: ["LeftShoulder"], RightShoulder: ["RightShoulder"],
-    Neck: ["Neck", "Neck1"], Head: ["Head"],
-    LeftArm: ["LeftArm"], RightArm: ["RightArm"],
-    LeftForeArm: ["LeftForeArm"], RightForeArm: ["RightForeArm"],
-    LeftHand: ["LeftHand"], RightHand: ["RightHand"],
-    LeftFingerBase: ["LeftFingerBase"], RightFingerBase: ["RightFingerBase"],
-    LeftUpLeg: ["LHipJoint", "LeftUpLeg"], RightUpLeg: ["RHipJoint", "RightUpLeg"],
-    LeftLeg: ["LeftLeg"], RightLeg: ["RightLeg"],
-    LeftFoot: ["LeftFoot"], RightFoot: ["RightFoot"],
-    LeftToeBase: ["LeftToeBase"], RightToeBase: ["RightToeBase"],
-};
-
-function danceChainQuat(jointName, target) {
-    const chain = DANCE_JOINT_BVH_CHAIN[jointName] || [jointName];
-    target.identity();
-    for (const bn of chain) {
-        const b = danceBvhBonesByName.get(bn);
-        if (b) target.multiply(b.quaternion);
-    }
-    return target;
-}
-
-// BVH (CMU) uzywa konwencji Y-up (Z-do-przodu), a nasz caly model jest Z-up
-// (patrz camera.up.set(0,0,1) i konwencja osi ustalona wczesniej w projekcie:
-// X=przysrodkowo-bocznie, Y=przod-tyl, Z=gora-dol). Sama "delta" rotacji jest
-// matematycznie poprawna niezaleznie od konwencji, ALE oznacza fizycznie inny
-// obrot w zaleznosci od tego, w ktorych osiach ja interpretujemy - trzeba
-// "przeliczyc" kazda delte z ukladu BVH na nasz przez sprzezenie (similarity
-// transform) Qc*delta*Qc^-1, gdzie Qc to rotacja +90 st. wokol X mapujaca
-// BVH-Y(gora)->nasze+Z, BVH-Z(przod)->nasze-Y, BVH-X(bok)->nasze X.
-const DANCE_AXIS_FIX = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI / 2);
-const DANCE_AXIS_FIX_INV = DANCE_AXIS_FIX.clone().invert();
-const _danceDelta = new THREE.Quaternion();
-const _danceNow = new THREE.Quaternion();
-
-function updateDancePose() {
-    for (const [jointName, pivot] of dancePivots) {
-        const bind = danceBindQuats.get(jointName);
-        if (!bind) continue;
-        // rotacja lokalna stawu TERAZ (zlozona po pominietych kosciach BVH,
-        // patrz DANCE_JOINT_BVH_CHAIN).
-        danceChainQuat(jointName, _danceNow);
-        // delta = rotacja_teraz * odwrotnosc(rotacja_klatka_0) - "ile staw
-        // obrocil sie WZGLEDEM swojej pozy z klatki 0", wyrazone jeszcze w
-        // UKLADZIE BVH. (BVH nie ma pozy rest -> rest = identycznosc -> delta
-        // sklada sie w ukladzie rodzica jako premultiply.)
-        _danceDelta.copy(bind).invert().premultiply(_danceNow);
-        // Przeliczenie na nasz uklad Z-up (patrz komentarz DANCE_AXIS_FIX), i
-        // dopiero to naklada sie na pivot (ktorego wlasna poza spoczynkowa to
-        // tozsamosc - patrz attachPreservingWorld).
-        pivot.quaternion.copy(DANCE_AXIS_FIX).multiply(_danceDelta).multiply(DANCE_AXIS_FIX_INV);
-    }
-}
-
-document.getElementById("dance-toggle").addEventListener("click", async () => {
-    const btn = document.getElementById("dance-toggle");
-    if (danceActive) {
-        danceActive = false;
-        btn.classList.remove("active");
-        for (const pivot of dancePivots.values()) pivot.quaternion.identity();
-        detachBonesFromRig();
-        for (const mesh of landmarkMeshes) mesh.visible = landmarkShouldBeVisible(mesh.userData.landmark);
-        return;
-    }
-    if (isolatedBoneId !== null) closeBone();
-    if (!danceRigReady) {
-        btn.classList.add("loading");
-        btn.textContent = "⏳ Ładowanie tańca...";
-        try {
-            await buildDanceRig();
-            danceRigReady = true;
-        } catch (e) {
-            console.error("Nie udalo sie zbudowac trybu tanca:", e);
-            btn.classList.remove("loading");
-            btn.textContent = "💃 Zatańcz";
-            return;
-        }
-        btn.classList.remove("loading");
-        btn.textContent = "💃 Zatańcz";
-    } else {
-        attachBonesToRig(); // rig juz istnieje (z poprzedniego uruchomienia) - tylko podepnij kosci ponownie
-    }
-    danceActive = true;
-    btn.classList.add("active");
-    danceClock.start();
-    for (const mesh of landmarkMeshes) mesh.visible = false; // punkty orientacyjne zostaja na miejscu (nie sa czescia rigu) - ukrywamy, zeby nie "wisialy" w powietrzu
-});
-
 // ===== Etykiety ID na scenie - zamiast klikac kazda strukture osobno zeby
 // przeczytac jej ID (przydatne gdy trzeba zglosic wiele bledow naraz z jednego
 // zrzutu ekranu), rysujemy male "chmurki" z ID bezposrednio nad kazda
@@ -2828,10 +2558,6 @@ function animate() {
     requestAnimationFrame(animate);
     controls.update();
     updateIdLabels();
-    if (danceActive && danceMixer) {
-        danceMixer.update(danceClock.getDelta());
-        updateDancePose();
-    }
     if (splitMode) {
         controlsB.update();
         const w = window.innerWidth, h = window.innerHeight, halfW = w / 2;
@@ -2854,35 +2580,119 @@ function animate() {
         renderer.render(scene, camera);
     }
 }
-window.__dbgDance = {
-    boneObjById, THREE, dancePivotsRef: () => dancePivots, isActive: () => danceActive,
-    getMixer: () => danceMixer, getBvhNames: () => danceBvhBonesByName ? Array.from(danceBvhBonesByName.keys()) : null,
-    getClock: () => danceClock, getBvhBonesByName: () => danceBvhBonesByName, getBindQuats: () => danceBindQuats,
-    forceUpdate: (dt) => { danceMixer.update(dt); updateDancePose(); },
-};
-// TEMP DEBUG (usunac przed uznaniem za gotowe) - podglad renderu bez panelu przegladarki
+// podglad renderu bez paneli UI (uzywane przez weryfikacje w przegladarce)
 window.__dbgRender = {
-    grab: (dt) => {
-        if (dt && danceActive && danceMixer) { danceMixer.update(dt); updateDancePose(); }
-        renderer.render(scene, camera);
-        return renderer.domElement.toDataURL('image/png');
-    },
+    grab: () => { renderer.render(scene, camera); return renderer.domElement.toDataURL('image/png'); },
     fitCam: () => { try { fitCameraToSkeleton(); } catch(e){} },
     scene: () => scene, camera: () => camera, renderer: () => renderer,
-    bvhWorldQuatAtRest: () => {
-        // world rotation of each BVH bone using bind (frame-0) local quats
-        const res = {};
-        const bb = danceBvhBonesByName;
-        for (const [n,b] of bb) {
-            let q = new THREE.Quaternion(); let cur = b; const chain=[];
-            while (cur) { chain.unshift(cur); cur = cur.parent && cur.parent.isBone ? cur.parent : null; }
-            for (const c of chain) q.multiply(danceBindQuats.get(c.name) || c.quaternion);
-            const e = new THREE.Euler().setFromQuaternion(q);
-            res[n] = [e.x,e.y,e.z].map(v=>+(v*180/Math.PI).toFixed(1));
-        }
-        return res;
-    },
 };
+
+// ===== menedżer okien: panele ruchome / skalowalne / zamykane / przywracalne =====
+// Spójny z przeglądarką narządów (_organ_compare/index.html): pasek tytułu do
+// przeciągania, ✕ do zamknięcia, menu "🪟 Okna" do przywrócenia. Układ zapisany
+// w localStorage per-przeglądarka.
+(function initWindowManager() {
+    const KEY = "atlas_v3_layout";
+    const PANELS = ["left-panel", "topbar", "layers-box", "tools-box", "transparency-box"];
+    const TITLES = {
+        "left-panel": "Panel boczny",
+        "topbar": "Wyszukiwarka + widoki",
+        "layers-box": "Warstwy",
+        "tools-box": "Narzędzia",
+        "transparency-box": "Przezroczystość",
+    };
+    let state;
+    try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { state = {}; }
+    const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
+    const S = (id) => (state[id] = state[id] || {});
+
+    function applyOne(id) {
+        const el = document.getElementById(id);
+        if (!el) return;
+        const s = state[id] || {};
+        if (s.left != null) { el.style.left = s.left; el.style.right = "auto"; el.style.transform = "none"; }
+        if (s.top != null) { el.style.top = s.top; el.style.bottom = "auto"; }
+        if (s.width) el.style.width = s.width;
+        if (s.height) el.style.height = s.height;
+        el.classList.toggle("win-hidden", !!s.hidden);
+        const cb = document.querySelector(`#wm-drop [data-win="${id}"]`);
+        if (cb) cb.checked = !s.hidden;
+    }
+
+    for (const id of PANELS) {
+        const el = document.getElementById(id);
+        if (!el) continue;
+        el.classList.add("win");
+        const bar = document.createElement("div");
+        bar.className = "winbar";
+        bar.innerHTML = '<span class="wb-title"></span><span class="wb-x" title="Zamknij (przywrócisz z menu 🪟 Okna)">✕</span>';
+        bar.querySelector(".wb-title").textContent = TITLES[id];
+        el.insertBefore(bar, el.firstChild);
+        bar.querySelector(".wb-x").addEventListener("click", (e) => {
+            e.stopPropagation();
+            S(id).hidden = true; applyOne(id); save();
+        });
+        applyOne(id);
+        new ResizeObserver(() => {
+            if (el.classList.contains("win-hidden")) return;
+            if (!el.style.width && !el.style.height) return; // tylko realny resize użytkownika
+            S(id).width = el.style.width; S(id).height = el.style.height;
+            clearTimeout(el._wmT); el._wmT = setTimeout(save, 400);
+        }).observe(el);
+    }
+
+    let drag = null, zTop = 12;
+    document.addEventListener("mousedown", (e) => {
+        const bar = e.target.closest(".winbar");
+        if (!bar || e.target.classList.contains("wb-x")) return;
+        const el = bar.parentElement;
+        const r = el.getBoundingClientRect();
+        el.style.transform = "none";
+        el.style.left = r.left + "px"; el.style.top = r.top + "px";
+        el.style.right = "auto"; el.style.bottom = "auto";
+        el.style.zIndex = Math.min(28, ++zTop);
+        drag = { el, dx: e.clientX - r.left, dy: e.clientY - r.top };
+        el.classList.add("dragging");
+        e.preventDefault();
+    });
+    document.addEventListener("mousemove", (e) => {
+        if (!drag) return;
+        drag.el.style.left = Math.max(0, Math.min(window.innerWidth - 60, e.clientX - drag.dx)) + "px";
+        drag.el.style.top = Math.max(0, Math.min(window.innerHeight - 28, e.clientY - drag.dy)) + "px";
+    });
+    document.addEventListener("mouseup", () => {
+        if (!drag) return;
+        const st = S(drag.el.id);
+        st.left = drag.el.style.left; st.top = drag.el.style.top;
+        drag.el.classList.remove("dragging");
+        drag = null; save();
+    });
+
+    const menu = document.getElementById("winmenu");
+    document.getElementById("wm-btn").addEventListener("click", (e) => { e.stopPropagation(); menu.classList.toggle("open"); });
+    document.addEventListener("click", (e) => { if (!menu.contains(e.target)) menu.classList.remove("open"); });
+    document.querySelectorAll("#wm-drop [data-win]").forEach((cb) => {
+        cb.addEventListener("change", () => {
+            S(cb.dataset.win).hidden = !cb.checked;
+            applyOne(cb.dataset.win); save();
+        });
+    });
+    document.getElementById("wm-reset").addEventListener("click", () => {
+        state = {};
+        try { localStorage.removeItem(KEY); } catch (e) {}
+        for (const id of PANELS) {
+            const el = document.getElementById(id);
+            if (!el) continue;
+            el.style.left = el.style.top = el.style.right = el.style.bottom = "";
+            el.style.width = el.style.height = el.style.transform = el.style.zIndex = "";
+            el.classList.remove("win-hidden");
+            const cb = document.querySelector(`#wm-drop [data-win="${id}"]`);
+            if (cb) cb.checked = true;
+        }
+        menu.classList.remove("open");
+    });
+})();
+
 animate();
 </script>
 </body>
