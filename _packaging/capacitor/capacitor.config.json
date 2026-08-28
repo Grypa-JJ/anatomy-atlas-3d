@@ -1,0 +1,16 @@
+{
+  "appId": "com.grypajj.atlas3d",
+  "appName": "Atlas anatomiczny 3D",
+  "webDir": "../web",
+  "plugins": {
+    "CapacitorUpdater": {
+      "autoUpdate": false,
+      "resetWhenUpdate": true,
+      "updateUrl": "",
+      "appReadyTimeout": 10000
+    }
+  },
+  "android": {
+    "allowMixedContent": false
+  }
+}
