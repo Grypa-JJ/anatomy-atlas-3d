@@ -145,19 +145,19 @@
  },
  {
   "id": "acromial_part_of_deltoid_muscle_l",
-  "pl": "Mięsień naramienny - część barkowa",
+  "pl": "Część barkowa mięśnia naramiennego",
   "en": "Acromial part of deltoid muscle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "norm"
+  "pl_from": "exact"
  },
  {
   "id": "acromial_part_of_deltoid_muscle_r",
-  "pl": "Mięsień naramienny - część barkowa",
+  "pl": "Część barkowa mięśnia naramiennego",
   "en": "Acromial part of deltoid muscle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "norm"
+  "pl_from": "exact"
  },
  {
   "id": "adductor_brevis_l",
@@ -281,7 +281,7 @@
  },
  {
   "id": "anterior_layer_of_thoracolumbar_fascia_l",
-  "pl": "Powięź mięśnia czworobocznego lędźwi; Blaszka przednia powięzi piersiowo- lędźwiowej",
+  "pl": "Blaszka przednia powięzi piersiowo-lędźwiowej",
   "en": "Anterior layer of thoracolumbar fascia",
   "side": "l",
   "kind": "muscle",
@@ -289,7 +289,7 @@
  },
  {
   "id": "anterior_layer_of_thoracolumbar_fascia_r",
-  "pl": "Powięź mięśnia czworobocznego lędźwi; Blaszka przednia powięzi piersiowo- lędźwiowej",
+  "pl": "Blaszka przednia powięzi piersiowo-lędźwiowej",
   "en": "Anterior layer of thoracolumbar fascia",
   "side": "r",
   "kind": "muscle",
@@ -449,19 +449,19 @@
  },
  {
   "id": "clavicular_part_of_deltoid_muscle_l",
-  "pl": "Mięsień naramienny - część obojczykowa",
+  "pl": "Część obojczykowa mięśnia naramiennego",
   "en": "Clavicular part of deltoid muscle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "norm"
+  "pl_from": "exact"
  },
  {
   "id": "clavicular_part_of_deltoid_muscle_r",
-  "pl": "Mięsień naramienny - część obojczykowa",
+  "pl": "Część obojczykowa mięśnia naramiennego",
   "en": "Clavicular part of deltoid muscle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "norm"
+  "pl_from": "exact"
  },
  {
   "id": "clavipectoral_fascia_l",
@@ -529,19 +529,19 @@
  },
  {
   "id": "common_tendon_sheath_of_fibularis_muscles_l",
-  "pl": "Common tendon sheath of fibularis muscles",
+  "pl": "Pochewka wspólna ścięgien mięśni strzałkowych",
   "en": "Common tendon sheath of fibularis muscles",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "common_tendon_sheath_of_fibularis_muscles_r",
-  "pl": "Common tendon sheath of fibularis muscles",
+  "pl": "Pochewka wspólna ścięgien mięśni strzałkowych",
   "en": "Common tendon sheath of fibularis muscles",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "coracobrachial_bursa_l",
@@ -641,19 +641,19 @@
  },
  {
   "id": "deep_head_of_pronator_teres_l",
-  "pl": "Deep head of pronator teres",
+  "pl": "Głowa głęboka mięśnia nawrotnego obłego",
   "en": "Deep head of pronator teres",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "deep_head_of_pronator_teres_r",
-  "pl": "Deep head of pronator teres",
+  "pl": "Głowa głęboka mięśnia nawrotnego obłego",
   "en": "Deep head of pronator teres",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "deep_infrapatellar_bursa_l",
@@ -1049,19 +1049,19 @@
  },
  {
   "id": "external_abdominal_oblique_muscle_l",
-  "pl": "External abdominal oblique muscle",
+  "pl": "Mięsień skośny zewnętrzny brzucha",
   "en": "External abdominal oblique muscle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "external_abdominal_oblique_muscle_r",
-  "pl": "External abdominal oblique muscle",
+  "pl": "Mięsień skośny zewnętrzny brzucha",
   "en": "External abdominal oblique muscle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "external_anal_sphincter",
@@ -1089,11 +1089,11 @@
  },
  {
   "id": "external_part_of_thyro_arytenoid_muscle",
-  "pl": "External part of thyro-arytenoid muscle",
+  "pl": "Część zewnętrzna mięśnia tarczowo-nalewkowego",
   "en": "External part of thyro-arytenoid muscle",
   "side": "mid",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "fascia_lata_l",
@@ -1601,19 +1601,19 @@
  },
  {
   "id": "inferior_extensor_retinaculum_of_ankle_l",
-  "pl": "Inferior extensor retinaculum of ankle",
+  "pl": "Troczek dolny prostowników stopy",
   "en": "Inferior extensor retinaculum of ankle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "inferior_extensor_retinaculum_of_ankle_r",
-  "pl": "Inferior extensor retinaculum of ankle",
+  "pl": "Troczek dolny prostowników stopy",
   "en": "Inferior extensor retinaculum of ankle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "inferior_fibular_retinaculum_l",
@@ -1817,19 +1817,19 @@
  },
  {
   "id": "internal_abdominal_oblique_muscle_l",
-  "pl": "Internal abdominal oblique muscle",
+  "pl": "Mięsień skośny wewnętrzny brzucha",
   "en": "Internal abdominal oblique muscle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "internal_abdominal_oblique_muscle_r",
-  "pl": "Internal abdominal oblique muscle",
+  "pl": "Mięsień skośny wewnętrzny brzucha",
   "en": "Internal abdominal oblique muscle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "internal_intercostal_muscles_l",
@@ -2353,19 +2353,19 @@
  },
  {
   "id": "medial_femoral_intermuscular_septum_l",
-  "pl": "Przegroda międzymięśniowa boczna uda",
+  "pl": "Przegroda międzymięśniowa przyśrodkowa uda",
   "en": "Medial femoral intermuscular septum",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "medial_femoral_intermuscular_septum_r",
-  "pl": "Przegroda międzymięśniowa boczna uda",
+  "pl": "Przegroda międzymięśniowa przyśrodkowa uda",
   "en": "Medial femoral intermuscular septum",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "medial_head_of_flexor_hallucis_brevis_l",
@@ -2509,7 +2509,7 @@
   "en": "Middle layer of thoracolumbar fascia",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "ovr"
+  "pl_from": "exact"
  },
  {
   "id": "middle_layer_of_thoracolumbar_fascia_r",
@@ -2517,7 +2517,7 @@
   "en": "Middle layer of thoracolumbar fascia",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "ovr"
+  "pl_from": "exact"
  },
  {
   "id": "middle_pharyngeal_constrictor",
@@ -2985,19 +2985,19 @@
  },
  {
   "id": "plantar_tendon_sheath_of_fibularis_longus_muscle_l",
-  "pl": "Plantar tendon sheath of fibularis longus muscle",
+  "pl": "Pochewka podeszwowa ścięgna mięśnia strzałkowego długiego",
   "en": "Plantar tendon sheath of fibularis longus muscle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "plantar_tendon_sheath_of_fibularis_longus_muscle_r",
-  "pl": "Plantar tendon sheath of fibularis longus muscle",
+  "pl": "Pochewka podeszwowa ścięgna mięśnia strzałkowego długiego",
   "en": "Plantar tendon sheath of fibularis longus muscle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "plantaris_muscle_l",
@@ -3105,7 +3105,7 @@
  },
  {
   "id": "posterior_layer_of_thoracolumbar_fascia_l",
-  "pl": "Przestrzeń ścięgnista lędźwiowa",
+  "pl": "Blaszka tylna powięzi piersiowo-lędźwiowej",
   "en": "Posterior layer of thoracolumbar fascia",
   "side": "l",
   "kind": "muscle",
@@ -3113,7 +3113,7 @@
  },
  {
   "id": "posterior_layer_of_thoracolumbar_fascia_r",
-  "pl": "Przestrzeń ścięgnista lędźwiowa",
+  "pl": "Blaszka tylna powięzi piersiowo-lędźwiowej",
   "en": "Posterior layer of thoracolumbar fascia",
   "side": "r",
   "kind": "muscle",
@@ -3489,35 +3489,35 @@
  },
  {
   "id": "scapular_spinal_part_of_deltoid_muscle_l",
-  "pl": "Scapular spinal part of deltoid muscle",
+  "pl": "Część grzebieniowa mięśnia naramiennego",
   "en": "Scapular spinal part of deltoid muscle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "scapular_spinal_part_of_deltoid_muscle_r",
-  "pl": "Scapular spinal part of deltoid muscle",
+  "pl": "Część grzebieniowa mięśnia naramiennego",
   "en": "Scapular spinal part of deltoid muscle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "sciatic_bursa_of_gluteus_maximus_muscle_l",
-  "pl": "Sciatic bursa of gluteus maximus muscle",
+  "pl": "Kaletka kulszowa mięśnia pośladkowego wielkiego",
   "en": "Sciatic bursa of gluteus maximus muscle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "sciatic_bursa_of_gluteus_maximus_muscle_r",
-  "pl": "Sciatic bursa of gluteus maximus muscle",
+  "pl": "Kaletka kulszowa mięśnia pośladkowego wielkiego",
   "en": "Sciatic bursa of gluteus maximus muscle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "sciatic_bursa_of_obturator_internus_l",
@@ -4105,19 +4105,19 @@
  },
  {
   "id": "subtendinous_bursa_of_infraspinatus_muscle_l",
-  "pl": "Subtendinous bursa of infraspinatus muscle",
+  "pl": "Kaletka mięśnia podgrzebieniowego",
   "en": "Subtendinous bursa of infraspinatus muscle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "comp"
  },
  {
   "id": "subtendinous_bursa_of_infraspinatus_muscle_r",
-  "pl": "Subtendinous bursa of infraspinatus muscle",
+  "pl": "Kaletka mięśnia podgrzebieniowego",
   "en": "Subtendinous bursa of infraspinatus muscle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "comp"
  },
  {
   "id": "subtendinous_bursa_of_obturator_internus_l",
@@ -4153,19 +4153,19 @@
  },
  {
   "id": "subtendinous_bursa_of_teres_major_muscle_l",
-  "pl": "Subtendinous bursa of teres major muscle",
+  "pl": "Kaletka mięśnia obłego większego",
   "en": "Subtendinous bursa of teres major muscle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "comp"
  },
  {
   "id": "subtendinous_bursa_of_teres_major_muscle_r",
-  "pl": "Subtendinous bursa of teres major muscle",
+  "pl": "Kaletka mięśnia obłego większego",
   "en": "Subtendinous bursa of teres major muscle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "comp"
  },
  {
   "id": "subtendinous_bursa_of_tibialis_anterior_l",
@@ -4265,19 +4265,19 @@
  },
  {
   "id": "superficial_head_of_pronator_teres_l",
-  "pl": "Superficial head of pronator teres",
+  "pl": "Głowa powierzchowna mięśnia nawrotnego obłego",
   "en": "Superficial head of pronator teres",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "superficial_head_of_pronator_teres_r",
-  "pl": "Superficial head of pronator teres",
+  "pl": "Głowa powierzchowna mięśnia nawrotnego obłego",
   "en": "Superficial head of pronator teres",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "superficial_investing_cervical_fascia_l",
@@ -4329,23 +4329,23 @@
  },
  {
   "id": "superficial_transverse_metacarpal_ligament_l",
-  "pl": "Więzadło poprzeczne powierzchowne śródręcza",
+  "pl": "Więzadło śródręczne poprzeczne powierzchowne",
   "en": "Superficial transverse metacarpal ligament",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "superficial_transverse_metacarpal_ligament_r",
-  "pl": "Więzadło poprzeczne powierzchowne śródręcza",
+  "pl": "Więzadło śródręczne poprzeczne powierzchowne",
   "en": "Superficial transverse metacarpal ligament",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "superficial_transverse_metatarsal_ligament_l",
-  "pl": "Więzadło poprzeczne powierzchowne śródstopia",
+  "pl": "Więzadło śródstopne poprzeczne powierzchowne",
   "en": "Superficial transverse metatarsal ligament",
   "side": "l",
   "kind": "muscle",
@@ -4353,7 +4353,7 @@
  },
  {
   "id": "superficial_transverse_metatarsal_ligament_r",
-  "pl": "Więzadło poprzeczne powierzchowne śródstopia",
+  "pl": "Więzadło śródstopne poprzeczne powierzchowne",
   "en": "Superficial transverse metatarsal ligament",
   "side": "r",
   "kind": "muscle",
@@ -4377,19 +4377,19 @@
  },
  {
   "id": "superior_extensor_retinaculum_of_ankle_l",
-  "pl": "Superior extensor retinaculum of ankle",
+  "pl": "Troczek górny prostowników goleni",
   "en": "Superior extensor retinaculum of ankle",
   "side": "l",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "superior_extensor_retinaculum_of_ankle_r",
-  "pl": "Superior extensor retinaculum of ankle",
+  "pl": "Troczek górny prostowników goleni",
   "en": "Superior extensor retinaculum of ankle",
   "side": "r",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "superior_fibular_retinaculum_l",
@@ -4905,11 +4905,11 @@
  },
  {
   "id": "thyro_epiglottic_part_of_thyro_arytenoid_muscle",
-  "pl": "Thyro-epiglottic part of thyro-arytenoid muscle",
+  "pl": "Część tarczowo-nagłośniowa mięśnia tarczowo-nalewkowego",
   "en": "Thyro-epiglottic part of thyro-arytenoid muscle",
   "side": "mid",
   "kind": "muscle",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "thyrohyoid_muscle_l",

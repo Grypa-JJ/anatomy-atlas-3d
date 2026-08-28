@@ -1209,19 +1209,19 @@
  },
  {
   "id": "sesamoid_bones_of_foot_l",
-  "pl": "Kość trzeszczkowata (lewej stopy)",
+  "pl": "Kości trzeszczkowate stopy",
   "en": "Sesamoid bones of foot",
   "side": "l",
   "kind": "bone",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "sesamoid_bones_of_foot_r",
-  "pl": "Kość trzeszczkowata (lewej stopy)",
+  "pl": "Kości trzeszczkowate stopy",
   "en": "Sesamoid bones of foot",
   "side": "r",
   "kind": "bone",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "seventh_rib_l",

@@ -6156,7 +6156,7 @@
   "src": "feature"
  },
  {
-  "boneId": "superior_frontal_sulcus_r",
+  "boneId": "superior_frontal_gyrus_r",
   "en": "Limbic lobe",
   "pl": "Płat brzeżny (limbiczny)",
   "pos": [
@@ -17448,7 +17448,7 @@
   "src": "label"
  },
  {
-  "boneId": "lateral_intermuscular_septum_of_arm_r",
+  "boneId": "brachial_fascia_r",
   "en": "Joint of head of rib.g",
   "pl": "Staw głowy żebra",
   "pos": [

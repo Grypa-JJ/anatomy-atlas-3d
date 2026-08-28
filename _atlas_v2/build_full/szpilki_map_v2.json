@@ -606,6 +606,16 @@
   "kolokwium": "I",
   "category": "Mięśnie — tułów",
   "noteCategory": "Mięśnie — tułów",
+  "text": "Mięsień skośny zewnętrzny brzucha",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "external_abdominal_oblique_muscle_r",
+  "matchedPl": "Mięsień skośny zewnętrzny brzucha"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — tułów",
+  "noteCategory": "Mięśnie — tułów",
   "text": "Mięsień zębaty przedni",
   "linkType": "mesh",
   "kind": "muscle",
@@ -930,7 +940,7 @@
   "linkType": "mesh",
   "kind": "vessel",
   "id": "inferior_vena_cava_abdominal_part",
-  "matchedPl": "Żyła główna dolna"
+  "matchedPl": "Żyła główna dolna (część abdominal)"
  },
  {
   "kolokwium": "II",
@@ -1708,7 +1718,7 @@
   "noteCategory": "Ucho",
   "text": "Trzon kowadełka",
   "linkType": "landmark",
-  "boneId": "incus_l",
+  "boneId": "incus_r",
   "matchedPl": "Trzon kowadełka"
  },
  {
@@ -1808,7 +1818,7 @@
   "linkType": "mesh",
   "kind": "brain",
   "id": "cingulate_sulcus_marginal_part",
-  "matchedPl": "Bruzda obręczy"
+  "matchedPl": "Bruzda obręczy (część marginal)"
  },
  {
   "kolokwium": "IV",
@@ -1858,7 +1868,7 @@
   "linkType": "mesh",
   "kind": "brain",
   "id": "cingulate_gyrus_posteroventral_part",
-  "matchedPl": "Zakręt obręczy"
+  "matchedPl": "Zakręt obręczy (część posteroventral)"
  },
  {
   "kolokwium": "IV",
@@ -1898,7 +1908,7 @@
   "linkType": "mesh",
   "kind": "brain",
   "id": "superior_temporal_gyrus_lateral_part_r",
-  "matchedPl": "Zakręt skroniowy górny"
+  "matchedPl": "Zakręt skroniowy górny (część boczna)"
  },
  {
   "kolokwium": "IV",
@@ -2274,8 +2284,8 @@
   "noteCategory": "Kości, stawy, więzadła — kończyna górna",
   "text": "Nadkłykieć przyśrodkowy kości ramiennej",
   "linkType": "landmark",
-  "boneId": "humerus_l",
-  "matchedPl": "Nadkłykieć przyśrodkowy kości ramiennej"
+  "boneId": "femur_l",
+  "matchedPl": "Nadkłykieć przyśrodkowy kości udowej"
  },
  {
   "kolokwium": "I",
@@ -2468,7 +2478,7 @@
   "linkType": "mesh",
   "kind": "brain",
   "id": "cingulate_sulcus_marginal_part",
-  "matchedPl": "Bruzda obręczy"
+  "matchedPl": "Bruzda obręczy (część marginal)"
  },
  {
   "kolokwium": "IV",
@@ -2534,15 +2544,6 @@
   "linkType": "landmark",
   "boneId": "investing_abdominal_fascia_r",
   "matchedPl": "Jelito cienkie"
- },
- {
-  "kolokwium": "III",
-  "category": "Ucho",
-  "noteCategory": "Ucho",
-  "text": "Bańka kostna przewodu półkolistego bocznego",
-  "linkType": "landmark",
-  "boneId": "vestibule_r",
-  "matchedPl": "Bańka kostna boczna"
  },
  {
   "kolokwium": "III",
@@ -2619,7 +2620,7 @@
   "linkType": "mesh",
   "kind": "muscle",
   "id": "acromial_part_of_deltoid_muscle_r",
-  "matchedPl": "Mięsień naramienny - część barkowa"
+  "matchedPl": "Część barkowa mięśnia naramiennego"
  },
  {
   "kolokwium": "III",
@@ -2798,15 +2799,6 @@
  },
  {
   "kolokwium": "III",
-  "category": "Krtań i tarczyca",
-  "noteCategory": "Krtań i tarczyca",
-  "text": "Wcięcie tarczowe górne",
-  "linkType": "landmark",
-  "boneId": "thyroid_cartilage",
-  "matchedPl": "Wcięcie tarczowe górne"
- },
- {
-  "kolokwium": "III",
   "category": "Oko",
   "noteCategory": "Oko",
   "text": "Mięsień prosty przyśrodkowy",
@@ -2853,5 +2845,15 @@
   "kind": "brain",
   "id": "cuneus",
   "matchedPl": "Klinek"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Krtań i tarczyca",
+  "noteCategory": "Krtań i tarczyca",
+  "text": "Więzadło tarczowo-gnykowe boczne",
+  "linkType": "mesh",
+  "kind": "connective",
+  "id": "lateral_thyrohyoid_ligament_r",
+  "matchedPl": "Więzadło tarczowo-gnykowe boczne"
  }
 ]

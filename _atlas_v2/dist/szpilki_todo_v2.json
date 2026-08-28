@@ -206,12 +206,6 @@
  {
   "kolokwium": "I",
   "linkType": "mesh",
-  "text": "Mięsień skośny zewnętrzny brzucha",
-  "matchedPl": "Mięsień skośny zewnętrzny brzucha (prawy)"
- },
- {
-  "kolokwium": "I",
-  "linkType": "mesh",
   "text": "Nerw pośrodkowy",
   "matchedPl": "Nerw pośrodkowy (lewy, pełny)"
  },
@@ -584,6 +578,12 @@
  {
   "kolokwium": "III",
   "linkType": "landmark",
+  "text": "Bańka kostna przewodu półkolistego bocznego",
+  "matchedPl": "Bańka kostna boczna"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
   "text": "Płat piramidowy gruczołu tarczowego",
   "matchedPl": "Płat piramidowy gruczołu tarczowego"
  },
@@ -878,6 +878,12 @@
  {
   "kolokwium": "III",
   "linkType": "landmark",
+  "text": "Wcięcie tarczowe górne",
+  "matchedPl": "Wcięcie tarczowe górne"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
   "text": "Wyrostek soczewkowaty",
   "matchedPl": "Wyrostek soczewkowaty"
  },
@@ -1048,11 +1054,5 @@
   "linkType": "landmark",
   "text": "Mięsień pierścienno-tarczowy, część prosta",
   "matchedPl": "Mięsień pierścienno-tarczowy, część prosta"
- },
- {
-  "kolokwium": "III",
-  "linkType": "landmark",
-  "text": "Więzadło tarczowo-gnykowe boczne",
-  "matchedPl": "Więzadło tarczowo-gnykowe boczne"
  }
 ]

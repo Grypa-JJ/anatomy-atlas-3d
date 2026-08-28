@@ -98,8 +98,8 @@ def write_obj(path, V, F):
         f.write("".join(f"v {x:.4f} {y:.4f} {z:.4f}\n" for x,y,z in V))
         if len(F): f.write("".join(f"f {a+1} {b+1} {c+1}\n" for a,b,c in F))
 
-JUNK = re.compile(r'-(curve|profile|mesh|shape)$|^(meridians?|equator|axis) of |'
-    r'\bhelper\b|\bempty\b|^ico|^plane\b|^cube\b|^cylinder\b|bezier|^nurbs', re.I)
+JUNK = re.compile(r'-(curve|profile|mesh|shape)(\.[a-z](_\d+)?)?$|^(meridians?|equator|axis) of |'
+    r'\bhelper\b|\bempty\b|^ico|^plane\b|^cube\b|^cylinder\b|bezier|^nurbs|^\?|^\s*$', re.I)
 objs = [o for o in objs if not JUNK.search(o["name"])]
 for o in objs:
     o["role"], o["base"] = role(o["name"])

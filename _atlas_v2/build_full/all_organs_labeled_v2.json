@@ -192,14 +192,6 @@
   "pl_from": "exact"
  },
  {
-  "id": "ciliary_body_curve",
-  "pl": "Ciliary body-curve",
-  "en": "Ciliary body-curve",
-  "side": "mid",
-  "kind": "organ",
-  "pl_from": "none"
- },
- {
   "id": "cochlea_l",
   "pl": "Ślimak",
   "en": "Cochlea",
@@ -377,19 +369,19 @@
  },
  {
   "id": "inferior_papillary_muscle_of_left_ventricle",
-  "pl": "Mięsień brodawkowaty przedni (komora prawa)",
+  "pl": "Mięsień brodawkowaty tylny (komora lewa)",
   "en": "Inferior papillary muscle of left ventricle",
   "side": "mid",
   "kind": "organ",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "inferior_papillary_muscle_of_right_ventricle",
-  "pl": "Mięsień brodawkowaty przedni (komora prawa)",
+  "pl": "Mięsień brodawkowaty tylny (komora prawa)",
   "en": "Inferior papillary muscle of right ventricle",
   "side": "mid",
   "kind": "organ",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "inferior_parathyroid_gland",
@@ -689,11 +681,11 @@
  },
  {
   "id": "middle_lobar_bronchus",
-  "pl": "Gałęzie płata środkowego",
+  "pl": "Oskrzele płatowe środkowe",
   "en": "Middle lobar bronchus",
   "side": "mid",
   "kind": "organ",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "middle_lobe_of_right_lung",
@@ -713,11 +705,11 @@
  },
  {
   "id": "mucosa_of_stomach",
-  "pl": "Mucosa of stomach",
+  "pl": "Błona śluzowa żołądka",
   "en": "Mucosa of stomach",
   "side": "mid",
   "kind": "organ",
-  "pl_from": "none"
+  "pl_from": "exact"
  },
  {
   "id": "nasolacrimal_duct",

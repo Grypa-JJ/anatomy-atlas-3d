@@ -304,16 +304,8 @@
   "pl_from": "exact"
  },
  {
-  "id": "ciliary_body_curve",
-  "pl": "Ciliary body-curve",
-  "en": "Ciliary body-curve",
-  "side": "mid",
-  "kind": "brain",
-  "pl_from": "none"
- },
- {
   "id": "cingulate_gyrus_posteroventral_part",
-  "pl": "Zakręt obręczy",
+  "pl": "Zakręt obręczy (część posteroventral)",
   "en": "Cingulate gyrus (Posteroventral part*)",
   "side": "mid",
   "kind": "brain",
@@ -321,7 +313,7 @@
  },
  {
   "id": "cingulate_gyrus_and_sulcus_middle_anterior_part",
-  "pl": "Zakręt i bruzda obręczy",
+  "pl": "Zakręt i bruzda obręczy (część środkowa przednia)",
   "en": "Cingulate gyrus and sulcus (Middle anterior part)",
   "side": "mid",
   "kind": "brain",
@@ -329,7 +321,7 @@
  },
  {
   "id": "cingulate_gyrus_and_sulcus_middle_posterior_part",
-  "pl": "Zakręt i bruzda obręczy",
+  "pl": "Zakręt i bruzda obręczy (część środkowa tylna)",
   "en": "Cingulate gyrus and sulcus (Middle posterior part)",
   "side": "mid",
   "kind": "brain",
@@ -337,7 +329,7 @@
  },
  {
   "id": "cingulate_gyrus_and_sulcus_posterior_dorsal_part",
-  "pl": "Zakręt i bruzda obręczy",
+  "pl": "Zakręt i bruzda obręczy (część tylna grzbietowa)",
   "en": "Cingulate gyrus and sulcus (Posterior dorsal part)",
   "side": "mid",
   "kind": "brain",
@@ -345,7 +337,7 @@
  },
  {
   "id": "cingulate_sulcus_marginal_part",
-  "pl": "Bruzda obręczy",
+  "pl": "Bruzda obręczy (część marginal)",
   "en": "Cingulate sulcus (Marginal part*)",
   "side": "mid",
   "kind": "brain",
@@ -1161,7 +1153,7 @@
  },
  {
   "id": "occipitotemporal_sulcus_lateral_part_l",
-  "pl": "Bruzda potyliczno-skroniowa",
+  "pl": "Bruzda potyliczno-skroniowa (część boczna)",
   "en": "Occipitotemporal sulcus (Lateral part*)",
   "side": "l",
   "kind": "brain",
@@ -1169,7 +1161,7 @@
  },
  {
   "id": "occipitotemporal_sulcus_lateral_part_r",
-  "pl": "Bruzda potyliczno-skroniowa",
+  "pl": "Bruzda potyliczno-skroniowa (część boczna)",
   "en": "Occipitotemporal sulcus (Lateral part*)",
   "side": "r",
   "kind": "brain",
@@ -1497,7 +1489,7 @@
  },
  {
   "id": "precentral_sulcus_superior_part_l",
-  "pl": "Bruzda przedśrodkowa",
+  "pl": "Bruzda przedśrodkowa (część górna)",
   "en": "Precentral sulcus (Superior part)*",
   "side": "l",
   "kind": "brain",
@@ -1505,7 +1497,7 @@
  },
  {
   "id": "precentral_sulcus_superior_part_r",
-  "pl": "Bruzda przedśrodkowa",
+  "pl": "Bruzda przedśrodkowa (część górna)",
   "en": "Precentral sulcus (Superior part)*",
   "side": "r",
   "kind": "brain",
@@ -1513,7 +1505,7 @@
  },
  {
   "id": "precentral_sulcus_inferior_part_l",
-  "pl": "Bruzda przedśrodkowa",
+  "pl": "Bruzda przedśrodkowa (część dolna)",
   "en": "Precentral sulcus (inferior part)*",
   "side": "l",
   "kind": "brain",
@@ -1521,7 +1513,7 @@
  },
  {
   "id": "precentral_sulcus_inferior_part_r",
-  "pl": "Bruzda przedśrodkowa",
+  "pl": "Bruzda przedśrodkowa (część dolna)",
   "en": "Precentral sulcus (inferior part)*",
   "side": "r",
   "kind": "brain",
@@ -1793,7 +1785,7 @@
  },
  {
   "id": "superior_temporal_gyrus_lateral_part_l",
-  "pl": "Zakręt skroniowy górny",
+  "pl": "Zakręt skroniowy górny (część boczna)",
   "en": "Superior temporal gyrus (Lateral part)",
   "side": "l",
   "kind": "brain",
@@ -1801,7 +1793,7 @@
  },
  {
   "id": "superior_temporal_gyrus_lateral_part_r",
-  "pl": "Zakręt skroniowy górny",
+  "pl": "Zakręt skroniowy górny (część boczna)",
   "en": "Superior temporal gyrus (Lateral part)",
   "side": "r",
   "kind": "brain",

@@ -48,14 +48,6 @@
   "pl_from": "exact"
  },
  {
-  "id": "x",
-  "pl": "?x",
-  "en": "?x",
-  "side": "mid",
-  "kind": "vessel",
-  "pl_from": "none"
- },
- {
   "id": "abdominal_aorta",
   "pl": "Aorta brzuszna",
   "en": "Abdominal aorta",
@@ -273,11 +265,11 @@
  },
  {
   "id": "anterior_inferior_pancreaticoduodenal_artery",
-  "pl": "Tętnica trzustkowo-dwunastnicza górna przednia",
+  "pl": "Tętnica trzustkowo-dwunastnicza dolna przednia",
   "en": "Anterior inferior pancreaticoduodenal artery",
   "side": "mid",
   "kind": "vessel",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "anterior_intercavernous_sinus",
@@ -1201,19 +1193,19 @@
  },
  {
   "id": "dorsal_digital_arteries_of_foot_l",
-  "pl": "Nerwy grzbietowe palców stopy",
+  "pl": "Tętnice grzbietowe palców stopy",
   "en": "Dorsal digital arteries of foot",
   "side": "l",
   "kind": "vessel",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "dorsal_digital_arteries_of_foot_r",
-  "pl": "Nerwy grzbietowe palców stopy",
+  "pl": "Tętnice grzbietowe palców stopy",
   "en": "Dorsal digital arteries of foot",
   "side": "r",
   "kind": "vessel",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "dorsal_digital_arteries_of_hand_l",
@@ -1221,7 +1213,7 @@
   "en": "Dorsal digital arteries of hand",
   "side": "l",
   "kind": "vessel",
-  "pl_from": "ovr"
+  "pl_from": "exact"
  },
  {
   "id": "dorsal_digital_arteries_of_hand_r",
@@ -1229,23 +1221,23 @@
   "en": "Dorsal digital arteries of hand",
   "side": "r",
   "kind": "vessel",
-  "pl_from": "ovr"
+  "pl_from": "exact"
  },
  {
   "id": "dorsal_digital_veins_of_foot_l",
-  "pl": "Nerwy grzbietowe palców stopy",
+  "pl": "Żyły grzbietowe palców stopy",
   "en": "Dorsal digital veins of foot",
   "side": "l",
   "kind": "vessel",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "dorsal_digital_veins_of_foot_r",
-  "pl": "Nerwy grzbietowe palców stopy",
+  "pl": "Żyły grzbietowe palców stopy",
   "en": "Dorsal digital veins of foot",
   "side": "r",
   "kind": "vessel",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "dorsal_digital_veins_of_hand_l",
@@ -1253,7 +1245,7 @@
   "en": "Dorsal digital veins of hand",
   "side": "l",
   "kind": "vessel",
-  "pl_from": "ovr"
+  "pl_from": "exact"
  },
  {
   "id": "dorsal_digital_veins_of_hand_r",
@@ -1261,7 +1253,7 @@
   "en": "Dorsal digital veins of hand",
   "side": "r",
   "kind": "vessel",
-  "pl_from": "ovr"
+  "pl_from": "exact"
  },
  {
   "id": "dorsal_metacarpal_arteries_l",
@@ -2025,7 +2017,7 @@
  },
  {
   "id": "inferior_vena_cava_abdominal_part",
-  "pl": "Żyła główna dolna",
+  "pl": "Żyła główna dolna (część abdominal)",
   "en": "Inferior vena cava (abdominal part)",
   "side": "mid",
   "kind": "vessel",
@@ -2033,7 +2025,7 @@
  },
  {
   "id": "inferior_vena_cava_thoracic_part",
-  "pl": "Żyła główna dolna",
+  "pl": "Żyła główna dolna (część thoracic)",
   "en": "Inferior vena cava (thoracic part)",
   "side": "mid",
   "kind": "vessel",

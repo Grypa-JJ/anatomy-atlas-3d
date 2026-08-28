@@ -1025,11 +1025,11 @@
  },
  {
   "id": "right_gastro_omental_nodes",
-  "pl": "Węzły żołądkowo-sieciowe prawe i lewe",
+  "pl": "Węzły żołądkowo-sieciowe prawe",
   "en": "Right gastro-omental nodes",
   "side": "mid",
   "kind": "lymph",
-  "pl_from": "fuzzy"
+  "pl_from": "exact"
  },
  {
   "id": "right_lobe_of_thymus",

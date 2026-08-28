@@ -64,6 +64,82 @@ def _load_dict():
         "trunk of corpus callosum": "Trzon ciała modzelowatego",
         "column of fornix": "Słup sklepienia","body of fornix": "Trzon sklepienia",
         "crus of fornix": "Odnoga sklepienia","crura of fornix": "Odnogi sklepienia",
+        # --- audyt 2026-08-28: błędne dopasowania fuzzy / złe wpisy słownika ---
+        "dorsal calcaneocuboid ligament": "Więzadło piętowo-sześcienne grzbietowe",
+        "plantar calcaneocuboid ligament": "Więzadło piętowo-sześcienne podeszwowe",
+        "posterior tibiotalar ligament": "Więzadło piszczelowo-skokowe tylne",
+        "anterior tibiotalar ligament": "Więzadło piszczelowo-skokowe przednie",
+        "tibiocalcaneal ligament": "Więzadło piszczelowo-piętowe",
+        "tibionavicular ligament": "Więzadło piszczelowo-łódkowe",
+        "medial femoral intermuscular septum": "Przegroda międzymięśniowa przyśrodkowa uda",
+        "lateral femoral intermuscular septum": "Przegroda międzymięśniowa boczna uda",
+        "inferior papillary muscle of left ventricle": "Mięsień brodawkowaty tylny (komora lewa)",
+        "inferior papillary muscle of right ventricle": "Mięsień brodawkowaty tylny (komora prawa)",
+        "superior papillary muscle of left ventricle": "Mięsień brodawkowaty przedni (komora lewa)",
+        "superior papillary muscle of right ventricle": "Mięsień brodawkowaty przedni (komora prawa)",
+        "anterior inferior pancreaticoduodenal artery": "Tętnica trzustkowo-dwunastnicza dolna przednia",
+        "posterior inferior pancreaticoduodenal artery": "Tętnica trzustkowo-dwunastnicza dolna tylna",
+        "anterior superior pancreaticoduodenal artery": "Tętnica trzustkowo-dwunastnicza górna przednia",
+        "posterior superior pancreaticoduodenal artery": "Tętnica trzustkowo-dwunastnicza górna tylna",
+        "middle lobar bronchus": "Oskrzele płatowe środkowe (prawe)",
+        "right gastro-omental nodes": "Węzły żołądkowo-sieciowe prawe",
+        "left gastro-omental nodes": "Węzły żołądkowo-sieciowe lewe",
+        "posterior layer of thoracolumbar fascia": "Blaszka tylna powięzi piersiowo-lędźwiowej",
+        "anterior layer of thoracolumbar fascia": "Blaszka przednia powięzi piersiowo-lędźwiowej",
+        "middle layer of thoracolumbar fascia": "Blaszka środkowa powięzi piersiowo-lędźwiowej",
+        "external abdominal oblique muscle": "Mięsień skośny zewnętrzny brzucha",
+        "internal abdominal oblique muscle": "Mięsień skośny wewnętrzny brzucha",
+        "superficial head of pronator teres": "Głowa powierzchowna mięśnia nawrotnego obłego",
+        "deep head of pronator teres": "Głowa głęboka mięśnia nawrotnego obłego",
+        "humero-ulnar head of pronator teres": "Głowa ramienno-łokciowa mięśnia nawrotnego obłego",
+        "superior extensor retinaculum of ankle": "Troczek górny prostowników goleni",
+        "inferior extensor retinaculum of ankle": "Troczek dolny prostowników stopy",
+        "mucosa of stomach": "Błona śluzowa żołądka",
+        "triradiate cartilage": "Chrząstka Y panewki (chrząstka trójpromienna)",
+        "nasal septal cartilage": "Chrząstka przegrody nosa",
+        "lateral process of nasal septal cartilage": "Wyrostek boczny chrząstki przegrody nosa",
+        "stylohyoid ligament": "Więzadło rylcowo-gnykowe",
+        "median thyrohyoid ligament": "Więzadło tarczowo-gnykowe pośrodkowe",
+        "lateral thyrohyoid ligament": "Więzadło tarczowo-gnykowe boczne",
+        "lateral temporomandibular ligament": "Więzadło skroniowo-żuchwowe boczne",
+        "pterygospinous ligament": "Więzadło skrzydłowo-kolcowe",
+        "pterygospinal ligament": "Więzadło skrzydłowo-kolcowe",
+        "intercornual ligament": "Więzadło międzyrożne (rogów krzyżowych)",
+        "sacrococcygeal symphysis": "Spojenie krzyżowo-guziczne",
+        "costotransverse ligament": "Więzadło żebrowo-poprzeczne",
+        "superior costotransverse ligament": "Więzadło żebrowo-poprzeczne górne",
+        "lateral costotransverse ligament": "Więzadło żebrowo-poprzeczne boczne",
+        "intersesamoid ligament": "Więzadło międzytrzeszczkowe",
+        "frenula capsulae": "Wędzidełka torebki stawowej",
+        "popliteofibular ligament": "Więzadło podkolanowo-strzałkowe",
+        "meniscopatellar ligament": "Więzadło łąkotkowo-rzepkowe",
+        "transverse tibiofibular ligament": "Więzadło poprzeczne (piszczelowo-strzałkowe dolne głębokie)",
+        "superior glenohumeral ligament": "Więzadło obrąbkowo-ramienne górne",
+        "middle glenohumeral ligament": "Więzadło obrąbkowo-ramienne środkowe",
+        "inferior glenohumeral ligament": "Więzadło obrąbkowo-ramienne dolne",
+        "anterior meniscotibial ligament (medial meniscus)": "Więzadło łąkotkowo-piszczelowe przednie (łąkotki przyśrodkowej)",
+        "anterior meniscotibial ligament (lateral meniscus)": "Więzadło łąkotkowo-piszczelowe przednie (łąkotki bocznej)",
+        "posterior meniscotibial ligament (medial meniscus)": "Więzadło łąkotkowo-piszczelowe tylne (łąkotki przyśrodkowej)",
+        "posterior meniscotibial ligament (lateral meniscus)": "Więzadło łąkotkowo-piszczelowe tylne (łąkotki bocznej)",
+        "scapular spinal part of deltoid muscle": "Część grzebieniowa mięśnia naramiennego",
+        "clavicular part of deltoid muscle": "Część obojczykowa mięśnia naramiennego",
+        "acromial part of deltoid muscle": "Część barkowa mięśnia naramiennego",
+        "sciatic bursa of gluteus maximus muscle": "Kaletka kulszowa mięśnia pośladkowego wielkiego",
+        "external part of thyro-arytenoid muscle": "Część zewnętrzna mięśnia tarczowo-nalewkowego",
+        "thyro-epiglottic part of thyro-arytenoid muscle": "Część tarczowo-nagłośniowa mięśnia tarczowo-nalewkowego",
+        "common tendon sheath of fibularis muscles": "Pochewka wspólna ścięgien mięśni strzałkowych",
+        "plantar tendon sheath of fibularis longus muscle": "Pochewka podeszwowa ścięgna mięśnia strzałkowego długiego",
+        "dorsal digital arteries of foot": "Tętnice grzbietowe palców stopy",
+        "dorsal digital veins of foot": "Żyły grzbietowe palców stopy",
+        "dorsal digital arteries of hand": "Tętnice grzbietowe palców ręki",
+        "dorsal digital veins of hand": "Żyły grzbietowe palców ręki",
+        "palmar digital veins": "Żyły dłoniowe palców",
+        "plantar digital veins": "Żyły podeszwowe palców",
+        "intercuneiform interosseous ligaments": "Więzadła międzyklinowe międzykostne",
+        "superficial transverse metacarpal ligament": "Więzadło śródręczne poprzeczne powierzchowne",
+        "superficial transverse metatarsal ligament": "Więzadło śródstopne poprzeczne powierzchowne",
+        "sesamoid bones of foot": "Kości trzeszczkowate stopy",
+        "sesamoid bones of hand": "Kości trzeszczkowate ręki",
     }
     d.update(CORRECTIONS)
     # v1 atlas catalogues FIRST — human-curated over many sessions, higher trust
@@ -203,6 +279,7 @@ GEN_OF = {   # genitive of common bone / structure names for "<feature> of <X>"
     "atlas":"kręgu szczytowego","axis":"kręgu obrotowego","dens axis":"zęba kręgu obrotowego",
     "dens of axis":"zęba kręgu obrotowego",
     "phalanx of hand":"paliczka ręki","phalanx of foot":"paliczka stopy",
+    "hand":"ręki","foot":"stopy","great toe":"palucha","thumb":"kciuka",
     "metatarsal bone":"kości śródstopia","metacarpal bone":"kości śródręcza",
     "cricoid cartilage":"chrząstki pierścieniowatej","thyroid cartilage":"chrząstki tarczowatej",
     "arytenoid cartilage":"chrząstki nalewkowatej","epiglottis":"nagłośni",
@@ -225,6 +302,11 @@ MUSCLE_GEN = {   # a few common muscle genitives for bursa / tendon-sheath compo
     "extensor carpi ulnaris":"prostownika łokciowego nadgarstka","extensor digiti minimi manus":"prostownika palca małego ręki",
     "extensor digitorum longus":"prostownika długiego palców","extensor digitorum":"prostownika palców",
     "fibularis longus muscle":"mięśnia strzałkowego długiego","fibularis muscles":"mięśni strzałkowych",
+    "infraspinatus":"mięśnia podgrzebieniowego","teres major":"mięśnia obłego większego",
+    "subscapularis":"mięśnia podłopatkowego","subscapularis muscle":"mięśnia podłopatkowego",
+    "coracobrachialis":"mięśnia kruczo-ramiennego","coracobrachialis muscle":"mięśnia kruczo-ramiennego",
+    "latissimus dorsi":"mięśnia najszerszego grzbietu","latissimus dorsi muscle":"mięśnia najszerszego grzbietu",
+    "semimembranosus":"mięśnia półbłoniastego","semimembranosus muscle":"mięśnia półbłoniastego",
 }
 VERMIS = {
     "culmen":"Szczyt (robak)","declive":"Stok (robak)","folium of vermis":"Blaszka robaka",
@@ -764,17 +846,68 @@ _JOINT_PL = {
  "talocrural":"skokowo-goleniowego","atlanto-occipital":"szczytowo-potylicznego","atlanto-axial":"szczytowo-obrotowego",
  "temporomandibular":"skroniowo-żuchwowego","sacro-iliac":"krzyżowo-biodrowego","sacroiliac":"krzyżowo-biodrowego",
  "interphalangeal joint of great toe":"międzypaliczkowego palucha","interphalangeal":"międzypaliczkowego",
+ "distal interphalangeal":"międzypaliczkowych dalszych","proximal interphalangeal":"międzypaliczkowych bliższych",
  "metacarpophalangeal":"śródręczno-paliczkowego","metatarsophalangeal":"śródstopno-paliczkowego",
  "subtalar":"skokowo-piętowego","talocalcaneonavicular":"skokowo-piętowo-łódkowego",
- "proximal tibiofibular":"piszczelowo-strzałkowego bliższego","tibiofibular":"piszczelowo-strzałkowego",
+ "proximal tibiofibular":"piszczelowo-strzałkowego bliższego","superior tibiofibular":"piszczelowo-strzałkowego bliższego",
+ "distal tibiofibular":"piszczelowo-strzałkowego dalszego","inferior tibiofibular":"piszczelowo-strzałkowego dalszego",
+ "tibiofibular":"piszczelowo-strzałkowego",
+ "distal radio-ulnar":"promieniowo-łokciowego dalszego","proximal radio-ulnar":"promieniowo-łokciowego bliższego",
+ "radio-ulnar":"promieniowo-łokciowego","radioulnar":"promieniowo-łokciowego",
  "costovertebral":"żebrowo-kręgowego","costotransverse":"żebrowo-poprzecznego","sternocostal":"mostkowo-żebrowego",
+ "carpometacarpal":"nadgarstkowo-śródręcznych","intercarpal":"międzynadgarstkowych","intermetatarsal":"międzyśródstopnych",
 }
 def _jkey(name):
     return _JOINT_PL.get(name) or _JOINT_PL.get(name.replace(" joint", "").strip())
+
+# więzadła śród- i międzynadgarstkowe / promieniowo-łokciowe dalsze
+# (Terminologia Anatomica: nazwy złożone od polskich nazw kości nadgarstka)
+_CARPAL_LIG = {
+ "capitohamate interosseous":"międzykostne główkowato-haczykowate",
+ "palmar capitohamate":"dłoniowe główkowato-haczykowate",
+ "dorsal capitohamate":"grzbietowe główkowato-haczykowate",
+ "lunotriquetral interosseous":"międzykostne księżycowato-trójgraniaste",
+ "palmar lunotriquetral":"dłoniowe księżycowato-trójgraniaste",
+ "dorsal lunotriquetral":"grzbietowe księżycowato-trójgraniaste",
+ "scapholunate interosseous":"międzykostne łódeczkowato-księżycowate",
+ "trapeziotrapezoidal interosseous":"międzykostne czworoboczno-czworoboczne",
+ "trapezoideocapitate interosseous":"międzykostne czworoboczno-główkowate",
+ "palmar trapezoideocapitate":"dłoniowe czworoboczno-główkowate",
+ "dorsal scaphotriquetral":"grzbietowe łódeczkowato-trójgraniaste",
+ "palmar scaphotriquetral":"dłoniowe łódeczkowato-trójgraniaste",
+ "radiocapitate":"promieniowo-główkowate (część więzadła promieniowo-nadgarstkowego dłoniowego)",
+ "radioscaphocapitate":"promieniowo-łódeczkowato-główkowate",
+ "long radiolunate":"promieniowo-księżycowate długie",
+ "short radiolunate":"promieniowo-księżycowate krótkie",
+ "scaphocapitate":"łódeczkowato-główkowate",
+ "scaphotrapeziotrapezoidal":"łódeczkowato-czworoboczne",
+ "triquetrocapitate":"trójgraniasto-główkowate",
+ "triquetrohamate":"trójgraniasto-haczykowate",
+ "ulnocapitate":"łokciowo-główkowate",
+ "ulnolunate":"łokciowo-księżycowate",
+ "ulnotriquetral":"łokciowo-trójgraniaste",
+ "ulnopisiform":"łokciowo-grochowate",
+ "pisotriquetral":"grochowato-trójgraniaste",
+ "dorsal radio-ulnar":"grzbietowe promieniowo-łokciowe (stawu promieniowo-łokciowego dalszego)",
+ "palmar radio-ulnar":"dłoniowe promieniowo-łokciowe (stawu promieniowo-łokciowego dalszego)",
+}
 def _joint(n):
     m = re.match(r'^intervertebral disc ([a-z]\d+)[- ]([a-z]?\d+)$', n, re.I)
     if m: return f"Krążek międzykręgowy {m.group(1).upper()}–{m.group(2).upper()}"
     if n == "intervertebral discs": return "Krążki międzykręgowe"
+    m = re.match(r'^nucleus pulposus ([a-z]\d+)[- ]([a-z]?\d+)$', n, re.I)
+    if m: return f"Jądro miażdżyste {m.group(1).upper()}–{m.group(2).upper()}"
+    if n == "nucleus pulposus": return "Jądro miażdżyste"
+    m = re.match(r'^(.+?) ligaments?$', n)
+    if m and m.group(1) in _CARPAL_LIG:
+        return f"Więzadło {_CARPAL_LIG[m.group(1)]}"
+    m = re.match(r'^(palmar|plantar|dorsal) (interphalangeal|metacarpophalangeal|metatarsophalangeal) ligaments?$', n)
+    if m:
+        surf = {"palmar":"dłoniowe","plantar":"podeszwowe","dorsal":"grzbietowe"}[m.group(1)]
+        jt = {"interphalangeal":"międzypaliczkowych","metacarpophalangeal":"śródręczno-paliczkowych",
+              "metatarsophalangeal":"śródstopno-paliczkowych"}[m.group(2)]
+        head = "Więzadło" if n.endswith("ligament") else "Więzadła"
+        return f"{head} {surf} stawów {jt}"
     m = re.match(r'^articular disc of (.+?) joint$', n)
     if m:
         k = _jkey(m.group(1)); return f"Krążek stawowy stawu {k or m.group(1)}"
@@ -784,11 +917,17 @@ def _joint(n):
         head = "Torebka stawowa stawu" if "capsule " in n else "Torebki stawowe stawów"
         loc = "" if not m.group(2) else " " + (GEN_OF.get(m.group(2)) or m.group(2))
         return f"{head} {k}{loc}".strip()
-    m = re.match(r'^collateral (.+?) ligaments?$', n)
+    m = re.match(r'^collateral (.+?) ligaments?(?: of (hand|foot))?$', n)
     if m:
+        jt = {"interphalangeal":"międzypaliczkowych","metacarpophalangeal":"śródręczno-paliczkowych",
+              "metatarsophalangeal":"śródstopno-paliczkowych"}.get(m.group(1))
+        loc = {"hand":" ręki","foot":" stopy"}.get(m.group(2) or "", "")
+        if jt:
+            head = "Więzadło poboczne" if n.rstrip().endswith("ligament") else "Więzadła poboczne"
+            return f"{head} stawów {jt}{loc}"
         k = _jkey(m.group(1)) or m.group(1)
-        head = "Więzadło poboczne" if n.endswith("ligament") else "Więzadła poboczne"
-        return f"{head} stawów {k}" if "Więzadła" in head else f"{head} stawu {k}"
+        head = "Więzadło poboczne" if n.rstrip().endswith("ligament") else "Więzadła poboczne"
+        return f"{head} stawów {k}{loc}" if "Więzadła" in head else f"{head} stawu {k}{loc}"
     m = re.match(r'^(.+?) (meniscus|labrum)$', n)
     if m:
         head = "Łąkotka" if m.group(2) == "meniscus" else "Obrąbek"
@@ -903,9 +1042,27 @@ def _extra_comp(n):
         return f"{head} {POS[m.group(1)][0]} {GEN_OF[m.group(3)]}"
     return None
 
+_PART_ADJ = {"superior":"górna","inferior":"dolna","lateral":"boczna","medial":"przyśrodkowa",
+             "anterior":"przednia","posterior":"tylna","middle":"środkowa","central":"środkowa",
+             "dorsal":"grzbietowa","ventral":"brzuszna","rostral":"dziobowa","caudal":"ogonowa"}
+
 @functools.lru_cache(maxsize=8192)
 def translate(en):
     raw = en
+    # Z-Anatomy dzieli część bruzd/zakrętów na "(... part)" - bez tego dwa różne
+    # meshe dostają identyczną nazwę PL. Przetłumacz rdzeń i dopisz część
+    # (chyba że pełna nazwa z częścią ma już własny wpis ręczny).
+    mp = re.match(r'^(.*\S)\s*\(([a-z][a-z ]*?)\s*part\*?\)\*?$', en.strip(), re.I)
+    if mp:
+        _full = re.sub(r'\s+', ' ', en.strip().lower()).replace('*', '').strip()
+        if _full in OVR2: return OVR2[_full], "ovr"
+        if _full in OVR: return OVR[_full], "ovr"
+        if True:
+            core_pl, how = translate(mp.group(1).strip())
+            if how != "none":
+                words = [w for w in mp.group(2).lower().split() if w in _PART_ADJ]
+                czesc = " ".join(_PART_ADJ[w] for w in words) or mp.group(2).strip().lower()
+                return f"{core_pl} (część {czesc})", how
     en = _clean(en)
     n = _norm(en)
     if not n:
