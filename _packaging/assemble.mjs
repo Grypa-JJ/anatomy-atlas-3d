@@ -84,7 +84,10 @@ await fs.mkdir(OUT, { recursive: true });
 // 1. atlas.html -> web/index.html  (usun stopke "Powrot do bazy pytan" — w bundlu nie ma bazy)
 let entry = await fs.readFile(must(path.join(ROOT, 'atlas.html')), 'utf8');
 entry = entry.replace(/<footer>[\s\S]*?<\/footer>/i, '');
-await fs.writeFile(path.join(OUT, 'index.html'), injectCommon(entry));
+const entryHtml = injectCommon(entry);
+await fs.writeFile(path.join(OUT, 'index.html'), entryHtml);
+// viewery linkują "wróć do trybów" jako ../atlas.html — w bundlu też musi istnieć
+await fs.writeFile(path.join(OUT, 'atlas.html'), entryHtml);
 
 // 2. _atlas_v2/build_full  (bez obj/)
 await copyTree(must(path.join(ROOT, '_atlas_v2', 'build_full')), path.join(OUT, '_atlas_v2', 'build_full'), 'obj');
