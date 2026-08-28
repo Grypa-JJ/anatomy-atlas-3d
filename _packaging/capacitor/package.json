@@ -17,6 +17,7 @@
     "@capacitor/core": "^7",
     "@capacitor/android": "^7",
     "@capacitor/browser": "^7",
+    "@capacitor/status-bar": "^7",
     "@capgo/capacitor-updater": "^7"
   }
 }

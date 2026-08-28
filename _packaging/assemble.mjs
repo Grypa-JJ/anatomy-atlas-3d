@@ -82,6 +82,34 @@ function injectCommon(html) {
   if ('serviceWorker' in navigator && location.protocol === 'https:' && !window.__TAURI__ && !window.Capacitor) {
     addEventListener('load', function () { navigator.serviceWorker.register('/sw.js').catch(function () {}); });
   }
+  // Dotyk: menedzer okien atlasu slucha tylko mouse* -> na telefonie nie da sie
+  // przeciagnac panelu za pasek tytulu. Tlumaczymy touch -> mouse tylko dla .winbar
+  // (przewijanie tresci panelu i przyciski dzialaja bez zmian).
+  (function () {
+    var dragging = false;
+    function xy(e) { var t = e.touches && e.touches[0] || e.changedTouches && e.changedTouches[0]; return t ? { x: t.clientX, y: t.clientY } : null; }
+    function fire(type, p, target) {
+      (target || document).dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window, clientX: p ? p.x : 0, clientY: p ? p.y : 0 }));
+    }
+    document.addEventListener('touchstart', function (e) {
+      var bar = e.target.closest && e.target.closest('.winbar');
+      if (!bar || (e.target.classList && e.target.classList.contains('wb-x'))) return;
+      var p = xy(e); if (!p) return;
+      dragging = true;
+      fire('mousedown', p, e.target);
+    }, { passive: true });
+    document.addEventListener('touchmove', function (e) {
+      if (!dragging) return;
+      var p = xy(e); if (!p) return;
+      e.preventDefault();
+      fire('mousemove', p);
+    }, { passive: false });
+    document.addEventListener('touchend', function () {
+      if (!dragging) return;
+      dragging = false;
+      fire('mouseup', null);
+    });
+  })();
 </script>`;
   return html.includes('</head>') ? html.replace('</head>', tag + '\n</head>') : tag + html;
 }

@@ -8,6 +8,11 @@
       "resetWhenUpdate": true,
       "updateUrl": "",
       "appReadyTimeout": 10000
+    },
+    "StatusBar": {
+      "overlaysWebView": false,
+      "style": "DARK",
+      "backgroundColor": "#1a1a1a"
     }
   },
   "android": {
