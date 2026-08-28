@@ -215,9 +215,11 @@ const _ocLocal = _ocAssetsParam ? _ocAssetsParam === "local"
     : (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)
        || location.protocol === "file:" || !!window.__TAURI__ || !!window.Capacitor);
 if (!_ocLocal) {
+  // Na R2 lecą TYLKO duże binaria: ./visceral.glb i cały ./alt/ (GLB + slajdy CT).
+  // Małe manifesty top-level (./visceral_manifest.json) zostają na Netlify.
   const remap = (u) => {
     if (typeof u !== "string") return u;
-    if (u.startsWith("./alt/") || u.startsWith("./visceral")) return R2_ORGAN_BASE + u.slice(2);
+    if (u.startsWith("./alt/") || u.startsWith("./visceral.glb")) return R2_ORGAN_BASE + u.slice(2);
     return u;
   };
   const _f = window.fetch.bind(window);
