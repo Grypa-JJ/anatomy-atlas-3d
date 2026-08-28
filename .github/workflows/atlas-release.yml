@@ -3,9 +3,16 @@
 # Wyzwalacz:  push tagu  atlas-vX.Y.Z
 #   git tag atlas-v0.1.0 && git push origin atlas-v0.1.0
 #
+# CZEMU pobieranie assetow w CI: runner robi czysty `git clone`, a ciezkie assety (GLB/CT/NIH)
+# sa w .gitignore. To krok BUILD-TIME. Gotowy .exe/.apk niesie wszystkie assety w sobie —
+# aplikacja u uzytkownika NIC nie pobiera. Build lokalny w ogole tego nie dotyka (masz assety).
+#
 # WYMAGANE SEKRETY (Settings -> Secrets and variables -> Actions) — bez nich joby sie wywala:
-#   ATLAS_ASSETS_URL            publiczny URL do atlas-assets-XXXX.tar.gz na R2 (z `node _packaging/pack-assets.mjs`)
-#   ATLAS_ASSETS_SHA256         (opcjonalnie) suma kontrolna tego pliku
+#   ATLAS_ASSETS_URL     URL do atlas-assets.tar.gz (z `node _packaging/pack-assets.mjs`).
+#                        Najprosciej GitHub Release (bez R2):
+#                        gh release create atlas-assets _packaging/atlas-assets.tar.gz
+#                        -> https://github.com/Grypa-JJ/medstudy/releases/download/atlas-assets/atlas-assets.tar.gz
+#   ATLAS_ASSETS_SHA256  (opcjonalnie) suma kontrolna tego pliku (z atlas-assets.sha256)
 #   TAURI_SIGNING_PRIVATE_KEY           klucz prywatny updatera Tauri (`npm run tauri signer generate`)
 #   TAURI_SIGNING_PRIVATE_KEY_PASSWORD  haslo do powyzszego
 #   ANDROID_KEYSTORE_BASE64    keystore .jks zakodowany base64  (`base64 -w0 atlas3d.keystore`)

@@ -17,24 +17,28 @@ robimy je, gdy inne sesje skończą pracę nad treścią atlasu.
 ## Architektura dystrybucji
 
 ```
-źródła w repo ──► assemble.mjs ──► _packaging/web/  (płaski, samodzielny bundle ~108 MB)
-                                          │
-                        ┌─────────────────┴─────────────────┐
-                        ▼                                   ▼
-              _packaging/tauri/  (Windows)        _packaging/capacitor/  (Android)
-                  → NSIS .exe                          → APK (sideload)
-                        │                                   │
-                        └──────────── updater.js ───────────┘
-                                          │
-                         latest.json na Cloudflare R2 (0 zł egress)
-                         instalatory/APK na GitHub Releases (0 zł)
+źródła + assety w repo ──► assemble.mjs ──► _packaging/web/  (płaski bundle ~108 MB)
+                                                  │  wszystkie GLB/CT/NIH W ŚRODKU
+                        ┌─────────────────────────┴─────────────────┐
+                        ▼                                           ▼
+              _packaging/tauri/  (Windows)                _packaging/capacitor/  (Android)
+                  → NSIS .exe  (assety w instalce)             → APK  (assety w APK)
+                        │                                           │
+                        └──────────── updater.js ───────────────────┘
+                                          │  tylko SPRAWDZENIE wersji przy starcie
+                         latest.json (kilka KB) — GitHub raw / R2
 ```
 
+**Runtime = 100% offline.** `.exe`/`.apk` zawiera wszystkie assety. Po instalacji aplikacja
+łączy się z siecią **tylko** żeby sprawdzić `latest.json` (kilka KB) — i to można wyłączyć.
+
 **Hosting bez opłat za transfer:**
-| Co | Gdzie |
-|---|---|
-| instalator `.exe`, `.apk` | GitHub Releases (`Grypa-JJ/medstudy`, tagi `atlas-vX.Y.Z`) |
-| `latest.json`, paczki OTA `web-X.Y.Z.zip` | Cloudflare R2 (bucket już masz pod atlas v3) |
+| Co | Gdzie | Rozmiar / częstość |
+|---|---|---|
+| instalator `.exe`, `.apk` | GitHub Releases (`Grypa-JJ/medstudy`, tag `atlas-vX.Y.Z`) | ~110 MB, co wydanie |
+| `atlas-assets.tar.gz` (**tylko dla buildu w CI**) | GitHub Release `atlas-assets` (lub R2) | ~103 MB, rzadko |
+| `latest.json` | GitHub raw lub R2 | kilka KB |
+| paczki OTA Android `web-X.Y.Z.zip` (opcjonalne) | R2 lub GitHub Release | ~40–100 MB, co wydanie |
 
 ---
 
@@ -57,28 +61,38 @@ Co robi (idempotentnie — czyści `web/` i składa od zera):
 6. wstrzykuje do 3 stron HTML: `<script src="/updater.js">`, `<link rel="manifest">`,
    rejestrację service workera (tylko gdy `https:` i poza Tauri/Capacitor)
 7. kopiuje do roota: `updater.js`, `manifest.webmanifest`, `sw.js`, `app-version.json` (ze stemplem czasu)
-8. ikony PWA z `shared/icons/` (albo placeholder z `brand-assets/` + ostrzeżenie)
+8. ikony z `shared/icons/`
 
-**Zależność:** ciężkie assety (`_atlas_v2/dist/*.glb`, `_organ_compare/alt/`, `_organ_compare/*.glb`)
-są w `.gitignore` — nie ma ich po samym `git clone`. Lokalnie zwykle je masz. W CI / na czystej
-maszynie pobiera je `fetch-assets.mjs` z R2 (patrz niżej). `beforeBuildCommand` w obu powłokach
-uruchamia `fetch-assets.mjs` przed `assemble.mjs`.
+**Assety w instalce, nie z sieci.** Źródło (`atlas_pilot_v3.html`, `_organ_compare/index.html`)
+ma warunek `_isLocal` — gdy `window.__TAURI__` lub `window.Capacitor` jest obecne (czyli w `.exe`/`.apk`),
+GLB ładują się z `../dist/`, a nie z R2. `assemble.mjs` kopiuje wszystkie GLB/CT/NIH do bundla,
+więc `.exe`/`.apk` niesie je w środku i działa offline. **Zweryfikowane:** load atlasu z bundla
+= 0 zapytań do `r2.dev`. R2 obsługuje tylko wariant webowy (Netlify), gdzie 28.9 MB GLB nie mieści
+się sensownie w deployu.
+
+**Skąd assety przy budowaniu:** są w `.gitignore` (nie ma ich po `git clone`). `fetch-assets.mjs`
+szuka po kolei: (1) na dysku → **build lokalny nic nie pobiera**, (2) `_packaging/atlas-assets.tar.gz`,
+(3) `$ATLAS_ASSETS_URL` (CI). `beforeBuildCommand` obu powłok woła go przed `assemble.mjs`.
 
 Test bundla bez pakowania:
 ```bash
 cd _packaging && npm run serve      # http://localhost:9040
 ```
 
-## Ciężkie assety — `pack-assets.mjs` / `fetch-assets.mjs`
+## Ciężkie assety w CI — `pack-assets.mjs` / `fetch-assets.mjs`
+
+**Tylko dla buildu w chmurze.** Build lokalny pomija — masz assety na dysku.
 
 ```bash
 node _packaging/pack-assets.mjs      # -> atlas-assets.tar.gz (~103 MB) + sha256
 ```
 
-Wgraj `atlas-assets.tar.gz` na R2 jako `atlas/assets/atlas-assets-<hash>.tar.gz`. Ten URL:
-- wpisz w sekret CI `ATLAS_ASSETS_URL` (+ opcjonalnie `ATLAS_ASSETS_SHA256`)
-- `fetch-assets.mjs` go pobiera i rozpakowuje, jeśli brak plików-wartowników (GLB). Gdy assety
-  są na miejscu — nie robi nic. Ponów `pack-assets.mjs` po każdej regeneracji GLB.
+Wgraj gdziekolwiek za darmo bez limitu transferu — najprościej **GitHub Release** (bez R2):
+```bash
+gh release create atlas-assets _packaging/atlas-assets.tar.gz --notes "assety atlasu (build-time)"
+```
+URL (`https://github.com/Grypa-JJ/medstudy/releases/download/atlas-assets/atlas-assets.tar.gz`)
+→ sekret CI `ATLAS_ASSETS_URL` (+ opcjonalnie `ATLAS_ASSETS_SHA256`). Ponów po regeneracji GLB.
 
 ## CI — `.github/workflows/atlas-release.yml`
 
@@ -145,11 +159,12 @@ Zrobione: ✅ scaffolding Tauri + Capacitor · ✅ `assemble.mjs` (przetestowany
 Zostało (wymaga kont/kluczy/toolchainów, nie kodu):
 
 - [ ] **Odświeżyć bundle** — `node _packaging/assemble.mjs` po ostatnich zmianach innych sesji
-- [ ] **R2 — assety** — `node _packaging/pack-assets.mjs`, wgrać `atlas-assets.tar.gz`,
-      wpisać URL w sekret CI `ATLAS_ASSETS_URL`
-- [ ] **R2 — aktualizacje** — założyć `atlas/updates/`, wgrać pierwszy `latest.json`
-      (wzór: `shared/latest.json.example`), wpisać jego URL w `shared/app-version.json`
-      **i** `tauri/src-tauri/tauri.conf.json` (`plugins.updater.endpoints`)
+- [ ] **Assety dla CI** (pomiń, jeśli budujesz lokalnie) — `node _packaging/pack-assets.mjs`,
+      `gh release create atlas-assets _packaging/atlas-assets.tar.gz`, URL → sekret `ATLAS_ASSETS_URL`
+- [ ] **`latest.json`** (do aktualizacji) — wgrać pierwszy plik (wzór: `shared/latest.json.example`)
+      na GitHub raw lub R2, wpisać jego URL w `shared/app-version.json` **i**
+      `tauri/src-tauri/tauri.conf.json` (`plugins.updater.endpoints`). Bez tego apka po prostu
+      nie pokazuje banera aktualizacji (updater.js sam się wycisza) — reszta działa.
 - [ ] **Klucz updatera Tauri** — `cd _packaging/tauri && npm run tauri signer generate`;
       klucz publiczny → `tauri.conf.json` `pubkey`; prywatny + hasło → sekrety CI
 - [ ] **Keystore Android** — `keytool -genkey ... atlas3d.keystore`; base64 → sekret

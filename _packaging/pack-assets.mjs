@@ -4,9 +4,15 @@
  *
  *   node _packaging/pack-assets.mjs
  *
- * Potem: wgraj  atlas-assets.tar.gz  na R2 jako  atlas/assets/atlas-assets-<krotki-hash>.tar.gz
- * i wpisz jego URL w  shared/app-version.json -> "assets_pack_url"  oraz w secret CI  ATLAS_ASSETS_URL.
- * fetch-assets.mjs pobiera i rozpakowuje ten plik przed assemble.mjs (lokalnie niepotrzebne — masz assety).
+ * Do czego to sluzy: build w CI (`git clone` nie ma GLB — sa w .gitignore).
+ * Build lokalny tego NIE potrzebuje — masz assety na dysku.
+ * NIE ma zwiazku z runtime: gotowy .exe/.apk i tak niesie wszystkie assety w sobie.
+ *
+ * Gdzie wgrac (wybierz jedno, oba za darmo, bez limitu transferu):
+ *   A) GitHub Release:  gh release create atlas-assets _packaging/atlas-assets.tar.gz --notes "assety atlasu"
+ *      URL:  https://github.com/Grypa-JJ/medstudy/releases/download/atlas-assets/atlas-assets.tar.gz
+ *   B) Cloudflare R2:   atlas/assets/atlas-assets-<hash>.tar.gz
+ * Ten URL -> secret CI  ATLAS_ASSETS_URL  (+ opcjonalnie ATLAS_ASSETS_SHA256 z pliku obok).
  */
 import { spawnSync } from 'node:child_process';
 import { promises as fs } from 'node:fs';
@@ -44,4 +50,7 @@ const { size } = await fs.stat(OUT);
 await fs.writeFile(path.join(HERE, 'atlas-assets.sha256'), sha + '\n');
 console.log(`\n✔ ${path.relative(ROOT, OUT)}  ${(size / 1048576).toFixed(1)} MB`);
 console.log(`  sha256 ${sha}`);
-console.log(`  sugerowana nazwa na R2: atlas-assets-${sha.slice(0, 12)}.tar.gz`);
+console.log(`\n  najprosciej (GitHub Release, bez R2):`);
+console.log(`    gh release create atlas-assets _packaging/atlas-assets.tar.gz --notes "assety atlasu (build-time)"`);
+console.log(`  potem secret ATLAS_ASSETS_URL =`);
+console.log(`    https://github.com/Grypa-JJ/medstudy/releases/download/atlas-assets/atlas-assets.tar.gz`);
