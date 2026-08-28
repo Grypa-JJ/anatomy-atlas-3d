@@ -61,7 +61,16 @@ async function patch(file, fn) {
 
 function injectCommon(html) {
   if (html.includes('data-atlas-injected')) return html;
-  const tag = `
+  // viewport: atlas_pilot_v3.html go nie ma -> w WebView Androida (APK) renderuje sie
+  // w skali 1:1 pikseli urzadzenia (widac tylko wycinek). Viewer NIE ma zadnego
+  // responsywnego CSS (panele 240-280px na sztywno), wiec 'width=device-width' zrobilby
+  // nachodzace panele. Chrome mobilny dla strony bez viewportu uklada ~980px i skaluje
+  // do ekranu - odtwarzamy to: width=980 + brak blokady zoomu (user moze przyblizyc UI).
+  // Strony ktore MAJA wlasny viewport (atlas.html, _organ_compare) zostawiamy.
+  const viewport = /<meta[^>]+name=["']viewport["']/i.test(html)
+    ? ''
+    : '\n<meta name="viewport" content="width=980">';
+  const tag = `${viewport}
 <link rel="manifest" href="/manifest.webmanifest" data-atlas-injected>
 <meta name="theme-color" content="#1a1a1a">
 <script src="/updater.js" defer></script>
