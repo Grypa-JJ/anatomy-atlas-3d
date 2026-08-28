@@ -1,6 +1,39 @@
 # --- Node ---
 node_modules/
 
+# --- Atlas v2/v3 (Z-Anatomy) working dir: duże binaria, generowalne z .blend ---
+_atlas_v2/src/
+_atlas_v2/blender_app/
+_atlas_v2/blend_dump*/
+_atlas_v2/build/obj/
+_atlas_v2/build/vendor/
+_atlas_v2/build_full/obj/
+_atlas_v2/build_full/vendor/
+_atlas_v2/pilot/
+_atlas_v2/node_modules/
+_atlas_v2/*.zip
+_atlas_v2/_*.log
+_atlas_v2/_*.log.err
+_atlas_v2/_mods_probe.json
+_atlas_v2/_bl_*.txt
+_atlas_v2/_ta2_probe.txt
+_atlas_v2/dist/*.glb
+*.fbx
+*.glb
+*.blend
+*.blend1
+
+# --- Atlas: PoC serca / geometria narządów (regenerowalna, hostowana na R2) ---
+_heart_compare/**/*.obj
+_heart_compare/**/*.stl
+_heart_compare/**/*.mtl
+_organ_compare/*.glb
+
+# --- Atlas: renderowane strony PDF (generowalne z _polmisek_atlas.pdf) ---
+_atlas_pages/
+_organ_compare/alt/
+_bone_renders/
+
 # --- Duże/binarne pliki źródłowe (podręczniki, audio, dumpy) ---
 *.pdf
 *.apkg
