@@ -83,9 +83,10 @@ ocHtml = ocHtml
 await fs.writeFile(ocIndex, ocHtml);
 console.log('  ✔ _organ_compare/  (bez glb/alt, vendor lokalny, importmap→vendor)');
 
-// 5. index.html z roota (zawiera kafelek Atlas 3D w anatomii)
+// 5. index.html + sw.js z roota (kafelek Atlas 3D w anatomii; SW z cache R2)
 await fs.copyFile(path.join(ROOT, 'index.html'), path.join(OUT, 'index.html'));
-console.log('  ✔ index.html  (mirror roota z kafelkiem atlasu)');
+await fs.copyFile(path.join(ROOT, 'sw.js'), path.join(OUT, 'sw.js'));
+console.log('  ✔ index.html + sw.js  (mirror roota: kafelek atlasu, SW cache R2)');
 
 // 6. nagłówki: .glb hostowane na R2, ale draco .wasm serwuje Netlify
 const headers = `# atlas 3D — typy MIME dla vendored three.js / draco
