@@ -1,0 +1,1122 @@
+[
+ {
+  "base": "Anterior cells of ethmoid bone",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 626
+ },
+ {
+  "base": "Atlas (C1)",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1091
+ },
+ {
+  "base": "Axis (C2)",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1097
+ },
+ {
+  "base": "Body of sternum",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1484
+ },
+ {
+  "base": "Calcaneus",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 675
+ },
+ {
+  "base": "Capitate bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 139
+ },
+ {
+  "base": "Clavicle",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 681
+ },
+ {
+  "base": "Coccyx",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 1,
+  "maxv": 585
+ },
+ {
+  "base": "Cuboid bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 438
+ },
+ {
+  "base": "Distal phalanx of fifth finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 2,
+  "maxv": 116
+ },
+ {
+  "base": "Distal phalanx of fifth finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 2,
+  "maxv": 97
+ },
+ {
+  "base": "Distal phalanx of first finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 208
+ },
+ {
+  "base": "Distal phalanx of first finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 2,
+  "maxv": 108
+ },
+ {
+  "base": "Distal phalanx of fourth finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 2,
+  "maxv": 129
+ },
+ {
+  "base": "Distal phalanx of fourth finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 2,
+  "maxv": 67
+ },
+ {
+  "base": "Distal phalanx of second finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 2,
+  "maxv": 108
+ },
+ {
+  "base": "Distal phalanx of second finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 2,
+  "maxv": 120
+ },
+ {
+  "base": "Distal phalanx of third finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 2,
+  "maxv": 141
+ },
+ {
+  "base": "Distal phalanx of third finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 2,
+  "maxv": 91
+ },
+ {
+  "base": "Eighth rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 3888
+ },
+ {
+  "base": "Eleventh rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 2397
+ },
+ {
+  "base": "Ethmoid bone",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 1,
+  "maxv": 7615
+ },
+ {
+  "base": "Femur",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 1548
+ },
+ {
+  "base": "Fibula",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 601
+ },
+ {
+  "base": "Fifth metacarpal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 200
+ },
+ {
+  "base": "Fifth metatarsal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 358
+ },
+ {
+  "base": "Fifth rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 4423
+ },
+ {
+  "base": "First metacarpal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 200
+ },
+ {
+  "base": "First metatarsal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 410
+ },
+ {
+  "base": "First rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 1462
+ },
+ {
+  "base": "Fourth metacarpal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 292
+ },
+ {
+  "base": "Fourth metatarsal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 350
+ },
+ {
+  "base": "Fourth rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 3992
+ },
+ {
+  "base": "Frontal bone",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 7,
+  "maxv": 2478
+ },
+ {
+  "base": "Hamate bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 163
+ },
+ {
+  "base": "Hip bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 8,
+  "maxv": 1024
+ },
+ {
+  "base": "Humerus",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 1812
+ },
+ {
+  "base": "Hyoid bone",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 1,
+  "maxv": 664
+ },
+ {
+  "base": "Incus",
+  "category": "ossicle",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 1236
+ },
+ {
+  "base": "Inferior nasal concha bone",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 238
+ },
+ {
+  "base": "Intermediate cuneiform bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 171
+ },
+ {
+  "base": "Lacrimal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 6,
+  "maxv": 209
+ },
+ {
+  "base": "Lateral cuneiform bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 223
+ },
+ {
+  "base": "Lower canine",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 353
+ },
+ {
+  "base": "Lower first molar tooth",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 6,
+  "maxv": 930
+ },
+ {
+  "base": "Lower first premolar",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 387
+ },
+ {
+  "base": "Lower lateral incisor",
+  "category": "tooth",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 4,
+  "maxv": 301
+ },
+ {
+  "base": "Lower medial incisor",
+  "category": "tooth",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 4,
+  "maxv": 271
+ },
+ {
+  "base": "Lower second molar tooth",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 459
+ },
+ {
+  "base": "Lower second premolar",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 384
+ },
+ {
+  "base": "Lunate bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 822
+ },
+ {
+  "base": "Malleus",
+  "category": "ossicle",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 1953
+ },
+ {
+  "base": "Mandible",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 3,
+  "maxv": 6404
+ },
+ {
+  "base": "Manubrium of sternum",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1175
+ },
+ {
+  "base": "Maxilla",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 12,
+  "maxv": 1466
+ },
+ {
+  "base": "Medial cuneiform bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 447
+ },
+ {
+  "base": "Middle cells of ethmoid bone",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 894
+ },
+ {
+  "base": "Middle phalanx of fifth finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 2,
+  "maxv": 102
+ },
+ {
+  "base": "Middle phalanx of fifth finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 126
+ },
+ {
+  "base": "Middle phalanx of fourth finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 177
+ },
+ {
+  "base": "Middle phalanx of fourth finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 162
+ },
+ {
+  "base": "Middle phalanx of second finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 150
+ },
+ {
+  "base": "Middle phalanx of second finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 128
+ },
+ {
+  "base": "Middle phalanx of third finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 179
+ },
+ {
+  "base": "Middle phalanx of third finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 151
+ },
+ {
+  "base": "Nasal bone",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 4,
+  "maxv": 106
+ },
+ {
+  "base": "Navicular bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 269
+ },
+ {
+  "base": "Ninth rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 3582
+ },
+ {
+  "base": "Occipital bone",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 5,
+  "maxv": 3312
+ },
+ {
+  "base": "Palatine bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 625
+ },
+ {
+  "base": "Parietal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 11,
+  "maxv": 2484
+ },
+ {
+  "base": "Patella",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 99
+ },
+ {
+  "base": "Pisiform bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 809
+ },
+ {
+  "base": "Posterior cells of ethmoid bone",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1072
+ },
+ {
+  "base": "Proximal phalanx of fifth finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 233
+ },
+ {
+  "base": "Proximal phalanx of fifth finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 238
+ },
+ {
+  "base": "Proximal phalanx of first finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 232
+ },
+ {
+  "base": "Proximal phalanx of first finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 130
+ },
+ {
+  "base": "Proximal phalanx of fourth finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 185
+ },
+ {
+  "base": "Proximal phalanx of fourth finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 144
+ },
+ {
+  "base": "Proximal phalanx of second finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 165
+ },
+ {
+  "base": "Proximal phalanx of second finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 166
+ },
+ {
+  "base": "Proximal phalanx of third finger of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 192
+ },
+ {
+  "base": "Proximal phalanx of third finger of hand",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 172
+ },
+ {
+  "base": "Radius",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 282
+ },
+ {
+  "base": "Sacrum",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 6944
+ },
+ {
+  "base": "Scaphoid bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 187
+ },
+ {
+  "base": "Scapula",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 12338
+ },
+ {
+  "base": "Second metacarpal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 301
+ },
+ {
+  "base": "Second metatarsal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 286
+ },
+ {
+  "base": "Second rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 2557
+ },
+ {
+  "base": "Sesamoid bones of foot",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 133
+ },
+ {
+  "base": "Seventh rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 4621
+ },
+ {
+  "base": "Sixth rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 4632
+ },
+ {
+  "base": "Sphenoid bone",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 7,
+  "maxv": 3522
+ },
+ {
+  "base": "Stapes",
+  "category": "ossicle",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 2164
+ },
+ {
+  "base": "Talus",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 503
+ },
+ {
+  "base": "Temporal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 8,
+  "maxv": 6952
+ },
+ {
+  "base": "Tenth rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 3308
+ },
+ {
+  "base": "Third metacarpal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 311
+ },
+ {
+  "base": "Third metatarsal bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 361
+ },
+ {
+  "base": "Third rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 3291
+ },
+ {
+  "base": "Tibia",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 737
+ },
+ {
+  "base": "Trapezium bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 236
+ },
+ {
+  "base": "Trapezoid bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 157
+ },
+ {
+  "base": "Triquetrum bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 68
+ },
+ {
+  "base": "Twelfth rib",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 1358
+ },
+ {
+  "base": "Ulna",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 358
+ },
+ {
+  "base": "Upper canine",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 426
+ },
+ {
+  "base": "Upper first molar tooth",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 587
+ },
+ {
+  "base": "Upper first premolar",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 472
+ },
+ {
+  "base": "Upper lateral incisor",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 438
+ },
+ {
+  "base": "Upper medial incisor",
+  "category": "tooth",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 4,
+  "maxv": 470
+ },
+ {
+  "base": "Upper second molar tooth",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 563
+ },
+ {
+  "base": "Upper second premolar",
+  "category": "tooth",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 4,
+  "maxv": 464
+ },
+ {
+  "base": "Vertebra C3",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1159
+ },
+ {
+  "base": "Vertebra C4",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 884
+ },
+ {
+  "base": "Vertebra C5",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1099
+ },
+ {
+  "base": "Vertebra C6",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1095
+ },
+ {
+  "base": "Vertebra C7",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 1,
+  "maxv": 1078
+ },
+ {
+  "base": "Vertebra L1",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1506
+ },
+ {
+  "base": "Vertebra L2",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1270
+ },
+ {
+  "base": "Vertebra L3",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1478
+ },
+ {
+  "base": "Vertebra L4",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1794
+ },
+ {
+  "base": "Vertebra L5",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1871
+ },
+ {
+  "base": "Vertebra T1",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 898
+ },
+ {
+  "base": "Vertebra T10",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1441
+ },
+ {
+  "base": "Vertebra T11",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 839
+ },
+ {
+  "base": "Vertebra T12",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1168
+ },
+ {
+  "base": "Vertebra T2",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 974
+ },
+ {
+  "base": "Vertebra T3",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1115
+ },
+ {
+  "base": "Vertebra T4",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1037
+ },
+ {
+  "base": "Vertebra T5",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1006
+ },
+ {
+  "base": "Vertebra T6",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 836
+ },
+ {
+  "base": "Vertebra T7",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1280
+ },
+ {
+  "base": "Vertebra T8",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 806
+ },
+ {
+  "base": "Vertebra T9",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 1382
+ },
+ {
+  "base": "Vomer",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 1,
+  "maxv": 513
+ },
+ {
+  "base": "Xiphoid process",
+  "category": "bone",
+  "paired": false,
+  "midline": true,
+  "n_geoms": 2,
+  "maxv": 409
+ },
+ {
+  "base": "Zygomatic bone",
+  "category": "bone",
+  "paired": true,
+  "midline": false,
+  "n_geoms": 6,
+  "maxv": 456
+ }
+]

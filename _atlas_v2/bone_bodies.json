@@ -1,0 +1,2066 @@
+[
+ {
+  "base": "(Mandibular symphysis).j",
+  "n_inst": 1,
+  "maxv": 106,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Atlas (C1)",
+  "n_inst": 1,
+  "maxv": 1091,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Axis (C2)",
+  "n_inst": 1,
+  "maxv": 1097,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Axis (C2)_1",
+  "n_inst": 1,
+  "maxv": 178,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Bucinator.o1l",
+  "n_inst": 1,
+  "maxv": 186,
+  "L": true,
+  "R": false,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Bucinator.o1r",
+  "n_inst": 1,
+  "maxv": 186,
+  "L": false,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Bucinator.ol",
+  "n_inst": 1,
+  "maxv": 208,
+  "L": true,
+  "R": false,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Bucinator.or",
+  "n_inst": 1,
+  "maxv": 208,
+  "L": false,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Calcaneus",
+  "n_inst": 4,
+  "maxv": 675,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Capitate bone",
+  "n_inst": 4,
+  "maxv": 139,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Clavicle",
+  "n_inst": 4,
+  "maxv": 681,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Coccyx",
+  "n_inst": 1,
+  "maxv": 585,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Cuboid bone",
+  "n_inst": 4,
+  "maxv": 438,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Depressor anguli oris.ol",
+  "n_inst": 1,
+  "maxv": 172,
+  "L": true,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Depressor anguli oris.or",
+  "n_inst": 1,
+  "maxv": 172,
+  "L": false,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Depressor labii inferioris.ol",
+  "n_inst": 1,
+  "maxv": 192,
+  "L": true,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Depressor labii inferioris.or",
+  "n_inst": 1,
+  "maxv": 192,
+  "L": false,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Depressor septi nasi.ol",
+  "n_inst": 1,
+  "maxv": 307,
+  "L": true,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Depressor septi nasi.or",
+  "n_inst": 1,
+  "maxv": 307,
+  "L": false,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.o1l",
+  "n_inst": 1,
+  "maxv": 718,
+  "L": true,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.o1r",
+  "n_inst": 1,
+  "maxv": 718,
+  "L": false,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.o2l",
+  "n_inst": 1,
+  "maxv": 410,
+  "L": true,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.o2r",
+  "n_inst": 1,
+  "maxv": 410,
+  "L": false,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.o3l",
+  "n_inst": 1,
+  "maxv": 228,
+  "L": true,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.o3r",
+  "n_inst": 1,
+  "maxv": 228,
+  "L": false,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.o4l",
+  "n_inst": 1,
+  "maxv": 3278,
+  "L": true,
+  "R": false,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.o4r",
+  "n_inst": 1,
+  "maxv": 3278,
+  "L": false,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.o5l",
+  "n_inst": 1,
+  "maxv": 604,
+  "L": true,
+  "R": false,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.o5r",
+  "n_inst": 1,
+  "maxv": 604,
+  "L": false,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.ol",
+  "n_inst": 1,
+  "maxv": 1706,
+  "L": true,
+  "R": false,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Diaphragm.or",
+  "n_inst": 1,
+  "maxv": 1706,
+  "L": false,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Distal phalanx of fifth finger of foot",
+  "n_inst": 2,
+  "maxv": 116,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Distal phalanx of fifth finger of hand",
+  "n_inst": 2,
+  "maxv": 97,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Distal phalanx of first finger of foot",
+  "n_inst": 2,
+  "maxv": 208,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Distal phalanx of first finger of hand",
+  "n_inst": 2,
+  "maxv": 108,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Distal phalanx of fourth finger of foot",
+  "n_inst": 2,
+  "maxv": 129,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Distal phalanx of fourth finger of hand",
+  "n_inst": 2,
+  "maxv": 67,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Distal phalanx of second finger of foot",
+  "n_inst": 2,
+  "maxv": 108,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Distal phalanx of second finger of hand",
+  "n_inst": 2,
+  "maxv": 120,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Distal phalanx of third finger of foot",
+  "n_inst": 2,
+  "maxv": 141,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Distal phalanx of third finger of hand",
+  "n_inst": 2,
+  "maxv": 91,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Erector spinae.ol",
+  "n_inst": 1,
+  "maxv": 516,
+  "L": true,
+  "R": false,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Erector spinae.or",
+  "n_inst": 1,
+  "maxv": 516,
+  "L": false,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Ethmoid bone",
+  "n_inst": 1,
+  "maxv": 7615,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Femur",
+  "n_inst": 4,
+  "maxv": 1548,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Fibula",
+  "n_inst": 4,
+  "maxv": 601,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Frontal bone",
+  "n_inst": 1,
+  "maxv": 271,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Frontal bone_1",
+  "n_inst": 1,
+  "maxv": 518,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Frontal bone_2",
+  "n_inst": 1,
+  "maxv": 175,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Frontal bone_3",
+  "n_inst": 1,
+  "maxv": 1091,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Frontal bone_4",
+  "n_inst": 1,
+  "maxv": 264,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Frontal bone_5",
+  "n_inst": 1,
+  "maxv": 2478,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Frontal bone_6",
+  "n_inst": 1,
+  "maxv": 274,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Gnathion.j",
+  "n_inst": 1,
+  "maxv": 218,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Hamate bone",
+  "n_inst": 4,
+  "maxv": 163,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Hip bone",
+  "n_inst": 8,
+  "maxv": 1024,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1",
+   "r_2",
+   "r_3"
+  ]
+ },
+ {
+  "base": "Humerus",
+  "n_inst": 4,
+  "maxv": 1812,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Hyoid bone",
+  "n_inst": 1,
+  "maxv": 664,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Incus",
+  "n_inst": 4,
+  "maxv": 1236,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Infrasternal angle.j",
+  "n_inst": 1,
+  "maxv": 184,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Intermediate cuneiform bone",
+  "n_inst": 4,
+  "maxv": 171,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Lacrimal bone",
+  "n_inst": 4,
+  "maxv": 209,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r_1",
+   "r_4"
+  ]
+ },
+ {
+  "base": "Lower canine",
+  "n_inst": 4,
+  "maxv": 353,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Lower first premolar",
+  "n_inst": 4,
+  "maxv": 387,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Lower lateral incisor",
+  "n_inst": 4,
+  "maxv": 301,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Lower medial incisor",
+  "n_inst": 4,
+  "maxv": 271,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Lower second premolar",
+  "n_inst": 4,
+  "maxv": 384,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Lunate bone",
+  "n_inst": 4,
+  "maxv": 822,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "l",
+   "l_1",
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Malleus",
+  "n_inst": 4,
+  "maxv": 1953,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Mandible",
+  "n_inst": 1,
+  "maxv": 4121,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Mandible_1",
+  "n_inst": 1,
+  "maxv": 86,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Mandible_2",
+  "n_inst": 1,
+  "maxv": 6404,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Manubrium of sternum",
+  "n_inst": 1,
+  "maxv": 1175,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Manubrium of sternum_1",
+  "n_inst": 1,
+  "maxv": 247,
+  "L": false,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Maxilla",
+  "n_inst": 12,
+  "maxv": 1466,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1",
+   "r_4",
+   "r_5",
+   "r_6",
+   "r_7"
+  ]
+ },
+ {
+  "base": "Middle cells of ethmoid bone",
+  "n_inst": 2,
+  "maxv": 894,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "l",
+   "r"
+  ]
+ },
+ {
+  "base": "Middle phalanx of fifth finger of foot",
+  "n_inst": 2,
+  "maxv": 102,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Middle phalanx of fifth finger of hand",
+  "n_inst": 2,
+  "maxv": 126,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Middle phalanx of fourth finger of foot",
+  "n_inst": 4,
+  "maxv": 177,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Middle phalanx of fourth finger of hand",
+  "n_inst": 4,
+  "maxv": 162,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Middle phalanx of second finger of foot",
+  "n_inst": 4,
+  "maxv": 150,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Middle phalanx of second finger of hand",
+  "n_inst": 2,
+  "maxv": 128,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Middle phalanx of third finger of foot",
+  "n_inst": 2,
+  "maxv": 179,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Middle phalanx of third finger of hand",
+  "n_inst": 4,
+  "maxv": 151,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Nasal bone",
+  "n_inst": 2,
+  "maxv": 106,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   "r_3"
+  ]
+ },
+ {
+  "base": "Navicular bone",
+  "n_inst": 4,
+  "maxv": 269,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Occipital bone",
+  "n_inst": 1,
+  "maxv": 256,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Occipital bone_2",
+  "n_inst": 1,
+  "maxv": 1159,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Occipital bone_3",
+  "n_inst": 1,
+  "maxv": 3312,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Occipital bone_4",
+  "n_inst": 1,
+  "maxv": 96,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Palatine bone",
+  "n_inst": 4,
+  "maxv": 625,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_3"
+  ]
+ },
+ {
+  "base": "Parietal bone",
+  "n_inst": 11,
+  "maxv": 2484,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "l",
+   "l_1",
+   "l_2",
+   "l_3",
+   "l_4",
+   "r",
+   "r_1",
+   "r_2",
+   "r_3",
+   "r_4",
+   "r_5"
+  ]
+ },
+ {
+  "base": "Patella",
+  "n_inst": 4,
+  "maxv": 99,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Pelvic inlet.j",
+  "n_inst": 1,
+  "maxv": 119,
+  "L": false,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Pisiform bone",
+  "n_inst": 2,
+  "maxv": 809,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "l_1",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Proximal phalanx of fifth finger of foot",
+  "n_inst": 4,
+  "maxv": 233,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Proximal phalanx of fifth finger of hand",
+  "n_inst": 4,
+  "maxv": 238,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Proximal phalanx of first finger of foot",
+  "n_inst": 4,
+  "maxv": 232,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Proximal phalanx of first finger of hand",
+  "n_inst": 4,
+  "maxv": 130,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Proximal phalanx of fourth finger of foot",
+  "n_inst": 4,
+  "maxv": 185,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Proximal phalanx of fourth finger of hand",
+  "n_inst": 4,
+  "maxv": 144,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Proximal phalanx of second finger of foot",
+  "n_inst": 4,
+  "maxv": 165,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Proximal phalanx of second finger of hand",
+  "n_inst": 4,
+  "maxv": 166,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Proximal phalanx of third finger of foot",
+  "n_inst": 4,
+  "maxv": 192,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Proximal phalanx of third finger of hand",
+  "n_inst": 4,
+  "maxv": 172,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Radius",
+  "n_inst": 4,
+  "maxv": 282,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Sacrum",
+  "n_inst": 1,
+  "maxv": 548,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Sacrum_1",
+  "n_inst": 1,
+  "maxv": 6944,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Scaphoid bone",
+  "n_inst": 4,
+  "maxv": 187,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Scapula",
+  "n_inst": 4,
+  "maxv": 12338,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Sesamoid bones of foot",
+  "n_inst": 2,
+  "maxv": 133,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r"
+  ]
+ },
+ {
+  "base": "Sinus of frontal bone",
+  "n_inst": 1,
+  "maxv": 1004,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Sinus of sphenoid bone",
+  "n_inst": 1,
+  "maxv": 262,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Sphenoid bone",
+  "n_inst": 1,
+  "maxv": 275,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Sphenoid bone_1",
+  "n_inst": 1,
+  "maxv": 311,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Sphenoid bone_3",
+  "n_inst": 1,
+  "maxv": 95,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Sphenoid bone_4",
+  "n_inst": 1,
+  "maxv": 179,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Sphenoid bone_5",
+  "n_inst": 1,
+  "maxv": 3522,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Sphenoid bone_6",
+  "n_inst": 1,
+  "maxv": 76,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Stapes",
+  "n_inst": 4,
+  "maxv": 2164,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Talus",
+  "n_inst": 4,
+  "maxv": 503,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Temporal bone",
+  "n_inst": 8,
+  "maxv": 6952,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1",
+   "r_2",
+   "r_4"
+  ]
+ },
+ {
+  "base": "Tibia",
+  "n_inst": 4,
+  "maxv": 737,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Trapezium bone",
+  "n_inst": 2,
+  "maxv": 236,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Trapezoid bone",
+  "n_inst": 2,
+  "maxv": 157,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_1"
+  ]
+ },
+ {
+  "base": "Triquetrum bone",
+  "n_inst": 2,
+  "maxv": 68,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r"
+  ]
+ },
+ {
+  "base": "Trochanteric insertion.el",
+  "n_inst": 1,
+  "maxv": 234,
+  "L": true,
+  "R": false,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Trochanteric insertion.er",
+  "n_inst": 1,
+  "maxv": 234,
+  "L": false,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Ulna",
+  "n_inst": 4,
+  "maxv": 358,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Upper canine",
+  "n_inst": 4,
+  "maxv": 426,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Upper first premolar",
+  "n_inst": 4,
+  "maxv": 472,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Upper lateral incisor",
+  "n_inst": 4,
+  "maxv": 438,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Upper medial incisor",
+  "n_inst": 4,
+  "maxv": 470,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Upper second premolar",
+  "n_inst": 4,
+  "maxv": 464,
+  "L": true,
+  "R": true,
+  "mid": true,
+  "frag_suffixes": [
+   "r",
+   "r_1"
+  ]
+ },
+ {
+  "base": "Vertebra C3",
+  "n_inst": 1,
+  "maxv": 1159,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra C3_1",
+  "n_inst": 1,
+  "maxv": 171,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra C4",
+  "n_inst": 1,
+  "maxv": 884,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra C4_1",
+  "n_inst": 1,
+  "maxv": 196,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra C5",
+  "n_inst": 1,
+  "maxv": 1099,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra C5_1",
+  "n_inst": 1,
+  "maxv": 177,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra C6",
+  "n_inst": 1,
+  "maxv": 1095,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra C6_1",
+  "n_inst": 1,
+  "maxv": 150,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra C7",
+  "n_inst": 1,
+  "maxv": 1078,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra L1",
+  "n_inst": 1,
+  "maxv": 1506,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra L1_1",
+  "n_inst": 1,
+  "maxv": 181,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra L2",
+  "n_inst": 1,
+  "maxv": 1270,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra L2_1",
+  "n_inst": 1,
+  "maxv": 176,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra L3",
+  "n_inst": 1,
+  "maxv": 1478,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra L3_1",
+  "n_inst": 1,
+  "maxv": 238,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra L4",
+  "n_inst": 1,
+  "maxv": 1794,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra L4_1",
+  "n_inst": 1,
+  "maxv": 240,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra L5",
+  "n_inst": 1,
+  "maxv": 1871,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra L5_1",
+  "n_inst": 1,
+  "maxv": 279,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T1",
+  "n_inst": 1,
+  "maxv": 237,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T10",
+  "n_inst": 1,
+  "maxv": 210,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T10_1",
+  "n_inst": 1,
+  "maxv": 1441,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T11",
+  "n_inst": 1,
+  "maxv": 206,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T11_1",
+  "n_inst": 1,
+  "maxv": 839,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T12",
+  "n_inst": 1,
+  "maxv": 259,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T12_1",
+  "n_inst": 1,
+  "maxv": 1168,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T1_1",
+  "n_inst": 1,
+  "maxv": 898,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T2",
+  "n_inst": 1,
+  "maxv": 273,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T2_1",
+  "n_inst": 1,
+  "maxv": 974,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T3",
+  "n_inst": 1,
+  "maxv": 191,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T3_1",
+  "n_inst": 1,
+  "maxv": 1115,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T4",
+  "n_inst": 1,
+  "maxv": 215,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T4_1",
+  "n_inst": 1,
+  "maxv": 1037,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T5",
+  "n_inst": 1,
+  "maxv": 227,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T5_1",
+  "n_inst": 1,
+  "maxv": 1006,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T6",
+  "n_inst": 1,
+  "maxv": 190,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T6_1",
+  "n_inst": 1,
+  "maxv": 836,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T7",
+  "n_inst": 1,
+  "maxv": 265,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T7_1",
+  "n_inst": 1,
+  "maxv": 1280,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T8",
+  "n_inst": 1,
+  "maxv": 192,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T8_1",
+  "n_inst": 1,
+  "maxv": 806,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T9",
+  "n_inst": 1,
+  "maxv": 279,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vertebra T9_1",
+  "n_inst": 1,
+  "maxv": 1382,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Vomer",
+  "n_inst": 1,
+  "maxv": 513,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Xiphoid process",
+  "n_inst": 1,
+  "maxv": 106,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Xiphoid process_1",
+  "n_inst": 1,
+  "maxv": 409,
+  "L": false,
+  "R": false,
+  "mid": true,
+  "frag_suffixes": [
+   ""
+  ]
+ },
+ {
+  "base": "Zygomatic bone",
+  "n_inst": 4,
+  "maxv": 456,
+  "L": true,
+  "R": true,
+  "mid": false,
+  "frag_suffixes": [
+   "r_3",
+   "r_4"
+  ]
+ }
+]

@@ -1,0 +1,881 @@
+{
+ "suffix_counts": [
+  [
+   "j",
+   622
+  ],
+  [
+   "i",
+   344
+  ],
+  [
+   "r",
+   219
+  ],
+  [
+   "r_1",
+   197
+  ],
+  [
+   "ol",
+   136
+  ],
+  [
+   "or",
+   133
+  ],
+  [
+   "el",
+   97
+  ],
+  [
+   "er",
+   89
+  ],
+  [
+   "<none>",
+   77
+  ],
+  [
+   "<_N>",
+   45
+  ],
+  [
+   "e1l",
+   21
+  ],
+  [
+   "o1l",
+   19
+  ],
+  [
+   "o1r",
+   18
+  ],
+  [
+   "e2l",
+   17
+  ],
+  [
+   "e1r",
+   17
+  ],
+  [
+   "r_2",
+   17
+  ],
+  [
+   "l",
+   17
+  ],
+  [
+   "r_3",
+   15
+  ],
+  [
+   "e2r",
+   14
+  ],
+  [
+   "e3l",
+   11
+  ],
+  [
+   "r_4",
+   11
+  ],
+  [
+   "e3r",
+   9
+  ],
+  [
+   "o2l",
+   8
+  ],
+  [
+   "o3l",
+   7
+  ],
+  [
+   "o3r",
+   7
+  ],
+  [
+   "o2r",
+   7
+  ],
+  [
+   "o4l",
+   6
+  ],
+  [
+   "o4r",
+   6
+  ],
+  [
+   "e4l",
+   5
+  ],
+  [
+   "e4r",
+   5
+  ],
+  [
+   "e5l",
+   4
+  ],
+  [
+   "e6l",
+   4
+  ],
+  [
+   "e7l",
+   4
+  ],
+  [
+   "e5r",
+   4
+  ],
+  [
+   "e6r",
+   4
+  ],
+  [
+   "e7r",
+   4
+  ],
+  [
+   "l_1",
+   3
+  ],
+  [
+   "e8l",
+   3
+  ],
+  [
+   "r_5",
+   3
+  ],
+  [
+   "o5l",
+   2
+  ],
+  [
+   "o5r",
+   2
+  ],
+  [
+   "e9l",
+   2
+  ],
+  [
+   "e9r",
+   2
+  ],
+  [
+   "e8r",
+   2
+  ],
+  [
+   "r_6",
+   2
+  ],
+  [
+   "r_7",
+   2
+  ],
+  [
+   "l_2",
+   1
+  ],
+  [
+   "l_3",
+   1
+  ],
+  [
+   "l_4",
+   1
+  ]
+ ],
+ "femur_nodes": [
+  {
+   "geom": "Femur.r",
+   "centroid": [
+    0.076,
+    0.623,
+    -0.02
+   ],
+   "nverts": 472,
+   "diag": 0.467
+  },
+  {
+   "geom": "Femur.r_1",
+   "centroid": [
+    0.096,
+    0.649,
+    -0.012
+   ],
+   "nverts": 1548,
+   "diag": 0.462
+  },
+  {
+   "geom": "Femur.i",
+   "centroid": [
+    0.127,
+    0.62,
+    -0.01
+   ],
+   "nverts": 24,
+   "diag": 0.039
+  },
+  {
+   "geom": "Femur.r",
+   "centroid": [
+    -0.076,
+    0.623,
+    -0.02
+   ],
+   "nverts": 472,
+   "diag": 0.467
+  },
+  {
+   "geom": "Femur.r_1",
+   "centroid": [
+    -0.096,
+    0.649,
+    -0.012
+   ],
+   "nverts": 1548,
+   "diag": 0.462
+  },
+  {
+   "geom": "Femur.j",
+   "centroid": [
+    -0.127,
+    0.62,
+    -0.01
+   ],
+   "nverts": 24,
+   "diag": 0.039
+  }
+ ],
+ "attach_suffix_total": 669,
+ "attach_base_samples": [
+  [
+   "Longissimus thoracis muscle",
+   20
+  ],
+  [
+   "Levatores longi costarum",
+   20
+  ],
+  [
+   "Serratus anterior muscle",
+   18
+  ],
+  [
+   "Extensor digitorum",
+   16
+  ],
+  [
+   "Extensor digitorum longus",
+   14
+  ],
+  [
+   "External abdominal oblique muscle",
+   12
+  ],
+  [
+   "Diaphragm",
+   12
+  ],
+  [
+   "Flexor digitorum longus",
+   10
+  ],
+  [
+   "Long plantar ligament",
+   10
+  ],
+  [
+   "Internal abdominal oblique muscle",
+   10
+  ],
+  [
+   "Flexor digitorum superficialis",
+   10
+  ],
+  [
+   "Dorsal interossei muscles of hand",
+   10
+  ],
+  [
+   "Levator scapulae",
+   10
+  ],
+  [
+   "Temporalis muscle",
+   10
+  ],
+  [
+   "Flexor digitorum brevis",
+   8
+  ],
+  [
+   "Transverse head of adductor hallucis",
+   8
+  ],
+  [
+   "Flexor digitorum profundus",
+   8
+  ],
+  [
+   "Pectoralis minor muscle",
+   8
+  ],
+  [
+   "Scalenus anterior muscle",
+   8
+  ],
+  [
+   "Lateral head of flexor hallucis brevis",
+   6
+  ]
+ ],
+ "attach_examples": [
+  {
+   "geom": "Flexor digiti minimi of foot.el",
+   "centroid": [
+    0.136,
+    0.012,
+    0.062
+   ],
+   "nverts": 284
+  },
+  {
+   "geom": "Abductor digiti minimi of foot.el",
+   "centroid": [
+    0.138,
+    0.012,
+    0.057
+   ],
+   "nverts": 346
+  },
+  {
+   "geom": "Medial head of flexor hallucis brevis.el",
+   "centroid": [
+    0.067,
+    0.014,
+    0.083
+   ],
+   "nverts": 180
+  },
+  {
+   "geom": "Abductor hallucis.el",
+   "centroid": [
+    0.062,
+    0.017,
+    0.083
+   ],
+   "nverts": 128
+  },
+  {
+   "geom": "Lateral head of flexor hallucis brevis.el",
+   "centroid": [
+    0.077,
+    0.012,
+    0.084
+   ],
+   "nverts": 128
+  },
+  {
+   "geom": "Extensor hallucis longus.el",
+   "centroid": [
+    0.075,
+    0.027,
+    0.093
+   ],
+   "nverts": 174
+  },
+  {
+   "geom": "Extensor digitorum longus.e4l",
+   "centroid": [
+    0.141,
+    0.016,
+    0.083
+   ],
+   "nverts": 132
+  },
+  {
+   "geom": "Flexor digitorum brevis.e2l",
+   "centroid": [
+    0.14,
+    0.01,
+    0.082
+   ],
+   "nverts": 254
+  },
+  {
+   "geom": "Extensor digitorum brevis.e2l",
+   "centroid": [
+    0.13,
+    0.018,
+    0.095
+   ],
+   "nverts": 142
+  },
+  {
+   "geom": "Flexor digitorum brevis.e1l",
+   "centroid": [
+    0.117,
+    0.013,
+    0.111
+   ],
+   "nverts": 504
+  },
+  {
+   "geom": "Extensor digitorum brevis.e1l",
+   "centroid": [
+    0.115,
+    0.019,
+    0.108
+   ],
+   "nverts": 196
+  },
+  {
+   "geom": "Flexor digitorum brevis.el",
+   "centroid": [
+    0.101,
+    0.014,
+    0.116
+   ],
+   "nverts": 330
+  },
+  {
+   "geom": "Extensor digitorum brevis.el",
+   "centroid": [
+    0.101,
+    0.02,
+    0.114
+   ],
+   "nverts": 144
+  },
+  {
+   "geom": "Flexor digitorum longus.e1l",
+   "centroid": [
+    0.118,
+    0.011,
+    0.119
+   ],
+   "nverts": 158
+  },
+  {
+   "geom": "Extensor digitorum longus.e1l",
+   "centroid": [
+    0.118,
+    0.015,
+    0.122
+   ],
+   "nverts": 126
+  },
+  {
+   "geom": "Flexor digitorum longus.el",
+   "centroid": [
+    0.103,
+    0.011,
+    0.124
+   ],
+   "nverts": 158
+  },
+  {
+   "geom": "Extensor digitorum longus.el",
+   "centroid": [
+    0.103,
+    0.017,
+    0.127
+   ],
+   "nverts": 132
+  },
+  {
+   "geom": "Flexor digitorum longus.e2l",
+   "centroid": [
+    0.13,
+    0.01,
+    0.106
+   ],
+   "nverts": 102
+  },
+  {
+   "geom": "Extensor digitorum longus.e2l",
+   "centroid": [
+    0.132,
+    0.016,
+    0.107
+   ],
+   "nverts": 160
+  },
+  {
+   "geom": "Flexor hallucis longus.el",
+   "centroid": [
+    0.079,
+    0.011,
+    0.113
+   ],
+   "nverts": 156
+  }
+ ],
+ "biggest_meshes": [
+  {
+   "geom": "Femur.r",
+   "diag": 0.467,
+   "nverts": 472
+  },
+  {
+   "geom": "Femur.r",
+   "diag": 0.467,
+   "nverts": 472
+  },
+  {
+   "geom": "Femur.r_1",
+   "diag": 0.462,
+   "nverts": 1548
+  },
+  {
+   "geom": "Femur.r_1",
+   "diag": 0.462,
+   "nverts": 1548
+  },
+  {
+   "geom": "Rectus abdominis muscle.el",
+   "diag": 0.398,
+   "nverts": 482
+  },
+  {
+   "geom": "Rectus abdominis muscle.er",
+   "diag": 0.398,
+   "nverts": 482
+  },
+  {
+   "geom": "Tibia.r_1",
+   "diag": 0.373,
+   "nverts": 737
+  },
+  {
+   "geom": "Tibia.r_1",
+   "diag": 0.373,
+   "nverts": 737
+  },
+  {
+   "geom": "Tibia.r",
+   "diag": 0.369,
+   "nverts": 193
+  },
+  {
+   "geom": "Tibia.r",
+   "diag": 0.369,
+   "nverts": 193
+  },
+  {
+   "geom": "Fibula.r_1",
+   "diag": 0.366,
+   "nverts": 601
+  },
+  {
+   "geom": "Fibula.r_1",
+   "diag": 0.366,
+   "nverts": 601
+  },
+  {
+   "geom": "Fibula.r",
+   "diag": 0.345,
+   "nverts": 65
+  },
+  {
+   "geom": "Fibula.r",
+   "diag": 0.345,
+   "nverts": 65
+  },
+  {
+   "geom": "Humerus.r",
+   "diag": 0.336,
+   "nverts": 478
+  },
+  {
+   "geom": "Humerus.r",
+   "diag": 0.336,
+   "nverts": 478
+  },
+  {
+   "geom": "Humerus.r_1",
+   "diag": 0.336,
+   "nverts": 1812
+  },
+  {
+   "geom": "Humerus.r_1",
+   "diag": 0.336,
+   "nverts": 1812
+  },
+  {
+   "geom": "Vastus medialis muscle.ol",
+   "diag": 0.333,
+   "nverts": 948
+  },
+  {
+   "geom": "Vastus medialis muscle.or",
+   "diag": 0.333,
+   "nverts": 948
+  },
+  {
+   "geom": "Adductor magnus.el",
+   "diag": 0.327,
+   "nverts": 1042
+  },
+  {
+   "geom": "Adductor magnus.er",
+   "diag": 0.327,
+   "nverts": 1042
+  },
+  {
+   "geom": "Vastus lateralis muscle.ol",
+   "diag": 0.316,
+   "nverts": 1000
+  },
+  {
+   "geom": "Vastus lateralis muscle.or",
+   "diag": 0.316,
+   "nverts": 1000
+  },
+  {
+   "geom": "Vastus intermedius muscle.ol",
+   "diag": 0.302,
+   "nverts": 792
+  }
+ ],
+ "ij_pairs_total": 344,
+ "ij_pairs_clean_mirror": 344,
+ "ij_pairs_i_positive_x": 340,
+ "ij_mirror_samples": [
+  {
+   "base": "Trochlea of phalanx of foot",
+   "i_x": 0.114,
+   "j_x": -0.114,
+   "dx_sum": 0.0,
+   "dy": 0.0,
+   "dz": 0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Head of phalanx of foot",
+   "i_x": 0.1,
+   "j_x": -0.1,
+   "dx_sum": 0.0,
+   "dy": 0.0,
+   "dz": 0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Body of phalanx of foot",
+   "i_x": 0.0995,
+   "j_x": -0.0995,
+   "dx_sum": 0.0,
+   "dy": 0.0,
+   "dz": 0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Base of phalanx of foot",
+   "i_x": 0.0966,
+   "j_x": -0.0966,
+   "dx_sum": 0.0,
+   "dy": 0.0,
+   "dz": 0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Tuberosity of distal phalanx of foot",
+   "i_x": 0.1204,
+   "j_x": -0.1204,
+   "dx_sum": -0.0,
+   "dy": -0.0,
+   "dz": 0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Head of metatarsal bone",
+   "i_x": 0.0893,
+   "j_x": -0.0893,
+   "dx_sum": 0.0,
+   "dy": 0.0,
+   "dz": -0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Body of metatarsal bone",
+   "i_x": 0.0855,
+   "j_x": -0.0855,
+   "dx_sum": 0.0,
+   "dy": -0.0,
+   "dz": -0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Base of metatarsal bone",
+   "i_x": 0.083,
+   "j_x": -0.083,
+   "dx_sum": 0.0,
+   "dy": 0.0,
+   "dz": -0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Fifth metatarsal bone",
+   "i_x": 0.1131,
+   "j_x": -0.1131,
+   "dx_sum": 0.0,
+   "dy": -0.0,
+   "dz": 0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "First metatarsal bone",
+   "i_x": 0.0755,
+   "j_x": -0.0755,
+   "dx_sum": 0.0,
+   "dy": -0.0,
+   "dz": 0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Tuberosity of cuboid bone",
+   "i_x": 0.0947,
+   "j_x": -0.0947,
+   "dx_sum": 0.0,
+   "dy": 0.0,
+   "dz": -0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Groove for tendon of fibularis longus muscle of cuboid bone",
+   "i_x": 0.1207,
+   "j_x": -0.1207,
+   "dx_sum": 0.0,
+   "dy": -0.0,
+   "dz": -0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Tuberosity of navicular bone",
+   "i_x": 0.0466,
+   "j_x": -0.0466,
+   "dx_sum": 0.0,
+   "dy": 0.0,
+   "dz": 0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Sustentaculum tali",
+   "i_x": 0.0492,
+   "j_x": -0.0492,
+   "dx_sum": 0.0,
+   "dy": -0.0,
+   "dz": 0.0,
+   "i_is_positive_x": true
+  },
+  {
+   "base": "Tarsal sinus",
+   "i_x": 0.0847,
+   "j_x": -0.0847,
+   "dx_sum": 0.0,
+   "dy": 0.0,
+   "dz": -0.0,
+   "i_is_positive_x": true
+  }
+ ],
+ "rl_explicit_pairs": [
+  {
+   "base": "Pisiform bone",
+   "l_x": 0.2442,
+   "r_x": -0.2442
+  },
+  {
+   "base": "Lunate bone",
+   "l_x": 0.2558,
+   "r_x": -0.2558
+  },
+  {
+   "base": "Costal cartilage of ninth rib",
+   "l_x": 0.0982,
+   "r_x": -0.0982
+  },
+  {
+   "base": "Costal cartilage of tenth rib",
+   "l_x": 0.1058,
+   "r_x": -0.1058
+  },
+  {
+   "base": "Costal cartilage of eighth rib",
+   "l_x": 0.079,
+   "r_x": -0.079
+  },
+  {
+   "base": "Costal cartilage of seventh rib",
+   "l_x": 0.059,
+   "r_x": -0.059
+  },
+  {
+   "base": "Costal cartilage of sixth rib",
+   "l_x": 0.0551,
+   "r_x": -0.0551
+  },
+  {
+   "base": "Costal cartilage of fifth rib",
+   "l_x": 0.0508,
+   "r_x": -0.0508
+  },
+  {
+   "base": "Costal cartilage of fourth rib",
+   "l_x": 0.0421,
+   "r_x": -0.0421
+  },
+  {
+   "base": "Costal cartilage of third rib",
+   "l_x": 0.0335,
+   "r_x": -0.0335
+  },
+  {
+   "base": "Costal cartilage of second rib",
+   "l_x": 0.029,
+   "r_x": -0.029
+  },
+  {
+   "base": "Costal cartilage of first rib",
+   "l_x": 0.0368,
+   "r_x": -0.0368
+  },
+  {
+   "base": "Arytenoid cartilage",
+   "l_x": 0.0046,
+   "r_x": -0.0046
+  },
+  {
+   "base": "Anterior cells of ethmoid bone",
+   "l_x": 0.0088,
+   "r_x": -0.0088
+  },
+  {
+   "base": "Middle cells of ethmoid bone",
+   "l_x": 0.0097,
+   "r_x": -0.0097
+  },
+  {
+   "base": "Posterior cells of ethmoid bone",
+   "l_x": 0.0091,
+   "r_x": -0.0091
+  },
+  {
+   "base": "Parietal bone",
+   "l_x": 0.0447,
+   "r_x": -0.0458
+  }
+ ]
+}

@@ -1,0 +1,35 @@
+{
+ "topmost_structure": [
+  "Sagittal border of parietal bone.j",
+  1707.9
+ ],
+ "bottommost_structure": [
+  "Flexor digitorum brevis.e2l",
+  10.1
+ ],
+ "sacrum_Z": 982.9,
+ "C1_atlas_Z": 1542.0,
+ "sacrum_below_C1": true,
+ "sternum_Y": -54.7,
+ "occiput_Y": 37.6,
+ "frontal_Y": -28.5,
+ "=> atlas +Y is": "POSTERIOR (back)",
+ "Pisiform_bone.r / .l  atlasX": [
+  -244.2,
+  244.2
+ ],
+ "Femur.r instances atlasX": [
+  -76.2,
+  76.2
+ ],
+ "atlas_bbox_min": [
+  -359.1,
+  -152.4,
+  10.1
+ ],
+ "atlas_bbox_max": [
+  328.8,
+  156.3,
+  1707.9
+ ]
+}
