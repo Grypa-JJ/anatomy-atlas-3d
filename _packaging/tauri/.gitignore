@@ -1,5 +1,4 @@
 node_modules/
 src-tauri/target/
 src-tauri/gen/
-# ikony generuje `npm run icon` z app-icon.png:
-src-tauri/icons/
+# src-tauri/icons/ SĄ commitowane (deterministyczne z app-icon.png przez `npm run icon`)

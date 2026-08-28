@@ -1,0 +1,27 @@
+ATLAS ANATOMICZNY 3D — instalacja
+==================================
+
+WINDOWS
+-------
+1. Pobierz plik  Atlas-anatomiczny-3D_x64-setup.exe
+2. Uruchom. Jesli Windows pokaze "Nieznany wydawca":
+   kliknij "Wiecej informacji" -> "Uruchom mimo to".
+3. Atlas instaluje sie bez uprawnien administratora, otwiera sie w wlasnym oknie.
+   Dziala offline.
+
+ANDROID (telefon / tablet)
+--------------------------
+1. Pobierz plik  atlas-<wersja>.apk  na urzadzenie.
+2. Otworz go (menedzer plikow / powiadomienie o pobraniu).
+3. Android zapyta o zgode "Instaluj nieznane aplikacje" dla przegladarki/menedzera
+   plikow -> zezwol -> Zainstaluj.
+4. Aplikacja pojawi sie w szufladzie aplikacji. Dziala offline.
+
+iPhone / iPad — NIE (Apple nie pozwala instalowac spoza App Store).
+
+AKTUALIZACJE
+------------
+Aplikacja sama sprawdza aktualizacje przy starcie i pokazuje pasek
+"Dostepna aktualizacja". Nie trzeba nic pobierac z tego dysku ponownie.
+
+Waga: ~110 MB kazda. Wymaga w miare nowego sprzetu (obsluga grafiki 3D / WebGL2).

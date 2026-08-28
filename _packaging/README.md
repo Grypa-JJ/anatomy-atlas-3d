@@ -60,12 +60,33 @@ Co robi (idempotentnie — czyści `web/` i składa od zera):
 8. ikony PWA z `shared/icons/` (albo placeholder z `brand-assets/` + ostrzeżenie)
 
 **Zależność:** ciężkie assety (`_atlas_v2/dist/*.glb`, `_organ_compare/alt/`, `_organ_compare/*.glb`)
-są w `.gitignore` / na R2 — muszą istnieć **lokalnie** na maszynie do buildu.
+są w `.gitignore` — nie ma ich po samym `git clone`. Lokalnie zwykle je masz. W CI / na czystej
+maszynie pobiera je `fetch-assets.mjs` z R2 (patrz niżej). `beforeBuildCommand` w obu powłokach
+uruchamia `fetch-assets.mjs` przed `assemble.mjs`.
 
 Test bundla bez pakowania:
 ```bash
 cd _packaging && npm run serve      # http://localhost:9040
 ```
+
+## Ciężkie assety — `pack-assets.mjs` / `fetch-assets.mjs`
+
+```bash
+node _packaging/pack-assets.mjs      # -> atlas-assets.tar.gz (~103 MB) + sha256
+```
+
+Wgraj `atlas-assets.tar.gz` na R2 jako `atlas/assets/atlas-assets-<hash>.tar.gz`. Ten URL:
+- wpisz w sekret CI `ATLAS_ASSETS_URL` (+ opcjonalnie `ATLAS_ASSETS_SHA256`)
+- `fetch-assets.mjs` go pobiera i rozpakowuje, jeśli brak plików-wartowników (GLB). Gdy assety
+  są na miejscu — nie robi nic. Ponów `pack-assets.mjs` po każdej regeneracji GLB.
+
+## CI — `.github/workflows/atlas-release.yml`
+
+Push tagu `atlas-vX.Y.Z` → build `.exe` (windows-latest, `tauri-action`) + `.apk`
+(ubuntu-latest, Capacitor) → **draft Release** z oboma plikami. Darmowe (GitHub Actions).
+
+Śpi, dopóki nie ustawisz sekretów (lista na górze pliku workflow): `ATLAS_ASSETS_URL`,
+`TAURI_SIGNING_PRIVATE_KEY`(+hasło), `ANDROID_KEYSTORE_BASE64`(+hasła/alias). Bez CI — build lokalny (niżej).
 
 ---
 
@@ -117,40 +138,56 @@ cd android && gradlew.bat assembleRelease
 
 ## TODO (glue) — do zrobienia, gdy treść atlasu jest gotowa
 
+Zrobione: ✅ scaffolding Tauri + Capacitor · ✅ `assemble.mjs` (przetestowany w przeglądarce) ·
+✅ `updater.js` + baner (przetestowany) · ✅ ikona atlasu (192/512/1024 + `.ico`/`.icns`) ·
+✅ `pack-assets.mjs`/`fetch-assets.mjs` · ✅ CI `atlas-release.yml`
+
+Zostało (wymaga kont/kluczy/toolchainów, nie kodu):
+
 - [ ] **Odświeżyć bundle** — `node _packaging/assemble.mjs` po ostatnich zmianach innych sesji
-- [ ] **Ikony** — dorobić `shared/icons/icon-192.png` i `icon-512.png` (dziś placeholder ze złą
-      rozdzielczością); podmienić `tauri/app-icon.png` na 1024×1024
-- [ ] **R2** — założyć ścieżkę `atlas/updates/`, wgrać pierwszy `latest.json`, wpisać jego URL w
-      `shared/app-version.json` oraz `tauri/src-tauri/tauri.conf.json` (`endpoints`)
-- [ ] **Klucz updatera Tauri** — `npm run tauri signer generate`, klucz publiczny do configu,
-      prywatny do sejfu
+- [ ] **R2 — assety** — `node _packaging/pack-assets.mjs`, wgrać `atlas-assets.tar.gz`,
+      wpisać URL w sekret CI `ATLAS_ASSETS_URL`
+- [ ] **R2 — aktualizacje** — założyć `atlas/updates/`, wgrać pierwszy `latest.json`
+      (wzór: `shared/latest.json.example`), wpisać jego URL w `shared/app-version.json`
+      **i** `tauri/src-tauri/tauri.conf.json` (`plugins.updater.endpoints`)
+- [ ] **Klucz updatera Tauri** — `cd _packaging/tauri && npm run tauri signer generate`;
+      klucz publiczny → `tauri.conf.json` `pubkey`; prywatny + hasło → sekrety CI
+- [ ] **Keystore Android** — `keytool -genkey ... atlas3d.keystore`; base64 → sekret
+      `ANDROID_KEYSTORE_BASE64`, hasła/alias → pozostałe sekrety
+- [ ] **Pierwszy build** — `git tag atlas-v0.1.0 && git push origin atlas-v0.1.0`
+      (albo lokalnie: `_packaging/tauri` → `npm i && npm run build`; `_packaging/capacitor` →
+      `npm i && npx cap add android && npm run apk`)
 - [ ] **Tauri: potwierdzić CSP** — przejść wszystkie tryby atlasu (quiz, skalpel, przekrój,
       eksport CSV, zrzut ekranu) w oknie `npm run dev`, dopieścić `csp` jeśli coś blokuje
 - [ ] **Android: `speechSynthesis`** — sprawdzić na realnym urządzeniu; jeśli głucho, wpiąć
       `@capacitor-community/text-to-speech` pod przycisk 🔈
-- [ ] **Android: rozmiar** — rozważyć chudy APK + pobranie paczki GLB przy 1. starcie
 - [ ] **updater.js: ścieżka natywna Tauri** — zweryfikować `window.__TAURI__.updater` po
-      `withGlobalTauri`, albo dołożyć mini-moduł `@tauri-apps/plugin-updater` przez esbuild
+      `withGlobalTauri` w realnym oknie; w razie potrzeby dołożyć `@tauri-apps/plugin-updater` przez esbuild
 - [ ] **Odchudzenie** (opcjonalne): CT PNG w `_organ_compare/alt/mpr` → WebP/KTX2; `gltfpack` na `.glb`
-- [ ] **CI** (opcjonalne): GitHub Actions — build `.exe` na `windows-latest`, APK na `ubuntu-latest`,
-      publikacja do Releases + `latest.json` na R2 przy tagu `atlas-v*`
 
 ## Pliki
 
 ```
 _packaging/
 ├── README.md                 ← ten plik
+├── CZYTAJ-dysk-roku.txt      ← instrukcja instalacji do wrzucenia na dysk roku
 ├── assemble.mjs              ← builder bundla
+├── fetch-assets.mjs          ← pobiera ciężkie assety z R2 (CI / czysta maszyna)
+├── pack-assets.mjs           ← pakuje ciężkie assety → atlas-assets.tar.gz (do wgrania na R2)
+├── make_icon.py              ← generuje ikonę atlasu (shared/icons/ + tauri/app-icon.png)
 ├── package.json
 ├── shared/
 │   ├── updater.js           ← baner „dostępna aktualizacja" (agnostyczny wobec platformy)
 │   ├── app-version.json     ← wbudowana wersja + URL manifestu aktualizacji
 │   ├── latest.json.example  ← wzór zdalnego manifestu (na R2)
 │   ├── manifest.webmanifest
-│   └── sw.js                ← cache offline dla wariantu PWA
+│   ├── sw.js                ← cache offline dla wariantu PWA
+│   └── icons/               ← icon-192/512 + app-icon-1024
 ├── vendor-extra/
 │   └── RoomEnvironment.js   ← brakujący addon three (dla _organ_compare)
-├── tauri/                    ← powłoka Windows (Tauri v2)
+├── tauri/                    ← powłoka Windows (Tauri v2), z src-tauri/icons/
 ├── capacitor/                ← powłoka Android (Capacitor)
 └── web/                      ← WYNIK assemble.mjs (gitignore)
+
+.github/workflows/atlas-release.yml   ← CI: tag atlas-v* → .exe + .apk do Release
 ```

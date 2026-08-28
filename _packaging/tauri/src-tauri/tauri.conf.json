@@ -5,8 +5,8 @@
   "identifier": "com.grypajj.atlas3d",
   "build": {
     "frontendDist": "../../web",
-    "beforeDevCommand": "node ../../assemble.mjs",
-    "beforeBuildCommand": "node ../../assemble.mjs"
+    "beforeDevCommand": "node ../../fetch-assets.mjs && node ../../assemble.mjs",
+    "beforeBuildCommand": "node ../../fetch-assets.mjs && node ../../assemble.mjs"
   },
   "app": {
     "withGlobalTauri": true,

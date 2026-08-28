@@ -113,8 +113,9 @@ kalendarz_szkielet_rok2.md
 _packaging/*/node_modules/
 _packaging/tauri/src-tauri/target/
 _packaging/tauri/src-tauri/gen/
-_packaging/tauri/src-tauri/icons/
 _packaging/capacitor/android/
 _packaging/capacitor/ios/
 _packaging/**/key.properties
 _packaging/**/*.keystore
+_packaging/atlas-assets.tar.gz
+_packaging/.atlas-assets.download*

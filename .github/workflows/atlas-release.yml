@@ -1,0 +1,109 @@
+# Buduje atlas 3D jako aplikacje Windows (Tauri) i Android (Capacitor) i wrzuca do GitHub Release.
+#
+# Wyzwalacz:  push tagu  atlas-vX.Y.Z
+#   git tag atlas-v0.1.0 && git push origin atlas-v0.1.0
+#
+# WYMAGANE SEKRETY (Settings -> Secrets and variables -> Actions) — bez nich joby sie wywala:
+#   ATLAS_ASSETS_URL            publiczny URL do atlas-assets-XXXX.tar.gz na R2 (z `node _packaging/pack-assets.mjs`)
+#   ATLAS_ASSETS_SHA256         (opcjonalnie) suma kontrolna tego pliku
+#   TAURI_SIGNING_PRIVATE_KEY           klucz prywatny updatera Tauri (`npm run tauri signer generate`)
+#   TAURI_SIGNING_PRIVATE_KEY_PASSWORD  haslo do powyzszego
+#   ANDROID_KEYSTORE_BASE64    keystore .jks zakodowany base64  (`base64 -w0 atlas3d.keystore`)
+#   ANDROID_KEYSTORE_PASSWORD
+#   ANDROID_KEY_ALIAS
+#   ANDROID_KEY_PASSWORD
+#
+# Po zbudowaniu: uzupelnij  latest.json  na R2 (wersja + url-e z tego Release + signature z .sig).
+
+name: atlas-release
+
+on:
+  push:
+    tags: ['atlas-v*']
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  windows:
+    runs-on: windows-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - uses: dtolnay/rust-toolchain@stable
+      - uses: swatinem/rust-cache@v2
+        with: { workspaces: '_packaging/tauri/src-tauri -> target' }
+
+      - name: npm ci (tauri)
+        working-directory: _packaging/tauri
+        run: npm ci
+
+      - name: Build + upload do Release (tauri-action)
+        uses: tauri-apps/tauri-action@v0
+        env:
+          ATLAS_ASSETS_URL: ${{ secrets.ATLAS_ASSETS_URL }}
+          ATLAS_ASSETS_SHA256: ${{ secrets.ATLAS_ASSETS_SHA256 }}
+          TAURI_SIGNING_PRIVATE_KEY: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY }}
+          TAURI_SIGNING_PRIVATE_KEY_PASSWORD: ${{ secrets.TAURI_SIGNING_PRIVATE_KEY_PASSWORD }}
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          projectPath: _packaging/tauri
+          tagName: ${{ github.ref_name }}
+          releaseName: 'Atlas 3D ${{ github.ref_name }}'
+          releaseDraft: true
+          prerelease: false
+
+  android:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: { node-version: 20 }
+      - uses: actions/setup-java@v4
+        with: { distribution: temurin, java-version: '17' }
+      - uses: android-actions/setup-android@v3
+
+      - name: npm ci (capacitor)
+        working-directory: _packaging/capacitor
+        run: npm ci
+
+      - name: Assemble bundle + platforma android
+        working-directory: _packaging/capacitor
+        env:
+          ATLAS_ASSETS_URL: ${{ secrets.ATLAS_ASSETS_URL }}
+          ATLAS_ASSETS_SHA256: ${{ secrets.ATLAS_ASSETS_SHA256 }}
+        run: |
+          node ../fetch-assets.mjs
+          node ../assemble.mjs
+          npx cap add android
+          npx cap sync android
+
+      - name: Keystore z sekretu
+        working-directory: _packaging/capacitor/android
+        env:
+          KS_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
+        run: echo "$KS_B64" | base64 -d > atlas3d.keystore
+
+      - name: Build APK (release, podpisany)
+        working-directory: _packaging/capacitor/android
+        env:
+          KS_PASS: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
+          KS_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
+          KEY_PASS: ${{ secrets.ANDROID_KEY_PASSWORD }}
+        run: |
+          ./gradlew assembleRelease \
+            -Pandroid.injected.signing.store.file=$PWD/atlas3d.keystore \
+            -Pandroid.injected.signing.store.password="$KS_PASS" \
+            -Pandroid.injected.signing.key.alias="$KS_ALIAS" \
+            -Pandroid.injected.signing.key.password="$KEY_PASS"
+          mv app/build/outputs/apk/release/app-release.apk \
+             app/build/outputs/apk/release/atlas-${{ github.ref_name }}.apk
+
+      - name: Dołącz APK do Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.ref_name }}
+          draft: true
+          files: _packaging/capacitor/android/app/build/outputs/apk/release/atlas-*.apk
