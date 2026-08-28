@@ -1,0 +1,21 @@
+[package]
+name = "atlas3d"
+version = "0.1.0"
+description = "Atlas anatomiczny 3D"
+edition = "2021"
+rust-version = "1.77.2"
+
+[lib]
+name = "atlas3d_lib"
+crate-type = ["staticlib", "cdylib", "rlib"]
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-updater = "2"
+tauri-plugin-process = "2"
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"

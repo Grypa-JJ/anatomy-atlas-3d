@@ -1,0 +1,4 @@
+node_modules/
+# platforma generowana przez `npx cap add android` — nie trzymamy w repo
+android/
+ios/
