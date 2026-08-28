@@ -1,0 +1,41 @@
+{
+  "name": "atlas3d-electron",
+  "private": true,
+  "version": "0.1.0",
+  "description": "Powloka Windows (Electron) dla atlasu anatomicznego 3D — silnik Chromium, renderuje jak przegladarka.",
+  "main": "main.js",
+  "scripts": {
+    "assemble": "node ../fetch-assets.mjs && node ../assemble.mjs",
+    "start": "npm run assemble && electron .",
+    "build": "npm run assemble && electron-builder --win nsis"
+  },
+  "devDependencies": {
+    "electron": "^33",
+    "electron-builder": "^25"
+  },
+  "dependencies": {
+    "electron-updater": "^6"
+  },
+  "build": {
+    "appId": "com.grypajj.atlas3d",
+    "productName": "Atlas anatomiczny 3D",
+    "directories": { "output": "dist", "buildResources": "build" },
+    "files": ["main.js", "preload.js", "static-server.js", "package.json"],
+    "extraResources": [
+      { "from": "../web", "to": "web" }
+    ],
+    "win": {
+      "target": ["nsis"],
+      "icon": "build/icon.ico"
+    },
+    "nsis": {
+      "oneClick": false,
+      "perMachine": false,
+      "allowToChangeInstallationDirectory": true,
+      "installerLanguages": ["pl_PL", "en_US"]
+    },
+    "publish": [
+      { "provider": "github", "owner": "Grypa-JJ", "repo": "medstudy" }
+    ]
+  }
+}

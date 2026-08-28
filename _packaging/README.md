@@ -3,14 +3,19 @@
 Grunt pod spakowanie **atlasu anatomicznego 3D** (`atlas.html` + `_atlas_v2/` + `_organ_compare/`)
 w:
 
-- **Windows** — `.exe` + instalator NSIS (Tauri v2), z updaterem
+- **Windows** — `.exe` + instalator NSIS (**Electron**), z updaterem `electron-updater`
 - **Android** — APK do sideloadu (Capacitor), z aktualizacjami OTA warstwy web
 
 Baza pytań („Kocia Baza Wiedzy", `index.html`, Supabase) **nie wchodzi** — pakujemy tylko atlas.
 
-Stan: **rusztowanie gotowe i przetestowane** (bundle się składa, oba widoki 3D ładują się
-lokalnie bez internetu). Do sklejenia całości brakuje kroków oznaczonych `TODO (glue)` niżej —
-robimy je, gdy inne sesje skończą pracę nad treścią atlasu.
+Stan: **zbudowane i działa.** Windows `.exe` (Electron, 145 MB) i Android `.apk` (78 MB) powstają
+lokalnie; oba renderują atlas poprawnie i offline. Do wydania publicznego brakuje kroków
+`Zostało` niżej (konta/klucze, nie kod).
+
+> **Dlaczego Electron a nie Tauri (`_packaging/tauri/`):** Tauri używa systemowego WebView2,
+> który na laptopach z hybrydową grafiką (AMD iGPU + NVIDIA dGPU) renderuje WebGL wadliwie —
+> pionowy szew przez środek okna, wyblakłe modele. Chrome/Edge/Electron (własny Chromium) tego
+> nie mają. `_packaging/tauri/` zostaje w repo jako referencja, ale **nie jest ścieżką wydania.**
 
 ---
 
@@ -21,8 +26,8 @@ robimy je, gdy inne sesje skończą pracę nad treścią atlasu.
                                                   │  wszystkie GLB/CT/NIH W ŚRODKU
                         ┌─────────────────────────┴─────────────────┐
                         ▼                                           ▼
-              _packaging/tauri/  (Windows)                _packaging/capacitor/  (Android)
-                  → NSIS .exe  (assety w instalce)             → APK  (assety w APK)
+              _packaging/electron/  (Windows)             _packaging/capacitor/  (Android)
+                  → NSIS .exe  (Chromium + assety)             → APK  (assety w APK)
                         │                                           │
                         └──────────── updater.js ───────────────────┘
                                           │  tylko SPRAWDZENIE wersji przy starcie
@@ -124,16 +129,19 @@ Format `latest.json`: patrz [`shared/latest.json.example`](shared/latest.json.ex
 
 ---
 
-## Ścieżka: Windows
+## Ścieżka: Windows (Electron)
 
-Szczegóły → [`tauri/README.md`](tauri/README.md). Skrót:
+Szczegóły → [`electron/README.md`](electron/README.md). Skrót:
 
 ```bash
-cd _packaging/tauri
+cd _packaging/electron
 npm install
-npm run icon          # z app-icon.png (PODMIEŃ na 1024×1024)
-npm run build         # → src-tauri/target/release/bundle/nsis/*_x64-setup.exe (+ .sig)
+npm run build         # → dist/Atlas anatomiczny 3D Setup <wersja>.exe  (+ latest.yml, .blockmap)
 ```
+
+Wymaga tylko **Node** (żadnego Rusta/MSVC). Jednorazowo: jeśli `winCodeSign` się nie rozpakuje
+(symlinki Mac, Windows bez trybu deweloperskiego), rozpakuj cache ręcznie z pominięciem `*.dylib`
+albo włącz Developer Mode — patrz `electron/README.md`.
 
 ## Ścieżka: Android
 
@@ -152,33 +160,29 @@ cd android && gradlew.bat assembleRelease
 
 ## TODO (glue) — do zrobienia, gdy treść atlasu jest gotowa
 
-Zrobione: ✅ scaffolding Tauri + Capacitor · ✅ `assemble.mjs` (przetestowany w przeglądarce) ·
-✅ `updater.js` + baner (przetestowany) · ✅ ikona atlasu (192/512/1024 + `.ico`/`.icns`) ·
-✅ `pack-assets.mjs`/`fetch-assets.mjs` · ✅ CI `atlas-release.yml`
+Zrobione: ✅ `assemble.mjs` · ✅ Windows `.exe` (Electron, **zbudowany i przetestowany** —
+renderuje czysto, bez szwu) · ✅ Android `.apk` (Capacitor, zbudowany) · ✅ ikona atlasu ·
+✅ `pack-assets.mjs`/`fetch-assets.mjs` · ✅ CI `atlas-release.yml` (job Android gotowy)
 
-Zostało (wymaga kont/kluczy/toolchainów, nie kodu):
+Zostało:
 
-- [ ] **Odświeżyć bundle** — `node _packaging/assemble.mjs` po ostatnich zmianach innych sesji
+- [ ] **CI: job Windows na Electron** — obecny `windows:` w `atlas-release.yml` używa `tauri-action`
+      (martwe). Zamienić na: `cd _packaging/electron && npm ci && npm run build`, potem upload
+      `dist/*.exe`, `dist/latest.yml`, `dist/*.blockmap` do Release. (Nie tknąłem pliku — inna
+      sesja ma tam niezacommitowane zmiany do Androida.)
 - [ ] **Assety dla CI** (pomiń, jeśli budujesz lokalnie) — `node _packaging/pack-assets.mjs`,
       `gh release create atlas-assets _packaging/atlas-assets.tar.gz`, URL → sekret `ATLAS_ASSETS_URL`
-- [ ] **`latest.json`** (do aktualizacji) — wgrać pierwszy plik (wzór: `shared/latest.json.example`)
-      na GitHub raw lub R2, wpisać jego URL w `shared/app-version.json` **i**
-      `tauri/src-tauri/tauri.conf.json` (`plugins.updater.endpoints`). Bez tego apka po prostu
-      nie pokazuje banera aktualizacji (updater.js sam się wycisza) — reszta działa.
-- [ ] **Klucz updatera Tauri** — `cd _packaging/tauri && npm run tauri signer generate`;
-      klucz publiczny → `tauri.conf.json` `pubkey`; prywatny + hasło → sekrety CI
 - [ ] **Keystore Android** — `keytool -genkey ... atlas3d.keystore`; base64 → sekret
       `ANDROID_KEYSTORE_BASE64`, hasła/alias → pozostałe sekrety
-- [ ] **Pierwszy build** — `git tag atlas-v0.1.0 && git push origin atlas-v0.1.0`
-      (albo lokalnie: `_packaging/tauri` → `npm i && npm run build`; `_packaging/capacitor` →
-      `npm i && npx cap add android && npm run apk`)
-- [ ] **Tauri: potwierdzić CSP** — przejść wszystkie tryby atlasu (quiz, skalpel, przekrój,
-      eksport CSV, zrzut ekranu) w oknie `npm run dev`, dopieścić `csp` jeśli coś blokuje
+- [ ] **Pierwszy build publiczny** — `git tag atlas-v0.1.0 && git push origin atlas-v0.1.0`
+      (albo lokalnie: `_packaging/electron` → `npm i && npm run build`; `_packaging/capacitor` →
+      `npm i && npm run apk`). Wrzucić `.exe`+`latest.yml`+`.blockmap` oraz `.apk` do GitHub Release.
 - [ ] **Android: `speechSynthesis`** — sprawdzić na realnym urządzeniu; jeśli głucho, wpiąć
       `@capacitor-community/text-to-speech` pod przycisk 🔈
-- [ ] **updater.js: ścieżka natywna Tauri** — zweryfikować `window.__TAURI__.updater` po
-      `withGlobalTauri` w realnym oknie; w razie potrzeby dołożyć `@tauri-apps/plugin-updater` przez esbuild
+- [ ] **Przebudować `.exe`/`.apk`** po tym jak druga sesja skończy poprawę renderowania atlasu
+      (`assemble.mjs` bierze świeże źródło — wystarczy `npm run build` raz jeszcze).
 - [ ] **Odchudzenie** (opcjonalne): CT PNG w `_organ_compare/alt/mpr` → WebP/KTX2; `gltfpack` na `.glb`
+- [ ] **`_packaging/tauri/`** — do usunięcia gdy Electron się utrwali (zostaje jako referencja).
 
 ## Pliki
 
@@ -200,8 +204,9 @@ _packaging/
 │   └── icons/               ← icon-192/512 + app-icon-1024
 ├── vendor-extra/
 │   └── RoomEnvironment.js   ← brakujący addon three (dla _organ_compare)
-├── tauri/                    ← powłoka Windows (Tauri v2), z src-tauri/icons/
+├── electron/                 ← powłoka Windows (Electron) — ŚCIEŻKA WYDANIA
 ├── capacitor/                ← powłoka Android (Capacitor)
+├── tauri/                    ← martwe (WebView2 renderuje źle na hybrydowym GPU) — referencja
 └── web/                      ← WYNIK assemble.mjs (gitignore)
 
 .github/workflows/atlas-release.yml   ← CI: tag atlas-v* → .exe + .apk do Release

@@ -115,6 +115,7 @@ _packaging/tauri/src-tauri/target/
 _packaging/tauri/src-tauri/gen/
 _packaging/capacitor/android/
 _packaging/capacitor/ios/
+_packaging/electron/dist/
 _packaging/**/key.properties
 _packaging/**/*.keystore
 _packaging/atlas-assets.tar.gz

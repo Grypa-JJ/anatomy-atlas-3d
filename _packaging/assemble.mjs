@@ -30,7 +30,16 @@ function must(p) {
   return p;
 }
 
-async function rmrf(p) { await fs.rm(p, { recursive: true, force: true }); }
+async function rmrf(p) {
+  // Windows: indekser / AV potrafi na chwilę zablokować świeżo zapisany katalog -> EBUSY. Retry.
+  for (let i = 0; ; i++) {
+    try { await fs.rm(p, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 }); return; }
+    catch (e) {
+      if (i >= 5) throw e;
+      await new Promise(r => setTimeout(r, 500));
+    }
+  }
+}
 
 async function copyTree(src, dst, skipName) {
   const st = await fs.stat(src);
@@ -81,9 +90,13 @@ console.log(`\n▶ assemble atlas  v${appVersion.version} (${appVersion.channel}
 await rmrf(OUT);
 await fs.mkdir(OUT, { recursive: true });
 
-// 1. atlas.html -> web/index.html  (usun stopke "Powrot do bazy pytan" — w bundlu nie ma bazy)
+// 1. atlas.html -> web/index.html
+//    - usun stopke "Powrot do bazy pytan" (w bundlu nie ma bazy)
+//    - usun sekcje "Wersja na komputer i telefon" (w zainstalowanej apce nie ma sensu;
+//      w zrodle zostaje dla deployu na strone)
 let entry = await fs.readFile(must(path.join(ROOT, 'atlas.html')), 'utf8');
 entry = entry.replace(/<footer>[\s\S]*?<\/footer>/i, '');
+entry = entry.replace(/<section class="apps">[\s\S]*?<\/section>/i, '');
 const entryHtml = injectCommon(entry);
 await fs.writeFile(path.join(OUT, 'index.html'), entryHtml);
 // viewery linkują "wróć do trybów" jako ../atlas.html — w bundlu też musi istnieć
