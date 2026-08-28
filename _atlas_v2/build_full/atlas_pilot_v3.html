@@ -406,9 +406,16 @@ import { ConvexGeometry } from "three/addons/geometries/ConvexGeometry.js";
 
 const V2B = "?b=" + Date.now();
 // Atlas v3: geometria pakowana po JEDNYM pliku .glb (Draco) na warstwe zamiast
-// tysiaca luznych .obj. GLB_BASE mozna przelaczyc na publiczny URL R2/CDN bez
-// zadnych innych zmian - nazwy plikow (bones.glb, muscles.glb, ...) sa stale.
-const GLB_BASE = "../dist/"; // np. "https://pub-xxxx.r2.dev/atlas/v3/"
+// tysiaca luznych .obj. Lokalnie (dev / spakowana aplikacja offline) ladujemy z
+// ../dist/; na produkcji (Netlify) - z publicznego bucketa R2 (28.9 MB nie
+// miesci sie sensownie w deployu Netlify, a R2 jest darmowy na wychodzacym
+// transferze). Nazwy plikow (bones.glb, ...) sa identyczne w obu miejscach.
+const R2_ATLAS_BASE = "https://pub-75514e92552347ccbcdab6bfacd153fd.r2.dev/atlas/v3/";
+const _assetsParam = new URLSearchParams(location.search).get("assets"); // ?assets=r2|local (test)
+const _isLocal = _assetsParam ? _assetsParam === "local"
+    : (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)
+       || location.protocol === "file:" || !!window.__TAURI__ || !!window.Capacitor);
+const GLB_BASE = _isLocal ? "../dist/" : R2_ATLAS_BASE;
 const KIND_TO_GLB = {
     bone: "bones.glb", muscle: "muscles.glb", vessel: "vessels.glb",
     organ: "organs.glb", tooth: "teeth.glb", connective: "connective.glb",

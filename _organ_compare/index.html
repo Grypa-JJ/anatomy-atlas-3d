@@ -205,6 +205,26 @@ import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
 import { RoomEnvironment } from "three/addons/environments/RoomEnvironment.js";
 
 const CB = '?b=' + (window.__BUILD || '81');
+
+// Assety narządów (visceral.glb ~16 MB + alt/ ~61 MB) hostowane na R2 na
+// produkcji; lokalnie / w spakowanej aplikacji offline ładowane z ./ .
+// Zamiast przepisywać ~15 miejsc wywołań — jednorazowy remap w fetch/GLTFLoader.
+const R2_ORGAN_BASE = "https://pub-75514e92552347ccbcdab6bfacd153fd.r2.dev/atlas/narzady/";
+const _ocAssetsParam = new URLSearchParams(location.search).get("assets"); // ?assets=r2|local
+const _ocLocal = _ocAssetsParam ? _ocAssetsParam === "local"
+    : (/^(localhost|127\.0\.0\.1|\[::1\])$/.test(location.hostname)
+       || location.protocol === "file:" || !!window.__TAURI__ || !!window.Capacitor);
+if (!_ocLocal) {
+  const remap = (u) => {
+    if (typeof u !== "string") return u;
+    if (u.startsWith("./alt/") || u.startsWith("./visceral")) return R2_ORGAN_BASE + u.slice(2);
+    return u;
+  };
+  const _f = window.fetch.bind(window);
+  window.fetch = (u, o) => _f(remap(u), o);
+  const _load = GLTFLoader.prototype.load;
+  GLTFLoader.prototype.load = function (url, ...rest) { return _load.call(this, remap(url), ...rest); };
+}
 const PAL = [0xd98c5f,0x6faed1,0x74c69d,0xe0b04a,0xcf7d8e,0x9d8ec9,0x8bbf5a,0x64b6ac,0xe08a6b,0x7fa8d9,0xbf9b56,0xcf9dc9,0x9ab04a,0x5fae9d];
 const sanitize = n => n.replace(/\s/g,'_').replace(/[.:\/\[\]]/g,'');
 const enName = n => (n||'').replace(/\.j$/,'').replace(/\.(l|r)$/,(_,s)=>' ('+(s=='l'?'left':'right')+')');
