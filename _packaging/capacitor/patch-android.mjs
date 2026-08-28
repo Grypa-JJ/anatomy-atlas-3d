@@ -6,6 +6,9 @@
  *     lub zmienne ANDROID_KEYSTORE_*), podpięcie pod buildTypes.release,
  *     wyłączony lint dla release (wywala się na spacji w ścieżce "projekt w budowie")
  *   - android/local.properties:  sdk.dir z $ANDROID_HOME (jeśli nie istnieje)
+ *   - MainActivity.java:  setUseWideViewPort + setLoadWithOverviewMode na WebView, żeby
+ *     strony bez responsywnego CSS (atlas_pilot_v3.html) skalowały się do ekranu jak
+ *     w mobilnym Chrome, zamiast pokazywać wycinek 1:1. + pinch-zoom bez brzydkich +/-.
  */
 import { promises as fs } from 'node:fs';
 import { existsSync } from 'node:fs';
@@ -66,4 +69,42 @@ if (!existsSync(lp) && sdk) {
   // forward-slashe — AGP je akceptuje, a unika się piekła escapowania w .properties
   await fs.writeFile(lp, 'sdk.dir=' + sdk.replace(/\\/g, '/') + '\n');
   console.log('patch-android: local.properties utworzony.');
+}
+
+// MainActivity.java — WebView: fit-to-screen jak mobilny Chrome + pinch-zoom
+const maFiles = [];
+async function walk(d) {
+  for (const e of await fs.readdir(d, { withFileTypes: true })) {
+    const p = path.join(d, e.name);
+    if (e.isDirectory()) await walk(p);
+    else if (e.name === 'MainActivity.java') maFiles.push(p);
+  }
+}
+await walk(path.join(ANDROID, 'app', 'src', 'main', 'java'));
+
+for (const ma of maFiles) {
+  let src = await fs.readFile(ma, 'utf8');
+  if (src.includes('setLoadWithOverviewMode')) { console.log('patch-android: MainActivity już naniesione.'); continue; }
+  const pkg = (src.match(/package\s+([\w.]+);/) || [])[1] || 'com.grypajj.atlas3d';
+  src = `package ${pkg};
+
+import android.webkit.WebSettings;
+import com.getcapacitor.BridgeActivity;
+
+public class MainActivity extends BridgeActivity {
+    @Override
+    public void onStart() {
+        super.onStart();
+        try {
+            WebSettings s = this.bridge.getWebView().getSettings();
+            s.setUseWideViewPort(true);        // strony bez <meta viewport> -> szeroki layout (~980px)
+            s.setLoadWithOverviewMode(true);   // ...przeskalowany do szerokości ekranu (jak Chrome)
+            s.setBuiltInZoomControls(true);    // pinch-zoom w UI (panele atlasu są desktopowe)
+            s.setDisplayZoomControls(false);   // ...ale bez brzydkich przycisków +/-
+        } catch (Exception ignored) {}
+    }
+}
+`;
+  await fs.writeFile(ma, src);
+  console.log('patch-android: MainActivity.java zaktualizowany (WebView fit-to-screen).');
 }

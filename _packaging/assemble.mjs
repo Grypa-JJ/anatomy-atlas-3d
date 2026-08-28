@@ -31,14 +31,19 @@ function must(p) {
 }
 
 async function rmrf(p) {
-  // Windows: indekser / AV potrafi na chwilę zablokować świeżo zapisany katalog -> EBUSY. Retry.
-  for (let i = 0; ; i++) {
-    try { await fs.rm(p, { recursive: true, force: true, maxRetries: 5, retryDelay: 200 }); return; }
-    catch (e) {
-      if (i >= 5) throw e;
-      await new Promise(r => setTimeout(r, 500));
-    }
+  // Windows: serwer podglądu / indekser potrafi trzymać uchwyt do samego katalogu web/
+  // (jego cwd) -> rmdir EBUSY. Czyścimy WNĘTRZE (to zwykle się udaje), a sam katalog
+  // usuwamy best-effort z retry.
+  let entries = [];
+  try { entries = await fs.readdir(p); } catch { return; }
+  for (const e of entries) {
+    await fs.rm(path.join(p, e), { recursive: true, force: true, maxRetries: 8, retryDelay: 250 });
   }
+  for (let i = 0; i < 4; i++) {
+    try { await fs.rmdir(p); return; }
+    catch { await new Promise(r => setTimeout(r, 400)); }
+  }
+  // katalog został (zablokowany) — jest teraz pusty, mkdir recursive to zniesie
 }
 
 async function copyTree(src, dst, skipName) {
@@ -61,12 +66,11 @@ async function patch(file, fn) {
 
 function injectCommon(html) {
   if (html.includes('data-atlas-injected')) return html;
-  // viewport: atlas_pilot_v3.html go nie ma -> w WebView Androida (APK) renderuje sie
-  // w skali 1:1 pikseli urzadzenia (widac tylko wycinek). Viewer NIE ma zadnego
-  // responsywnego CSS (panele 240-280px na sztywno), wiec 'width=device-width' zrobilby
-  // nachodzace panele. Chrome mobilny dla strony bez viewportu uklada ~980px i skaluje
-  // do ekranu - odtwarzamy to: width=980 + brak blokady zoomu (user moze przyblizyc UI).
-  // Strony ktore MAJA wlasny viewport (atlas.html, _organ_compare) zostawiamy.
+  // viewport: atlas_pilot_v3.html go nie ma i nie ma responsywnego CSS (panele na
+  // sztywno 240-280px). Wymuszamy layout 980px, a skalowanie do ekranu robi:
+  //  - w przegladarce: to i tak domyslne zachowanie mobilnego Chrome
+  //  - w APK: MainActivity (setUseWideViewPort + setLoadWithOverviewMode, patch-android.mjs)
+  // Strony z wlasnym viewportem (atlas.html, _organ_compare) zostawiamy nietkniete.
   const viewport = /<meta[^>]+name=["']viewport["']/i.test(html)
     ? ''
     : '\n<meta name="viewport" content="width=980">';
