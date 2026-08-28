@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<title>Atlas v2 — szkielet Z-Anatomy</title>
+<style>
+  html,body{margin:0;height:100%;background:#15171c;color:#e8e8e8;font:13px/1.4 system-ui,sans-serif;overflow:hidden}
+  #c{position:fixed;inset:0}
+  #panel{position:fixed;top:0;left:0;bottom:0;width:320px;box-sizing:border-box;
+         background:rgba(20,22,27,.94);padding:10px 12px;overflow:auto}
+  h1{font-size:14px;margin:0 0 6px}
+  #search{width:100%;box-sizing:border-box;padding:5px 7px;margin:6px 0;background:#22252c;border:1px solid #3a3f48;color:#e8e8e8;border-radius:4px}
+  .grp{margin-top:10px;font-weight:700;color:#9fb4d0}
+  .it{padding:2px 5px;border-radius:3px;cursor:pointer;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .it:hover{background:#2c313b}
+  .it.lm{color:#7fc8ec}
+  .it.lm.approx{color:#e0b64c}
+  .row{display:flex;gap:6px;flex-wrap:wrap;margin:4px 0}
+  button{background:#2c313b;color:#e8e8e8;border:1px solid #444;border-radius:4px;padding:3px 7px;cursor:pointer;font-size:12px}
+  button.on{background:#3f5b86;border-color:#5b7fb5}
+  #hud{position:fixed;bottom:8px;left:330px;background:rgba(20,22,27,.9);padding:5px 9px;border-radius:4px}
+  small{color:#8a94a3}
+</style>
+<script type="importmap">
+{ "imports": {
+  "three": "./vendor/three.module.js",
+  "three/addons/": "./vendor/addons/"
+}}
+</script>
+</head>
+<body>
+<canvas id="c"></canvas>
+<div id="panel">
+  <h1>Atlas v2 — szkielet (Z-Anatomy)</h1>
+  <small id="stat">ładowanie…</small>
+  <div class="row">
+    <button id="b-lm" class="on">Punkty</button>
+    <button id="b-wire">Siatka</button>
+    <button id="b-front">Przód</button>
+    <button id="b-side">Bok</button>
+    <button id="b-reset">Reset</button>
+  </div>
+  <input id="search" placeholder="szukaj kości / punktu…">
+  <div id="list"></div>
+</div>
+<div id="hud">—</div>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+
+const V = "?v=" + Date.now();
+const $ = id => document.getElementById(id);
+const elC=$("c"), elStat=$("stat"), elHud=$("hud"), elList=$("list"), elSearch=$("search");
+const elLm=$("b-lm"), elWire=$("b-wire"), elFront=$("b-front"), elSide=$("b-side"), elReset=$("b-reset");
+const renderer = new THREE.WebGLRenderer({canvas:elC, antialias:true});
+renderer.setPixelRatio(Math.min(devicePixelRatio,2)); renderer.setSize(innerWidth,innerHeight);
+const scene = new THREE.Scene(); scene.background = new THREE.Color(0x15171c);
+const camera = new THREE.PerspectiveCamera(45, innerWidth/innerHeight, 1, 30000);
+camera.up.set(0,0,1);
+const controls = new OrbitControls(camera, renderer.domElement);
+scene.add(new THREE.AmbientLight(0xffffff,.75));
+for(const [x,y,z,i] of [[600,700,900,.85],[-600,-500,-300,.35],[0,0,-800,.25]]){
+  const d=new THREE.DirectionalLight(0xffffff,i); d.position.set(x,y,z); scene.add(d);
+}
+scene.add(new THREE.AxesHelper(150));
+
+const group = new THREE.Group(); scene.add(group);
+const BONE = new THREE.MeshPhongMaterial({color:0xdcd3c3, shininess:14, flatShading:true});
+const BONE_W = new THREE.MeshBasicMaterial({color:0x8a8172, wireframe:true});
+const boneMeshes = new Map();     // id -> mesh
+const lmMeshes = [];
+const LM = new THREE.MeshBasicMaterial({color:0x54c1ec});
+const LM_A = new THREE.MeshBasicMaterial({color:0xe0b64c});
+
+const [bones, teeth, lms] = await Promise.all([
+  fetch("all_bones_labeled_v2.json"+V).then(r=>r.json()),
+  fetch("all_teeth_labeled_v2.json"+V).then(r=>r.json()),
+  fetch("bone_landmarks_v2.json"+V).then(r=>r.json()),
+]);
+const allObjs = bones.concat(teeth);
+const objLoader = new OBJLoader();
+let done=0;
+await Promise.all(allObjs.map(async o=>{
+  try{
+    const root = await objLoader.loadAsync("obj/"+o.id+".obj"+V);
+    root.traverse(m=>{ if(m.isMesh){
+      m.geometry.deleteAttribute('normal'); m.geometry.computeVertexNormals();
+      m.material = BONE; m.userData.o = o; boneMeshes.set(o.id, m);
+    }});
+    group.add(root);
+  }catch(e){ console.warn("fail", o.id, e); }
+  done++; if(done%40===0) elStat.textContent = `ładowanie ${done}/${allObjs.length}…`;
+}));
+
+for(const l of lms){
+  const s = new THREE.Mesh(new THREE.SphereGeometry(2.8,12,12), l.approx?LM_A:LM);
+  s.position.set(l.pos[0],l.pos[1],l.pos[2]); s.userData.l = l;
+  group.add(s); lmMeshes.push(s);
+}
+
+const box = new THREE.Box3().setFromObject(group);
+const center = box.getCenter(new THREE.Vector3());
+group.position.sub(center);
+const R = box.getSize(new THREE.Vector3()).length();
+resetView();
+elStat.textContent = `${bones.length} kości + ${teeth.length} zębów · ${lms.length} natywnych punktów Z-Anatomy · ${lms.filter(x=>x.approx).length} bez PL`;
+
+function resetView(){ camera.position.set(R*0.55,-R*0.5,R*0.15); controls.target.set(0,0,0); controls.update(); }
+function setFront(){ camera.position.set(0,-R*0.75,0); controls.target.set(0,0,0); controls.update(); }
+function setSide(){ camera.position.set(R*0.75,0,0); controls.target.set(0,0,0); controls.update(); }
+elFront.onclick=setFront; elSide.onclick=setSide; elReset.onclick=resetView;
+elLm.onclick=()=>{ elLm.classList.toggle("on"); const v=elLm.classList.contains("on"); lmMeshes.forEach(m=>m.visible=v); };
+elWire.onclick=()=>{ elWire.classList.toggle("on"); const w=elWire.classList.contains("on");
+  boneMeshes.forEach(m=>m.material = w?BONE_W:BONE); };
+
+// ---- list ----
+const REGION = [
+  ["Czaszka", /czaszk|ciemieniow|czołow|potylicz|skroniow|klinow|sitow|jarzmow|nosow|łzow|podniebienn|żuchw|szczęk|lemiesz|małżowin|gnykow|młoteczek|kowadełko|strzemiączko|siekacz|kieł|trzonow|przedtrzonow|komórki sitowe/i],
+  ["Kręgosłup / klatka", /krąg|krzyżow|guziczn|szczytow|obrotow|mostk|żebro|mieczykowat|rękojeść/i],
+  ["Kończyna górna", /obojczyk|łopatk|ramienn|promieniow|łokciow|nadgarst|śródręcz|palca ręki|księżycowat|łódeczkowat|trójgraniast|grochowat|czworoboczn|główkowat|haczykowat/i],
+  ["Kończyna dolna / miednica", /miedniczn|udow|rzepk|piszczel|strzałkow|skokow|piętow|łódkowat|sześcienn|klinowat|śródstop|palca stopy|trzeszczk/i],
+];
+function regionOf(pl){ for(const [name,rx] of REGION) if(rx.test(pl)) return name; return "Inne"; }
+const lmByBone = {};
+lms.forEach(l=>(lmByBone[l.boneId]=lmByBone[l.boneId]||[]).push(l));
+const byRegion = {};
+allObjs.forEach(o=>{ const r=regionOf(o.pl); (byRegion[r]=byRegion[r]||[]).push(o); });
+function render(filter=""){
+  elList.innerHTML=""; const f=filter.toLowerCase();
+  for(const region of Object.keys(byRegion)){
+    const items = byRegion[region].filter(o=>!f || o.pl.toLowerCase().includes(f) ||
+      (lmByBone[o.id]||[]).some(l=>l.pl.toLowerCase().includes(f)));
+    if(!items.length) continue;
+    const h=document.createElement("div"); h.className="grp"; h.textContent=region; elList.appendChild(h);
+    for(const o of items.sort((a,b)=>a.pl.localeCompare(b.pl,'pl'))){
+      const d=document.createElement("div"); d.className="it"; d.textContent=o.pl;
+      d.onclick=()=>focusBone(o.id); elList.appendChild(d);
+      for(const l of (lmByBone[o.id]||[]).filter(l=>!f||l.pl.toLowerCase().includes(f)).sort((a,b)=>a.pl.localeCompare(b.pl,'pl'))){
+        const e=document.createElement("div"); e.className="it lm"+(l.approx?" approx":"");
+        e.textContent="• "+l.pl; e.title=l.en+"  ·  "+l.pl_from+"  ·  "+l.dist_mm+"mm";
+        e.onclick=()=>focusLm(l); elList.appendChild(e);
+      }
+    }
+  }
+}
+render();
+elSearch.addEventListener("input",e=>render(e.target.value));
+
+let flash;
+function focusBone(id){
+  const m = boneMeshes.get(id); if(!m) return;
+  const b=new THREE.Box3().setFromObject(m); const ctr=b.getCenter(new THREE.Vector3());
+  const sz=b.getSize(new THREE.Vector3()).length();
+  controls.target.copy(ctr);
+  camera.position.copy(ctr).add(new THREE.Vector3(sz,-sz,sz*0.4)); controls.update();
+  boneMeshes.forEach(x=>x.material.opacity=1);
+  elHud.textContent = m.userData.o.pl + "   ·   " + m.userData.o.en;
+}
+function focusLm(l){
+  const p=new THREE.Vector3(l.pos[0],l.pos[1],l.pos[2]).add(group.position);
+  controls.target.copy(p);
+  const dir=camera.position.clone().sub(controls.target).normalize();
+  camera.position.copy(p).addScaledVector(dir,120); controls.update();
+  if(flash) group.remove(flash);
+  flash=new THREE.Mesh(new THREE.SphereGeometry(5,16,16),new THREE.MeshBasicMaterial({color:0xff4d6d,wireframe:true}));
+  flash.position.set(l.pos[0],l.pos[1],l.pos[2]); group.add(flash);
+  elHud.textContent = `${l.pl}  ·  ${l.en}  ·  [${l.pos.map(x=>x.toFixed(0)).join(", ")}]mm  ·  ${l.dist_mm}mm od kości`;
+}
+
+const ray=new THREE.Raycaster(), mouse=new THREE.Vector2();
+addEventListener("pointermove",e=>{
+  mouse.set(e.clientX/innerWidth*2-1,-(e.clientY/innerHeight)*2+1);
+  ray.setFromCamera(mouse,camera);
+  const h=ray.intersectObjects(lmMeshes.filter(m=>m.visible))[0];
+  if(h) elHud.textContent = h.object.userData.l.pl+"  ·  "+h.object.userData.l.en;
+});
+addEventListener("resize",()=>{camera.aspect=innerWidth/innerHeight;camera.updateProjectionMatrix();renderer.setSize(innerWidth,innerHeight);});
+(function loop(){requestAnimationFrame(loop);controls.update();renderer.render(scene,camera);})();
+</script>
+</body>
+</html>

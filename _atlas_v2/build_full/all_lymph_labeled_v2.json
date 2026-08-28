@@ -1,0 +1,1274 @@
+[
+ {
+  "id": "anterior_tibial_node_l",
+  "pl": "(Węzeł chłonny piszczelowy przedni)",
+  "en": "(Anterior tibial node)",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "norm"
+ },
+ {
+  "id": "anterior_tibial_node_r",
+  "pl": "(Węzeł chłonny piszczelowy przedni)",
+  "en": "(Anterior tibial node)",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "norm"
+ },
+ {
+  "id": "fibular_node_l",
+  "pl": "Węzeł chłonny strzałkowy",
+  "en": "(Fibular node)",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fibular_node_r",
+  "pl": "Węzeł chłonny strzałkowy",
+  "en": "(Fibular node)",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intermediate_deep_inguinal_node_l",
+  "pl": "Węzeł chłonny pachwinowy głęboki pośredni",
+  "en": "(Intermediate deep inguinal node)",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intermediate_deep_inguinal_node_r",
+  "pl": "Węzeł chłonny pachwinowy głęboki pośredni",
+  "en": "(Intermediate deep inguinal node)",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intermediate_lacunar_node_l",
+  "pl": "Węzeł chłonny zatokowe (rozstępu) pośrednie",
+  "en": "(Intermediate lacunar node)",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intermediate_lacunar_node_r",
+  "pl": "Węzeł chłonny zatokowe (rozstępu) pośrednie",
+  "en": "(Intermediate lacunar node)",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_lacunar_node_l",
+  "pl": "Węzeł chłonny zatokowe (rozstępu) boczne",
+  "en": "(Lateral lacunar node)",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_lacunar_node_r",
+  "pl": "Węzeł chłonny zatokowe (rozstępu) boczne",
+  "en": "(Lateral lacunar node)",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_lacunar_node_l",
+  "pl": "Węzeł chłonny zatokowe (rozstępu) przyśrodkowe",
+  "en": "(Medial lacunar node)",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_lacunar_node_r",
+  "pl": "Węzeł chłonny zatokowe (rozstępu) przyśrodkowe",
+  "en": "(Medial lacunar node)",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_tibial_node_l",
+  "pl": "Węzeł chłonny piszczelowy tylny",
+  "en": "(Posterior tibial node)",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_tibial_node_r",
+  "pl": "Węzeł chłonny piszczelowy tylny",
+  "en": "(Posterior tibial node)",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "proximal_deep_inguinal_node_l",
+  "pl": "Węzeł chłonny pachwinowy głęboki bliższy",
+  "en": "(Proximal deep inguinal node)",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "proximal_deep_inguinal_node_r",
+  "pl": "Węzeł chłonny pachwinowy głęboki bliższy",
+  "en": "(Proximal deep inguinal node)",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "retropyloric_nodes",
+  "pl": "Węzły chłonne zaodźwiernikowe",
+  "en": "(Retropyloric nodes)",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subpyloric_nodes",
+  "pl": "Węzły chłonne pododźwiernikowe",
+  "en": "(Subpyloric nodes)",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "suprapyloric_node",
+  "pl": "Węzeł chłonny nadodźwiernikowe",
+  "en": "(Suprapyloric node)",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_axillary_nodes_l",
+  "pl": "Węzły chłonne pachowe przednie",
+  "en": "Anterior axillary nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_axillary_nodes_r",
+  "pl": "Węzły chłonne pachowe przednie",
+  "en": "Anterior axillary nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_inferior_jugular_nodes_l",
+  "pl": "Węzły chłonne szyjne wewnętrzne przednie dolne",
+  "en": "Anterior inferior jugular nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_inferior_jugular_nodes_r",
+  "pl": "Węzły chłonne szyjne wewnętrzne przednie dolne",
+  "en": "Anterior inferior jugular nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "apical_axillary_nodes_l",
+  "pl": "Węzły chłonne pachowe szczytowe",
+  "en": "Apical axillary nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "apical_axillary_nodes_r",
+  "pl": "Węzły chłonne pachowe szczytowe",
+  "en": "Apical axillary nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "appendicular_nodes",
+  "pl": "Węzły wyrostka robaczkowego",
+  "en": "Appendicular nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachial_nodes_l",
+  "pl": "Węzły chłonne ramienne",
+  "en": "Brachial nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachial_nodes_r",
+  "pl": "Węzły chłonne ramienne",
+  "en": "Brachial nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachiocephalic_nodes",
+  "pl": "Węzły chłonne ramienno-głowowe",
+  "en": "Brachiocephalic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "bucinator_node_l",
+  "pl": "Węzeł chłonny policzkowy",
+  "en": "Bucinator node",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "bucinator_node_r",
+  "pl": "Węzeł chłonny policzkowy",
+  "en": "Bucinator node",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "central_axillary_nodes_l",
+  "pl": "Węzły chłonne pachowe środkowe",
+  "en": "Central axillary nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "central_axillary_nodes_r",
+  "pl": "Węzły chłonne pachowe środkowe",
+  "en": "Central axillary nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "central_superior_mesenteric_nodes",
+  "pl": "Węzły górne (środkowe)",
+  "en": "Central superior mesenteric nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "coeliac_nodes",
+  "pl": "Węzły trzewne",
+  "en": "Coeliac nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cubital_nodes_l",
+  "pl": "Węzły chłonne łokciowe",
+  "en": "Cubital nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cubital_nodes_r",
+  "pl": "Węzły chłonne łokciowe",
+  "en": "Cubital nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cystic_node",
+  "pl": "Węzeł pęcherzykowy",
+  "en": "Cystic node",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_popliteal_nodes_l",
+  "pl": "Węzły chłonne podkolanowe głębokie",
+  "en": "Deep popliteal nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "deep_popliteal_nodes_r",
+  "pl": "Węzły chłonne podkolanowe głębokie",
+  "en": "Deep popliteal nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "ileocolic_nodes",
+  "pl": "Węzły krętniczo-okrężnicze",
+  "en": "Ileocolic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_deep_lateral_cervical_nodes_l",
+  "pl": "Węzły chłonne szyjne dolne głębokie boczne",
+  "en": "Inferior deep lateral cervical nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_deep_lateral_cervical_nodes_r",
+  "pl": "Węzły chłonne szyjne dolne głębokie boczne",
+  "en": "Inferior deep lateral cervical nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_diaphragmatic_nodes",
+  "pl": "Węzły przeponowe dolne",
+  "en": "Inferior diaphragmatic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_epigastric_nodes_l",
+  "pl": "Węzły nabrzuszne dolne",
+  "en": "Inferior epigastric nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_epigastric_nodes_r",
+  "pl": "Węzły nabrzuszne dolne",
+  "en": "Inferior epigastric nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_gluteal_nodes_l",
+  "pl": "Pośladkowe dolne",
+  "en": "Inferior gluteal nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_gluteal_nodes_r",
+  "pl": "Pośladkowe dolne",
+  "en": "Inferior gluteal nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_pancreatic_nodes",
+  "pl": "Węzły chłonne trzustkowe dolne",
+  "en": "Inferior pancreatic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_superficial_inguinal_nodes_l",
+  "pl": "Węzły chłonne pachwinowe dolne powierzchowne",
+  "en": "Inferior superficial inguinal nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_superficial_inguinal_nodes_r",
+  "pl": "Węzły chłonne pachwinowe dolne powierzchowne",
+  "en": "Inferior superficial inguinal nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_tracheobronchial_nodes",
+  "pl": "Węzły chłonne tchawiczo-oskrzelowe dolne",
+  "en": "Inferior tracheobronchial nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "infra_auricular_nodes_l",
+  "pl": "Węzły chłonne poduszne",
+  "en": "Infra-auricular nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "infra_auricular_nodes_r",
+  "pl": "Węzły chłonne poduszne",
+  "en": "Infra-auricular nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "infraclavicular_nodes_l",
+  "pl": "Węzły chłonne naramienno-piersiowe; Węzły chłonne podobojczykowe",
+  "en": "Infraclavicular nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "infraclavicular_nodes_r",
+  "pl": "Węzły chłonne naramienno-piersiowe; Węzły chłonne podobojczykowe",
+  "en": "Infraclavicular nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intercostal_nodes_l",
+  "pl": "Węzły chłonne międzyżebrowe",
+  "en": "Intercostal nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intercostal_nodes_r",
+  "pl": "Węzły chłonne międzyżebrowe",
+  "en": "Intercostal nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intermediate_common_iliac_nodes",
+  "pl": "Węzły chłonne biodrowe pośrednie wspólne",
+  "en": "Intermediate common iliac nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intermediate_external_iliac_nodes_l",
+  "pl": "Węzły chłonne biodrowe pośrednie zewnętrzne",
+  "en": "Intermediate external iliac nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intermediate_external_iliac_nodes_r",
+  "pl": "Węzły chłonne biodrowe pośrednie zewnętrzne",
+  "en": "Intermediate external iliac nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intermediate_lumbar_nodes",
+  "pl": "Węzły lędźwiowe pośrednie",
+  "en": "Intermediate lumbar nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interpectoral_nodes_l",
+  "pl": "Węzły chłonne międzypiersiowe",
+  "en": "Interpectoral nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interpectoral_nodes_r",
+  "pl": "Węzły chłonne międzypiersiowe",
+  "en": "Interpectoral nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intraglandular_parotid_nodes_l",
+  "pl": "Węzły chłonne śródgruczołowe przyuszne",
+  "en": "Intraglandular parotid nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intraglandular_parotid_nodes_r",
+  "pl": "Węzły chłonne śródgruczołowe przyuszne",
+  "en": "Intraglandular parotid nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intrapulmonary_nodes",
+  "pl": "Węzły chłonne śródpłucne",
+  "en": "Intrapulmonary nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "jugulodigastric_node_l",
+  "pl": "Węzeł chłonny żyłowo-dwubrzuścowy",
+  "en": "Jugulodigastric node",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "jugulodigastric_node_r",
+  "pl": "Węzeł chłonny żyłowo-dwubrzuścowy",
+  "en": "Jugulodigastric node",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "juxta_intestinal_mesenteric_nodes",
+  "pl": "Węzły przyjelitowe",
+  "en": "Juxta-intestinal mesenteric nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "juxta_oesophageal_nodes",
+  "pl": "Węzły chłonne przyprzełykowe",
+  "en": "Juxta-oesophageal nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_aortic_nodes",
+  "pl": "Węzły aortalne boczne",
+  "en": "Lateral aortic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_axillary_nodes_l",
+  "pl": "Węzły chłonne pachowe boczne",
+  "en": "Lateral axillary nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_axillary_nodes_r",
+  "pl": "Węzły chłonne pachowe boczne",
+  "en": "Lateral axillary nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_caval_nodes",
+  "pl": "Węzły żyły głównej boczne",
+  "en": "Lateral caval nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_common_iliac_nodes",
+  "pl": "Węzły chłonne biodrowe boczne wspólne",
+  "en": "Lateral common iliac nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_pericardial_nodes",
+  "pl": "Węzły chłonne osierdziowe boczne",
+  "en": "Lateral pericardial nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_sacral_nodes_l",
+  "pl": "Węzły chłonne krzyżowe boczne",
+  "en": "Lateral sacral nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_sacral_nodes_r",
+  "pl": "Węzły chłonne krzyżowe boczne",
+  "en": "Lateral sacral nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_superior_jugular_node_l",
+  "pl": "Węzeł chłonny szyjne wewnętrzne boczne górne",
+  "en": "Lateral superior jugular node",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_superior_jugular_node_r",
+  "pl": "Węzeł chłonny szyjne wewnętrzne boczne górne",
+  "en": "Lateral superior jugular node",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_vesical_nodes_l",
+  "pl": "Pęcherzowe boczne",
+  "en": "Lateral vesical nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_vesical_nodes_r",
+  "pl": "Pęcherzowe boczne",
+  "en": "Lateral vesical nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_colic_nodes",
+  "pl": "Węzły chłonne okrężnicze",
+  "en": "Left colic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "left_lobe_of_thymus",
+  "pl": "Płat lewy grasicy",
+  "en": "Left lobe of thymus",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "mandibular_node_l",
+  "pl": "Węzeł chłonny żuchwowe",
+  "en": "Mandibular node",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "mandibular_node_r",
+  "pl": "Węzeł chłonny żuchwowe",
+  "en": "Mandibular node",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "mastoid_nodes_l",
+  "pl": "Węzły chłonne sutkowe",
+  "en": "Mastoid nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "mastoid_nodes_r",
+  "pl": "Węzły chłonne sutkowe",
+  "en": "Mastoid nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_common_iliac_nodes",
+  "pl": "Węzły chłonne biodrowe przyśrodkowe wspólne",
+  "en": "Medial common iliac nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_external_iliac_nodes_l",
+  "pl": "Węzły chłonne biodrowe przyśrodkowe zewnętrzne",
+  "en": "Medial external iliac nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_external_iliac_nodes_r",
+  "pl": "Węzły chłonne biodrowe przyśrodkowe zewnętrzne",
+  "en": "Medial external iliac nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "median_sacral_nodes",
+  "pl": "Węzły chłonne krzyżowe pośrodkowe",
+  "en": "Median sacral nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "middle_colic_nodes",
+  "pl": "Węzły chłonne środkowe okrężnicze",
+  "en": "Middle colic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "nasolabial_node_l",
+  "pl": "Węzeł chłonny nosowo-wargowe",
+  "en": "Nasolabial node",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "nasolabial_node_r",
+  "pl": "Węzeł chłonny nosowo-wargowe",
+  "en": "Nasolabial node",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "node_of_arch_of_azygos_vein",
+  "pl": "Węzeł łuku żyły nieparzystej",
+  "en": "Node of arch of azygos vein",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "node_of_ligamentum_arteriosum",
+  "pl": "Węzeł chłonny więzadła tętniczego",
+  "en": "Node of ligamentum arteriosum",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "obturator_nodes_l",
+  "pl": "Węzły chłonne zasłonowe",
+  "en": "Obturator nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "obturator_nodes_r",
+  "pl": "Węzły chłonne zasłonowe",
+  "en": "Obturator nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "occipital_nodes_l",
+  "pl": "Węzły chłonne potyliczne",
+  "en": "Occipital nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "occipital_nodes_r",
+  "pl": "Węzły chłonne potyliczne",
+  "en": "Occipital nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "palatine_tonsil_l",
+  "pl": "Migdałek podniebienny",
+  "en": "Palatine tonsil",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "palatine_tonsil_r",
+  "pl": "Migdałek podniebienny",
+  "en": "Palatine tonsil",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "paracolic_superior_mesenteric_nodes",
+  "pl": "Węzły chłonne przyokrężnicze krezkowe górne",
+  "en": "Paracolic superior mesenteric nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "pararectal_nodes",
+  "pl": "Przyodbytnicze",
+  "en": "Pararectal nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "parasternal_nodes_l",
+  "pl": "Węzły chłonne przymostkowe",
+  "en": "Parasternal nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "parasternal_nodes_r",
+  "pl": "Węzły chłonne przymostkowe",
+  "en": "Parasternal nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "paratracheal_cervical_nodes",
+  "pl": "Węzły chłonne okołotchawicze szyjne",
+  "en": "Paratracheal cervical nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "paratracheal_thoracic_nodes",
+  "pl": "Węzły chłonne okołotchawicze klatki piersiowej",
+  "en": "Paratracheal thoracic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_axillary_nodes_l",
+  "pl": "Węzły chłonne pachowe tylne",
+  "en": "Posterior axillary nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_axillary_nodes_r",
+  "pl": "Węzły chłonne pachowe tylne",
+  "en": "Posterior axillary nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "postvesical_nodes",
+  "pl": "Zapęcherzowe",
+  "en": "Postvesical nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pre_aortic_nodes",
+  "pl": "Węzły przedaortalne",
+  "en": "Pre-aortic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pre_auricular_nodes_l",
+  "pl": "Węzły chłonne przeduszne",
+  "en": "Pre-auricular nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "pre_auricular_nodes_r",
+  "pl": "Węzły chłonne przeduszne",
+  "en": "Pre-auricular nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "precaecal_nodes",
+  "pl": "Węzły przedkątnicze",
+  "en": "Precaecal nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "precaval_nodes",
+  "pl": "Węzły żyły głównej przednie",
+  "en": "Precaval nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "prepericardial_nodes",
+  "pl": "Węzły chłonne przedosierdziowe",
+  "en": "Prepericardial nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "pretracheal_nodes",
+  "pl": "Węzły chłonne przedtchawicze",
+  "en": "Pretracheal nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "prevertebral_nodes",
+  "pl": "Węzły chłonne przedkręgowe",
+  "en": "Prevertebral nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "prevesical_nodes",
+  "pl": "Przedpęcherzowe",
+  "en": "Prevesical nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "retro_aortic_nodes",
+  "pl": "Węzły chłonne zaaortalne",
+  "en": "Retro-aortic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "retrocaecal_nodes",
+  "pl": "Węzły zakątnicze",
+  "en": "Retrocaecal nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "retrocaval_nodes",
+  "pl": "Węzły chłonne zażylne (za żyłą główną)",
+  "en": "Retrocaval nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "retropharyngeal_nodes",
+  "pl": "Węzły chłonne zagardłowe",
+  "en": "Retropharyngeal nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "right_colic_nodes",
+  "pl": "Węzły chłonne okrężnicze",
+  "en": "Right colic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "right_gastric_nodes",
+  "pl": "Węzły chłonne żołądkowe",
+  "en": "Right gastric nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "right_gastro_omental_nodes",
+  "pl": "Węzły żołądkowo-sieciowe prawe i lewe",
+  "en": "Right gastro-omental nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "right_lobe_of_thymus",
+  "pl": "Płat prawy grasicy",
+  "en": "Right lobe of thymus",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sigmoid_nodes",
+  "pl": "Węzły chłonne esicze",
+  "en": "Sigmoid nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "spleen",
+  "pl": "Śledziona",
+  "en": "Spleen",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "splenic_nodes",
+  "pl": "Węzły śledzionowe",
+  "en": "Splenic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subaortic_nodes",
+  "pl": "Węzły chłonne podaortalne",
+  "en": "Subaortic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "submandibular_nodes",
+  "pl": "Węzły chłonne podżuchwowe",
+  "en": "Submandibular nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "submental_nodes_l",
+  "pl": "Węzły chłonne podbródkowe",
+  "en": "Submental nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "submental_nodes_r",
+  "pl": "Węzły chłonne podbródkowe",
+  "en": "Submental nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superficial_anterior_cervical_nodes",
+  "pl": "Węzły chłonne szyjne powierzchowne przednie",
+  "en": "Superficial anterior cervical nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superficial_lateral_cervical_nodes_l",
+  "pl": "Węzły chłonne szyjne powierzchowne boczne",
+  "en": "Superficial lateral cervical nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superficial_lateral_cervical_nodes_r",
+  "pl": "Węzły chłonne szyjne powierzchowne boczne",
+  "en": "Superficial lateral cervical nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superficial_parotid_nodes_l",
+  "pl": "Węzły chłonne przyusznice powierzchowne",
+  "en": "Superficial parotid nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_parotid_nodes_r",
+  "pl": "Węzły chłonne przyusznice powierzchowne",
+  "en": "Superficial parotid nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_popliteal_nodes_l",
+  "pl": "Węzły chłonne podkolanowe powierzchowne",
+  "en": "Superficial popliteal nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superficial_popliteal_nodes_r",
+  "pl": "Węzły chłonne podkolanowe powierzchowne",
+  "en": "Superficial popliteal nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_diaphragmatic_nodes",
+  "pl": "Węzły przeponowe górne",
+  "en": "Superior diaphragmatic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_gluteal_nodes_l",
+  "pl": "Pośladkowe górne",
+  "en": "Superior gluteal nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_gluteal_nodes_r",
+  "pl": "Pośladkowe górne",
+  "en": "Superior gluteal nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_pancreatic_nodes",
+  "pl": "Węzły chłonne trzustkowe górne",
+  "en": "Superior pancreatic nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_pancreaticoduodenal_nodes",
+  "pl": "Węzły chłonne trzustkowo-dwunastnicze górne",
+  "en": "Superior pancreaticoduodenal nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_tracheobronchial_nodes",
+  "pl": "Węzły chłonne tchawiczo-oskrzelowe górne",
+  "en": "Superior tracheobronchial nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superolateral_superficial_inguinal_nodes_l",
+  "pl": "Węzły chłonne pachwinowe górno-boczne powierzchowne",
+  "en": "Superolateral superficial inguinal nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superolateral_superficial_inguinal_nodes_r",
+  "pl": "Węzły chłonne pachwinowe górno-boczne powierzchowne",
+  "en": "Superolateral superficial inguinal nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superomedial_superficial_inguinal_nodes_l",
+  "pl": "Węzły chłonne pachwinowe górno-przyśrodkowe powierzchowne",
+  "en": "Superomedial superficial inguinal nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superomedial_superficial_inguinal_nodes_r",
+  "pl": "Węzły chłonne pachwinowe górno-przyśrodkowe powierzchowne",
+  "en": "Superomedial superficial inguinal nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "supraclavicular_nodes_l",
+  "pl": "Węzły chłonne nadobojczykowe",
+  "en": "Supraclavicular nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "supraclavicular_nodes_r",
+  "pl": "Węzły chłonne nadobojczykowe",
+  "en": "Supraclavicular nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "comp"
+ },
+ {
+  "id": "supratrochlear_nodes_l",
+  "pl": "Węzły chłonne nadbloczkowe",
+  "en": "Supratrochlear nodes",
+  "side": "l",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supratrochlear_nodes_r",
+  "pl": "Węzły chłonne nadbloczkowe",
+  "en": "Supratrochlear nodes",
+  "side": "r",
+  "kind": "lymph",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thyroid_nodes",
+  "pl": "Węzły chłonne tarczowe",
+  "en": "Thyroid nodes",
+  "side": "mid",
+  "kind": "lymph",
+  "pl_from": "comp"
+ }
+]

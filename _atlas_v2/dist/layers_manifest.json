@@ -1,0 +1,47 @@
+{
+ "bones": {
+  "structures": 212,
+  "raw_mb": 36.7,
+  "glb_mb": 4.9
+ },
+ "teeth": {
+  "structures": 24,
+  "raw_mb": 3.7,
+  "glb_mb": 0.52
+ },
+ "muscles": {
+  "structures": 658,
+  "raw_mb": 28.9,
+  "glb_mb": 5.0
+ },
+ "connective": {
+  "structures": 437,
+  "raw_mb": 63.2,
+  "glb_mb": 5.99
+ },
+ "vessels": {
+  "structures": 634,
+  "raw_mb": 47.0,
+  "glb_mb": 3.58
+ },
+ "nerves": {
+  "structures": 247,
+  "raw_mb": 14.4,
+  "glb_mb": 1.08
+ },
+ "brain": {
+  "structures": 259,
+  "raw_mb": 16.9,
+  "glb_mb": 1.9
+ },
+ "organs": {
+  "structures": 163,
+  "raw_mb": 72.6,
+  "glb_mb": 4.57
+ },
+ "lymph": {
+  "structures": 159,
+  "raw_mb": 9.8,
+  "glb_mb": 1.41
+ }
+}

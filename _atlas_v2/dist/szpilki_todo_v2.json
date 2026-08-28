@@ -1,0 +1,1058 @@
+[
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Staw stępowo-śródstopny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Więzadło skokowo-śródstopne"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "noteCategory": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "text": "Wyrostek stawowy górny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — tułów",
+  "noteCategory": "Mięśnie — tułów",
+  "text": "Mięsień lędźwiowy mniejszy"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Gałąź jajnikowa tętnicy macicznej"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Gałąź lewa/prawa tętnicy wątrobowej właściwej"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica maciczna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica pęcherzykowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła jajnikowa lewa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła wątrobowa pośrednia"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy żeński",
+  "noteCategory": "Układ rozrodczy żeński",
+  "text": "Bańka jajowodu"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy żeński",
+  "noteCategory": "Układ rozrodczy żeński",
+  "text": "Cieśń jajowodu"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy żeński",
+  "noteCategory": "Układ rozrodczy żeński",
+  "text": "Dno macicy"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy żeński",
+  "noteCategory": "Układ rozrodczy żeński",
+  "text": "Krezka jajnika"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy żeński",
+  "noteCategory": "Układ rozrodczy żeński",
+  "text": "Lejek jajowodu"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy żeński",
+  "noteCategory": "Układ rozrodczy żeński",
+  "text": "Więzadło szerokie macicy"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy żeński",
+  "noteCategory": "Układ rozrodczy żeński",
+  "text": "Więzadło wieszadłowe jajnika"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy żeński",
+  "noteCategory": "Układ rozrodczy żeński",
+  "text": "Więzadło właściwe jajnika"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień bródkowo-językowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Naczynia (tętnice, żyły) szyi i głowy",
+  "noteCategory": "Naczynia głowy i szyi",
+  "text": "Tętnica językowa"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Naczynia (tętnice, żyły) szyi i głowy",
+  "noteCategory": "Naczynia głowy i szyi",
+  "text": "Tętnica tarczowa górna"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Jama ustna, język, gardło",
+  "noteCategory": "Jama ustna, język, gardło",
+  "text": "Brodawka liściasta"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Jama ustna, język, gardło",
+  "noteCategory": "Jama ustna, język, gardło",
+  "text": "Brodawka okolona"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Jama ustna, język, gardło",
+  "noteCategory": "Jama ustna, język, gardło",
+  "text": "Fałd podniebienno-językowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Jama ustna, język, gardło",
+  "noteCategory": "Jama ustna, język, gardło",
+  "text": "Języczek podniebienny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Jama ustna, język, gardło",
+  "noteCategory": "Jama ustna, język, gardło",
+  "text": "Migdałek językowy (nasada języka)"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Jama ustna, język, gardło",
+  "noteCategory": "Jama ustna, język, gardło",
+  "text": "Rozcięgno języka"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Jama ustna, język, gardło",
+  "noteCategory": "Jama ustna, język, gardło",
+  "text": "Wał mięśnia dźwigacza"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Jama ustna, język, gardło",
+  "noteCategory": "Jama ustna, język, gardło",
+  "text": "Łuk podniebienno-językowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Oko",
+  "noteCategory": "Oko",
+  "text": "Mięsień prosty boczny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Oko",
+  "noteCategory": "Oko",
+  "text": "Mięsień skośny górny (oka)"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "landmark",
+  "text": "Wyrostek dziobiasty",
+  "matchedPl": "Wyrostek dziobiasty"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "landmark",
+  "text": "Bruzda tętnicy podobojczykowej",
+  "matchedPl": "Bruzda tętnicy podobojczykowej (prawe)"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "mesh",
+  "text": "Mięsień mostkowo-obojczykowo-sutkowy",
+  "matchedPl": "Mięsień mostkowo-obojczykowo-sutkowy (przyczep początkowy, przyczep końcowy, unerwienie, czynność) (prawy)"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "mesh",
+  "text": "Mięsień skośny zewnętrzny brzucha",
+  "matchedPl": "Mięsień skośny zewnętrzny brzucha (prawy)"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "mesh",
+  "text": "Nerw pośrodkowy",
+  "matchedPl": "Nerw pośrodkowy (lewy, pełny)"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Część błoniasta przegrody międzykomorowej",
+  "matchedPl": "Część błoniasta przegrody międzykomorowej"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Ostroga (rozdwojenie) tchawicy",
+  "matchedPl": "Ostroga tchawicy"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Więzadło obłe wątroby",
+  "matchedPl": "Więzadło obłe wątroby"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Więzadło wątrobowo-dwunastnicze",
+  "matchedPl": "Więzadło wątrobowo-dwunastnicze"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Więzadło żołądkowo-okrężnicze",
+  "matchedPl": "Więzadło żołądkowo-okrężnicze"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "mesh",
+  "text": "Jelito kręte",
+  "matchedPl": "Jelito kręte"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Brodawka nerkowa",
+  "matchedPl": "Brodawka nerkowa"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Trójkąt pęcherza",
+  "matchedPl": "Trójkąt pęcherza"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Opuszka prącia",
+  "matchedPl": "Opuszka prącia"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Bruzda zatoki skalistej dolnej",
+  "matchedPl": "Bruzda zatoki skalistej dolnej"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Bruzda zatoki skalistej górnej",
+  "matchedPl": "Bruzda zatoki skalistej górnej"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Bruzda żuchwowo-gnykowa",
+  "matchedPl": "Bruzda żuchwowo-gnykowa"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Dół żuchwowy",
+  "matchedPl": "Dół żuchwowy (prawa)"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Grzebień koguci",
+  "matchedPl": "Grzebień koguci"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Kanał tętnicy szyjnej",
+  "matchedPl": "Kanał tętnicy szyjnej"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Kolec nosowy tylny",
+  "matchedPl": "Kolec nosowy tylny"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Kąt żuchwy",
+  "matchedPl": "Kąt żuchwy"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Małżowina nosowa środkowa",
+  "matchedPl": "Małżowina nosowa środkowa"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Otwór rylcowo-sutkowy",
+  "matchedPl": "Otwór rylcowo-sutkowy (prawa)"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Otwór sutkowy",
+  "matchedPl": "Otwór sutkowy (prawa)"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Otwór żuchwy",
+  "matchedPl": "Otwór żuchwy (prawy)"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Szczelina oczodołowa górna",
+  "matchedPl": "Szczelina oczodołowa górna"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Szczelina skalisto-bębenkowa",
+  "matchedPl": "Szczelina skalisto-bębenkowa"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Wcięcie żuchwy",
+  "matchedPl": "Wcięcie żuchwy (prawe)"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Więzadło poprzeczne kręgu szczytowego",
+  "matchedPl": "Więzadło poprzeczne kręgu szczytowego"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Powięź skroniowa",
+  "matchedPl": "Powięź skroniowa"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Nerw krtaniowy wsteczny",
+  "matchedPl": "Nerw krtaniowy wsteczny"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Fałd trąbkowo-gardłowy",
+  "matchedPl": "Fałd trąbkowo-gardłowy"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Fałd głosowy",
+  "matchedPl": "Fałd głosowy"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Fałd językowo-nagłośniowy boczny",
+  "matchedPl": "Fałd językowo-nagłośniowy boczny"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Fałd językowo-nagłośniowy pośrodkowy",
+  "matchedPl": "Fałd językowo-nagłośniowy pośrodkowy"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Fałd nalewkowo-nagłośniowy",
+  "matchedPl": "Fałd nalewkowo-nagłośniowy"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Stożek sprężysty",
+  "matchedPl": "Stożek sprężysty"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Głowa strzemiączka",
+  "matchedPl": "Głowa strzemiączka"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "mesh",
+  "text": "Obrąbek (małżowiny usznej)",
+  "matchedPl": "Obrąbek (lewy)"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "mesh",
+  "text": "Przeciwskrawek",
+  "matchedPl": "Przeciwskrawek (lewy)"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Torebka wewnętrzna",
+  "matchedPl": "Torebka wewnętrzna:"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Opuszka węchowa",
+  "matchedPl": "Opuszka węchowa"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Zakręt zębaty",
+  "matchedPl": "Zakręt zębaty"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Bruzda podwzgórzowa",
+  "matchedPl": "Bruzda podwzgórzowa"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "mesh",
+  "text": "Przysadka mózgowa",
+  "matchedPl": "Przysadka mózgowa"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "mesh",
+  "text": "Konar mózgu",
+  "matchedPl": "Konar mózgu"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "mesh",
+  "text": "Ramię wzgórka dolnego (blaszki pokrywy)",
+  "matchedPl": "Ramię wzgórka dolnego (prawe)"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Bruzda podstawna (mostu)",
+  "matchedPl": "Bruzda podstawna"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Wzgórek twarzowy",
+  "matchedPl": "Wzgórek twarzowy"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Konar środkowy móżdżku",
+  "matchedPl": "Konar środkowy móżdżku"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "landmark",
+  "text": "Powierzchnia uchowata kości biodrowej",
+  "matchedPl": "Powierzchnia uchowata"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "landmark",
+  "text": "Wcięcie szyjne mostka",
+  "matchedPl": "Wcięcie szyjne"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "mesh",
+  "text": "Gałąź okalająca tętnicy wieńcowej lewej",
+  "matchedPl": "Gałąź okalająca (t. wieńcowej lewej)"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Płatek półksiężycowaty prawy zastawki aorty",
+  "matchedPl": "Płatek półksiężycowaty prawy"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Płatek półksiężycowaty tylny zastawki aorty",
+  "matchedPl": "Płatek półksiężycowaty tylny"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Przegroda międzykomorowa, część mięśniowa",
+  "matchedPl": "Przegroda międzykomorowa"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Część błoniasta cewki moczowej męskiej",
+  "matchedPl": "Część błoniasta"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Część gąbczasta cewki moczowej męskiej",
+  "matchedPl": "Część gąbczasta"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Część sterczowa cewki moczowej",
+  "matchedPl": "Część sterczowa"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Wyrostek czołowy kości jarzmowej",
+  "matchedPl": "Wyrostek czołowy (prawa)"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "mesh",
+  "text": "Odnoga przednia/tylna torebki wewnętrznej",
+  "matchedPl": "Odnoga przednia torebki wewnętrznej (prawa)"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Jądro kulkowate",
+  "matchedPl": "Jądro wtrącone tylne; Jądro kulkowate"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Jądro wierzchu",
+  "matchedPl": "Jądro wierzchu; Jądro przyśrodkowe móżdżku"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Jądro zębate",
+  "matchedPl": "Jądro zębate; Jądro boczne móżdżku"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Przyczepek/przyczepki sieciowe",
+  "matchedPl": "Przyczepki sieciowe; Przyczepki tłuszczowe okrężnicy"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Płat piramidowy gruczołu tarczowego",
+  "matchedPl": "Płat piramidowy gruczołu tarczowego"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Prążek rdzenny komory czwartej",
+  "matchedPl": "Prążek rdzenny komory czwartej"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Róg tylny komory bocznej",
+  "matchedPl": "Róg tylny komory bocznej"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "mesh",
+  "text": "Grobelka, odnoga dolna grobelki",
+  "matchedPl": "Odnogi grobelki (lewy)"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "mesh",
+  "text": "Głowa obojczykowa mięśnia mostkowo-obojczykowo-sutkowego",
+  "matchedPl": "Mięsień mostkowo-obojczykowo-sutkowy (przyczep początkowy, przyczep końcowy, unerwienie, czynność) (prawy)"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "landmark",
+  "text": "Więzadło rzepki",
+  "matchedPl": "Więzadło rzepki"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "landmark",
+  "text": "Część żebrowa przepony",
+  "matchedPl": "Część żebrowa przepony"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "landmark",
+  "text": "Smuga ścięgnista",
+  "matchedPl": "Smuga ścięgnista"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "landmark",
+  "text": "Gałąź tylna nerwu międzyżebrowego",
+  "matchedPl": "Gałąź tylna nerwu międzyżebrowego"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "landmark",
+  "text": "Gałąź tylna żyły międzyżebrowej",
+  "matchedPl": "Gałąź tylna żyły międzyżebrowej"
+ },
+ {
+  "kolokwium": "I",
+  "linkType": "landmark",
+  "text": "Nerw przeponowy",
+  "matchedPl": "Nerw przeponowy"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Beleczka przegrodowo-brzeżna",
+  "matchedPl": "Beleczka przegrodowo-brzeżna"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Mięśnie grzebieniaste",
+  "matchedPl": "Mięśnie grzebieniaste"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Uszko lewe",
+  "matchedPl": "Uszko lewe"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Zatoka poprzeczna osierdzia",
+  "matchedPl": "Zatoka poprzeczna osierdzia"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Płat czworoboczny wątroby",
+  "matchedPl": "Płat czworoboczny wątroby"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Przewód pęcherzykowy",
+  "matchedPl": "Przewód pęcherzykowy"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Przewód wątrobowy wspólny",
+  "matchedPl": "Przewód wątrobowy wspólny"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Więzadło trójkątne prawe",
+  "matchedPl": "Więzadło trójkątne prawe"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Wyrostek ogoniasty płata ogoniastego wątroby",
+  "matchedPl": "Wyrostek ogoniasty płata ogoniastego wątroby"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Część brzuszna przełyku",
+  "matchedPl": "Część brzuszna przełyku"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Część piersiowa przełyku",
+  "matchedPl": "Część piersiowa przełyku"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Kolano żołądka",
+  "matchedPl": "Kolano żołądka"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Część zstępująca dwunastnicy",
+  "matchedPl": "Część zstępująca dwunastnicy"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Kielich nerkowy mniejszy",
+  "matchedPl": "Kielich nerkowy mniejszy"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Kielich nerkowy większy",
+  "matchedPl": "Kielich nerkowy większy"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Słup nerkowy",
+  "matchedPl": "Słup nerkowy"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Torebka włóknista (nerki)",
+  "matchedPl": "Torebka włóknista (nerki)"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Ujście wewnętrzne cewki moczowej",
+  "matchedPl": "Ujście wewnętrzne cewki moczowej"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Więzadło obrączkowe",
+  "matchedPl": "Więzadło obrączkowe"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Bruzda dla łuku aorty",
+  "matchedPl": "Bruzda dla łuku aorty"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Powierzchnia przeponowa płuca lewego",
+  "matchedPl": "Powierzchnia przeponowa płuca lewego"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Szczelina pozioma płuca prawego",
+  "matchedPl": "Szczelina pozioma płuca prawego"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Więzadło płucne",
+  "matchedPl": "Więzadło płucne"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Gruczoł opuszkowo-cewkowy",
+  "matchedPl": "Gruczoł opuszkowo-cewkowy"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Więzadło pępkowe przyśrodkowe",
+  "matchedPl": "Więzadło pępkowe przyśrodkowe"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Część brzuszna moczowodu (prawego)",
+  "matchedPl": "Część brzuszna moczowodu (prawego)"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Rozwór półksiężycowaty",
+  "matchedPl": "Rozwór półksiężycowaty"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Otwór podniebienny większy",
+  "matchedPl": "Otwór podniebienny większy"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Otwór przysieczny",
+  "matchedPl": "Otwór przysieczny"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Dół przysieczny",
+  "matchedPl": "Dół przysieczny"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Wyrostek jarzmowy kości skroniowej",
+  "matchedPl": "Wyrostek jarzmowy kości skroniowej"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Nerw uszny wielki",
+  "matchedPl": "Nerw uszny wielki"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Nerw czołowy",
+  "matchedPl": "Nerw czołowy"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Wał trąbkowy",
+  "matchedPl": "Wał trąbkowy"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Fałd trąbkowo-podniebienny",
+  "matchedPl": "Fałd trąbkowo-podniebienny"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Zachyłek gruszkowaty",
+  "matchedPl": "Zachyłek gruszkowaty"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Fałd przedsionkowy",
+  "matchedPl": "Fałd przedsionkowy"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Wcięcie krtaniowe górne",
+  "matchedPl": "Wcięcie krtaniowe górne"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Wyrostek soczewkowaty",
+  "matchedPl": "Wyrostek soczewkowaty"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Część chrzęstna trąbki słuchowej",
+  "matchedPl": "Część chrzęstna trąbki słuchowej"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Rąbek zębaty",
+  "matchedPl": "Rąbek zębaty"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Zębina",
+  "matchedPl": "Zębina"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Przełyk, część szyjna",
+  "matchedPl": "Przełyk, część szyjna"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Głowa jądra ogoniastego",
+  "matchedPl": "Głowa jądra ogoniastego"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Ogon jądra ogoniastego",
+  "matchedPl": "Ogon jądra ogoniastego"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Kleszcze potyliczne",
+  "matchedPl": "Kleszcze potyliczne"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Prążkowie",
+  "matchedPl": "Prążkowie"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Przedmurze",
+  "matchedPl": "Przedmurze"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Torebka ostatnia",
+  "matchedPl": "Torebka ostatnia"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Wieniec promienisty",
+  "matchedPl": "Wieniec promienisty"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Hak",
+  "matchedPl": "Hak"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Pasmo węchowe",
+  "matchedPl": "Pasmo węchowe"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Zrost międzywzgórzowy",
+  "matchedPl": "Zrost międzywzgórzowy"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Odnoga mózgu",
+  "matchedPl": "Odnoga mózgu"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Miejsce sinawe",
+  "matchedPl": "Miejsce sinawe"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Szczelina pierwsza",
+  "matchedPl": "Szczelina pierwsza"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Nić końcowa",
+  "matchedPl": "Nić końcowa"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Szczelina pośrodkowa przednia",
+  "matchedPl": "Szczelina pośrodkowa przednia"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Stożek rdzeniowy",
+  "matchedPl": "Stożek rdzeniowy"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Więzadło ząbkowane",
+  "matchedPl": "Więzadło ząbkowane"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Zasuwka / pole najdalsze",
+  "matchedPl": "Zasuwka / pole najdalsze"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "landmark",
+  "text": "Zasłona rdzeniowa dolna / górna",
+  "matchedPl": "Zasłona rdzeniowa dolna / górna"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "mesh",
+  "text": "Płacik okołośrodkowy",
+  "matchedPl": "Zrazik przyśrodkowy (paracentralny) (lewy)"
+ },
+ {
+  "kolokwium": "IV",
+  "linkType": "mesh",
+  "text": "Kora wyspy",
+  "matchedPl": "Wyspa (lewy)"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "mesh",
+  "text": "Mięsień MOS (mostkowo-obojczykowo-sutkowy), głowa mostkowa",
+  "matchedPl": "Mięsień mostkowo-obojczykowo-sutkowy (przyczep początkowy, przyczep końcowy, unerwienie, czynność) (prawy)"
+ },
+ {
+  "kolokwium": "II",
+  "linkType": "landmark",
+  "text": "Bruzda dla łuku aorty",
+  "matchedPl": "Bruzda dla łuku aorty"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Mięsień pierścienno-tarczowy, część prosta",
+  "matchedPl": "Mięsień pierścienno-tarczowy, część prosta"
+ },
+ {
+  "kolokwium": "III",
+  "linkType": "landmark",
+  "text": "Więzadło tarczowo-gnykowe boczne",
+  "matchedPl": "Więzadło tarczowo-gnykowe boczne"
+ }
+]

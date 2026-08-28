@@ -1,0 +1,1978 @@
+[
+ {
+  "id": "communicating_branch_of_median_nerve_with_ulnar_nerve_l",
+  "pl": "Gałąź łącząca nerwu pośrodkowego z nerwem łokciowym",
+  "en": "(Communicating branch of median nerve with ulnar nerve)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "communicating_branch_of_median_nerve_with_ulnar_nerve_r",
+  "pl": "Gałąź łącząca nerwu pośrodkowego z nerwem łokciowym",
+  "en": "(Communicating branch of median nerve with ulnar nerve)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "abducens_nerve_vi_l",
+  "pl": "Nerw odwodzący",
+  "en": "Abducens nerve (VI)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "abducens_nerve_vi_r",
+  "pl": "Nerw odwodzący",
+  "en": "Abducens nerve (VI)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "accessory_nerve_xi_l",
+  "pl": "Nerw dodatkowy (XI)",
+  "en": "Accessory nerve (XI)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "accessory_nerve_xi_r",
+  "pl": "Nerw dodatkowy (XI)",
+  "en": "Accessory nerve (XI)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "anterior_branch_of_medial_antebrachial_cutaneous_nerve_l",
+  "pl": "Gałąź przednia nerw skórny przyśrodkowy przedramienia",
+  "en": "Anterior branch of medial antebrachial cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_branch_of_medial_antebrachial_cutaneous_nerve_r",
+  "pl": "Gałąź przednia nerw skórny przyśrodkowy przedramienia",
+  "en": "Anterior branch of medial antebrachial cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_branch_of_obturator_nerve_l",
+  "pl": "Gałąź przednia nerw zasłonowy",
+  "en": "Anterior branch of obturator nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_branch_of_obturator_nerve_r",
+  "pl": "Gałąź przednia nerw zasłonowy",
+  "en": "Anterior branch of obturator nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_cutaneous_branches_of_femoral_nerve_l",
+  "pl": "Gałęzie skórne przednie nerwu udowego",
+  "en": "Anterior cutaneous branches of femoral nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_cutaneous_branches_of_femoral_nerve_r",
+  "pl": "Gałęzie skórne przednie nerwu udowego",
+  "en": "Anterior cutaneous branches of femoral nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_division_of_inferior_trunk_of_brachial_plexus_l",
+  "pl": "Podział przedni pnia dolnego splotu ramiennego",
+  "en": "Anterior division of inferior trunk of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_division_of_inferior_trunk_of_brachial_plexus_r",
+  "pl": "Podział przedni pnia dolnego splotu ramiennego",
+  "en": "Anterior division of inferior trunk of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_division_of_mandibular_nerve_l",
+  "pl": "Podział przedni nerwu żuchwowego",
+  "en": "Anterior division of mandibular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_division_of_mandibular_nerve_r",
+  "pl": "Podział przedni nerwu żuchwowego",
+  "en": "Anterior division of mandibular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_division_of_middle_trunk_of_brachial_plexus_l",
+  "pl": "Podział przedni pnia środkowego splotu ramiennego",
+  "en": "Anterior division of middle trunk of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_division_of_middle_trunk_of_brachial_plexus_r",
+  "pl": "Podział przedni pnia środkowego splotu ramiennego",
+  "en": "Anterior division of middle trunk of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_division_of_superior_trunk_of_brachial_plexus_l",
+  "pl": "Podział przedni pnia górnego splotu ramiennego",
+  "en": "Anterior division of superior trunk of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_division_of_superior_trunk_of_brachial_plexus_r",
+  "pl": "Podział przedni pnia górnego splotu ramiennego",
+  "en": "Anterior division of superior trunk of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_interosseous_nerve_of_forearm_l",
+  "pl": "Nerw międzykostny przedni przedramienia",
+  "en": "Anterior interosseous nerve of forearm",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_interosseous_nerve_of_forearm_r",
+  "pl": "Nerw międzykostny przedni przedramienia",
+  "en": "Anterior interosseous nerve of forearm",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_root_of_posterior_femoral_cutaneous_nerve_l",
+  "pl": "Korzeń przedni nerwu skórnego tylnego uda",
+  "en": "Anterior root of posterior femoral cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_root_of_posterior_femoral_cutaneous_nerve_r",
+  "pl": "Korzeń przedni nerwu skórnego tylnego uda",
+  "en": "Anterior root of posterior femoral cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "axillary_nerve_l",
+  "pl": "Nerw pachowy",
+  "en": "Axillary nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "axillary_nerve_r",
+  "pl": "Nerw pachowy",
+  "en": "Axillary nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "buccal_nerve_l",
+  "pl": "Nerw policzkowy",
+  "en": "Buccal nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "buccal_nerve_r",
+  "pl": "Nerw policzkowy",
+  "en": "Buccal nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "chorda_tympani_l",
+  "pl": "Struna bębenkowa",
+  "en": "Chorda tympani",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "chorda_tympani_r",
+  "pl": "Struna bębenkowa",
+  "en": "Chorda tympani",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cochlear_nerve_l",
+  "pl": "Nerw ślimakowy",
+  "en": "Cochlear nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cochlear_nerve_r",
+  "pl": "Nerw ślimakowy",
+  "en": "Cochlear nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_fibular_nerve_l",
+  "pl": "Nerw strzałkowy wspólny",
+  "en": "Common fibular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "common_fibular_nerve_r",
+  "pl": "Nerw strzałkowy wspólny",
+  "en": "Common fibular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "common_palmar_digital_branches_of_median_nerve_l",
+  "pl": "Wspólne nerwy dłoniowe palców nerwu pośrodkowego",
+  "en": "Common palmar digital branches of median nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_palmar_digital_branches_of_median_nerve_r",
+  "pl": "Wspólne nerwy dłoniowe palców nerwu pośrodkowego",
+  "en": "Common palmar digital branches of median nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_palmar_digital_branches_of_ulnar_nerve_l",
+  "pl": "Wspólne nerwy dłoniowe palców nerwu łokciowego",
+  "en": "Common palmar digital branches of ulnar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_palmar_digital_branches_of_ulnar_nerve_r",
+  "pl": "Wspólne nerwy dłoniowe palców nerwu łokciowego",
+  "en": "Common palmar digital branches of ulnar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_plantar_digital_branches_of_lateral_plantar_nerve_l",
+  "pl": "Wspólne nerwy podeszwowe palców nerwu podeszwowego bocznego",
+  "en": "Common plantar digital branches of lateral plantar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_plantar_digital_branches_of_lateral_plantar_nerve_r",
+  "pl": "Wspólne nerwy podeszwowe palców nerwu podeszwowego bocznego",
+  "en": "Common plantar digital branches of lateral plantar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_plantar_digital_branches_of_medial_plantar_nerve_l",
+  "pl": "Wspólne nerwy podeszwowe palców nerwu podeszwowego przyśrodkowego",
+  "en": "Common plantar digital branches of medial plantar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_plantar_digital_branches_of_medial_plantar_nerve_r",
+  "pl": "Wspólne nerwy podeszwowe palców nerwu podeszwowego przyśrodkowego",
+  "en": "Common plantar digital branches of medial plantar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_branch_of_radial_nerve_l",
+  "pl": "Gałąź głęboka nerwu promieniowego",
+  "en": "Deep branch of radial nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_branch_of_radial_nerve_r",
+  "pl": "Gałąź głęboka nerwu promieniowego",
+  "en": "Deep branch of radial nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_branch_of_ulnar_nerve_l",
+  "pl": "Gałąź głęboka nerwu łokciowego",
+  "en": "Deep branch of ulnar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_branch_of_ulnar_nerve_r",
+  "pl": "Gałąź głęboka nerwu łokciowego",
+  "en": "Deep branch of ulnar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_fibular_nerve_l",
+  "pl": "Nerw strzałkowy głęboki",
+  "en": "Deep fibular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "deep_fibular_nerve_r",
+  "pl": "Nerw strzałkowy głęboki",
+  "en": "Deep fibular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "dorsal_branch_of_ulnar_nerve_l",
+  "pl": "Gałąź grzbietowa nerwu łokciowego",
+  "en": "Dorsal branch of ulnar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_branch_of_ulnar_nerve_r",
+  "pl": "Gałąź grzbietowa nerwu łokciowego",
+  "en": "Dorsal branch of ulnar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_digital_branches_of_deep_fibular_nerve_l",
+  "pl": "Nerwy grzbietowe palców nerwu strzałkowego głębokiego",
+  "en": "Dorsal digital branches of deep fibular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_digital_branches_of_deep_fibular_nerve_r",
+  "pl": "Nerwy grzbietowe palców nerwu strzałkowego głębokiego",
+  "en": "Dorsal digital branches of deep fibular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_digital_branches_of_radial_nerve_l",
+  "pl": "Nerwy grzbietowe palców nerwu promieniowego",
+  "en": "Dorsal digital branches of radial nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_digital_branches_of_radial_nerve_r",
+  "pl": "Nerwy grzbietowe palców nerwu promieniowego",
+  "en": "Dorsal digital branches of radial nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_digital_branches_of_superficial_fibular_nerve_l",
+  "pl": "Nerwy grzbietowe palców nerwu strzałkowego powierzchownego",
+  "en": "Dorsal digital branches of superficial fibular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_digital_branches_of_superficial_fibular_nerve_r",
+  "pl": "Nerwy grzbietowe palców nerwu strzałkowego powierzchownego",
+  "en": "Dorsal digital branches of superficial fibular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_digital_branches_of_ulnar_nerve_l",
+  "pl": "Nerwy grzbietowe palców nerwu łokciowego",
+  "en": "Dorsal digital branches of ulnar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_digital_branches_of_ulnar_nerve_r",
+  "pl": "Nerwy grzbietowe palców nerwu łokciowego",
+  "en": "Dorsal digital branches of ulnar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_scapular_nerve_l",
+  "pl": "Nerw grzbietowy łopatki",
+  "en": "Dorsal scapular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_scapular_nerve_r",
+  "pl": "Nerw grzbietowy łopatki",
+  "en": "Dorsal scapular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "facial_nerve_vii_l",
+  "pl": "Nerw twarzowy (VII)",
+  "en": "Facial nerve (VII)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "facial_nerve_vii_r",
+  "pl": "Nerw twarzowy (VII)",
+  "en": "Facial nerve (VII)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "femoral_branch_of_genitofemoral_nerve_l",
+  "pl": "Gałąź nerw płciowo-udowy",
+  "en": "Femoral branch of genitofemoral nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "femoral_branch_of_genitofemoral_nerve_r",
+  "pl": "Gałąź nerw płciowo-udowy",
+  "en": "Femoral branch of genitofemoral nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "femoral_nerve_l",
+  "pl": "Nerw udowy",
+  "en": "Femoral nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "femoral_nerve_r",
+  "pl": "Nerw udowy",
+  "en": "Femoral nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ganglia_of_sympathetic_trunk_l",
+  "pl": "Zwoje pnia współczulnego",
+  "en": "Ganglia of sympathetic trunk",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "ganglia_of_sympathetic_trunk_r",
+  "pl": "Zwoje pnia współczulnego",
+  "en": "Ganglia of sympathetic trunk",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "genital_branch_of_genitofemoral_nerve_l",
+  "pl": "Gałąź nerw płciowo-udowy",
+  "en": "Genital branch of genitofemoral nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "genital_branch_of_genitofemoral_nerve_r",
+  "pl": "Gałąź nerw płciowo-udowy",
+  "en": "Genital branch of genitofemoral nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "genitofemoral_nerve_l",
+  "pl": "Nerw płciowo-udowy",
+  "en": "Genitofemoral nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "genitofemoral_nerve_r",
+  "pl": "Nerw płciowo-udowy",
+  "en": "Genitofemoral nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "glossopharyngeal_nerve_ix_l",
+  "pl": "Nerw językowo-gardłowy (IX)",
+  "en": "Glossopharyngeal nerve (IX)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "glossopharyngeal_nerve_ix_r",
+  "pl": "Nerw językowo-gardłowy (IX)",
+  "en": "Glossopharyngeal nerve (IX)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "hypoglossal_nerve_xii_l",
+  "pl": "Nerw podjęzykowy (XII)",
+  "en": "Hypoglossal nerve (XII)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "hypoglossal_nerve_xii_r",
+  "pl": "Nerw podjęzykowy (XII)",
+  "en": "Hypoglossal nerve (XII)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "ilio_inguinal_nerve_l",
+  "pl": "Nerw biodrowo-pachwinowy",
+  "en": "Ilio-inguinal nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "ilio_inguinal_nerve_r",
+  "pl": "Nerw biodrowo-pachwinowy",
+  "en": "Ilio-inguinal nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "iliohypogastric_nerve_l",
+  "pl": "Nerw biodrowo-podbrzuszny",
+  "en": "Iliohypogastric nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliohypogastric_nerve_r",
+  "pl": "Nerw biodrowo-podbrzuszny",
+  "en": "Iliohypogastric nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_alveolar_nerve_l",
+  "pl": "Nerw zębodołowy dolny",
+  "en": "Inferior alveolar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_alveolar_nerve_r",
+  "pl": "Nerw zębodołowy dolny",
+  "en": "Inferior alveolar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_lateral_brachial_cutaneous_nerve_l",
+  "pl": "Nerw skórny dolno-boczny ramienia",
+  "en": "Inferior lateral brachial cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_lateral_brachial_cutaneous_nerve_r",
+  "pl": "Nerw skórny dolno-boczny ramienia",
+  "en": "Inferior lateral brachial cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_subscapular_nerve_l",
+  "pl": "Nerw podłopatkowy dolny",
+  "en": "Inferior subscapular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_subscapular_nerve_r",
+  "pl": "Nerw podłopatkowy dolny",
+  "en": "Inferior subscapular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_trunk_of_brachial_plexus_l",
+  "pl": "Pień dolny splot ramienny",
+  "en": "Inferior trunk of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_trunk_of_brachial_plexus_r",
+  "pl": "Pień dolny splot ramienny",
+  "en": "Inferior trunk of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "infrapatellar_branch_of_saphenous_nerve_l",
+  "pl": "Gałąź rzepkowa dolna nerwu udowo-goleniowego",
+  "en": "Infrapatellar branch of saphenous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "infrapatellar_branch_of_saphenous_nerve_r",
+  "pl": "Gałąź rzepkowa dolna nerwu udowo-goleniowego",
+  "en": "Infrapatellar branch of saphenous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intercostal_nerves_l",
+  "pl": "Nerwy międzyżebrowe",
+  "en": "Intercostal nerves",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intercostal_nerves_r",
+  "pl": "Nerwy międzyżebrowe",
+  "en": "Intercostal nerves",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intermediate_dorsal_cutaneous_nerve_of_foot_l",
+  "pl": "Nerw grzbietowy stopa",
+  "en": "Intermediate dorsal cutaneous nerve of foot",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intermediate_dorsal_cutaneous_nerve_of_foot_r",
+  "pl": "Nerw grzbietowy stopa",
+  "en": "Intermediate dorsal cutaneous nerve of foot",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_antebrachial_cutaneous_nerve_l",
+  "pl": "Nerw skórny boczny przedramienia",
+  "en": "Lateral antebrachial cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_antebrachial_cutaneous_nerve_r",
+  "pl": "Nerw skórny boczny przedramienia",
+  "en": "Lateral antebrachial cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_femoral_cutaneous_nerve_l",
+  "pl": "Nerw skórny boczny uda",
+  "en": "Lateral femoral cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_femoral_cutaneous_nerve_r",
+  "pl": "Nerw skórny boczny uda",
+  "en": "Lateral femoral cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_pectoral_nerve_l",
+  "pl": "Nerw piersiowy boczny",
+  "en": "Lateral pectoral nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_pectoral_nerve_r",
+  "pl": "Nerw piersiowy boczny",
+  "en": "Lateral pectoral nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_plantar_nerve_l",
+  "pl": "Nerw podeszwowy boczny",
+  "en": "Lateral plantar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_plantar_nerve_r",
+  "pl": "Nerw podeszwowy boczny",
+  "en": "Lateral plantar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lingual_nerve_l",
+  "pl": "Nerw językowy",
+  "en": "Lingual nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lingual_nerve_r",
+  "pl": "Nerw językowy",
+  "en": "Lingual nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "long_thoracic_nerve_l",
+  "pl": "Nerw piersiowy długi",
+  "en": "Long thoracic nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "long_thoracic_nerve_r",
+  "pl": "Nerw piersiowy długi",
+  "en": "Long thoracic nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "maxillary_nerve_l",
+  "pl": "Nerw szczękowy",
+  "en": "Maxillary nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "maxillary_nerve_r",
+  "pl": "Nerw szczękowy",
+  "en": "Maxillary nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_antebrachial_cutaneous_nerve_l",
+  "pl": "Nerw skórny przyśrodkowy przedramienia",
+  "en": "Medial antebrachial cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_antebrachial_cutaneous_nerve_r",
+  "pl": "Nerw skórny przyśrodkowy przedramienia",
+  "en": "Medial antebrachial cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_brachial_cutaneous_nerve_l",
+  "pl": "Nerw skórny przyśrodkowy ramienia",
+  "en": "Medial brachial cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_brachial_cutaneous_nerve_r",
+  "pl": "Nerw skórny przyśrodkowy ramienia",
+  "en": "Medial brachial cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_crural_cutaneous_branches_of_saphenous_nerve_l",
+  "pl": "Gałęzie skórne przyśrodkowe goleni nerwu udowo-goleniowego",
+  "en": "Medial crural cutaneous branches of saphenous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_crural_cutaneous_branches_of_saphenous_nerve_r",
+  "pl": "Gałęzie skórne przyśrodkowe goleni nerwu udowo-goleniowego",
+  "en": "Medial crural cutaneous branches of saphenous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_dorsal_cutaneous_nerve_of_foot_l",
+  "pl": "Nerw przyśrodkowy grzbietowy stopa",
+  "en": "Medial dorsal cutaneous nerve of foot",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_dorsal_cutaneous_nerve_of_foot_r",
+  "pl": "Nerw przyśrodkowy grzbietowy stopa",
+  "en": "Medial dorsal cutaneous nerve of foot",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_pectoral_nerve_l",
+  "pl": "Nerw piersiowy przyśrodkowy",
+  "en": "Medial pectoral nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_pectoral_nerve_r",
+  "pl": "Nerw piersiowy przyśrodkowy",
+  "en": "Medial pectoral nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_plantar_nerve_l",
+  "pl": "Nerw podeszwowy przyśrodkowy",
+  "en": "Medial plantar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_plantar_nerve_r",
+  "pl": "Nerw podeszwowy przyśrodkowy",
+  "en": "Medial plantar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_sural_cutaneous_nerve_l",
+  "pl": "Nerw skórny przyśrodkowy łydki",
+  "en": "Medial sural cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_sural_cutaneous_nerve_r",
+  "pl": "Nerw skórny przyśrodkowy łydki",
+  "en": "Medial sural cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "median_nerve_l",
+  "pl": "Nerw pośredni",
+  "en": "Median nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "median_nerve_r",
+  "pl": "Nerw pośredni",
+  "en": "Median nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "meningeal_branch_of_maxillary_nerve_l",
+  "pl": "Gałąź nerw szczękowy",
+  "en": "Meningeal branch of maxillary nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "meningeal_branch_of_maxillary_nerve_r",
+  "pl": "Gałąź nerw szczękowy",
+  "en": "Meningeal branch of maxillary nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "mental_nerve_l",
+  "pl": "Nerw bródkowy",
+  "en": "Mental nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "mental_nerve_r",
+  "pl": "Nerw bródkowy",
+  "en": "Mental nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_trunk_of_brachial_plexus_l",
+  "pl": "Pień środkowy splot ramienny",
+  "en": "Middle trunk of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "middle_trunk_of_brachial_plexus_r",
+  "pl": "Pień środkowy splot ramienny",
+  "en": "Middle trunk of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "motor_root_of_trigeminal_nerve",
+  "pl": "Korzeń ruchowy nerwu trójdzielnego",
+  "en": "Motor root of trigeminal nerve",
+  "side": "mid",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "muscular_branches_of_axillary_nerve_l",
+  "pl": "Gałęzie nerw pachowy",
+  "en": "Muscular branches of axillary nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "muscular_branches_of_axillary_nerve_r",
+  "pl": "Gałęzie nerw pachowy",
+  "en": "Muscular branches of axillary nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "muscular_branches_of_deep_fibular_nerve_l",
+  "pl": "Gałęzie mięśniowe nerwu strzałkowego głębokiego",
+  "en": "Muscular branches of deep fibular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "muscular_branches_of_deep_fibular_nerve_r",
+  "pl": "Gałęzie mięśniowe nerwu strzałkowego głębokiego",
+  "en": "Muscular branches of deep fibular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "muscular_branches_of_median_nerve_l",
+  "pl": "Gałęzie nerw pośredni",
+  "en": "Muscular branches of median nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "muscular_branches_of_median_nerve_r",
+  "pl": "Gałęzie nerw pośredni",
+  "en": "Muscular branches of median nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "muscular_branches_of_radial_nerve_l",
+  "pl": "Gałęzie nerw promieniowy",
+  "en": "Muscular branches of radial nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "muscular_branches_of_radial_nerve_r",
+  "pl": "Gałęzie nerw promieniowy",
+  "en": "Muscular branches of radial nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "muscular_branches_of_ulnar_nerve_l",
+  "pl": "Gałęzie nerw łokciowy",
+  "en": "Muscular branches of ulnar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "muscular_branches_of_ulnar_nerve_r",
+  "pl": "Gałęzie nerw łokciowy",
+  "en": "Muscular branches of ulnar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "musculocutaneous_nerve_l",
+  "pl": "Nerw mięśniowo-skórny",
+  "en": "Musculocutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "musculocutaneous_nerve_r",
+  "pl": "Nerw mięśniowo-skórny",
+  "en": "Musculocutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "nerve_to_mylohyoid_muscle_l",
+  "pl": "Nerw żuchwowo-gnykowy",
+  "en": "Nerve to mylohyoid muscle",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "nerve_to_mylohyoid_muscle_r",
+  "pl": "Nerw żuchwowo-gnykowy",
+  "en": "Nerve to mylohyoid muscle",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "nerve_to_piriformis_muscle_l",
+  "pl": "Nerw gruszkowaty",
+  "en": "Nerve to piriformis muscle",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "nerve_to_piriformis_muscle_r",
+  "pl": "Nerw gruszkowaty",
+  "en": "Nerve to piriformis muscle",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "nucleus_of_hypoglossal_nerve",
+  "pl": "Jądro nerwu podjęzykowego",
+  "en": "Nucleus of hypoglossal nerve",
+  "side": "mid",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "nucleus_of_trochlear_nerve",
+  "pl": "Jądro nerwu bloczkowego",
+  "en": "Nucleus of trochlear nerve",
+  "side": "mid",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "obturator_nerve_l",
+  "pl": "Nerw zasłonowy",
+  "en": "Obturator nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "obturator_nerve_r",
+  "pl": "Nerw zasłonowy",
+  "en": "Obturator nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "oculomotor_nerve_iii_l",
+  "pl": "Nerw okoruchowy",
+  "en": "Oculomotor nerve (III)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "oculomotor_nerve_iii_r",
+  "pl": "Nerw okoruchowy",
+  "en": "Oculomotor nerve (III)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "olfactory_nerve_i",
+  "pl": "Nerw węchowy",
+  "en": "Olfactory nerve (I)",
+  "side": "mid",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "ophthalmic_nerve_l",
+  "pl": "Nerw oczny",
+  "en": "Ophthalmic nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ophthalmic_nerve_r",
+  "pl": "Nerw oczny",
+  "en": "Ophthalmic nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "optic_nerve_ii_l",
+  "pl": "Nerw wzrokowy",
+  "en": "Optic nerve (II)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "optic_nerve_ii_r",
+  "pl": "Nerw wzrokowy",
+  "en": "Optic nerve (II)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_branch_of_median_nerve_l",
+  "pl": "Gałąź dłoniowa nerwu pośrodkowego",
+  "en": "Palmar branch of median nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_branch_of_median_nerve_r",
+  "pl": "Gałąź dłoniowa nerwu pośrodkowego",
+  "en": "Palmar branch of median nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_branch_of_ulnar_nerve_l",
+  "pl": "Gałąź dłoniowa nerwu łokciowego",
+  "en": "Palmar branch of ulnar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_branch_of_ulnar_nerve_r",
+  "pl": "Gałąź dłoniowa nerwu łokciowego",
+  "en": "Palmar branch of ulnar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_antebrachial_cutaneous_nerve_l",
+  "pl": "Nerw skórny tylny przedramienia",
+  "en": "Posterior antebrachial cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_antebrachial_cutaneous_nerve_r",
+  "pl": "Nerw skórny tylny przedramienia",
+  "en": "Posterior antebrachial cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_branch_of_medial_antebrachial_cutaneous_nerve_l",
+  "pl": "Gałąź tylna nerw skórny przyśrodkowy przedramienia",
+  "en": "Posterior branch of medial antebrachial cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_branch_of_medial_antebrachial_cutaneous_nerve_r",
+  "pl": "Gałąź tylna nerw skórny przyśrodkowy przedramienia",
+  "en": "Posterior branch of medial antebrachial cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_branch_of_obturator_nerve_l",
+  "pl": "Gałąź tylna nerw zasłonowy",
+  "en": "Posterior branch of obturator nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_branch_of_obturator_nerve_r",
+  "pl": "Gałąź tylna nerw zasłonowy",
+  "en": "Posterior branch of obturator nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_cord_of_brachial_plexus_l",
+  "pl": "Pęczek tylny splotu ramiennego",
+  "en": "Posterior cord of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_cord_of_brachial_plexus_r",
+  "pl": "Pęczek tylny splotu ramiennego",
+  "en": "Posterior cord of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_inferior_trunk_of_brachial_plexus_l",
+  "pl": "Podział tylny pnia dolnego splotu ramiennego",
+  "en": "Posterior division of inferior trunk of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_inferior_trunk_of_brachial_plexus_r",
+  "pl": "Podział tylny pnia dolnego splotu ramiennego",
+  "en": "Posterior division of inferior trunk of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_mandibular_nerve_l",
+  "pl": "Podział tylny nerwu żuchwowego",
+  "en": "Posterior division of mandibular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_mandibular_nerve_r",
+  "pl": "Podział tylny nerwu żuchwowego",
+  "en": "Posterior division of mandibular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_middle_trunk_of_brachial_plexus_l",
+  "pl": "Podział tylny pnia środkowego splotu ramiennego",
+  "en": "Posterior division of middle trunk of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_middle_trunk_of_brachial_plexus_r",
+  "pl": "Podział tylny pnia środkowego splotu ramiennego",
+  "en": "Posterior division of middle trunk of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_superior_trunk_of_brachial_plexus_l",
+  "pl": "Podział tylny pnia górnego splotu ramiennego",
+  "en": "Posterior division of superior trunk of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_superior_trunk_of_brachial_plexus_r",
+  "pl": "Podział tylny pnia górnego splotu ramiennego",
+  "en": "Posterior division of superior trunk of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_femoral_cutaneous_nerve_l",
+  "pl": "Nerw skórny tylny uda",
+  "en": "Posterior femoral cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_femoral_cutaneous_nerve_r",
+  "pl": "Nerw skórny tylny uda",
+  "en": "Posterior femoral cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_interosseous_nerve_of_forearm_l",
+  "pl": "Nerw międzykostny tylny przedramienia",
+  "en": "Posterior interosseous nerve of forearm",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_interosseous_nerve_of_forearm_r",
+  "pl": "Nerw międzykostny tylny przedramienia",
+  "en": "Posterior interosseous nerve of forearm",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_nucleus_of_vagus_nerve",
+  "pl": "Jądro tylne nerwu błędnego; Jądro grzbietowe nerwu błędnego",
+  "en": "Posterior nucleus of vagus nerve",
+  "side": "mid",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_root_of_posterior_femoral_cutaneous_nerve_l",
+  "pl": "Korzeń tylny nerwu skórnego tylnego uda",
+  "en": "Posterior root of posterior femoral cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_root_of_posterior_femoral_cutaneous_nerve_r",
+  "pl": "Korzeń tylny nerwu skórnego tylnego uda",
+  "en": "Posterior root of posterior femoral cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "proper_palmar_digital_branches_of_median_nerve_l",
+  "pl": "Właściwe nerwy dłoniowe palców nerwu pośrodkowego",
+  "en": "Proper palmar digital branches of median nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_palmar_digital_branches_of_median_nerve_r",
+  "pl": "Właściwe nerwy dłoniowe palców nerwu pośrodkowego",
+  "en": "Proper palmar digital branches of median nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_palmar_digital_branches_of_ulnar_nerve_l",
+  "pl": "Właściwe nerwy dłoniowe palców nerwu łokciowego",
+  "en": "Proper palmar digital branches of ulnar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_palmar_digital_branches_of_ulnar_nerve_r",
+  "pl": "Właściwe nerwy dłoniowe palców nerwu łokciowego",
+  "en": "Proper palmar digital branches of ulnar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_plantar_digital_branches_of_lateral_plantar_nerve_l",
+  "pl": "Właściwe nerwy podeszwowe palców nerwu podeszwowego bocznego",
+  "en": "Proper plantar digital branches of lateral plantar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_plantar_digital_branches_of_lateral_plantar_nerve_r",
+  "pl": "Właściwe nerwy podeszwowe palców nerwu podeszwowego bocznego",
+  "en": "Proper plantar digital branches of lateral plantar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_plantar_digital_branches_of_medial_plantar_nerve_l",
+  "pl": "Właściwe nerwy podeszwowe palców nerwu podeszwowego przyśrodkowego",
+  "en": "Proper plantar digital branches of medial plantar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_plantar_digital_branches_of_medial_plantar_nerve_r",
+  "pl": "Właściwe nerwy podeszwowe palców nerwu podeszwowego przyśrodkowego",
+  "en": "Proper plantar digital branches of medial plantar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pudendal_nerve_l",
+  "pl": "Nerw sromowy",
+  "en": "Pudendal nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pudendal_nerve_r",
+  "pl": "Nerw sromowy",
+  "en": "Pudendal nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_nerve_l",
+  "pl": "Nerw promieniowy",
+  "en": "Radial nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_nerve_r",
+  "pl": "Nerw promieniowy",
+  "en": "Radial nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "roots_of_brachial_plexus_l",
+  "pl": "Korzenie splotu ramiennego",
+  "en": "Roots of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "roots_of_brachial_plexus_r",
+  "pl": "Korzenie splotu ramiennego",
+  "en": "Roots of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "saphenous_nerve_l",
+  "pl": "Nerw udowo-goleniowy",
+  "en": "Saphenous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "saphenous_nerve_r",
+  "pl": "Nerw udowo-goleniowy",
+  "en": "Saphenous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sciatic_nerve_l",
+  "pl": "Nerw kulszowy",
+  "en": "Sciatic nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sciatic_nerve_r",
+  "pl": "Nerw kulszowy",
+  "en": "Sciatic nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sensory_root_of_trigeminal_nerve",
+  "pl": "Korzeń czuciowy nerwu trójdzielnego",
+  "en": "Sensory root of trigeminal nerve",
+  "side": "mid",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "spinal_ganglion_l",
+  "pl": "Zwój rdzeniowy",
+  "en": "Spinal ganglion",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "spinal_ganglion_r",
+  "pl": "Zwój rdzeniowy",
+  "en": "Spinal ganglion",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subclavian_nerve_l",
+  "pl": "Nerw podobojczykowy",
+  "en": "Subclavian nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subclavian_nerve_r",
+  "pl": "Nerw podobojczykowy",
+  "en": "Subclavian nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_branch_of_radial_nerve_l",
+  "pl": "Gałąź powierzchowna nerwu promieniowego",
+  "en": "Superficial branch of radial nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_branch_of_radial_nerve_r",
+  "pl": "Gałąź powierzchowna nerwu promieniowego",
+  "en": "Superficial branch of radial nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_branch_of_ulnar_nerve_l",
+  "pl": "Gałąź powierzchowna nerwu łokciowego",
+  "en": "Superficial branch of ulnar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_branch_of_ulnar_nerve_r",
+  "pl": "Gałąź powierzchowna nerwu łokciowego",
+  "en": "Superficial branch of ulnar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_fibular_nerve_l",
+  "pl": "Nerw strzałkowy powierzchowny",
+  "en": "Superficial fibular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "superficial_fibular_nerve_r",
+  "pl": "Nerw strzałkowy powierzchowny",
+  "en": "Superficial fibular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "superior_gluteal_nerve_l",
+  "pl": "Nerw pośladkowy górny",
+  "en": "Superior gluteal nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_gluteal_nerve_r",
+  "pl": "Nerw pośladkowy górny",
+  "en": "Superior gluteal nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_lateral_brachial_cutaneous_nerve_l",
+  "pl": "Nerw skórny górno-boczny ramienia",
+  "en": "Superior lateral brachial cutaneous nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_lateral_brachial_cutaneous_nerve_r",
+  "pl": "Nerw skórny górno-boczny ramienia",
+  "en": "Superior lateral brachial cutaneous nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_subscapular_nerve_l",
+  "pl": "Nerw podłopatkowy górny",
+  "en": "Superior subscapular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_subscapular_nerve_r",
+  "pl": "Nerw podłopatkowy górny",
+  "en": "Superior subscapular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_trunk_of_brachial_plexus_l",
+  "pl": "Pień górny splot ramienny",
+  "en": "Superior trunk of brachial plexus",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_trunk_of_brachial_plexus_r",
+  "pl": "Pień górny splot ramienny",
+  "en": "Superior trunk of brachial plexus",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "suprascapular_nerve_l",
+  "pl": "Nerw nadłopatkowy",
+  "en": "Suprascapular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "suprascapular_nerve_r",
+  "pl": "Nerw nadłopatkowy",
+  "en": "Suprascapular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sural_communicating_branch_of_common_fibular_nerve_l",
+  "pl": "Gałąź łydkowa łącząca nerwu strzałkowego wspólnego",
+  "en": "Sural communicating branch of common fibular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sural_communicating_branch_of_common_fibular_nerve_r",
+  "pl": "Gałąź łydkowa łącząca nerwu strzałkowego wspólnego",
+  "en": "Sural communicating branch of common fibular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sural_nerve_l",
+  "pl": "Nerw łydkowy",
+  "en": "Sural nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sural_nerve_r",
+  "pl": "Nerw łydkowy",
+  "en": "Sural nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sympathetic_nerves_l",
+  "pl": "Nerwy współczulne",
+  "en": "Sympathetic nerves",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "sympathetic_nerves_r",
+  "pl": "Nerwy współczulne",
+  "en": "Sympathetic nerves",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "comp"
+ },
+ {
+  "id": "sympathetic_trunk_l",
+  "pl": "Pień współczulny",
+  "en": "Sympathetic trunk",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sympathetic_trunk_r",
+  "pl": "Pień współczulny",
+  "en": "Sympathetic trunk",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thoracodorsal_nerve_l",
+  "pl": "Nerw piersiowo-grzbietowy",
+  "en": "Thoracodorsal nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thoracodorsal_nerve_r",
+  "pl": "Nerw piersiowo-grzbietowy",
+  "en": "Thoracodorsal nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tibial_nerve_l",
+  "pl": "Nerw piszczelowy",
+  "en": "Tibial nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tibial_nerve_r",
+  "pl": "Nerw piszczelowy",
+  "en": "Tibial nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "trigeminal_nerve_v_l",
+  "pl": "Nerw trójdzielny",
+  "en": "Trigeminal nerve (V)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "trigeminal_nerve_v_r",
+  "pl": "Nerw trójdzielny",
+  "en": "Trigeminal nerve (V)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "norm"
+ },
+ {
+  "id": "trochlear_nerve_iv_l",
+  "pl": "Nerw bloczkowy",
+  "en": "Trochlear nerve (IV)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "trochlear_nerve_iv_r",
+  "pl": "Nerw bloczkowy",
+  "en": "Trochlear nerve (IV)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnar_nerve_l",
+  "pl": "Nerw łokciowy",
+  "en": "Ulnar nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnar_nerve_r",
+  "pl": "Nerw łokciowy",
+  "en": "Ulnar nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vagus_nerve_x",
+  "pl": "Nerw błędny",
+  "en": "Vagus nerve (X)",
+  "side": "mid",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vestibular_nerve_l",
+  "pl": "Nerw przedsionkowy",
+  "en": "Vestibular nerve",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vestibular_nerve_r",
+  "pl": "Nerw przedsionkowy",
+  "en": "Vestibular nerve",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vestibulocochlear_nerve_viii_l",
+  "pl": "Nerw przedsionkowo-ślimakowy (VIII)",
+  "en": "Vestibulocochlear nerve (VIII)",
+  "side": "l",
+  "kind": "nerve",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vestibulocochlear_nerve_viii_r",
+  "pl": "Nerw przedsionkowo-ślimakowy (VIII)",
+  "en": "Vestibulocochlear nerve (VIII)",
+  "side": "r",
+  "kind": "nerve",
+  "pl_from": "exact"
+ }
+]

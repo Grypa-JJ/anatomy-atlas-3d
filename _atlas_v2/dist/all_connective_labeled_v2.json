@@ -1,0 +1,3498 @@
+[
+ {
+  "id": "acetabular_labrum_l",
+  "pl": "Obrąbek panewki",
+  "en": "Acetabular labrum",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "acetabular_labrum_r",
+  "pl": "Obrąbek panewki",
+  "en": "Acetabular labrum",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "acromioclavicular_ligament_l",
+  "pl": "Więzadło barkowo-obojczykowe",
+  "en": "Acromioclavicular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "acromioclavicular_ligament_r",
+  "pl": "Więzadło barkowo-obojczykowe",
+  "en": "Acromioclavicular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "annular_ligament_of_radius_l",
+  "pl": "Więzadło pierścieniowate kości promieniowej",
+  "en": "Annular ligament of radius",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "annular_ligament_of_radius_r",
+  "pl": "Więzadło pierścieniowate kości promieniowej",
+  "en": "Annular ligament of radius",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_cruciate_ligament_l",
+  "pl": "Więzadło krzyżowe przednie",
+  "en": "Anterior cruciate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_cruciate_ligament_r",
+  "pl": "Więzadło krzyżowe przednie",
+  "en": "Anterior cruciate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_ligament_of_fibular_head_l",
+  "pl": "Więzadło przednie głowy strzałki",
+  "en": "Anterior ligament of fibular head",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_ligament_of_fibular_head_r",
+  "pl": "Więzadło przednie głowy strzałki",
+  "en": "Anterior ligament of fibular head",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_longitudinal_ligament",
+  "pl": "Więzadło podłużne przednie",
+  "en": "Anterior longitudinal ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_meniscotibial_ligament_lateral_meniscus_l",
+  "pl": "Anterior meniscotibial ligament (Lateral meniscus)",
+  "en": "Anterior meniscotibial ligament (Lateral meniscus)",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "anterior_meniscotibial_ligament_lateral_meniscus_r",
+  "pl": "Anterior meniscotibial ligament (Lateral meniscus)",
+  "en": "Anterior meniscotibial ligament (Lateral meniscus)",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "anterior_meniscotibial_ligament_medial_meniscus_l",
+  "pl": "Anterior meniscotibial ligament (Medial meniscus)",
+  "en": "Anterior meniscotibial ligament (Medial meniscus)",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "anterior_meniscotibial_ligament_medial_meniscus_r",
+  "pl": "Anterior meniscotibial ligament (Medial meniscus)",
+  "en": "Anterior meniscotibial ligament (Medial meniscus)",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "anterior_sacro_iliac_ligament_l",
+  "pl": "Więzadło krzyżowo-biodrowe przednie",
+  "en": "Anterior sacro-iliac ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_sacro_iliac_ligament_r",
+  "pl": "Więzadło krzyżowo-biodrowe przednie",
+  "en": "Anterior sacro-iliac ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_sternoclavicular_ligament_l",
+  "pl": "Więzadło mostkowo-obojczykowe przednie",
+  "en": "Anterior sternoclavicular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_sternoclavicular_ligament_r",
+  "pl": "Więzadło mostkowo-obojczykowe przednie",
+  "en": "Anterior sternoclavicular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_talocalcaneal_ligament_l",
+  "pl": "Więzadło skokowo-piętowe przednie",
+  "en": "Anterior talocalcaneal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_talocalcaneal_ligament_r",
+  "pl": "Więzadło skokowo-piętowe przednie",
+  "en": "Anterior talocalcaneal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_talofibular_ligament_l",
+  "pl": "Więzadło skokowo-strzałkowe przednie",
+  "en": "Anterior talofibular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_talofibular_ligament_r",
+  "pl": "Więzadło skokowo-strzałkowe przednie",
+  "en": "Anterior talofibular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_tibiofibular_ligament_l",
+  "pl": "Więzadło piszczelowo-strzałkowe przednie",
+  "en": "Anterior tibiofibular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_tibiofibular_ligament_r",
+  "pl": "Więzadło piszczelowo-strzałkowe przednie",
+  "en": "Anterior tibiofibular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "arcuate_popliteal_ligament_l",
+  "pl": "Więzadło podkolanowe łukowate",
+  "en": "Arcuate popliteal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "arcuate_popliteal_ligament_r",
+  "pl": "Więzadło podkolanowe łukowate",
+  "en": "Arcuate popliteal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "articular_capsule_of_acromioclavicular_joint_l",
+  "pl": "Torebka stawowa stawu barkowo-obojczykowego",
+  "en": "Articular capsule of acromioclavicular joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_acromioclavicular_joint_r",
+  "pl": "Torebka stawowa stawu barkowo-obojczykowego",
+  "en": "Articular capsule of acromioclavicular joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_elbow_joint_l",
+  "pl": "Torebka stawowa stawu łokciowego",
+  "en": "Articular capsule of elbow joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_elbow_joint_r",
+  "pl": "Torebka stawowa stawu łokciowego",
+  "en": "Articular capsule of elbow joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_glenohumeral_joint_l",
+  "pl": "Torebka stawowa stawu ramiennego",
+  "en": "Articular capsule of glenohumeral joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_glenohumeral_joint_r",
+  "pl": "Torebka stawowa stawu ramiennego",
+  "en": "Articular capsule of glenohumeral joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_hip_joint_l",
+  "pl": "Torebka stawowa stawu biodrowego",
+  "en": "Articular capsule of hip joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_hip_joint_r",
+  "pl": "Torebka stawowa stawu biodrowego",
+  "en": "Articular capsule of hip joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_interphalangeal_joint_of_great_toe_l",
+  "pl": "Torebka stawowa stawu międzypaliczkowego great toe",
+  "en": "Articular capsule of interphalangeal joint of great toe",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_interphalangeal_joint_of_great_toe_r",
+  "pl": "Torebka stawowa stawu międzypaliczkowego great toe",
+  "en": "Articular capsule of interphalangeal joint of great toe",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_knee_joint_l",
+  "pl": "Torebka stawowa stawu kolanowego",
+  "en": "Articular capsule of knee joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_knee_joint_r",
+  "pl": "Torebka stawowa stawu kolanowego",
+  "en": "Articular capsule of knee joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_radiocarpal_joint_l",
+  "pl": "Torebka stawowa stawu promieniowo-nadgarstkowego",
+  "en": "Articular capsule of radiocarpal joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_radiocarpal_joint_r",
+  "pl": "Torebka stawowa stawu promieniowo-nadgarstkowego",
+  "en": "Articular capsule of radiocarpal joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_sternoclavicular_joint_l",
+  "pl": "Torebka stawowa stawu mostkowo-obojczykowego",
+  "en": "Articular capsule of sternoclavicular joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_sternoclavicular_joint_r",
+  "pl": "Torebka stawowa stawu mostkowo-obojczykowego",
+  "en": "Articular capsule of sternoclavicular joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_superior_tibiofibular_joint_l",
+  "pl": "Torebka stawowa stawu superior tibiofibular",
+  "en": "Articular capsule of superior tibiofibular joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_superior_tibiofibular_joint_r",
+  "pl": "Torebka stawowa stawu superior tibiofibular",
+  "en": "Articular capsule of superior tibiofibular joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_temporomandibular_joint_l",
+  "pl": "Torebka stawowa stawu skroniowo-żuchwowego",
+  "en": "Articular capsule of temporomandibular joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsule_of_temporomandibular_joint_r",
+  "pl": "Torebka stawowa stawu skroniowo-żuchwowego",
+  "en": "Articular capsule of temporomandibular joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_distal_interphalangeal_joints_l",
+  "pl": "Torebki stawowe stawów distal interphalangeal",
+  "en": "Articular capsules of distal interphalangeal joints",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_distal_interphalangeal_joints_r",
+  "pl": "Torebki stawowe stawów distal interphalangeal",
+  "en": "Articular capsules of distal interphalangeal joints",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_distal_interphalangeal_joints_of_foot_l",
+  "pl": "Torebki stawowe stawów distal interphalangeal foot",
+  "en": "Articular capsules of distal interphalangeal joints of foot",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_distal_interphalangeal_joints_of_foot_r",
+  "pl": "Torebki stawowe stawów distal interphalangeal foot",
+  "en": "Articular capsules of distal interphalangeal joints of foot",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_metacarpophalangeal_joints_l",
+  "pl": "Torebki stawowe stawów śródręczno-paliczkowego",
+  "en": "Articular capsules of metacarpophalangeal joints",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_metacarpophalangeal_joints_r",
+  "pl": "Torebki stawowe stawów śródręczno-paliczkowego",
+  "en": "Articular capsules of metacarpophalangeal joints",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_metatarsophalangeal_joints_l",
+  "pl": "Torebki stawowe stawów śródstopno-paliczkowego",
+  "en": "Articular capsules of metatarsophalangeal joints",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_metatarsophalangeal_joints_r",
+  "pl": "Torebki stawowe stawów śródstopno-paliczkowego",
+  "en": "Articular capsules of metatarsophalangeal joints",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_proximal_interphalangeal_joints_l",
+  "pl": "Torebki stawowe stawów proximal interphalangeal",
+  "en": "Articular capsules of proximal interphalangeal joints",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_proximal_interphalangeal_joints_r",
+  "pl": "Torebki stawowe stawów proximal interphalangeal",
+  "en": "Articular capsules of proximal interphalangeal joints",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_proximal_interphalangeal_joints_of_foot_l",
+  "pl": "Torebki stawowe stawów proximal interphalangeal foot",
+  "en": "Articular capsules of proximal interphalangeal joints of foot",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_capsules_of_proximal_interphalangeal_joints_of_foot_r",
+  "pl": "Torebki stawowe stawów proximal interphalangeal foot",
+  "en": "Articular capsules of proximal interphalangeal joints of foot",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_disc_of_acromioclavicular_joint_l",
+  "pl": "Krążek stawowy stawu barkowo-obojczykowego",
+  "en": "Articular disc of acromioclavicular joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_disc_of_acromioclavicular_joint_r",
+  "pl": "Krążek stawowy stawu barkowo-obojczykowego",
+  "en": "Articular disc of acromioclavicular joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_disc_of_distal_radio_ulnar_joint_l",
+  "pl": "Krążek stawowy stawu distal radio-ulnar",
+  "en": "Articular disc of distal radio-ulnar joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_disc_of_distal_radio_ulnar_joint_r",
+  "pl": "Krążek stawowy stawu distal radio-ulnar",
+  "en": "Articular disc of distal radio-ulnar joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_disc_of_sternoclavicular_joint_l",
+  "pl": "Krążek stawowy stawu mostkowo-obojczykowego",
+  "en": "Articular disc of sternoclavicular joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_disc_of_sternoclavicular_joint_r",
+  "pl": "Krążek stawowy stawu mostkowo-obojczykowego",
+  "en": "Articular disc of sternoclavicular joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_disc_of_temporomandibular_joint_l",
+  "pl": "Krążek stawowy stawu skroniowo-żuchwowego",
+  "en": "Articular disc of temporomandibular joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "articular_disc_of_temporomandibular_joint_r",
+  "pl": "Krążek stawowy stawu skroniowo-żuchwowego",
+  "en": "Articular disc of temporomandibular joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "arytenoid_cartilage",
+  "pl": "Chrząstka nalewkowata",
+  "en": "Arytenoid cartilage",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "calcaneocuboid_ligament_l",
+  "pl": "Więzadło piętowo-sześcienne",
+  "en": "Calcaneocuboid ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "calcaneocuboid_ligament_r",
+  "pl": "Więzadło piętowo-sześcienne",
+  "en": "Calcaneocuboid ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "calcaneofibular_ligament_l",
+  "pl": "Więzadło piętowo-strzałkowe",
+  "en": "Calcaneofibular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "calcaneofibular_ligament_r",
+  "pl": "Więzadło piętowo-strzałkowe",
+  "en": "Calcaneofibular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "calcaneonavicular_ligament_l",
+  "pl": "Więzadło piętowo-łódkowe",
+  "en": "Calcaneonavicular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "calcaneonavicular_ligament_r",
+  "pl": "Więzadło piętowo-łódkowe",
+  "en": "Calcaneonavicular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "capitohamate_interosseous_ligament_l",
+  "pl": "Capitohamate interosseous ligament",
+  "en": "Capitohamate interosseous ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "capitohamate_interosseous_ligament_r",
+  "pl": "Capitohamate interosseous ligament",
+  "en": "Capitohamate interosseous ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "collateral_interphalangeal_ligaments_of_foot_l",
+  "pl": "Collateral interphalangeal ligaments of foot",
+  "en": "Collateral interphalangeal ligaments of foot",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "collateral_interphalangeal_ligaments_of_foot_r",
+  "pl": "Collateral interphalangeal ligaments of foot",
+  "en": "Collateral interphalangeal ligaments of foot",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "collateral_interphalangeal_ligaments_of_hand_l",
+  "pl": "Collateral interphalangeal ligaments of hand",
+  "en": "Collateral interphalangeal ligaments of hand",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "collateral_interphalangeal_ligaments_of_hand_r",
+  "pl": "Collateral interphalangeal ligaments of hand",
+  "en": "Collateral interphalangeal ligaments of hand",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "collateral_metacarpophalangeal_ligaments_l",
+  "pl": "Więzadła poboczne stawów śródręczno-paliczkowego",
+  "en": "Collateral metacarpophalangeal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "collateral_metacarpophalangeal_ligaments_r",
+  "pl": "Więzadła poboczne stawów śródręczno-paliczkowego",
+  "en": "Collateral metacarpophalangeal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "collateral_metatarsophalangeal_ligaments_l",
+  "pl": "Więzadła poboczne stawów śródstopno-paliczkowego",
+  "en": "Collateral metatarsophalangeal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "collateral_metatarsophalangeal_ligaments_r",
+  "pl": "Więzadła poboczne stawów śródstopno-paliczkowego",
+  "en": "Collateral metatarsophalangeal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "conoid_ligament_l",
+  "pl": "Więzadło stożkowate",
+  "en": "Conoid ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "conoid_ligament_r",
+  "pl": "Więzadło stożkowate",
+  "en": "Conoid ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "coraco_acromial_ligament_l",
+  "pl": "Więzadło kruczo-barkowe",
+  "en": "Coraco-acromial ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "coraco_acromial_ligament_r",
+  "pl": "Więzadło kruczo-barkowe",
+  "en": "Coraco-acromial ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "coracohumeral_ligament_l",
+  "pl": "Więzadło kruczo-ramienne",
+  "en": "Coracohumeral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "coracohumeral_ligament_r",
+  "pl": "Więzadło kruczo-ramienne",
+  "en": "Coracohumeral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "corniculate_cartilage",
+  "pl": "Chrząstka różokwata",
+  "en": "Corniculate cartilage",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "costal_cartilage_of_eighth_rib_l",
+  "pl": "Chrząstka żebrowa żebra VIII",
+  "en": "Costal cartilage of eighth rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_eighth_rib_r",
+  "pl": "Chrząstka żebrowa żebra VIII",
+  "en": "Costal cartilage of eighth rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_fifth_rib_l",
+  "pl": "Chrząstka żebrowa żebra V",
+  "en": "Costal cartilage of fifth rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_fifth_rib_r",
+  "pl": "Chrząstka żebrowa żebra V",
+  "en": "Costal cartilage of fifth rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_first_rib_l",
+  "pl": "Chrząstka żebrowa żebra I",
+  "en": "Costal cartilage of first rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_first_rib_r",
+  "pl": "Chrząstka żebrowa żebra I",
+  "en": "Costal cartilage of first rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_fourth_rib_l",
+  "pl": "Chrząstka żebrowa żebra IV",
+  "en": "Costal cartilage of fourth rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_fourth_rib_r",
+  "pl": "Chrząstka żebrowa żebra IV",
+  "en": "Costal cartilage of fourth rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_ninth_rib_l",
+  "pl": "Chrząstka żebrowa żebra IX",
+  "en": "Costal cartilage of ninth rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_ninth_rib_r",
+  "pl": "Chrząstka żebrowa żebra IX",
+  "en": "Costal cartilage of ninth rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_second_rib_l",
+  "pl": "Chrząstka żebrowa żebra II",
+  "en": "Costal cartilage of second rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_second_rib_r",
+  "pl": "Chrząstka żebrowa żebra II",
+  "en": "Costal cartilage of second rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_seventh_rib_l",
+  "pl": "Chrząstka żebrowa żebra VII",
+  "en": "Costal cartilage of seventh rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_seventh_rib_r",
+  "pl": "Chrząstka żebrowa żebra VII",
+  "en": "Costal cartilage of seventh rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_sixth_rib_l",
+  "pl": "Chrząstka żebrowa żebra VI",
+  "en": "Costal cartilage of sixth rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_sixth_rib_r",
+  "pl": "Chrząstka żebrowa żebra VI",
+  "en": "Costal cartilage of sixth rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_tenth_rib_l",
+  "pl": "Chrząstka żebrowa żebra X",
+  "en": "Costal cartilage of tenth rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_tenth_rib_r",
+  "pl": "Chrząstka żebrowa żebra X",
+  "en": "Costal cartilage of tenth rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_third_rib_l",
+  "pl": "Chrząstka żebrowa żebra III",
+  "en": "Costal cartilage of third rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costal_cartilage_of_third_rib_r",
+  "pl": "Chrząstka żebrowa żebra III",
+  "en": "Costal cartilage of third rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "costoclavicular_ligament_l",
+  "pl": "Więzadło żebrowo-obojczykowe",
+  "en": "Costoclavicular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "costoclavicular_ligament_r",
+  "pl": "Więzadło żebrowo-obojczykowe",
+  "en": "Costoclavicular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "costotransverse_ligament_l",
+  "pl": "Costotransverse ligament",
+  "en": "Costotransverse ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "costotransverse_ligament_r",
+  "pl": "Costotransverse ligament",
+  "en": "Costotransverse ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "cricoid_cartilage",
+  "pl": "Chrząstka pierścieniowata",
+  "en": "Cricoid cartilage",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cricopharyngeal_ligament",
+  "pl": "Więzadło pierścienno-gardłowe",
+  "en": "Cricopharyngeal ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cuneocuboid_interosseous_ligament_l",
+  "pl": "Więzadło klinowo-sześcienne międzykostne",
+  "en": "Cuneocuboid interosseous ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cuneocuboid_interosseous_ligament_r",
+  "pl": "Więzadło klinowo-sześcienne międzykostne",
+  "en": "Cuneocuboid interosseous ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cuneometatarsal_interosseous_ligaments_l",
+  "pl": "Więzadła klinowo-śródstopne Międzykostne",
+  "en": "Cuneometatarsal interosseous ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cuneometatarsal_interosseous_ligaments_r",
+  "pl": "Więzadła klinowo-śródstopne Międzykostne",
+  "en": "Cuneometatarsal interosseous ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_part_of_tibial_collateral_ligament_l",
+  "pl": "Część głęboka więzadło poboczne piszczelowe",
+  "en": "Deep part of tibial collateral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "deep_part_of_tibial_collateral_ligament_r",
+  "pl": "Część głęboka więzadło poboczne piszczelowe",
+  "en": "Deep part of tibial collateral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "deep_transverse_metacarpal_ligament_l",
+  "pl": "Więzadło poprzeczne głębokie śródręcza",
+  "en": "Deep transverse metacarpal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_transverse_metacarpal_ligament_r",
+  "pl": "Więzadło poprzeczne głębokie śródręcza",
+  "en": "Deep transverse metacarpal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_transverse_metatarsal_ligament_l",
+  "pl": "Więzadło poprzeczne głębokie śródstopia",
+  "en": "Deep transverse metatarsal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_transverse_metatarsal_ligament_r",
+  "pl": "Więzadło poprzeczne głębokie śródstopia",
+  "en": "Deep transverse metatarsal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "descending_part_of_iliofemoral_ligament_l",
+  "pl": "Część więzadło biodrowo-udowe",
+  "en": "Descending part of iliofemoral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "descending_part_of_iliofemoral_ligament_r",
+  "pl": "Część więzadło biodrowo-udowe",
+  "en": "Descending part of iliofemoral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "dorsal_calcaneocuboid_ligament_l",
+  "pl": "Więzadło klinowo-sześcienne grzbietowe",
+  "en": "Dorsal calcaneocuboid ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "dorsal_calcaneocuboid_ligament_r",
+  "pl": "Więzadło klinowo-sześcienne grzbietowe",
+  "en": "Dorsal calcaneocuboid ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "dorsal_carpometacarpal_ligaments_l",
+  "pl": "Więzadła nadgarstkowo-śródręczne grzbietowe",
+  "en": "Dorsal carpometacarpal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_carpometacarpal_ligaments_r",
+  "pl": "Więzadła nadgarstkowo-śródręczne grzbietowe",
+  "en": "Dorsal carpometacarpal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_cuboideonavicular_ligament_l",
+  "pl": "Więzadło sześcienno-łódkowe grzbietowe",
+  "en": "Dorsal cuboideonavicular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_cuboideonavicular_ligament_r",
+  "pl": "Więzadło sześcienno-łódkowe grzbietowe",
+  "en": "Dorsal cuboideonavicular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_cuneocuboid_ligament_l",
+  "pl": "Więzadło klinowo-sześcienne grzbietowe",
+  "en": "Dorsal cuneocuboid ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_cuneocuboid_ligament_r",
+  "pl": "Więzadło klinowo-sześcienne grzbietowe",
+  "en": "Dorsal cuneocuboid ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_cuneonavicular_ligaments_l",
+  "pl": "Więzadła klinowo-łódkowe grzbietowe",
+  "en": "Dorsal cuneonavicular ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_cuneonavicular_ligaments_r",
+  "pl": "Więzadła klinowo-łódkowe grzbietowe",
+  "en": "Dorsal cuneonavicular ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_intercarpal_ligaments_l",
+  "pl": "Więzadła międzynadgarstkowe grzbietowe",
+  "en": "Dorsal intercarpal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_intercarpal_ligaments_r",
+  "pl": "Więzadła międzynadgarstkowe grzbietowe",
+  "en": "Dorsal intercarpal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_intercuneiform_ligaments_l",
+  "pl": "Więzadła międzyklinowe grzbietowe",
+  "en": "Dorsal intercuneiform ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_intercuneiform_ligaments_r",
+  "pl": "Więzadła międzyklinowe grzbietowe",
+  "en": "Dorsal intercuneiform ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_metacarpal_ligaments_l",
+  "pl": "Więzadła grzbietowe śródręcza",
+  "en": "Dorsal metacarpal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_metacarpal_ligaments_r",
+  "pl": "Więzadła grzbietowe śródręcza",
+  "en": "Dorsal metacarpal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_metatarsal_ligaments_l",
+  "pl": "Więzadła śródstopne grzbietowe",
+  "en": "Dorsal metatarsal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_metatarsal_ligaments_r",
+  "pl": "Więzadła śródstopne grzbietowe",
+  "en": "Dorsal metatarsal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_radio_ulnar_ligament_l",
+  "pl": "Dorsal radio-ulnar ligament",
+  "en": "Dorsal radio-ulnar ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "dorsal_radio_ulnar_ligament_r",
+  "pl": "Dorsal radio-ulnar ligament",
+  "en": "Dorsal radio-ulnar ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "dorsal_radiocarpal_ligament_l",
+  "pl": "Więzadło promieniowo-nadgarstkowe grzbietowe",
+  "en": "Dorsal radiocarpal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_radiocarpal_ligament_r",
+  "pl": "Więzadło promieniowo-nadgarstkowe grzbietowe",
+  "en": "Dorsal radiocarpal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_scaphotriquetral_ligament_l",
+  "pl": "Dorsal scaphotriquetral ligament",
+  "en": "Dorsal scaphotriquetral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "dorsal_scaphotriquetral_ligament_r",
+  "pl": "Dorsal scaphotriquetral ligament",
+  "en": "Dorsal scaphotriquetral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "dorsal_tarsometatarsal_ligaments_l",
+  "pl": "Więzadła stępowo-śródstopne grzbietowe",
+  "en": "Dorsal tarsometatarsal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_tarsometatarsal_ligaments_r",
+  "pl": "Więzadła stępowo-śródstopne grzbietowe",
+  "en": "Dorsal tarsometatarsal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_ulnocarpal_ligament_l",
+  "pl": "Więzadło łokciowo-nadgarstkowe grzbietowe",
+  "en": "Dorsal ulnocarpal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_ulnocarpal_ligament_r",
+  "pl": "Więzadło łokciowo-nadgarstkowe grzbietowe",
+  "en": "Dorsal ulnocarpal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_intercostal_membrane_l",
+  "pl": "Błona międzykostna zewnętrzna",
+  "en": "External intercostal membrane",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_intercostal_membrane_r",
+  "pl": "Błona międzykostna zewnętrzna",
+  "en": "External intercostal membrane",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "fibular_collateral_ligament_l",
+  "pl": "Więzadło poboczne strzałkowe",
+  "en": "Fibular collateral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "fibular_collateral_ligament_r",
+  "pl": "Więzadło poboczne strzałkowe",
+  "en": "Fibular collateral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "frenula_capsulae_l",
+  "pl": "Frenula capsulae",
+  "en": "Frenula capsulae",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "frenula_capsulae_r",
+  "pl": "Frenula capsulae",
+  "en": "Frenula capsulae",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "glenoid_labrum_l",
+  "pl": "Obrąbek stawowy",
+  "en": "Glenoid labrum",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "glenoid_labrum_r",
+  "pl": "Obrąbek stawowy",
+  "en": "Glenoid labrum",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliolumbar_ligament_l",
+  "pl": "Więzadło biodrowo-lędźwiowe",
+  "en": "Iliolumbar ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "iliolumbar_ligament_r",
+  "pl": "Więzadło biodrowo-lędźwiowe",
+  "en": "Iliolumbar ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_glenohumeral_ligament_l",
+  "pl": "Inferior glenohumeral ligament",
+  "en": "Inferior glenohumeral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "inferior_glenohumeral_ligament_r",
+  "pl": "Inferior glenohumeral ligament",
+  "en": "Inferior glenohumeral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "inferior_pubic_ligament",
+  "pl": "Więzadło łonowe dolne",
+  "en": "Inferior pubic ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_transverse_scapular_ligament_l",
+  "pl": "(Więzadło poprzeczna łopatki dolne)",
+  "en": "Inferior transverse scapular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "norm"
+ },
+ {
+  "id": "inferior_transverse_scapular_ligament_r",
+  "pl": "(Więzadło poprzeczna łopatki dolne)",
+  "en": "Inferior transverse scapular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "norm"
+ },
+ {
+  "id": "infrapatellar_fat_pad_l",
+  "pl": "Ciało tłuszczowe podrzepkowe",
+  "en": "Infrapatellar fat pad",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "infrapatellar_fat_pad_r",
+  "pl": "Ciało tłuszczowe podrzepkowe",
+  "en": "Infrapatellar fat pad",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interclavicular_ligament",
+  "pl": "Więzadło międzyobojczykowe",
+  "en": "Interclavicular ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intercornual_ligament",
+  "pl": "Intercornual ligament",
+  "en": "Intercornual ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "intercuneiform_interosseous_ligaments_l",
+  "pl": "Więzadła międzyklinowe międzykostne",
+  "en": "Intercuneiform interosseous ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "intercuneiform_interosseous_ligaments_r",
+  "pl": "Więzadła międzyklinowe międzykostne",
+  "en": "Intercuneiform interosseous ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "internal_intercostal_membrane_l",
+  "pl": "Błona międzykostna wewnętrzna",
+  "en": "Internal intercostal membrane",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_intercostal_membrane_r",
+  "pl": "Błona międzykostna wewnętrzna",
+  "en": "Internal intercostal membrane",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interosseous_membrane_of_forearm_l",
+  "pl": "Błona międzykostna przedramienia",
+  "en": "Interosseous membrane of forearm",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interosseous_membrane_of_forearm_r",
+  "pl": "Błona międzykostna przedramienia",
+  "en": "Interosseous membrane of forearm",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interosseous_membrane_of_leg_l",
+  "pl": "Błona międzykostna goleni",
+  "en": "Interosseous membrane of leg",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "norm"
+ },
+ {
+  "id": "interosseous_membrane_of_leg_r",
+  "pl": "Błona międzykostna goleni",
+  "en": "Interosseous membrane of leg",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "norm"
+ },
+ {
+  "id": "interosseous_metacarpal_ligaments_l",
+  "pl": "Więzadła międzykostne śródręcza",
+  "en": "Interosseous metacarpal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interosseous_metacarpal_ligaments_r",
+  "pl": "Więzadła międzykostne śródręcza",
+  "en": "Interosseous metacarpal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interosseous_sacro_iliac_ligament_l",
+  "pl": "Więzadło krzyżowo-biodrowe międzykostne",
+  "en": "Interosseous sacro-iliac ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interosseous_sacro_iliac_ligament_r",
+  "pl": "Więzadło krzyżowo-biodrowe międzykostne",
+  "en": "Interosseous sacro-iliac ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interpubic_disc",
+  "pl": "Krążek międzyłonowy",
+  "en": "Interpubic disc",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intersesamoid_ligament_l",
+  "pl": "Intersesamoid ligament",
+  "en": "Intersesamoid ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "intersesamoid_ligament_r",
+  "pl": "Intersesamoid ligament",
+  "en": "Intersesamoid ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "interspinous_ligaments",
+  "pl": "Więzadła międzykolcowe",
+  "en": "Interspinous ligaments",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intertransverse_ligaments_l",
+  "pl": "Więzadła międzypoprzeczne",
+  "en": "Intertransverse ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intertransverse_ligaments_r",
+  "pl": "Więzadła międzypoprzeczne",
+  "en": "Intertransverse ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intervertebral_disc_c2_c3",
+  "pl": "Krążek międzykręgowy C2–C3",
+  "en": "Intervertebral disc C2-C3",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_c3_c4",
+  "pl": "Krążek międzykręgowy C3–C4",
+  "en": "Intervertebral disc C3-C4",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_c4_c5",
+  "pl": "Krążek międzykręgowy C4–C5",
+  "en": "Intervertebral disc C4-C5",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_c5_c6",
+  "pl": "Krążek międzykręgowy C5–C6",
+  "en": "Intervertebral disc C5-C6",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_c6_c7",
+  "pl": "Krążek międzykręgowy C6–C7",
+  "en": "Intervertebral disc C6-C7",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_c7_t1",
+  "pl": "Krążek międzykręgowy C7–T1",
+  "en": "Intervertebral disc C7-T1",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_l1_l2",
+  "pl": "Krążek międzykręgowy L1–L2",
+  "en": "Intervertebral disc L1-L2",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_l2_l3",
+  "pl": "Krążek międzykręgowy L2–L3",
+  "en": "Intervertebral disc L2-L3",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_l3_l4",
+  "pl": "Krążek międzykręgowy L3–L4",
+  "en": "Intervertebral disc L3-L4",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_l4_l5",
+  "pl": "Krążek międzykręgowy L4–L5",
+  "en": "Intervertebral disc L4-L5",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_l5_s1",
+  "pl": "Krążek międzykręgowy L5–S1",
+  "en": "Intervertebral disc L5-S1",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t1_t2",
+  "pl": "Krążek międzykręgowy T1–T2",
+  "en": "Intervertebral disc T1-T2",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t10_t11",
+  "pl": "Krążek międzykręgowy T10–T11",
+  "en": "Intervertebral disc T10-T11",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t11_t12",
+  "pl": "Krążek międzykręgowy T11–T12",
+  "en": "Intervertebral disc T11-T12",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t12_l1",
+  "pl": "Krążek międzykręgowy T12–L1",
+  "en": "Intervertebral disc T12-L1",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t2_t3",
+  "pl": "Krążek międzykręgowy T2–T3",
+  "en": "Intervertebral disc T2-T3",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t3_t4",
+  "pl": "Krążek międzykręgowy T3–T4",
+  "en": "Intervertebral disc T3-T4",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t4_t5",
+  "pl": "Krążek międzykręgowy T4–T5",
+  "en": "Intervertebral disc T4-T5",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t5_t6",
+  "pl": "Krążek międzykręgowy T5–T6",
+  "en": "Intervertebral disc T5-T6",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t6_t7",
+  "pl": "Krążek międzykręgowy T6–T7",
+  "en": "Intervertebral disc T6-T7",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t7_t8",
+  "pl": "Krążek międzykręgowy T7–T8",
+  "en": "Intervertebral disc T7-T8",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t8_t9",
+  "pl": "Krążek międzykręgowy T8–T9",
+  "en": "Intervertebral disc T8-T9",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intervertebral_disc_t9_t10",
+  "pl": "Krążek międzykręgowy T9–T10",
+  "en": "Intervertebral disc T9-T10",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intra_articular_ligament_of_head_of_rib_l",
+  "pl": "Więzadło głowy żebra śródstawowe",
+  "en": "Intra-articular ligament of head of rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intra_articular_ligament_of_head_of_rib_r",
+  "pl": "Więzadło głowy żebra śródstawowe",
+  "en": "Intra-articular ligament of head of rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ischiofemoral_ligament_l",
+  "pl": "Więzadło kulszowo-udowe",
+  "en": "Ischiofemoral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "ischiofemoral_ligament_r",
+  "pl": "Więzadło kulszowo-udowe",
+  "en": "Ischiofemoral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_meniscus_l",
+  "pl": "Łąkotka boczna",
+  "en": "Lateral meniscus",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_meniscus_r",
+  "pl": "Łąkotka boczna",
+  "en": "Lateral meniscus",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_process_of_nasal_septal_cartilage",
+  "pl": "Lateral process of nasal septal cartilage",
+  "en": "Lateral process of nasal septal cartilage",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "lateral_talocalcaneal_ligament_l",
+  "pl": "Więzadło skokowo-piętowe boczne",
+  "en": "Lateral talocalcaneal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_talocalcaneal_ligament_r",
+  "pl": "Więzadło skokowo-piętowe boczne",
+  "en": "Lateral talocalcaneal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_temporomandibular_ligament_l",
+  "pl": "Lateral temporomandibular ligament",
+  "en": "Lateral temporomandibular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "lateral_temporomandibular_ligament_r",
+  "pl": "Lateral temporomandibular ligament",
+  "en": "Lateral temporomandibular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "lateral_thyrohyoid_ligament_l",
+  "pl": "Lateral thyrohyoid ligament",
+  "en": "Lateral thyrohyoid ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "lateral_thyrohyoid_ligament_r",
+  "pl": "Lateral thyrohyoid ligament",
+  "en": "Lateral thyrohyoid ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "ligament_of_head_of_femur_l",
+  "pl": "Więzadło głowy kości udowej",
+  "en": "Ligament of head of femur",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ligament_of_head_of_femur_r",
+  "pl": "Więzadło głowy kości udowej",
+  "en": "Ligament of head of femur",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ligamenta_flava",
+  "pl": "Więzadła żółte",
+  "en": "Ligamenta flava",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "long_plantar_ligament_l",
+  "pl": "Więzadło podeszwowe długie",
+  "en": "Long plantar ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "long_plantar_ligament_r",
+  "pl": "Więzadło podeszwowe długie",
+  "en": "Long plantar ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lunotriquetral_interosseous_ligament_l",
+  "pl": "Lunotriquetral interosseous ligament",
+  "en": "Lunotriquetral interosseous ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "lunotriquetral_interosseous_ligament_r",
+  "pl": "Lunotriquetral interosseous ligament",
+  "en": "Lunotriquetral interosseous ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "major_alar_cartilage",
+  "pl": "Chrząstka skrzydłowa większa",
+  "en": "Major alar cartilage",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_meniscus_l",
+  "pl": "Łąkotka przyśrodkowa",
+  "en": "Medial meniscus",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_meniscus_r",
+  "pl": "Łąkotka przyśrodkowa",
+  "en": "Medial meniscus",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_talocalcaneal_ligament_l",
+  "pl": "Więzadło skokowo-piętowe przyśrodkowe",
+  "en": "Medial talocalcaneal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_talocalcaneal_ligament_r",
+  "pl": "Więzadło skokowo-piętowe przyśrodkowe",
+  "en": "Medial talocalcaneal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "median_cricothyroid_ligament",
+  "pl": "Więzadło pierścienno-tarczowe pośrodkowe (więzadło stożkowe)",
+  "en": "Median cricothyroid ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "norm"
+ },
+ {
+  "id": "median_thyrohyoid_ligament",
+  "pl": "Median thyrohyoid ligament",
+  "en": "Median thyrohyoid ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "meniscopatellar_ligament_l",
+  "pl": "Meniscopatellar ligament",
+  "en": "Meniscopatellar ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "meniscopatellar_ligament_r",
+  "pl": "Meniscopatellar ligament",
+  "en": "Meniscopatellar ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "metatarsal_interosseous_ligaments_l",
+  "pl": "Więzadła śródstopne międzykostne",
+  "en": "Metatarsal interosseous ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "metatarsal_interosseous_ligaments_r",
+  "pl": "Więzadła śródstopne międzykostne",
+  "en": "Metatarsal interosseous ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_glenohumeral_ligament_l",
+  "pl": "Middle glenohumeral ligament",
+  "en": "Middle glenohumeral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "middle_glenohumeral_ligament_r",
+  "pl": "Middle glenohumeral ligament",
+  "en": "Middle glenohumeral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nasal_septal_cartilage",
+  "pl": "Nasal septal cartilage",
+  "en": "Nasal septal cartilage",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nuchal_ligament",
+  "pl": "Więzadło karkowe",
+  "en": "Nuchal ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "nucleus_pulposus_c2_c3",
+  "pl": "Nucleus pulposus C2-C3",
+  "en": "Nucleus pulposus C2-C3",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_c3_c4",
+  "pl": "Nucleus pulposus C3-C4",
+  "en": "Nucleus pulposus C3-C4",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_c4_c5",
+  "pl": "Nucleus pulposus C4-C5",
+  "en": "Nucleus pulposus C4-C5",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_c5_c6",
+  "pl": "Nucleus pulposus C5-C6",
+  "en": "Nucleus pulposus C5-C6",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_c6_c7",
+  "pl": "Nucleus pulposus C6-C7",
+  "en": "Nucleus pulposus C6-C7",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_c7_t1",
+  "pl": "Nucleus pulposus C7-T1",
+  "en": "Nucleus pulposus C7-T1",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_l1_l2",
+  "pl": "Nucleus pulposus L1-L2",
+  "en": "Nucleus pulposus L1-L2",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_l2_l3",
+  "pl": "Nucleus pulposus L2-L3",
+  "en": "Nucleus pulposus L2-L3",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_l3_l4",
+  "pl": "Nucleus pulposus L3-L4",
+  "en": "Nucleus pulposus L3-L4",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_l4_l5",
+  "pl": "Nucleus pulposus L4-L5",
+  "en": "Nucleus pulposus L4-L5",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_l5_s1",
+  "pl": "Nucleus pulposus L5-S1",
+  "en": "Nucleus pulposus L5-S1",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t1_t2",
+  "pl": "Nucleus pulposus T1-T2",
+  "en": "Nucleus pulposus T1-T2",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t10_t11",
+  "pl": "Nucleus pulposus T10-T11",
+  "en": "Nucleus pulposus T10-T11",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t11_t12",
+  "pl": "Nucleus pulposus T11-T12",
+  "en": "Nucleus pulposus T11-T12",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t12_l1",
+  "pl": "Nucleus pulposus T12-L1",
+  "en": "Nucleus pulposus T12-L1",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t2_t3",
+  "pl": "Nucleus pulposus T2-T3",
+  "en": "Nucleus pulposus T2-T3",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t3_t4",
+  "pl": "Nucleus pulposus T3-T4",
+  "en": "Nucleus pulposus T3-T4",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t4_t5",
+  "pl": "Nucleus pulposus T4-T5",
+  "en": "Nucleus pulposus T4-T5",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t5_t6",
+  "pl": "Nucleus pulposus T5-T6",
+  "en": "Nucleus pulposus T5-T6",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t6_t7",
+  "pl": "Nucleus pulposus T6-T7",
+  "en": "Nucleus pulposus T6-T7",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t7_t8",
+  "pl": "Nucleus pulposus T7-T8",
+  "en": "Nucleus pulposus T7-T8",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t8_t9",
+  "pl": "Nucleus pulposus T8-T9",
+  "en": "Nucleus pulposus T8-T9",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "nucleus_pulposus_t9_t10",
+  "pl": "Nucleus pulposus T9-T10",
+  "en": "Nucleus pulposus T9-T10",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "oblique_cord_l",
+  "pl": "Więzadło skośne",
+  "en": "Oblique cord",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "oblique_cord_r",
+  "pl": "Więzadło skośne",
+  "en": "Oblique cord",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "oblique_popliteal_ligament_l",
+  "pl": "Więzadło podkolanowe skośne",
+  "en": "Oblique popliteal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "oblique_popliteal_ligament_r",
+  "pl": "Więzadło podkolanowe skośne",
+  "en": "Oblique popliteal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "obturator_membrane_l",
+  "pl": "Błona zasłonowa",
+  "en": "Obturator membrane",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "obturator_membrane_r",
+  "pl": "Błona zasłonowa",
+  "en": "Obturator membrane",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_capitohamate_ligament_l",
+  "pl": "Palmar capitohamate ligament",
+  "en": "Palmar capitohamate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_capitohamate_ligament_r",
+  "pl": "Palmar capitohamate ligament",
+  "en": "Palmar capitohamate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_carpometacarpal_ligaments_l",
+  "pl": "Więzadła nadgarstkowo-śródręczne dłoniowe",
+  "en": "Palmar carpometacarpal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_carpometacarpal_ligaments_r",
+  "pl": "Więzadła nadgarstkowo-śródręczne dłoniowe",
+  "en": "Palmar carpometacarpal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_interphalangeal_ligaments_l",
+  "pl": "Palmar interphalangeal ligaments",
+  "en": "Palmar interphalangeal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_interphalangeal_ligaments_r",
+  "pl": "Palmar interphalangeal ligaments",
+  "en": "Palmar interphalangeal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_lunotriquetral_ligament_l",
+  "pl": "Palmar lunotriquetral ligament",
+  "en": "Palmar lunotriquetral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_lunotriquetral_ligament_r",
+  "pl": "Palmar lunotriquetral ligament",
+  "en": "Palmar lunotriquetral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_metacarpal_ligaments_l",
+  "pl": "Więzadła dłoniowe śródręcza",
+  "en": "Palmar metacarpal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_metacarpal_ligaments_r",
+  "pl": "Więzadła dłoniowe śródręcza",
+  "en": "Palmar metacarpal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_radio_ulnar_ligament_l",
+  "pl": "Palmar radio-ulnar ligament",
+  "en": "Palmar radio-ulnar ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_radio_ulnar_ligament_r",
+  "pl": "Palmar radio-ulnar ligament",
+  "en": "Palmar radio-ulnar ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_scaphotriquetral_ligament_l",
+  "pl": "Palmar scaphotriquetral ligament",
+  "en": "Palmar scaphotriquetral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_scaphotriquetral_ligament_r",
+  "pl": "Palmar scaphotriquetral ligament",
+  "en": "Palmar scaphotriquetral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_trapezoideocapitate_ligament_l",
+  "pl": "Palmar trapezoideocapitate ligament",
+  "en": "Palmar trapezoideocapitate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "palmar_trapezoideocapitate_ligament_r",
+  "pl": "Palmar trapezoideocapitate ligament",
+  "en": "Palmar trapezoideocapitate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "pisohamate_ligament_l",
+  "pl": "Więzadło grochowo-haczykowe",
+  "en": "Pisohamate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pisohamate_ligament_r",
+  "pl": "Więzadło grochowo-haczykowe",
+  "en": "Pisohamate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pisometacarpal_ligament_l",
+  "pl": "Więzadło grochowo-śródręczne",
+  "en": "Pisometacarpal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pisometacarpal_ligament_r",
+  "pl": "Więzadło grochowo-śródręczne",
+  "en": "Pisometacarpal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pisotriquetral_ligament_l",
+  "pl": "Pisotriquetral ligament",
+  "en": "Pisotriquetral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "pisotriquetral_ligament_r",
+  "pl": "Pisotriquetral ligament",
+  "en": "Pisotriquetral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "plantar_calcaneocuboid_ligament_l",
+  "pl": "Więzadło piętowo-sześcienne podeszwowe",
+  "en": "Plantar calcaneocuboid ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_calcaneocuboid_ligament_r",
+  "pl": "Więzadło piętowo-sześcienne podeszwowe",
+  "en": "Plantar calcaneocuboid ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_calcaneonavicular_ligament_l",
+  "pl": "Więzadło piętowo-łódkowe podeszwowe",
+  "en": "Plantar calcaneonavicular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "norm"
+ },
+ {
+  "id": "plantar_calcaneonavicular_ligament_r",
+  "pl": "Więzadło piętowo-łódkowe podeszwowe",
+  "en": "Plantar calcaneonavicular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "norm"
+ },
+ {
+  "id": "plantar_cuboideonavicular_ligament_l",
+  "pl": "Więzadło sześcienno-łódkowe podeszwowe",
+  "en": "Plantar cuboideonavicular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_cuboideonavicular_ligament_r",
+  "pl": "Więzadło sześcienno-łódkowe podeszwowe",
+  "en": "Plantar cuboideonavicular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_cuneocuboid_ligament_l",
+  "pl": "Więzadło klinowo-sześcienne podeszwowe",
+  "en": "Plantar cuneocuboid ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_cuneocuboid_ligament_r",
+  "pl": "Więzadło klinowo-sześcienne podeszwowe",
+  "en": "Plantar cuneocuboid ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_cuneonavicular_ligaments_l",
+  "pl": "Więzadła klinowo-łódkowe podeszwowe",
+  "en": "Plantar cuneonavicular ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_cuneonavicular_ligaments_r",
+  "pl": "Więzadła klinowo-łódkowe podeszwowe",
+  "en": "Plantar cuneonavicular ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_intercuneiform_ligaments_l",
+  "pl": "Więzadła międzyklinowe podeszwowe",
+  "en": "Plantar intercuneiform ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_intercuneiform_ligaments_r",
+  "pl": "Więzadła międzyklinowe podeszwowe",
+  "en": "Plantar intercuneiform ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_interphalangeal_ligaments_l",
+  "pl": "Plantar interphalangeal ligaments",
+  "en": "Plantar interphalangeal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "plantar_interphalangeal_ligaments_r",
+  "pl": "Plantar interphalangeal ligaments",
+  "en": "Plantar interphalangeal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "plantar_metatarsal_ligaments_l",
+  "pl": "Więzadła śródstopne podeszwowe",
+  "en": "Plantar metatarsal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_metatarsal_ligaments_r",
+  "pl": "Więzadła śródstopne podeszwowe",
+  "en": "Plantar metatarsal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_metatarsophalangeal_ligaments_l",
+  "pl": "Plantar metatarsophalangeal ligaments",
+  "en": "Plantar metatarsophalangeal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "plantar_metatarsophalangeal_ligaments_r",
+  "pl": "Plantar metatarsophalangeal ligaments",
+  "en": "Plantar metatarsophalangeal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "plantar_tarsometatarsal_ligaments_l",
+  "pl": "Więzadła stępowo-śródstopne podeszwowe",
+  "en": "Plantar tarsometatarsal ligaments",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_tarsometatarsal_ligaments_r",
+  "pl": "Więzadła stępowo-śródstopne podeszwowe",
+  "en": "Plantar tarsometatarsal ligaments",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "popliteofibular_ligament_l",
+  "pl": "Popliteofibular ligament",
+  "en": "Popliteofibular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "popliteofibular_ligament_r",
+  "pl": "Popliteofibular ligament",
+  "en": "Popliteofibular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "posterior_cruciate_ligament_l",
+  "pl": "Więzadło krzyżowe tylne",
+  "en": "Posterior cruciate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_cruciate_ligament_r",
+  "pl": "Więzadło krzyżowe tylne",
+  "en": "Posterior cruciate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_ligament_of_fibular_head_l",
+  "pl": "Więzadło tylne głowy strzałki",
+  "en": "Posterior ligament of fibular head",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_ligament_of_fibular_head_r",
+  "pl": "Więzadło tylne głowy strzałki",
+  "en": "Posterior ligament of fibular head",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_longitudinal_ligament",
+  "pl": "Więzadło podłużne tylne",
+  "en": "Posterior longitudinal ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_meniscotibial_ligament_lateral_meniscus_l",
+  "pl": "Posterior meniscotibial ligament (Lateral meniscus)",
+  "en": "Posterior meniscotibial ligament (Lateral meniscus)",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "posterior_meniscotibial_ligament_lateral_meniscus_r",
+  "pl": "Posterior meniscotibial ligament (Lateral meniscus)",
+  "en": "Posterior meniscotibial ligament (Lateral meniscus)",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "posterior_meniscotibial_ligament_medial_meniscus_l",
+  "pl": "Posterior meniscotibial ligament (Medial meniscus)",
+  "en": "Posterior meniscotibial ligament (Medial meniscus)",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "posterior_meniscotibial_ligament_medial_meniscus_r",
+  "pl": "Posterior meniscotibial ligament (Medial meniscus)",
+  "en": "Posterior meniscotibial ligament (Medial meniscus)",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "posterior_sacro_iliac_ligament_l",
+  "pl": "Więzadło krzyżowo-biodrowe tylne",
+  "en": "Posterior sacro-iliac ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_sacro_iliac_ligament_r",
+  "pl": "Więzadło krzyżowo-biodrowe tylne",
+  "en": "Posterior sacro-iliac ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_sternoclavicular_ligament_l",
+  "pl": "Więzadło mostkowo-obojczykowe tylne",
+  "en": "Posterior sternoclavicular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_sternoclavicular_ligament_r",
+  "pl": "Więzadło mostkowo-obojczykowe tylne",
+  "en": "Posterior sternoclavicular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_talocalcaneal_ligament_l",
+  "pl": "Więzadło skokowo-piętowe tylne",
+  "en": "Posterior talocalcaneal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_talocalcaneal_ligament_r",
+  "pl": "Więzadło skokowo-piętowe tylne",
+  "en": "Posterior talocalcaneal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_talofibular_ligament_l",
+  "pl": "Więzadło skokowo-strzałkowe tylne",
+  "en": "Posterior talofibular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_talofibular_ligament_r",
+  "pl": "Więzadło skokowo-strzałkowe tylne",
+  "en": "Posterior talofibular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_tibiofibular_ligament_l",
+  "pl": "Więzadło piszczelowo-strzałkowe tylne",
+  "en": "Posterior tibiofibular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_tibiofibular_ligament_r",
+  "pl": "Więzadło piszczelowo-strzałkowe tylne",
+  "en": "Posterior tibiofibular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_tibiotalar_ligament_l",
+  "pl": "Więzadło piszczelowo-strzałkowe tylne",
+  "en": "Posterior tibiotalar ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "posterior_tibiotalar_ligament_r",
+  "pl": "Więzadło piszczelowo-strzałkowe tylne",
+  "en": "Posterior tibiotalar ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "pterygospinous_ligament_l",
+  "pl": "Pterygospinous ligament",
+  "en": "Pterygospinous ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "pterygospinous_ligament_r",
+  "pl": "Pterygospinous ligament",
+  "en": "Pterygospinous ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "pubic_symphysis",
+  "pl": "Spojenie łonowe",
+  "en": "Pubic symphysis",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pubofemoral_ligament_l",
+  "pl": "Więzadło łonowo-udowe",
+  "en": "Pubofemoral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pubofemoral_ligament_r",
+  "pl": "Więzadło łonowo-udowe",
+  "en": "Pubofemoral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "quadrangular_membrane_l",
+  "pl": "Błona czworokątna",
+  "en": "Quadrangular membrane",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "quadrangular_membrane_r",
+  "pl": "Błona czworokątna",
+  "en": "Quadrangular membrane",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "quadrate_ligament_l",
+  "pl": "Więzadło czworoboczne",
+  "en": "Quadrate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "quadrate_ligament_r",
+  "pl": "Więzadło czworoboczne",
+  "en": "Quadrate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_collateral_ligament_l",
+  "pl": "Więzadło poboczne promieniowe",
+  "en": "Radial collateral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_collateral_ligament_r",
+  "pl": "Więzadło poboczne promieniowe",
+  "en": "Radial collateral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_collateral_ligament_of_wrist_joint_l",
+  "pl": "Więzadło poboczne promieniowe nadgarstka",
+  "en": "Radial collateral ligament of wrist joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_collateral_ligament_of_wrist_joint_r",
+  "pl": "Więzadło poboczne promieniowe nadgarstka",
+  "en": "Radial collateral ligament of wrist joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radiate_carpal_ligament_l",
+  "pl": "Więzadło nadgarstka promieniste",
+  "en": "Radiate carpal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radiate_carpal_ligament_r",
+  "pl": "Więzadło nadgarstka promieniste",
+  "en": "Radiate carpal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radiate_ligament_of_head_of_rib_l",
+  "pl": "Więzadło głowy żebra promieniste",
+  "en": "Radiate ligament of head of rib",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radiate_ligament_of_head_of_rib_r",
+  "pl": "Więzadło głowy żebra promieniste",
+  "en": "Radiate ligament of head of rib",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radiocapitate_ligament_l",
+  "pl": "Radiocapitate ligament",
+  "en": "Radiocapitate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "radiocapitate_ligament_r",
+  "pl": "Radiocapitate ligament",
+  "en": "Radiocapitate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "radioscaphocapitate_ligament_l",
+  "pl": "Radioscaphocapitate ligament",
+  "en": "Radioscaphocapitate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "radioscaphocapitate_ligament_r",
+  "pl": "Radioscaphocapitate ligament",
+  "en": "Radioscaphocapitate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "sacrococcygeal_symphysis",
+  "pl": "Sacrococcygeal symphysis",
+  "en": "Sacrococcygeal symphysis",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "sacrospinous_ligament_l",
+  "pl": "Więzadło krzyżowo-kolcowe",
+  "en": "Sacrospinous ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sacrospinous_ligament_r",
+  "pl": "Więzadło krzyżowo-kolcowe",
+  "en": "Sacrospinous ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sacrotuberous_ligament_l",
+  "pl": "Więzadło krzyżowo-guzowe",
+  "en": "Sacrotuberous ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sacrotuberous_ligament_r",
+  "pl": "Więzadło krzyżowo-guzowe",
+  "en": "Sacrotuberous ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "scaphocapitate_ligament_l",
+  "pl": "Scaphocapitate ligament",
+  "en": "Scaphocapitate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "scaphocapitate_ligament_r",
+  "pl": "Scaphocapitate ligament",
+  "en": "Scaphocapitate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "scapholunate_interosseous_ligament_l",
+  "pl": "Scapholunate interosseous ligament",
+  "en": "Scapholunate interosseous ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "scapholunate_interosseous_ligament_r",
+  "pl": "Scapholunate interosseous ligament",
+  "en": "Scapholunate interosseous ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "scaphotrapeziotrapezoidal_ligament_l",
+  "pl": "Scaphotrapeziotrapezoidal ligament",
+  "en": "Scaphotrapeziotrapezoidal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "scaphotrapeziotrapezoidal_ligament_r",
+  "pl": "Scaphotrapeziotrapezoidal ligament",
+  "en": "Scaphotrapeziotrapezoidal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "sphenomandibular_ligament_l",
+  "pl": "Więzadło klinowo-żuchwowe",
+  "en": "Sphenomandibular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sphenomandibular_ligament_r",
+  "pl": "Więzadło klinowo-żuchwowe",
+  "en": "Sphenomandibular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "stylohyoid_ligament_l",
+  "pl": "Stylohyoid ligament",
+  "en": "Stylohyoid ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "stylohyoid_ligament_r",
+  "pl": "Stylohyoid ligament",
+  "en": "Stylohyoid ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "stylomandibular_ligament_l",
+  "pl": "Więzadło rylcowo-żuchwowe",
+  "en": "Stylomandibular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "stylomandibular_ligament_r",
+  "pl": "Więzadło rylcowo-żuchwowe",
+  "en": "Stylomandibular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_part_of_tibial_collateral_ligament_l",
+  "pl": "Część powierzchowna więzadło poboczne piszczelowe",
+  "en": "Superficial part of tibial collateral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superficial_part_of_tibial_collateral_ligament_r",
+  "pl": "Część powierzchowna więzadło poboczne piszczelowe",
+  "en": "Superficial part of tibial collateral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_glenohumeral_ligament_l",
+  "pl": "Superior glenohumeral ligament",
+  "en": "Superior glenohumeral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "superior_glenohumeral_ligament_r",
+  "pl": "Superior glenohumeral ligament",
+  "en": "Superior glenohumeral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "superior_pubic_ligament",
+  "pl": "Więzadło łonowe górne",
+  "en": "Superior pubic ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_transverse_scapular_ligament_l",
+  "pl": "Więzadło poprzeczna łopatki górne",
+  "en": "Superior transverse scapular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_transverse_scapular_ligament_r",
+  "pl": "Więzadło poprzeczna łopatki górne",
+  "en": "Superior transverse scapular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supraspinous_ligament",
+  "pl": "Więzadło nadkolcowe",
+  "en": "Supraspinous ligament",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "talocalcaneal_interosseous_ligament_l",
+  "pl": "Więzadło skokowo-piętowe międzykostne",
+  "en": "Talocalcaneal interosseous ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "talocalcaneal_interosseous_ligament_r",
+  "pl": "Więzadło skokowo-piętowe międzykostne",
+  "en": "Talocalcaneal interosseous ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "talonavicular_ligament_l",
+  "pl": "Więzadło skokowo-łódkowe",
+  "en": "Talonavicular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "talonavicular_ligament_r",
+  "pl": "Więzadło skokowo-łódkowe",
+  "en": "Talonavicular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thyroid_cartilage",
+  "pl": "Chrząstka tarczowata",
+  "en": "Thyroid cartilage",
+  "side": "mid",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tibiocalcaneal_ligament_l",
+  "pl": "Tibiocalcaneal ligament",
+  "en": "Tibiocalcaneal ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "tibiocalcaneal_ligament_r",
+  "pl": "Tibiocalcaneal ligament",
+  "en": "Tibiocalcaneal ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "tibionavicular_ligament_l",
+  "pl": "Tibionavicular ligament",
+  "en": "Tibionavicular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "tibionavicular_ligament_r",
+  "pl": "Tibionavicular ligament",
+  "en": "Tibionavicular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "transverse_acetabular_ligament_l",
+  "pl": "Więzadło poprzeczne panewki",
+  "en": "Transverse acetabular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_acetabular_ligament_r",
+  "pl": "Więzadło poprzeczne panewki",
+  "en": "Transverse acetabular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_humeral_ligament_l",
+  "pl": "Więzadło poprzeczne kości ramiennej",
+  "en": "Transverse humeral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_humeral_ligament_r",
+  "pl": "Więzadło poprzeczne kości ramiennej",
+  "en": "Transverse humeral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_ligament_of_knee_l",
+  "pl": "Więzadło poprzeczne kolana",
+  "en": "Transverse ligament of knee",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_ligament_of_knee_r",
+  "pl": "Więzadło poprzeczne kolana",
+  "en": "Transverse ligament of knee",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_part_of_iliofemoral_ligament_l",
+  "pl": "Część poprzeczna więzadło biodrowo-udowe",
+  "en": "Transverse part of iliofemoral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "transverse_part_of_iliofemoral_ligament_r",
+  "pl": "Część poprzeczna więzadło biodrowo-udowe",
+  "en": "Transverse part of iliofemoral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "comp"
+ },
+ {
+  "id": "transverse_tibiofibular_ligament_l",
+  "pl": "Transverse tibiofibular ligament",
+  "en": "Transverse tibiofibular ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "transverse_tibiofibular_ligament_r",
+  "pl": "Transverse tibiofibular ligament",
+  "en": "Transverse tibiofibular ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "trapeziotrapezoidal_interosseous_ligament_l",
+  "pl": "Trapeziotrapezoidal interosseous ligament",
+  "en": "Trapeziotrapezoidal interosseous ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "trapeziotrapezoidal_interosseous_ligament_r",
+  "pl": "Trapeziotrapezoidal interosseous ligament",
+  "en": "Trapeziotrapezoidal interosseous ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "trapezoid_ligament_l",
+  "pl": "Więzadło czworoboczne",
+  "en": "Trapezoid ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "trapezoid_ligament_r",
+  "pl": "Więzadło czworoboczne",
+  "en": "Trapezoid ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "trapezoideocapitate_interosseous_ligament_l",
+  "pl": "Trapezoideocapitate interosseous ligament",
+  "en": "Trapezoideocapitate interosseous ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "trapezoideocapitate_interosseous_ligament_r",
+  "pl": "Trapezoideocapitate interosseous ligament",
+  "en": "Trapezoideocapitate interosseous ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "triquetrocapitate_ligament_l",
+  "pl": "Triquetrocapitate ligament",
+  "en": "Triquetrocapitate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "triquetrocapitate_ligament_r",
+  "pl": "Triquetrocapitate ligament",
+  "en": "Triquetrocapitate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "triquetrohamate_ligament_l",
+  "pl": "Triquetrohamate ligament",
+  "en": "Triquetrohamate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "triquetrohamate_ligament_r",
+  "pl": "Triquetrohamate ligament",
+  "en": "Triquetrohamate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "triradiate_cartilage_l",
+  "pl": "Triradiate cartilage",
+  "en": "Triradiate cartilage",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "triradiate_cartilage_r",
+  "pl": "Triradiate cartilage",
+  "en": "Triradiate cartilage",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "ulnar_collateral_ligament_l",
+  "pl": "Więzadło poboczne łokciowe",
+  "en": "Ulnar collateral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnar_collateral_ligament_r",
+  "pl": "Więzadło poboczne łokciowe",
+  "en": "Ulnar collateral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnar_collateral_ligament_of_wrist_joint_l",
+  "pl": "Więzadło poboczne łokciowe nadgarstka",
+  "en": "Ulnar collateral ligament of wrist joint",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnar_collateral_ligament_of_wrist_joint_r",
+  "pl": "Więzadło poboczne łokciowe nadgarstka",
+  "en": "Ulnar collateral ligament of wrist joint",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnocapitate_ligament_l",
+  "pl": "Ulnocapitate ligament",
+  "en": "Ulnocapitate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "ulnocapitate_ligament_r",
+  "pl": "Ulnocapitate ligament",
+  "en": "Ulnocapitate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "ulnolunate_ligament_l",
+  "pl": "Ulnolunate ligament",
+  "en": "Ulnolunate ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "ulnolunate_ligament_r",
+  "pl": "Ulnolunate ligament",
+  "en": "Ulnolunate ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "ulnopisiform_ligament_l",
+  "pl": "Ulnopisiform ligament",
+  "en": "Ulnopisiform ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "ulnopisiform_ligament_r",
+  "pl": "Ulnopisiform ligament",
+  "en": "Ulnopisiform ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "ulnotriquetral_ligament_l",
+  "pl": "Ulnotriquetral ligament",
+  "en": "Ulnotriquetral ligament",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "ulnotriquetral_ligament_r",
+  "pl": "Ulnotriquetral ligament",
+  "en": "Ulnotriquetral ligament",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "none"
+ },
+ {
+  "id": "zona_orbicularis_l",
+  "pl": "Warstwa okrężna",
+  "en": "Zona orbicularis",
+  "side": "l",
+  "kind": "connective",
+  "pl_from": "exact"
+ },
+ {
+  "id": "zona_orbicularis_r",
+  "pl": "Warstwa okrężna",
+  "en": "Zona orbicularis",
+  "side": "r",
+  "kind": "connective",
+  "pl_from": "exact"
+ }
+]

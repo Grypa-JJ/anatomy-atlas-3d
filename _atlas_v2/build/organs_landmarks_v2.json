@@ -1,0 +1,2511 @@
+[
+ {
+  "ownerId": "greater_omentum",
+  "en": "Peritoneal cavity",
+  "pl": "Jama otrzewnowa (Jama otrzewnej)",
+  "pos": [
+   5.82,
+   -118.24,
+   1039.31
+  ],
+  "approx": false,
+  "dist_mm": 35.1,
+  "lmid": "greater_omentum|Peritoneal cavity"
+ },
+ {
+  "ownerId": "greater_omentum",
+  "en": "Peritoneal structures",
+  "pl": "Struktury otrzewnowe",
+  "pos": [
+   5.33,
+   -119.49,
+   1015.07
+  ],
+  "approx": false,
+  "dist_mm": 38.6,
+  "lmid": "greater_omentum|Peritoneal structures"
+ },
+ {
+  "ownerId": "greater_omentum",
+  "en": "Peritoneum",
+  "pl": "Otrzewna",
+  "pos": [
+   5.75,
+   -108.54,
+   1026.86
+  ],
+  "approx": false,
+  "dist_mm": 26.5,
+  "lmid": "greater_omentum|Peritoneum"
+ },
+ {
+  "ownerId": "greater_omentum",
+  "en": "Visceral fasciae of abdominopelvic cavity",
+  "pl": "Powięzie trzewne jamy brzuszno-miednicznej",
+  "pos": [
+   5.16,
+   -144.44,
+   1002.71
+  ],
+  "approx": false,
+  "dist_mm": 65.3,
+  "lmid": "greater_omentum|Visceral fasciae of abdominopelvic cavity"
+ },
+ {
+  "ownerId": "greater_omentum",
+  "en": "Abdominopelvic cavity",
+  "pl": "Jama brzuszno-miedniczna",
+  "pos": [
+   1.53,
+   -111.55,
+   1051.16
+  ],
+  "approx": false,
+  "dist_mm": 26.8,
+  "lmid": "greater_omentum|Abdominopelvic cavity"
+ },
+ {
+  "ownerId": "mesocolic_taenia",
+  "en": "Taeniae coli",
+  "pl": "Taśmy okrężnicy",
+  "pos": [
+   -129.93,
+   -1.3,
+   989.92
+  ],
+  "approx": false,
+  "dist_mm": 17.9,
+  "lmid": "mesocolic_taenia|Taeniae coli"
+ },
+ {
+  "ownerId": "mesocolic_taenia",
+  "en": "Colon",
+  "pl": "Okrężnica",
+  "pos": [
+   -133.82,
+   -12.56,
+   1015.46
+  ],
+  "approx": false,
+  "dist_mm": 24.6,
+  "lmid": "mesocolic_taenia|Colon"
+ },
+ {
+  "ownerId": "mesocolic_taenia",
+  "en": "Large intestine",
+  "pl": "Jelito grube",
+  "pos": [
+   -138.39,
+   -11.84,
+   1034.94
+  ],
+  "approx": false,
+  "dist_mm": 33.2,
+  "lmid": "mesocolic_taenia|Large intestine"
+ },
+ {
+  "ownerId": "greater_omentum",
+  "en": "Small intestine",
+  "pl": "Jelito cienkie",
+  "pos": [
+   4.59,
+   -110.31,
+   974.24
+  ],
+  "approx": false,
+  "dist_mm": 38.1,
+  "lmid": "greater_omentum|Small intestine"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Digestive canal",
+  "pl": "Przewód pokarmowy",
+  "pos": [
+   0.16,
+   86.06,
+   1239.01
+  ],
+  "approx": false,
+  "dist_mm": 39.8,
+  "lmid": "pleura|Digestive canal"
+ },
+ {
+  "ownerId": "mesocolon",
+  "en": "Pyloric part",
+  "pl": "Część odźwiernikowa",
+  "pos": [
+   -16.02,
+   -71.83,
+   1114.36
+  ],
+  "approx": false,
+  "dist_mm": 1.0,
+  "lmid": "mesocolon|Pyloric part"
+ },
+ {
+  "ownerId": "stomach",
+  "en": "Pyloric antrum",
+  "pl": "Jama odźwiernikowa",
+  "pos": [
+   -12.85,
+   -91.97,
+   1128.27
+  ],
+  "approx": false,
+  "dist_mm": 9.7,
+  "lmid": "stomach|Pyloric antrum"
+ },
+ {
+  "ownerId": "pancreas",
+  "en": "Posterior wall of stomach",
+  "pl": "Ściana tylna żołądka",
+  "pos": [
+   56.81,
+   15.7,
+   1146.78
+  ],
+  "approx": false,
+  "dist_mm": 11.9,
+  "lmid": "pancreas|Posterior wall of stomach"
+ },
+ {
+  "ownerId": "lesser_omentum",
+  "en": "Lesser curvature of stomach",
+  "pl": "Krzywizna mniejsza żołądka",
+  "pos": [
+   6.77,
+   -69.9,
+   1164.67
+  ],
+  "approx": false,
+  "dist_mm": 3.9,
+  "lmid": "lesser_omentum|Lesser curvature of stomach"
+ },
+ {
+  "ownerId": "greater_omentum",
+  "en": "Greater curvature of stomach",
+  "pl": "Krzywizna większa żołądka",
+  "pos": [
+   111.79,
+   -49.01,
+   1133.49
+  ],
+  "approx": false,
+  "dist_mm": 11.3,
+  "lmid": "greater_omentum|Greater curvature of stomach"
+ },
+ {
+  "ownerId": "left_posterior_lateral_segment_of_liver_ii",
+  "en": "Fundus of stomach",
+  "pl": "Dno żołądka; Sklepienie żołądka",
+  "pos": [
+   54.14,
+   -51.4,
+   1227.52
+  ],
+  "approx": false,
+  "dist_mm": 5.0,
+  "lmid": "left_posterior_lateral_segment_of_liver_ii|Fundus of stomach"
+ },
+ {
+  "ownerId": "left_anterior_lateral_segment_of_liver_iii",
+  "en": "Cardiac notch",
+  "pl": "Wcięcie wpustowe",
+  "pos": [
+   14.75,
+   -27.02,
+   1206.78
+  ],
+  "approx": false,
+  "dist_mm": 1.1,
+  "lmid": "left_anterior_lateral_segment_of_liver_iii|Cardiac notch"
+ },
+ {
+  "ownerId": "stomach",
+  "en": "Cardia",
+  "pl": "Część wpustowa",
+  "pos": [
+   11.38,
+   -33.63,
+   1197.38
+  ],
+  "approx": false,
+  "dist_mm": 2.9,
+  "lmid": "stomach|Cardia"
+ },
+ {
+  "ownerId": "stomach",
+  "en": "Body of stomach",
+  "pl": "Trzon żołądka",
+  "pos": [
+   94.84,
+   -79.81,
+   1158.12
+  ],
+  "approx": false,
+  "dist_mm": 11.2,
+  "lmid": "stomach|Body of stomach"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Anterior wall of stomach",
+  "pl": "Ściana przednia żołądka",
+  "pos": [
+   59.53,
+   -100.03,
+   1175.09
+  ],
+  "approx": false,
+  "dist_mm": 11.1,
+  "lmid": "liver|Anterior wall of stomach"
+ },
+ {
+  "ownerId": "lesser_omentum",
+  "en": "Angular incisure",
+  "pl": "Wcięcie kątowe",
+  "pos": [
+   -12.11,
+   -60.32,
+   1145.38
+  ],
+  "approx": false,
+  "dist_mm": 0.5,
+  "lmid": "lesser_omentum|Angular incisure"
+ },
+ {
+  "ownerId": "inferior_lobe_of_right_lung",
+  "en": "Extrahepatic bile ducts",
+  "pl": "Zewnątrzwątrobowe drogi żółciowe",
+  "pos": [
+   -14.56,
+   76.06,
+   1146.72
+  ],
+  "approx": false,
+  "dist_mm": 45.0,
+  "lmid": "inferior_lobe_of_right_lung|Extrahepatic bile ducts"
+ },
+ {
+  "ownerId": "gingiva",
+  "en": "Fauces",
+  "pl": "Cieśń gardzieli",
+  "pos": [
+   37.77,
+   -23.48,
+   1516.17
+  ],
+  "approx": false,
+  "dist_mm": 13.3,
+  "lmid": "gingiva|Fauces"
+ },
+ {
+  "ownerId": "gingiva",
+  "en": "Palate",
+  "pl": "Podniebienie",
+  "pos": [
+   52.94,
+   -36.93,
+   1546.55
+  ],
+  "approx": false,
+  "dist_mm": 17.3,
+  "lmid": "gingiva|Palate"
+ },
+ {
+  "ownerId": "parotid_gland_r",
+  "en": "Major salivary glands",
+  "pl": "Gruczoły ślinowe większe",
+  "pos": [
+   -86.97,
+   -16.2,
+   1554.27
+  ],
+  "approx": false,
+  "dist_mm": 27.3,
+  "lmid": "parotid_gland_r|Major salivary glands"
+ },
+ {
+  "ownerId": "parotid_gland_r",
+  "en": "Salivary glands",
+  "pl": "Gruczoły ślinowe",
+  "pos": [
+   -91.47,
+   -22.11,
+   1563.19
+  ],
+  "approx": false,
+  "dist_mm": 28.3,
+  "lmid": "parotid_gland_r|Salivary glands"
+ },
+ {
+  "ownerId": "oropharynx",
+  "en": "Mouth",
+  "pl": "Jama ustna",
+  "pos": [
+   -45.81,
+   -68.83,
+   1529.53
+  ],
+  "approx": false,
+  "dist_mm": 16.4,
+  "lmid": "oropharynx|Mouth"
+ },
+ {
+  "ownerId": "gingiva",
+  "en": "Pharynx",
+  "pl": "Gardło",
+  "pos": [
+   50.89,
+   -14.5,
+   1558.23
+  ],
+  "approx": false,
+  "dist_mm": 32.2,
+  "lmid": "gingiva|Pharynx"
+ },
+ {
+  "ownerId": "pancreas",
+  "en": "Uncinate process of pancreas",
+  "pl": "Wyrostek trzustki",
+  "pos": [
+   -5.19,
+   -17.88,
+   1093.54
+  ],
+  "approx": false,
+  "dist_mm": 14.0,
+  "lmid": "pancreas|Uncinate process of pancreas"
+ },
+ {
+  "ownerId": "mesocolon",
+  "en": "Tail of pancreas",
+  "pl": "Ogon trzustki",
+  "pos": [
+   76.35,
+   -3.8,
+   1147.06
+  ],
+  "approx": false,
+  "dist_mm": 2.0,
+  "lmid": "mesocolon|Tail of pancreas"
+ },
+ {
+  "ownerId": "pancreas",
+  "en": "Superior border of pancreas",
+  "pl": "Brzeg górny trzustki",
+  "pos": [
+   26.02,
+   -21.36,
+   1146.97
+  ],
+  "approx": false,
+  "dist_mm": 2.2,
+  "lmid": "pancreas|Superior border of pancreas"
+ },
+ {
+  "ownerId": "pancreas",
+  "en": "Posterior surface of pancreas",
+  "pl": "Powierzchnia tylna trzustki",
+  "pos": [
+   12.74,
+   -4.22,
+   1128.05
+  ],
+  "approx": false,
+  "dist_mm": 14.8,
+  "lmid": "pancreas|Posterior surface of pancreas"
+ },
+ {
+  "ownerId": "pancreas",
+  "en": "Pancreatic notch",
+  "pl": "Wcięcie trzustki",
+  "pos": [
+   -5.04,
+   -37.22,
+   1102.62
+  ],
+  "approx": false,
+  "dist_mm": 4.6,
+  "lmid": "pancreas|Pancreatic notch"
+ },
+ {
+  "ownerId": "pancreas",
+  "en": "Neck of pancreas",
+  "pl": "Szyjka trzustki; Cieśń trzustki",
+  "pos": [
+   -10.03,
+   -37.29,
+   1141.77
+  ],
+  "approx": false,
+  "dist_mm": 3.6,
+  "lmid": "pancreas|Neck of pancreas"
+ },
+ {
+  "ownerId": "pancreas",
+  "en": "Pancreas",
+  "pl": "Trzustka",
+  "pos": [
+   -5.15,
+   -31.34,
+   1149.26
+  ],
+  "approx": false,
+  "dist_mm": 9.7,
+  "lmid": "pancreas|Pancreas"
+ },
+ {
+  "ownerId": "stomach",
+  "en": "Omental eminence",
+  "pl": "Guz sieciowy",
+  "pos": [
+   7.51,
+   -50.89,
+   1134.68
+  ],
+  "approx": false,
+  "dist_mm": 2.3,
+  "lmid": "stomach|Omental eminence"
+ },
+ {
+  "ownerId": "pancreas",
+  "en": "Inferior border of pancreas",
+  "pl": "Brzeg dolny trzustki",
+  "pos": [
+   37.06,
+   -20.16,
+   1119.61
+  ],
+  "approx": false,
+  "dist_mm": 3.3,
+  "lmid": "pancreas|Inferior border of pancreas"
+ },
+ {
+  "ownerId": "transverse_colon",
+  "en": "Head of pancreas",
+  "pl": "Głowa trzustki",
+  "pos": [
+   -31.59,
+   -50.49,
+   1103.19
+  ],
+  "approx": false,
+  "dist_mm": 3.6,
+  "lmid": "transverse_colon|Head of pancreas"
+ },
+ {
+  "ownerId": "stomach",
+  "en": "Body of pancreas",
+  "pl": "Trzon trzustki",
+  "pos": [
+   2.68,
+   -54.53,
+   1126.7
+  ],
+  "approx": false,
+  "dist_mm": 2.1,
+  "lmid": "stomach|Body of pancreas"
+ },
+ {
+  "ownerId": "stomach",
+  "en": "Anterosuperior surface of pancreas",
+  "pl": "Powierzchnia trzustki",
+  "pos": [
+   15.54,
+   -45.72,
+   1145.51
+  ],
+  "approx": false,
+  "dist_mm": 9.3,
+  "lmid": "stomach|Anterosuperior surface of pancreas"
+ },
+ {
+  "ownerId": "stomach",
+  "en": "Antero-inferior surface of pancreas",
+  "pl": "Powierzchnia trzustki",
+  "pos": [
+   17.71,
+   -55.97,
+   1114.35
+  ],
+  "approx": false,
+  "dist_mm": 1.0,
+  "lmid": "stomach|Antero-inferior surface of pancreas"
+ },
+ {
+  "ownerId": "stomach",
+  "en": "Anterior border of pancreas",
+  "pl": "Brzeg przedni trzustki",
+  "pos": [
+   16.92,
+   -52.21,
+   1129.76
+  ],
+  "approx": false,
+  "dist_mm": 3.3,
+  "lmid": "stomach|Anterior border of pancreas"
+ },
+ {
+  "ownerId": "lesser_omentum",
+  "en": "Neck of gallbladder",
+  "pl": "Szyjka pęcherzyka żółciowego",
+  "pos": [
+   -19.6,
+   -43.25,
+   1153.03
+  ],
+  "approx": false,
+  "dist_mm": 4.5,
+  "lmid": "lesser_omentum|Neck of gallbladder"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Infundibulum of gallbladder",
+  "pl": "Lejek pęcherzyka żółciowego",
+  "pos": [
+   -41.74,
+   -15.74,
+   1145.21
+  ],
+  "approx": false,
+  "dist_mm": 5.2,
+  "lmid": "liver|Infundibulum of gallbladder"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Fundus of gallbladder",
+  "pl": "Dno pęcherzyka żółciowego",
+  "pos": [
+   -52.82,
+   -92.7,
+   1120.62
+  ],
+  "approx": false,
+  "dist_mm": 8.7,
+  "lmid": "liver|Fundus of gallbladder"
+ },
+ {
+  "ownerId": "anterior_medial_segment_of_liver_v",
+  "en": "Body of gallbladder",
+  "pl": "Trzon pęcherzyka żółciowego",
+  "pos": [
+   -75.26,
+   -51.91,
+   1132.85
+  ],
+  "approx": false,
+  "dist_mm": 2.3,
+  "lmid": "anterior_medial_segment_of_liver_v|Body of gallbladder"
+ },
+ {
+  "ownerId": "suprarenal_gland_r",
+  "en": "Renal impression of liver",
+  "pl": "Wycisk wątroby",
+  "pos": [
+   -51.48,
+   21.28,
+   1143.1
+  ],
+  "approx": false,
+  "dist_mm": 0.8,
+  "lmid": "suprarenal_gland_r|Renal impression of liver"
+ },
+ {
+  "ownerId": "duodenum",
+  "en": "Visceral surface of liver",
+  "pl": "Powierzchnia wątroby",
+  "pos": [
+   -51.59,
+   -21.92,
+   1123.68
+  ],
+  "approx": false,
+  "dist_mm": 7.7,
+  "lmid": "duodenum|Visceral surface of liver"
+ },
+ {
+  "ownerId": "oesophagus",
+  "en": "Umbilical fissure",
+  "pl": "Szczelina pępkowa",
+  "pos": [
+   11.15,
+   -4.25,
+   1225.92
+  ],
+  "approx": false,
+  "dist_mm": 3.2,
+  "lmid": "oesophagus|Umbilical fissure"
+ },
+ {
+  "ownerId": "inferior_lobe_of_right_lung",
+  "en": "Suprarenal impression of liver",
+  "pl": "Wycisk wątroby",
+  "pos": [
+   -20.06,
+   25.8,
+   1182.88
+  ],
+  "approx": false,
+  "dist_mm": 9.8,
+  "lmid": "inferior_lobe_of_right_lung|Suprarenal impression of liver"
+ },
+ {
+  "ownerId": "inferior_lobe_of_right_lung",
+  "en": "Superior surface of liver",
+  "pl": "Powierzchnia górna wątroby",
+  "pos": [
+   -71.12,
+   -27.14,
+   1269.15
+  ],
+  "approx": false,
+  "dist_mm": 3.6,
+  "lmid": "inferior_lobe_of_right_lung|Superior surface of liver"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Right surface of liver",
+  "pl": "Powierzchnia wątroby",
+  "pos": [
+   -129.51,
+   -14.66,
+   1175.14
+  ],
+  "approx": false,
+  "dist_mm": 3.3,
+  "lmid": "pleura|Right surface of liver"
+ },
+ {
+  "ownerId": "greater_omentum",
+  "en": "Right portal fissure",
+  "pl": "Szczelina wrotna prawa",
+  "pos": [
+   -45.44,
+   -86.46,
+   1120.2
+  ],
+  "approx": false,
+  "dist_mm": 6.3,
+  "lmid": "greater_omentum|Right portal fissure"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Right part of liver",
+  "pl": "Wątroba",
+  "pos": [
+   -85.92,
+   -88.9,
+   1187.66
+  ],
+  "approx": false,
+  "dist_mm": 10.5,
+  "lmid": "liver|Right part of liver"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Right medial division of liver",
+  "pl": "Część przyśrodkowa prawa wątroby",
+  "pos": [
+   -73.53,
+   -110.29,
+   1163.91
+  ],
+  "approx": false,
+  "dist_mm": 24.0,
+  "lmid": "liver|Right medial division of liver"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Right lobe of liver",
+  "pl": "Płat prawy wątroby",
+  "pos": [
+   -81.56,
+   -91.83,
+   1219.24
+  ],
+  "approx": false,
+  "dist_mm": 1.0,
+  "lmid": "pleura|Right lobe of liver"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Right lateral division of liver",
+  "pl": "Część boczna prawa wątroby",
+  "pos": [
+   -113.06,
+   -7.89,
+   1233.02
+  ],
+  "approx": false,
+  "dist_mm": 1.5,
+  "lmid": "pleura|Right lateral division of liver"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Quadrate lobe",
+  "pl": "Płat czworoboczny",
+  "pos": [
+   -29.49,
+   -60.89,
+   1150.96
+  ],
+  "approx": false,
+  "dist_mm": 4.2,
+  "lmid": "liver|Quadrate lobe"
+ },
+ {
+  "ownerId": "inferior_lobe_of_right_lung",
+  "en": "Posterior surface of liver",
+  "pl": "Powierzchnia tylna wątroby",
+  "pos": [
+   -59.05,
+   72.41,
+   1191.18
+  ],
+  "approx": false,
+  "dist_mm": 2.7,
+  "lmid": "inferior_lobe_of_right_lung|Posterior surface of liver"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Posterior segment of liver (I)",
+  "pl": "Segment wątroby [I]",
+  "pos": [
+   -2.52,
+   -5.18,
+   1185.17
+  ],
+  "approx": false,
+  "dist_mm": 12.7,
+  "lmid": "liver|Posterior segment of liver (I)"
+ },
+ {
+  "ownerId": "oesophagus",
+  "en": "Posterior part of liver",
+  "pl": "Część tylna wątroby; Płat ogoniasty",
+  "pos": [
+   -0.24,
+   -2.47,
+   1219.21
+  ],
+  "approx": false,
+  "dist_mm": 1.6,
+  "lmid": "oesophagus|Posterior part of liver"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Posterior medial segment of liver (VIII)",
+  "pl": "Segment wątroby [VIII]",
+  "pos": [
+   -63.34,
+   -49.6,
+   1261.48
+  ],
+  "approx": false,
+  "dist_mm": 1.9,
+  "lmid": "pleura|Posterior medial segment of liver (VIII)"
+ },
+ {
+  "ownerId": "bile_duct",
+  "en": "Porta hepatis",
+  "pl": "Wrota wątroby",
+  "pos": [
+   -21.64,
+   -32.0,
+   1151.83
+  ],
+  "approx": false,
+  "dist_mm": 8.6,
+  "lmid": "bile_duct|Porta hepatis"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Papillary process",
+  "pl": "Wyrostek brodawkowaty",
+  "pos": [
+   0.73,
+   -14.53,
+   1169.62
+  ],
+  "approx": false,
+  "dist_mm": 9.8,
+  "lmid": "liver|Papillary process"
+ },
+ {
+  "ownerId": "stomach",
+  "en": "Omental tuberosity of liver",
+  "pl": "Guzowatość wątroby",
+  "pos": [
+   16.54,
+   -15.74,
+   1191.57
+  ],
+  "approx": false,
+  "dist_mm": 2.8,
+  "lmid": "stomach|Omental tuberosity of liver"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Oesophageal impression of liver",
+  "pl": "Wycisk wątroby",
+  "pos": [
+   18.41,
+   2.38,
+   1209.22
+  ],
+  "approx": false,
+  "dist_mm": 5.5,
+  "lmid": "liver|Oesophageal impression of liver"
+ },
+ {
+  "ownerId": "stomach",
+  "en": "Notch for ligamentum teres",
+  "pl": "Wcięcie więzadła obłego",
+  "pos": [
+   -1.72,
+   -86.04,
+   1141.35
+  ],
+  "approx": false,
+  "dist_mm": 0.7,
+  "lmid": "stomach|Notch for ligamentum teres"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Main portal fissure",
+  "pl": "Szczelina wrotna główna",
+  "pos": [
+   -10.58,
+   5.12,
+   1207.13
+  ],
+  "approx": false,
+  "dist_mm": 10.6,
+  "lmid": "liver|Main portal fissure"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Left posterior lateral segment of liver (II)",
+  "pl": "Segment wątroby [II]",
+  "pos": [
+   -106.96,
+   37.33,
+   1213.74
+  ],
+  "approx": false,
+  "dist_mm": 2.4,
+  "lmid": "pleura|Left posterior lateral segment of liver (II)"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Left part of liver",
+  "pl": "Wątroba",
+  "pos": [
+   1.72,
+   -111.3,
+   1214.96
+  ],
+  "approx": false,
+  "dist_mm": 12.4,
+  "lmid": "liver|Left part of liver"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Left medial segment of liver (IV)",
+  "pl": "Segment wątroby [IV]",
+  "pos": [
+   -18.91,
+   -109.85,
+   1173.64
+  ],
+  "approx": false,
+  "dist_mm": 14.3,
+  "lmid": "liver|Left medial segment of liver (IV)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Left medial division of liver",
+  "pl": "Część przyśrodkowa lewa wątroby",
+  "pos": [
+   -21.15,
+   -98.53,
+   1242.95
+  ],
+  "approx": false,
+  "dist_mm": 0.5,
+  "lmid": "pleura|Left medial division of liver"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Left lobe of liver",
+  "pl": "Płat lewy wątroby",
+  "pos": [
+   61.81,
+   -91.26,
+   1228.28
+  ],
+  "approx": false,
+  "dist_mm": 3.2,
+  "lmid": "pleura|Left lobe of liver"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Left lateral division of liver",
+  "pl": "Część boczna lewa wątroby",
+  "pos": [
+   41.73,
+   -96.29,
+   1233.86
+  ],
+  "approx": false,
+  "dist_mm": 2.1,
+  "lmid": "pleura|Left lateral division of liver"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Left anterior lateral segment of liver (III)",
+  "pl": "Segment wątroby [III]",
+  "pos": [
+   36.45,
+   -111.93,
+   1177.05
+  ],
+  "approx": false,
+  "dist_mm": 16.9,
+  "lmid": "liver|Left anterior lateral segment of liver (III)"
+ },
+ {
+  "ownerId": "greater_omentum",
+  "en": "Inferior border of liver",
+  "pl": "Brzeg dolny wątroby",
+  "pos": [
+   -29.61,
+   -86.41,
+   1113.05
+  ],
+  "approx": false,
+  "dist_mm": 7.9,
+  "lmid": "greater_omentum|Inferior border of liver"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Gastric impression of liver",
+  "pl": "Wycisk wątroby",
+  "pos": [
+   43.18,
+   -25.13,
+   1219.32
+  ],
+  "approx": false,
+  "dist_mm": 6.3,
+  "lmid": "liver|Gastric impression of liver"
+ },
+ {
+  "ownerId": "gallbladder",
+  "en": "Fossa for gallbladder",
+  "pl": "Dół pęcherzyka żółciowego",
+  "pos": [
+   -40.76,
+   -36.9,
+   1146.53
+  ],
+  "approx": false,
+  "dist_mm": 3.5,
+  "lmid": "gallbladder|Fossa for gallbladder"
+ },
+ {
+  "ownerId": "oesophagus",
+  "en": "Fissure for ligamentum venosum",
+  "pl": "Szczelina więzadła żylnego",
+  "pos": [
+   7.46,
+   -10.97,
+   1197.78
+  ],
+  "approx": false,
+  "dist_mm": 0.5,
+  "lmid": "oesophagus|Fissure for ligamentum venosum"
+ },
+ {
+  "ownerId": "lesser_omentum",
+  "en": "Fissure for ligamentum teres",
+  "pl": "Szczelina więzadła obłego",
+  "pos": [
+   2.07,
+   -67.96,
+   1164.08
+  ],
+  "approx": false,
+  "dist_mm": 5.5,
+  "lmid": "lesser_omentum|Fissure for ligamentum teres"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Fibrous appendix of liver",
+  "pl": "Przyczepek włóknisty wątroby",
+  "pos": [
+   106.07,
+   -43.34,
+   1214.66
+  ],
+  "approx": false,
+  "dist_mm": 5.9,
+  "lmid": "pleura|Fibrous appendix of liver"
+ },
+ {
+  "ownerId": "gallbladder",
+  "en": "Duodenal impression of liver",
+  "pl": "Wycisk wątroby",
+  "pos": [
+   -61.75,
+   -54.96,
+   1128.68
+  ],
+  "approx": false,
+  "dist_mm": 2.4,
+  "lmid": "gallbladder|Duodenal impression of liver"
+ },
+ {
+  "ownerId": "medial_segmental_bronchus_of_right_lung_bv",
+  "en": "Diaphragmatic surface of liver",
+  "pl": "Powierzchnia wątroby",
+  "pos": [
+   -48.35,
+   -40.8,
+   1275.02
+  ],
+  "approx": false,
+  "dist_mm": 2.5,
+  "lmid": "medial_segmental_bronchus_of_right_lung_bv|Diaphragmatic surface of liver"
+ },
+ {
+  "ownerId": "ascending_colon",
+  "en": "Colic impression of liver",
+  "pl": "Wycisk wątroby",
+  "pos": [
+   -84.01,
+   -22.3,
+   1113.65
+  ],
+  "approx": false,
+  "dist_mm": 1.8,
+  "lmid": "ascending_colon|Colic impression of liver"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Caudate lobe",
+  "pl": "Płat ogoniasty",
+  "pos": [
+   -16.71,
+   -15.81,
+   1165.58
+  ],
+  "approx": false,
+  "dist_mm": 7.8,
+  "lmid": "liver|Caudate lobe"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Cardiac impression of liver",
+  "pl": "Wycisk wątroby",
+  "pos": [
+   9.48,
+   -39.31,
+   1254.18
+  ],
+  "approx": false,
+  "dist_mm": 11.3,
+  "lmid": "liver|Cardiac impression of liver"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Bare area of liver",
+  "pl": "Pole nagie wątroby",
+  "pos": [
+   -48.66,
+   13.66,
+   1263.74
+  ],
+  "approx": false,
+  "dist_mm": 8.9,
+  "lmid": "pleura|Bare area of liver"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Anterior surface of liver",
+  "pl": "Powierzchnia przednia wątroby",
+  "pos": [
+   -46.95,
+   -111.91,
+   1200.88
+  ],
+  "approx": false,
+  "dist_mm": 15.6,
+  "lmid": "liver|Anterior surface of liver"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Anterior medial segment of liver (V)",
+  "pl": "Segment wątroby [V]",
+  "pos": [
+   -75.02,
+   -100.86,
+   1153.51
+  ],
+  "approx": false,
+  "dist_mm": 16.0,
+  "lmid": "liver|Anterior medial segment of liver (V)"
+ },
+ {
+  "ownerId": "liver",
+  "en": "Anterior lateral segment of liver (VI)",
+  "pl": "Segment wątroby [VI]",
+  "pos": [
+   -129.45,
+   -3.85,
+   1118.16
+  ],
+  "approx": false,
+  "dist_mm": 21.8,
+  "lmid": "liver|Anterior lateral segment of liver (VI)"
+ },
+ {
+  "ownerId": "neurohypophysis",
+  "en": "Infundibular stalk",
+  "pl": "Lejek przysadki",
+  "pos": [
+   0.0,
+   -10.9,
+   1605.48
+  ],
+  "approx": false,
+  "dist_mm": 2.1,
+  "lmid": "neurohypophysis|Infundibular stalk"
+ },
+ {
+  "ownerId": "neurohypophysis",
+  "en": "Pars nervosa of hypophysis",
+  "pl": "Część nerwowa przysadki",
+  "pos": [
+   0.0,
+   -10.13,
+   1598.41
+  ],
+  "approx": false,
+  "dist_mm": 2.3,
+  "lmid": "neurohypophysis|Pars nervosa of hypophysis"
+ },
+ {
+  "ownerId": "adenohypophysis",
+  "en": "Pars tubelaris of hypophysis",
+  "pl": "Część guzowa przysadki",
+  "pos": [
+   0.0,
+   -17.3,
+   1605.71
+  ],
+  "approx": false,
+  "dist_mm": 1.8,
+  "lmid": "adenohypophysis|Pars tubelaris of hypophysis"
+ },
+ {
+  "ownerId": "adenohypophysis",
+  "en": "Pars intermedia of hypophysis",
+  "pl": "Część pośrednia przysadki",
+  "pos": [
+   0.0,
+   -21.5,
+   1603.3
+  ],
+  "approx": false,
+  "dist_mm": 1.3,
+  "lmid": "adenohypophysis|Pars intermedia of hypophysis"
+ },
+ {
+  "ownerId": "adenohypophysis",
+  "en": "Pars distalis of hypophysis",
+  "pl": "Część dalsza przysadki",
+  "pos": [
+   0.0,
+   -23.22,
+   1598.72
+  ],
+  "approx": false,
+  "dist_mm": 1.8,
+  "lmid": "adenohypophysis|Pars distalis of hypophysis"
+ },
+ {
+  "ownerId": "adenohypophysis",
+  "en": "Hypophysis",
+  "pl": "Przysadka",
+  "pos": [
+   54.34,
+   -16.41,
+   1599.7
+  ],
+  "approx": false,
+  "dist_mm": 48.4,
+  "lmid": "adenohypophysis|Hypophysis"
+ },
+ {
+  "ownerId": "thyroid_gland",
+  "en": "Parathyroid gland",
+  "pl": "Gruczoł przytarczyczny",
+  "pos": [
+   55.1,
+   -10.3,
+   1468.75
+  ],
+  "approx": false,
+  "dist_mm": 34.0,
+  "lmid": "thyroid_gland|Parathyroid gland"
+ },
+ {
+  "ownerId": "suprarenal_gland_r",
+  "en": "Superior border of suprarenal gland",
+  "pl": "Brzeg górny nadnercza",
+  "pos": [
+   -47.43,
+   12.43,
+   1162.34
+  ],
+  "approx": false,
+  "dist_mm": 1.8,
+  "lmid": "suprarenal_gland_r|Superior border of suprarenal gland"
+ },
+ {
+  "ownerId": "suprarenal_gland_r",
+  "en": "Renal surface of suprarenal gland",
+  "pl": "Powierzchnia nadnercza",
+  "pos": [
+   -46.27,
+   9.16,
+   1137.12
+  ],
+  "approx": false,
+  "dist_mm": 4.1,
+  "lmid": "suprarenal_gland_r|Renal surface of suprarenal gland"
+ },
+ {
+  "ownerId": "suprarenal_gland_r",
+  "en": "Posterior surface of suprarenal gland",
+  "pl": "Powierzchnia tylna nadnercza",
+  "pos": [
+   -34.05,
+   18.07,
+   1148.51
+  ],
+  "approx": false,
+  "dist_mm": 6.6,
+  "lmid": "suprarenal_gland_r|Posterior surface of suprarenal gland"
+ },
+ {
+  "ownerId": "suprarenal_gland_r",
+  "en": "Medial border of suprarenal gland",
+  "pl": "Brzeg przyśrodkowy nadnercza",
+  "pos": [
+   -27.25,
+   -2.62,
+   1142.45
+  ],
+  "approx": false,
+  "dist_mm": 4.6,
+  "lmid": "suprarenal_gland_r|Medial border of suprarenal gland"
+ },
+ {
+  "ownerId": "suprarenal_gland_r",
+  "en": "Hilum of suprarenal gland",
+  "pl": "Wnęka nadnercza",
+  "pos": [
+   -28.27,
+   -4.38,
+   1136.11
+  ],
+  "approx": false,
+  "dist_mm": 3.9,
+  "lmid": "suprarenal_gland_r|Hilum of suprarenal gland"
+ },
+ {
+  "ownerId": "anterior_lateral_segment_of_liver_vi",
+  "en": "Anterior surface of suprarenal gland",
+  "pl": "Powierzchnia przednia nadnercza",
+  "pos": [
+   -48.09,
+   -1.58,
+   1151.22
+  ],
+  "approx": false,
+  "dist_mm": 2.8,
+  "lmid": "anterior_lateral_segment_of_liver_vi|Anterior surface of suprarenal gland"
+ },
+ {
+  "ownerId": "thyroid_gland",
+  "en": "Lobe of thyroid gland",
+  "pl": "Płat gruczoł tarczowy",
+  "pos": [
+   -25.57,
+   -8.38,
+   1467.85
+  ],
+  "approx": false,
+  "dist_mm": 6.0,
+  "lmid": "thyroid_gland|Lobe of thyroid gland"
+ },
+ {
+  "ownerId": "thyroid_gland",
+  "en": "Isthmus of thyroid gland",
+  "pl": "Cieśń gruczołu tarczowego",
+  "pos": [
+   -0.12,
+   -31.17,
+   1461.07
+  ],
+  "approx": false,
+  "dist_mm": 4.4,
+  "lmid": "thyroid_gland|Isthmus of thyroid gland"
+ },
+ {
+  "ownerId": "thyroid_gland",
+  "en": "(Pyramidal lobe)",
+  "pl": "Płat piramidowy",
+  "pos": [
+   0.0,
+   -40.89,
+   1479.99
+  ],
+  "approx": false,
+  "dist_mm": 5.1,
+  "lmid": "thyroid_gland|(Pyramidal lobe)"
+ },
+ {
+  "ownerId": "thyroid_gland",
+  "en": "Endocrine glands",
+  "pl": "Gruczoły dokrewne",
+  "pos": [
+   79.22,
+   -10.3,
+   1479.67
+  ],
+  "approx": false,
+  "dist_mm": 55.4,
+  "lmid": "thyroid_gland|Endocrine glands"
+ },
+ {
+  "ownerId": "glans_penis",
+  "en": "Penis",
+  "pl": "Prącie",
+  "pos": [
+   34.62,
+   -88.53,
+   780.64
+  ],
+  "approx": false,
+  "dist_mm": 22.9,
+  "lmid": "glans_penis|Penis"
+ },
+ {
+  "ownerId": "corpus_cavernosum_of_penis",
+  "en": "Male external genitalia",
+  "pl": "Narządy płciowe męskie zewnętrzne",
+  "pos": [
+   59.91,
+   -83.52,
+   791.29
+  ],
+  "approx": false,
+  "dist_mm": 48.4,
+  "lmid": "corpus_cavernosum_of_penis|Male external genitalia"
+ },
+ {
+  "ownerId": "glans_penis",
+  "en": "Male internal genitalia",
+  "pl": "Narządy płciowe męskie wewnętrzne",
+  "pos": [
+   69.44,
+   -56.88,
+   741.24
+  ],
+  "approx": false,
+  "dist_mm": 67.1,
+  "lmid": "glans_penis|Male internal genitalia"
+ },
+ {
+  "ownerId": "epididymis_r",
+  "en": "Superior pole of testis",
+  "pl": "Biegun górny jądro",
+  "pos": [
+   -20.92,
+   -58.38,
+   759.74
+  ],
+  "approx": false,
+  "dist_mm": 2.0,
+  "lmid": "epididymis_r|Superior pole of testis"
+ },
+ {
+  "ownerId": "ductus_deferens_r",
+  "en": "Posterior border of testis",
+  "pl": "Brzeg tylny jądro",
+  "pos": [
+   -21.5,
+   -36.29,
+   739.59
+  ],
+  "approx": false,
+  "dist_mm": 8.7,
+  "lmid": "ductus_deferens_r|Posterior border of testis"
+ },
+ {
+  "ownerId": "testis_r",
+  "en": "Medial surface of testis",
+  "pl": "Powierzchnia przyśrodkowa jądro",
+  "pos": [
+   -2.63,
+   -54.82,
+   741.0
+  ],
+  "approx": false,
+  "dist_mm": 7.6,
+  "lmid": "testis_r|Medial surface of testis"
+ },
+ {
+  "ownerId": "testis_r",
+  "en": "Lateral surface of testis",
+  "pl": "Powierzchnia boczna jądro",
+  "pos": [
+   -39.78,
+   -55.29,
+   741.49
+  ],
+  "approx": false,
+  "dist_mm": 8.6,
+  "lmid": "testis_r|Lateral surface of testis"
+ },
+ {
+  "ownerId": "testis_r",
+  "en": "Inferior pole of testis",
+  "pl": "Biegun dolny jądro",
+  "pos": [
+   -19.37,
+   -55.28,
+   724.73
+  ],
+  "approx": false,
+  "dist_mm": 1.9,
+  "lmid": "testis_r|Inferior pole of testis"
+ },
+ {
+  "ownerId": "testis_r",
+  "en": "Anterior border of testis",
+  "pl": "Brzeg przedni jądro",
+  "pos": [
+   -19.48,
+   -76.02,
+   740.38
+  ],
+  "approx": false,
+  "dist_mm": 8.8,
+  "lmid": "testis_r|Anterior border of testis"
+ },
+ {
+  "ownerId": "corpus_cavernosum_of_penis",
+  "en": "Male genital system",
+  "pl": "Męski układ płciowy",
+  "pos": [
+   0.22,
+   -121.24,
+   810.66
+  ],
+  "approx": false,
+  "dist_mm": 31.2,
+  "lmid": "corpus_cavernosum_of_penis|Male genital system"
+ },
+ {
+  "ownerId": "corpus_cavernosum_of_penis",
+  "en": "Genital systems",
+  "pl": "Układy płciowe",
+  "pos": [
+   1.09,
+   -120.59,
+   821.78
+  ],
+  "approx": false,
+  "dist_mm": 35.6,
+  "lmid": "corpus_cavernosum_of_penis|Genital systems"
+ },
+ {
+  "ownerId": "thyroid_gland",
+  "en": "Larynx",
+  "pl": "Krtań",
+  "pos": [
+   -34.78,
+   -13.63,
+   1471.44
+  ],
+  "approx": false,
+  "dist_mm": 15.1,
+  "lmid": "thyroid_gland|Larynx"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Superior segment of left lung (SVI)",
+  "pl": "Segment górny płuca lewego (SVI)",
+  "pos": [
+   82.17,
+   103.63,
+   1299.93
+  ],
+  "approx": false,
+  "dist_mm": 22.1,
+  "lmid": "pleura|Superior segment of left lung (SVI)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Posterior basal segment of left lung (SX)",
+  "pl": "Segment tylny podstawny płuca lewego (SX)",
+  "pos": [
+   65.56,
+   103.38,
+   1218.66
+  ],
+  "approx": false,
+  "dist_mm": 22.8,
+  "lmid": "pleura|Posterior basal segment of left lung (SX)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Oblique fissure of left lung",
+  "pl": "Szczelina skośna płuca",
+  "pos": [
+   143.82,
+   -2.97,
+   1284.56
+  ],
+  "approx": false,
+  "dist_mm": 19.4,
+  "lmid": "pleura|Oblique fissure of left lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Medial basal segment of left lung (SVII)",
+  "pl": "Segment przyśrodkowy podstawny płuca lewego (SVII)",
+  "pos": [
+   -5.34,
+   39.16,
+   1246.25
+  ],
+  "approx": false,
+  "dist_mm": 7.7,
+  "lmid": "pleura|Medial basal segment of left lung (SVII)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Lateral basal segment of left lung (SIX)",
+  "pl": "Segment boczny podstawny płuca lewego (SIX)",
+  "pos": [
+   150.23,
+   5.85,
+   1210.24
+  ],
+  "approx": false,
+  "dist_mm": 22.1,
+  "lmid": "pleura|Lateral basal segment of left lung (SIX)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Anterior basal segment of left lung (SVIII)",
+  "pl": "Segment przedni podstawny płuca lewego (SVIII)",
+  "pos": [
+   137.79,
+   -82.02,
+   1213.48
+  ],
+  "approx": false,
+  "dist_mm": 27.3,
+  "lmid": "pleura|Anterior basal segment of left lung (SVIII)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Superior lingular segment of left lung (SIV)",
+  "pl": "Segment górny języczkowy płuca lewego (SIV)",
+  "pos": [
+   112.37,
+   -78.5,
+   1284.82
+  ],
+  "approx": false,
+  "dist_mm": 21.1,
+  "lmid": "pleura|Superior lingular segment of left lung (SIV)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Lingula of left lung",
+  "pl": "Języczek płuca lewego",
+  "pos": [
+   103.46,
+   -89.17,
+   1271.34
+  ],
+  "approx": false,
+  "dist_mm": 18.5,
+  "lmid": "pleura|Lingula of left lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Inferior lingular segment of left lung (SV)",
+  "pl": "Segment dolny języczkowy płuca lewego (SV)",
+  "pos": [
+   95.86,
+   -101.49,
+   1255.29
+  ],
+  "approx": false,
+  "dist_mm": 18.3,
+  "lmid": "pleura|Inferior lingular segment of left lung (SV)"
+ },
+ {
+  "ownerId": "superior_lobe_of_left_lung",
+  "en": "Cardiac notch of left lung",
+  "pl": "Wcięcie sercowe płuca lewego",
+  "pos": [
+   17.82,
+   -83.46,
+   1276.05
+  ],
+  "approx": false,
+  "dist_mm": 22.1,
+  "lmid": "superior_lobe_of_left_lung|Cardiac notch of left lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Apicoposterior segment of left lung (SI+SII)",
+  "pl": "Segment szczytowo-tylny płuca lewego (SI+SII)",
+  "pos": [
+   32.39,
+   1.63,
+   1437.67
+  ],
+  "approx": false,
+  "dist_mm": 7.0,
+  "lmid": "pleura|Apicoposterior segment of left lung (SI+SII)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Anterior segment of left lung (SIII)",
+  "pl": "Segment przedni płuca lewego (SIII)",
+  "pos": [
+   54.47,
+   -84.16,
+   1342.36
+  ],
+  "approx": false,
+  "dist_mm": 23.2,
+  "lmid": "pleura|Anterior segment of left lung (SIII)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Left lung",
+  "pl": "Płuco lewe",
+  "pos": [
+   129.75,
+   9.88,
+   1357.37
+  ],
+  "approx": false,
+  "dist_mm": 23.0,
+  "lmid": "pleura|Left lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Anterior basal segment of right lung (SVIII)",
+  "pl": "Segment przedni podstawny płuca prawego (SVIII)",
+  "pos": [
+   -158.06,
+   -21.37,
+   1220.72
+  ],
+  "approx": false,
+  "dist_mm": 26.5,
+  "lmid": "pleura|Anterior basal segment of right lung (SVIII)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Superior segment of right lung (SVI)",
+  "pl": "Segment górny płuca prawego (SVI)",
+  "pos": [
+   -65.47,
+   102.19,
+   1297.11
+  ],
+  "approx": false,
+  "dist_mm": 20.4,
+  "lmid": "pleura|Superior segment of right lung (SVI)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Posterior basal segment of right lung (SX)",
+  "pl": "Segment tylny podstawny płuca prawego (SX)",
+  "pos": [
+   -68.09,
+   110.61,
+   1222.62
+  ],
+  "approx": false,
+  "dist_mm": 27.9,
+  "lmid": "pleura|Posterior basal segment of right lung (SX)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Oblique fissure of right lung",
+  "pl": "Szczelina skośna płuca",
+  "pos": [
+   -144.57,
+   -27.61,
+   1262.75
+  ],
+  "approx": false,
+  "dist_mm": 19.4,
+  "lmid": "pleura|Oblique fissure of right lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Medial surface of lung",
+  "pl": "Powierzchnia przyśrodkowa płuca",
+  "pos": [
+   5.73,
+   44.53,
+   1276.0
+  ],
+  "approx": false,
+  "dist_mm": 13.8,
+  "lmid": "pleura|Medial surface of lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Medial basal segment of right lung (SVII)",
+  "pl": "Segment przyśrodkowy podstawny płuca prawego (SVII)",
+  "pos": [
+   12.22,
+   33.33,
+   1239.38
+  ],
+  "approx": false,
+  "dist_mm": 5.4,
+  "lmid": "pleura|Medial basal segment of right lung (SVII)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Lobe of lung",
+  "pl": "Płat płuca",
+  "pos": [
+   -142.13,
+   -10.96,
+   1236.36
+  ],
+  "approx": false,
+  "dist_mm": 10.7,
+  "lmid": "pleura|Lobe of lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Lateral basal segment of right lung (SIX)",
+  "pl": "Segment boczny podstawny płuca prawego (SIX)",
+  "pos": [
+   -145.3,
+   63.49,
+   1210.62
+  ],
+  "approx": false,
+  "dist_mm": 36.4,
+  "lmid": "pleura|Lateral basal segment of right lung (SIX)"
+ },
+ {
+  "ownerId": "posterior_lateral_segment_of_liver_vii",
+  "en": "Diaphragmatic surface of lung",
+  "pl": "Powierzchnia płuca",
+  "pos": [
+   -90.48,
+   10.78,
+   1209.04
+  ],
+  "approx": false,
+  "dist_mm": 16.3,
+  "lmid": "posterior_lateral_segment_of_liver_vii|Diaphragmatic surface of lung"
+ },
+ {
+  "ownerId": "posterior_lateral_segment_of_liver_vii",
+  "en": "Base of lung",
+  "pl": "Podstawa płuca",
+  "pos": [
+   -73.37,
+   31.63,
+   1204.52
+  ],
+  "approx": false,
+  "dist_mm": 18.0,
+  "lmid": "posterior_lateral_segment_of_liver_vii|Base of lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Medial segment of right lung (SV)",
+  "pl": "Segment przyśrodkowy płuca prawego (SV)",
+  "pos": [
+   -30.33,
+   -119.37,
+   1266.24
+  ],
+  "approx": false,
+  "dist_mm": 21.2,
+  "lmid": "pleura|Medial segment of right lung (SV)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Lateral segment of right lung (SIV)",
+  "pl": "Segment boczny płuca prawego (SIV)",
+  "pos": [
+   -138.24,
+   -50.68,
+   1274.66
+  ],
+  "approx": false,
+  "dist_mm": 23.8,
+  "lmid": "pleura|Lateral segment of right lung (SIV)"
+ },
+ {
+  "ownerId": "middle_lobe_of_right_lung",
+  "en": "Interlobar surface of lung",
+  "pl": "Powierzchnia płuca",
+  "pos": [
+   -68.9,
+   -14.32,
+   1312.95
+  ],
+  "approx": false,
+  "dist_mm": 10.1,
+  "lmid": "middle_lobe_of_right_lung|Interlobar surface of lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Inferior border of lung",
+  "pl": "Brzeg dolny płuca",
+  "pos": [
+   -49.48,
+   -101.07,
+   1215.12
+  ],
+  "approx": false,
+  "dist_mm": 5.0,
+  "lmid": "pleura|Inferior border of lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Horizontal fissure of right lung",
+  "pl": "Szczelina pozioma",
+  "pos": [
+   -139.12,
+   11.33,
+   1310.77
+  ],
+  "approx": false,
+  "dist_mm": 18.5,
+  "lmid": "pleura|Horizontal fissure of right lung"
+ },
+ {
+  "ownerId": "right_main_bronchus",
+  "en": "Root of lung",
+  "pl": "Korzeń płuca",
+  "pos": [
+   -4.21,
+   6.95,
+   1340.89
+  ],
+  "approx": false,
+  "dist_mm": 8.3,
+  "lmid": "right_main_bronchus|Root of lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Posterior segment of right lung (SII)",
+  "pl": "Segment tylny płuca prawego (SII)",
+  "pos": [
+   -130.21,
+   17.14,
+   1350.42
+  ],
+  "approx": false,
+  "dist_mm": 18.8,
+  "lmid": "pleura|Posterior segment of right lung (SII)"
+ },
+ {
+  "ownerId": "trachea",
+  "en": "Mediastinal surface of lung",
+  "pl": "Powierzchnia płuca",
+  "pos": [
+   -3.18,
+   -15.81,
+   1370.79
+  ],
+  "approx": false,
+  "dist_mm": 17.7,
+  "lmid": "trachea|Mediastinal surface of lung"
+ },
+ {
+  "ownerId": "intermediate_bronchus",
+  "en": "Hilum of lung",
+  "pl": "Wnęka płuca",
+  "pos": [
+   -9.25,
+   10.94,
+   1326.89
+  ],
+  "approx": false,
+  "dist_mm": 9.7,
+  "lmid": "intermediate_bronchus|Hilum of lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Costal surface of lung",
+  "pl": "Powierzchnia płuca",
+  "pos": [
+   -64.36,
+   -80.22,
+   1328.23
+  ],
+  "approx": false,
+  "dist_mm": 18.0,
+  "lmid": "pleura|Costal surface of lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Cardiac impression of lung",
+  "pl": "Wycisk płuca",
+  "pos": [
+   -4.82,
+   -36.29,
+   1315.39
+  ],
+  "approx": false,
+  "dist_mm": 21.6,
+  "lmid": "pleura|Cardiac impression of lung"
+ },
+ {
+  "ownerId": "trachea",
+  "en": "Apical segment of right lung (SI)",
+  "pl": "Segment szczytowy płuca prawego (SI)",
+  "pos": [
+   -3.15,
+   2.94,
+   1416.36
+  ],
+  "approx": false,
+  "dist_mm": 2.4,
+  "lmid": "trachea|Apical segment of right lung (SI)"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Apex of lung",
+  "pl": "Szczyt płuca",
+  "pos": [
+   -33.02,
+   17.54,
+   1434.72
+  ],
+  "approx": false,
+  "dist_mm": 4.4,
+  "lmid": "pleura|Apex of lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Anterior segment of right lung (SIII)",
+  "pl": "Segment przedni płuca prawego (SIII)",
+  "pos": [
+   -44.41,
+   -95.15,
+   1320.51
+  ],
+  "approx": false,
+  "dist_mm": 20.4,
+  "lmid": "pleura|Anterior segment of right lung (SIII)"
+ },
+ {
+  "ownerId": "superior_lobe_of_left_lung",
+  "en": "Anterior border of lung",
+  "pl": "Brzeg przedni płuca",
+  "pos": [
+   6.67,
+   -67.82,
+   1342.94
+  ],
+  "approx": false,
+  "dist_mm": 6.2,
+  "lmid": "superior_lobe_of_left_lung|Anterior border of lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Right lung",
+  "pl": "Płuco prawe",
+  "pos": [
+   -126.59,
+   9.9,
+   1375.52
+  ],
+  "approx": false,
+  "dist_mm": 24.4,
+  "lmid": "pleura|Right lung"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Lungs",
+  "pl": "Płuca",
+  "pos": [
+   124.91,
+   10.26,
+   1371.05
+  ],
+  "approx": false,
+  "dist_mm": 22.8,
+  "lmid": "pleura|Lungs"
+ },
+ {
+  "ownerId": "mucosa_of_nasal_cavity",
+  "en": "Nose",
+  "pl": "Nos",
+  "pos": [
+   -0.11,
+   -107.76,
+   1571.08
+  ],
+  "approx": false,
+  "dist_mm": 2.6,
+  "lmid": "mucosa_of_nasal_cavity|Nose"
+ },
+ {
+  "ownerId": "gingiva",
+  "en": "Paranasal sinuses",
+  "pl": "Zatoki przynosowe",
+  "pos": [
+   28.51,
+   -77.96,
+   1565.39
+  ],
+  "approx": false,
+  "dist_mm": 17.2,
+  "lmid": "gingiva|Paranasal sinuses"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Bronchi",
+  "pl": "Oskrzela",
+  "pos": [
+   -84.25,
+   13.44,
+   1359.78
+  ],
+  "approx": false,
+  "dist_mm": 18.9,
+  "lmid": "pleura|Bronchi"
+ },
+ {
+  "ownerId": "pleura",
+  "en": "Tracheobronchial tree",
+  "pl": "Drzewo tchawiczo-oskrzelowe",
+  "pos": [
+   -55.76,
+   -5.58,
+   1437.53
+  ],
+  "approx": false,
+  "dist_mm": 20.5,
+  "lmid": "pleura|Tracheobronchial tree"
+ },
+ {
+  "ownerId": "urinary_bladder",
+  "en": "Fundus of bladder",
+  "pl": "Dno pęcherza",
+  "pos": [
+   0.39,
+   53.45,
+   863.53
+  ],
+  "approx": false,
+  "dist_mm": 12.4,
+  "lmid": "urinary_bladder|Fundus of bladder"
+ },
+ {
+  "ownerId": "urinary_bladder",
+  "en": "Body of bladder",
+  "pl": "Trzon pęcherza",
+  "pos": [
+   0.39,
+   17.77,
+   886.44
+  ],
+  "approx": false,
+  "dist_mm": 5.9,
+  "lmid": "urinary_bladder|Body of bladder"
+ },
+ {
+  "ownerId": "jejunum",
+  "en": "Apex of bladder",
+  "pl": "Szczyt pęcherza",
+  "pos": [
+   0.39,
+   -41.7,
+   874.31
+  ],
+  "approx": false,
+  "dist_mm": 7.4,
+  "lmid": "jejunum|Apex of bladder"
+ },
+ {
+  "ownerId": "kidney_r",
+  "en": "Superior pole of kidney",
+  "pl": "Biegun górny nerki",
+  "pos": [
+   -47.85,
+   11.89,
+   1147.58
+  ],
+  "approx": false,
+  "dist_mm": 2.0,
+  "lmid": "kidney_r|Superior pole of kidney"
+ },
+ {
+  "ownerId": "renal_pelvis_r",
+  "en": "Renal sinus",
+  "pl": "Zatoka nerkowa",
+  "pos": [
+   -24.7,
+   8.43,
+   1101.0
+  ],
+  "approx": false,
+  "dist_mm": 11.1,
+  "lmid": "renal_pelvis_r|Renal sinus"
+ },
+ {
+  "ownerId": "kidney_r",
+  "en": "Posterior surface of kidney",
+  "pl": "Powierzchnia tylna nerki",
+  "pos": [
+   -59.87,
+   45.87,
+   1092.39
+  ],
+  "approx": false,
+  "dist_mm": 15.9,
+  "lmid": "kidney_r|Posterior surface of kidney"
+ },
+ {
+  "ownerId": "suprarenal_gland_r",
+  "en": "Medial border of kidney",
+  "pl": "Brzeg przyśrodkowy nerki",
+  "pos": [
+   -19.73,
+   0.7,
+   1126.23
+  ],
+  "approx": false,
+  "dist_mm": 11.0,
+  "lmid": "suprarenal_gland_r|Medial border of kidney"
+ },
+ {
+  "ownerId": "kidney_r",
+  "en": "Lateral border of kidney",
+  "pl": "Brzeg boczny nerki",
+  "pos": [
+   -99.14,
+   21.9,
+   1086.48
+  ],
+  "approx": false,
+  "dist_mm": 13.5,
+  "lmid": "kidney_r|Lateral border of kidney"
+ },
+ {
+  "ownerId": "kidney_r",
+  "en": "Inferior pole of kidney",
+  "pl": "Biegun dolny nerki",
+  "pos": [
+   -47.75,
+   -2.02,
+   1039.25
+  ],
+  "approx": false,
+  "dist_mm": 2.7,
+  "lmid": "kidney_r|Inferior pole of kidney"
+ },
+ {
+  "ownerId": "renal_pelvis_r",
+  "en": "Hilum of kidney",
+  "pl": "Wnęka nerkowa",
+  "pos": [
+   -28.44,
+   6.07,
+   1094.67
+  ],
+  "approx": false,
+  "dist_mm": 3.8,
+  "lmid": "renal_pelvis_r|Hilum of kidney"
+ },
+ {
+  "ownerId": "ascending_colon",
+  "en": "Anterior surface of kidney",
+  "pl": "Powierzchnia przednia nerki",
+  "pos": [
+   -70.37,
+   -20.84,
+   1094.13
+  ],
+  "approx": false,
+  "dist_mm": 4.5,
+  "lmid": "ascending_colon|Anterior surface of kidney"
+ },
+ {
+  "ownerId": "cochlea_r",
+  "en": "Spiral canal of cochlea",
+  "pl": "Kanał spiralny ślimaka",
+  "pos": [
+   -42.71,
+   -4.91,
+   1577.36
+  ],
+  "approx": false,
+  "dist_mm": 3.2,
+  "lmid": "cochlea_r|Spiral canal of cochlea"
+ },
+ {
+  "ownerId": "cochlea_r",
+  "en": "Base of cochlea",
+  "pl": "Podstawa ślimaka",
+  "pos": [
+   -43.71,
+   2.9,
+   1579.12
+  ],
+  "approx": false,
+  "dist_mm": 1.0,
+  "lmid": "cochlea_r|Base of cochlea"
+ },
+ {
+  "ownerId": "vestibule_r",
+  "en": "Lateral semicircular canal",
+  "pl": "Kanał półkolisty boczny",
+  "pos": [
+   -47.04,
+   9.8,
+   1583.23
+  ],
+  "approx": false,
+  "dist_mm": 2.4,
+  "lmid": "vestibule_r|Lateral semicircular canal"
+ },
+ {
+  "ownerId": "vestibule_r",
+  "en": "Posterior semicircular canal",
+  "pl": "Kanał półkolisty tylny",
+  "pos": [
+   -38.89,
+   15.93,
+   1581.09
+  ],
+  "approx": false,
+  "dist_mm": 1.8,
+  "lmid": "vestibule_r|Posterior semicircular canal"
+ },
+ {
+  "ownerId": "vestibule_r",
+  "en": "Anterior semicircular canal",
+  "pl": "Kanał półkolisty przedni",
+  "pos": [
+   -38.69,
+   7.88,
+   1590.89
+  ],
+  "approx": false,
+  "dist_mm": 0.9,
+  "lmid": "vestibule_r|Anterior semicircular canal"
+ },
+ {
+  "ownerId": "cornea_r",
+  "en": "Anterior pole of eyeball",
+  "pl": "Biegun przedni gałki ocznej",
+  "pos": [
+   -31.32,
+   -83.27,
+   1591.59
+  ],
+  "approx": false,
+  "dist_mm": 5.1,
+  "lmid": "cornea_r|Anterior pole of eyeball"
+ },
+ {
+  "ownerId": "cornea_r",
+  "en": "Anterior surface of cornea",
+  "pl": "Powierzchnia przednia rogówka",
+  "pos": [
+   -33.38,
+   -83.16,
+   1586.29
+  ],
+  "approx": false,
+  "dist_mm": 6.0,
+  "lmid": "cornea_r|Anterior surface of cornea"
+ },
+ {
+  "ownerId": "vitreous_body_r",
+  "en": "Posterior surface of cornea",
+  "pl": "Powierzchnia tylna rogówka",
+  "pos": [
+   -30.16,
+   -69.14,
+   1589.92
+  ],
+  "approx": false,
+  "dist_mm": 0.3,
+  "lmid": "vitreous_body_r|Posterior surface of cornea"
+ },
+ {
+  "ownerId": "lacrimal_sac",
+  "en": "Eyeball",
+  "pl": "Gałka oczna",
+  "pos": [
+   30.7,
+   -90.23,
+   1580.53
+  ],
+  "approx": false,
+  "dist_mm": 26.2,
+  "lmid": "lacrimal_sac|Eyeball"
+ },
+ {
+  "ownerId": "cornea_r",
+  "en": "Anterior surface of iris",
+  "pl": "Powierzchnia przednia tęczówka",
+  "pos": [
+   -27.51,
+   -81.53,
+   1588.82
+  ],
+  "approx": false,
+  "dist_mm": 4.0,
+  "lmid": "cornea_r|Anterior surface of iris"
+ },
+ {
+  "ownerId": "vitreous_body_r",
+  "en": "Dilator pupillae",
+  "pl": "Mięsień rozwieracz źrenicy",
+  "pos": [
+   -28.66,
+   -68.31,
+   1593.46
+  ],
+  "approx": false,
+  "dist_mm": 1.2,
+  "lmid": "vitreous_body_r|Dilator pupillae"
+ },
+ {
+  "ownerId": "cornea_r",
+  "en": "Folds of iris",
+  "pl": "Fałdy tęczówki",
+  "pos": [
+   -31.82,
+   -77.75,
+   1594.98
+  ],
+  "approx": false,
+  "dist_mm": 0.6,
+  "lmid": "cornea_r|Folds of iris"
+ },
+ {
+  "ownerId": "lens_r",
+  "en": "Posterior surface of iris",
+  "pl": "Powierzchnia tylna tęczówka",
+  "pos": [
+   -30.89,
+   -68.38,
+   1587.68
+  ],
+  "approx": false,
+  "dist_mm": 1.5,
+  "lmid": "lens_r|Posterior surface of iris"
+ },
+ {
+  "ownerId": "cornea_r",
+  "en": "Pupil",
+  "pl": "Źrenica",
+  "pos": [
+   -31.17,
+   -78.16,
+   1591.43
+  ],
+  "approx": false,
+  "dist_mm": 0.3,
+  "lmid": "cornea_r|Pupil"
+ },
+ {
+  "ownerId": "cornea_r",
+  "en": "Pupillary margin of iris",
+  "pl": "Brzeg tęczówka",
+  "pos": [
+   -31.27,
+   -78.82,
+   1593.06
+  ],
+  "approx": false,
+  "dist_mm": 0.9,
+  "lmid": "cornea_r|Pupillary margin of iris"
+ },
+ {
+  "ownerId": "vitreous_body_r",
+  "en": "Sphincter pupillae",
+  "pl": "Mięsień zwieracz źrenicy",
+  "pos": [
+   -32.33,
+   -69.11,
+   1590.11
+  ],
+  "approx": false,
+  "dist_mm": 0.2,
+  "lmid": "vitreous_body_r|Sphincter pupillae"
+ },
+ {
+  "ownerId": "suspensory_ligament_of_eyeball_r",
+  "en": "Eyeball'",
+  "pl": "Gałka oczna",
+  "pos": [
+   -51.25,
+   -60.45,
+   1590.58
+  ],
+  "approx": false,
+  "dist_mm": 3.3,
+  "lmid": "suspensory_ligament_of_eyeball_r|Eyeball'"
+ },
+ {
+  "ownerId": "sclera_r",
+  "en": "Posterior pole of eyeball",
+  "pl": "Biegun tylny gałki ocznej",
+  "pos": [
+   -29.78,
+   -42.43,
+   1590.1
+  ],
+  "approx": false,
+  "dist_mm": 8.4,
+  "lmid": "sclera_r|Posterior pole of eyeball"
+ },
+ {
+  "ownerId": "lacrimal_sac",
+  "en": "Lacrimal apparatus",
+  "pl": "Narząd łzowy",
+  "pos": [
+   12.34,
+   -93.43,
+   1571.23
+  ],
+  "approx": false,
+  "dist_mm": 23.7,
+  "lmid": "lacrimal_sac|Lacrimal apparatus"
+ }
+]

@@ -1,0 +1,288 @@
+[
+ {
+  "ownerId": "ulnar_nerve_r",
+  "en": "Ganglia",
+  "pl": "Zwoje",
+  "pos": [
+   -175.17,
+   33.26,
+   1001.85
+  ],
+  "approx": false,
+  "dist_mm": 21.9,
+  "lmid": "ulnar_nerve_r|Ganglia"
+ },
+ {
+  "ownerId": "ulnar_nerve_r",
+  "en": "Roots of nerves",
+  "pl": "Korzenie nerwów",
+  "pos": [
+   -185.81,
+   38.97,
+   1042.33
+  ],
+  "approx": false,
+  "dist_mm": 5.7,
+  "lmid": "ulnar_nerve_r|Roots of nerves"
+ },
+ {
+  "ownerId": "genital_branch_of_genitofemoral_nerve_r",
+  "en": "Sacral plexus",
+  "pl": "Splot krzyżowy",
+  "pos": [
+   -35.08,
+   -39.96,
+   919.2
+  ],
+  "approx": false,
+  "dist_mm": 8.8,
+  "lmid": "genital_branch_of_genitofemoral_nerve_r|Sacral plexus"
+ },
+ {
+  "ownerId": "intercostal_nerves_r",
+  "en": "Branches of anterior part of lumbar plexus",
+  "pl": "Gałęzie części przedniej splotu lędźwiowego",
+  "pos": [
+   -41.28,
+   -85.92,
+   1009.98
+  ],
+  "approx": false,
+  "dist_mm": 15.0,
+  "lmid": "intercostal_nerves_r|Branches of anterior part of lumbar plexus"
+ },
+ {
+  "ownerId": "intercostal_nerves_r",
+  "en": "Branches of posterior part of lumbar plexus",
+  "pl": "Gałęzie części tylnej splotu lędźwiowego",
+  "pos": [
+   -42.98,
+   -66.14,
+   1018.19
+  ],
+  "approx": false,
+  "dist_mm": 16.3,
+  "lmid": "intercostal_nerves_r|Branches of posterior part of lumbar plexus"
+ },
+ {
+  "ownerId": "intercostal_nerves_r",
+  "en": "Lumbar plexus",
+  "pl": "Splot lędźwiowy",
+  "pos": [
+   -40.71,
+   -53.46,
+   1026.75
+  ],
+  "approx": false,
+  "dist_mm": 27.4,
+  "lmid": "intercostal_nerves_r|Lumbar plexus"
+ },
+ {
+  "ownerId": "intercostal_nerves_r",
+  "en": "Lumbosacral plexus",
+  "pl": "Splot lędźwiowo-krzyżowy",
+  "pos": [
+   -41.67,
+   -63.24,
+   1038.85
+  ],
+  "approx": false,
+  "dist_mm": 21.7,
+  "lmid": "intercostal_nerves_r|Lumbosacral plexus"
+ },
+ {
+  "ownerId": "vagus_nerve_x",
+  "en": "Anterior rami of lumbar nerves",
+  "pl": "Gałęzie brzuszne nerwów lędźwiowych",
+  "pos": [
+   207.02,
+   37.52,
+   1072.82
+  ],
+  "approx": false,
+  "dist_mm": 164.7,
+  "lmid": "vagus_nerve_x|Anterior rami of lumbar nerves"
+ },
+ {
+  "ownerId": "vagus_nerve_x",
+  "en": "Posterior rami of lumbar nerves",
+  "pl": "Gałęzie grzbietowe nerwów lędźwiowych",
+  "pos": [
+   208.9,
+   42.01,
+   1061.69
+  ],
+  "approx": false,
+  "dist_mm": 172.7,
+  "lmid": "vagus_nerve_x|Posterior rami of lumbar nerves"
+ },
+ {
+  "ownerId": "vagus_nerve_x",
+  "en": "Lumbar nerves",
+  "pl": "Nerwy lędźwiowe",
+  "pos": [
+   194.25,
+   31.72,
+   1086.82
+  ],
+  "approx": false,
+  "dist_mm": 146.3,
+  "lmid": "vagus_nerve_x|Lumbar nerves"
+ },
+ {
+  "ownerId": "vagus_nerve_x",
+  "en": "Thoracic nerves",
+  "pl": "Nerwy piersiowe",
+  "pos": [
+   186.22,
+   87.9,
+   1251.77
+  ],
+  "approx": false,
+  "dist_mm": 148.6,
+  "lmid": "vagus_nerve_x|Thoracic nerves"
+ },
+ {
+  "ownerId": "vagus_nerve_x",
+  "en": "Branches of medial cord of brachial plexus",
+  "pl": "Gałęzie pęczka przyśrodkowego splotu ramiennego",
+  "pos": [
+   102.94,
+   -64.29,
+   1397.22
+  ],
+  "approx": false,
+  "dist_mm": 107.2,
+  "lmid": "vagus_nerve_x|Branches of medial cord of brachial plexus"
+ },
+ {
+  "ownerId": "vagus_nerve_x",
+  "en": "Branches of posterior cord of brachial plexus",
+  "pl": "Gałęzie pęczka tylnego splotu ramiennego",
+  "pos": [
+   107.77,
+   -65.02,
+   1391.86
+  ],
+  "approx": false,
+  "dist_mm": 110.9,
+  "lmid": "vagus_nerve_x|Branches of posterior cord of brachial plexus"
+ },
+ {
+  "ownerId": "vagus_nerve_x",
+  "en": "Branches of lateral cord of brachial plexus",
+  "pl": "Gałęzie pęczka bocznego splotu ramiennego",
+  "pos": [
+   106.76,
+   -62.89,
+   1402.32
+  ],
+  "approx": false,
+  "dist_mm": 110.0,
+  "lmid": "vagus_nerve_x|Branches of lateral cord of brachial plexus"
+ },
+ {
+  "ownerId": "lateral_pectoral_nerve_r",
+  "en": "Infraclavicular part of brachial plexus",
+  "pl": "Część splot ramienny",
+  "pos": [
+   -100.12,
+   -62.85,
+   1399.88
+  ],
+  "approx": false,
+  "dist_mm": 30.8,
+  "lmid": "lateral_pectoral_nerve_r|Infraclavicular part of brachial plexus"
+ },
+ {
+  "ownerId": "subclavian_nerve_r",
+  "en": "Supraclavicular part of brachial plexus",
+  "pl": "Część splot ramienny",
+  "pos": [
+   -74.61,
+   -54.28,
+   1423.06
+  ],
+  "approx": false,
+  "dist_mm": 37.5,
+  "lmid": "subclavian_nerve_r|Supraclavicular part of brachial plexus"
+ },
+ {
+  "ownerId": "subclavian_nerve_r",
+  "en": "Brachial plexus",
+  "pl": "Splot ramienny",
+  "pos": [
+   -72.56,
+   -30.31,
+   1427.21
+  ],
+  "approx": false,
+  "dist_mm": 28.6,
+  "lmid": "subclavian_nerve_r|Brachial plexus"
+ },
+ {
+  "ownerId": "mental_nerve_r",
+  "en": "Cervical plexus",
+  "pl": "Splot szyjny",
+  "pos": [
+   -26.44,
+   -64.97,
+   1497.32
+  ],
+  "approx": false,
+  "dist_mm": 9.5,
+  "lmid": "mental_nerve_r|Cervical plexus"
+ },
+ {
+  "ownerId": "vagus_nerve_x",
+  "en": "Cervical nerves",
+  "pl": "Nerwy szyjne",
+  "pos": [
+   74.04,
+   5.98,
+   1493.82
+  ],
+  "approx": false,
+  "dist_mm": 49.5,
+  "lmid": "vagus_nerve_x|Cervical nerves"
+ },
+ {
+  "ownerId": "sympathetic_nerves_r",
+  "en": "Spinal nerves",
+  "pl": "Nerwy rdzeniowe",
+  "pos": [
+   -18.01,
+   109.22,
+   1231.97
+  ],
+  "approx": false,
+  "dist_mm": 28.6,
+  "lmid": "sympathetic_nerves_r|Spinal nerves"
+ },
+ {
+  "ownerId": "maxillary_nerve_r",
+  "en": "Mandibular nerve",
+  "pl": "Nerw żuchwowy",
+  "pos": [
+   14.29,
+   -66.09,
+   1552.81
+  ],
+  "approx": false,
+  "dist_mm": 35.3,
+  "lmid": "maxillary_nerve_r|Mandibular nerve"
+ },
+ {
+  "ownerId": "vagus_nerve_x",
+  "en": "Cranial nerves",
+  "pl": "Nerwy czaszkowe",
+  "pos": [
+   74.99,
+   -21.31,
+   1543.12
+  ],
+  "approx": false,
+  "dist_mm": 53.1,
+  "lmid": "vagus_nerve_x|Cranial nerves"
+ }
+]

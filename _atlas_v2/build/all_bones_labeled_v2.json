@@ -1,0 +1,1901 @@
+[
+ {
+  "id": "anterior_cells_of_ethmoid_bone",
+  "pl": "Komórki sitowe przednie",
+  "en": "Anterior cells of ethmoid bone",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ethmoid"
+ },
+ {
+  "id": "atlas_c1",
+  "pl": "Kręg szczytowy (C1)",
+  "en": "Atlas (C1)",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "axis_c2",
+  "pl": "Kręg obrotowy (C2)",
+  "en": "Axis (C2)",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "body_of_sternum",
+  "pl": "Trzon mostka",
+  "en": "Body of sternum",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "calcaneus_l",
+  "pl": "Kość piętowa",
+  "en": "left Calcaneus",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "calcaneus_r",
+  "pl": "Kość piętowa",
+  "en": "right Calcaneus",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "capitate_bone_l",
+  "pl": "Kość główkowata",
+  "en": "left Capitate bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "capitate_bone_r",
+  "pl": "Kość główkowata",
+  "en": "right Capitate bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "clavicle_l",
+  "pl": "Obojczyk",
+  "en": "left Clavicle",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "clavicle_r",
+  "pl": "Obojczyk",
+  "en": "right Clavicle",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "coccyx",
+  "pl": "Kość guziczna",
+  "en": "Coccyx",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "cuboid_bone_l",
+  "pl": "Kość sześcienna",
+  "en": "left Cuboid bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "cuboid_bone_r",
+  "pl": "Kość sześcienna",
+  "en": "right Cuboid bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "distal_phalanx_of_fifth_finger_of_foot_l",
+  "pl": "Paliczek dalszy V palca stopy",
+  "en": "left Distal phalanx of fifth finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_fifth_finger_of_foot_r",
+  "pl": "Paliczek dalszy V palca stopy",
+  "en": "right Distal phalanx of fifth finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_fifth_finger_of_hand_l",
+  "pl": "Paliczek dalszy V palca ręki",
+  "en": "left Distal phalanx of fifth finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_fifth_finger_of_hand_r",
+  "pl": "Paliczek dalszy V palca ręki",
+  "en": "right Distal phalanx of fifth finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_first_finger_of_foot_l",
+  "pl": "Paliczek dalszy I palca stopy",
+  "en": "left Distal phalanx of first finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_first_finger_of_foot_r",
+  "pl": "Paliczek dalszy I palca stopy",
+  "en": "right Distal phalanx of first finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_first_finger_of_hand_l",
+  "pl": "Paliczek dalszy I palca ręki",
+  "en": "left Distal phalanx of first finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_first_finger_of_hand_r",
+  "pl": "Paliczek dalszy I palca ręki",
+  "en": "right Distal phalanx of first finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_fourth_finger_of_foot_l",
+  "pl": "Paliczek dalszy IV palca stopy",
+  "en": "left Distal phalanx of fourth finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_fourth_finger_of_foot_r",
+  "pl": "Paliczek dalszy IV palca stopy",
+  "en": "right Distal phalanx of fourth finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_fourth_finger_of_hand_l",
+  "pl": "Paliczek dalszy IV palca ręki",
+  "en": "left Distal phalanx of fourth finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_fourth_finger_of_hand_r",
+  "pl": "Paliczek dalszy IV palca ręki",
+  "en": "right Distal phalanx of fourth finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_second_finger_of_foot_l",
+  "pl": "Paliczek dalszy II palca stopy",
+  "en": "left Distal phalanx of second finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_second_finger_of_foot_r",
+  "pl": "Paliczek dalszy II palca stopy",
+  "en": "right Distal phalanx of second finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_second_finger_of_hand_l",
+  "pl": "Paliczek dalszy II palca ręki",
+  "en": "left Distal phalanx of second finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_second_finger_of_hand_r",
+  "pl": "Paliczek dalszy II palca ręki",
+  "en": "right Distal phalanx of second finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_third_finger_of_foot_l",
+  "pl": "Paliczek dalszy III palca stopy",
+  "en": "left Distal phalanx of third finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_third_finger_of_foot_r",
+  "pl": "Paliczek dalszy III palca stopy",
+  "en": "right Distal phalanx of third finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_third_finger_of_hand_l",
+  "pl": "Paliczek dalszy III palca ręki",
+  "en": "left Distal phalanx of third finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "distal_phalanx_of_third_finger_of_hand_r",
+  "pl": "Paliczek dalszy III palca ręki",
+  "en": "right Distal phalanx of third finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "eighth_rib_l",
+  "pl": "Żebro VIII",
+  "en": "left Eighth rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "eighth_rib_r",
+  "pl": "Żebro VIII",
+  "en": "right Eighth rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "eleventh_rib_l",
+  "pl": "Żebro XI",
+  "en": "left Eleventh rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "eleventh_rib_r",
+  "pl": "Żebro XI",
+  "en": "right Eleventh rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "ethmoid_bone",
+  "pl": "Kość sitowa",
+  "en": "Ethmoid bone",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "femur_l",
+  "pl": "Kość udowa",
+  "en": "left Femur",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "femur_r",
+  "pl": "Kość udowa",
+  "en": "right Femur",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "fibula_l",
+  "pl": "Kość strzałkowa",
+  "en": "left Fibula",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "fibula_r",
+  "pl": "Kość strzałkowa",
+  "en": "right Fibula",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "fifth_metacarpal_bone_l",
+  "pl": "Kość śródręcza V",
+  "en": "left Fifth metacarpal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fifth_metacarpal_bone_r",
+  "pl": "Kość śródręcza V",
+  "en": "right Fifth metacarpal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fifth_metatarsal_bone_l",
+  "pl": "Kość śródstopia V",
+  "en": "left Fifth metatarsal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fifth_metatarsal_bone_r",
+  "pl": "Kość śródstopia V",
+  "en": "right Fifth metatarsal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fifth_rib_l",
+  "pl": "Żebro V",
+  "en": "left Fifth rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fifth_rib_r",
+  "pl": "Żebro V",
+  "en": "right Fifth rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "first_metacarpal_bone_l",
+  "pl": "Kość śródręcza I",
+  "en": "left First metacarpal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "first_metacarpal_bone_r",
+  "pl": "Kość śródręcza I",
+  "en": "right First metacarpal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "first_metatarsal_bone_l",
+  "pl": "Kość śródstopia I",
+  "en": "left First metatarsal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "first_metatarsal_bone_r",
+  "pl": "Kość śródstopia I",
+  "en": "right First metatarsal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "first_rib_l",
+  "pl": "Żebro I",
+  "en": "left First rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "first_rib_r",
+  "pl": "Żebro I",
+  "en": "right First rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fourth_metacarpal_bone_l",
+  "pl": "Kość śródręcza IV",
+  "en": "left Fourth metacarpal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fourth_metacarpal_bone_r",
+  "pl": "Kość śródręcza IV",
+  "en": "right Fourth metacarpal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fourth_metatarsal_bone_l",
+  "pl": "Kość śródstopia IV",
+  "en": "left Fourth metatarsal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fourth_metatarsal_bone_r",
+  "pl": "Kość śródstopia IV",
+  "en": "right Fourth metatarsal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fourth_rib_l",
+  "pl": "Żebro IV",
+  "en": "left Fourth rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "fourth_rib_r",
+  "pl": "Żebro IV",
+  "en": "right Fourth rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "frontal_bone",
+  "pl": "Kość czołowa",
+  "en": "Frontal bone",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "hamate_bone_l",
+  "pl": "Kość haczykowata",
+  "en": "left Hamate bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "hamate_bone_r",
+  "pl": "Kość haczykowata",
+  "en": "right Hamate bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "hip_bone_l",
+  "pl": "Kość miedniczna",
+  "en": "left Hip bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "hip_bone_r",
+  "pl": "Kość miedniczna",
+  "en": "right Hip bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "humerus_l",
+  "pl": "Kość ramienna",
+  "en": "left Humerus",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "humerus_r",
+  "pl": "Kość ramienna",
+  "en": "right Humerus",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "hyoid_bone",
+  "pl": "Kość gnykowa",
+  "en": "Hyoid bone",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "incus_l",
+  "pl": "Kowadełko",
+  "en": "left Incus",
+  "side": "l",
+  "category": "ossicle",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "incus_r",
+  "pl": "Kowadełko",
+  "en": "right Incus",
+  "side": "r",
+  "category": "ossicle",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "inferior_nasal_concha_bone",
+  "pl": "Małżowina nosowa dolna",
+  "en": "Inferior nasal concha bone",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "intermediate_cuneiform_bone_l",
+  "pl": "Kość klinowata pośrednia",
+  "en": "left Intermediate cuneiform bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "intermediate_cuneiform_bone_r",
+  "pl": "Kość klinowata pośrednia",
+  "en": "right Intermediate cuneiform bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "lacrimal_bone_l",
+  "pl": "Kość łzowa",
+  "en": "left Lacrimal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "lacrimal_bone_r",
+  "pl": "Kość łzowa",
+  "en": "right Lacrimal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "lateral_cuneiform_bone_l",
+  "pl": "Kość klinowata boczna",
+  "en": "left Lateral cuneiform bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "lateral_cuneiform_bone_r",
+  "pl": "Kość klinowata boczna",
+  "en": "right Lateral cuneiform bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "lunate_bone_l",
+  "pl": "Kość księżycowata",
+  "en": "left Lunate bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "lunate_bone_r",
+  "pl": "Kość księżycowata",
+  "en": "right Lunate bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "malleus_l",
+  "pl": "Młoteczek",
+  "en": "left Malleus",
+  "side": "l",
+  "category": "ossicle",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "malleus_r",
+  "pl": "Młoteczek",
+  "en": "right Malleus",
+  "side": "r",
+  "category": "ossicle",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "mandible",
+  "pl": "Żuchwa",
+  "en": "Mandible",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "manubrium_of_sternum",
+  "pl": "Rękojeść mostka",
+  "en": "Manubrium of sternum",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "maxilla_l",
+  "pl": "Szczęka",
+  "en": "left Maxilla",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "maxilla_r",
+  "pl": "Szczęka",
+  "en": "right Maxilla",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "medial_cuneiform_bone_l",
+  "pl": "Kość klinowata przyśrodkowa",
+  "en": "left Medial cuneiform bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "medial_cuneiform_bone_r",
+  "pl": "Kość klinowata przyśrodkowa",
+  "en": "right Medial cuneiform bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "middle_cells_of_ethmoid_bone",
+  "pl": "Komórki sitowe środkowe",
+  "en": "Middle cells of ethmoid bone",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ethmoid"
+ },
+ {
+  "id": "middle_phalanx_of_fifth_finger_of_foot_l",
+  "pl": "Paliczek środkowy V palca stopy",
+  "en": "left Middle phalanx of fifth finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_fifth_finger_of_foot_r",
+  "pl": "Paliczek środkowy V palca stopy",
+  "en": "right Middle phalanx of fifth finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_fifth_finger_of_hand_l",
+  "pl": "Paliczek środkowy V palca ręki",
+  "en": "left Middle phalanx of fifth finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_fifth_finger_of_hand_r",
+  "pl": "Paliczek środkowy V palca ręki",
+  "en": "right Middle phalanx of fifth finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_fourth_finger_of_foot_l",
+  "pl": "Paliczek środkowy IV palca stopy",
+  "en": "left Middle phalanx of fourth finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_fourth_finger_of_foot_r",
+  "pl": "Paliczek środkowy IV palca stopy",
+  "en": "right Middle phalanx of fourth finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_fourth_finger_of_hand_l",
+  "pl": "Paliczek środkowy IV palca ręki",
+  "en": "left Middle phalanx of fourth finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_fourth_finger_of_hand_r",
+  "pl": "Paliczek środkowy IV palca ręki",
+  "en": "right Middle phalanx of fourth finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_second_finger_of_foot_l",
+  "pl": "Paliczek środkowy II palca stopy",
+  "en": "left Middle phalanx of second finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_second_finger_of_foot_r",
+  "pl": "Paliczek środkowy II palca stopy",
+  "en": "right Middle phalanx of second finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_second_finger_of_hand_l",
+  "pl": "Paliczek środkowy II palca ręki",
+  "en": "left Middle phalanx of second finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_second_finger_of_hand_r",
+  "pl": "Paliczek środkowy II palca ręki",
+  "en": "right Middle phalanx of second finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_third_finger_of_foot_l",
+  "pl": "Paliczek środkowy III palca stopy",
+  "en": "left Middle phalanx of third finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_third_finger_of_foot_r",
+  "pl": "Paliczek środkowy III palca stopy",
+  "en": "right Middle phalanx of third finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_third_finger_of_hand_l",
+  "pl": "Paliczek środkowy III palca ręki",
+  "en": "left Middle phalanx of third finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "middle_phalanx_of_third_finger_of_hand_r",
+  "pl": "Paliczek środkowy III palca ręki",
+  "en": "right Middle phalanx of third finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "nasal_bone",
+  "pl": "Kość nosowa",
+  "en": "Nasal bone",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "navicular_bone_l",
+  "pl": "Kość łódkowata",
+  "en": "left Navicular bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "navicular_bone_r",
+  "pl": "Kość łódkowata",
+  "en": "right Navicular bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "ninth_rib_l",
+  "pl": "Żebro IX",
+  "en": "left Ninth rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "ninth_rib_r",
+  "pl": "Żebro IX",
+  "en": "right Ninth rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "occipital_bone",
+  "pl": "Kość potyliczna",
+  "en": "Occipital bone",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "palatine_bone_l",
+  "pl": "Kość podniebienna",
+  "en": "left Palatine bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "palatine_bone_r",
+  "pl": "Kość podniebienna",
+  "en": "right Palatine bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "parietal_bone_l",
+  "pl": "Kość ciemieniowa",
+  "en": "left Parietal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "parietal_bone_r",
+  "pl": "Kość ciemieniowa",
+  "en": "right Parietal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "patella_l",
+  "pl": "Rzepka",
+  "en": "left Patella",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "patella_r",
+  "pl": "Rzepka",
+  "en": "right Patella",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "pisiform_bone_l",
+  "pl": "Kość grochowata",
+  "en": "left Pisiform bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "pisiform_bone_r",
+  "pl": "Kość grochowata",
+  "en": "right Pisiform bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "posterior_cells_of_ethmoid_bone",
+  "pl": "Komórki sitowe tylne",
+  "en": "Posterior cells of ethmoid bone",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ethmoid"
+ },
+ {
+  "id": "proximal_phalanx_of_fifth_finger_of_foot_l",
+  "pl": "Paliczek bliższy V palca stopy",
+  "en": "left Proximal phalanx of fifth finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_fifth_finger_of_foot_r",
+  "pl": "Paliczek bliższy V palca stopy",
+  "en": "right Proximal phalanx of fifth finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_fifth_finger_of_hand_l",
+  "pl": "Paliczek bliższy V palca ręki",
+  "en": "left Proximal phalanx of fifth finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_fifth_finger_of_hand_r",
+  "pl": "Paliczek bliższy V palca ręki",
+  "en": "right Proximal phalanx of fifth finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_first_finger_of_foot_l",
+  "pl": "Paliczek bliższy I palca stopy",
+  "en": "left Proximal phalanx of first finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_first_finger_of_foot_r",
+  "pl": "Paliczek bliższy I palca stopy",
+  "en": "right Proximal phalanx of first finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_first_finger_of_hand_l",
+  "pl": "Paliczek bliższy I palca ręki",
+  "en": "left Proximal phalanx of first finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_first_finger_of_hand_r",
+  "pl": "Paliczek bliższy I palca ręki",
+  "en": "right Proximal phalanx of first finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_fourth_finger_of_foot_l",
+  "pl": "Paliczek bliższy IV palca stopy",
+  "en": "left Proximal phalanx of fourth finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_fourth_finger_of_foot_r",
+  "pl": "Paliczek bliższy IV palca stopy",
+  "en": "right Proximal phalanx of fourth finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_fourth_finger_of_hand_l",
+  "pl": "Paliczek bliższy IV palca ręki",
+  "en": "left Proximal phalanx of fourth finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_fourth_finger_of_hand_r",
+  "pl": "Paliczek bliższy IV palca ręki",
+  "en": "right Proximal phalanx of fourth finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_second_finger_of_foot_l",
+  "pl": "Paliczek bliższy II palca stopy",
+  "en": "left Proximal phalanx of second finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_second_finger_of_foot_r",
+  "pl": "Paliczek bliższy II palca stopy",
+  "en": "right Proximal phalanx of second finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_second_finger_of_hand_l",
+  "pl": "Paliczek bliższy II palca ręki",
+  "en": "left Proximal phalanx of second finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_second_finger_of_hand_r",
+  "pl": "Paliczek bliższy II palca ręki",
+  "en": "right Proximal phalanx of second finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_third_finger_of_foot_l",
+  "pl": "Paliczek bliższy III palca stopy",
+  "en": "left Proximal phalanx of third finger of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_third_finger_of_foot_r",
+  "pl": "Paliczek bliższy III palca stopy",
+  "en": "right Proximal phalanx of third finger of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_third_finger_of_hand_l",
+  "pl": "Paliczek bliższy III palca ręki",
+  "en": "left Proximal phalanx of third finger of hand",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "proximal_phalanx_of_third_finger_of_hand_r",
+  "pl": "Paliczek bliższy III palca ręki",
+  "en": "right Proximal phalanx of third finger of hand",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "phalanx"
+ },
+ {
+  "id": "radius_l",
+  "pl": "Kość promieniowa",
+  "en": "left Radius",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "radius_r",
+  "pl": "Kość promieniowa",
+  "en": "right Radius",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "sacrum",
+  "pl": "Kość krzyżowa",
+  "en": "Sacrum",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "scaphoid_bone_l",
+  "pl": "Kość łódeczkowata",
+  "en": "left Scaphoid bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "scaphoid_bone_r",
+  "pl": "Kość łódeczkowata",
+  "en": "right Scaphoid bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "scapula_l",
+  "pl": "Łopatka",
+  "en": "left Scapula",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "scapula_r",
+  "pl": "Łopatka",
+  "en": "right Scapula",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "second_metacarpal_bone_l",
+  "pl": "Kość śródręcza II",
+  "en": "left Second metacarpal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "second_metacarpal_bone_r",
+  "pl": "Kość śródręcza II",
+  "en": "right Second metacarpal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "second_metatarsal_bone_l",
+  "pl": "Kość śródstopia II",
+  "en": "left Second metatarsal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "second_metatarsal_bone_r",
+  "pl": "Kość śródstopia II",
+  "en": "right Second metatarsal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "second_rib_l",
+  "pl": "Żebro II",
+  "en": "left Second rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "second_rib_r",
+  "pl": "Żebro II",
+  "en": "right Second rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "sesamoid_bones_of_foot_l",
+  "pl": "Kości trzeszczkowate stopy",
+  "en": "left Sesamoid bones of foot",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "sesamoid_bones_of_foot_r",
+  "pl": "Kości trzeszczkowate stopy",
+  "en": "right Sesamoid bones of foot",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "seventh_rib_l",
+  "pl": "Żebro VII",
+  "en": "left Seventh rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "seventh_rib_r",
+  "pl": "Żebro VII",
+  "en": "right Seventh rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "sixth_rib_l",
+  "pl": "Żebro VI",
+  "en": "left Sixth rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "sixth_rib_r",
+  "pl": "Żebro VI",
+  "en": "right Sixth rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "sphenoid_bone",
+  "pl": "Kość klinowa",
+  "en": "Sphenoid bone",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "stapes_l",
+  "pl": "Strzemiączko",
+  "en": "left Stapes",
+  "side": "l",
+  "category": "ossicle",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "stapes_r",
+  "pl": "Strzemiączko",
+  "en": "right Stapes",
+  "side": "r",
+  "category": "ossicle",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "talus_l",
+  "pl": "Kość skokowa",
+  "en": "left Talus",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "talus_r",
+  "pl": "Kość skokowa",
+  "en": "right Talus",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "temporal_bone_l",
+  "pl": "Kość skroniowa",
+  "en": "left Temporal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "temporal_bone_r",
+  "pl": "Kość skroniowa",
+  "en": "right Temporal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "tenth_rib_l",
+  "pl": "Żebro X",
+  "en": "left Tenth rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "tenth_rib_r",
+  "pl": "Żebro X",
+  "en": "right Tenth rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "third_metacarpal_bone_l",
+  "pl": "Kość śródręcza III",
+  "en": "left Third metacarpal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "third_metacarpal_bone_r",
+  "pl": "Kość śródręcza III",
+  "en": "right Third metacarpal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "third_metatarsal_bone_l",
+  "pl": "Kość śródstopia III",
+  "en": "left Third metatarsal bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "third_metatarsal_bone_r",
+  "pl": "Kość śródstopia III",
+  "en": "right Third metatarsal bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "third_rib_l",
+  "pl": "Żebro III",
+  "en": "left Third rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "third_rib_r",
+  "pl": "Żebro III",
+  "en": "right Third rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "tibia_l",
+  "pl": "Kość piszczelowa",
+  "en": "left Tibia",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "tibia_r",
+  "pl": "Kość piszczelowa",
+  "en": "right Tibia",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "trapezium_bone_l",
+  "pl": "Kość czworoboczna większa",
+  "en": "left Trapezium bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "trapezium_bone_r",
+  "pl": "Kość czworoboczna większa",
+  "en": "right Trapezium bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "trapezoid_bone_l",
+  "pl": "Kość czworoboczna mniejsza",
+  "en": "left Trapezoid bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "trapezoid_bone_r",
+  "pl": "Kość czworoboczna mniejsza",
+  "en": "right Trapezoid bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "triquetrum_bone_l",
+  "pl": "Kość trójgraniasta",
+  "en": "left Triquetrum bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "triquetrum_bone_r",
+  "pl": "Kość trójgraniasta",
+  "en": "right Triquetrum bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "twelfth_rib_l",
+  "pl": "Żebro XII",
+  "en": "left Twelfth rib",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "twelfth_rib_r",
+  "pl": "Żebro XII",
+  "en": "right Twelfth rib",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "ordinal"
+ },
+ {
+  "id": "ulna_l",
+  "pl": "Kość łokciowa",
+  "en": "left Ulna",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "ulna_r",
+  "pl": "Kość łokciowa",
+  "en": "right Ulna",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "vertebra_c3",
+  "pl": "Krąg szyjny III",
+  "en": "Vertebra C3",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_c4",
+  "pl": "Krąg szyjny IV",
+  "en": "Vertebra C4",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_c5",
+  "pl": "Krąg szyjny V",
+  "en": "Vertebra C5",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_c6",
+  "pl": "Krąg szyjny VI",
+  "en": "Vertebra C6",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_c7",
+  "pl": "Krąg szyjny VII",
+  "en": "Vertebra C7",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_l1",
+  "pl": "Krąg lędźwiowy I",
+  "en": "Vertebra L1",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_l2",
+  "pl": "Krąg lędźwiowy II",
+  "en": "Vertebra L2",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_l3",
+  "pl": "Krąg lędźwiowy III",
+  "en": "Vertebra L3",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_l4",
+  "pl": "Krąg lędźwiowy IV",
+  "en": "Vertebra L4",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_l5",
+  "pl": "Krąg lędźwiowy V",
+  "en": "Vertebra L5",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t1",
+  "pl": "Krąg piersiowy I",
+  "en": "Vertebra T1",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t10",
+  "pl": "Krąg piersiowy X",
+  "en": "Vertebra T10",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t11",
+  "pl": "Krąg piersiowy XI",
+  "en": "Vertebra T11",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t12",
+  "pl": "Krąg piersiowy XII",
+  "en": "Vertebra T12",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t2",
+  "pl": "Krąg piersiowy II",
+  "en": "Vertebra T2",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t3",
+  "pl": "Krąg piersiowy III",
+  "en": "Vertebra T3",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t4",
+  "pl": "Krąg piersiowy IV",
+  "en": "Vertebra T4",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t5",
+  "pl": "Krąg piersiowy V",
+  "en": "Vertebra T5",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t6",
+  "pl": "Krąg piersiowy VI",
+  "en": "Vertebra T6",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t7",
+  "pl": "Krąg piersiowy VII",
+  "en": "Vertebra T7",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t8",
+  "pl": "Krąg piersiowy VIII",
+  "en": "Vertebra T8",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vertebra_t9",
+  "pl": "Krąg piersiowy IX",
+  "en": "Vertebra T9",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "vertebra"
+ },
+ {
+  "id": "vomer",
+  "pl": "Lemiesz",
+  "en": "Vomer",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "xiphoid_process",
+  "pl": "Wyrostek mieczykowaty",
+  "en": "Xiphoid process",
+  "side": "mid",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "zygomatic_bone_l",
+  "pl": "Kość jarzmowa",
+  "en": "left Zygomatic bone",
+  "side": "l",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ },
+ {
+  "id": "zygomatic_bone_r",
+  "pl": "Kość jarzmowa",
+  "en": "right Zygomatic bone",
+  "side": "r",
+  "category": "bone",
+  "kind": "bone",
+  "pl_from": "manual"
+ }
+]

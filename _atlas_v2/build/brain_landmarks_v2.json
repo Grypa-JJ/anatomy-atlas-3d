@@ -1,0 +1,1029 @@
+[
+ {
+  "ownerId": "spinal_dura",
+  "en": "Autonomic division of peripheral nervous system",
+  "pl": "Część autonomiczna obwodowego układu nerwowego",
+  "pos": [
+   -16.83,
+   141.17,
+   1297.11
+  ],
+  "approx": false,
+  "dist_mm": 65.6,
+  "lmid": "spinal_dura|Autonomic division of peripheral nervous system"
+ },
+ {
+  "ownerId": "sympathetic_trunk_r",
+  "en": "Peripheral nervous system",
+  "pl": "Obwodowy układ nerwowy",
+  "pos": [
+   -315.75,
+   33.28,
+   1170.89
+  ],
+  "approx": false,
+  "dist_mm": 293.2,
+  "lmid": "sympathetic_trunk_r|Peripheral nervous system"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "Anterior horn of spinal cord",
+  "pl": "Róg przedni rdzenia kręgowego",
+  "pos": [
+   -0.19,
+   118.46,
+   1353.2
+  ],
+  "approx": false,
+  "dist_mm": 44.2,
+  "lmid": "spinal_dura|Anterior horn of spinal cord"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "Intermediate zone of spinal cord",
+  "pl": "Strefa pośrednia rdzenia kręgowego",
+  "pos": [
+   -0.19,
+   118.46,
+   1358.74
+  ],
+  "approx": false,
+  "dist_mm": 44.9,
+  "lmid": "spinal_dura|Intermediate zone of spinal cord"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "Posterior horn of spinal cord",
+  "pl": "Róg tylny rdzenia kręgowego",
+  "pos": [
+   -0.0,
+   118.46,
+   1364.7
+  ],
+  "approx": false,
+  "dist_mm": 45.8,
+  "lmid": "spinal_dura|Posterior horn of spinal cord"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "Grey matter of spinal cord",
+  "pl": "Istota szara rdzenia kręgowego",
+  "pos": [
+   2.42,
+   125.36,
+   1369.72
+  ],
+  "approx": false,
+  "dist_mm": 53.4,
+  "lmid": "spinal_dura|Grey matter of spinal cord"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "Central structures of spinal cord",
+  "pl": "Struktury środkowe rdzenia kręgowego",
+  "pos": [
+   2.42,
+   125.69,
+   1221.6
+  ],
+  "approx": false,
+  "dist_mm": 55.7,
+  "lmid": "spinal_dura|Central structures of spinal cord"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "Anterior funiculus",
+  "pl": "Sznur przedni",
+  "pos": [
+   -0.19,
+   127.56,
+   1313.43
+  ],
+  "approx": false,
+  "dist_mm": 50.2,
+  "lmid": "spinal_dura|Anterior funiculus"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "Anterolateral fasciculus",
+  "pl": "Pęczek własny przednio-boczny",
+  "pos": [
+   -0.19,
+   127.56,
+   1319.39
+  ],
+  "approx": false,
+  "dist_mm": 50.5,
+  "lmid": "spinal_dura|Anterolateral fasciculus"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "Lateral funiculus",
+  "pl": "Sznur boczny",
+  "pos": [
+   -0.19,
+   127.56,
+   1325.26
+  ],
+  "approx": false,
+  "dist_mm": 50.8,
+  "lmid": "spinal_dura|Lateral funiculus"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "Posterior funiculus",
+  "pl": "Sznur tylny",
+  "pos": [
+   -0.19,
+   127.56,
+   1331.23
+  ],
+  "approx": false,
+  "dist_mm": 51.2,
+  "lmid": "spinal_dura|Posterior funiculus"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "White matter of spinal cord",
+  "pl": "Istota biała rdzenia kręgowego",
+  "pos": [
+   2.42,
+   125.36,
+   1336.78
+  ],
+  "approx": false,
+  "dist_mm": 49.5,
+  "lmid": "spinal_dura|White matter of spinal cord"
+ },
+ {
+  "ownerId": "spinal_dura",
+  "en": "Spinal cord",
+  "pl": "Rdzeń kręgowy",
+  "pos": [
+   2.82,
+   107.54,
+   1380.85
+  ],
+  "approx": false,
+  "dist_mm": 38.5,
+  "lmid": "spinal_dura|Spinal cord"
+ },
+ {
+  "ownerId": "superior_temporal_gyrus_lateral_part_r",
+  "en": "White matter",
+  "pl": "Istota biała",
+  "pos": [
+   -78.5,
+   29.75,
+   1633.57
+  ],
+  "approx": false,
+  "dist_mm": 12.1,
+  "lmid": "superior_temporal_gyrus_lateral_part_r|White matter"
+ },
+ {
+  "ownerId": "supramarginal_gyrus_r",
+  "en": "Grey matter",
+  "pl": "Istota szara",
+  "pos": [
+   -93.41,
+   16.74,
+   1646.5
+  ],
+  "approx": false,
+  "dist_mm": 25.7,
+  "lmid": "supramarginal_gyrus_r|Grey matter"
+ },
+ {
+  "ownerId": "middle_temporal_gyrus_r",
+  "en": "Reticular formation",
+  "pl": "Twór siatkowaty",
+  "pos": [
+   -63.15,
+   0.76,
+   1596.63
+  ],
+  "approx": false,
+  "dist_mm": 4.1,
+  "lmid": "middle_temporal_gyrus_r|Reticular formation"
+ },
+ {
+  "ownerId": "superior_temporal_gyrus_lateral_part_r",
+  "en": "Ependyma",
+  "pl": "Wyściółka",
+  "pos": [
+   -78.39,
+   -2.2,
+   1620.81
+  ],
+  "approx": false,
+  "dist_mm": 14.4,
+  "lmid": "superior_temporal_gyrus_lateral_part_r|Ependyma"
+ },
+ {
+  "ownerId": "anterior_quadrangular_lobule",
+  "en": "Tectum of midbrain",
+  "pl": "Pokrywa śródmózgowia",
+  "pos": [
+   56.16,
+   14.38,
+   1583.73
+  ],
+  "approx": false,
+  "dist_mm": 28.4,
+  "lmid": "anterior_quadrangular_lobule|Tectum of midbrain"
+ },
+ {
+  "ownerId": "anterior_occipital_sulcus_r",
+  "en": "Central mesencephalic structures",
+  "pl": "Struktury środkowe śródmózgowia",
+  "pos": [
+   -41.99,
+   64.32,
+   1611.13
+  ],
+  "approx": false,
+  "dist_mm": 1.0,
+  "lmid": "anterior_occipital_sulcus_r|Central mesencephalic structures"
+ },
+ {
+  "ownerId": "falx_cerebri",
+  "en": "Oculomotor complex",
+  "pl": "Zespół jąder nerwu okoruchowego",
+  "pos": [
+   -1.75,
+   71.0,
+   1593.31
+  ],
+  "approx": false,
+  "dist_mm": 1.0,
+  "lmid": "falx_cerebri|Oculomotor complex"
+ },
+ {
+  "ownerId": "tentorium_cerebelli_r",
+  "en": "Grey matter of tegmentum of midbrain",
+  "pl": "Istota szara nakrywki śródmózgowia",
+  "pos": [
+   -1.75,
+   71.0,
+   1597.8
+  ],
+  "approx": false,
+  "dist_mm": 2.0,
+  "lmid": "tentorium_cerebelli_r|Grey matter of tegmentum of midbrain"
+ },
+ {
+  "ownerId": "lingual_gyrus_r",
+  "en": "Tegmentum of midbrain",
+  "pl": "Nakrywka śródmózgowia",
+  "pos": [
+   -1.75,
+   70.87,
+   1602.23
+  ],
+  "approx": false,
+  "dist_mm": 1.7,
+  "lmid": "lingual_gyrus_r|Tegmentum of midbrain"
+ },
+ {
+  "ownerId": "lingual_gyrus_r",
+  "en": "Cerebral peduncle",
+  "pl": "Konar mózgu",
+  "pos": [
+   -1.75,
+   70.73,
+   1605.68
+  ],
+  "approx": false,
+  "dist_mm": 1.1,
+  "lmid": "lingual_gyrus_r|Cerebral peduncle"
+ },
+ {
+  "ownerId": "anterior_quadrangular_lobule",
+  "en": "Midbrain",
+  "pl": "Śródmózgowie",
+  "pos": [
+   55.99,
+   14.38,
+   1587.21
+  ],
+  "approx": false,
+  "dist_mm": 27.5,
+  "lmid": "anterior_quadrangular_lobule|Midbrain"
+ },
+ {
+  "ownerId": "pyramis_of_vermis",
+  "en": "Grey matter of medulla oblongata",
+  "pl": "Istota szara rdzenia przedłużonego",
+  "pos": [
+   -0.46,
+   56.82,
+   1550.87
+  ],
+  "approx": false,
+  "dist_mm": 17.3,
+  "lmid": "pyramis_of_vermis|Grey matter of medulla oblongata"
+ },
+ {
+  "ownerId": "medulla_oblongata",
+  "en": "Pyramid of medulla oblongata",
+  "pl": "Piramida rdzenia przedłużonego",
+  "pos": [
+   -4.7,
+   0.51,
+   1568.67
+  ],
+  "approx": false,
+  "dist_mm": 5.6,
+  "lmid": "medulla_oblongata|Pyramid of medulla oblongata"
+ },
+ {
+  "ownerId": "medulla_oblongata",
+  "en": "Posterolateral sulcus of medulla oblongata",
+  "pl": "Bruzda tylno-boczna rdzenia przedłużonego",
+  "pos": [
+   -14.68,
+   25.1,
+   1556.23
+  ],
+  "approx": false,
+  "dist_mm": 6.7,
+  "lmid": "medulla_oblongata|Posterolateral sulcus of medulla oblongata"
+ },
+ {
+  "ownerId": "medulla_oblongata",
+  "en": "Posterior median sulcus of medulla oblongata",
+  "pl": "Bruzda tylna rdzenia przedłużonego",
+  "pos": [
+   -0.06,
+   41.62,
+   1552.09
+  ],
+  "approx": false,
+  "dist_mm": 8.5,
+  "lmid": "medulla_oblongata|Posterior median sulcus of medulla oblongata"
+ },
+ {
+  "ownerId": "tonsil_of_cerebellum",
+  "en": "Cuneate tubercle",
+  "pl": "Guzek klinowaty",
+  "pos": [
+   -8.13,
+   32.41,
+   1565.86
+  ],
+  "approx": false,
+  "dist_mm": 0.9,
+  "lmid": "tonsil_of_cerebellum|Cuneate tubercle"
+ },
+ {
+  "ownerId": "tonsil_of_cerebellum",
+  "en": "Gracile tubercle",
+  "pl": "Guzek smukły",
+  "pos": [
+   -3.34,
+   34.85,
+   1564.86
+  ],
+  "approx": false,
+  "dist_mm": 0.5,
+  "lmid": "tonsil_of_cerebellum|Gracile tubercle"
+ },
+ {
+  "ownerId": "tonsil_of_cerebellum",
+  "en": "Trigeminal tubercle",
+  "pl": "Guzek trójdzielny",
+  "pos": [
+   -15.38,
+   22.62,
+   1566.72
+  ],
+  "approx": false,
+  "dist_mm": 2.5,
+  "lmid": "tonsil_of_cerebellum|Trigeminal tubercle"
+ },
+ {
+  "ownerId": "medulla_oblongata",
+  "en": "Lateral funiculus of medulla oblongata",
+  "pl": "Sznur boczny rdzenia przedłużonego",
+  "pos": [
+   -15.69,
+   24.63,
+   1552.42
+  ],
+  "approx": false,
+  "dist_mm": 7.7,
+  "lmid": "medulla_oblongata|Lateral funiculus of medulla oblongata"
+ },
+ {
+  "ownerId": "medulla_oblongata",
+  "en": "Anterolateral sulcus of medulla oblongata",
+  "pl": "Bruzda przednio-boczna rdzenia przedłużonego",
+  "pos": [
+   -14.65,
+   23.01,
+   1548.57
+  ],
+  "approx": false,
+  "dist_mm": 7.2,
+  "lmid": "medulla_oblongata|Anterolateral sulcus of medulla oblongata"
+ },
+ {
+  "ownerId": "medulla_oblongata",
+  "en": "Olive",
+  "pl": "Oliwka",
+  "pos": [
+   -14.96,
+   13.27,
+   1570.02
+  ],
+  "approx": false,
+  "dist_mm": 2.9,
+  "lmid": "medulla_oblongata|Olive"
+ },
+ {
+  "ownerId": "tonsil_of_cerebellum",
+  "en": "Retro-olivary groove",
+  "pl": "Bruzda zaoliwkowa",
+  "pos": [
+   -17.86,
+   19.08,
+   1570.63
+  ],
+  "approx": false,
+  "dist_mm": 2.9,
+  "lmid": "tonsil_of_cerebellum|Retro-olivary groove"
+ },
+ {
+  "ownerId": "medulla_oblongata",
+  "en": "Anterior median fissure of medulla oblongata",
+  "pl": "Szczelina pośrodkowa przednia rdzenia przedłużonego",
+  "pos": [
+   -0.05,
+   11.6,
+   1550.66
+  ],
+  "approx": false,
+  "dist_mm": 7.6,
+  "lmid": "medulla_oblongata|Anterior median fissure of medulla oblongata"
+ },
+ {
+  "ownerId": "anterior_quadrangular_lobule",
+  "en": "Brainstem",
+  "pl": "Pień mózgu",
+  "pos": [
+   58.64,
+   14.14,
+   1592.65
+  ],
+  "approx": false,
+  "dist_mm": 29.7,
+  "lmid": "anterior_quadrangular_lobule|Brainstem"
+ },
+ {
+  "ownerId": "medulla_oblongata",
+  "en": "Inferior medulla oblongata",
+  "pl": "Rdzeń przedłużony (część dolna)",
+  "pos": [
+   13.55,
+   23.07,
+   1551.11
+  ],
+  "approx": false,
+  "dist_mm": 5.7,
+  "lmid": "medulla_oblongata|Inferior medulla oblongata"
+ },
+ {
+  "ownerId": "medulla_oblongata",
+  "en": "Superior medulla oblongata",
+  "pl": "Rdzeń przedłużony (część górna)",
+  "pos": [
+   16.43,
+   11.89,
+   1570.03
+  ],
+  "approx": false,
+  "dist_mm": 4.8,
+  "lmid": "medulla_oblongata|Superior medulla oblongata"
+ },
+ {
+  "ownerId": "falx_cerebri",
+  "en": "Grey matter of pontine tegmentum",
+  "pl": "Istota szara nakrywki mostu",
+  "pos": [
+   0.09,
+   -48.77,
+   1587.42
+  ],
+  "approx": false,
+  "dist_mm": 9.2,
+  "lmid": "falx_cerebri|Grey matter of pontine tegmentum"
+ },
+ {
+  "ownerId": "falx_cerebri",
+  "en": "Tegmentum of pons",
+  "pl": "Nakrywka mostu",
+  "pos": [
+   0.09,
+   -45.09,
+   1588.74
+  ],
+  "approx": false,
+  "dist_mm": 8.5,
+  "lmid": "falx_cerebri|Tegmentum of pons"
+ },
+ {
+  "ownerId": "falx_cerebri",
+  "en": "Basilar part of pons",
+  "pl": "Część podstawna mostu",
+  "pos": [
+   0.09,
+   -45.09,
+   1592.61
+  ],
+  "approx": false,
+  "dist_mm": 5.1,
+  "lmid": "falx_cerebri|Basilar part of pons"
+ },
+ {
+  "ownerId": "anterior_quadrangular_lobule",
+  "en": "Cerebellar peduncles",
+  "pl": "Konary móżdżku",
+  "pos": [
+   63.84,
+   -0.66,
+   1606.7
+  ],
+  "approx": false,
+  "dist_mm": 41.4,
+  "lmid": "anterior_quadrangular_lobule|Cerebellar peduncles"
+ },
+ {
+  "ownerId": "tonsil_of_cerebellum",
+  "en": "Cerebellum",
+  "pl": "Móżdżek",
+  "pos": [
+   79.55,
+   51.92,
+   1571.9
+  ],
+  "approx": false,
+  "dist_mm": 61.3,
+  "lmid": "tonsil_of_cerebellum|Cerebellum"
+ },
+ {
+  "ownerId": "thalamus",
+  "en": "White matter of diencephalon",
+  "pl": "Istota biała międzymózgowia",
+  "pos": [
+   25.12,
+   6.25,
+   1631.45
+  ],
+  "approx": false,
+  "dist_mm": 5.3,
+  "lmid": "thalamus|White matter of diencephalon"
+ },
+ {
+  "ownerId": "thalamus",
+  "en": "Diencephalon",
+  "pl": "Międzymózgowie",
+  "pos": [
+   65.56,
+   11.12,
+   1625.94
+  ],
+  "approx": false,
+  "dist_mm": 42.8,
+  "lmid": "thalamus|Diencephalon"
+ },
+ {
+  "ownerId": "superior_frontal_gyrus",
+  "en": "Walls of lateral ventricle",
+  "pl": "Ściany komory bocznej",
+  "pos": [
+   0.14,
+   -87.26,
+   1642.61
+  ],
+  "approx": false,
+  "dist_mm": 8.2,
+  "lmid": "superior_frontal_gyrus|Walls of lateral ventricle"
+ },
+ {
+  "ownerId": "corpus_callosum",
+  "en": "Dorsal striatum",
+  "pl": "Prążkowie grzbietowe",
+  "pos": [
+   16.73,
+   -1.12,
+   1650.57
+  ],
+  "approx": false,
+  "dist_mm": 3.9,
+  "lmid": "corpus_callosum|Dorsal striatum"
+ },
+ {
+  "ownerId": "corpus_callosum",
+  "en": "Corpus striatum",
+  "pl": "Ciało prążkowane",
+  "pos": [
+   22.06,
+   -2.75,
+   1652.38
+  ],
+  "approx": false,
+  "dist_mm": 9.1,
+  "lmid": "corpus_callosum|Corpus striatum"
+ },
+ {
+  "ownerId": "superior_frontal_gyrus",
+  "en": "Limbic lobe",
+  "pl": "Płat brzeżny (limbiczny)",
+  "pos": [
+   -12.55,
+   -0.29,
+   1688.61
+  ],
+  "approx": false,
+  "dist_mm": 1.6,
+  "lmid": "superior_frontal_gyrus|Limbic lobe"
+ },
+ {
+  "ownerId": "postcentral_gyrus_r",
+  "en": "Insula",
+  "pl": "Zakręt wyspowy (wyspa)",
+  "pos": [
+   -74.22,
+   0.06,
+   1662.17
+  ],
+  "approx": false,
+  "dist_mm": 14.2,
+  "lmid": "postcentral_gyrus_r|Insula"
+ },
+ {
+  "ownerId": "middle_temporal_gyrus_r",
+  "en": "Temporal lobe",
+  "pl": "Płat skroniowy",
+  "pos": [
+   -81.04,
+   18.47,
+   1604.38
+  ],
+  "approx": false,
+  "dist_mm": 17.2,
+  "lmid": "middle_temporal_gyrus_r|Temporal lobe"
+ },
+ {
+  "ownerId": "occipital_pole_r",
+  "en": "Occipital lobe",
+  "pl": "Płat potyliczny",
+  "pos": [
+   -21.1,
+   115.46,
+   1612.02
+  ],
+  "approx": false,
+  "dist_mm": 17.4,
+  "lmid": "occipital_pole_r|Occipital lobe"
+ },
+ {
+  "ownerId": "superior_parietal_lobule_r",
+  "en": "Parietal lobe",
+  "pl": "Płat ciemieniowy",
+  "pos": [
+   -41.28,
+   56.9,
+   1687.44
+  ],
+  "approx": false,
+  "dist_mm": 8.4,
+  "lmid": "superior_parietal_lobule_r|Parietal lobe"
+ },
+ {
+  "ownerId": "superior_frontal_gyrus",
+  "en": "Frontal lobe",
+  "pl": "Płat czołowy",
+  "pos": [
+   -26.37,
+   -88.75,
+   1658.48
+  ],
+  "approx": false,
+  "dist_mm": 15.4,
+  "lmid": "superior_frontal_gyrus|Frontal lobe"
+ },
+ {
+  "ownerId": "postcentral_gyrus_r",
+  "en": "Interlobar sulci",
+  "pl": "Bruzdy międzypłatowe",
+  "pos": [
+   -56.77,
+   17.85,
+   1675.82
+  ],
+  "approx": false,
+  "dist_mm": 2.5,
+  "lmid": "postcentral_gyrus_r|Interlobar sulci"
+ },
+ {
+  "ownerId": "falx_cerebri",
+  "en": "Basal forebrain",
+  "pl": "Przodomózgowie podstawne",
+  "pos": [
+   -10.26,
+   -78.48,
+   1607.93
+  ],
+  "approx": false,
+  "dist_mm": 10.5,
+  "lmid": "falx_cerebri|Basal forebrain"
+ },
+ {
+  "ownerId": "thalamus",
+  "en": "Telencephalon",
+  "pl": "Kresomózgowie",
+  "pos": [
+   90.88,
+   19.45,
+   1633.89
+  ],
+  "approx": false,
+  "dist_mm": 68.7,
+  "lmid": "thalamus|Telencephalon"
+ },
+ {
+  "ownerId": "transverse_occipital_sulcus_r",
+  "en": "Projection fibres of telencephalon",
+  "pl": "Włókna rzutowe kresomózgowia",
+  "pos": [
+   -21.27,
+   82.25,
+   1621.49
+  ],
+  "approx": false,
+  "dist_mm": 2.1,
+  "lmid": "transverse_occipital_sulcus_r|Projection fibres of telencephalon"
+ },
+ {
+  "ownerId": "falx_cerebri",
+  "en": "Commissural fibres of telencephalon",
+  "pl": "Włókna spoidłowe kresomózgowia",
+  "pos": [
+   0.08,
+   -20.89,
+   1650.21
+  ],
+  "approx": false,
+  "dist_mm": 0.3,
+  "lmid": "falx_cerebri|Commissural fibres of telencephalon"
+ },
+ {
+  "ownerId": "anterior_quadrangular_lobule",
+  "en": "Cerebral hemisphere",
+  "pl": "Półkula mózgu",
+  "pos": [
+   93.97,
+   9.4,
+   1616.97
+  ],
+  "approx": false,
+  "dist_mm": 69.6,
+  "lmid": "anterior_quadrangular_lobule|Cerebral hemisphere"
+ },
+ {
+  "ownerId": "corpus_callosum",
+  "en": "Cerebrum",
+  "pl": "Mózg",
+  "pos": [
+   93.72,
+   24.29,
+   1646.03
+  ],
+  "approx": false,
+  "dist_mm": 72.4,
+  "lmid": "corpus_callosum|Cerebrum"
+ },
+ {
+  "ownerId": "supramarginal_gyrus_r",
+  "en": "Brain",
+  "pl": "Mózgowie",
+  "pos": [
+   -89.43,
+   11.19,
+   1660.2
+  ],
+  "approx": false,
+  "dist_mm": 25.1,
+  "lmid": "supramarginal_gyrus_r|Brain"
+ },
+ {
+  "ownerId": "superior_temporal_sulcus_r",
+  "en": "Meninges",
+  "pl": "Opony",
+  "pos": [
+   -91.71,
+   6.74,
+   1608.72
+  ],
+  "approx": false,
+  "dist_mm": 27.7,
+  "lmid": "superior_temporal_sulcus_r|Meninges"
+ },
+ {
+  "ownerId": "inferior_temporal_gyrus_r",
+  "en": "Central nervous system",
+  "pl": "Ośrodkowy układ nerwowy",
+  "pos": [
+   -107.06,
+   27.05,
+   1556.36
+  ],
+  "approx": false,
+  "dist_mm": 60.6,
+  "lmid": "inferior_temporal_gyrus_r|Central nervous system"
+ },
+ {
+  "ownerId": "temporal_pole_r",
+  "en": "Cochlear cupula",
+  "pl": "Osklepek ślimaka",
+  "pos": [
+   -43.25,
+   -3.95,
+   1580.86
+  ],
+  "approx": false,
+  "dist_mm": 2.9,
+  "lmid": "temporal_pole_r|Cochlear cupula"
+ },
+ {
+  "ownerId": "temporal_pole_r",
+  "en": "Simple bony limb",
+  "pl": "Odnoga kostna pojedyncza",
+  "pos": [
+   -39.91,
+   9.52,
+   1580.18
+  ],
+  "approx": false,
+  "dist_mm": 7.5,
+  "lmid": "temporal_pole_r|Simple bony limb"
+ },
+ {
+  "ownerId": "inferior_temporal_gyrus_r",
+  "en": "Lateral bony ampulla",
+  "pl": "Bańka kostna boczna",
+  "pos": [
+   -45.97,
+   5.01,
+   1584.03
+  ],
+  "approx": false,
+  "dist_mm": 3.8,
+  "lmid": "inferior_temporal_gyrus_r|Lateral bony ampulla"
+ },
+ {
+  "ownerId": "medial_occipitotemporal_gyrus_parahippocampal_r",
+  "en": "Common bony limb",
+  "pl": "Odnoga kostna wspólna",
+  "pos": [
+   -35.22,
+   6.12,
+   1582.2
+  ],
+  "approx": false,
+  "dist_mm": 4.5,
+  "lmid": "medial_occipitotemporal_gyrus_parahippocampal_r|Common bony limb"
+ },
+ {
+  "ownerId": "temporal_pole_r",
+  "en": "Posterior bony ampulla",
+  "pl": "Bańka kostna tylna",
+  "pos": [
+   -39.25,
+   6.48,
+   1575.96
+  ],
+  "approx": false,
+  "dist_mm": 8.8,
+  "lmid": "temporal_pole_r|Posterior bony ampulla"
+ },
+ {
+  "ownerId": "temporal_pole_r",
+  "en": "Anterior bony ampulla",
+  "pl": "Bańka kostna przednia",
+  "pos": [
+   -41.3,
+   3.1,
+   1585.98
+  ],
+  "approx": false,
+  "dist_mm": 1.4,
+  "lmid": "temporal_pole_r|Anterior bony ampulla"
+ },
+ {
+  "ownerId": "inferior_temporal_gyrus_r",
+  "en": "Internal ear",
+  "pl": "Ucho wewnętrzne",
+  "pos": [
+   -67.27,
+   4.1,
+   1573.38
+  ],
+  "approx": false,
+  "dist_mm": 18.6,
+  "lmid": "inferior_temporal_gyrus_r|Internal ear"
+ },
+ {
+  "ownerId": "inferior_temporal_gyrus_r",
+  "en": "External ear'",
+  "pl": "Ucho zewnętrzne",
+  "pos": [
+   -70.6,
+   3.33,
+   1578.2
+  ],
+  "approx": false,
+  "dist_mm": 18.2,
+  "lmid": "inferior_temporal_gyrus_r|External ear'"
+ },
+ {
+  "ownerId": "inferior_temporal_gyrus_r",
+  "en": "Middle ear",
+  "pl": "Ucho środkowe",
+  "pos": [
+   -69.25,
+   4.1,
+   1575.5
+  ],
+  "approx": false,
+  "dist_mm": 19.0,
+  "lmid": "inferior_temporal_gyrus_r|Middle ear"
+ },
+ {
+  "ownerId": "inferior_temporal_gyrus_r",
+  "en": "Ear",
+  "pl": "Ucho",
+  "pos": [
+   -69.49,
+   4.54,
+   1577.92
+  ],
+  "approx": false,
+  "dist_mm": 17.6,
+  "lmid": "inferior_temporal_gyrus_r|Ear"
+ },
+ {
+  "ownerId": "zonular_fibres_r",
+  "en": "Corneoscleral junction",
+  "pl": "Rąbek rogówki",
+  "pos": [
+   -36.19,
+   -80.26,
+   1596.41
+  ],
+  "approx": false,
+  "dist_mm": 7.3,
+  "lmid": "zonular_fibres_r|Corneoscleral junction"
+ },
+ {
+  "ownerId": "zonular_fibres_r",
+  "en": "Sulcus sclerae",
+  "pl": "Bruzda twardówki",
+  "pos": [
+   -31.16,
+   -79.95,
+   1598.54
+  ],
+  "approx": false,
+  "dist_mm": 6.8,
+  "lmid": "zonular_fibres_r|Sulcus sclerae"
+ },
+ {
+  "ownerId": "zonular_fibres_r",
+  "en": "Optic axis",
+  "pl": "Oś wzrokowa",
+  "pos": [
+   -30.54,
+   -64.55,
+   1592.62
+  ],
+  "approx": false,
+  "dist_mm": 8.7,
+  "lmid": "zonular_fibres_r|Optic axis"
+ },
+ {
+  "ownerId": "nasolacrimal_duct",
+  "en": "Accessory visual structures",
+  "pl": "Narządy dodatkowe oka",
+  "pos": [
+   12.19,
+   -100.76,
+   1574.58
+  ],
+  "approx": false,
+  "dist_mm": 30.8,
+  "lmid": "nasolacrimal_duct|Accessory visual structures"
+ }
+]

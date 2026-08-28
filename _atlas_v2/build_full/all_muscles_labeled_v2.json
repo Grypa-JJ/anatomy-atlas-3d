@@ -1,0 +1,5266 @@
+[
+ {
+  "id": "abdominal_part_of_pectoralis_major_muscle_l",
+  "pl": "Mięsień piersiowy większy - część brzuszna",
+  "en": "(Abdominal part of pectoralis major muscle)",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "abdominal_part_of_pectoralis_major_muscle_r",
+  "pl": "Mięsień piersiowy większy - część brzuszna",
+  "en": "(Abdominal part of pectoralis major muscle)",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "adductor_minimus_l",
+  "pl": "Mięsień przywodziciel mały",
+  "en": "(Adductor minimus)",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "adductor_minimus_r",
+  "pl": "Mięsień przywodziciel mały",
+  "en": "(Adductor minimus)",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "iliopectineal_bursa_l",
+  "pl": "Kaletka biodrowo-łonowa",
+  "en": "(Iliopectineal bursa)",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "iliopectineal_bursa_r",
+  "pl": "Kaletka biodrowo-łonowa",
+  "en": "(Iliopectineal bursa)",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "opponens_digiti_minimi_muscle_of_foot_l",
+  "pl": "Mięsień przeciwstawiacz palca małego (stopy",
+  "en": "(Opponens digiti minimi muscle of foot)",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "opponens_digiti_minimi_muscle_of_foot_r",
+  "pl": "Mięsień przeciwstawiacz palca małego (stopy",
+  "en": "(Opponens digiti minimi muscle of foot)",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "abductor_digiti_minimi_of_foot_l",
+  "pl": "Mięsień odwodziciel palca małego (stopy",
+  "en": "Abductor digiti minimi of foot",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "abductor_digiti_minimi_of_foot_r",
+  "pl": "Mięsień odwodziciel palca małego (stopy",
+  "en": "Abductor digiti minimi of foot",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "abductor_digiti_minimi_of_hand_l",
+  "pl": "Mięsień odwodziciel palca małego (ręki",
+  "en": "Abductor digiti minimi of hand",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "abductor_digiti_minimi_of_hand_r",
+  "pl": "Mięsień odwodziciel palca małego (ręki",
+  "en": "Abductor digiti minimi of hand",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "abductor_hallucis_l",
+  "pl": "Mięsień odwodziciel palucha",
+  "en": "Abductor hallucis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "abductor_hallucis_r",
+  "pl": "Mięsień odwodziciel palucha",
+  "en": "Abductor hallucis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "abductor_pollicis_brevis_l",
+  "pl": "Mięsień odwodziciel krótki kciuka",
+  "en": "Abductor pollicis brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "abductor_pollicis_brevis_r",
+  "pl": "Mięsień odwodziciel krótki kciuka",
+  "en": "Abductor pollicis brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "abductor_pollicis_longus_l",
+  "pl": "Mięsień odwodziciel długi kciuka",
+  "en": "Abductor pollicis longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "abductor_pollicis_longus_r",
+  "pl": "Mięsień odwodziciel długi kciuka",
+  "en": "Abductor pollicis longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "acromial_part_of_deltoid_muscle_l",
+  "pl": "Mięsień naramienny - część barkowa",
+  "en": "Acromial part of deltoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "acromial_part_of_deltoid_muscle_r",
+  "pl": "Mięsień naramienny - część barkowa",
+  "en": "Acromial part of deltoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "adductor_brevis_l",
+  "pl": "Mięsień przywodziciel krótki",
+  "en": "Adductor brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "adductor_brevis_r",
+  "pl": "Mięsień przywodziciel krótki",
+  "en": "Adductor brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "adductor_longus_l",
+  "pl": "Mięsień przywodziciel długi",
+  "en": "Adductor longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "adductor_longus_r",
+  "pl": "Mięsień przywodziciel długi",
+  "en": "Adductor longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "adductor_magnus_l",
+  "pl": "Mięsień przywodziciel wielki",
+  "en": "Adductor magnus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "adductor_magnus_r",
+  "pl": "Mięsień przywodziciel wielki",
+  "en": "Adductor magnus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anconeus_muscle_l",
+  "pl": "Mięsień łokciowy",
+  "en": "Anconeus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "anconeus_muscle_r",
+  "pl": "Mięsień łokciowy",
+  "en": "Anconeus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "anserine_bursa_l",
+  "pl": "Kaletka gęsia",
+  "en": "Anserine bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anserine_bursa_r",
+  "pl": "Kaletka gęsia",
+  "en": "Anserine bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "antebrachial_fascia_l",
+  "pl": "Powięź przedramienia",
+  "en": "Antebrachial fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "antebrachial_fascia_r",
+  "pl": "Powięź przedramienia",
+  "en": "Antebrachial fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_belly_of_digastric_muscle",
+  "pl": "Mięsień dwubrzuścowy - brzusiec przedni",
+  "en": "Anterior belly of digastric muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "anterior_intermuscular_septum_of_leg_l",
+  "pl": "Przegroda międzymięśniowa przednia goleni",
+  "en": "Anterior intermuscular septum of leg",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_intermuscular_septum_of_leg_r",
+  "pl": "Przegroda międzymięśniowa przednia goleni",
+  "en": "Anterior intermuscular septum of leg",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_layer_of_thoracolumbar_fascia_l",
+  "pl": "Powięź mięśnia czworobocznego lędźwi; Blaszka przednia powięzi piersiowo- lędźwiowej",
+  "en": "Anterior layer of thoracolumbar fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_layer_of_thoracolumbar_fascia_r",
+  "pl": "Powięź mięśnia czworobocznego lędźwi; Blaszka przednia powięzi piersiowo- lędźwiowej",
+  "en": "Anterior layer of thoracolumbar fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ary_epiglottic_part_of_oblique_arytenoid_muscle",
+  "pl": "Część mięsień nalewkowy skośny",
+  "en": "Ary-epiglottic part of oblique arytenoid muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "ascending_part_of_trapezius_muscle_l",
+  "pl": "Mięsień czworoboczny - część wstępująca",
+  "en": "Ascending part of trapezius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "ascending_part_of_trapezius_muscle_r",
+  "pl": "Mięsień czworoboczny - część wstępująca",
+  "en": "Ascending part of trapezius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "bicipitoradial_bursa_l",
+  "pl": "Kaletka dwugłowo-promieniowa",
+  "en": "Bicipitoradial bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "bicipitoradial_bursa_r",
+  "pl": "Kaletka dwugłowo-promieniowa",
+  "en": "Bicipitoradial bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "brachial_fascia_l",
+  "pl": "Powięź ramienna",
+  "en": "Brachial fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachial_fascia_r",
+  "pl": "Powięź ramienna",
+  "en": "Brachial fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachialis_muscle_l",
+  "pl": "Mięsień ramienny",
+  "en": "Brachialis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachialis_muscle_r",
+  "pl": "Mięsień ramienny",
+  "en": "Brachialis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachioradialis_muscle_l",
+  "pl": "Mięsień ramienno-promieniowy",
+  "en": "Brachioradialis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachioradialis_muscle_r",
+  "pl": "Mięsień ramienno-promieniowy",
+  "en": "Brachioradialis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "bucinator_l",
+  "pl": "Mięsień policzkowy",
+  "en": "Bucinator",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "bucinator_r",
+  "pl": "Mięsień policzkowy",
+  "en": "Bucinator",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "bursa_of_piriformis_muscle_l",
+  "pl": "Kaletka mięsień gruszkowaty",
+  "en": "Bursa of piriformis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "bursa_of_piriformis_muscle_r",
+  "pl": "Kaletka mięsień gruszkowaty",
+  "en": "Bursa of piriformis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "calcaneal_tendon_l",
+  "pl": "Ścięgno piętowe",
+  "en": "Calcaneal tendon",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "calcaneal_tendon_r",
+  "pl": "Ścięgno piętowe",
+  "en": "Calcaneal tendon",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "clavicular_head_of_pectoralis_major_muscle_l",
+  "pl": "Głowa mięsień piersiowy większy",
+  "en": "Clavicular head of pectoralis major muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "clavicular_head_of_pectoralis_major_muscle_r",
+  "pl": "Głowa mięsień piersiowy większy",
+  "en": "Clavicular head of pectoralis major muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "clavicular_part_of_deltoid_muscle_l",
+  "pl": "Mięsień naramienny - część obojczykowa",
+  "en": "Clavicular part of deltoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "clavicular_part_of_deltoid_muscle_r",
+  "pl": "Mięsień naramienny - część obojczykowa",
+  "en": "Clavicular part of deltoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "clavipectoral_fascia_l",
+  "pl": "Powięź obojczykowo-piersiowa",
+  "en": "Clavipectoral fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "clavipectoral_fascia_r",
+  "pl": "Powięź obojczykowo-piersiowa",
+  "en": "Clavipectoral fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "coccygeus_muscle_l",
+  "pl": "Mięsień guziczny",
+  "en": "Coccygeus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "coccygeus_muscle_r",
+  "pl": "Mięsień guziczny",
+  "en": "Coccygeus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "common_flexor_tendon_sheath_l",
+  "pl": "Pochewka wspólna zginaczy",
+  "en": "Common flexor tendon sheath",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "common_flexor_tendon_sheath_r",
+  "pl": "Pochewka wspólna zginaczy",
+  "en": "Common flexor tendon sheath",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "common_tendinous_ring_l",
+  "pl": "Pierścień ścięgnisty wspólny",
+  "en": "Common tendinous ring",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_tendinous_ring_r",
+  "pl": "Pierścień ścięgnisty wspólny",
+  "en": "Common tendinous ring",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_tendon_sheath_of_fibularis_muscles_l",
+  "pl": "Common tendon sheath of fibularis muscles",
+  "en": "Common tendon sheath of fibularis muscles",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "common_tendon_sheath_of_fibularis_muscles_r",
+  "pl": "Common tendon sheath of fibularis muscles",
+  "en": "Common tendon sheath of fibularis muscles",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "coracobrachial_bursa_l",
+  "pl": "Kaletka kruczo-ramienna",
+  "en": "Coracobrachial bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "coracobrachial_bursa_r",
+  "pl": "Kaletka kruczo-ramienna",
+  "en": "Coracobrachial bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "coracobrachialis_muscle_l",
+  "pl": "Mięsień kruczo-ramienny",
+  "en": "Coracobrachialis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "coracobrachialis_muscle_r",
+  "pl": "Mięsień kruczo-ramienny",
+  "en": "Coracobrachialis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "corrugator_supercilii_l",
+  "pl": "Mięsień marszczący brwi",
+  "en": "Corrugator supercilii",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "corrugator_supercilii_r",
+  "pl": "Mięsień marszczący brwi",
+  "en": "Corrugator supercilii",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "cruciform_part_of_fibrous_sheath_of_digit_of_hand_l",
+  "pl": "Część krzyżowa pochewki włóknistej palca ręki",
+  "en": "Cruciform part of fibrous sheath of digit of hand",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "cruciform_part_of_fibrous_sheath_of_digit_of_hand_r",
+  "pl": "Część krzyżowa pochewki włóknistej palca ręki",
+  "en": "Cruciform part of fibrous sheath of digit of hand",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "crural_fascia_l",
+  "pl": "Powięź goleni",
+  "en": "Crural fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "crural_fascia_r",
+  "pl": "Powięź goleni",
+  "en": "Crural fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "deep_head_of_flexor_pollicis_brevis_l",
+  "pl": "Mięsień zginacz krótki kciuka - głowa głęboka",
+  "en": "Deep head of flexor pollicis brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "deep_head_of_flexor_pollicis_brevis_r",
+  "pl": "Mięsień zginacz krótki kciuka - głowa głęboka",
+  "en": "Deep head of flexor pollicis brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "deep_head_of_pronator_teres_l",
+  "pl": "Deep head of pronator teres",
+  "en": "Deep head of pronator teres",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "deep_head_of_pronator_teres_r",
+  "pl": "Deep head of pronator teres",
+  "en": "Deep head of pronator teres",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "deep_infrapatellar_bursa_l",
+  "pl": "Kaletka podrzepkowa głęboka",
+  "en": "Deep infrapatellar bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "deep_infrapatellar_bursa_r",
+  "pl": "Kaletka podrzepkowa głęboka",
+  "en": "Deep infrapatellar bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "deep_part_of_masseter_l",
+  "pl": "Mięsień żwacz - część głęboka",
+  "en": "Deep part of masseter",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "deep_part_of_masseter_r",
+  "pl": "Mięsień żwacz - część głęboka",
+  "en": "Deep part of masseter",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "deltoid_fascia_l",
+  "pl": "Powięź naramienna",
+  "en": "Deltoid fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deltoid_fascia_r",
+  "pl": "Powięź naramienna",
+  "en": "Deltoid fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "depressor_anguli_oris_l",
+  "pl": "Mięsień obniżacz kąta ust",
+  "en": "Depressor anguli oris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "depressor_anguli_oris_r",
+  "pl": "Mięsień obniżacz kąta ust",
+  "en": "Depressor anguli oris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "depressor_labii_inferioris_l",
+  "pl": "Mięsień obniżacz wargi dolnej",
+  "en": "Depressor labii inferioris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "depressor_labii_inferioris_r",
+  "pl": "Mięsień obniżacz wargi dolnej",
+  "en": "Depressor labii inferioris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "depressor_septi_nasi",
+  "pl": "Mięsień obniżacz przegrody nosa",
+  "en": "Depressor septi nasi",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "descending_part_of_trapezius_muscle_l",
+  "pl": "Mięsień czworoboczny - część zstępująca",
+  "en": "Descending part of trapezius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "descending_part_of_trapezius_muscle_r",
+  "pl": "Mięsień czworoboczny - część zstępująca",
+  "en": "Descending part of trapezius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "diaphragm",
+  "pl": "Przepona",
+  "en": "Diaphragm",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "diaphragmatic_fascia",
+  "pl": "Powięź przeponowa",
+  "en": "Diaphragmatic fascia",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_fascia_of_hand_l",
+  "pl": "Powięź grzbietowa ręki",
+  "en": "Dorsal fascia of hand",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_fascia_of_hand_r",
+  "pl": "Powięź grzbietowa ręki",
+  "en": "Dorsal fascia of hand",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_interossei_muscles_of_foot_l",
+  "pl": "Mięśnie międzykostne grzbietowe stopy",
+  "en": "Dorsal interossei muscles of foot",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_interossei_muscles_of_foot_r",
+  "pl": "Mięśnie międzykostne grzbietowe stopy",
+  "en": "Dorsal interossei muscles of foot",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_interossei_muscles_of_hand_l",
+  "pl": "Mięśnie międzykostne grzbietowe ręki",
+  "en": "Dorsal interossei muscles of hand",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_interossei_muscles_of_hand_r",
+  "pl": "Mięśnie międzykostne grzbietowe ręki",
+  "en": "Dorsal interossei muscles of hand",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_parts_of_lateral_intertransversarii_lumborum_muscles_l",
+  "pl": "Części grzbietowe mięśni międzypoprzecznych bocznych lędźwi",
+  "en": "Dorsal parts of lateral intertransversarii lumborum muscles",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_parts_of_lateral_intertransversarii_lumborum_muscles_r",
+  "pl": "Części grzbietowe mięśni międzypoprzecznych bocznych lędźwi",
+  "en": "Dorsal parts of lateral intertransversarii lumborum muscles",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "epicranial_aponeurosis_l",
+  "pl": "Czepiec ścięgnisty",
+  "en": "Epicranial aponeurosis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "epicranial_aponeurosis_r",
+  "pl": "Czepiec ścięgnisty",
+  "en": "Epicranial aponeurosis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "extensor_carpi_radialis_brevis_l",
+  "pl": "Mięsień prostownik promieniowy krótki nadgarska",
+  "en": "Extensor carpi radialis brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "extensor_carpi_radialis_brevis_r",
+  "pl": "Mięsień prostownik promieniowy krótki nadgarska",
+  "en": "Extensor carpi radialis brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "extensor_carpi_radialis_longus_l",
+  "pl": "Mięsień prostownik promieniowy długi nadgarstka",
+  "en": "Extensor carpi radialis longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "extensor_carpi_radialis_longus_r",
+  "pl": "Mięsień prostownik promieniowy długi nadgarstka",
+  "en": "Extensor carpi radialis longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "extensor_digiti_minimi_l",
+  "pl": "Mięsień prostownik palca małego",
+  "en": "Extensor digiti minimi",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "extensor_digiti_minimi_r",
+  "pl": "Mięsień prostownik palca małego",
+  "en": "Extensor digiti minimi",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "extensor_digitorum_l",
+  "pl": "Mięsień prostownik palców",
+  "en": "Extensor digitorum",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "extensor_digitorum_r",
+  "pl": "Mięsień prostownik palców",
+  "en": "Extensor digitorum",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "extensor_digitorum_brevis_l",
+  "pl": "Mięsień prostownik krótki palców",
+  "en": "Extensor digitorum brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "extensor_digitorum_brevis_r",
+  "pl": "Mięsień prostownik krótki palców",
+  "en": "Extensor digitorum brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "extensor_digitorum_longus_l",
+  "pl": "Mięsień prostownik długi palców",
+  "en": "Extensor digitorum longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "extensor_digitorum_longus_r",
+  "pl": "Mięsień prostownik długi palców",
+  "en": "Extensor digitorum longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "extensor_hallucis_brevis_l",
+  "pl": "Mięsień prostownik krótki palucha",
+  "en": "Extensor hallucis brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "extensor_hallucis_brevis_r",
+  "pl": "Mięsień prostownik krótki palucha",
+  "en": "Extensor hallucis brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "extensor_hallucis_longus_l",
+  "pl": "Mięsień prostownik długi palucha",
+  "en": "Extensor hallucis longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "extensor_hallucis_longus_r",
+  "pl": "Mięsień prostownik długi palucha",
+  "en": "Extensor hallucis longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "extensor_indicis_l",
+  "pl": "Mięsień prostownik wskaziciela",
+  "en": "Extensor indicis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "extensor_indicis_r",
+  "pl": "Mięsień prostownik wskaziciela",
+  "en": "Extensor indicis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "extensor_pollicis_brevis_l",
+  "pl": "Mięsień prostownik krótki kciuka",
+  "en": "Extensor pollicis brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "extensor_pollicis_brevis_r",
+  "pl": "Mięsień prostownik krótki kciuka",
+  "en": "Extensor pollicis brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "extensor_pollicis_longus_l",
+  "pl": "Mięsień prostownik długi kciuka",
+  "en": "Extensor pollicis longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "extensor_pollicis_longus_r",
+  "pl": "Mięsień prostownik długi kciuka",
+  "en": "Extensor pollicis longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "extensor_retinaculum_of_wrist_l",
+  "pl": "Troczek prostowników nadgarstka",
+  "en": "Extensor retinaculum of wrist",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "extensor_retinaculum_of_wrist_r",
+  "pl": "Troczek prostowników nadgarstka",
+  "en": "Extensor retinaculum of wrist",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "external_abdominal_oblique_muscle_l",
+  "pl": "External abdominal oblique muscle",
+  "en": "External abdominal oblique muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "external_abdominal_oblique_muscle_r",
+  "pl": "External abdominal oblique muscle",
+  "en": "External abdominal oblique muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "external_anal_sphincter",
+  "pl": "Mięsień zwieracz odbytu zewnętrzny",
+  "en": "External anal sphincter",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_intercostal_muscles_l",
+  "pl": "Mięśnie międzyżebrowe zewnętrzne",
+  "en": "External intercostal muscles",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_intercostal_muscles_r",
+  "pl": "Mięśnie międzyżebrowe zewnętrzne",
+  "en": "External intercostal muscles",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_part_of_thyro_arytenoid_muscle",
+  "pl": "External part of thyro-arytenoid muscle",
+  "en": "External part of thyro-arytenoid muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "fascia_lata_l",
+  "pl": "Powięź szeroka",
+  "en": "Fascia lata",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fascia_lata_r",
+  "pl": "Powięź szeroka",
+  "en": "Fascia lata",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fibularis_brevis_muscle_l",
+  "pl": "Mięsień strzałkowy krótki",
+  "en": "Fibularis brevis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fibularis_brevis_muscle_r",
+  "pl": "Mięsień strzałkowy krótki",
+  "en": "Fibularis brevis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fibularis_longus_muscle_l",
+  "pl": "Mięsień strzałkowy długi",
+  "en": "Fibularis longus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fibularis_longus_muscle_r",
+  "pl": "Mięsień strzałkowy długi",
+  "en": "Fibularis longus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fibularis_tertius_muscle_l",
+  "pl": "Mięsień strzałkowy trzeci",
+  "en": "Fibularis tertius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fibularis_tertius_muscle_r",
+  "pl": "Mięsień strzałkowy trzeci",
+  "en": "Fibularis tertius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "flexor_carpi_radialis_l",
+  "pl": "Mięsień zginacz nadgarstka promieniowy",
+  "en": "Flexor carpi radialis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "flexor_carpi_radialis_r",
+  "pl": "Mięsień zginacz nadgarstka promieniowy",
+  "en": "Flexor carpi radialis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "flexor_digiti_minimi_of_foot_l",
+  "pl": "Mięsień zginacz krótki palca małego stopy",
+  "en": "Flexor digiti minimi of foot",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "flexor_digiti_minimi_of_foot_r",
+  "pl": "Mięsień zginacz krótki palca małego stopy",
+  "en": "Flexor digiti minimi of foot",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "flexor_digiti_minimi_of_hand_l",
+  "pl": "Mięsień zginacz krótki palca małego ręki",
+  "en": "Flexor digiti minimi of hand",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "flexor_digiti_minimi_of_hand_r",
+  "pl": "Mięsień zginacz krótki palca małego ręki",
+  "en": "Flexor digiti minimi of hand",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "flexor_digitorum_brevis_l",
+  "pl": "Mięsień zginacz krótki palców",
+  "en": "Flexor digitorum brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "flexor_digitorum_brevis_r",
+  "pl": "Mięsień zginacz krótki palców",
+  "en": "Flexor digitorum brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "flexor_digitorum_longus_l",
+  "pl": "Mięsień zginacz długi palców",
+  "en": "Flexor digitorum longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "flexor_digitorum_longus_r",
+  "pl": "Mięsień zginacz długi palców",
+  "en": "Flexor digitorum longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "flexor_digitorum_profundus_l",
+  "pl": "Mięsień zginacz palców głęboki",
+  "en": "Flexor digitorum profundus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "flexor_digitorum_profundus_r",
+  "pl": "Mięsień zginacz palców głęboki",
+  "en": "Flexor digitorum profundus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "flexor_hallucis_longus_l",
+  "pl": "Mięsień zginacz długi palucha",
+  "en": "Flexor hallucis longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "flexor_hallucis_longus_r",
+  "pl": "Mięsień zginacz długi palucha",
+  "en": "Flexor hallucis longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "flexor_pollicis_longus_l",
+  "pl": "Mięsień zginacz długi kciuka",
+  "en": "Flexor pollicis longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "flexor_pollicis_longus_r",
+  "pl": "Mięsień zginacz długi kciuka",
+  "en": "Flexor pollicis longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "flexor_retinaculum_of_ankle_l",
+  "pl": "Troczek zginaczy (kostka)",
+  "en": "Flexor retinaculum of ankle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "flexor_retinaculum_of_ankle_r",
+  "pl": "Troczek zginaczy (kostka)",
+  "en": "Flexor retinaculum of ankle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "flexor_retinaculum_of_wrist_l",
+  "pl": "Troczek zginaczy",
+  "en": "Flexor retinaculum of wrist",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "flexor_retinaculum_of_wrist_r",
+  "pl": "Troczek zginaczy",
+  "en": "Flexor retinaculum of wrist",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "frontalis_muscle_l",
+  "pl": "Mięsień czołowy",
+  "en": "Frontalis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "frontalis_muscle_r",
+  "pl": "Mięsień czołowy",
+  "en": "Frontalis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "genioglossus_muscle",
+  "pl": "Mięsień bródkowo-językowy",
+  "en": "Genioglossus muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "geniohyoid_muscle",
+  "pl": "Mięsień bródkowo-gnykowy",
+  "en": "Geniohyoid muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "gluteus_maximus_muscle_l",
+  "pl": "Mięsień pośladkowy wielki",
+  "en": "Gluteus maximus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "gluteus_maximus_muscle_r",
+  "pl": "Mięsień pośladkowy wielki",
+  "en": "Gluteus maximus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "gluteus_medius_muscle_l",
+  "pl": "Mięsień pośladkowy średni",
+  "en": "Gluteus medius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "gluteus_medius_muscle_r",
+  "pl": "Mięsień pośladkowy średni",
+  "en": "Gluteus medius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "gluteus_minimus_muscle_l",
+  "pl": "Mięsień pośladkowy mały",
+  "en": "Gluteus minimus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "gluteus_minimus_muscle_r",
+  "pl": "Mięsień pośladkowy mały",
+  "en": "Gluteus minimus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "gracilis_muscle_l",
+  "pl": "Mięsień smukły",
+  "en": "Gracilis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "gracilis_muscle_r",
+  "pl": "Mięsień smukły",
+  "en": "Gracilis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "humeral_head_of_extensor_carpi_ulnaris_l",
+  "pl": "Mięsień prostownik łokciowy nadgarstka - głowa ramienna",
+  "en": "Humeral head of extensor carpi ulnaris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "humeral_head_of_extensor_carpi_ulnaris_r",
+  "pl": "Mięsień prostownik łokciowy nadgarstka - głowa ramienna",
+  "en": "Humeral head of extensor carpi ulnaris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "humeral_head_of_flexor_carpi_ulnaris_l",
+  "pl": "Mięsień zginacz nadgarstka łokciowy - głowa ramienna",
+  "en": "Humeral head of flexor carpi ulnaris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "humeral_head_of_flexor_carpi_ulnaris_r",
+  "pl": "Mięsień zginacz nadgarstka łokciowy - głowa ramienna",
+  "en": "Humeral head of flexor carpi ulnaris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "humero_ulnar_head_of_flexor_digitorum_superficialis_l",
+  "pl": "Mięsień zginacz palców powierzchowny - głowa ramienno-łokciowa",
+  "en": "Humero-ulnar head of flexor digitorum superficialis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "humero_ulnar_head_of_flexor_digitorum_superficialis_r",
+  "pl": "Mięsień zginacz palców powierzchowny - głowa ramienno-łokciowa",
+  "en": "Humero-ulnar head of flexor digitorum superficialis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "hyoglossus_muscle",
+  "pl": "Mięsień gnykowo-językowy",
+  "en": "Hyoglossus muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "iliacus_muscle_l",
+  "pl": "Mięsień biodrowy",
+  "en": "Iliacus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "iliacus_muscle_r",
+  "pl": "Mięsień biodrowy",
+  "en": "Iliacus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "iliococcygeus_muscle_l",
+  "pl": "Mięsień biodrowo-guziczny",
+  "en": "Iliococcygeus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "iliococcygeus_muscle_r",
+  "pl": "Mięsień biodrowo-guziczny",
+  "en": "Iliococcygeus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "iliocostalis_colli_muscle_l",
+  "pl": "Mięsień biodrowo-żebrowy szyi",
+  "en": "Iliocostalis colli muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "iliocostalis_colli_muscle_r",
+  "pl": "Mięsień biodrowo-żebrowy szyi",
+  "en": "Iliocostalis colli muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "iliocostalis_lumborum_muscle_l",
+  "pl": "Mięsień biodrowo-żebrowy lędźwi",
+  "en": "Iliocostalis lumborum muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "iliocostalis_lumborum_muscle_r",
+  "pl": "Mięsień biodrowo-żebrowy lędźwi",
+  "en": "Iliocostalis lumborum muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "iliocostalis_thoracis_muscle_l",
+  "pl": "Mięsień biodrowo-żebrowy piersi",
+  "en": "Iliocostalis thoracis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "iliocostalis_thoracis_muscle_r",
+  "pl": "Mięsień biodrowo-żebrowy piersi",
+  "en": "Iliocostalis thoracis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "iliopectineal_arch_l",
+  "pl": "Łuk biodrowo-łonowy",
+  "en": "Iliopectineal arch",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliopectineal_arch_r",
+  "pl": "Łuk biodrowo-łonowy",
+  "en": "Iliopectineal arch",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliopsoas_fascia_l",
+  "pl": "Powieź biodrowo-lędźwiowa; powięź biodrowa",
+  "en": "Iliopsoas fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliopsoas_fascia_r",
+  "pl": "Powieź biodrowo-lędźwiowa; powięź biodrowa",
+  "en": "Iliopsoas fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliotibial_tract_l",
+  "pl": "Pasmo biodrowo-piszczelowe",
+  "en": "Iliotibial tract",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliotibial_tract_r",
+  "pl": "Pasmo biodrowo-piszczelowe",
+  "en": "Iliotibial tract",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_extensor_retinaculum_of_ankle_l",
+  "pl": "Inferior extensor retinaculum of ankle",
+  "en": "Inferior extensor retinaculum of ankle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "inferior_extensor_retinaculum_of_ankle_r",
+  "pl": "Inferior extensor retinaculum of ankle",
+  "en": "Inferior extensor retinaculum of ankle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "inferior_fibular_retinaculum_l",
+  "pl": "Troczek dolny mięśni strzałkowych",
+  "en": "Inferior fibular retinaculum",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "inferior_fibular_retinaculum_r",
+  "pl": "Troczek dolny mięśni strzałkowych",
+  "en": "Inferior fibular retinaculum",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "inferior_gemellus_muscle_l",
+  "pl": "Mięsień bliźniaczy dolny",
+  "en": "Inferior gemellus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_gemellus_muscle_r",
+  "pl": "Mięsień bliźniaczy dolny",
+  "en": "Inferior gemellus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_head_of_lateral_pterygoid_muscle_l",
+  "pl": "Głowa dolna mięsień skrzydłowy boczny",
+  "en": "Inferior head of lateral pterygoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_head_of_lateral_pterygoid_muscle_r",
+  "pl": "Głowa dolna mięsień skrzydłowy boczny",
+  "en": "Inferior head of lateral pterygoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_oblique_muscle_l",
+  "pl": "Mięsień skośny dolny",
+  "en": "Inferior oblique muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "inferior_oblique_muscle_r",
+  "pl": "Mięsień skośny dolny",
+  "en": "Inferior oblique muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "inferior_pharyngeal_constrictor",
+  "pl": "Mięsień zwieracz gardła dolny",
+  "en": "Inferior pharyngeal constrictor",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_rectus_muscle_l",
+  "pl": "Mięsień prosty dolny",
+  "en": "Inferior rectus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "inferior_rectus_muscle_r",
+  "pl": "Mięsień prosty dolny",
+  "en": "Inferior rectus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "inferior_subtendinous_bursa_of_biceps_femoris_muscle_l",
+  "pl": "Kaletka dolna mięsień dwugłowy uda",
+  "en": "Inferior subtendinous bursa of biceps femoris muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_subtendinous_bursa_of_biceps_femoris_muscle_r",
+  "pl": "Kaletka dolna mięsień dwugłowy uda",
+  "en": "Inferior subtendinous bursa of biceps femoris muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_tarsus_l",
+  "pl": "Tarczka dolna",
+  "en": "Inferior tarsus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "inferior_tarsus_r",
+  "pl": "Tarczka dolna",
+  "en": "Inferior tarsus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "infraspinatus_muscle_l",
+  "pl": "Mięsień podgrzebieniowy",
+  "en": "Infraspinatus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "infraspinatus_muscle_r",
+  "pl": "Mięsień podgrzebieniowy",
+  "en": "Infraspinatus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inguinal_ligament_l",
+  "pl": "Więzadło pachwinowe",
+  "en": "Inguinal ligament",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inguinal_ligament_r",
+  "pl": "Więzadło pachwinowe",
+  "en": "Inguinal ligament",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "innermost_intercostal_muscles_l",
+  "pl": "Mięśnie międzyżebrowe najgłębsze",
+  "en": "Innermost intercostal muscles",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "innermost_intercostal_muscles_r",
+  "pl": "Mięśnie międzyżebrowe najgłębsze",
+  "en": "Innermost intercostal muscles",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intermediate_tendon_of_digastric_muscle_l",
+  "pl": "Ścięgno pośrednie mięśnia dwubrzuścowego",
+  "en": "Intermediate tendon of digastric muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intermediate_tendon_of_digastric_muscle_r",
+  "pl": "Ścięgno pośrednie mięśnia dwubrzuścowego",
+  "en": "Intermediate tendon of digastric muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intermuscular_gluteal_bursae_l",
+  "pl": "Kaletki międzymięśniowe pośladkowe",
+  "en": "Intermuscular gluteal bursae",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intermuscular_gluteal_bursae_r",
+  "pl": "Kaletki międzymięśniowe pośladkowe",
+  "en": "Intermuscular gluteal bursae",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "internal_abdominal_oblique_muscle_l",
+  "pl": "Internal abdominal oblique muscle",
+  "en": "Internal abdominal oblique muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "internal_abdominal_oblique_muscle_r",
+  "pl": "Internal abdominal oblique muscle",
+  "en": "Internal abdominal oblique muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "internal_intercostal_muscles_l",
+  "pl": "Mięśnie międzyżebrowe wewnętrzne",
+  "en": "Internal intercostal muscles",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_intercostal_muscles_r",
+  "pl": "Mięśnie międzyżebrowe wewnętrzne",
+  "en": "Internal intercostal muscles",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "interspinales_colli_muscles",
+  "pl": "Mięśnie międzykolcowe szyi",
+  "en": "Interspinales colli muscles",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "interspinales_lumborum_muscles",
+  "pl": "Mięśnie międzykolcowe lędźwi",
+  "en": "Interspinales lumborum muscles",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "interspinales_thoracis_muscles",
+  "pl": "Mięśnie międzykolcowe klatki piersiowej",
+  "en": "Interspinales thoracis muscles",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intertubercular_tendon_sheath_l",
+  "pl": "Pochewka ścięgna międzyguzkowa",
+  "en": "Intertubercular tendon sheath",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intertubercular_tendon_sheath_r",
+  "pl": "Pochewka ścięgna międzyguzkowa",
+  "en": "Intertubercular tendon sheath",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "investing_abdominal_fascia_l",
+  "pl": "Powięź pokrywająca brzucha",
+  "en": "Investing abdominal fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "investing_abdominal_fascia_r",
+  "pl": "Powięź pokrywająca brzucha",
+  "en": "Investing abdominal fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_crico_arytenoid_muscle",
+  "pl": "Mięsień pierścienno-nalewkowy boczny",
+  "en": "Lateral crico-arytenoid muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "lateral_femoral_intermuscular_septum_l",
+  "pl": "Przegroda międzymięśniowa boczna uda",
+  "en": "Lateral femoral intermuscular septum",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_femoral_intermuscular_septum_r",
+  "pl": "Przegroda międzymięśniowa boczna uda",
+  "en": "Lateral femoral intermuscular septum",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_head_of_flexor_hallucis_brevis_l",
+  "pl": "Mięsień zginacz krótki palucha - głowa boczna",
+  "en": "Lateral head of flexor hallucis brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "lateral_head_of_flexor_hallucis_brevis_r",
+  "pl": "Mięsień zginacz krótki palucha - głowa boczna",
+  "en": "Lateral head of flexor hallucis brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "lateral_head_of_gastrocnemius_l",
+  "pl": "Mięsień brzuchaty łydki - głowa boczna",
+  "en": "Lateral head of gastrocnemius",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "lateral_head_of_gastrocnemius_r",
+  "pl": "Mięsień brzuchaty łydki - głowa boczna",
+  "en": "Lateral head of gastrocnemius",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "lateral_head_of_triceps_brachii_l",
+  "pl": "Mięsień trójgłowy ramienia - głowa boczna",
+  "en": "Lateral head of triceps brachii",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "lateral_head_of_triceps_brachii_r",
+  "pl": "Mięsień trójgłowy ramienia - głowa boczna",
+  "en": "Lateral head of triceps brachii",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "lateral_intermuscular_septum_of_arm_l",
+  "pl": "Przegroda międzymięśniowa boczna ramienia",
+  "en": "Lateral intermuscular septum of arm",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_intermuscular_septum_of_arm_r",
+  "pl": "Przegroda międzymięśniowa boczna ramienia",
+  "en": "Lateral intermuscular septum of arm",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_patellar_retinaculum_l",
+  "pl": "Troczek boczny rzepki",
+  "en": "Lateral patellar retinaculum",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_patellar_retinaculum_r",
+  "pl": "Troczek boczny rzepki",
+  "en": "Lateral patellar retinaculum",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_rectus_muscle_l",
+  "pl": "Mięsień prosty boczny",
+  "en": "Lateral rectus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "lateral_rectus_muscle_r",
+  "pl": "Mięsień prosty boczny",
+  "en": "Lateral rectus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "lateral_subtendinous_bursa_of_gastrocnemius_muscle_l",
+  "pl": "Kaletka boczna mięsień brzuchaty łydki",
+  "en": "Lateral subtendinous bursa of gastrocnemius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_subtendinous_bursa_of_gastrocnemius_muscle_r",
+  "pl": "Kaletka boczna mięsień brzuchaty łydki",
+  "en": "Lateral subtendinous bursa of gastrocnemius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "latissimus_dorsi_muscle_l",
+  "pl": "Mięsień najszerszy grzbietu",
+  "en": "Latissimus dorsi muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "latissimus_dorsi_muscle_r",
+  "pl": "Mięsień najszerszy grzbietu",
+  "en": "Latissimus dorsi muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "levator_anguli_oris_l",
+  "pl": "Mięsień dźwigacz kąta ust",
+  "en": "Levator anguli oris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "levator_anguli_oris_r",
+  "pl": "Mięsień dźwigacz kąta ust",
+  "en": "Levator anguli oris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "levator_labii_superioris_l",
+  "pl": "Mięsień dźwigacz wargi górnej",
+  "en": "Levator labii superioris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "levator_labii_superioris_r",
+  "pl": "Mięsień dźwigacz wargi górnej",
+  "en": "Levator labii superioris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "levator_nasolabialis_l",
+  "pl": "Mięsień dźwigacz wargi górnej i skrzydła nosa",
+  "en": "Levator nasolabialis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "levator_nasolabialis_r",
+  "pl": "Mięsień dźwigacz wargi górnej i skrzydła nosa",
+  "en": "Levator nasolabialis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "levator_palpebrae_superioris_l",
+  "pl": "Mięsień dźwigacz powieki górnej",
+  "en": "Levator palpebrae superioris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "levator_palpebrae_superioris_r",
+  "pl": "Mięsień dźwigacz powieki górnej",
+  "en": "Levator palpebrae superioris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "levator_scapulae_l",
+  "pl": "Mięsień dźwigacz łopatki",
+  "en": "Levator scapulae",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "levator_scapulae_r",
+  "pl": "Mięsień dźwigacz łopatki",
+  "en": "Levator scapulae",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "levatores_breves_costarum_l",
+  "pl": "Mięśnie dźwigacze żeber krótkie",
+  "en": "Levatores breves costarum",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "levatores_breves_costarum_r",
+  "pl": "Mięśnie dźwigacze żeber krótkie",
+  "en": "Levatores breves costarum",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "levatores_longi_costarum_l",
+  "pl": "Mięśnie dźwigacze żeber długie",
+  "en": "Levatores longi costarum",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "levatores_longi_costarum_r",
+  "pl": "Mięśnie dźwigacze żeber długie",
+  "en": "Levatores longi costarum",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "linea_alba",
+  "pl": "Kresa biała",
+  "en": "Linea alba",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "long_head_of_biceps_brachii_l",
+  "pl": "Mięsień dwugłowy ramienia - głowa długa",
+  "en": "Long head of biceps brachii",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "long_head_of_biceps_brachii_r",
+  "pl": "Mięsień dwugłowy ramienia - głowa długa",
+  "en": "Long head of biceps brachii",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "long_head_of_biceps_femoris_l",
+  "pl": "Mięsień dwugłowy uda - głowa długa",
+  "en": "Long head of biceps femoris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "long_head_of_biceps_femoris_r",
+  "pl": "Mięsień dwugłowy uda - głowa długa",
+  "en": "Long head of biceps femoris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "long_head_of_triceps_brachii_l",
+  "pl": "Mięsień trójgłowy ramienia - głowa długa",
+  "en": "Long head of triceps brachii",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "long_head_of_triceps_brachii_r",
+  "pl": "Mięsień trójgłowy ramienia - głowa długa",
+  "en": "Long head of triceps brachii",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "longissimus_capitis_muscle_l",
+  "pl": "Mięsień najdłuższy głowy",
+  "en": "Longissimus capitis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "longissimus_capitis_muscle_r",
+  "pl": "Mięsień najdłuższy głowy",
+  "en": "Longissimus capitis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "longissimus_colli_muscle_l",
+  "pl": "Mięsień najdłuższy szyi",
+  "en": "Longissimus colli muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "longissimus_colli_muscle_r",
+  "pl": "Mięsień najdłuższy szyi",
+  "en": "Longissimus colli muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "longissimus_thoracis_muscle_l",
+  "pl": "Mięsień najdłuższy",
+  "en": "Longissimus thoracis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "longissimus_thoracis_muscle_r",
+  "pl": "Mięsień najdłuższy",
+  "en": "Longissimus thoracis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "longus_capitis_muscle_l",
+  "pl": "Mięsień długi głowy",
+  "en": "Longus capitis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "longus_capitis_muscle_r",
+  "pl": "Mięsień długi głowy",
+  "en": "Longus capitis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "longus_colli_muscle_l",
+  "pl": "Mięsień długi szyi",
+  "en": "Longus colli muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "longus_colli_muscle_r",
+  "pl": "Mięsień długi szyi",
+  "en": "Longus colli muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lumbrical_muscles_of_foot_l",
+  "pl": "Mięśnie glistowate stopy",
+  "en": "Lumbrical muscles of foot",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lumbrical_muscles_of_foot_r",
+  "pl": "Mięśnie glistowate stopy",
+  "en": "Lumbrical muscles of foot",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lumbrical_muscles_of_hand_l",
+  "pl": "Mięśnie glistowate ręki",
+  "en": "Lumbrical muscles of hand",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lumbrical_muscles_of_hand_r",
+  "pl": "Mięśnie glistowate ręki",
+  "en": "Lumbrical muscles of hand",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "masseteric_fascia_l",
+  "pl": "Powięź żwaczowa",
+  "en": "Masseteric fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "masseteric_fascia_r",
+  "pl": "Powięź żwaczowa",
+  "en": "Masseteric fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "medial_femoral_intermuscular_septum_l",
+  "pl": "Przegroda międzymięśniowa boczna uda",
+  "en": "Medial femoral intermuscular septum",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "medial_femoral_intermuscular_septum_r",
+  "pl": "Przegroda międzymięśniowa boczna uda",
+  "en": "Medial femoral intermuscular septum",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "medial_head_of_flexor_hallucis_brevis_l",
+  "pl": "Mięsień zginacz krótki palucha - głowa przyśrodkowa",
+  "en": "Medial head of flexor hallucis brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "medial_head_of_flexor_hallucis_brevis_r",
+  "pl": "Mięsień zginacz krótki palucha - głowa przyśrodkowa",
+  "en": "Medial head of flexor hallucis brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "medial_head_of_gastrocnemius_l",
+  "pl": "Mięsień brzuchaty łydki - głowa przyśrodkowa",
+  "en": "Medial head of gastrocnemius",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "medial_head_of_gastrocnemius_r",
+  "pl": "Mięsień brzuchaty łydki - głowa przyśrodkowa",
+  "en": "Medial head of gastrocnemius",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "medial_head_of_triceps_brachii_l",
+  "pl": "Mięsień trójgłowy ramienia - głowa przyśrodkowa",
+  "en": "Medial head of triceps brachii",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "medial_head_of_triceps_brachii_r",
+  "pl": "Mięsień trójgłowy ramienia - głowa przyśrodkowa",
+  "en": "Medial head of triceps brachii",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "medial_intermuscular_septum_of_arm_l",
+  "pl": "Przegroda międzymięśniowa przyśrodkowa ramienia",
+  "en": "Medial intermuscular septum of arm",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_intermuscular_septum_of_arm_r",
+  "pl": "Przegroda międzymięśniowa przyśrodkowa ramienia",
+  "en": "Medial intermuscular septum of arm",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_patellar_retinaculum_l",
+  "pl": "Troczek przyśrodkowy rzepki",
+  "en": "Medial patellar retinaculum",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_patellar_retinaculum_r",
+  "pl": "Troczek przyśrodkowy rzepki",
+  "en": "Medial patellar retinaculum",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_pterygoid_muscle_l",
+  "pl": "Mięsień skrzydłowy przyśrodkowy",
+  "en": "Medial pterygoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "medial_pterygoid_muscle_r",
+  "pl": "Mięsień skrzydłowy przyśrodkowy",
+  "en": "Medial pterygoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "medial_rectus_muscle_l",
+  "pl": "Mięsień prosty przyśrodkowy",
+  "en": "Medial rectus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "medial_rectus_muscle_r",
+  "pl": "Mięsień prosty przyśrodkowy",
+  "en": "Medial rectus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "medial_subtendinous_bursa_of_gastrocnemius_muscle_l",
+  "pl": "Kaletka przyśrodkowa mięsień brzuchaty łydki",
+  "en": "Medial subtendinous bursa of gastrocnemius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_subtendinous_bursa_of_gastrocnemius_muscle_r",
+  "pl": "Kaletka przyśrodkowa mięsień brzuchaty łydki",
+  "en": "Medial subtendinous bursa of gastrocnemius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "mentalis_muscle",
+  "pl": "Mięsień bródkowy",
+  "en": "Mentalis muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "middle_layer_of_thoracolumbar_fascia_l",
+  "pl": "Blaszka środkowa powięzi piersiowo-lędźwiowej",
+  "en": "Middle layer of thoracolumbar fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "middle_layer_of_thoracolumbar_fascia_r",
+  "pl": "Blaszka środkowa powięzi piersiowo-lędźwiowej",
+  "en": "Middle layer of thoracolumbar fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "middle_pharyngeal_constrictor",
+  "pl": "Mięsień zwieracz gardła środkowy",
+  "en": "Middle pharyngeal constrictor",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "multifidus_colli_muscle_l",
+  "pl": "Mięsień wielodzielny szyi",
+  "en": "Multifidus colli muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "multifidus_colli_muscle_r",
+  "pl": "Mięsień wielodzielny szyi",
+  "en": "Multifidus colli muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "multifidus_lumborum_muscle_l",
+  "pl": "Mięsień wielodzielny lędźwi",
+  "en": "Multifidus lumborum muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "multifidus_lumborum_muscle_r",
+  "pl": "Mięsień wielodzielny lędźwi",
+  "en": "Multifidus lumborum muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "multifidus_thoracis_muscle_l",
+  "pl": "Mięsień wielodzielny klatki piersiowej",
+  "en": "Multifidus thoracis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "multifidus_thoracis_muscle_r",
+  "pl": "Mięsień wielodzielny klatki piersiowej",
+  "en": "Multifidus thoracis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "mylohyoid_muscle_l",
+  "pl": "Mięsień żuchwowo-gnykowy",
+  "en": "Mylohyoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "mylohyoid_muscle_r",
+  "pl": "Mięsień żuchwowo-gnykowy",
+  "en": "Mylohyoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "nasalis_muscle",
+  "pl": "Mięsień nosowy",
+  "en": "Nasalis muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "oblique_head_of_adductor_hallucis_l",
+  "pl": "Mięsień przywodziciel palucha - głowa skośna",
+  "en": "Oblique head of adductor hallucis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "oblique_head_of_adductor_hallucis_r",
+  "pl": "Mięsień przywodziciel palucha - głowa skośna",
+  "en": "Oblique head of adductor hallucis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "oblique_head_of_adductor_pollicis_l",
+  "pl": "Mięsień przywodziciel kciuka - głowa skośna",
+  "en": "Oblique head of adductor pollicis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "oblique_head_of_adductor_pollicis_r",
+  "pl": "Mięsień przywodziciel kciuka - głowa skośna",
+  "en": "Oblique head of adductor pollicis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "oblique_part_of_cricothyroid_muscle",
+  "pl": "Część skośna mięsień pierścienno-tarczowy",
+  "en": "Oblique part of cricothyroid muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "obliquus_inferior_capitis_muscle_l",
+  "pl": "Mięsień skośny głowy dolny",
+  "en": "Obliquus inferior capitis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "obliquus_inferior_capitis_muscle_r",
+  "pl": "Mięsień skośny głowy dolny",
+  "en": "Obliquus inferior capitis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "obliquus_superior_capitis_muscle_l",
+  "pl": "Mięsień skośny głowy górny",
+  "en": "Obliquus superior capitis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "obliquus_superior_capitis_muscle_r",
+  "pl": "Mięsień skośny głowy górny",
+  "en": "Obliquus superior capitis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "obturator_externus_l",
+  "pl": "Mięsień zasłaniacz zewnętrzny",
+  "en": "Obturator externus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "obturator_externus_r",
+  "pl": "Mięsień zasłaniacz zewnętrzny",
+  "en": "Obturator externus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "obturator_internus_l",
+  "pl": "Mięsień zasłaniacz wewnętrzny",
+  "en": "Obturator internus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "obturator_internus_r",
+  "pl": "Mięsień zasłaniacz wewnętrzny",
+  "en": "Obturator internus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "occipitalis_muscle_l",
+  "pl": "Mięsień potyliczny",
+  "en": "Occipitalis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "occipitalis_muscle_r",
+  "pl": "Mięsień potyliczny",
+  "en": "Occipitalis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "omohyoid_muscle_l",
+  "pl": "Mięsień łopatkowo-gnykowy",
+  "en": "Omohyoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "omohyoid_muscle_r",
+  "pl": "Mięsień łopatkowo-gnykowy",
+  "en": "Omohyoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "opponens_digiti_minimi_muscle_of_hand_l",
+  "pl": "Mięsień przeciwstawiacz palca małego (ręki",
+  "en": "Opponens digiti minimi muscle of hand",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "opponens_digiti_minimi_muscle_of_hand_r",
+  "pl": "Mięsień przeciwstawiacz palca małego (ręki",
+  "en": "Opponens digiti minimi muscle of hand",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "opponens_pollicis_muscle_l",
+  "pl": "Mięsień przeciwstawiacz kciuka",
+  "en": "Opponens pollicis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "opponens_pollicis_muscle_r",
+  "pl": "Mięsień przeciwstawiacz kciuka",
+  "en": "Opponens pollicis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "orbicularis_oris_muscle_l",
+  "pl": "Mięsień okrężny ust",
+  "en": "Orbicularis oris muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "orbicularis_oris_muscle_r",
+  "pl": "Mięsień okrężny ust",
+  "en": "Orbicularis oris muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "orbital_part_of_orbicularis_oculi_l",
+  "pl": "Część oczodołowa mięśnia okrężnego oka",
+  "en": "Orbital part of orbicularis oculi",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "orbital_part_of_orbicularis_oculi_r",
+  "pl": "Część oczodołowa mięśnia okrężnego oka",
+  "en": "Orbital part of orbicularis oculi",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "palatopharyngeus_muscle",
+  "pl": "Mięsień podniebienno-gardłowy",
+  "en": "Palatopharyngeus muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "palmar_aponeurosis_l",
+  "pl": "Rozcięgno dłoniowe",
+  "en": "Palmar aponeurosis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "palmar_aponeurosis_r",
+  "pl": "Rozcięgno dłoniowe",
+  "en": "Palmar aponeurosis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "palmar_interossei_muscles_l",
+  "pl": "Mięśnie międzykostne dłoniowe",
+  "en": "Palmar interossei muscles",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "palmar_interossei_muscles_r",
+  "pl": "Mięśnie międzykostne dłoniowe",
+  "en": "Palmar interossei muscles",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "palmaris_longus_muscle_l",
+  "pl": "Mięsień dłoniowy długi",
+  "en": "Palmaris longus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmaris_longus_muscle_r",
+  "pl": "Mięsień dłoniowy długi",
+  "en": "Palmaris longus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palpebral_part_of_orbicularis_oculi_l",
+  "pl": "Część powiekowa mięśnia okrężnego oka",
+  "en": "Palpebral part of orbicularis oculi",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "palpebral_part_of_orbicularis_oculi_r",
+  "pl": "Część powiekowa mięśnia okrężnego oka",
+  "en": "Palpebral part of orbicularis oculi",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "pectineus_muscle_l",
+  "pl": "Mięsień grzebieniowy",
+  "en": "Pectineus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "pectineus_muscle_r",
+  "pl": "Mięsień grzebieniowy",
+  "en": "Pectineus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "pectoral_fascia_l",
+  "pl": "Powięź piersiowa",
+  "en": "Pectoral fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pectoral_fascia_r",
+  "pl": "Powięź piersiowa",
+  "en": "Pectoral fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pectoralis_minor_muscle_l",
+  "pl": "Mięsień piersiowy mniejszy",
+  "en": "Pectoralis minor muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "pectoralis_minor_muscle_r",
+  "pl": "Mięsień piersiowy mniejszy",
+  "en": "Pectoralis minor muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "piriformis_fascia_l",
+  "pl": "Powięź mięśnia gruszkowatego",
+  "en": "Piriformis fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "piriformis_fascia_r",
+  "pl": "Powięź mięśnia gruszkowatego",
+  "en": "Piriformis fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "piriformis_muscle_l",
+  "pl": "Mięsień gruszkowaty",
+  "en": "Piriformis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "piriformis_muscle_r",
+  "pl": "Mięsień gruszkowaty",
+  "en": "Piriformis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "plantar_aponeurosis_l",
+  "pl": "Rozcięgno podeszwowe",
+  "en": "Plantar aponeurosis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "plantar_aponeurosis_r",
+  "pl": "Rozcięgno podeszwowe",
+  "en": "Plantar aponeurosis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "plantar_interossei_muscles_l",
+  "pl": "Mięśnie międzykostne podeszwowe",
+  "en": "Plantar interossei muscles",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "plantar_interossei_muscles_r",
+  "pl": "Mięśnie międzykostne podeszwowe",
+  "en": "Plantar interossei muscles",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "plantar_tendon_sheath_of_fibularis_longus_muscle_l",
+  "pl": "Plantar tendon sheath of fibularis longus muscle",
+  "en": "Plantar tendon sheath of fibularis longus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "plantar_tendon_sheath_of_fibularis_longus_muscle_r",
+  "pl": "Plantar tendon sheath of fibularis longus muscle",
+  "en": "Plantar tendon sheath of fibularis longus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "plantaris_muscle_l",
+  "pl": "Mięsień podeszwowy",
+  "en": "Plantaris muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "plantaris_muscle_r",
+  "pl": "Mięsień podeszwowy",
+  "en": "Plantaris muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "platysma_l",
+  "pl": "Mięsień szeroki szyi",
+  "en": "Platysma",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "platysma_r",
+  "pl": "Mięsień szeroki szyi",
+  "en": "Platysma",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "popliteal_fascia_l",
+  "pl": "Powięź podkolanowa",
+  "en": "Popliteal fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "popliteal_fascia_r",
+  "pl": "Powięź podkolanowa",
+  "en": "Popliteal fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "popliteus_muscle_l",
+  "pl": "Mięsień podkolanowy",
+  "en": "Popliteus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "popliteus_muscle_r",
+  "pl": "Mięsień podkolanowy",
+  "en": "Popliteus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "posterior_belly_of_digastric_muscle_l",
+  "pl": "Mięsień dwubrzuścowy - brzusiec tylny",
+  "en": "Posterior belly of digastric muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "posterior_belly_of_digastric_muscle_r",
+  "pl": "Mięsień dwubrzuścowy - brzusiec tylny",
+  "en": "Posterior belly of digastric muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "posterior_crico_arytenoid_muscle",
+  "pl": "Mięsień pierścienno-nalewkowy tylny",
+  "en": "Posterior crico-arytenoid muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "posterior_intermuscular_septum_of_leg_l",
+  "pl": "Przegroda międzymięśniowa tylna goleni",
+  "en": "Posterior intermuscular septum of leg",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_intermuscular_septum_of_leg_r",
+  "pl": "Przegroda międzymięśniowa tylna goleni",
+  "en": "Posterior intermuscular septum of leg",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_layer_of_thoracolumbar_fascia_l",
+  "pl": "Przestrzeń ścięgnista lędźwiowa",
+  "en": "Posterior layer of thoracolumbar fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_layer_of_thoracolumbar_fascia_r",
+  "pl": "Przestrzeń ścięgnista lędźwiowa",
+  "en": "Posterior layer of thoracolumbar fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "procerus_muscle",
+  "pl": "Mięsień piramidowy nosa",
+  "en": "Procerus muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "pronator_quadratus_l",
+  "pl": "Mięsień nawrotny czworoboczny",
+  "en": "Pronator quadratus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "pronator_quadratus_r",
+  "pl": "Mięsień nawrotny czworoboczny",
+  "en": "Pronator quadratus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "psoas_major_l",
+  "pl": "Mięsień lędźwiowy większy",
+  "en": "Psoas major",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "psoas_major_r",
+  "pl": "Mięsień lędźwiowy większy",
+  "en": "Psoas major",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pubo_analis_muscle_l",
+  "pl": "Mięsień łonowo-odbytowy",
+  "en": "Pubo-analis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "pubo_analis_muscle_r",
+  "pl": "Mięsień łonowo-odbytowy",
+  "en": "Pubo-analis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "pubococcygeus_muscle_l",
+  "pl": "Mięsień łonowo-guziczny",
+  "en": "Pubococcygeus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "pubococcygeus_muscle_r",
+  "pl": "Mięsień łonowo-guziczny",
+  "en": "Pubococcygeus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "pyramidalis_muscle_l",
+  "pl": "Mięsień piramidowy",
+  "en": "Pyramidalis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "pyramidalis_muscle_r",
+  "pl": "Mięsień piramidowy",
+  "en": "Pyramidalis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "quadratus_femoris_muscle_l",
+  "pl": "Mięsień czworoboczny uda",
+  "en": "Quadratus femoris muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "quadratus_femoris_muscle_r",
+  "pl": "Mięsień czworoboczny uda",
+  "en": "Quadratus femoris muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "quadratus_lumborum_muscle_l",
+  "pl": "Mięsień czworoboczny lędźwi",
+  "en": "Quadratus lumborum muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "quadratus_lumborum_muscle_r",
+  "pl": "Mięsień czworoboczny lędźwi",
+  "en": "Quadratus lumborum muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "quadratus_plantae_muscle_l",
+  "pl": "Mięsień czworoboczny podeszwy (Mięsień zginacz dodatkowy)",
+  "en": "Quadratus plantae muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "quadratus_plantae_muscle_r",
+  "pl": "Mięsień czworoboczny podeszwy (Mięsień zginacz dodatkowy)",
+  "en": "Quadratus plantae muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "radial_head_of_flexor_digitorum_superficialis_l",
+  "pl": "Mięsień zginacz palców powierzchowny - głowa promieniowa",
+  "en": "Radial head of flexor digitorum superficialis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "radial_head_of_flexor_digitorum_superficialis_r",
+  "pl": "Mięsień zginacz palców powierzchowny - głowa promieniowa",
+  "en": "Radial head of flexor digitorum superficialis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "rectus_abdominis_muscle_l",
+  "pl": "Mięsień prosty brzucha",
+  "en": "Rectus abdominis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "rectus_abdominis_muscle_r",
+  "pl": "Mięsień prosty brzucha",
+  "en": "Rectus abdominis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "rectus_anterior_capitis_muscle_l",
+  "pl": "Mięsień prosty przedni głowy",
+  "en": "Rectus anterior capitis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "rectus_anterior_capitis_muscle_r",
+  "pl": "Mięsień prosty przedni głowy",
+  "en": "Rectus anterior capitis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "rectus_femoris_muscle_l",
+  "pl": "Mięsień prosty uda",
+  "en": "Rectus femoris muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "rectus_femoris_muscle_r",
+  "pl": "Mięsień prosty uda",
+  "en": "Rectus femoris muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "rectus_lateralis_capitis_muscle_l",
+  "pl": "Mięsień prosty boczny głowy",
+  "en": "Rectus lateralis capitis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "rectus_lateralis_capitis_muscle_r",
+  "pl": "Mięsień prosty boczny głowy",
+  "en": "Rectus lateralis capitis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "rectus_posterior_major_capitis_muscle_l",
+  "pl": "Mięsień prosty głowy tylny większy",
+  "en": "Rectus posterior major capitis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "rectus_posterior_major_capitis_muscle_r",
+  "pl": "Mięsień prosty głowy tylny większy",
+  "en": "Rectus posterior major capitis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "rectus_posterior_minor_capitis_muscle",
+  "pl": "Mięsień prosty głowy tylny mniejszy",
+  "en": "Rectus posterior minor capitis muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "rhomboid_major_muscle_l",
+  "pl": "Mięsień równoległoboczny większy",
+  "en": "Rhomboid major muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "rhomboid_major_muscle_r",
+  "pl": "Mięsień równoległoboczny większy",
+  "en": "Rhomboid major muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "rhomboid_minor_muscle_l",
+  "pl": "Mięsień równoległoboczny mniejszy",
+  "en": "Rhomboid minor muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "rhomboid_minor_muscle_r",
+  "pl": "Mięsień równoległoboczny mniejszy",
+  "en": "Rhomboid minor muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "risorius_muscle_l",
+  "pl": "Mięsień śmiechowy",
+  "en": "Risorius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "risorius_muscle_r",
+  "pl": "Mięsień śmiechowy",
+  "en": "Risorius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "rotatores_l",
+  "pl": "Mięsnie skręcające",
+  "en": "Rotatores",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "rotatores_r",
+  "pl": "Mięsnie skręcające",
+  "en": "Rotatores",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sartorius_muscle_l",
+  "pl": "Mięsień krawiecki",
+  "en": "Sartorius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "sartorius_muscle_r",
+  "pl": "Mięsień krawiecki",
+  "en": "Sartorius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "scalenus_anterior_muscle_l",
+  "pl": "Mięsień pochyły przedni",
+  "en": "Scalenus anterior muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "scalenus_anterior_muscle_r",
+  "pl": "Mięsień pochyły przedni",
+  "en": "Scalenus anterior muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "scalenus_medius_muscle_l",
+  "pl": "Mięsień pochyły środkowy",
+  "en": "Scalenus medius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "scalenus_medius_muscle_r",
+  "pl": "Mięsień pochyły środkowy",
+  "en": "Scalenus medius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "scalenus_posterior_muscle_l",
+  "pl": "Mięsień pochyły tylny",
+  "en": "Scalenus posterior muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "scalenus_posterior_muscle_r",
+  "pl": "Mięsień pochyły tylny",
+  "en": "Scalenus posterior muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "scapular_spinal_part_of_deltoid_muscle_l",
+  "pl": "Scapular spinal part of deltoid muscle",
+  "en": "Scapular spinal part of deltoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "scapular_spinal_part_of_deltoid_muscle_r",
+  "pl": "Scapular spinal part of deltoid muscle",
+  "en": "Scapular spinal part of deltoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "sciatic_bursa_of_gluteus_maximus_muscle_l",
+  "pl": "Sciatic bursa of gluteus maximus muscle",
+  "en": "Sciatic bursa of gluteus maximus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "sciatic_bursa_of_gluteus_maximus_muscle_r",
+  "pl": "Sciatic bursa of gluteus maximus muscle",
+  "en": "Sciatic bursa of gluteus maximus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "sciatic_bursa_of_obturator_internus_l",
+  "pl": "Kaletka mięśnia zasłaniacza wewnętrznego",
+  "en": "Sciatic bursa of obturator internus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "sciatic_bursa_of_obturator_internus_r",
+  "pl": "Kaletka mięśnia zasłaniacza wewnętrznego",
+  "en": "Sciatic bursa of obturator internus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "semimembranosus_bursa_l",
+  "pl": "Kaletka mięśnia półbłoniastego",
+  "en": "Semimembranosus bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "semimembranosus_bursa_r",
+  "pl": "Kaletka mięśnia półbłoniastego",
+  "en": "Semimembranosus bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "semimembranosus_muscle_l",
+  "pl": "Mięsień półbłoniasty",
+  "en": "Semimembranosus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "semimembranosus_muscle_r",
+  "pl": "Mięsień półbłoniasty",
+  "en": "Semimembranosus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "semispinalis_colli_muscle_l",
+  "pl": "Mięsień półkolcowy szyi",
+  "en": "Semispinalis colli muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "semispinalis_colli_muscle_r",
+  "pl": "Mięsień półkolcowy szyi",
+  "en": "Semispinalis colli muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "semispinalis_thoracis_muscle_l",
+  "pl": "Mięsień półkolcowy",
+  "en": "Semispinalis thoracis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "semispinalis_thoracis_muscle_r",
+  "pl": "Mięsień półkolcowy",
+  "en": "Semispinalis thoracis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "semitendinosus_muscle_l",
+  "pl": "Mięsień półścięgnisty",
+  "en": "Semitendinosus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "semitendinosus_muscle_r",
+  "pl": "Mięsień półścięgnisty",
+  "en": "Semitendinosus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "serratus_anterior_muscle_l",
+  "pl": "Mięsień zębaty przedni",
+  "en": "Serratus anterior muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "serratus_anterior_muscle_r",
+  "pl": "Mięsień zębaty przedni",
+  "en": "Serratus anterior muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "serratus_posterior_inferior_muscle_l",
+  "pl": "Mięsień zębaty tylny dolny",
+  "en": "Serratus posterior inferior muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "serratus_posterior_inferior_muscle_r",
+  "pl": "Mięsień zębaty tylny dolny",
+  "en": "Serratus posterior inferior muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "serratus_posterior_superior_muscle_l",
+  "pl": "Mięsień zębaty tylny górny",
+  "en": "Serratus posterior superior muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "serratus_posterior_superior_muscle_r",
+  "pl": "Mięsień zębaty tylny górny",
+  "en": "Serratus posterior superior muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "short_head_of_biceps_brachii_l",
+  "pl": "Mięsień dwugłowy ramienia - głowa krótka",
+  "en": "Short head of biceps brachii",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "short_head_of_biceps_brachii_r",
+  "pl": "Mięsień dwugłowy ramienia - głowa krótka",
+  "en": "Short head of biceps brachii",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "short_head_of_biceps_femoris_l",
+  "pl": "Mięsień dwugłowy uda - głowa krótka",
+  "en": "Short head of biceps femoris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "short_head_of_biceps_femoris_r",
+  "pl": "Mięsień dwugłowy uda - głowa krótka",
+  "en": "Short head of biceps femoris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "soleus_muscle_l",
+  "pl": "Mięsień płaszczkowaty",
+  "en": "Soleus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "soleus_muscle_r",
+  "pl": "Mięsień płaszczkowaty",
+  "en": "Soleus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "spinalis_capitis_muscle_l",
+  "pl": "Mięsień kolcowy głowy",
+  "en": "Spinalis capitis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "spinalis_capitis_muscle_r",
+  "pl": "Mięsień kolcowy głowy",
+  "en": "Spinalis capitis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "spinalis_colli_muscle",
+  "pl": "Mięsień kolcowy szyi",
+  "en": "Spinalis colli muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "spinalis_thoracis_muscle",
+  "pl": "Mięsień kolcowy",
+  "en": "Spinalis thoracis muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "splenius_capitis_muscle_l",
+  "pl": "Mięsień płatowaty głowy",
+  "en": "Splenius capitis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "splenius_capitis_muscle_r",
+  "pl": "Mięsień płatowaty głowy",
+  "en": "Splenius capitis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "splenius_colli_muscle_l",
+  "pl": "Mięsień płatowaty szyi",
+  "en": "Splenius colli muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "splenius_colli_muscle_r",
+  "pl": "Mięsień płatowaty szyi",
+  "en": "Splenius colli muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "sternocleidomastoid_muscle_l",
+  "pl": "Mięsień mostkowo-obojczykowo-sutkowy (przyczep początkowy",
+  "en": "Sternocleidomastoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "sternocleidomastoid_muscle_r",
+  "pl": "Mięsień mostkowo-obojczykowo-sutkowy (przyczep początkowy",
+  "en": "Sternocleidomastoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "sternocostal_head_of_pectoralis_major_muscle_l",
+  "pl": "Głowa mięsień piersiowy większy",
+  "en": "Sternocostal head of pectoralis major muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "sternocostal_head_of_pectoralis_major_muscle_r",
+  "pl": "Głowa mięsień piersiowy większy",
+  "en": "Sternocostal head of pectoralis major muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "sternohyoid_muscle_l",
+  "pl": "Mięsień mostkowo-gnykowy",
+  "en": "Sternohyoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "sternohyoid_muscle_r",
+  "pl": "Mięsień mostkowo-gnykowy",
+  "en": "Sternohyoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "sternothyroid_muscle_l",
+  "pl": "Mięsień mostkowo-tarczowy",
+  "en": "Sternothyroid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "sternothyroid_muscle_r",
+  "pl": "Mięsień mostkowo-tarczowy",
+  "en": "Sternothyroid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "straight_part_of_cricothyroid_muscle",
+  "pl": "Część prosta mięsień pierścienno-tarczowy",
+  "en": "Straight part of cricothyroid muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "stylohyoid_muscle_l",
+  "pl": "Mięsień rylcowo-gnykowy",
+  "en": "Stylohyoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "stylohyoid_muscle_r",
+  "pl": "Mięsień rylcowo-gnykowy",
+  "en": "Stylohyoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "stylopharyngeus_muscle_l",
+  "pl": "Mięsień rylcowo-gardłowy",
+  "en": "Stylopharyngeus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "stylopharyngeus_muscle_r",
+  "pl": "Mięsień rylcowo-gardłowy",
+  "en": "Stylopharyngeus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "subacromial_bursa_l",
+  "pl": "Kaletka podbarkowa",
+  "en": "Subacromial bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subacromial_bursa_r",
+  "pl": "Kaletka podbarkowa",
+  "en": "Subacromial bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subclavius_muscle_l",
+  "pl": "Mięsień podobojczykowy",
+  "en": "Subclavius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "subclavius_muscle_r",
+  "pl": "Mięsień podobojczykowy",
+  "en": "Subclavius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "subcutaneous_acromial_bursa_l",
+  "pl": "Kaletka barkowa podskórna",
+  "en": "Subcutaneous acromial bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_acromial_bursa_r",
+  "pl": "Kaletka barkowa podskórna",
+  "en": "Subcutaneous acromial bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_bursa_of_lateral_malleolus_l",
+  "pl": "Kaletka kostka boczna",
+  "en": "Subcutaneous bursa of lateral malleolus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subcutaneous_bursa_of_lateral_malleolus_r",
+  "pl": "Kaletka kostka boczna",
+  "en": "Subcutaneous bursa of lateral malleolus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subcutaneous_bursa_of_medial_malleolus_l",
+  "pl": "Kaletka kostka przyśrodkowa",
+  "en": "Subcutaneous bursa of medial malleolus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subcutaneous_bursa_of_medial_malleolus_r",
+  "pl": "Kaletka kostka przyśrodkowa",
+  "en": "Subcutaneous bursa of medial malleolus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subcutaneous_bursa_of_tuberosity_of_tibia_l",
+  "pl": "Kaletka podskórna guzowatości piszczeli",
+  "en": "Subcutaneous bursa of tuberosity of tibia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_bursa_of_tuberosity_of_tibia_r",
+  "pl": "Kaletka podskórna guzowatości piszczeli",
+  "en": "Subcutaneous bursa of tuberosity of tibia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_calcaneal_bursa_l",
+  "pl": "Kaletka piętowa podskórna",
+  "en": "Subcutaneous calcaneal bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_calcaneal_bursa_r",
+  "pl": "Kaletka piętowa podskórna",
+  "en": "Subcutaneous calcaneal bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_infrapatellar_bursa_l",
+  "pl": "Kaletka podrzepkowa podskórna",
+  "en": "Subcutaneous infrapatellar bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_infrapatellar_bursa_r",
+  "pl": "Kaletka podrzepkowa podskórna",
+  "en": "Subcutaneous infrapatellar bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_prepatellar_bursa_l",
+  "pl": "Kaletka przedrzepkowa podskórna",
+  "en": "Subcutaneous prepatellar bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_prepatellar_bursa_r",
+  "pl": "Kaletka przedrzepkowa podskórna",
+  "en": "Subcutaneous prepatellar bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_trochanteric_bursa_l",
+  "pl": "Kaletka krętarzowa podskórna",
+  "en": "Subcutaneous trochanteric bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subcutaneous_trochanteric_bursa_r",
+  "pl": "Kaletka krętarzowa podskórna",
+  "en": "Subcutaneous trochanteric bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subdeltoid_bursa_l",
+  "pl": "Kaletka podnaramienna",
+  "en": "Subdeltoid bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subdeltoid_bursa_r",
+  "pl": "Kaletka podnaramienna",
+  "en": "Subdeltoid bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subfacial_prepatellar_bursa_l",
+  "pl": "Kaletka przedrzepkowa podpowięziowa",
+  "en": "Subfacial prepatellar bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subfacial_prepatellar_bursa_r",
+  "pl": "Kaletka przedrzepkowa podpowięziowa",
+  "en": "Subfacial prepatellar bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subscapularis_muscle_l",
+  "pl": "Mięsień podłopatkowy",
+  "en": "Subscapularis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subscapularis_muscle_r",
+  "pl": "Mięsień podłopatkowy",
+  "en": "Subscapularis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subtendinous_bursa_of_iliacus_muscle_l",
+  "pl": "Kaletka mięsień biodrowy",
+  "en": "Subtendinous bursa of iliacus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_iliacus_muscle_r",
+  "pl": "Kaletka mięsień biodrowy",
+  "en": "Subtendinous bursa of iliacus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_infraspinatus_muscle_l",
+  "pl": "Subtendinous bursa of infraspinatus muscle",
+  "en": "Subtendinous bursa of infraspinatus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "subtendinous_bursa_of_infraspinatus_muscle_r",
+  "pl": "Subtendinous bursa of infraspinatus muscle",
+  "en": "Subtendinous bursa of infraspinatus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "subtendinous_bursa_of_obturator_internus_l",
+  "pl": "Kaletka mięśnia zasłaniacza wewnętrznego",
+  "en": "Subtendinous bursa of obturator internus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_obturator_internus_r",
+  "pl": "Kaletka mięśnia zasłaniacza wewnętrznego",
+  "en": "Subtendinous bursa of obturator internus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_sartorius_muscle_l",
+  "pl": "Kaletka mięsień krawiecki",
+  "en": "Subtendinous bursa of sartorius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_sartorius_muscle_r",
+  "pl": "Kaletka mięsień krawiecki",
+  "en": "Subtendinous bursa of sartorius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_teres_major_muscle_l",
+  "pl": "Subtendinous bursa of teres major muscle",
+  "en": "Subtendinous bursa of teres major muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "subtendinous_bursa_of_teres_major_muscle_r",
+  "pl": "Subtendinous bursa of teres major muscle",
+  "en": "Subtendinous bursa of teres major muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "subtendinous_bursa_of_tibialis_anterior_l",
+  "pl": "Kaletka mięśnia piszczelowego przedniego",
+  "en": "Subtendinous bursa of tibialis anterior",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_tibialis_anterior_r",
+  "pl": "Kaletka mięśnia piszczelowego przedniego",
+  "en": "Subtendinous bursa of tibialis anterior",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_trapezius_muscle_l",
+  "pl": "Kaletka mięsień czworoboczny",
+  "en": "Subtendinous bursa of trapezius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_trapezius_muscle_r",
+  "pl": "Kaletka mięsień czworoboczny",
+  "en": "Subtendinous bursa of trapezius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_triceps_brachii_muscle_l",
+  "pl": "Kaletka mięsień trójgłowy ramienia",
+  "en": "Subtendinous bursa of triceps brachii muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_bursa_of_triceps_brachii_muscle_r",
+  "pl": "Kaletka mięsień trójgłowy ramienia",
+  "en": "Subtendinous bursa of triceps brachii muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "subtendinous_calcaneal_bursa_l",
+  "pl": "Kaletka piętowa podścięgnowa",
+  "en": "Subtendinous calcaneal bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subtendinous_calcaneal_bursa_r",
+  "pl": "Kaletka piętowa podścięgnowa",
+  "en": "Subtendinous calcaneal bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subtendinous_prepatellar_bursa_l",
+  "pl": "Kaletka przedrzepkowa podścięgnowa",
+  "en": "Subtendinous prepatellar bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "subtendinous_prepatellar_bursa_r",
+  "pl": "Kaletka przedrzepkowa podścięgnowa",
+  "en": "Subtendinous prepatellar bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superficial_head_of_flexor_pollicis_brevis_l",
+  "pl": "Mięsień zginacz krótki kciuka - głowa powierzchowna",
+  "en": "Superficial head of flexor pollicis brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "superficial_head_of_flexor_pollicis_brevis_r",
+  "pl": "Mięsień zginacz krótki kciuka - głowa powierzchowna",
+  "en": "Superficial head of flexor pollicis brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "superficial_head_of_pronator_teres_l",
+  "pl": "Superficial head of pronator teres",
+  "en": "Superficial head of pronator teres",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "superficial_head_of_pronator_teres_r",
+  "pl": "Superficial head of pronator teres",
+  "en": "Superficial head of pronator teres",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "superficial_investing_cervical_fascia_l",
+  "pl": "Blaszka powierzchowna powięzi szyi",
+  "en": "Superficial investing cervical fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superficial_investing_cervical_fascia_r",
+  "pl": "Blaszka powierzchowna powięzi szyi",
+  "en": "Superficial investing cervical fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superficial_layer_of_temporal_fascia_l",
+  "pl": "Blaszka powierzchowna powięzi skroniowej",
+  "en": "Superficial layer of temporal fascia",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superficial_layer_of_temporal_fascia_r",
+  "pl": "Blaszka powierzchowna powięzi skroniowej",
+  "en": "Superficial layer of temporal fascia",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superficial_part_of_masseter_l",
+  "pl": "Mięsień żwacz - część powierzchowna",
+  "en": "Superficial part of masseter",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "superficial_part_of_masseter_r",
+  "pl": "Mięsień żwacz - część powierzchowna",
+  "en": "Superficial part of masseter",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "superficial_transverse_metacarpal_ligament_l",
+  "pl": "Więzadło poprzeczne powierzchowne śródręcza",
+  "en": "Superficial transverse metacarpal ligament",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "superficial_transverse_metacarpal_ligament_r",
+  "pl": "Więzadło poprzeczne powierzchowne śródręcza",
+  "en": "Superficial transverse metacarpal ligament",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "superficial_transverse_metatarsal_ligament_l",
+  "pl": "Więzadło poprzeczne powierzchowne śródstopia",
+  "en": "Superficial transverse metatarsal ligament",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_transverse_metatarsal_ligament_r",
+  "pl": "Więzadło poprzeczne powierzchowne śródstopia",
+  "en": "Superficial transverse metatarsal ligament",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_bursa_of_biceps_femoris_muscle_l",
+  "pl": "Kaletka górna mięsień dwugłowy uda",
+  "en": "Superior bursa of biceps femoris muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_bursa_of_biceps_femoris_muscle_r",
+  "pl": "Kaletka górna mięsień dwugłowy uda",
+  "en": "Superior bursa of biceps femoris muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_extensor_retinaculum_of_ankle_l",
+  "pl": "Superior extensor retinaculum of ankle",
+  "en": "Superior extensor retinaculum of ankle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "superior_extensor_retinaculum_of_ankle_r",
+  "pl": "Superior extensor retinaculum of ankle",
+  "en": "Superior extensor retinaculum of ankle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "superior_fibular_retinaculum_l",
+  "pl": "Troczek górny mięśni strzałkowych",
+  "en": "Superior fibular retinaculum",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "superior_fibular_retinaculum_r",
+  "pl": "Troczek górny mięśni strzałkowych",
+  "en": "Superior fibular retinaculum",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "superior_gemellus_muscle_l",
+  "pl": "Mięsień bliźniaczy górny",
+  "en": "Superior gemellus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_gemellus_muscle_r",
+  "pl": "Mięsień bliźniaczy górny",
+  "en": "Superior gemellus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_head_of_lateral_pterygoid_muscle_l",
+  "pl": "Głowa górna mięsień skrzydłowy boczny",
+  "en": "Superior head of lateral pterygoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_head_of_lateral_pterygoid_muscle_r",
+  "pl": "Głowa górna mięsień skrzydłowy boczny",
+  "en": "Superior head of lateral pterygoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_oblique_muscle_l",
+  "pl": "Mięsień skośny górny",
+  "en": "Superior oblique muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "superior_oblique_muscle_r",
+  "pl": "Mięsień skośny górny",
+  "en": "Superior oblique muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "superior_pharyngeal_constrictor_l",
+  "pl": "Mięsień zwieracz gardła górny",
+  "en": "Superior pharyngeal constrictor",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_pharyngeal_constrictor_r",
+  "pl": "Mięsień zwieracz gardła górny",
+  "en": "Superior pharyngeal constrictor",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_rectus_muscle_l",
+  "pl": "Mięsień prosty górny",
+  "en": "Superior rectus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "superior_rectus_muscle_r",
+  "pl": "Mięsień prosty górny",
+  "en": "Superior rectus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "superior_tarsus_l",
+  "pl": "Tarczka górna",
+  "en": "Superior tarsus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_tarsus_r",
+  "pl": "Tarczka górna",
+  "en": "Superior tarsus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supinator_l",
+  "pl": "Mięsień odwracacz",
+  "en": "Supinator",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "supinator_r",
+  "pl": "Mięsień odwracacz",
+  "en": "Supinator",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "suprapatellar_bursa_l",
+  "pl": "Kaletka nadrzepkowa",
+  "en": "Suprapatellar bursa",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "suprapatellar_bursa_r",
+  "pl": "Kaletka nadrzepkowa",
+  "en": "Suprapatellar bursa",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "supraspinatus_muscle_l",
+  "pl": "Mięsień nadgrzebieniowy",
+  "en": "Supraspinatus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supraspinatus_muscle_r",
+  "pl": "Mięsień nadgrzebieniowy",
+  "en": "Supraspinatus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "synovial_sheaths_of_digits_of_hand_l",
+  "pl": "Pochewki maziowe palców ręki",
+  "en": "Synovial sheaths of digits of hand",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "synovial_sheaths_of_digits_of_hand_r",
+  "pl": "Pochewki maziowe palców ręki",
+  "en": "Synovial sheaths of digits of hand",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "temporalis_muscle_l",
+  "pl": "Mięsień skroniowy",
+  "en": "Temporalis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "temporalis_muscle_r",
+  "pl": "Mięsień skroniowy",
+  "en": "Temporalis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "temporoparietalis_muscle_l",
+  "pl": "Mięsień skroniowo-ciemieniowy",
+  "en": "Temporoparietalis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "temporoparietalis_muscle_r",
+  "pl": "Mięsień skroniowo-ciemieniowy",
+  "en": "Temporoparietalis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "tendinous_arch_of_levator_ani_l",
+  "pl": "Mięsień dźwigacz odbytu",
+  "en": "Tendinous arch of levator ani",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tendinous_arch_of_levator_ani_r",
+  "pl": "Mięsień dźwigacz odbytu",
+  "en": "Tendinous arch of levator ani",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tendon_of_extensor_digitorum_longus_l",
+  "pl": "Ścięgno mięśnia prostownika długiego palców",
+  "en": "Tendon of extensor digitorum longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_of_extensor_digitorum_longus_r",
+  "pl": "Ścięgno mięśnia prostownika długiego palców",
+  "en": "Tendon of extensor digitorum longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_abd_pollicis_longus_ext_pollicis_brevis_l",
+  "pl": "Pochewka ścięgien odwodziciela długiego i prostownika krótkiego kciuka",
+  "en": "Tendon sheath - abd. pollicis longus - ext. pollicis brevis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "tendon_sheath_abd_pollicis_longus_ext_pollicis_brevis_r",
+  "pl": "Pochewka ścięgien odwodziciela długiego i prostownika krótkiego kciuka",
+  "en": "Tendon sheath - abd. pollicis longus - ext. pollicis brevis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_carpi_ulnaris_l",
+  "pl": "Pochewka prostownika łokciowego nadgarstka",
+  "en": "Tendon sheath of extensor carpi ulnaris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_carpi_ulnaris_r",
+  "pl": "Pochewka prostownika łokciowego nadgarstka",
+  "en": "Tendon sheath of extensor carpi ulnaris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_digiti_minimi_manus_l",
+  "pl": "Pochewka prostownika palca małego ręki",
+  "en": "Tendon sheath of extensor digiti minimi manus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_digiti_minimi_manus_r",
+  "pl": "Pochewka prostownika palca małego ręki",
+  "en": "Tendon sheath of extensor digiti minimi manus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_digitorum_and_extensor_indicis_l",
+  "pl": "Pochewka ścięgien prostownika palców i prostownika wskaziciela",
+  "en": "Tendon sheath of extensor digitorum and extensor indicis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_digitorum_and_extensor_indicis_r",
+  "pl": "Pochewka ścięgien prostownika palców i prostownika wskaziciela",
+  "en": "Tendon sheath of extensor digitorum and extensor indicis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_digitorum_longus_l",
+  "pl": "Pochewka ścięgna prostownika długiego palców",
+  "en": "Tendon sheath of extensor digitorum longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_digitorum_longus_r",
+  "pl": "Pochewka ścięgna prostownika długiego palców",
+  "en": "Tendon sheath of extensor digitorum longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_hallucis_longus_l",
+  "pl": "Pochewka mięsień prostownik długi palucha",
+  "en": "Tendon sheath of extensor hallucis longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_hallucis_longus_r",
+  "pl": "Pochewka mięsień prostownik długi palucha",
+  "en": "Tendon sheath of extensor hallucis longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_pollicis_longus_l",
+  "pl": "Pochewka ścięgna prostownika długiego kciuka",
+  "en": "Tendon sheath of extensor pollicis longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_extensor_pollicis_longus_r",
+  "pl": "Pochewka ścięgna prostownika długiego kciuka",
+  "en": "Tendon sheath of extensor pollicis longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_extensors_carpi_radialis_l",
+  "pl": "Pochewka ścięgien prostowników promieniowych nadgarstka",
+  "en": "Tendon sheath of extensors carpi radialis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "tendon_sheath_of_extensors_carpi_radialis_r",
+  "pl": "Pochewka ścięgien prostowników promieniowych nadgarstka",
+  "en": "Tendon sheath of extensors carpi radialis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "tendon_sheath_of_flexor_carpi_radialis_l",
+  "pl": "Pochewka ścięgna zginacza promieniowego nadgarstka",
+  "en": "Tendon sheath of flexor carpi radialis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "tendon_sheath_of_flexor_carpi_radialis_r",
+  "pl": "Pochewka ścięgna zginacza promieniowego nadgarstka",
+  "en": "Tendon sheath of flexor carpi radialis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "tendon_sheath_of_flexor_digitorum_longus_l",
+  "pl": "Pochewka mięsień zginacz długi palców",
+  "en": "Tendon sheath of flexor digitorum longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_flexor_digitorum_longus_r",
+  "pl": "Pochewka mięsień zginacz długi palców",
+  "en": "Tendon sheath of flexor digitorum longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_flexor_hallucis_longus_l",
+  "pl": "Pochewka mięsień zginacz długi palucha",
+  "en": "Tendon sheath of flexor hallucis longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_flexor_hallucis_longus_r",
+  "pl": "Pochewka mięsień zginacz długi palucha",
+  "en": "Tendon sheath of flexor hallucis longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_flexor_pollicis_longus_l",
+  "pl": "Pochewka ścięgna zginacza długiego kciuka",
+  "en": "Tendon sheath of flexor pollicis longus",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_flexor_pollicis_longus_r",
+  "pl": "Pochewka ścięgna zginacza długiego kciuka",
+  "en": "Tendon sheath of flexor pollicis longus",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_tibialis_anterior_l",
+  "pl": "Pochewka ścięgna piszczelowego przedniego",
+  "en": "Tendon sheath of tibialis anterior",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_tibialis_anterior_r",
+  "pl": "Pochewka ścięgna piszczelowego przedniego",
+  "en": "Tendon sheath of tibialis anterior",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_tibialis_posterior_muscle_l",
+  "pl": "Pochewka ścięgna piszczelowego tylnego",
+  "en": "Tendon sheath of tibialis posterior muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tendon_sheath_of_tibialis_posterior_muscle_r",
+  "pl": "Pochewka ścięgna piszczelowego tylnego",
+  "en": "Tendon sheath of tibialis posterior muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tensor_fasciae_latae_l",
+  "pl": "Mięsień napinacz powięzi szerokiej",
+  "en": "Tensor fasciae latae",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tensor_fasciae_latae_r",
+  "pl": "Mięsień napinacz powięzi szerokiej",
+  "en": "Tensor fasciae latae",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "teres_major_muscle_l",
+  "pl": "Mięsień obły większy",
+  "en": "Teres major muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "teres_major_muscle_r",
+  "pl": "Mięsień obły większy",
+  "en": "Teres major muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "teres_minor_muscle_l",
+  "pl": "Mięsień obły mniejszy",
+  "en": "Teres minor muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "teres_minor_muscle_r",
+  "pl": "Mięsień obły mniejszy",
+  "en": "Teres minor muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thyro_epiglottic_part_of_thyro_arytenoid_muscle",
+  "pl": "Thyro-epiglottic part of thyro-arytenoid muscle",
+  "en": "Thyro-epiglottic part of thyro-arytenoid muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "none"
+ },
+ {
+  "id": "thyrohyoid_muscle_l",
+  "pl": "Mięsień tarczowo-gnykowy",
+  "en": "Thyrohyoid muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "thyrohyoid_muscle_r",
+  "pl": "Mięsień tarczowo-gnykowy",
+  "en": "Thyrohyoid muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "tibialis_anterior_muscle_l",
+  "pl": "Mięsień piszczelowy przedni",
+  "en": "Tibialis anterior muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "tibialis_anterior_muscle_r",
+  "pl": "Mięsień piszczelowy przedni",
+  "en": "Tibialis anterior muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "tibialis_posterior_muscle_l",
+  "pl": "Mięsień piszczelowy tylny",
+  "en": "Tibialis posterior muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "tibialis_posterior_muscle_r",
+  "pl": "Mięsień piszczelowy tylny",
+  "en": "Tibialis posterior muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transversalis_fascia",
+  "pl": "Powięź poprzeczna",
+  "en": "Transversalis fascia",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_arytenoid_muscle",
+  "pl": "Mięsień nalewkowy poprzeczny",
+  "en": "Transverse arytenoid muscle",
+  "side": "mid",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transverse_head_of_adductor_hallucis_l",
+  "pl": "Mięsień przywodziciel palucha - głowa poprzeczna",
+  "en": "Transverse head of adductor hallucis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transverse_head_of_adductor_hallucis_r",
+  "pl": "Mięsień przywodziciel palucha - głowa poprzeczna",
+  "en": "Transverse head of adductor hallucis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transverse_head_of_adductor_pollicis_l",
+  "pl": "Mięsień przywodziciel kciuka - głowa poprzeczna",
+  "en": "Transverse head of adductor pollicis",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transverse_head_of_adductor_pollicis_r",
+  "pl": "Mięsień przywodziciel kciuka - głowa poprzeczna",
+  "en": "Transverse head of adductor pollicis",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transverse_intermuscular_septum_of_leg_l",
+  "pl": "Przegroda poprzeczna goleń",
+  "en": "Transverse intermuscular septum of leg",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "transverse_intermuscular_septum_of_leg_r",
+  "pl": "Przegroda poprzeczna goleń",
+  "en": "Transverse intermuscular septum of leg",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "transverse_part_of_trapezius_muscle_l",
+  "pl": "Mięsień czworoboczny - część poprzeczna",
+  "en": "Transverse part of trapezius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transverse_part_of_trapezius_muscle_r",
+  "pl": "Mięsień czworoboczny - część poprzeczna",
+  "en": "Transverse part of trapezius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transversus_abdominis_muscle_l",
+  "pl": "Mięsień poprzeczny brzucha",
+  "en": "Transversus abdominis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transversus_abdominis_muscle_r",
+  "pl": "Mięsień poprzeczny brzucha",
+  "en": "Transversus abdominis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transversus_thoracis_muscle_l",
+  "pl": "Mięsień poprzeczny klatki piersiowej",
+  "en": "Transversus thoracis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "transversus_thoracis_muscle_r",
+  "pl": "Mięsień poprzeczny klatki piersiowej",
+  "en": "Transversus thoracis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "trochanteric_bursa_of_gluteus_maximus_muscle_l",
+  "pl": "Kaletka krętarzowa mięśnia pośladkowego wielkiego",
+  "en": "Trochanteric bursa of gluteus maximus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "trochanteric_bursa_of_gluteus_maximus_muscle_r",
+  "pl": "Kaletka krętarzowa mięśnia pośladkowego wielkiego",
+  "en": "Trochanteric bursa of gluteus maximus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "trochanteric_bursa_of_gluteus_medius_muscle_l",
+  "pl": "Kaletka krętarzowa mięśnia pośladkowego średniego",
+  "en": "Trochanteric bursa of gluteus medius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "trochanteric_bursa_of_gluteus_medius_muscle_r",
+  "pl": "Kaletka krętarzowa mięśnia pośladkowego średniego",
+  "en": "Trochanteric bursa of gluteus medius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "trochanteric_bursa_of_gluteus_minimus_muscle_l",
+  "pl": "Kaletka krętarzowa mięśnia pośladkowego małego",
+  "en": "Trochanteric bursa of gluteus minimus muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "trochanteric_bursa_of_gluteus_minimus_muscle_r",
+  "pl": "Kaletka krętarzowa mięśnia pośladkowego małego",
+  "en": "Trochanteric bursa of gluteus minimus muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "comp"
+ },
+ {
+  "id": "trochlea_of_superior_oblique_muscle_l",
+  "pl": "Bloczek mięśnia skośnego górnego (oka)",
+  "en": "Trochlea of superior oblique muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "trochlea_of_superior_oblique_muscle_r",
+  "pl": "Bloczek mięśnia skośnego górnego (oka)",
+  "en": "Trochlea of superior oblique muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "ulnar_head_of_extensor_carpi_ulnaris_l",
+  "pl": "Mięsień prostownik łokciowy nadgarstka - głowa łokciowa",
+  "en": "Ulnar head of extensor carpi ulnaris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "ulnar_head_of_extensor_carpi_ulnaris_r",
+  "pl": "Mięsień prostownik łokciowy nadgarstka - głowa łokciowa",
+  "en": "Ulnar head of extensor carpi ulnaris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "ulnar_head_of_flexor_carpi_ulnaris_l",
+  "pl": "Mięsień zginacz nadgarstka łokciowy - głowa łokciowa",
+  "en": "Ulnar head of flexor carpi ulnaris",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "ulnar_head_of_flexor_carpi_ulnaris_r",
+  "pl": "Mięsień zginacz nadgarstka łokciowy - głowa łokciowa",
+  "en": "Ulnar head of flexor carpi ulnaris",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "vastus_intermedius_muscle_l",
+  "pl": "Mięsień obszerny pośredni",
+  "en": "Vastus intermedius muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "vastus_intermedius_muscle_r",
+  "pl": "Mięsień obszerny pośredni",
+  "en": "Vastus intermedius muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "vastus_lateralis_muscle_l",
+  "pl": "Mięsień obszerny boczny",
+  "en": "Vastus lateralis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "vastus_lateralis_muscle_r",
+  "pl": "Mięsień obszerny boczny",
+  "en": "Vastus lateralis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "vastus_medialis_muscle_l",
+  "pl": "Mięsień obszerny przyśrodkowy",
+  "en": "Vastus medialis muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "vastus_medialis_muscle_r",
+  "pl": "Mięsień obszerny przyśrodkowy",
+  "en": "Vastus medialis muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "ventral_parts_of_lateral_intertransversarii_lumborum_muscles_l",
+  "pl": "Części brzuszne mięśni międzypoprzecznych bocznych lędźwi",
+  "en": "Ventral parts of lateral intertransversarii lumborum muscles",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "ventral_parts_of_lateral_intertransversarii_lumborum_muscles_r",
+  "pl": "Części brzuszne mięśni międzypoprzecznych bocznych lędźwi",
+  "en": "Ventral parts of lateral intertransversarii lumborum muscles",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "zygomaticus_major_muscle_l",
+  "pl": "Mięsień jarzmowy większy",
+  "en": "Zygomaticus major muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "zygomaticus_major_muscle_r",
+  "pl": "Mięsień jarzmowy większy",
+  "en": "Zygomaticus major muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "zygomaticus_minor_muscle_l",
+  "pl": "Mięsień jarzmowy mniejszy",
+  "en": "Zygomaticus minor muscle",
+  "side": "l",
+  "kind": "muscle",
+  "pl_from": "norm"
+ },
+ {
+  "id": "zygomaticus_minor_muscle_r",
+  "pl": "Mięsień jarzmowy mniejszy",
+  "en": "Zygomaticus minor muscle",
+  "side": "r",
+  "kind": "muscle",
+  "pl_from": "norm"
+ }
+]

@@ -1,0 +1,678 @@
+[
+ {
+  "ownerId": "posterior_axillary_nodes_r",
+  "en": "Mediastinal lymph nodes",
+  "pl": "Węzły chłonne śródpiersiowe",
+  "pos": [
+   -156.52,
+   11.71,
+   1362.21
+  ],
+  "approx": false,
+  "dist_mm": 4.9,
+  "lmid": "posterior_axillary_nodes_r|Mediastinal lymph nodes"
+ },
+ {
+  "ownerId": "posterior_axillary_nodes_r",
+  "en": "Parietal thoracic lymph nodes",
+  "pl": "Węzły chłonne ścienne klatki piersiowej",
+  "pos": [
+   -203.88,
+   11.71,
+   1372.49
+  ],
+  "approx": false,
+  "dist_mm": 44.4,
+  "lmid": "posterior_axillary_nodes_r|Parietal thoracic lymph nodes"
+ },
+ {
+  "ownerId": "posterior_axillary_nodes_r",
+  "en": "Pulmonary lymph nodes",
+  "pl": "Węzły chłonne płucne",
+  "pos": [
+   -177.97,
+   11.71,
+   1351.2
+  ],
+  "approx": false,
+  "dist_mm": 14.3,
+  "lmid": "posterior_axillary_nodes_r|Pulmonary lymph nodes"
+ },
+ {
+  "ownerId": "posterior_axillary_nodes_r",
+  "en": "Thoracic lymph node",
+  "pl": "Węzeł chłonny klatki piersiowej",
+  "pos": [
+   -191.77,
+   12.61,
+   1382.77
+  ],
+  "approx": false,
+  "dist_mm": 38.0,
+  "lmid": "posterior_axillary_nodes_r|Thoracic lymph node"
+ },
+ {
+  "ownerId": "juxta_intestinal_mesenteric_nodes",
+  "en": "Deep inguinal nodes",
+  "pl": "Węzły chłonne głębokie pachwinowe",
+  "pos": [
+   236.25,
+   -49.0,
+   803.66
+  ],
+  "approx": false,
+  "dist_mm": 218.6,
+  "lmid": "juxta_intestinal_mesenteric_nodes|Deep inguinal nodes"
+ },
+ {
+  "ownerId": "juxta_intestinal_mesenteric_nodes",
+  "en": "Superficial inguinal nodes",
+  "pl": "Węzły chłonne pachwinowe powierzchowne",
+  "pos": [
+   240.6,
+   -49.0,
+   810.79
+  ],
+  "approx": false,
+  "dist_mm": 218.2,
+  "lmid": "juxta_intestinal_mesenteric_nodes|Superficial inguinal nodes"
+ },
+ {
+  "ownerId": "juxta_intestinal_mesenteric_nodes",
+  "en": "Inguinal nodes",
+  "pl": "Węzły chłonne pachwinowe",
+  "pos": [
+   228.26,
+   -49.22,
+   816.47
+  ],
+  "approx": false,
+  "dist_mm": 204.7,
+  "lmid": "juxta_intestinal_mesenteric_nodes|Inguinal nodes"
+ },
+ {
+  "ownerId": "superficial_popliteal_nodes_r",
+  "en": "Popliteal nodes",
+  "pl": "Węzły chłonne podkolanowe",
+  "pos": [
+   136.66,
+   48.71,
+   493.27
+  ],
+  "approx": false,
+  "dist_mm": 208.3,
+  "lmid": "superficial_popliteal_nodes_r|Popliteal nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "Paravesical nodes",
+  "pl": "Węzły chłonne przypęcherzowe",
+  "pos": [
+   190.82,
+   0.57,
+   849.99
+  ],
+  "approx": false,
+  "dist_mm": 159.3,
+  "lmid": "paracolic_superior_mesenteric_nodes|Paravesical nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "Visceral pelvic lymph nodes",
+  "pl": "Węzły chłonne trzewne miednicy",
+  "pos": [
+   198.95,
+   0.57,
+   856.55
+  ],
+  "approx": false,
+  "dist_mm": 160.3,
+  "lmid": "paracolic_superior_mesenteric_nodes|Visceral pelvic lymph nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "Gluteal nodes",
+  "pl": "Węzły chłonne pośladkowe",
+  "pos": [
+   187.58,
+   0.57,
+   866.21
+  ],
+  "approx": false,
+  "dist_mm": 145.8,
+  "lmid": "paracolic_superior_mesenteric_nodes|Gluteal nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "Internal iliac nodes",
+  "pl": "Węzły chłonne biodrowe wewnętrzne",
+  "pos": [
+   196.96,
+   0.57,
+   871.82
+  ],
+  "approx": false,
+  "dist_mm": 149.0,
+  "lmid": "paracolic_superior_mesenteric_nodes|Internal iliac nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "External iliac nodes",
+  "pl": "Węzły chłonne biodrowe zewnętrzne",
+  "pos": [
+   200.06,
+   0.57,
+   879.34
+  ],
+  "approx": false,
+  "dist_mm": 146.9,
+  "lmid": "paracolic_superior_mesenteric_nodes|External iliac nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "Common iliac nodes",
+  "pl": "Węzły chłonne biodrowe wspólne",
+  "pos": [
+   199.89,
+   0.57,
+   886.25
+  ],
+  "approx": false,
+  "dist_mm": 142.8,
+  "lmid": "paracolic_superior_mesenteric_nodes|Common iliac nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "Parietal pelvic lymph nodes",
+  "pl": "Węzły chłonne ścienne miednicy",
+  "pos": [
+   213.3,
+   0.57,
+   893.46
+  ],
+  "approx": false,
+  "dist_mm": 150.3,
+  "lmid": "paracolic_superior_mesenteric_nodes|Parietal pelvic lymph nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "Pelvic lymph nodes",
+  "pl": "Węzły chłonne miednicy",
+  "pos": [
+   212.11,
+   10.6,
+   916.43
+  ],
+  "approx": false,
+  "dist_mm": 142.5,
+  "lmid": "paracolic_superior_mesenteric_nodes|Pelvic lymph nodes"
+ },
+ {
+  "ownerId": "cubital_nodes_r",
+  "en": "Inferior mesenteric nodes",
+  "pl": "Węzły krezkowe dolne",
+  "pos": [
+   -206.79,
+   -36.42,
+   1032.96
+  ],
+  "approx": false,
+  "dist_mm": 46.2,
+  "lmid": "cubital_nodes_r|Inferior mesenteric nodes"
+ },
+ {
+  "ownerId": "cubital_nodes_r",
+  "en": "Superior mesenteric nodes",
+  "pl": "Węzły krezkowe górne",
+  "pos": [
+   -204.12,
+   -50.23,
+   1059.59
+  ],
+  "approx": false,
+  "dist_mm": 53.7,
+  "lmid": "cubital_nodes_r|Superior mesenteric nodes"
+ },
+ {
+  "ownerId": "cubital_nodes_r",
+  "en": "Hepatic nodes",
+  "pl": "Węzły wątrobowe",
+  "pos": [
+   -215.35,
+   -32.4,
+   1112.83
+  ],
+  "approx": false,
+  "dist_mm": 45.9,
+  "lmid": "cubital_nodes_r|Hepatic nodes"
+ },
+ {
+  "ownerId": "cubital_nodes_r",
+  "en": "Pancreaticoduodenal nodes",
+  "pl": "Węzły trzustkowo-dwunastnicze",
+  "pos": [
+   -192.16,
+   -32.4,
+   1119.14
+  ],
+  "approx": false,
+  "dist_mm": 51.5,
+  "lmid": "cubital_nodes_r|Pancreaticoduodenal nodes"
+ },
+ {
+  "ownerId": "supratrochlear_nodes_r",
+  "en": "Pancreatic nodes",
+  "pl": "Węzły trzustkowe",
+  "pos": [
+   -183.11,
+   -31.43,
+   1125.18
+  ],
+  "approx": false,
+  "dist_mm": 57.4,
+  "lmid": "supratrochlear_nodes_r|Pancreatic nodes"
+ },
+ {
+  "ownerId": "supratrochlear_nodes_r",
+  "en": "Pyloric nodes",
+  "pl": "Węzły odźwiernikowe",
+  "pos": [
+   -169.27,
+   -38.54,
+   1130.48
+  ],
+  "approx": false,
+  "dist_mm": 68.1,
+  "lmid": "supratrochlear_nodes_r|Pyloric nodes"
+ },
+ {
+  "ownerId": "cubital_nodes_r",
+  "en": "Visceral abdominal lymph nodes",
+  "pl": "Węzły chłonne trzewne brzucha",
+  "pos": [
+   -187.73,
+   -83.5,
+   1138.07
+  ],
+  "approx": false,
+  "dist_mm": 104.8,
+  "lmid": "cubital_nodes_r|Visceral abdominal lymph nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "Right lumbar nodes",
+  "pl": "Węzły lędźwiowe prawe",
+  "pos": [
+   167.75,
+   -34.09,
+   1043.99
+  ],
+  "approx": false,
+  "dist_mm": 79.2,
+  "lmid": "paracolic_superior_mesenteric_nodes|Right lumbar nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "Left lumbar nodes",
+  "pl": "Węzły lędźwiowe lewe",
+  "pos": [
+   178.02,
+   -25.96,
+   1054.18
+  ],
+  "approx": false,
+  "dist_mm": 91.1,
+  "lmid": "paracolic_superior_mesenteric_nodes|Left lumbar nodes"
+ },
+ {
+  "ownerId": "paracolic_superior_mesenteric_nodes",
+  "en": "Parietal abdominal lymph nodes",
+  "pl": "Węzły chłonne ścienne brzucha",
+  "pos": [
+   185.89,
+   -32.04,
+   1062.5
+  ],
+  "approx": false,
+  "dist_mm": 98.7,
+  "lmid": "paracolic_superior_mesenteric_nodes|Parietal abdominal lymph nodes"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Abdominal lymph nodes",
+  "pl": "Węzły chłonne brzucha",
+  "pos": [
+   201.72,
+   -28.03,
+   1071.88
+  ],
+  "approx": false,
+  "dist_mm": 108.9,
+  "lmid": "spleen|Abdominal lymph nodes"
+ },
+ {
+  "ownerId": "intrapulmonary_nodes",
+  "en": "Axillary nodes",
+  "pl": "Węzły chłonne pachowe",
+  "pos": [
+   202.29,
+   6.04,
+   1373.99
+  ],
+  "approx": false,
+  "dist_mm": 127.7,
+  "lmid": "intrapulmonary_nodes|Axillary nodes"
+ },
+ {
+  "ownerId": "intrapulmonary_nodes",
+  "en": "Inferior deep lateral cervical nodes",
+  "pl": "Węzły chłonne szyjne dolne głębokie boczne",
+  "pos": [
+   91.44,
+   -25.55,
+   1418.28
+  ],
+  "approx": false,
+  "dist_mm": 48.7,
+  "lmid": "intrapulmonary_nodes|Inferior deep lateral cervical nodes"
+ },
+ {
+  "ownerId": "intrapulmonary_nodes",
+  "en": "Superior deep lateral cervical nodes",
+  "pl": "Węzły chłonne szyjne górne głębokie boczne",
+  "pos": [
+   91.14,
+   -25.55,
+   1425.41
+  ],
+  "approx": false,
+  "dist_mm": 51.5,
+  "lmid": "intrapulmonary_nodes|Superior deep lateral cervical nodes"
+ },
+ {
+  "ownerId": "intrapulmonary_nodes",
+  "en": "Lateral cervical nodes",
+  "pl": "Węzły chłonne szyjne boczne",
+  "pos": [
+   108.76,
+   -25.55,
+   1432.53
+  ],
+  "approx": false,
+  "dist_mm": 66.6,
+  "lmid": "intrapulmonary_nodes|Lateral cervical nodes"
+ },
+ {
+  "ownerId": "intrapulmonary_nodes",
+  "en": "Infrahyoid nodes",
+  "pl": "Węzły chłonne podgnykowe",
+  "pos": [
+   71.73,
+   -25.55,
+   1445.35
+  ],
+  "approx": false,
+  "dist_mm": 56.5,
+  "lmid": "intrapulmonary_nodes|Infrahyoid nodes"
+ },
+ {
+  "ownerId": "intrapulmonary_nodes",
+  "en": "Deep anterior cervical nodes",
+  "pl": "Węzły chłonne szyjne głębokie przednie",
+  "pos": [
+   82.11,
+   -25.55,
+   1450.82
+  ],
+  "approx": false,
+  "dist_mm": 63.6,
+  "lmid": "intrapulmonary_nodes|Deep anterior cervical nodes"
+ },
+ {
+  "ownerId": "intrapulmonary_nodes",
+  "en": "Anterior cervical nodes",
+  "pl": "Węzły chłonne szyjne przednie",
+  "pos": [
+   82.45,
+   -25.55,
+   1457.77
+  ],
+  "approx": false,
+  "dist_mm": 69.3,
+  "lmid": "intrapulmonary_nodes|Anterior cervical nodes"
+ },
+ {
+  "ownerId": "submandibular_nodes",
+  "en": "Facial nodes",
+  "pl": "Węzły chłonne twarzowe",
+  "pos": [
+   91.35,
+   -75.36,
+   1545.87
+  ],
+  "approx": false,
+  "dist_mm": 98.0,
+  "lmid": "submandibular_nodes|Facial nodes"
+ },
+ {
+  "ownerId": "retropharyngeal_nodes",
+  "en": "Deep parotid nodes",
+  "pl": "Węzły chłonne przyuszne głębokie",
+  "pos": [
+   118.86,
+   -7.77,
+   1583.92
+  ],
+  "approx": false,
+  "dist_mm": 111.6,
+  "lmid": "retropharyngeal_nodes|Deep parotid nodes"
+ },
+ {
+  "ownerId": "retropharyngeal_nodes",
+  "en": "Lymph nodes",
+  "pl": "Węzły chłonne",
+  "pos": [
+   125.48,
+   -9.0,
+   1611.16
+  ],
+  "approx": false,
+  "dist_mm": 128.6,
+  "lmid": "retropharyngeal_nodes|Lymph nodes"
+ },
+ {
+  "ownerId": "intraglandular_parotid_nodes_r",
+  "en": "Pharyngeal lymphoid ring",
+  "pl": "Pierścień chłonny gardła",
+  "pos": [
+   -92.66,
+   -15.87,
+   1552.0
+  ],
+  "approx": false,
+  "dist_mm": 34.8,
+  "lmid": "intraglandular_parotid_nodes_r|Pharyngeal lymphoid ring"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Secondary lymphoid organs",
+  "pl": "Wtórne narządy limfatyczne",
+  "pos": [
+   227.94,
+   0.01,
+   1136.85
+  ],
+  "approx": false,
+  "dist_mm": 114.2,
+  "lmid": "spleen|Secondary lymphoid organs"
+ },
+ {
+  "ownerId": "inferior_pancreatic_nodes",
+  "en": "Visceral surface of spleen",
+  "pl": "Powierzchnia śledziony",
+  "pos": [
+   59.51,
+   -5.66,
+   1140.13
+  ],
+  "approx": false,
+  "dist_mm": 7.5,
+  "lmid": "inferior_pancreatic_nodes|Visceral surface of spleen"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Superior border of spleen",
+  "pl": "Brzeg górny śledziony",
+  "pos": [
+   101.19,
+   -1.38,
+   1191.78
+  ],
+  "approx": false,
+  "dist_mm": 5.5,
+  "lmid": "spleen|Superior border of spleen"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Renal impression of spleen",
+  "pl": "Wycisk nerkowy śledziony",
+  "pos": [
+   63.5,
+   19.0,
+   1146.79
+  ],
+  "approx": false,
+  "dist_mm": 11.1,
+  "lmid": "spleen|Renal impression of spleen"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Posterior extremity of spleen",
+  "pl": "Koniec tylny śledziony",
+  "pos": [
+   73.07,
+   65.82,
+   1181.87
+  ],
+  "approx": false,
+  "dist_mm": 14.7,
+  "lmid": "spleen|Posterior extremity of spleen"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Inferior border of spleen",
+  "pl": "Brzeg dolny śledziony",
+  "pos": [
+   101.13,
+   16.32,
+   1124.64
+  ],
+  "approx": false,
+  "dist_mm": 3.9,
+  "lmid": "spleen|Inferior border of spleen"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Hilum of spleen",
+  "pl": "Wnęka śledziony",
+  "pos": [
+   65.37,
+   4.16,
+   1162.52
+  ],
+  "approx": false,
+  "dist_mm": 5.2,
+  "lmid": "spleen|Hilum of spleen"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Gastric impression of spleen",
+  "pl": "Wycisk żołądkowy śledziony",
+  "pos": [
+   62.13,
+   5.1,
+   1176.32
+  ],
+  "approx": false,
+  "dist_mm": 13.8,
+  "lmid": "spleen|Gastric impression of spleen"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Diaphragmatic surface of spleen",
+  "pl": "Powierzchnia przeponowa śledziony",
+  "pos": [
+   127.02,
+   24.08,
+   1162.61
+  ],
+  "approx": false,
+  "dist_mm": 18.6,
+  "lmid": "spleen|Diaphragmatic surface of spleen"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Colic impression of spleen",
+  "pl": "Wycisk okrężniczy śledziony",
+  "pos": [
+   87.37,
+   -14.7,
+   1132.77
+  ],
+  "approx": false,
+  "dist_mm": 7.8,
+  "lmid": "spleen|Colic impression of spleen"
+ },
+ {
+  "ownerId": "spleen",
+  "en": "Anterior extremity of spleen",
+  "pl": "Koniec przedni śledziony",
+  "pos": [
+   99.72,
+   -57.61,
+   1134.65
+  ],
+  "approx": false,
+  "dist_mm": 14.8,
+  "lmid": "spleen|Anterior extremity of spleen"
+ },
+ {
+  "ownerId": "inferior_pancreatic_nodes",
+  "en": "(Pancreatic impression of spleen)",
+  "pl": "Wycisk trzustkowy śledziony",
+  "pos": [
+   59.07,
+   0.27,
+   1144.33
+  ],
+  "approx": false,
+  "dist_mm": 10.9,
+  "lmid": "inferior_pancreatic_nodes|(Pancreatic impression of spleen)"
+ },
+ {
+  "ownerId": "parasternal_nodes_r",
+  "en": "Thymus",
+  "pl": "Grasica",
+  "pos": [
+   15.88,
+   -124.17,
+   1337.41
+  ],
+  "approx": false,
+  "dist_mm": 57.8,
+  "lmid": "parasternal_nodes_r|Thymus"
+ },
+ {
+  "ownerId": "intrapulmonary_nodes",
+  "en": "Primary lymphoid organs",
+  "pl": "Pierwotne narządy limfatyczne",
+  "pos": [
+   178.45,
+   -52.33,
+   1346.89
+  ],
+  "approx": false,
+  "dist_mm": 104.2,
+  "lmid": "intrapulmonary_nodes|Primary lymphoid organs"
+ }
+]

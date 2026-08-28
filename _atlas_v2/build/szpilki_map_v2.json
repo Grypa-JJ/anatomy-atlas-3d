@@ -1,0 +1,2838 @@
+[
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Bloczek kości ramiennej",
+  "linkType": "landmark",
+  "boneId": "talus_l",
+  "matchedPl": "Bloczek kości skokowej"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Bruzda międzyguzkowa",
+  "linkType": "landmark",
+  "boneId": "humerus_l",
+  "matchedPl": "Bruzda międzyguzkowa"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Grzebień guzka mniejszego",
+  "linkType": "landmark",
+  "boneId": "humerus_l",
+  "matchedPl": "Grzebień guzka mniejszego"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Grzebień łopatki",
+  "linkType": "landmark",
+  "boneId": "scapula_l",
+  "matchedPl": "Grzebień łopatki"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Guzek podpanewkowy",
+  "linkType": "landmark",
+  "boneId": "scapula_l",
+  "matchedPl": "Guzek podpanewkowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Guzek stożkowaty",
+  "linkType": "landmark",
+  "boneId": "clavicle_l",
+  "matchedPl": "Guzek stożkowaty"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Guzowatość naramienna",
+  "linkType": "landmark",
+  "boneId": "humerus_l",
+  "matchedPl": "Guzowatość naramienna"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Główka kości ramiennej",
+  "linkType": "landmark",
+  "boneId": "humerus_l",
+  "matchedPl": "Główka kości ramiennej"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Hak kości haczykowatej",
+  "linkType": "landmark",
+  "boneId": "hamate_bone_l",
+  "matchedPl": "Haczyk kości haczykowatej"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Kość trójgraniasta",
+  "linkType": "mesh",
+  "kind": "bone",
+  "id": "triquetrum_bone_r",
+  "matchedPl": "Kość trójgraniasta"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Wcięcie łopatki",
+  "linkType": "landmark",
+  "boneId": "scapula_l",
+  "matchedPl": "Wcięcie łopatki"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Więzadło kruczo-barkowe",
+  "linkType": "mesh",
+  "kind": "connective",
+  "id": "coraco_acromial_ligament_r",
+  "matchedPl": "Więzadło kruczo-barkowe"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Dół krętarzowy",
+  "linkType": "landmark",
+  "boneId": "femur_l",
+  "matchedPl": "Dół krętarzowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Grzebień krzyżowy boczny",
+  "linkType": "landmark",
+  "boneId": "sacrum",
+  "matchedPl": "Grzebień krzyżowy boczny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Grzebień krzyżowy pośrodkowy",
+  "linkType": "landmark",
+  "boneId": "sacrum",
+  "matchedPl": "Grzebień krzyżowy pośrodkowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Grzebień międzykrętarzowy",
+  "linkType": "landmark",
+  "boneId": "femur_l",
+  "matchedPl": "Grzebień międzykrętarzowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Guzowatość piszczeli",
+  "linkType": "landmark",
+  "boneId": "tibia_l",
+  "matchedPl": "Guzowatość piszczeli"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Guzowatość pośladkowa",
+  "linkType": "landmark",
+  "boneId": "femur_l",
+  "matchedPl": "Guzowatość pośladkowa"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Kolec biodrowy przedni dolny",
+  "linkType": "landmark",
+  "boneId": "hip_bone_l",
+  "matchedPl": "Kolec biodrowy przedni dolny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Kolec biodrowy przedni górny",
+  "linkType": "landmark",
+  "boneId": "hip_bone_l",
+  "matchedPl": "Kolec biodrowy przedni górny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Kolec biodrowy tylny dolny",
+  "linkType": "landmark",
+  "boneId": "hip_bone_l",
+  "matchedPl": "Kolec biodrowy tylny dolny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Kostka boczna",
+  "linkType": "landmark",
+  "boneId": "fibula_l",
+  "matchedPl": "Kostka boczna"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Kresa międzykrętarzowa",
+  "linkType": "landmark",
+  "boneId": "femur_l",
+  "matchedPl": "Kresa międzykrętarzowa"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Kresa pośladkowa przednia",
+  "linkType": "landmark",
+  "boneId": "hip_bone_l",
+  "matchedPl": "Kresa pośladkowa przednia"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Podpórka skokowa",
+  "linkType": "landmark",
+  "boneId": "calcaneus_l",
+  "matchedPl": "Podpórka skokowa"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Pole międzykłykciowe przednie",
+  "linkType": "landmark",
+  "boneId": "femur_l",
+  "matchedPl": "Pole międzykłykciowe przednie"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "noteCategory": "Kości, stawy, więzadła — kończyna dolna i miednica",
+  "text": "Łąkotka boczna",
+  "linkType": "mesh",
+  "kind": "connective",
+  "id": "lateral_meniscus_r",
+  "matchedPl": "Łąkotka boczna"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "noteCategory": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "text": "Dołek żebrowy wyrostka poprzecznego",
+  "linkType": "landmark",
+  "boneId": "vertebra_t8",
+  "matchedPl": "Dołek żebrowy wyrostka poprzecznego"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "noteCategory": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "text": "Guzek żebra",
+  "linkType": "landmark",
+  "boneId": "vertebra_t6",
+  "matchedPl": "Guzek żebra"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "noteCategory": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "text": "Szyjka żebra",
+  "linkType": "landmark",
+  "boneId": "sixth_rib_l",
+  "matchedPl": "Szyjka żebra"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "noteCategory": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "text": "Więzadło podłużne przednie",
+  "linkType": "mesh",
+  "kind": "connective",
+  "id": "anterior_longitudinal_ligament",
+  "matchedPl": "Więzadło podłużne przednie"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień dłoniowy długi",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "palmaris_longus_muscle_r",
+  "matchedPl": "Mięsień dłoniowy długi"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień nawrotny czworoboczny (pronator teres)",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "pronator_quadratus_r",
+  "matchedPl": "Mięsień nawrotny czworoboczny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień obły większy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "teres_major_muscle_r",
+  "matchedPl": "Mięsień obły większy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień odwodziciel długi kciuka",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "abductor_pollicis_longus_r",
+  "matchedPl": "Mięsień odwodziciel długi kciuka"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień podłopatkowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "subscapularis_muscle_r",
+  "matchedPl": "Mięsień podłopatkowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień prostownik długi kciuka",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "extensor_pollicis_longus_r",
+  "matchedPl": "Mięsień prostownik długi kciuka"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień prostownik krótki kciuka",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "extensor_pollicis_brevis_r",
+  "matchedPl": "Mięsień prostownik krótki kciuka"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień ramienny",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "brachialis_muscle_r",
+  "matchedPl": "Mięsień ramienny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień bliźniaczy dolny",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "inferior_gemellus_muscle_r",
+  "matchedPl": "Mięsień bliźniaczy dolny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień bliźniaczy górny",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "superior_gemellus_muscle_r",
+  "matchedPl": "Mięsień bliźniaczy górny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień czworoboczny uda",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "quadratus_femoris_muscle_r",
+  "matchedPl": "Mięsień czworoboczny uda"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień gruszkowaty",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "piriformis_muscle_r",
+  "matchedPl": "Mięsień gruszkowaty"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień grzebieniowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "pectineus_muscle_r",
+  "matchedPl": "Mięsień grzebieniowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień krawiecki",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "sartorius_muscle_r",
+  "matchedPl": "Mięsień krawiecki"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień obszerny pośredni",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "vastus_intermedius_muscle_r",
+  "matchedPl": "Mięsień obszerny pośredni"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień pośladkowy mały",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "gluteus_minimus_muscle_r",
+  "matchedPl": "Mięsień pośladkowy mały"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień piszczelowy przedni",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "tibialis_anterior_muscle_r",
+  "matchedPl": "Mięsień piszczelowy przedni"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień piszczelowy tylny",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "tibialis_posterior_muscle_r",
+  "matchedPl": "Mięsień piszczelowy tylny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień podeszwowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "plantaris_muscle_r",
+  "matchedPl": "Mięsień podeszwowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień prostownik długi palucha",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "extensor_hallucis_longus_r",
+  "matchedPl": "Mięsień prostownik długi palucha"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień prostownik krótki palców",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "extensor_digitorum_brevis_r",
+  "matchedPl": "Mięsień prostownik krótki palców"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień prostownik krótki palucha",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "extensor_hallucis_brevis_r",
+  "matchedPl": "Mięsień prostownik krótki palucha"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień prosty uda",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "rectus_femoris_muscle_r",
+  "matchedPl": "Mięsień prosty uda"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień przywodziciel długi",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "adductor_longus_r",
+  "matchedPl": "Mięsień przywodziciel długi"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień półścięgnisty",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "semitendinosus_muscle_r",
+  "matchedPl": "Mięsień półścięgnisty"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień smukły",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "gracilis_muscle_r",
+  "matchedPl": "Mięsień smukły"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień strzałkowy trzeci",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "fibularis_tertius_muscle_r",
+  "matchedPl": "Mięsień strzałkowy trzeci"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień zasłaniacz wewnętrzny",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "obturator_internus_r",
+  "matchedPl": "Mięsień zasłaniacz wewnętrzny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień zasłaniacz zewnętrzny",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "obturator_externus_r",
+  "matchedPl": "Mięsień zasłaniacz zewnętrzny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Pasmo biodrowo-piszczelowe",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "iliotibial_tract_r",
+  "matchedPl": "Pasmo biodrowo-piszczelowe"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — tułów",
+  "noteCategory": "Mięśnie — tułów",
+  "text": "Mięsień czworoboczny lędźwi",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "quadratus_lumborum_muscle_r",
+  "matchedPl": "Mięsień czworoboczny lędźwi"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — tułów",
+  "noteCategory": "Mięśnie — tułów",
+  "text": "Mięsień mostkowo-obojczykowo-sutkowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "sternocleidomastoid_muscle_r",
+  "matchedPl": "Mięsień mostkowo-obojczykowo-sutkowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — tułów",
+  "noteCategory": "Mięśnie — tułów",
+  "text": "Mięsień piersiowy mniejszy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "pectoralis_minor_muscle_r",
+  "matchedPl": "Mięsień piersiowy mniejszy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — tułów",
+  "noteCategory": "Mięśnie — tułów",
+  "text": "Mięsień skośny zewnętrzny brzucha",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "external_abdominal_oblique_muscle_r",
+  "matchedPl": "Mięsień skośny zewnętrzny brzucha"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — tułów",
+  "noteCategory": "Mięśnie — tułów",
+  "text": "Mięsień zębaty przedni",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "serratus_anterior_muscle_r",
+  "matchedPl": "Mięsień zębaty przedni"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw kulszowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "sciatic_nerve_r",
+  "matchedPl": "Nerw kulszowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw pachowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "axillary_nerve_r",
+  "matchedPl": "Nerw pachowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw piersiowy długi",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "long_thoracic_nerve_r",
+  "matchedPl": "Nerw piersiowy długi"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw piszczelowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "tibial_nerve_r",
+  "matchedPl": "Nerw piszczelowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw promieniowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "radial_nerve_r",
+  "matchedPl": "Nerw promieniowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw płciowo-udowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "genitofemoral_nerve_r",
+  "matchedPl": "Nerw płciowo-udowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw udowo-goleniowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "saphenous_nerve_r",
+  "matchedPl": "Nerw udowo-goleniowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw udowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "femoral_nerve_r",
+  "matchedPl": "Nerw udowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw zasłonowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "obturator_nerve_r",
+  "matchedPl": "Nerw zasłonowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw łokciowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "ulnar_nerve_r",
+  "matchedPl": "Nerw łokciowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Pień współczulny",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "sympathetic_trunk_r",
+  "matchedPl": "Pień współczulny"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Serce i osierdzie",
+  "noteCategory": "Serce i osierdzie",
+  "text": "Gałąź międzykomorowa przednia (tętnicy wieńcowej lewej)",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "anterior_interventricular_artery",
+  "matchedPl": "Gałąź międzykomorowa przednia"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Serce i osierdzie",
+  "noteCategory": "Serce i osierdzie",
+  "text": "Zatoka wieńcowa",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "coronary_sinus",
+  "matchedPl": "Zatoka wieńcowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Pień ramienno-głowowy",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "brachiocephalic_trunk",
+  "matchedPl": "Pień ramienno-głowowy"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica biodrowa wewnętrzna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "internal_iliac_artery_r",
+  "matchedPl": "Tętnica biodrowa wewnętrzna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica głęboka prącia",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "deep_artery_of_penis",
+  "matchedPl": "Tętnica głęboka prącia (m)"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica krezkowa górna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "superior_mesenteric_artery",
+  "matchedPl": "Tętnica krezkowa górna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica nabrzuszna dolna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "inferior_epigastric_artery_r",
+  "matchedPl": "Tętnica nabrzuszna dolna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica odbytnicza górna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "superior_anorectal_artery",
+  "matchedPl": "Tętnica odbytnicza górna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica pachowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "axillary_artery_r",
+  "matchedPl": "Tętnica pachowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica podkolanowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "popliteal_artery_r",
+  "matchedPl": "Tętnica podkolanowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica podłopatkowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "subscapular_artery_r",
+  "matchedPl": "Tętnica podłopatkowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica pośladkowa dolna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "inferior_gluteal_artery_r",
+  "matchedPl": "Tętnica pośladkowa dolna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica pośladkowa górna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "superior_gluteal_artery_r",
+  "matchedPl": "Tętnica pośladkowa górna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica ramienna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "brachial_artery_r",
+  "matchedPl": "Tętnica ramienna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica wątrobowa wspólna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "common_hepatic_artery",
+  "matchedPl": "Tętnica wątrobowa wspólna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica zasłonowa (prawa)",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "obturator_artery_r",
+  "matchedPl": "Tętnica zasłonowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica łokciowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "ulnar_artery_r",
+  "matchedPl": "Tętnica łokciowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica żołądkowa lewa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "left_gastric_artery",
+  "matchedPl": "Tętnica żołądkowa lewa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła główna dolna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "inferior_vena_cava_abdominal_part",
+  "matchedPl": "Żyła główna dolna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła główna górna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "superior_vena_cava",
+  "matchedPl": "Żyła główna górna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła nerkowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "left_renal_vein",
+  "matchedPl": "Żyła nerkowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła nieparzysta",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "azygos_vein",
+  "matchedPl": "Żyła nieparzysta"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła odpiszczelowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "great_saphenous_vein_r",
+  "matchedPl": "Żyła odpiszczelowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła podkolanowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "popliteal_vein_r",
+  "matchedPl": "Żyła podkolanowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła ramienno-głowowa (lewa)",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "left_brachiocephalic_vein",
+  "matchedPl": "Żyła ramienno-głowowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła udowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "femoral_vein_r",
+  "matchedPl": "Żyła udowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła wrotna wątroby",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "hepatic_portal_vein",
+  "matchedPl": "Żyła wrotna wątroby"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Płuca, oskrzela, tchawica",
+  "noteCategory": "Płuca, oskrzela, opłucna",
+  "text": "Oskrzele główne lewe",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "left_main_bronchus",
+  "matchedPl": "Oskrzele główne lewe"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Płuca, oskrzela, tchawica",
+  "noteCategory": "Płuca, oskrzela, opłucna",
+  "text": "Oskrzele płatowe dolne lewe",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "left_inferior_lobar_bronchus",
+  "matchedPl": "Oskrzele płatowe dolne lewe"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Płuca, oskrzela, tchawica",
+  "noteCategory": "Płuca, oskrzela, opłucna",
+  "text": "Oskrzele płatowe górne lewe",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "left_superior_lobar_bronchus",
+  "matchedPl": "Oskrzele płatowe górne lewe"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Płuca, oskrzela, tchawica",
+  "noteCategory": "Płuca, oskrzela, opłucna",
+  "text": "Pień płucny",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "left_pulmonary_artery",
+  "matchedPl": "Pień płucny (z gałęziami)"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Wątroba, pęcherzyk i drogi żółciowe",
+  "noteCategory": "Wątroba, trzustka, śledziona, drogi żółciowe",
+  "text": "Dół pęcherzyka żółciowego",
+  "linkType": "landmark",
+  "boneId": "gallbladder",
+  "matchedPl": "Dół pęcherzyka żółciowego"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Wątroba, pęcherzyk i drogi żółciowe",
+  "noteCategory": "Wątroba, trzustka, śledziona, drogi żółciowe",
+  "text": "Przewód żółciowy wspólny",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "bile_duct",
+  "matchedPl": "Przewód żółciowy wspólny"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Śledziona, trzustka",
+  "noteCategory": "Wątroba, trzustka, śledziona, drogi żółciowe",
+  "text": "Głowa trzustki",
+  "linkType": "landmark",
+  "boneId": "transverse_colon",
+  "matchedPl": "Głowa trzustki"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Śledziona, trzustka",
+  "noteCategory": "Wątroba, trzustka, śledziona, drogi żółciowe",
+  "text": "Trzon trzustki",
+  "linkType": "landmark",
+  "boneId": "stomach",
+  "matchedPl": "Trzon trzustki"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Przełyk, żołądek",
+  "noteCategory": "Przełyk, żołądek",
+  "text": "Krzywizna mniejsza żołądka",
+  "linkType": "landmark",
+  "boneId": "lesser_omentum",
+  "matchedPl": "Krzywizna mniejsza żołądka"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Jelita, otrzewna",
+  "noteCategory": "Jelita",
+  "text": "Krezka wyrostka robaczkowego",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "meso_appendix",
+  "matchedPl": "Krezka wyrostka robaczkowego"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Jelita, otrzewna",
+  "noteCategory": "Jelita",
+  "text": "Okrężnica esowata",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "sigmoid_colon",
+  "matchedPl": "Okrężnica esowata"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Jelita, otrzewna",
+  "noteCategory": "Jelita",
+  "text": "Sieć większa",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "greater_omentum",
+  "matchedPl": "Sieć większa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Jelita, otrzewna",
+  "noteCategory": "Jelita",
+  "text": "Wyrostek robaczkowy",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "vermiform_appendix",
+  "matchedPl": "Wyrostek robaczkowy"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Nerki, moczowody, pęcherz moczowy",
+  "noteCategory": "Nerki, moczowody, pęcherz moczowy, nadnercza",
+  "text": "Miedniczka nerkowa",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "renal_pelvis_r",
+  "matchedPl": "Miedniczka nerkowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Nerki, moczowody, pęcherz moczowy",
+  "noteCategory": "Nerki, moczowody, pęcherz moczowy, nadnercza",
+  "text": "Szczyt pęcherza (moczowego)",
+  "linkType": "landmark",
+  "boneId": "jejunum",
+  "matchedPl": "Szczyt pęcherza"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy męski",
+  "noteCategory": "Układ rozrodczy męski",
+  "text": "Ciało jamiste prącia",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "corpus_cavernosum_of_penis",
+  "matchedPl": "Ciało jamiste prącia"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy męski",
+  "noteCategory": "Układ rozrodczy męski",
+  "text": "Nasieniowód",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "ductus_deferens_r",
+  "matchedPl": "Nasieniowód"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Układ rozrodczy męski",
+  "noteCategory": "Układ rozrodczy męski",
+  "text": "Żołądź prącia",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "glans_penis",
+  "matchedPl": "Żołądź prącia"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Bruzda tętnicy kręgowej",
+  "linkType": "landmark",
+  "boneId": "occipital_bone",
+  "matchedPl": "Bruzda tętnicy kręgowej"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Guzek gardłowy",
+  "linkType": "landmark",
+  "boneId": "occipital_bone",
+  "matchedPl": "Guzek gardłowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Kłykieć potyliczny",
+  "linkType": "landmark",
+  "boneId": "occipital_bone",
+  "matchedPl": "Kłykieć potyliczny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Lemiesz",
+  "linkType": "mesh",
+  "kind": "bone",
+  "id": "vomer",
+  "matchedPl": "Lemiesz"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Małżowina nosowa dolna",
+  "linkType": "mesh",
+  "kind": "bone",
+  "id": "inferior_nasal_concha_bone",
+  "matchedPl": "Małżowina nosowa dolna"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Otwór bródkowy",
+  "linkType": "landmark",
+  "boneId": "mandible",
+  "matchedPl": "Otwór bródkowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Otwór kolcowy",
+  "linkType": "landmark",
+  "boneId": "sphenoid_bone",
+  "matchedPl": "Otwór kolcowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Otwór owalny",
+  "linkType": "landmark",
+  "boneId": "sphenoid_bone",
+  "matchedPl": "Otwór owalny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Otwór ślepy",
+  "linkType": "landmark",
+  "boneId": "frontal_bone",
+  "matchedPl": "Otwór ślepy kości czołowej"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Wyrostek pochyły przedni",
+  "linkType": "landmark",
+  "boneId": "sphenoid_bone",
+  "matchedPl": "Wyrostek pochyły przedni"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Wyrostek rylcowaty",
+  "linkType": "landmark",
+  "boneId": "triquetrum_bone_l",
+  "matchedPl": "Wyrostek rylcowaty kości łokciowej"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień bródkowo-gnykowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "geniohyoid_muscle",
+  "matchedPl": "Mięsień bródkowo-gnykowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień bródkowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "mentalis_muscle",
+  "matchedPl": "Mięsień bródkowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień długi głowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "longus_capitis_muscle_r",
+  "matchedPl": "Mięsień długi głowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień długi szyi",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "longus_colli_muscle_r",
+  "matchedPl": "Mięsień długi szyi"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień jarzmowy większy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "zygomaticus_major_muscle_r",
+  "matchedPl": "Mięsień jarzmowy większy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień mostkowo-gnykowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "sternohyoid_muscle_r",
+  "matchedPl": "Mięsień mostkowo-gnykowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień obniżacz kąta ust",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "depressor_anguli_oris_r",
+  "matchedPl": "Mięsień obniżacz kąta ust"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień pochyły przedni",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "scalenus_anterior_muscle_r",
+  "matchedPl": "Mięsień pochyły przedni"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień pochyły środkowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "scalenus_medius_muscle_r",
+  "matchedPl": "Mięsień pochyły środkowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień policzkowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "bucinator_r",
+  "matchedPl": "Mięsień policzkowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień skroniowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "temporalis_muscle_r",
+  "matchedPl": "Mięsień skroniowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień skrzydłowy przyśrodkowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "medial_pterygoid_muscle_r",
+  "matchedPl": "Mięsień skrzydłowy przyśrodkowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień szeroki szyi",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "platysma_r",
+  "matchedPl": "Mięsień szeroki szyi"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień żuchwowo-gnykowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "mylohyoid_muscle",
+  "matchedPl": "Mięsień żuchwowo-gnykowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień żwacz, część powierzchowna",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "superficial_part_of_masseter_r",
+  "matchedPl": "Mięsień żwacz — część powierzchowna"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy głowy i szyi (nerw trójdzielny i twarzowy)",
+  "text": "Nerw błędny",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "vagus_nerve_x",
+  "matchedPl": "Nerw błędny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy głowy i szyi (nerw trójdzielny i twarzowy)",
+  "text": "Nerw dodatkowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "accessory_nerve_xi_r",
+  "matchedPl": "Nerw dodatkowy (XI)"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy głowy i szyi (nerw trójdzielny i twarzowy)",
+  "text": "Nerw językowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "lingual_nerve_r",
+  "matchedPl": "Nerw językowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy głowy i szyi (nerw trójdzielny i twarzowy)",
+  "text": "Nerw okoruchowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "oculomotor_nerve_iii_r",
+  "matchedPl": "Nerw okoruchowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy głowy i szyi (nerw trójdzielny i twarzowy)",
+  "text": "Nerw podjęzykowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "hypoglossal_nerve_xii_r",
+  "matchedPl": "Nerw podjęzykowy (XII)"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy głowy i szyi (nerw trójdzielny i twarzowy)",
+  "text": "Nerw wzrokowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "optic_nerve_ii_r",
+  "matchedPl": "Nerw wzrokowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy głowy i szyi (nerw trójdzielny i twarzowy)",
+  "text": "Nerw zębodołowy dolny",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "inferior_alveolar_nerve_r",
+  "matchedPl": "Nerw zębodołowy dolny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy głowy i szyi (nerw trójdzielny i twarzowy)",
+  "text": "Nerw ślimakowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "cochlear_nerve_r",
+  "matchedPl": "Nerw ślimakowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Naczynia (tętnice, żyły) szyi i głowy",
+  "noteCategory": "Naczynia głowy i szyi",
+  "text": "Tętnica podobojczykowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "left_subclavian_artery",
+  "matchedPl": "Tętnica podobojczykowa"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Naczynia (tętnice, żyły) szyi i głowy",
+  "noteCategory": "Naczynia głowy i szyi",
+  "text": "Tętnica potyliczna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "occipital_artery_r",
+  "matchedPl": "Tętnica potyliczna"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Naczynia (tętnice, żyły) szyi i głowy",
+  "noteCategory": "Naczynia głowy i szyi",
+  "text": "Tętnica szczękowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "maxillary_artery_r",
+  "matchedPl": "Tętnica szczękowa"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Naczynia (tętnice, żyły) szyi i głowy",
+  "noteCategory": "Naczynia głowy i szyi",
+  "text": "Tętnica szyjna zewnętrzna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "external_carotid_artery_r",
+  "matchedPl": "Tętnica szyjna zewnętrzna"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Naczynia (tętnice, żyły) szyi i głowy",
+  "noteCategory": "Naczynia głowy i szyi",
+  "text": "Tętnica twarzowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "facial_artery_r",
+  "matchedPl": "Tętnica twarzowa"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Naczynia (tętnice, żyły) szyi i głowy",
+  "noteCategory": "Naczynia głowy i szyi",
+  "text": "Tętnica zębodołowa dolna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "inferior_alveolar_artery_r",
+  "matchedPl": "Tętnica zębodołowa dolna"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Naczynia (tętnice, żyły) szyi i głowy",
+  "noteCategory": "Naczynia głowy i szyi",
+  "text": "Żyła szyjna wewnętrzna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "internal_jugular_vein_r",
+  "matchedPl": "Żyła szyjna wewnętrzna"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Naczynia (tętnice, żyły) szyi i głowy",
+  "noteCategory": "Naczynia głowy i szyi",
+  "text": "Żyła twarzowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "facial_vein_r",
+  "matchedPl": "Żyła twarzowa"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Ślinianki",
+  "noteCategory": "Ślinianki",
+  "text": "Przewód ślinianki przyusznej",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "parotid_duct_r",
+  "matchedPl": "Przewód ślinianki przyusznej"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Ślinianki",
+  "noteCategory": "Ślinianki",
+  "text": "Ślinianka podżuchwowa",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "submandibular_gland_r",
+  "matchedPl": "Ślinianka podżuchwowa"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Krtań i tarczyca",
+  "noteCategory": "Krtań i tarczyca",
+  "text": "Mięsień nalewkowy poprzeczny",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "transverse_arytenoid_muscle",
+  "matchedPl": "Mięsień nalewkowy poprzeczny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Krtań i tarczyca",
+  "noteCategory": "Krtań i tarczyca",
+  "text": "Nagłośnia",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "epiglottis",
+  "matchedPl": "Nagłośnia"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Krtań i tarczyca",
+  "noteCategory": "Krtań i tarczyca",
+  "text": "Więzadło pierścienno-tarczowe pośrodkowe",
+  "linkType": "mesh",
+  "kind": "connective",
+  "id": "median_cricothyroid_ligament",
+  "matchedPl": "Więzadło pierścienno-tarczowe pośrodkowe (więzadło stożkowe)"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Krtań i tarczyca",
+  "noteCategory": "Krtań i tarczyca",
+  "text": "Wyniosłość krtaniowa",
+  "linkType": "landmark",
+  "boneId": "hyoid_bone",
+  "matchedPl": "Wyniosłość krtaniowa"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Ucho",
+  "noteCategory": "Ucho",
+  "text": "Głowa młoteczka",
+  "linkType": "landmark",
+  "boneId": "malleus_l",
+  "matchedPl": "Głowa młoteczka"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Ucho",
+  "noteCategory": "Ucho",
+  "text": "Kanał półkolisty boczny",
+  "linkType": "landmark",
+  "boneId": "vestibule_r",
+  "matchedPl": "Kanał półkolisty boczny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Ucho",
+  "noteCategory": "Ucho",
+  "text": "Kanał półkolisty tylny",
+  "linkType": "landmark",
+  "boneId": "vestibule_r",
+  "matchedPl": "Kanał półkolisty tylny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Ucho",
+  "noteCategory": "Ucho",
+  "text": "Podstawa strzemiączka",
+  "linkType": "landmark",
+  "boneId": "stapes_l",
+  "matchedPl": "Podstawa strzemiączka"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Ucho",
+  "noteCategory": "Ucho",
+  "text": "Trzon kowadełka",
+  "linkType": "landmark",
+  "boneId": "incus_l",
+  "matchedPl": "Trzon kowadełka"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Oko",
+  "noteCategory": "Oko",
+  "text": "Ciało szkliste",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "vitreous_body_r",
+  "matchedPl": "Ciało szkliste"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Oko",
+  "noteCategory": "Oko",
+  "text": "Część oczodołowa mięśnia okrężnego oka",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "orbital_part_of_orbicularis_oculi_r",
+  "matchedPl": "Część oczodołowa mięśnia okrężnego oka"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Oko",
+  "noteCategory": "Oko",
+  "text": "Rogówka",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "cornea_r",
+  "matchedPl": "Rogówka"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Oko",
+  "noteCategory": "Oko",
+  "text": "Soczewka",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "lens_r",
+  "matchedPl": "Soczewka"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Oko",
+  "noteCategory": "Oko",
+  "text": "Twardówka",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "sclera_r",
+  "matchedPl": "Twardówka"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Oko",
+  "noteCategory": "Oko",
+  "text": "Tętnica środkowa siatkówki",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "central_retinal_artery_r",
+  "matchedPl": "Tętnica środkowa siatkówki"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Ząb, kość gnykowa",
+  "noteCategory": "Ząb, kość gnykowa",
+  "text": "Trzon kości gnykowej",
+  "linkType": "landmark",
+  "boneId": "second_metatarsal_bone_l",
+  "matchedPl": "Trzon kości śródstopia"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Bruzda ciała modzelowatego",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "corpus_callosum",
+  "matchedPl": "Ciało modzelowate"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Bruzda ciemieniowo-potyliczna",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "parieto_occipital_sulcus_r",
+  "matchedPl": "Bruzda ciemieniowo-potyliczna"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Bruzda obręczy",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "cingulate_sulcus_marginal_part_r",
+  "matchedPl": "Bruzda obręczy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Bruzda ostrogowa",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "calcarine_sulcus_r",
+  "matchedPl": "Bruzda ostrogowa"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Bruzda środkowa",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "central_sulcus_r",
+  "matchedPl": "Bruzda środkowa"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Przedklinek",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "precuneus",
+  "matchedPl": "Przedklinek"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Zakręt czołowy górny",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "superior_frontal_gyrus",
+  "matchedPl": "Zakręt czołowy górny"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Zakręt obręczy",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "cingulate_gyrus_posteroventral_part",
+  "matchedPl": "Zakręt obręczy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Zakręt potyliczno-skroniowy boczny",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "lateral_occipitotemporal_gyrus_r",
+  "matchedPl": "Zakręt potyliczno-skroniowy boczny"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Zakręt prosty",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "straight_gyrus_gyrus_rectus",
+  "matchedPl": "Zakręt prosty"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Zakręt przedśrodkowy",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "precentral_gyrus_r",
+  "matchedPl": "Zakręt przedśrodkowy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Zakręt skroniowy górny",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "superior_temporal_gyrus_lateral_part_r",
+  "matchedPl": "Zakręt skroniowy górny"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Zakręt skroniowy środkowy",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "middle_temporal_gyrus_r",
+  "matchedPl": "Zakręt skroniowy środkowy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — struktury głębokie (jądra podstawy, torebka wewnętrzna, ciało modzelowate, sklepienie)",
+  "noteCategory": "Kresomózgowie — struktury głębokie",
+  "text": "Kolano ciała modzelowatego",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "corpus_callosum",
+  "matchedPl": "Ciało modzelowate"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — struktury głębokie (jądra podstawy, torebka wewnętrzna, ciało modzelowate, sklepienie)",
+  "noteCategory": "Kresomózgowie — struktury głębokie",
+  "text": "Odnoga sklepienia",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "fornix_r",
+  "matchedPl": "Sklepienie"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — struktury głębokie (jądra podstawy, torebka wewnętrzna, ciało modzelowate, sklepienie)",
+  "noteCategory": "Kresomózgowie — struktury głębokie",
+  "text": "Płat ciała modzelowatego",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "corpus_callosum",
+  "matchedPl": "Ciało modzelowate"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — struktury głębokie (jądra podstawy, torebka wewnętrzna, ciało modzelowate, sklepienie)",
+  "noteCategory": "Kresomózgowie — struktury głębokie",
+  "text": "Promienistość ciała modzelowatego",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "corpus_callosum",
+  "matchedPl": "Ciało modzelowate"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — struktury głębokie (jądra podstawy, torebka wewnętrzna, ciało modzelowate, sklepienie)",
+  "noteCategory": "Kresomózgowie — struktury głębokie",
+  "text": "Przegroda przezroczysta",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "septum_pellucidum",
+  "matchedPl": "Przegroda przeźroczysta"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — struktury głębokie (jądra podstawy, torebka wewnętrzna, ciało modzelowate, sklepienie)",
+  "noteCategory": "Kresomózgowie — struktury głębokie",
+  "text": "Skorupa",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "putamen_r",
+  "matchedPl": "Skorupa"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — struktury głębokie (jądra podstawy, torebka wewnętrzna, ciało modzelowate, sklepienie)",
+  "noteCategory": "Kresomózgowie — struktury głębokie",
+  "text": "Trzon sklepienia",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "fornix_r",
+  "matchedPl": "Sklepienie"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Układ węchowy i limbiczny",
+  "noteCategory": "Układ węchowy i limbiczny",
+  "text": "Stopa hipokampa",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "hippocampus_r",
+  "matchedPl": "Hipokamp"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Międzymózgowie (wzgórze, podwzgórze, szyszynka, przysadka)",
+  "noteCategory": "Międzymózgowie",
+  "text": "Ciało kolankowate przyśrodkowe",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "medial_geniculate_body_r",
+  "matchedPl": "Ciało kolankowate przyśrodkowe"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Międzymózgowie (wzgórze, podwzgórze, szyszynka, przysadka)",
+  "noteCategory": "Międzymózgowie",
+  "text": "Ciało suteczkowate",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "mamillary_body",
+  "matchedPl": "Ciało suteczkowate"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Międzymózgowie (wzgórze, podwzgórze, szyszynka, przysadka)",
+  "noteCategory": "Międzymózgowie",
+  "text": "Pasmo wzrokowe",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "optic_tract_r",
+  "matchedPl": "Pasmo wzrokowe"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Międzymózgowie (wzgórze, podwzgórze, szyszynka, przysadka)",
+  "noteCategory": "Międzymózgowie",
+  "text": "Prążek rdzenny wzgórza",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "stria_medullaris_thalami",
+  "matchedPl": "Prążek rdzenny wzgórza"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Międzymózgowie (wzgórze, podwzgórze, szyszynka, przysadka)",
+  "noteCategory": "Międzymózgowie",
+  "text": "Skrzyżowanie wzrokowe",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "optic_chiasm",
+  "matchedPl": "Skrzyżowanie wzrokowe"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Międzymózgowie (wzgórze, podwzgórze, szyszynka, przysadka)",
+  "noteCategory": "Międzymózgowie",
+  "text": "Szyszynka",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "pineal_gland",
+  "matchedPl": "Szyszynka"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Międzymózgowie (wzgórze, podwzgórze, szyszynka, przysadka)",
+  "noteCategory": "Międzymózgowie",
+  "text": "Wzgórze",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "thalamus",
+  "matchedPl": "Wzgórze"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Śródmózgowie",
+  "noteCategory": "Śródmózgowie",
+  "text": "Dół międzykonarowy",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "interpeduncular_fossa",
+  "matchedPl": "Dół międzykonarowy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Śródmózgowie",
+  "noteCategory": "Śródmózgowie",
+  "text": "Istota czarna",
+  "linkType": "landmark",
+  "boneId": "supramarginal_gyrus_r",
+  "matchedPl": "Istota szara"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Śródmózgowie",
+  "noteCategory": "Śródmózgowie",
+  "text": "Wodociąg śródmózgowia",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "aqueduct_of_midbrain",
+  "matchedPl": "Wodociąg mózgu"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Śródmózgowie",
+  "noteCategory": "Śródmózgowie",
+  "text": "Wzgórek górny (blaszki pokrywy)",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "superior_colliculus",
+  "matchedPl": "Wzgórek górny"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Móżdżek",
+  "noteCategory": "Móżdżek",
+  "text": "Konar górny móżdżku",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "superior_cerebellar_peduncle",
+  "matchedPl": "Konar górny móżdżku"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Rdzeń przedłużony (i przejście w rdzeń kręgowy)",
+  "noteCategory": "Rdzeń przedłużony i przejście w rdzeń kręgowy",
+  "text": "Guzek smukły",
+  "linkType": "landmark",
+  "boneId": "tonsil_of_cerebellum",
+  "matchedPl": "Guzek smukły"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Komory mózgu i sploty naczyniówkowe",
+  "noteCategory": "Komory mózgu i sploty naczyniówkowe",
+  "text": "Komora czwarta",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "fourth_ventricle",
+  "matchedPl": "Komora czwarta"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Komory mózgu i sploty naczyniówkowe",
+  "noteCategory": "Komory mózgu i sploty naczyniówkowe",
+  "text": "Splot naczyniówkowy komory bocznej",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "choroid_plexus_r",
+  "matchedPl": "Splot naczyniówkowy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Komory mózgu i sploty naczyniówkowe",
+  "noteCategory": "Komory mózgu i sploty naczyniówkowe",
+  "text": "Splot naczyniówkowy komory czwartej",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "choroid_plexus_r",
+  "matchedPl": "Splot naczyniówkowy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Komory mózgu i sploty naczyniówkowe",
+  "noteCategory": "Komory mózgu i sploty naczyniówkowe",
+  "text": "Splot naczyniówkowy komory trzeciej",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "choroid_plexus_r",
+  "matchedPl": "Splot naczyniówkowy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Opony i zatoki żylne",
+  "noteCategory": "Opony i zatoki żylne",
+  "text": "Namiot móżdżku",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "tentorium_cerebelli_r",
+  "matchedPl": "Namiot móżdżku"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Opony i zatoki żylne",
+  "noteCategory": "Opony i zatoki żylne",
+  "text": "Sierp mózgu",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "falx_cerebri",
+  "matchedPl": "Sierp mózgu"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Opony i zatoki żylne",
+  "noteCategory": "Opony i zatoki żylne",
+  "text": "Zatoka esowata",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "sigmoid_sinus_r",
+  "matchedPl": "Zatoka esowata"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Opony i zatoki żylne",
+  "noteCategory": "Opony i zatoki żylne",
+  "text": "Zatoka prosta",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "straight_sinus",
+  "matchedPl": "Zatoka prosta"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Naczynia mózgu (tętnice)",
+  "noteCategory": "Naczynia mózgu",
+  "text": "Tętnica górna móżdżku",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "superior_cerebellar_artery_r",
+  "matchedPl": "Tętnica górna móżdżku"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Naczynia mózgu (tętnice)",
+  "noteCategory": "Naczynia mózgu",
+  "text": "Tętnica kręgowa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "vertebral_artery_r",
+  "matchedPl": "Tętnica kręgowa"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Naczynia mózgu (tętnice)",
+  "noteCategory": "Naczynia mózgu",
+  "text": "Tętnica podstawna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "basilar_artery",
+  "matchedPl": "Tętnica podstawna"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Naczynia mózgu (tętnice)",
+  "noteCategory": "Naczynia mózgu",
+  "text": "Tętnica tylna mózgu",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "posterior_cerebral_artery_r",
+  "matchedPl": "Tętnica tylna mózgu"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Nerwy czaszkowe (na preparatach/modelach mózgu)",
+  "noteCategory": "Nerwy czaszkowe (widoczne na preparatach mózgu)",
+  "text": "Nerw bloczkowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "trochlear_nerve_iv_r",
+  "matchedPl": "Nerw bloczkowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Nadkłykieć przyśrodkowy kości ramiennej",
+  "linkType": "landmark",
+  "boneId": "humerus_l",
+  "matchedPl": "Nadkłykieć przyśrodkowy kości ramiennej"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Wyrostek kruczy łopatki",
+  "linkType": "landmark",
+  "boneId": "scapula_l",
+  "matchedPl": "Wyrostek kruczy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień zginacz łokciowy nadgarstka",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "humeral_head_of_flexor_carpi_ulnaris_r",
+  "matchedPl": "Mięsień zginacz nadgarstka łokciowy — głowa ramienna"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień zginacz powierzchowny palców",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "radial_head_of_flexor_digitorum_superficialis_r",
+  "matchedPl": "Mięsień zginacz palców powierzchowny — głowa promieniowa"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna dolna",
+  "noteCategory": "Mięśnie — kończyna dolna",
+  "text": "Mięsień prostownik długi palców kończyny dolnej",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "extensor_digitorum_longus_r",
+  "matchedPl": "Mięsień prostownik długi palców"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Serce i osierdzie",
+  "noteCategory": "Serce i osierdzie",
+  "text": "Płatek półksiężycowaty przedni zastawki pnia płucnego",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "anterior_semilunar_leaflet_of_pulmonary_valve",
+  "matchedPl": "Płatek półksiężycowaty przedni zastawki pnia płucnego"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Serce i osierdzie",
+  "noteCategory": "Serce i osierdzie",
+  "text": "Żyła średnia serca",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "middle_cardiac_vein",
+  "matchedPl": "Żyła serca średnia, żyła sercowa średnia"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica nerkowa lewa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "left_renal_artery",
+  "matchedPl": "Tętnica nerkowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica okalająca ramię, gałąź tylna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "posterior_circumflex_humeral_artery_r",
+  "matchedPl": "Tętnica okalająca ramię tylna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Tętnice",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Tętnica szyjna wspólna lewa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "left_common_carotid_artery",
+  "matchedPl": "Tętnica szyjna wspólna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła płucna dolna prawa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "left_inferior_pulmonary_vein",
+  "matchedPl": "Żyła płucna lewa dolna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Żyły",
+  "noteCategory": "Tętnice i żyły — plan ogólny",
+  "text": "Żyła płucna górna prawa",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "left_superior_pulmonary_vein",
+  "matchedPl": "Żyła płucna lewa górna"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Wątroba, pęcherzyk i drogi żółciowe",
+  "noteCategory": "Wątroba, trzustka, śledziona, drogi żółciowe",
+  "text": "Wyrostek brodawkowaty płata ogoniastego",
+  "linkType": "landmark",
+  "boneId": "liver",
+  "matchedPl": "Wyrostek brodawkowaty"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Przełyk, żołądek",
+  "noteCategory": "Przełyk, żołądek",
+  "text": "Część odźwiernikowa żołądka",
+  "linkType": "landmark",
+  "boneId": "mesocolon",
+  "matchedPl": "Część odźwiernikowa"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Przełyk, żołądek",
+  "noteCategory": "Przełyk, żołądek",
+  "text": "Dno żołądka",
+  "linkType": "landmark",
+  "boneId": "left_posterior_lateral_segment_of_liver_ii",
+  "matchedPl": "Dno żołądka; Sklepienie żołądka"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Jelita, otrzewna",
+  "noteCategory": "Jelita",
+  "text": "Taśma swobodna jelita grubego / taśma wolna okrężnicy",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "free_taenia",
+  "matchedPl": "Taśma wolna okrężnicy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Kręgosłup szyjny",
+  "noteCategory": "Kręgosłup szyjny, opony, rdzeń kręgowy (odcinek głowowy)",
+  "text": "Guzek przedni kręgu szczytowego",
+  "linkType": "landmark",
+  "boneId": "atlas_c1",
+  "matchedPl": "Guzek przedni kręgu szczytowego"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Krtań i tarczyca",
+  "noteCategory": "Krtań i tarczyca",
+  "text": "Wyrostek mięśniowy chrząstki nalewkowatej",
+  "linkType": "landmark",
+  "boneId": "vertebra_c5",
+  "matchedPl": "Wyrostek mięśniowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Ząb, kość gnykowa",
+  "noteCategory": "Ząb, kość gnykowa",
+  "text": "Szkliwo / korona zęba",
+  "linkType": "landmark",
+  "boneId": "mandible",
+  "matchedPl": "Korona zęba"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Bruzda zakrętu obręczy",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "cingulate_sulcus_marginal_part_r",
+  "matchedPl": "Bruzda obręczy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Móżdżek",
+  "noteCategory": "Móżdżek",
+  "text": "Migdałek móżdżku",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "tonsil_of_cerebellum",
+  "matchedPl": "Migdałek móżdżku; Kłaczek dodatkowy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Opony i zatoki żylne",
+  "noteCategory": "Opony i zatoki żylne",
+  "text": "Zatoka strzałkowa dolna / górna",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "superior_sagittal_sinus",
+  "matchedPl": "Zatoka strzałkowa górna"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Guzowatość kości promieniowej",
+  "linkType": "landmark",
+  "boneId": "cuboid_bone_l",
+  "matchedPl": "Guzowatość kości sześciennej"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "noteCategory": "Kości, więzadła — klatka piersiowa, kręgosłup",
+  "text": "Otwór wyrostka poprzecznego (kręgu szyjnego)",
+  "linkType": "landmark",
+  "boneId": "vertebra_c4",
+  "matchedPl": "Otwór poprzeczny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Dół dwubrzuścowy",
+  "linkType": "landmark",
+  "boneId": "mandible",
+  "matchedPl": "Dół dwubrzuśćcowy"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Wątroba, pęcherzyk i drogi żółciowe",
+  "noteCategory": "Wątroba, trzustka, śledziona, drogi żółciowe",
+  "text": "Więzadło żylne",
+  "linkType": "landmark",
+  "boneId": "oesophagus",
+  "matchedPl": "Szczelina więzadła żylnego"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Jelita, otrzewna",
+  "noteCategory": "Jelita",
+  "text": "Krezka jelita cienkiego",
+  "linkType": "landmark",
+  "boneId": "greater_omentum",
+  "matchedPl": "Jelito cienkie"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Ucho",
+  "noteCategory": "Ucho",
+  "text": "Bańka kostna przewodu półkolistego bocznego",
+  "linkType": "landmark",
+  "boneId": "inferior_temporal_gyrus_r",
+  "matchedPl": "Bańka kostna boczna"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Krtań i tarczyca",
+  "noteCategory": "Krtań i tarczyca",
+  "text": "Kresa skośna chrząstki tarczowatej",
+  "linkType": "landmark",
+  "boneId": "vertebra_c5",
+  "matchedPl": "Kresa skośna chrząstki tarczowatej"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Krtań i tarczyca",
+  "noteCategory": "Krtań i tarczyca",
+  "text": "Płat prawy gruczołu tarczowego",
+  "linkType": "landmark",
+  "boneId": "thyroid_gland",
+  "matchedPl": "Płat gruczoł tarczowy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Rdzeń przedłużony (i przejście w rdzeń kręgowy)",
+  "noteCategory": "Rdzeń przedłużony i przejście w rdzeń kręgowy",
+  "text": "Piramida rdzenia przedłużonego",
+  "linkType": "landmark",
+  "boneId": "medulla_oblongata",
+  "matchedPl": "Piramida rdzenia przedłużonego"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień tarczowo-mostkowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "sternothyroid_muscle_r",
+  "matchedPl": "Mięsień mostkowo-tarczowy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Zakręt oczodołowy",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "orbital_gyri_r",
+  "matchedPl": "Zakręty oczodołowe"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Głowa długa mięśnia trójgłowego ramienia",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "long_head_of_triceps_brachii_r",
+  "matchedPl": "Mięsień trójgłowy ramienia — głowa długa"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Głowa krótka mięśnia dwugłowego ramienia",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "short_head_of_biceps_brachii_r",
+  "matchedPl": "Mięsień dwugłowy ramienia — głowa krótka"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — tułów",
+  "noteCategory": "Mięśnie — tułów",
+  "text": "Część barkowa mięśnia naramiennego",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "acromial_part_of_deltoid_muscle_r",
+  "matchedPl": "Mięsień naramienny — część barkowa"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Brzusiec przedni/tylny mięśnia dwubrzuścowego",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "anterior_belly_of_digastric_muscle",
+  "matchedPl": "Mięsień dwubrzuścowy — brzusiec przedni"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Głowa obojczykowa mięśnia mostkowo-obojczykowo-sutkowego",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "sternocleidomastoid_muscle_r",
+  "matchedPl": "Mięsień mostkowo-obojczykowo-sutkowy"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — kończyna górna",
+  "noteCategory": "Mięśnie — kończyna górna",
+  "text": "Mięsień międzykostny grzbietowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "dorsal_interossei_muscles_of_hand_r",
+  "matchedPl": "Mięśnie międzykostne grzbietowe ręki"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Mięśnie — tułów",
+  "noteCategory": "Mięśnie — tułów",
+  "text": "Mięsień międzyżebrowy najgłębszy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "innermost_intercostal_muscles_r",
+  "matchedPl": "Mięśnie międzyżebrowe najgłębsze"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw międzyżebrowy",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "intercostal_nerves_r",
+  "matchedPl": "Nerwy międzyżebrowe"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Dołek głowy kości promieniowej",
+  "linkType": "landmark",
+  "boneId": "femur_l",
+  "matchedPl": "Dołek głowy kości udowej"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Kości, stawy, więzadła — kończyna górna",
+  "noteCategory": "Kości, stawy, więzadła — kończyna górna",
+  "text": "Obwód stawowy głowy kości promieniowej",
+  "linkType": "landmark",
+  "boneId": "ulna_l",
+  "matchedPl": "Obwód stawowy głowy kości łokciowej"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw mięśniowo-skórny",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "musculocutaneous_nerve_r",
+  "matchedPl": "Nerw mięśniowo-skórny"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw skórny przyśrodkowy przedramienia",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "medial_antebrachial_cutaneous_nerve_r",
+  "matchedPl": "Nerw skórny przyśrodkowy przedramienia"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw skórny przyśrodkowy ramienia",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "medial_brachial_cutaneous_nerve_r",
+  "matchedPl": "Nerw skórny przyśrodkowy ramienia"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Śledziona, trzustka",
+  "noteCategory": "Wątroba, trzustka, śledziona, drogi żółciowe",
+  "text": "Brzeg górny śledziony",
+  "linkType": "landmark",
+  "boneId": "spleen",
+  "matchedPl": "Brzeg górny śledziony"
+ },
+ {
+  "kolokwium": "I",
+  "category": "Nerwy",
+  "noteCategory": "Nerwy",
+  "text": "Nerw skórny boczny uda",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "lateral_femoral_cutaneous_nerve_r",
+  "matchedPl": "Nerw skórny boczny uda"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Płuca, oskrzela, tchawica",
+  "noteCategory": "Płuca, oskrzela, opłucna",
+  "text": "Języczek płuca lewego",
+  "linkType": "landmark",
+  "boneId": "pleura",
+  "matchedPl": "Języczek płuca lewego"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Płuca, oskrzela, tchawica",
+  "noteCategory": "Płuca, oskrzela, opłucna",
+  "text": "Oskrzele pośrednie",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "intermediate_bronchus",
+  "matchedPl": "Oskrzele pośrednie"
+ },
+ {
+  "kolokwium": "II",
+  "category": "Płuca, oskrzela, tchawica",
+  "noteCategory": "Płuca, oskrzela, opłucna",
+  "text": "Oskrzele płatowe górne prawe",
+  "linkType": "mesh",
+  "kind": "organ",
+  "id": "left_superior_lobar_bronchus",
+  "matchedPl": "Oskrzele płatowe górne lewe"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Stok",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "declive",
+  "matchedPl": "Stok (robak)"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Czaszka (kości, otwory, kanały, wyrostki)",
+  "noteCategory": "Czaszka — kości, otwory, kanały",
+  "text": "Wcięcie sutkowe",
+  "linkType": "landmark",
+  "boneId": "temporal_bone_l",
+  "matchedPl": "Wcięcie sutkowe"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Jama ustna, język, gardło",
+  "noteCategory": "Jama ustna, język, gardło",
+  "text": "Migdałek podniebienny",
+  "linkType": "mesh",
+  "kind": "lymph",
+  "id": "palatine_tonsil_r",
+  "matchedPl": "Migdałek podniebienny"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Krtań i tarczyca",
+  "noteCategory": "Krtań i tarczyca",
+  "text": "Wcięcie tarczowe górne",
+  "linkType": "landmark",
+  "boneId": "hyoid_bone",
+  "matchedPl": "Wcięcie tarczowe górne"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Oko",
+  "noteCategory": "Oko",
+  "text": "Mięsień prosty przyśrodkowy",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "medial_rectus_muscle_r",
+  "matchedPl": "Mięsień prosty przyśrodkowy"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Rdzeń przedłużony (i przejście w rdzeń kręgowy)",
+  "noteCategory": "Rdzeń przedłużony i przejście w rdzeń kręgowy",
+  "text": "Oliwka",
+  "linkType": "landmark",
+  "boneId": "medulla_oblongata",
+  "matchedPl": "Oliwka"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Naczynia mózgu (tętnice)",
+  "noteCategory": "Naczynia mózgu",
+  "text": "Tętnica środkowa mózgu",
+  "linkType": "mesh",
+  "kind": "vessel",
+  "id": "middle_cerebral_artery_m1_segment_r",
+  "matchedPl": "Tętnica środkowa mózgu"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Nerwy czaszkowe (na preparatach/modelach mózgu)",
+  "noteCategory": "Nerwy czaszkowe (widoczne na preparatach mózgu)",
+  "text": "Nerw odwodzący",
+  "linkType": "mesh",
+  "kind": "nerve",
+  "id": "abducens_nerve_vi_r",
+  "matchedPl": "Nerw odwodzący"
+ },
+ {
+  "kolokwium": "IV",
+  "category": "Kresomózgowie — zakręty i bruzdy kory",
+  "noteCategory": "Kresomózgowie — zakręty i bruzdy kory",
+  "text": "Klinek",
+  "linkType": "mesh",
+  "kind": "brain",
+  "id": "cuneus",
+  "matchedPl": "Klinek"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Mięśnie głowy i szyi",
+  "noteCategory": "Mięśnie głowy i szyi",
+  "text": "Mięsień MOS (mostkowo-obojczykowo-sutkowy), głowa mostkowa",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "sternocleidomastoid_muscle_r",
+  "matchedPl": "Mięsień mostkowo-obojczykowo-sutkowy"
+ },
+ {
+  "kolokwium": "III",
+  "category": "Krtań i tarczyca",
+  "noteCategory": "Krtań i tarczyca",
+  "text": "Mięsień pierścienno-tarczowy, część prosta",
+  "linkType": "mesh",
+  "kind": "muscle",
+  "id": "oblique_part_of_cricothyroid_muscle",
+  "matchedPl": "Mięsień pierścienno-tarczowy — część skośna"
+ }
+]

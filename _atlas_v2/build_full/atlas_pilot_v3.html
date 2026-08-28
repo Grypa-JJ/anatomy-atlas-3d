@@ -1,0 +1,2889 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+<meta charset="UTF-8">
+<title>Atlas 3D — szkielet (prototyp)</title>
+<style>
+    html, body { margin: 0; height: 100%; background: #1a1a1a; overflow: hidden; font-family: system-ui, sans-serif; }
+    #canvas-wrap { position: absolute; inset: 0; }
+    #label-box {
+        position: absolute; top: 16px; left: 16px; z-index: 10;
+        background: rgba(20,20,20,0.85); color: #fff; padding: 14px 18px;
+        border-radius: 10px; min-width: 240px; border: 1px solid #444;
+        pointer-events: none;
+    }
+    #label-box .pl { font-size: 20px; font-weight: 600; }
+    #label-box .en { font-size: 14px; color: #9cf; margin-top: 2px; }
+    #label-box .hint { font-size: 12px; color: #888; margin-top: 8px; }
+    #label-box button {
+        pointer-events: auto; margin-top: 10px; background: #3b7bff; color: #fff; border: none;
+        padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer; width: 100%;
+    }
+    #label-box button:hover { background: #5590ff; }
+    #label-box .pl { display: flex; align-items: center; gap: 8px; }
+    #label-box #lbl-speak {
+        pointer-events: auto; width: auto; margin-top: 0; padding: 2px 8px;
+        font-size: 14px; background: transparent; border: 1px solid #555;
+    }
+    #label-box #lbl-speak:hover { background: #333; }
+    #sidebar {
+        position: absolute; top: 16px; right: 16px; z-index: 10; width: 280px;
+        background: rgba(20,20,20,0.9); color: #fff; border-radius: 10px; border: 1px solid #444;
+        padding: 14px 18px; display: none; max-height: 80vh; overflow-y: auto;
+    }
+    #sidebar h3 { margin: 0 0 4px; font-size: 18px; }
+    #sidebar .en-title { font-size: 13px; color: #9cf; margin-bottom: 12px; }
+    #sidebar .lm-item {
+        padding: 8px 10px; border-radius: 6px; cursor: pointer; margin-bottom: 4px; font-size: 14px;
+    }
+    #sidebar .lm-item:hover { background: rgba(59,179,255,0.2); }
+    #sidebar .lm-item.active { background: rgba(59,179,255,0.4); }
+    #sidebar .lm-empty { color: #888; font-size: 13px; font-style: italic; }
+    #sidebar button {
+        margin-top: 14px; background: #444; color: #fff; border: none;
+        padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer; width: 100%;
+    }
+    #sidebar button:hover { background: #555; }
+    #credit {
+        position: absolute; bottom: 8px; left: 16px; z-index: 10;
+        color: #666; font-size: 11px; max-width: 500px;
+    }
+    #loading {
+        position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
+        color: #ccc; font-size: 16px; z-index: 20;
+    }
+    #topbar {
+        position: absolute; top: 16px; left: 50%; transform: translateX(-50%); z-index: 15;
+        display: flex; gap: 10px; align-items: flex-start;
+    }
+    #search-wrap { position: relative; width: 320px; }
+    #search-input {
+        width: 100%; box-sizing: border-box; background: rgba(20,20,20,0.9); color: #fff;
+        border: 1px solid #444; border-radius: 8px; padding: 10px 14px; font-size: 14px; outline: none;
+    }
+    #search-input:focus { border-color: #3b7bff; }
+    #search-results {
+        position: absolute; top: calc(100% + 4px); left: 0; right: 0; max-height: 320px; overflow-y: auto;
+        background: rgba(20,20,20,0.97); border: 1px solid #444; border-radius: 8px; display: none;
+    }
+    #search-results .res-item { padding: 8px 14px; cursor: pointer; font-size: 13px; color: #fff; }
+    #search-results .res-item:hover, #search-results .res-item.sel { background: rgba(59,179,255,0.25); }
+    #search-results .res-item .res-en { color: #9cf; font-size: 11px; }
+    #search-results .res-item .res-kind { color: #888; font-size: 10px; float: right; }
+    #view-presets { display: flex; gap: 4px; }
+    #view-presets button {
+        background: rgba(20,20,20,0.9); color: #fff; border: 1px solid #444; border-radius: 8px;
+        padding: 10px 12px; font-size: 12px; cursor: pointer; white-space: nowrap;
+    }
+    #view-presets button:hover { background: rgba(59,179,255,0.25); border-color: #3b7bff; }
+    #transparency-box {
+        position: absolute; bottom: 8px; right: 16px; z-index: 10;
+        background: rgba(20,20,20,0.85); color: #fff; padding: 8px 14px; border-radius: 8px;
+        border: 1px solid #444; font-size: 12px; display: flex; align-items: center; gap: 8px;
+    }
+    #transparency-box input[type="range"] { width: 120px; }
+    #layers-box {
+        position: absolute; bottom: 44px; left: 16px; z-index: 10;
+        background: rgba(20,20,20,0.85); color: #fff; padding: 8px 14px; border-radius: 8px;
+        border: 1px solid #444; font-size: 12px; display: flex; align-items: center; gap: 10px;
+    }
+    #layers-box label { display: flex; align-items: center; gap: 4px; cursor: pointer; }
+    #tools-box {
+        position: absolute; bottom: 44px; right: 16px; z-index: 10;
+        background: rgba(20,20,20,0.85); color: #fff; padding: 10px 14px; border-radius: 8px;
+        border: 1px solid #444; font-size: 12px; display: flex; flex-direction: column; gap: 8px;
+    }
+    #tools-box .tools-row { display: flex; align-items: center; gap: 8px; }
+    #tools-box select { background: #222; color: #fff; border: 1px solid #444; border-radius: 4px; padding: 4px; }
+    #section-slider { width: 100px; }
+    #measure-toggle {
+        background: #333; color: #fff; border: 1px solid #444; border-radius: 6px;
+        padding: 6px 10px; font-size: 12px; cursor: pointer;
+    }
+    #measure-toggle.active { background: #3b7bff; border-color: #3b7bff; }
+    #measure-clear { background: #444; color: #fff; border: none; border-radius: 4px; padding: 4px 8px; cursor: pointer; }
+    #scalpel-toggle {
+        background: #333; color: #fff; border: 1px solid #444; border-radius: 6px;
+        padding: 6px 10px; font-size: 12px; cursor: pointer;
+    }
+    #scalpel-toggle.active { background: #d4392c; border-color: #d4392c; }
+    #scalpel-undo, #scalpel-restore-all { background: #444; color: #fff; border: none; border-radius: 4px; padding: 4px 8px; cursor: pointer; }
+    .id-label {
+        position: absolute; transform: translate(-50%, -50%);
+        background: rgba(0,0,0,0.75); color: #7bdcff; font-family: monospace;
+        font-size: 10px; padding: 1px 4px; border-radius: 3px; white-space: nowrap;
+        border: 1px solid rgba(123,220,255,0.4);
+    }
+    .id-label-anchor-dot {
+        position: absolute; width: 4px; height: 4px; margin: -2px 0 0 -2px;
+        background: #7bdcff; border-radius: 50%; box-shadow: 0 0 3px rgba(123,220,255,0.9);
+    }
+    #measure-result { color: #ffe066; font-weight: 600; min-width: 70px; }
+    #split-toggle {
+        background: #333; color: #fff; border: 1px solid #444; border-radius: 6px;
+        padding: 6px 10px; font-size: 12px; cursor: pointer;
+    }
+    #split-toggle.active { background: #3b7bff; border-color: #3b7bff; }
+    #split-divider {
+        position: absolute; top: 0; bottom: 0; left: 50%; width: 2px;
+        background: #444; z-index: 5; pointer-events: none;
+    }
+    #left-panel {
+        position: absolute; top: 16px; left: 16px; z-index: 10; width: 220px;
+        background: rgba(20,20,20,0.85); color: #fff; border-radius: 8px; border: 1px solid #444;
+        padding: 10px 14px; font-size: 12px; display: flex; flex-direction: column; gap: 10px;
+    }
+    #left-panel h4 { margin: 0 0 4px; font-size: 12px; color: #9cf; text-transform: uppercase; letter-spacing: 0.05em; }
+    #left-panel button, #left-panel .lp-row { width: 100%; }
+    #left-panel button {
+        background: #333; color: #fff; border: 1px solid #444; border-radius: 6px;
+        padding: 6px 8px; font-size: 12px; cursor: pointer; text-align: left;
+    }
+    #left-panel button:hover { background: #444; }
+    #bookmark-name { width: 100%; box-sizing: border-box; background: #222; color: #fff; border: 1px solid #444; border-radius: 4px; padding: 4px 6px; font-size: 12px; }
+    #bookmark-list { display: flex; flex-direction: column; gap: 3px; max-height: 120px; overflow-y: auto; }
+    .bm-item { display: flex; align-items: center; gap: 4px; }
+    .bm-item .bm-go { flex: 1; text-align: left; }
+    .bm-item .bm-del { width: auto; padding: 4px 7px; background: #522; }
+    #quiz-toggle.active { background: #3b7bff; border-color: #3b7bff; }
+    #dance-toggle.active { background: #ff5fa8; border-color: #ff5fa8; }
+    #dance-toggle.loading { opacity: 0.6; cursor: wait; }
+    #quiz-box { display: none; flex-direction: column; gap: 6px; }
+    #quiz-question { font-size: 13px; }
+    #quiz-feedback { font-weight: 600; min-height: 16px; }
+    #quiz-feedback.correct { color: #6f6; }
+    #quiz-feedback.wrong { color: #f66; }
+    #quiz-score { color: #888; font-size: 11px; }
+    #kolokwium-buttons { display: flex; flex-wrap: wrap; gap: 4px; }
+    #kolokwium-buttons button { flex: 1 1 40%; }
+    #kolokwium-buttons button.active { background: #3b7bff; border-color: #3b7bff; }
+    #kolokwium-status { font-size: 11px; color: #9cf; margin-top: 2px; }
+    #kolokwium-panel {
+        position: absolute; top: 16px; left: 250px; z-index: 10; width: 340px;
+        background: rgba(20,20,20,0.93); color: #fff; border-radius: 10px; border: 1px solid #444;
+        padding: 14px 16px; max-height: 88vh; overflow-y: auto; display: none; font-size: 13px;
+    }
+    #kolokwium-panel h3 { margin: 0 0 2px; font-size: 16px; }
+    #kolokwium-panel .kw-sub { color: #9cf; font-size: 12px; margin-bottom: 10px; }
+    .kw-category { margin-top: 14px; }
+    .kw-category:first-of-type { margin-top: 4px; }
+    .kw-cat-header { display: flex; align-items: center; justify-content: space-between; gap: 6px; border-bottom: 1px solid #444; padding-bottom: 4px; margin-bottom: 6px; }
+    .kw-cat-header .kw-cat-name { font-weight: 600; color: #ddd; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.03em; }
+    .kw-note-btn { background: #2a4d6e; color: #bfe3ff; border: 1px solid #3b7bff; border-radius: 5px; padding: 2px 7px; font-size: 11px; cursor: pointer; white-space: nowrap; }
+    .kw-note-btn:hover { background: #3b7bff; color: #fff; }
+    .kw-item { padding: 5px 8px; border-radius: 5px; cursor: pointer; margin-bottom: 2px; }
+    .kw-item:hover { background: rgba(59,179,255,0.2); }
+    .kw-item.todo { color: #777; font-style: italic; cursor: default; }
+    .kw-item .kw-item-badge { font-size: 10px; color: #666; margin-left: 4px; }
+    #notes-modal {
+        position: fixed; inset: 0; z-index: 30; background: rgba(0,0,0,0.6);
+        display: none; align-items: center; justify-content: center;
+    }
+    #notes-modal-card {
+        background: #1e1e1e; color: #eee; width: min(680px, 90vw); max-height: 82vh; overflow-y: auto;
+        border-radius: 12px; border: 1px solid #3b7bff; padding: 22px 26px; box-shadow: 0 12px 40px rgba(0,0,0,0.6);
+    }
+    #notes-modal-card h2 { margin: 0 0 4px; font-size: 19px; color: #fff; }
+    #notes-modal-card .nm-sub { color: #9cf; font-size: 12.5px; margin-bottom: 14px; }
+    #notes-modal-card .nm-body { font-size: 14px; line-height: 1.6; color: #ddd; white-space: pre-line; }
+    #notes-modal-card .nm-body strong { color: #ffe066; }
+    #notes-modal-close { margin-top: 18px; background: #3b7bff; color: #fff; border: none; border-radius: 6px; padding: 8px 16px; font-size: 13px; cursor: pointer; }
+    #notes-modal-close:hover { background: #5590ff; }
+    #lbl-notes-link { display: none; margin-top: 8px; background: #a8862b; }
+    #lbl-notes-link:hover { background: #c79f36; }
+    #sb-notes-link { display: none; background: #a8862b; }
+    #sb-notes-link:hover { background: #c79f36; }
+
+  #lm-tooltip {
+    position: fixed; z-index: 40; pointer-events: none; display: none;
+    background: rgba(20,22,28,0.97); color: #f2f3f5; border: 1.5px solid #e0952e;
+    border-radius: 7px; padding: 5px 11px; font: 600 13.5px/1.3 system-ui, sans-serif;
+    box-shadow: 0 6px 22px rgba(0,0,0,0.55); max-width: 280px;
+    transform: translate(-50%, calc(-100% - 16px)); white-space: nowrap;
+  }
+  #lm-tooltip .en { color: #97a0ad; font-size: 11px; font-weight: 400; display:block; white-space:normal; }
+</style>
+</head>
+<body>
+<div style="position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:9999;background:#3f5b86;color:#fff;font:11px sans-serif;padding:2px 10px;border-radius:0 0 6px 6px">ATLAS v3 — PEŁNY Z-Anatomy (.blend)</div>
+<div id="loading">Ładowanie kości (203 struktury)...</div>
+<div id="canvas-wrap"></div>
+<div id="left-panel">
+    <div>
+        <h4>Zakładki</h4>
+        <div class="lp-row" style="display:flex; gap:4px;">
+            <input id="bookmark-name" type="text" placeholder="nazwa widoku...">
+            <button id="bookmark-save" style="width:auto;">💾</button>
+        </div>
+        <div id="bookmark-list"></div>
+    </div>
+    <div>
+        <h4>Eksport</h4>
+        <button id="screenshot-btn">📷 Zrzut ekranu (bez UI)</button>
+        <button id="anki-export-btn" style="margin-top:6px;">🗂️ Eksport punktów do Anki (CSV)</button>
+    </div>
+    <div>
+        <h4>Nauka</h4>
+        <button id="quiz-toggle">🎯 Tryb quizu</button>
+        <div id="quiz-box">
+            <div id="quiz-question"></div>
+            <div id="quiz-feedback"></div>
+            <button id="quiz-next" style="display:none">Następne pytanie →</button>
+            <div id="quiz-score"></div>
+        </div>
+    </div>
+    <div>
+        <h4>📌 Kolokwia</h4>
+        <div id="kolokwium-buttons">
+            <button data-kolokwium="I">I — kończyny/tułów</button>
+            <button data-kolokwium="II">II — trzewia</button>
+            <button data-kolokwium="III">III — głowa/szyja</button>
+            <button data-kolokwium="IV">IV — mózg</button>
+            <button data-kolokwium="off" style="flex-basis:100%;">✕ Wyłącz tryb kolokwium</button>
+        </div>
+        <div id="kolokwium-status"></div>
+    </div>
+    <div>
+        <h4>Demo</h4>
+        <button id="dance-toggle">💃 Zatańcz</button>
+    </div>
+</div>
+<div id="kolokwium-panel"></div>
+<div id="topbar">
+    <div id="search-wrap">
+        <input id="search-input" type="text" placeholder="🔎 Szukaj struktury (PL/EN)..." autocomplete="off">
+        <div id="search-results"></div>
+    </div>
+    <div id="view-presets">
+        <button data-view="front">Przód</button>
+        <button data-view="back">Tył</button>
+        <button data-view="right">Prawo</button>
+        <button data-view="left">Lewo</button>
+        <button data-view="top">Góra</button>
+        <button data-view="bottom">Dół</button>
+        <button data-view="reset">⟲ Reset</button>
+    </div>
+</div>
+<div id="transparency-box">
+    Przezroczystość kości
+    <input type="range" id="transparency-slider" min="0" max="100" value="100">
+    <span id="transparency-val">100%</span>
+    <label style="margin-left:14px;" title="Pokazuje ID kazdej widocznej struktury bezposrednio na scenie, bez potrzeby klikania"><input type="checkbox" id="show-id-labels"> 🏷️ Pokaż ID na scenie</label>
+</div>
+<svg id="id-labels-leader-layer" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:4; overflow:hidden;"></svg>
+<div id="id-labels-layer" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:5; overflow:hidden;"></div>
+<div id="layers-box">
+    Warstwy:
+    <label><input type="checkbox" id="layer-bones" checked> Kości</label>
+    <label><input type="checkbox" id="layer-muscles"> Mięśnie</label>
+    <label><input type="checkbox" id="layer-vessels"> Naczynia</label>
+    <label><input type="checkbox" id="layer-organs"> Narządy</label>
+    <label><input type="checkbox" id="layer-teeth"> Zęby</label>
+    <label><input type="checkbox" id="layer-connective"> Tkanka łączna</label>
+    <label><input type="checkbox" id="layer-brain"> Mózg</label>
+    <label><input type="checkbox" id="layer-nerves"> Nerwy</label>
+    <label><input type="checkbox" id="layer-lymph"> Układ chłonny</label>
+    <label title="Przybliżona, proceduralna powłoka (nie prawdziwe dane skóry - takich danych nie ma nigdzie za darmo), tylko dla kontekstu wizualnego"><input type="checkbox" id="layer-skin"> Skóra (przybliżona) ⓘ</label>
+    <label style="margin-left:14px; padding-left:14px; border-left:1px solid #555;" title="Domyślnie punkty pokazują się automatycznie po kliknięciu struktury i wejściu w jej podgląd. Zaznacz, żeby pokazać je wszystkie naraz w widoku ogólnym."><input type="checkbox" id="layer-landmarks"> Punkty orientacyjne (w widoku ogólnym)</label>
+    <span id="layers-status" style="opacity:0.7; font-size:0.85em; margin-left:6px;"></span>
+    <div style="width:100%; font-size:11px; opacity:0.75; margin-top:4px;">
+        <span style="color:#3bb3ff;">●</span> punkt zweryfikowany (realna pozycja z siatki 3D)
+        &nbsp;&nbsp;<span style="color:#8a8a8a;">●</span> punkt przybliżony ⚠ (dołączony do najbliższej znanej struktury, nie zmierzony)
+    </div>
+</div>
+<div id="tools-box">
+    <div class="tools-row">
+        <label><input type="checkbox" id="section-toggle"> Przekrój</label>
+        <select id="section-axis">
+            <option value="x">oś X</option>
+            <option value="y">oś Y</option>
+            <option value="z" selected>oś Z</option>
+        </select>
+        <input type="range" id="section-slider" min="-100" max="100" value="0" disabled>
+    </div>
+    <div class="tools-row">
+        <button id="measure-toggle">📏 Pomiar odległości</button>
+        <span id="measure-result"></span>
+        <button id="measure-clear" style="display:none">✕</button>
+    </div>
+    <div class="tools-row">
+        <button id="scalpel-toggle" title="Włącz i klikaj struktury, żeby je usuwać z widoku (nie ma to wpływu na dane, tylko na widoczność)">🔪 Skalpel</button>
+        <span id="scalpel-status" style="opacity:0.7; font-size:0.85em;"></span>
+        <button id="scalpel-undo" style="display:none" title="Przywróć ostatnio wyciętą strukturę">↩ Cofnij cięcie</button>
+        <button id="scalpel-restore-all" style="display:none" title="Przywróć wszystkie wycięte struktury">♻ Przywróć wszystko</button>
+    </div>
+    <div class="tools-row">
+        <button id="split-toggle">🔲 Porównaj (podziel ekran)</button>
+    </div>
+</div>
+<div id="split-divider" style="display:none"></div>
+<div id="lm-tooltip"></div>
+<div id="label-box" style="display:none">
+    <div class="pl" id="lbl-pl"><span id="lbl-pl-text"></span><button id="lbl-speak" title="Odsłuchaj nazwę">🔊</button></div>
+    <div class="en" id="lbl-en"></div>
+    <div id="lbl-id" style="font-size:11px; color:#888; font-family:monospace; margin-top:2px;"></div>
+    <div id="lbl-approx-warn" style="display:none; color:#e0c040; font-size:12px; margin-top:2px;">⚠ Punkt przybliżony — dołączony do najbliższej znanej struktury, nie zmierzony geometrycznie</div>
+    <button id="lbl-notes-link">📝 Notatka wykładowa</button>
+    <div class="hint" id="lbl-hint">kliknij inną kość, żeby zmienić / przeciągnij, żeby obrócić</div>
+    <button id="open-bone-btn" style="display:none">🔍 Otwórz tę kość</button>
+</div>
+<div id="sidebar">
+    <h3 id="sb-pl"></h3>
+    <div class="en-title" id="sb-en"></div>
+    <div id="sb-id" style="font-size:11px; color:#888; font-family:monospace; margin-bottom:6px;"></div>
+    <div id="sb-landmarks"></div>
+    <button id="sb-notes-link">📝 Notatka wykładowa</button>
+    <button id="close-bone-btn">← Wróć do całego układu</button>
+</div>
+<div id="notes-modal">
+    <div id="notes-modal-card">
+        <h2 id="notes-modal-title"></h2>
+        <div class="nm-sub" id="notes-modal-sub"></div>
+        <div class="nm-body" id="notes-modal-body"></div>
+        <button id="notes-modal-close">Zamknij</button>
+    </div>
+</div>
+<div id="credit">
+    Geometria: BodyParts3D, (c) The Database Center for Life Science, licencja CC BY-SA 2.1 Japan.
+    Nazewnictwo PL: Słownik polsko-angielski mian anatomicznych, Uniwersytet Medyczny w Łodzi.
+    <br>🔵 niebieskie kropki = punkty orientacyjne NA kości (guzowatości, powierzchnie stawowe...)
+</div>
+
+<script type="importmap">
+{
+    "imports": {
+        "three": "./vendor/three.module.js",
+        "three/addons/": "./vendor/addons/"
+    }
+}
+</script>
+<script type="module">
+import * as THREE from "three";
+import { OrbitControls } from "three/addons/controls/OrbitControls.js";
+import { OBJLoader } from "three/addons/loaders/OBJLoader.js";
+import { GLTFLoader } from "three/addons/loaders/GLTFLoader.js";
+import { DRACOLoader } from "three/addons/loaders/DRACOLoader.js";
+import { ConvexGeometry } from "three/addons/geometries/ConvexGeometry.js";
+import { BVHLoader } from "three/addons/loaders/BVHLoader.js";
+
+const V2B = "?b=" + Date.now();
+// Atlas v3: geometria pakowana po JEDNYM pliku .glb (Draco) na warstwe zamiast
+// tysiaca luznych .obj. GLB_BASE mozna przelaczyc na publiczny URL R2/CDN bez
+// zadnych innych zmian - nazwy plikow (bones.glb, muscles.glb, ...) sa stale.
+const GLB_BASE = "../dist/"; // np. "https://pub-xxxx.r2.dev/atlas/v3/"
+const KIND_TO_GLB = {
+    bone: "bones.glb", muscle: "muscles.glb", vessel: "vessels.glb",
+    organ: "organs.glb", tooth: "teeth.glb", connective: "connective.glb",
+    brain: "brain.glb", nerve: "nerves.glb", lymph: "lymph.glb",
+};
+const DRACO_DECODER_PATH = "./vendor/addons/libs/draco/gltf/";
+
+const scene = new THREE.Scene();
+scene.background = new THREE.Color(0x1a1a1a);
+
+const wrap = document.getElementById("canvas-wrap");
+// Zabezpieczenie: jesli strona wystartuje w karcie/oknie o zerowym rozmiarze
+// (np. otwarta w tle), window.innerWidth/Height = 0 -> aspect = NaN -> caly
+// dalszy fit kamery sypie sie na Infinity/NaN. Domyslny 16:9 jako fallback,
+// naprawiane pelnym przeliczeniem w resize-listenerze nizej i tak przy kazdej
+// zmianie rozmiaru okna.
+const initialAspect = (window.innerWidth && window.innerHeight) ? window.innerWidth / window.innerHeight : 16 / 9;
+const camera = new THREE.PerspectiveCamera(45, initialAspect, 0.1, 5000);
+// Dane BodyParts3D maja os gorna-dolna ciala (biodro-stopa) na Z, nie Y - "up"
+// trzeba ustawic PRZED utworzeniem OrbitControls, bo kontrolki cache'uja wektor
+// up przy konstrukcji do wewnetrznej matematyki sferycznej; zmiana go pozniej
+// rozjezdza projekcje (kamera "patrzy" w losowe miejsce).
+camera.up.set(0, 0, 1);
+camera.position.set(600, 0, 0);
+
+const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+renderer.setSize(window.innerWidth || 1280, window.innerHeight || 720);
+renderer.localClippingEnabled = true; // wymagane, zeby material.clippingPlanes w ogole dzialalo (patrz przekroj nizej)
+renderer.shadowMap.enabled = true;
+renderer.shadowMap.type = THREE.PCFSoftShadowMap;
+// ACES Filmic - bez tego three.js renderuje "liniowo" (plasko, bez kontrastu);
+// z tym obraz ma kinowy kontrast/nasycenie jak w profesjonalnych viewerach
+// (technika z BodyExplorer, github.com/JohanBellander/BodyExplorer, MIT).
+renderer.toneMapping = THREE.ACESFilmicToneMapping;
+renderer.toneMappingExposure = 1.15;
+wrap.appendChild(renderer.domElement);
+
+const controls = new OrbitControls(camera, renderer.domElement);
+controls.enableDamping = true;
+
+// Wieloswiatlowy rig (ambient + key/fill/rim/hemisphere) zamiast plaskich
+// 2 swiatel kierunkowych - daje wyrazniejsza forme/glebie na siatkach.
+scene.add(new THREE.AmbientLight(0x8088a0, 0.5));
+const keyLight = new THREE.DirectionalLight(0xffeedd, 1.5);
+keyLight.position.set(400, 400, 600);
+keyLight.castShadow = true;
+keyLight.shadow.mapSize.set(1024, 1024);
+keyLight.shadow.camera.near = 0.1;
+keyLight.shadow.camera.far = 3000;
+keyLight.shadow.camera.left = -600;
+keyLight.shadow.camera.right = 600;
+keyLight.shadow.camera.top = 600;
+keyLight.shadow.camera.bottom = -600;
+keyLight.shadow.bias = -0.001;
+scene.add(keyLight);
+const fillLight = new THREE.DirectionalLight(0x9999dd, 0.5);
+fillLight.position.set(-400, -300, -300);
+scene.add(fillLight);
+const rimLight = new THREE.DirectionalLight(0xff8866, 0.35);
+rimLight.position.set(0, -600, 200);
+scene.add(rimLight);
+scene.add(new THREE.HemisphereLight(0xbbddff, 0x553333, 0.5));
+
+const BONE_COLOR = 0xe8dcc8;
+const MUSCLE_COLOR = 0xaa3a3a;
+
+// Kolorowanie miesni wg regionu ciala (zamiast jednego plaskiego koloru na
+// wszystkie ~430 obiektow) - klasyfikacja po angielskiej nazwie BodyParts3D/
+// Z-Anatomy (ta sama, ktora jest juz w katalogu), technika zainspirowana
+// projektem BodyExplorer (MIT, github.com/JohanBellander/BodyExplorer).
+const MUSCLE_REGION_COLORS = {
+    head_neck: 0xc44a5a,
+    trunk_anterior: 0xa8384a,
+    trunk_posterior: 0x8f3050,
+    shoulder_arm: 0xb54838,
+    forearm_hand: 0xc45a3a,
+    hip_thigh: 0x9c3a3a,
+    leg_foot: 0xb04545,
+    other: MUSCLE_COLOR,
+};
+const MUSCLE_REGION_KEYWORDS = [
+    [/hyoid|masseter|temporalis|temporoparietalis|pterygoid|buccinator|orbicularis|zygomaticus|frontalis|occipitalis|platysma|digastric|scalenus|longus colli|longus capitis|mylohyoid|geniohyoid|risorius|levator labii|levator anguli|nasalis|procerus|corrugator|mentalis|depressor|auricular|sternocleidomastoid|splenius|rectus capitis|obliquus capitis/i, 'head_neck'],
+    [/pectoralis|rectus abdominis|\boblique\b|transversus abdominis|serratus anterior|diaphragm|subclavius|pyramidalis|intercostal|transversus thoracis|levatores costarum/i, 'trunk_anterior'],
+    [/latissimus dorsi|trapezius|rhomboid|erector spinae|multifidus|quadratus lumborum|serratus posterior|spinalis|longissimus|iliocostalis|levator scapulae|semispinalis|interspinales|intertransversari/i, 'trunk_posterior'],
+    [/deltoid|supraspinatus|infraspinatus|teres|subscapularis|biceps brachii|triceps brachii|brachialis|coracobrachialis|rotator cuff/i, 'shoulder_arm'],
+    [/extensor carpi|flexor carpi|pronator|supinator|palmaris|flexor digitorum|extensor digitorum|extensor digiti minimi|brachioradialis|anconeus|opponens|abductor pollicis|adductor pollicis|flexor pollicis|extensor pollicis|abductor digiti minimi.*hand|interossei.*hand|lumbrical.*hand|of (right|left) hand|extensor indicis/i, 'forearm_hand'],
+    [/gluteus|piriformis|obturator|quadratus femoris|iliopsoas|psoas|iliacus|sartorius|quadriceps|rectus femoris|vastus|adductor longus|adductor brevis|adductor magnus|adductor minimus|gracilis|biceps femoris|semitendinosus|semimembranosus|tensor fasciae latae|pectineus|gemellus|coccygeus|levator ani|puborectalis/i, 'hip_thigh'],
+    [/gastrocnemius|soleus|tibialis|peroneus|fibularis|flexor hallucis|extensor hallucis|adductor hallucis|flexor digitorum longus|extensor digitorum longus|popliteus|plantaris|abductor hallucis|interossei.*foot|lumbrical.*foot|of (right|left) foot|flexor accessorius/i, 'leg_foot'],
+];
+function classifyMuscleRegion(en) {
+    if (!en) return 'other';
+    for (const [re, region] of MUSCLE_REGION_KEYWORDS) {
+        if (re.test(en)) return region;
+    }
+    return 'other';
+}
+const ARTERY_COLOR = 0xcc2222;
+const VEIN_COLOR = 0x2255cc;
+const ORGAN_COLOR = 0xbb7755;
+const TOOTH_COLOR = 0xf0ead6;
+const CONNECTIVE_COLOR = 0xdddd88;
+const BRAIN_COLOR = 0xd8a0a8;
+const NERVE_COLOR = 0xf5d020;
+const LYMPH_COLOR = 0x66cc99;
+const HIGHLIGHT_COLOR = 0xffb347;
+
+// Reczne korekty pozycji dla pojedynczych siatek ze zdiagnozowanym bledem
+// osadzenia w zrodlowych danych (Z-Anatomy/R2), ktorych nie da sie naprawic
+// lokalnie (to pliki .obj hostowane zdalnie, nie mamy do nich pipeline'u w
+// tym repo - patrz brak folderu "naczynia"/"nerwy" w _atlas_pilot/). Wykryte
+// porownaniem X-owego srodka bbox kazdej pary lewa/prawa struktura w calym
+// zbiorze naczyn+nerwow: dla prawidlowo sparowanych struktur suma
+// (Lx + Rx) jest STALA (~37, bo srodek modelu po wysrodkowaniu na starcie
+// nie pokrywa sie idealnie z anatomiczna linia posrodkowa) - odchylenie od
+// tej stalej ujawnia siatke, ktora NIE zostala odbita na wlasciwa strone.
+// Format: id -> { mirrorX: stala C, do wzoru x' = C - x (odbicie + przesuniecie,
+// nie samo odwrocenie znaku - patrz uzasadnienie w notatce sesji) }.
+const MESH_POSITION_CORRECTIONS = {
+    // Nerw błędny prawy (X) - centrowal sie po tej samej (lewej) stronie co
+    // nerw błędny lewy (Lx=34, Rx=39.2 - obie DODATNIE), podczas gdy KAZDA inna
+    // para naczynie/nerw w zbiorze ma Lx+Rx =~ 37 (potwierdzone tez na kosciach
+    // parzystych, np. kosci srodreka: 36.1-36.2). C=37.5 wziete ze sredniej
+    // najblizszych sasiadow w tej samej okolicy (t. szyjna wspólna: 39.3,
+    // ż. szyjna wewnętrzna: 35.4).
+    "ZAC403": { mirrorX: 37.5 },
+    // Nerw podjęzykowy (XII) L/P - koniec bliższy (najbardziej z tylu/do gory,
+    // domniemany punkt wyjscia z czaszki) siedzial w world Y=111.1, podczas gdy
+    // zaufany, geometrycznie wykryty punkt "Kanał nerwu podjęzykowego" (kosc
+    // potyliczna, FMA - wiec "zawsze OK" wg WSKAZOWKI pkt 8) jest w Y=8.17 - Z
+    // obu punktow niemal identyczne (719.5 vs 712.6, 7mm), co potwierdza ze to
+    // wlasnie ten koniec nerwu powinien tam siedziec. Roznica ~103mm w Y idealnie
+    // pasuje do udokumentowanego bledu importu Z-Anatomy "~98mm za daleko do
+    // tylu" (WSKAZOWKI pkt 8) - przesuwamy caly nerw o ta wartosc do przodu.
+    "ZAC406": { translateY: -103 },
+    "ZAC407": { translateY: -103 },
+    // Ślinianka przyuszna L/P - X niemal idealnie pokrywa sie z zaufanym punktem
+    // "Otwór rylcowo-sutkowy" (miejsce wyjscia n. VII, FMA - "zawsze OK"): roznica
+    // <1.1mm, co potwierdza ze to ta sama okolica ciala. Ale Z jest o ~57-66mm ZA
+    // WYSOKO (703.5 wzgledem otworu rylcowo-sutkowego ~646 i kata zuchwy ~608) -
+    // dokladnie udokumentowany w WSKAZOWKI pkt 8 blad "~66mm za wysoko" dla
+    // podgrupy organy/tkanka laczna/mozg (ten sam typ bledu co przy gałce ocznej
+    // i chrzastce malzowiny usznej, ktore siedzialy "na czole").
+    "ZA582": { translateZ: -66 },
+    "ZA583": { translateZ: -66 },
+    // Naczynia mozgowe/oponowe glowy - ten sam blok bledu co wyzej ("~66mm za
+    // wysoko", WSKAZOWKI pkt 8, podgrupa mozg/tkanka laczna - te naczynia sa
+    // anatomicznie oponowe/korowe wiec pochodza z tego samego importu). Dowod
+    // twardy: zaufana kosc ciemieniowa (FMA, "zawsze OK") ma szczyt w Z=789.0 -
+    // ponizsze naczynia siedzialy z maxZ 803-852, czyli 14-63mm NAD kostna
+    // pokrywa czaszki - fizycznie niemozliwe (zatoka strzalkowa gorna/dolna i
+    // t. okolospoidlowa sa WEWNATRZ czaszki, t. skroniowa/potyliczna to
+    // naczynia boczne, ktore tez nie powinny siegac ponad szczyt). Po -66
+    // wszystkie miesza sie ponizej 789, spojnie.
+    "ZAC473": { translateZ: -66 }, // Zatoka strzałkowa górna
+    "ZAC474": { translateZ: -66 }, // Zatoka strzałkowa dolna
+    "ZAC427": { translateZ: -66 }, "ZAC428": { translateZ: -66 }, // Tętnica okołospoidłowa L/P
+    "ZAC425": { translateZ: -66 }, "ZAC426": { translateZ: -66 }, // Tętnica spoidłowo-brzeżna L/P
+    "ZAC447": { translateZ: -66, translateY: -66 }, "ZAC448": { translateZ: -66, translateY: -66 }, // Tętnica bruzdy środkowej L/P - MIAŁA TEŻ błąd Y (maxY 125->59)
+    "ZAC445": { translateZ: -66 }, "ZAC446": { translateZ: -66 }, // Tętnica bruzdy przedśrodkowej L/P
+    "ZAC302": { translateZ: -66, translateY: -66 }, "ZAC303": { translateZ: -66, translateY: -66 }, // Tętnica skroniowa powierzchowna L/P - MIAŁA TEŻ błąd Y (maxY 146.9!->80.9)
+    "ZAC443": { translateZ: -66 }, "ZAC444": { translateZ: -66 }, // Tętnica przedczołowa L/P
+    "ZAC300": { translateZ: -66, translateY: -66 }, "ZAC301": { translateZ: -66, translateY: -66 }, // Tętnica potyliczna L/P - MIAŁA TEŻ błąd Y
+    "ZAC338": { translateZ: -66, translateY: -66 }, "ZAC339": { translateZ: -66, translateY: -66 }, // Żyły skroniowe powierzchowne L/P - MIAŁA TEŻ błąd Y (maxY 111->45)
+    "ZAC449": { translateZ: -66 }, "ZAC450": { translateZ: -66 }, // Tętnica ciemieniowa tylna L/P
+    "ZAC298": { translateZ: -66 }, "ZAC299": { translateZ: -66 }, // Tętnica kątowa L/P
+    "ZAC441": { translateZ: -66 }, "ZAC442": { translateZ: -66 }, // Tętnica czołowo-podstawna boczna L/P
+    // Kolejna, ODDZIELNA podgrupa naczyn glowy z bledem TYLKO w osi Y (nie Z) -
+    // zaufana kosc potyliczna (FMA, "zawsze OK") ma tyl czaszki (max Y) = 92.3.
+    // (a) Tetnice krazenia tylnego mozgu (przy pniu mozgu/klivusie) - dowod
+    // twardy: podstawna(ZAC453) siedziala Y~87 srodek, a zaufany punkt "Stok"
+    // (Clivus, dodany wczesniej z polmiska rozmaitosci) jest w Y=-10 - roznica
+    // 97mm, niemal idealnie 98mm (ten sam typ bledu co reszta importu ZAC).
+    "ZAC453": { translateY: -98 }, // Tętnica podstawna
+    "ZAC454": { translateY: -98 }, "ZAC455": { translateY: -98 }, // Tętnica tylna mózgu (PCA) L/P
+    "ZAC460": { translateY: -98 }, "ZAC461": { translateY: -98 }, // Tętnica dolna tylna móżdżku (PICA) L/P
+    "ZAC462": { translateY: -98 }, "ZAC463": { translateY: -98 }, // Tętnica rdzeniowa przednia L/P
+    "ZAC464": { translateY: -98 }, "ZAC465": { translateY: -98 }, // Tętnica dolna przednia móżdżku (AICA) L/P
+    "ZAC466": { translateY: -98 }, "ZAC467": { translateY: -98 }, // Tętnica górna móżdżku (SCA) L/P
+    // (b) Zatoki oponowe dolu tylnego + gałąź skroniowa przednia MCA - za blisko
+    // zaufanej zatoki poprzecznej (ZAC468, NIETKNIETA, maxY=72.7 - poprawna) zeby
+    // pasowac -98 (przesunelo by je NIEFIZJOLOGICZNIE za bardzo do przodu, przed
+    // zatoke poprzeczna z ktora sie lacza) - za to -66 (ten sam magnitud co reszta
+    // tej partii importu) sprowadza kazda z nich WYGODNIE pod twarda granice 92.3.
+    "ZAC433": { translateY: -66 }, "ZAC434": { translateY: -66 }, // Gałąź skroniowa przednia (MCA) L/P
+    "ZAC470": { translateY: -66 }, // Zatoka potyliczna
+    "ZAC471": { translateY: -66 }, "ZAC472": { translateY: -66 }, // Zatoka esowata L/P
+    "ZAC475": { translateY: -66 }, // Zatoka prosta
+    "ZAC476": { translateY: -66 }, "ZAC477": { translateY: -66 }, // Zatoka skalista dolna L/P
+    "ZAC478": { translateY: -66 }, "ZAC479": { translateY: -66 }, // Zatoka skalista górna L/P
+    // Kolejne pojedyncze obiekty ze ZNANYM bledem "~98mm za daleko do tylu"
+    // (WSKAZOWKI-TECHNICZNE-WSPOLNE.md pkt 8 - oryginalny sweep 188 obiektow
+    // ich nie zlapal). Zdiagnozowane metoda z pkt 8: CALA siatka (nie tylko
+    // centroid) siedziala w jednej, zbyt-tylnej polowie (np. tetnica
+    // nabrzuszna dolna miala Y w zakresie [-6,+82] zamiast byc mocno przednia
+    // jak reszta sciany brzucha [-124,-51]) - odjecie 98mm daje wynik
+    // pokrywajacy sie z zaufanym sasiadem (m. prosty brzucha / watroba /
+    // n. udowy obok tej samej tetnicy/zyly).
+    "ZAC1": { translateY: -98 },   // Tętnica nabrzuszna dolna (lewa)
+    "ZAC258": { translateY: -98 }, // Tętnica zasłonowa (lewa)
+    "ZAC99": { translateY: -98 },  // Tętnica pachowa (lewa)
+    "ZAC279": { translateY: -98 }, // Żyła wrotna wątroby
+    "ZAC13": { translateY: -98 },  // Żyła udowa (lewa)
+    "ZAC3": { translateY: -98 },   // Tętnica udowa (lewa) - ten sam blok co żyła udowa, biegną razem
+    // Prawe odpowiedniki powyzszych 5 par - przeoczone w poprzedniej turze
+    // (sprawdzano tylko strone lewa). Zweryfikowane wprost: cy prawej wersji
+    // roznil sie od juz-poprawionej (zaufanej) lewej wersji o dokladnie 98.0mm
+    // (np. t. udowa: L cy=-24.3 vs R cy=73.7, roznica 98.0) - identyczny podpis
+    // bledu co wyzej, wiec ta sama poprawka.
+    "ZAC2": { translateY: -98 },   // Tętnica nabrzuszna dolna (prawa)
+    "ZAC259": { translateY: -98 }, // Tętnica zasłonowa (prawa)
+    "ZAC100": { translateY: -98 }, // Tętnica pachowa (prawa)
+    "ZAC14": { translateY: -98 },  // Żyła udowa (prawa)
+    "ZAC4": { translateY: -98 },   // Tętnica udowa (prawa)
+    // Tętnice międzyżebrowe tylne (wiazka, L+P) - centrX Y=82.5, siegajace az do
+    // Y=180.7 (dalej w tyl niz trzon kregu piersiowego Th4-8, cy~55, i dalej niz
+    // jakikolwiek inny szkielet w tej okolicy - fizycznie poza tulowiem). Wzgledem
+    // juz naprawionego nerwu miedzyzebrowego (ZAC203/204, ta sama wiazka) roznica
+    // centroidow = 104-106mm, prawie dokladnie 98mm. Ten sam blok bledu co wyzej.
+    "ZAC226": { translateY: -98 }, // Tętnice międzyżebrowe tylne (lewe)
+    "ZAC227": { translateY: -98 }, // Tętnice międzyżebrowe tylne (prawe)
+    // Kolejna runda tego samego "-98 Y" bledu, znaleziona przez porownanie kazdej
+    // pary do zaufanego sasiada (t./z. podobojczykowa - natywne FMA - dla pachowych,
+    // FMA3784 "czesc zstepujaca aorty" - natywna, poprawna - dla duplikatu ZAC224/243,
+    // trzon kregowy dla ledzwiowych). Kazda ponizej sprawdzona osobno.
+    "ZAC145": { translateY: -98 }, "ZAC146": { translateY: -98 }, // Żyła pachowa L/P (raw cy=90.6, zaufana ż.podobojczykowa cy~-24 - po -98 => -7.4, spojnie bardziej przednio niz tetnica pachowa jak w ż./t. podobojczykowej)
+    "ZAC101": { translateY: -98 }, "ZAC102": { translateY: -98 }, // Tętnica piersiowo-barkowa (gałąź t.pachowej) L/P
+    "ZAC224": { translateY: -98 }, // Aorta piersiowa (duplikat FMA3784 "część zstępująca aorty" - natywna/poprawna, cy~0 - ten ZAC-owy import mial cy=115.3)
+    "ZAC243": { translateY: -98 }, // Aorta brzuszna (ten sam typ duplikatu co wyzej)
+    "ZAC245": { translateY: -98 }, "ZAC246": { translateY: -98 }, // Tętnice lędźwiowe L/P
+    "ZAC266": { translateY: -98 }, "ZAC267": { translateY: -98 }, // Żyły lędźwiowe L/P
+    "ZAC277": { translateY: -98 }, "ZAC278": { translateY: -98 }, // Żyła sromowa wewnętrzna L/P
+    // Żyła nieparzysta + dopływy - NIE jest to juz sztywne przesuniecie, patrz
+    // MESH_SHEAR_CORRECTIONS ponizej (potwierdzone w atlasie: "zatacza łuk").
+    // Runda 3 tego samego "-98" bledu, znaleziona ze zrzutow ekranu usera
+    // (okolica klatki/przepony/miednicy - identyczny wzorzec: siega daleko za
+    // trzon kregowy/kosc krzyzowa, twardo niemozliwe).
+    "ZAC217": { translateY: -98 }, "ZAC218": { translateY: -98 }, // Tętnica międzyżebrowa tylna druga L/P
+    "ZAC244": { translateY: -98 }, // Tętnica przeponowa dolna
+    "ZAC225": { translateY: -98 }, // Tętnice przeponowe górne
+    "ZAC268": { translateY: -98 }, // Żyły wątrobowe (po -98: Y[-45.7,-20] niemal idealnie pokrywa sie z zaufana natywna Żyłą główną dolną Y[-43.4,-13.4] - do niej wpadaja)
+    "ZAC269": { translateY: -98 }, "ZAC270": { translateY: -98 }, // Żyła biodrowo-lędźwiowa L/P (towarzyszaca tetnica ZAC256/257 juz poprawna, cy~13-18 - żyła byla 73mm dalej z tylu)
+    "ZAC254": { translateY: -98 }, "ZAC255": { translateY: -98 }, // Tętnica nadnerczowa dolna L/P
+    "ZAC105": { translateY: -98 }, "ZAC106": { translateY: -98 }, // Tętnica podłopatkowa L/P (galaz t.pachowej - zaufana axillary cy~-0.7, ta siedziala ~100mm z tylu)
+    "ZAC155": { translateY: -98 }, "ZAC156": { translateY: -98 }, // Żyła okalająca ramię przednia L/P
+    // Powierzchowny uklad zylny ramienia - odlokciowa/basilica (ZAC161/162) juz
+    // poprawna (cy=0.7), ale odpromieniowa/cephalica i posrodkowe sa przesuniete:
+    // koniec bliszy (proksymalny, przy barku) t.odpromieniowej sprawdzony wprost
+    // (Y=79.2 vs zaufana zyla pachowa do ktorej wpada Y=-7.4, przy niemal
+    // identycznym X=144.4 vs 142.9 - to na pewno ta sama okolica ciala, tylko
+    // zle Y). Po -98 konce zbiegaja sie sensownie.
+    "ZAC159": { translateY: -98 }, "ZAC160": { translateY: -98 }, // Żyła odpromieniowa (cephalica) L/P
+    "ZAC163": { translateY: -98 }, "ZAC164": { translateY: -98 }, // Żyła łokciowa pośrodkowa L/P
+    "ZAC165": { translateY: -98 }, "ZAC166": { translateY: -98 }, // Żyła pośrodkowa przedramienia L/P
+    "ZAC111": { translateY: -98 }, "ZAC112": { translateY: -98 }, // Tętnica okalająca ramię przednia L/P (ARTERIA - osobne ID od zyly ZAC155/156 ktora juz poprawiona; ten sam blok)
+    // Cala odnoga krezkowa/okreznicza (SMA/IMA dystalne galezie) - dowod twardy:
+    // zaufana natywna "Tętnica krezkowa dolna" (FMA) ma Y=[-58,-34]; te
+    // ponizsze to jej BEZPOSREDNIE galezie/doplywy, a siedzialy w Y=50-83 (107-
+    // 133mm za daleko z tylu, identyczny podpis bledu). Wczesniej bledna ocena
+    // "OK" dla ZAC223/251/280 byla oparta o slabszy dowod (trzon kregowy) -
+    // porownanie do wlasnego naczynia macierzystego jest znacznie mocniejsze.
+    "ZAC249": { translateY: -98 }, // Tętnica trzustkowo-dwunastnicza dolna
+    "ZAC250": { translateY: -98 }, // Tętnica krętniczo-okrężnicza
+    "ZAC251": { translateY: -98 }, // Tętnica wyrostka robaczkowego
+    "ZAC252": { translateY: -98 }, // Tętnica okrężnicza środkowa
+    "ZAC253": { translateY: -98 }, // Tętnice esicze
+    "ZAC223": { translateY: -98 }, // Gałąź brzeżna lewa
+    "ZAC280": { translateY: -98 }, // Żyła okrężnicza środkowa
+    "ZAC281": { translateY: -98 }, // Żyła krezkowa dolna
+    "ZAC282": { translateY: -98 }, // Żyły esicze
+    "ZAC103": { translateY: -98 }, "ZAC104": { translateY: -98 }, // Tętnica piersiowa boczna L/P (wskazane przez usera - vs zaufana t.piersiowo-grzbietowa ZAC107/108 cy=16.1, gap 43mm)
+    "ZAC157": { translateY: -98 }, "ZAC158": { translateY: -98 }, // Żyła piersiowa boczna L/P (towarzyszaca tetnicy powyzej)
+    // Znalezione automatycznym sweepem (wszystkie ZAC1-290 z cy>60, wykluczajac
+    // juz-poprawione i juz-zweryfikowane-jako-OK stopy/Siec rzepki/gałaz brzezna):
+    "ZAC147": { translateY: -98 }, "ZAC148": { translateY: -98 }, // Żyła podłopatkowa L/P (ZYLA - artria ZAC105/106 juz poprawiona osobno)
+    "ZAC151": { translateY: -98 }, "ZAC152": { translateY: -98 }, // Żyła piersiowo-grzbietowa L/P (ZYLA - artria ZAC107/108 juz OK/nietkniete)
+    "ZAC215": { translateY: -98 }, "ZAC216": { translateY: -98 }, // Tętnica międzyżebrowa tylna pierwsza L/P
+    // Naczynia szyi - ten sam blad. Dowod twardy: zaufane kregi szyjne C3-C7
+    // (natywne FMA) maja max Y (najbardziej z tylu, z wyrostkiem kolczystym)
+    // tylko 43.5-67.2 - ponizsze siedzialy wyzej niz TO na dowolnym poziomie
+    // szyi, czyli fizycznie za kregoslupem. Zyla szyjna przednia (prawdziwie
+    // bardzo przednia struktura) po -98 spada do Y=-29.4 - doskonale pasuje.
+    "ZAC415": { translateY: -98 }, "ZAC416": { translateY: -98 }, // Tętnica kręgowa L/P
+    "ZAC417": { translateY: -98 }, "ZAC418": { translateY: -98 }, // Pień tarczowo-szyjny L/P
+    "ZAC370": { translateY: -98 }, "ZAC371": { translateY: -98 }, // Tętnica szyjna zewnętrzna L/P
+    "ZAC413": { translateY: -98 }, "ZAC414": { translateY: -98 }, // Żyła tarczowa górna L/P
+    "ZAC326": { translateY: -98 }, "ZAC327": { translateY: -98 }, // Tętnica szyjna wewnętrzna L/P
+    "ZAC346": { translateY: -98 }, "ZAC347": { translateY: -98 }, // Żyła szyjna przednia L/P
+    "ZAC372": { translateY: -98 }, "ZAC373": { translateY: -98 }, // Tętnica gardłowa wstępująca L/P
+    "ZAC411": { translateY: -98 }, "ZAC412": { translateY: -98 }, // Żyła językowa L/P
+};
+
+// Nerwy czaszkowe III/IV/V (+galezie V1-V3)/VIII/IX kolo podstawy czaszki maja
+// POPRAWNY przebieg (sciezke) - sprawdzone geometrycznie wzgledem kosci
+// skroniowej/klinowej, patrz WSKAZOWKI-TECHNICZNE-WSPOLNE.md pkt 8 - ale siatka
+// importu Z-Anatomy jest za DUZA (ten sam typ bledu skali co przy mozgu,
+// naprawiony tam wczesniej ponownym eksportem; tu nie mamy dostepu do
+// zrodlowych .obj w tym repo, wiec korekta jest runtime), przez co lokalnie
+// "wystaja" poza czaszke i tworza wizualny "klebek" zamiast czytelnych,
+// cienkich pnia nerwowych. Skalujemy KAZDY obiekt WOKOL WLASNEGO centroidu
+// (nie wokol 0,0,0 grupy) - stad position ponizej to nie przypadkowe liczby,
+// tylko precyzyjnie wyliczone przesuniecie kompensujace skalowanie (patrz
+// scaleAroundOwnCentroid nizej), zeby nerw zostal na swoim miejscu, tylko
+// mniejszy.
+const MESH_SCALE_CORRECTIONS = {
+    "ZAC378": 0.45, "ZAC379": 0.45, // Nerw okoruchowy (III)
+    "ZAC380": 0.45, "ZAC381": 0.45, // Nerw bloczkowy (IV)
+    "ZAC382": 0.45, "ZAC383": 0.45, // Nerw trójdzielny (V)
+    "ZAC384": 0.45, "ZAC385": 0.45, // Nerw oczny (V1)
+    "ZAC386": 0.45, "ZAC387": 0.45, // Nerw szczękowy (V2)
+    "ZAC388": 0.45, "ZAC389": 0.45, // Nerw policzkowy (gałąź V3)
+    "ZAC390": 0.45, "ZAC391": 0.45, // Nerw językowy (gałąź V3)
+    "ZAC392": 0.45, "ZAC393": 0.45, // Nerw zębodołowy dolny (gałąź V3)
+    "ZAC394": 0.45, "ZAC395": 0.45, // Nerw bródkowy (gałąź V3)
+    "ZAC396": 0.45, "ZAC397": 0.45, // Nerw twarzowy (VII)
+    "ZAC398": 0.45, "ZAC399": 0.45, // Struna bębenkowa (gałąź VII, biegnie z V3)
+    "ZAC400": 0.45, "ZAC401": 0.45, // Nerw językowo-gardłowy (IX)
+    "ZAC374": 0.45, "ZAC375": 0.45, // Nerw przedsionkowo-ślimakowy (VIII)
+    "ZAC376": 0.45, "ZAC377": 0.45, // Nerw przedsionkowy (gałąź VIII)
+    "ZA707": 0.45, // Nerw ślimakowy (gałąź VIII)
+};
+
+// Korekty gdzie sama korekta "wokol wlasnego centroidu" (jak wyzej) nie
+// wystarcza, bo trzeba PRZY OKAZJI zeskalowania zakotwiczyc konkretny koniec
+// siatki do konkretnej, zweryfikowanej pozycji kostnej (nie tylko zachowac
+// srodek) - position i scale ponizej sa juz gotowymi, wyliczonymi wartosciami
+// (nie formula do przeliczenia w locie), bo wymagaly danych z live sceny
+// (bbox sąsiednich żeber) w momencie liczenia, patrz notatka w kazdym wpisie.
+const MESH_AFFINE_CORRECTIONS = {
+    // Nerwy międzyżebrowe (Th1-Th12, cala wiazka jako jeden obiekt na strone) -
+    // siegaly od Z=586 (WYZEJ niz żebro I, Z=510) do Z=132 (okolica uda) -
+    // rozciagniecie 453mm zamiast realnego zasiegu klatki piersiowej. Sprawdzone
+    // wizualnie wzgledem ryciny w "26.08.26/S_ półmisek rozmaitości.pdf" str. 290
+    // (Rozdzial XXV) - nerwy międzyżebrowe biegna w WASKIM poziomym pasie
+    // Th1-Th12, nie w chmurze. Przeskalowane (a=0.7088) tak, zeby rozpietosc
+    // odpowiadala dystansowi żebro I -> żebro XII (+ mały zapas na n.
+    // podżebrowy pod żebrem XII), i przesuniete tak, zeby gorny koniec
+    // (najbardziej z tylu/gory) pokrywal sie z żebrem I.
+    "ZAC203": { scale: 0.7088, position: [21.72, -30.71, 341.55] },  // lewe
+    "ZAC204": { scale: 0.7088, position: [-21.72, -30.71, 341.55] }, // prawe
+};
+
+// Naczynia, ktorych blad NIE jest sztywnym przesunieciem tylko WYGIETYM
+// ksztaltem siatki (rosnie/maleje wzdluz dlugosci obiektu) - pojedynczy
+// translateY (jak w MESH_POSITION_CORRECTIONS) albo nie naprawia jednego konca,
+// albo przesuwa drugi za daleko. Kazdy wpis: przesuniecie Y interpolowane
+// LINIOWO wzdluz WLASNEGO lokalnego zakresu Z obiektu (dolny koniec ->
+// bottomShift, gorny koniec -> topShift), aplikowane per-wierzcholek.
+const MESH_SHEAR_CORRECTIONS = {
+    // Żyła nieparzysta (+ krotka/krotka dodatkowa) - potwierdzone w "półmisku
+    // rozmaitości" str.324 ("Nad korzeniem płuca prawego przebiega żyła
+    // nieparzysta, która ZATACZA ŁUK i uchodzi do żyły głównej górnej") - czyli
+    // to LUK, nie prosta. Dolny koniec (przy przeponie/kregach ledzwiowych)
+    // powinien zostac blisko kregoslupa - mala poprawka. Gorny koniec (przy
+    // luku nad wneka prawego pluca) powinien podejsc pod zaufana natywna Żyłę
+    // główną górną (FMA4720, Y=[-37,-13]) do ktorej sie wlewa - duza poprawka
+    // (surowy gorny koniec Y=128, cel ok. -20 => ~-148).
+    "ZAC238": { bottomShift: -25, topShift: -148 }, // Żyła nieparzysta
+    "ZAC239": { bottomShift: -25, topShift: -148 }, // Żyła nieparzysta krótka
+    "ZAC240": { bottomShift: -25, topShift: -148 }, // Żyła nieparzysta krótka dodatkowa
+};
+function applyShearCorrection(obj, shear) {
+    let minZ = Infinity, maxZ = -Infinity;
+    obj.traverse((n) => {
+        if (!n.isMesh) return;
+        const pos = n.geometry.attributes.position;
+        for (let i = 0; i < pos.count; i++) {
+            const z = pos.getZ(i);
+            if (z < minZ) minZ = z;
+            if (z > maxZ) maxZ = z;
+        }
+    });
+    const span = maxZ - minZ || 1;
+    obj.traverse((n) => {
+        if (!n.isMesh) return;
+        const pos = n.geometry.attributes.position;
+        for (let i = 0; i < pos.count; i++) {
+            const t = (pos.getZ(i) - minZ) / span; // 0 na dole, 1 na gorze
+            const shiftY = shear.bottomShift + (shear.topShift - shear.bottomShift) * t;
+            pos.setY(i, pos.getY(i) + shiftY);
+        }
+        pos.needsUpdate = true;
+        n.geometry.computeBoundingBox();
+        n.geometry.computeBoundingSphere();
+    });
+}
+
+let bones = [];
+let allLandmarks = [];
+let szpilkiMap = []; // linked szpilki (kolokwia) - patrz build_szpilki_data.js / SZPILKI-2024-2025-lista.md
+let szpilkiTodo = []; // szpilki jeszcze bez dopasowanej struktury w atlasie
+let notatkiWykladowe = {}; // kolokwium -> kategoria notatki -> tekst (SZPILKI-2024-2025-notatki-wykladowe.md)
+let selectedMesh = null;
+const group = new THREE.Group();
+scene.add(group);
+
+const KIND_LABEL_PL = { bone: "kość", muscle: "mięsień", vessel: "naczynie", organ: "narząd", tooth: "ząb", connective: "tkanka łączna", brain: "mózg", nerve: "nerw", lymph: "chłonny" };
+const boneIdToKind = new Map();
+function layerCheckedFor(kind) {
+    const ids = { bone: "layer-bones", muscle: "layer-muscles", vessel: "layer-vessels", organ: "layer-organs", tooth: "layer-teeth", connective: "layer-connective", brain: "layer-brain", nerve: "layer-nerves", lymph: "layer-lymph" };
+    const el = document.getElementById(ids[kind]);
+    return el ? el.checked : true;
+}
+function landmarksMasterOn() {
+    const el = document.getElementById("layer-landmarks");
+    return el ? el.checked : true;
+}
+function landmarkShouldBeVisible(lm) {
+    return landmarksMasterOn() && layerCheckedFor(boneIdToKind.get(lm.boneId));
+}
+const LANDMARK_COLOR = 0x3bb3ff;
+// Punkty "approx" nie maja wlasnej zmierzonej pozycji - zostaly dolaczone do
+// najblizszej juz istniejacej struktury na podstawie sasiedztwa w slowniku
+// (ta sama okolica ciala/narzad, ale NIE zweryfikowana geometrycznie pozycja).
+// Inny kolor + przezroczystosc + wyrazna etykieta w UI, zeby student nigdy nie
+// pomylil tego z pozycja wyznaczona z realnej siatki 3D.
+const LANDMARK_APPROX_COLOR = 0x8a8a8a;
+const LANDMARK_HIGHLIGHT = 0xffe066;
+const landmarkMeshes = [];
+const boneObjById = new Map();
+
+// ===== punkty orientacyjne: sprite 2D (kolko) + kolo na hover/zaznaczenie =====
+// (na poziomie modulu - uzywaja tego zarowno tworzenie punktow w init(), jak
+// i lmRingSelected / lmUnring / setRing zdefiniowane duzo nizej)
+const _lmTex = {};
+function _lmTexture(hex, ring) {
+    const k = hex + (ring ? "R" : "");
+    if (_lmTex[k]) return _lmTex[k];
+    const S = 64, cv = document.createElement("canvas"); cv.width = cv.height = S;
+    const g = cv.getContext("2d"), col = "#" + hex.toString(16).padStart(6, "0");
+    if (ring) { g.strokeStyle = "#ffe066"; g.lineWidth = 6;
+        g.beginPath(); g.arc(S/2, S/2, 26, 0, 7); g.stroke(); }
+    g.fillStyle = col; g.beginPath(); g.arc(S/2, S/2, ring ? 13 : 16, 0, 7); g.fill();
+    g.strokeStyle = "rgba(0,0,0,.5)"; g.lineWidth = 2.5;
+    g.beginPath(); g.arc(S/2, S/2, ring ? 13 : 16, 0, 7); g.stroke();
+    const t = new THREE.CanvasTexture(cv); _lmTex[k] = t; return t;
+}
+function lmDotMat(hex, approx, ring) {
+    return new THREE.SpriteMaterial({ map: _lmTexture(hex, ring), transparent: true,
+        opacity: approx ? 0.6 : 1, depthWrite: false, sizeAttenuation: true });
+}
+
+let fullViewCamera = null; // {position, target} - zeby wrocic po zamknieciu izolacji
+let isolatedBoneId = null;
+let everFittedProperly = false; // patrz fitCameraToSkeleton() i resize-listener nizej
+
+// ===== Leniwe ladowanie siatek per-warstwa =====
+// Przy ~2000 obiektach (po dodaniu nerwow/naczyn z Z-Anatomy) ladowanie WSZYSTKICH
+// siatek na starcie stalo sie zbyt wolne (kilkanascie minut). Kosci (jedyna
+// domyslnie widoczna warstwa) ladujemy od razu; reszta warstw laduje sie
+// dopiero gdy uzytkownik pierwszy raz zaznaczy dana warstwe / trafi w nia przez
+// wyszukiwanie lub zakladke.
+const loadedKinds = new Set();
+const kindLoadPromises = new Map();
+// jeden wspoldzielony DRACOLoader (wewnetrzna pula workerow) na cala sesje
+let _draco = null;
+function makeGLTFLoader() {
+    if (!_draco) {
+        _draco = new DRACOLoader();
+        _draco.setDecoderPath(DRACO_DECODER_PATH);
+        _draco.preload();
+    }
+    const l = new GLTFLoader();
+    l.setDRACOLoader(_draco);
+    return l;
+}
+
+// Cala warstwa w jednym .glb: pobierz raz, rozbij wg nazw wezlow (= id struktury
+// z katalogu all_<kind>_labeled_v2.json), kazda siatke opakuj w Group zeby
+// ponizszy blok korekt (obj.scale / obj.position / obj.traverse) dzialal bez
+// zmian - dokladnie tak jak dawniej z OBJLoaderem per-plik.
+async function loadMeshesForKind(kind) {
+    const list = bones.filter(b => b.kind === kind);
+    if (!list.length) return;
+    const glbFile = KIND_TO_GLB[kind];
+    let gltf;
+    try {
+        gltf = await makeGLTFLoader().loadAsync(GLB_BASE + glbFile + V2B);
+    } catch (e) {
+        console.warn("Nie udalo sie wczytac warstwy GLB", kind, glbFile, e);
+        bones = bones.filter(b => b.kind !== kind);
+        return;
+    }
+    const meshById = new Map();
+    gltf.scene.traverse(n => { if (n.isMesh && n.name) meshById.set(n.name, n); });
+    const boneById = new Map(list.map(b => [b.id, b]));
+    const loaded = [];
+    const loadedIds = new Set();
+    for (const [id, srcMesh] of meshById) {
+        const bone = boneById.get(id);
+        if (!bone) continue; // siatka spoza katalogu - pomijamy
+        // GLB niesie tylko POSITION (bez normalnych) - policz gladkie normalne,
+        // inaczej MeshStandardMaterial renderuje plasko/ciemno.
+        srcMesh.geometry.computeVertexNormals();
+        const obj = new THREE.Group();
+        obj.add(new THREE.Mesh(srcMesh.geometry));
+        loaded.push({ bone, obj });
+        loadedIds.add(id);
+    }
+    // usun z listy te, ktorych siatki nie bylo w GLB
+    bones = bones.filter(b => b.kind !== kind || loadedIds.has(b.id));
+    for (const { bone, obj } of loaded) {
+        let baseColor = BONE_COLOR;
+        if (bone.kind === "muscle") baseColor = MUSCLE_REGION_COLORS[classifyMuscleRegion(bone.en)];
+        else if (bone.kind === "vessel") baseColor = /Żył/.test(bone.pl) ? VEIN_COLOR : ARTERY_COLOR;
+        else if (bone.kind === "organ") baseColor = ORGAN_COLOR;
+        else if (bone.kind === "tooth") baseColor = TOOTH_COLOR;
+        else if (bone.kind === "connective") baseColor = CONNECTIVE_COLOR;
+        else if (bone.kind === "brain") baseColor = BRAIN_COLOR;
+        else if (bone.kind === "nerve") baseColor = NERVE_COLOR;
+        else if (bone.kind === "lymph") baseColor = LYMPH_COLOR;
+        obj.traverse(child => {
+            if (child.isMesh) {
+                // side: DoubleSide - siatki BodyParts3D maja niespojne/odwrocone
+                // normalne wzgledem konwencji three.js, wiec FrontSide (domyslny)
+                // czynilby czesc kosci niewidoczna/nietrafialna promieniem.
+                child.material = new THREE.MeshStandardMaterial({ color: baseColor, roughness: 0.6, metalness: 0.05, side: THREE.DoubleSide });
+                child.userData.bone = bone;
+                // Kosci renderowane PIERWSZE (renderOrder=0), wszystko inne NA WIERZCHU
+                // (renderOrder=1) - bez tego przy wlaczonych kilku warstwach naraz
+                // trojkaty z roznych siatek "walcza" o te same piksele (migotanie/
+                // przypadkowe przebijanie), zamiast czytelnie ukladac sie warstwami
+                // jak w prawdziwych atlasach anatomicznych.
+                child.renderOrder = (bone.kind === "bone") ? 0 : 1;
+                // Kosc "wygrywa" remisy glebi - tam gdzie inna tkanka styka sie z
+                // koscia niemal idealnie (np. plat czolowy tuz pod blaszka oczodolu),
+                // precyzja z-bufora GPU nie odroznia dwoch powierzchni w tej samej
+                // odleglosci i miga miedzy nimi piksel po pikselu (z-fighting), mimo
+                // ze geometria obu siatek jest poprawna. PolygonOffset przesuwa kosc
+                // odrobine blizej kamery TYLKO w tescie glebi (nie zmienia realnej
+                // pozycji/danych), wiec kosc zawsze wygrywa taki remis.
+                if (bone.kind === "bone") {
+                    child.material.polygonOffset = true;
+                    child.material.polygonOffsetFactor = -1.5;
+                    child.material.polygonOffsetUnits = -1.5;
+                }
+                child.castShadow = bone.kind !== "bone";
+                child.receiveShadow = true;
+            }
+        });
+        const correction = MESH_POSITION_CORRECTIONS[bone.id];
+        if (correction && correction.mirrorX !== undefined) {
+            // Chcemy, zeby WORLD-SPACE x (to co faktycznie widac/mierzy sie w
+            // scenie, po doliczeniu przesuniecia calej `group` z centrowania w
+            // init()) spelnialo x' = C - x. Ale `obj` jest DZIECKIEM `group` -
+            // scale/position ustawione tutaj dzialaja w przestrzeni LOKALNEJ
+            // (przed doliczeniem group.position), wiec samo position.x=C daje
+            // world x' = C - x + group.position.x (o group.position.x za duzo) -
+            // trzeba odjac je PODWOJNIE (raz bo x sam juz je zawiera, raz bo
+            // dodaje sie ponownie przy skladaniu z group.matrixWorld).
+            obj.scale.x = -1;
+            obj.position.x = correction.mirrorX - 2 * group.position.x;
+        }
+        // Proste przesuniecie (bez odbicia/skalowania) - w przestrzeni lokalnej
+        // dzialaja tak samo jak w world-space (group tylko translatuje, nie
+        // skaluje/obraca), wiec nie trzeba dodatkowej matematyki jak przy mirrorX.
+        if (correction && correction.translateX) obj.position.x += correction.translateX;
+        if (correction && correction.translateY) obj.position.y += correction.translateY;
+        if (correction && correction.translateZ) obj.position.z += correction.translateZ;
+        const scaleCorrection = MESH_SCALE_CORRECTIONS[bone.id];
+        if (scaleCorrection) {
+            // W tym miejscu `obj` NIE jest jeszcze dzieckiem `group` (dodajemy je
+            // kilka linii nizej), wiec Box3.setFromObject(obj) daje surowe/lokalne
+            // wspolrzedne (bez przesuniecia grupy) - dokladnie to, czego trzeba do
+            // przeskalowania WOKOL WLASNEGO srodka: dla x' = s*x + P*(1-s) srodek
+            // P zostaje na miejscu, tylko geometria sie kurczy/rosnie wokol niego
+            // (samo scale.setScalar() bez tej korekty position skurczyloby siatke
+            // do (0,0,0) calego modelu, przesuwajac nerw daleko od jego realnej
+            // pozycji).
+            const localCenter = new THREE.Box3().setFromObject(obj).getCenter(new THREE.Vector3());
+            obj.scale.setScalar(scaleCorrection);
+            obj.position.copy(localCenter).multiplyScalar(1 - scaleCorrection);
+        }
+        const affineCorrection = MESH_AFFINE_CORRECTIONS[bone.id];
+        if (affineCorrection) {
+            // Gotowe, wyliczone wczesniej wartosci (patrz komentarz przy
+            // MESH_AFFINE_CORRECTIONS) - zadnej dodatkowej matematyki tutaj.
+            obj.scale.setScalar(affineCorrection.scale);
+            obj.position.set(affineCorrection.position[0], affineCorrection.position[1], affineCorrection.position[2]);
+        }
+        const shearCorrection = MESH_SHEAR_CORRECTIONS[bone.id];
+        if (shearCorrection) applyShearCorrection(obj, shearCorrection);
+        obj.visible = false; // widocznosc ustawia wolajacy (ensureKindLoaded/openBone) po zakonczeniu ladowania
+        group.add(obj);
+        boneObjById.set(bone.id, obj);
+    }
+}
+function ensureKindLoaded(kind) {
+    if (loadedKinds.has(kind)) return Promise.resolve();
+    if (kindLoadPromises.has(kind)) return kindLoadPromises.get(kind);
+    const p = loadMeshesForKind(kind).then(() => { loadedKinds.add(kind); });
+    kindLoadPromises.set(kind, p);
+    return p;
+}
+
+async function init() {
+    const res = await fetch("all_bones_labeled_v2.json" + V2B);
+    const boneList = (await res.json()).map(b => ({ ...b, kind: "bone" }));
+    let muscleList = [];
+    try {
+        const mres = await fetch("all_muscles_labeled_v2.json" + V2B);
+        muscleList = (await mres.json()).map(m => ({ ...m, kind: "muscle" }));
+    } catch (e) {
+        console.warn("Brak all_muscles_labeled.json - pomijam warstwe miesni:", e);
+    }
+    let vesselList = [];
+    try {
+        const vres = await fetch("all_vessels_labeled_v2.json" + V2B);
+        vesselList = (await vres.json()).map(v => ({ ...v, kind: "vessel" }));
+    } catch (e) {
+        console.warn("Brak all_vessels_labeled.json - pomijam warstwe naczyn:", e);
+    }
+    let organList = [];
+    try {
+        const ores = await fetch("all_organs_labeled_v2.json" + V2B);
+        organList = (await ores.json()).map(o => ({ ...o, kind: "organ" }));
+    } catch (e) {
+        console.warn("Brak all_organs_labeled.json - pomijam warstwe narzadow:", e);
+    }
+    let toothList = [];
+    try {
+        const tres = await fetch("all_teeth_labeled_v2.json" + V2B);
+        toothList = (await tres.json()).map(t => ({ ...t, kind: "tooth" }));
+    } catch (e) {
+        console.warn("Brak all_teeth_labeled.json - pomijam warstwe zebow:", e);
+    }
+    let connectiveList = [];
+    try {
+        const cres = await fetch("all_connective_labeled_v2.json" + V2B);
+        connectiveList = (await cres.json()).map(c => ({ ...c, kind: "connective" }));
+    } catch (e) {
+        console.warn("Brak all_connective_labeled.json - pomijam warstwe tkanki lacznej:", e);
+    }
+    let brainList = [];
+    try {
+        const bres = await fetch("all_brain_labeled_v2.json" + V2B);
+        brainList = (await bres.json()).map(b => ({ ...b, kind: "brain" }));
+    } catch (e) {
+        console.warn("Brak all_brain_labeled.json - pomijam warstwe mozgu:", e);
+    }
+    let nerveList = [];
+    try {
+        const nres = await fetch("all_nerves_labeled_v2.json" + V2B);
+        nerveList = (await nres.json()).map(n => ({ ...n, kind: "nerve" }));
+    } catch (e) {
+        console.warn("Brak all_nerves_labeled.json - pomijam warstwe nerwow:", e);
+    }
+    let lymphList = [];
+    try {
+        const lres = await fetch("all_lymph_labeled_v2.json" + V2B);
+        lymphList = (await lres.json()).map(l => ({ ...l, kind: "lymph" }));
+    } catch (e) {
+        console.warn("Brak all_lymph_labeled.json - pomijam warstwe ukladu chlonnego:", e);
+    }
+    bones = boneList.concat(muscleList, vesselList, organList, toothList, connectiveList, brainList, nerveList, lymphList);
+    for (const b of bones) boneIdToKind.set(b.id, b.kind);
+
+    const box = new THREE.Box3();
+
+    // Leniwe ladowanie: na starcie tylko warstwa kosci (jedyna domyslnie
+    // widoczna/zaznaczona) - patrz ensureKindLoaded/loadMeshesForKind wyzej.
+    // Pozostale warstwy doladowuja sie na zadanie (checkbox/wyszukiwanie/zakladka).
+    await ensureKindLoaded("bone");
+    for (const b of bones) {
+        if (b.kind === "bone") {
+            const obj = boneObjById.get(b.id);
+            if (obj) obj.visible = true;
+        }
+    }
+
+    // Punkty orientacyjne NA kosciach (guzowatosci, powierzchnie stawowe...) -
+    // wykryte geometrycznie (patrz _landmark_detect.mjs: ekstremum wzdluz osi
+    // przod-tyl dla guzowatosci, najblizsze wierzcholki sasiedniej kosci dla
+    // powierzchni stawowych), NIE klikane recznie z obrazka. Pozycje sa w tym
+    // samym ukladzie "calego ciala" co wierzcholki kosci (przed przesunieciem
+    // `group`), wiec dodajemy je jako dzieci `group` - to samo przesuniecie
+    // zadziala na nie automatycznie.
+    try {
+        const lmRes = await fetch("bone_landmarks_v2.json" + V2B);
+        const rawLandmarks = await lmRes.json();
+        // "(z: Kość X)" oznacza punkty wykryte geometrycznie tam, gdzie dwie
+        // siatki sie stykaja (patrz _landmark_detect.mjs) - "Szew (z: ...)",
+        // "Powierzchnia stawowa (z: ...)", "Powierzchnia stawowa — staw
+        // skroniowo-żuchwowy (z: ...)", "Powierzchnia międzykręgowa (z: ...)".
+        // Te NIE maja wlasnej, unikalnej nazwy anatomicznej (w przeciwienstwie do
+        // np. "Szew wiencowy"/"Szew czolowo-nosowy", ktore ZOSTAJA, bo nie maja
+        // "(z: ...)" w nazwie), wiec nikt nie zapyta o nie na kolokwium -
+        // odfiltrowujemy 886 takich pozycji zamiast zaśmiecac liste/wyszukiwarke.
+        const GENERIC_TOUCH_RE = /\(z:\s/i;
+
+        allLandmarks = rawLandmarks.filter(lm => !GENERIC_TOUCH_RE.test(lm.pl));
+        const FORAMEN_RE = /^Otwór|^Kanał/;
+        for (const lm of allLandmarks) {
+            const isForamen = FORAMEN_RE.test(lm.pl);
+            const color = lm.approx ? LANDMARK_APPROX_COLOR : LANDMARK_COLOR;
+            const isApprox = !!lm.approx;
+            const opacity = isApprox ? 0.55 : 1;
+            let mesh;
+            if (isForamen) {
+                // Otwory/kanaly nie sa realnymi dziurami w tej (zdekymowanej) siatce
+                // BodyParts3D - zamiast probowac wyciac geometrie, rysujemy plaski
+                // obrys (pierscien) w przyblizonym miejscu, jak "tatuaz" na kosci.
+                mesh = new THREE.Mesh(
+                    new THREE.TorusGeometry(4, 0.7, 8, 24),
+                    new THREE.MeshBasicMaterial({ color, transparent: isApprox, opacity })
+                );
+                mesh.position.set(lm.pos[0], lm.pos[1], lm.pos[2]);
+                const boneObj = boneObjById.get(lm.boneId);
+                if (boneObj) {
+                    const bbox = new THREE.Box3().setFromObject(boneObj);
+                    const boneCenter = bbox.getCenter(new THREE.Vector3());
+                    const outward = mesh.position.clone().sub(boneCenter).normalize();
+                    if (outward.lengthSq() > 0) {
+                        mesh.lookAt(mesh.position.clone().add(outward));
+                    }
+                }
+            } else {
+                // niewidzialna mala kula = cel raycasta/kliku (logika silnika bez zmian)
+                mesh = new THREE.Mesh(
+                    new THREE.SphereGeometry(6, 8, 8),
+                    new THREE.MeshBasicMaterial({ visible: false })
+                );
+                mesh.position.set(lm.pos[0], lm.pos[1], lm.pos[2]);
+                // widoczny element: sprite 2D zawsze zwrocony do kamery
+                const spr = new THREE.Sprite(lmDotMat(color, isApprox, false));
+                spr.scale.setScalar(9);
+                spr.userData.isLmDot = true;
+                mesh.add(spr);
+                mesh.userData.dot = spr;
+            }
+            mesh.userData.landmark = lm;
+            mesh.visible = landmarkShouldBeVisible(lm);
+            group.add(mesh);
+            landmarkMeshes.push(mesh);
+        }
+    } catch (e) {
+        console.warn("Brak bone_landmarks.json lub blad wczytywania punktow orientacyjnych:", e);
+    }
+
+    // Wyśrodkuj cały układ raz (dane BodyParts3D są we wspólnym układzie
+    // współrzędnych całego ciała, gdzie oś góra-dół (biodro-stopa) to Z, nie Y).
+    box.setFromObject(group);
+    const center = box.getCenter(new THREE.Vector3());
+    group.position.sub(center);
+
+    // Dane szpilek z kolokwiow (opcjonalne - patrz tryb kolokwium nizej) - brak
+    // tych plikow nie powinien blokowac reszty atlasu, stad osobny try/catch.
+    try {
+        const [smRes, stRes, nwRes] = await Promise.all([
+            fetch("szpilki_map_v2.json" + V2B), fetch("szpilki_todo_v2.json" + V2B), fetch("notatki_wykladowe.json" + V2B),
+        ]);
+        szpilkiMap = await smRes.json();
+        szpilkiTodo = await stRes.json();
+        notatkiWykladowe = await nwRes.json();
+        buildKolokwiumIndexes();
+    } catch (e) {
+        console.warn("Brak danych szpilek/notatek kolokwiow - tryb kolokwium bedzie niedostepny:", e);
+    }
+
+    everFittedProperly = fitCameraToSkeleton();
+    document.getElementById("loading").style.display = "none";
+}
+
+init();
+
+// Dopasowanie kamery WLASCIWA trygonometria (nie mnoznik na oko) - caly
+// szkielet jest dużo "wyzszy" (os Z) niz "szerszy" (os Y widziana z boku
+// wzdluz X), wiec trzeba policzyc dystans osobno z pionowego i poziomego
+// FOV (przez aspect ratio) i wziac wiekszy, inaczej gorne/dolne partie
+// (czaszka/stopy) wypadaja poza kadrem. Wywolywane raz w init(), i ponownie
+// z resize-listenera nizej, jesli pierwsza proba wypadla w karcie o zerowym
+// rozmiarze (aspect=NaN -> fitDist=Infinity/NaN -> kamera "znika").
+function fitCameraToSkeleton() {
+    const box = new THREE.Box3().setFromObject(group);
+    const size = box.getSize(new THREE.Vector3());
+    const vFov = camera.fov * Math.PI / 180;
+    const hFov = 2 * Math.atan(Math.tan(vFov / 2) * camera.aspect);
+    const distForHeight = (size.z / 2) / Math.tan(vFov / 2);
+    const distForWidth = (size.y / 2) / Math.tan(hFov / 2);
+    const fitDist = Math.max(distForHeight, distForWidth) * 1.4;
+    if (!Number.isFinite(fitDist)) return false; // aspect nadal niepoprawny (karta bez rozmiaru) - spróbuj pozniej
+    camera.position.set(fitDist, 0, 0);
+    controls.target.set(0, 0, 0);
+    controls.update();
+    fullViewCamera = { position: camera.position.clone(), target: controls.target.clone() };
+    return true;
+}
+
+// ===== Izolacja pojedynczej kosci: zamiast szukac malych kropek na calym
+// ukladzie, otwierasz jedna kosc na caly ekran i widzisz WSZYSTKIE jej punkty
+// orientacyjne naraz (lista w panelu bocznym) =====
+async function openBone(boneId) {
+    const bone = bones.find(b => b.id === boneId);
+    if (bone && !loadedKinds.has(bone.kind)) {
+        const statusEl = document.getElementById("layers-status");
+        if (statusEl) statusEl.textContent = "ładowanie warstwy…";
+        await ensureKindLoaded(bone.kind);
+        if (statusEl) statusEl.textContent = "";
+    }
+    isolatedBoneId = boneId;
+
+    for (const [id, obj] of boneObjById) obj.visible = (id === boneId);
+    for (const sphere of landmarkMeshes) sphere.visible = (sphere.userData.landmark.boneId === boneId);
+
+    const obj = boneObjById.get(boneId);
+    const box = new THREE.Box3().setFromObject(obj);
+    const boxCenter = box.getCenter(new THREE.Vector3());
+    const size = box.getSize(new THREE.Vector3());
+    const maxDim = Math.max(size.x, size.y, size.z) || 1;
+    const fitDist = (maxDim * 0.9) / Math.tan((camera.fov * Math.PI / 180) / 2);
+    const dir = new THREE.Vector3(1, 0.3, 0.2).normalize();
+    camera.position.copy(boxCenter).addScaledVector(dir, fitDist);
+    controls.target.copy(boxCenter);
+    controls.update();
+
+    document.getElementById("lbl-pl-text").textContent = "";
+    document.getElementById("label-box").style.display = "none";
+
+    const boneLandmarks = allLandmarks.filter(lm => lm.boneId === boneId);
+    document.getElementById("sb-pl").textContent = bone.pl;
+    document.getElementById("sb-en").textContent = bone.en;
+    document.getElementById("sb-id").textContent = "ID: " + bone.id;
+    showNotesButton(document.getElementById("sb-notes-link"), MESH_NOTE_INDEX.get(bone.id), bone);
+    const listEl = document.getElementById("sb-landmarks");
+    listEl.innerHTML = "";
+    if (boneLandmarks.length === 0) {
+        const empty = document.createElement("div");
+        empty.className = "lm-empty";
+        empty.textContent = "Brak jeszcze dodanych punktów orientacyjnych dla tej kości.";
+        listEl.appendChild(empty);
+    } else {
+        for (const lm of boneLandmarks) {
+            const item = document.createElement("div");
+            item.className = "lm-item";
+            item.dataset.landmarkKey = lm.pl + "|" + lm.boneId;
+            item.textContent = lm.pl + " — " + lm.en + (lm.approx ? " ⚠ przybliżone położenie" : "");
+            if (lm.approx) item.title = "Punkt przybliżony: dołączony do najbliższej znanej struktury na podstawie sąsiedztwa w słowniku, nie zmierzony geometrycznie.";
+            item.onclick = () => {
+                document.querySelectorAll("#sb-landmarks .lm-item").forEach(el => el.classList.remove("active"));
+                item.classList.add("active");
+                const sphere = landmarkMeshes.find(s => s.userData.landmark === lm);
+                if (sphere) {
+                    resetSelection();
+                    selectedMesh = sphere;
+                    lmRingSelected(sphere);
+                    document.getElementById("lbl-pl-text").textContent = lm.pl;
+                    document.getElementById("lbl-en").textContent = lm.en;
+                    document.getElementById("lbl-id").textContent = "ID: " + lm.boneId + " (punkt)";
+                    const w = document.getElementById("lbl-approx-warn"); if (w) w.style.display = lm.approx ? "block" : "none";
+                    const lb = document.getElementById("label-box"); if (lb) lb.style.display = "block";
+                }
+                showNotesButton(document.getElementById("sb-notes-link"), LANDMARK_NOTE_INDEX.get(lm.boneId + "|" + lm.pl), { kind: "bone", pl: lm.pl, en: lm.en });
+            };
+            listEl.appendChild(item);
+        }
+    }
+    document.getElementById("sidebar").style.display = "block";
+}
+
+function closeBone() {
+    isolatedBoneId = null;
+    const layerChecked = {
+        bone: document.getElementById("layer-bones").checked,
+        muscle: document.getElementById("layer-muscles").checked,
+        vessel: document.getElementById("layer-vessels").checked,
+        organ: document.getElementById("layer-organs").checked,
+        tooth: document.getElementById("layer-teeth").checked,
+        connective: document.getElementById("layer-connective").checked,
+        brain: document.getElementById("layer-brain").checked,
+        nerve: document.getElementById("layer-nerves").checked,
+        lymph: document.getElementById("layer-lymph").checked,
+    };
+    for (const b of bones) {
+        const obj = boneObjById.get(b.id);
+        if (!obj) continue;
+        obj.visible = !!layerChecked[b.kind];
+    }
+    for (const sphere of landmarkMeshes) sphere.visible = landmarksMasterOn() && !!layerChecked[boneIdToKind.get(sphere.userData.landmark.boneId)];
+    resetSelection();
+    document.getElementById("sidebar").style.display = "none";
+    camera.position.copy(fullViewCamera.position);
+    controls.target.copy(fullViewCamera.target);
+    controls.update();
+}
+
+document.getElementById("close-bone-btn").onclick = closeBone;
+
+// ===== Wyszukiwarka z autouzupelnianiem - przeszukuje kosci ORAZ punkty
+// orientacyjne po polu pl/en, klik na wynik otwiera kosc (i podswietla
+// konkretny punkt, jesli wynik byl punktem, nie cala koscia) =====
+function selectLandmarkInSidebar(lm) {
+    const items = document.querySelectorAll("#sb-landmarks .lm-item");
+    for (const el of items) {
+        if (el.dataset.landmarkKey === lm.pl + "|" + lm.boneId) {
+            el.click();
+            el.scrollIntoView({ block: "nearest" });
+        }
+    }
+}
+
+async function goToSearchResult(result) {
+    if (!result.isLandmark) {
+        await openBone(result.boneId);
+    } else {
+        await openBone(result.landmark.boneId);
+        selectLandmarkInSidebar(result.landmark);
+    }
+    document.getElementById("search-results").style.display = "none";
+    document.getElementById("search-input").value = "";
+}
+
+const searchInput = document.getElementById("search-input");
+const searchResultsEl = document.getElementById("search-results");
+
+function runSearch(query) {
+    const q = query.trim().toLowerCase();
+    if (q.length < 2) { searchResultsEl.style.display = "none"; return; }
+
+    const results = [];
+    for (const b of bones) {
+        if (b.pl.toLowerCase().includes(q) || b.en.toLowerCase().includes(q)) {
+            results.push({ kind: b.kind, isLandmark: false, boneId: b.id, pl: b.pl, en: b.en });
+        }
+    }
+    for (const lm of allLandmarks) {
+        if (lm.pl.toLowerCase().includes(q) || lm.en.toLowerCase().includes(q)) {
+            results.push({ kind: "landmark", isLandmark: true, boneId: lm.boneId, pl: lm.pl, en: lm.en, landmark: lm });
+        }
+    }
+    results.sort((a, b) => a.pl.length - b.pl.length); // krotsze/celniejsze trafienia pierwsze
+    const top = results.slice(0, 25);
+
+    searchResultsEl.innerHTML = "";
+    if (!top.length) {
+        searchResultsEl.innerHTML = '<div class="res-item" style="color:#888;font-style:italic">Brak wyników</div>';
+    } else {
+        for (const r of top) {
+            const div = document.createElement("div");
+            div.className = "res-item";
+            const approxBadge = r.landmark && r.landmark.approx ? ' <span style="color:#e0c040" title="Punkt przybliżony">⚠</span>' : '';
+            const kindLabel = r.isLandmark ? "punkt" : (KIND_LABEL_PL[r.kind] || "struktura");
+            div.innerHTML = `<span class="res-kind">${kindLabel}</span>${r.pl}${approxBadge}<div class="res-en">${r.en}</div>`;
+            div.onclick = () => goToSearchResult(r);
+            searchResultsEl.appendChild(div);
+        }
+    }
+    searchResultsEl.style.display = "block";
+}
+
+searchInput.addEventListener("input", () => runSearch(searchInput.value));
+searchInput.addEventListener("focus", () => { if (searchInput.value.trim().length >= 2) runSearch(searchInput.value); });
+document.addEventListener("click", (e) => {
+    if (!searchInput.contains(e.target) && !searchResultsEl.contains(e.target)) {
+        searchResultsEl.style.display = "none";
+    }
+});
+
+// ===== Presety widoku - te same zasady co fitCameraToSkeleton (dopasowanie
+// trygonometryczne), tylko kamera patrzy z innego kierunku. Gora/dol nie moga
+// byc idealnie na osi Z (up=Z), bo to degeneruje matematyke OrbitControls
+// (patrz komentarz przy konstrukcji camera.up wyzej) - stad male przesuniecie. =====
+function fitDistanceFor(size) {
+    const vFov = camera.fov * Math.PI / 180;
+    const hFov = 2 * Math.atan(Math.tan(vFov / 2) * camera.aspect);
+    const distForHeight = (size.z / 2) / Math.tan(vFov / 2);
+    const distForWidth = (size.y / 2) / Math.tan(hFov / 2);
+    return Math.max(distForHeight, distForWidth, (size.x / 2) / Math.tan(hFov / 2)) * 1.4;
+}
+
+const VIEW_DIRECTIONS = {
+    front:  [0, -1, 0.02],
+    back:   [0, 1, 0.02],
+    right:  [-1, 0, 0.02],
+    left:   [1, 0, 0.02],
+    top:    [0.05, 0.05, 1],
+    bottom: [0.05, 0.05, -1],
+};
+
+function applyViewPreset(name) {
+    if (name === "reset") {
+        if (isolatedBoneId !== null) { closeBone(); return; }
+        fitCameraToSkeleton();
+        return;
+    }
+    const dir = VIEW_DIRECTIONS[name];
+    if (!dir) return;
+    const targetObj = isolatedBoneId !== null ? boneObjById.get(isolatedBoneId) : group;
+    const box = new THREE.Box3().setFromObject(targetObj);
+    const boxCenter = box.getCenter(new THREE.Vector3());
+    const size = box.getSize(new THREE.Vector3());
+    const dist = isolatedBoneId !== null
+        ? (Math.max(size.x, size.y, size.z) * 0.9) / Math.tan((camera.fov * Math.PI / 180) / 2)
+        : fitDistanceFor(size);
+    const dirVec = new THREE.Vector3(dir[0], dir[1], dir[2]).normalize();
+    camera.position.copy(boxCenter).addScaledVector(dirVec, dist);
+    controls.target.copy(boxCenter);
+    controls.update();
+}
+
+document.querySelectorAll("#view-presets button").forEach(btn => {
+    btn.addEventListener("click", () => applyViewPreset(btn.dataset.view));
+});
+
+// ===== Suwak przezroczystosci - dziala na materialy WSZYSTKICH kosci (nie na
+// punkty orientacyjne, ktore maja zostac w pelni widoczne jako punkt odniesienia) =====
+const transparencySlider = document.getElementById("transparency-slider");
+const transparencyVal = document.getElementById("transparency-val");
+transparencySlider.addEventListener("input", () => {
+    const pct = Number(transparencySlider.value);
+    transparencyVal.textContent = pct + "%";
+    const opacity = pct / 100;
+    for (const [, obj] of boneObjById) {
+        obj.traverse(child => {
+            if (child.isMesh) {
+                child.material.transparent = opacity < 1;
+                child.material.opacity = opacity;
+                child.material.depthWrite = opacity >= 0.999; // przy przezroczystosci depthWrite psuje sortowanie, wylacz
+            }
+        });
+    }
+});
+
+// ===== Warstwy (kosci / miesnie) - przelaczaja widocznosc calych grup obiektow
+// wg pola bone.kind ("bone"/"muscle") ustawionego przy ladowaniu. =====
+async function setLayerVisible(kind, visible, checkboxEl) {
+    if (visible && !loadedKinds.has(kind)) {
+        if (checkboxEl) checkboxEl.disabled = true;
+        const statusEl = document.getElementById("layers-status");
+        if (statusEl) statusEl.textContent = "ładowanie warstwy…";
+        await ensureKindLoaded(kind);
+        if (statusEl) statusEl.textContent = "";
+        if (checkboxEl) checkboxEl.disabled = false;
+    }
+    for (const b of bones) {
+        if (b.kind === kind) {
+            const obj = boneObjById.get(b.id);
+            if (obj) obj.visible = visible;
+        }
+    }
+    if (isolatedBoneId === null) {
+        for (const sphere of landmarkMeshes) {
+            if (boneIdToKind.get(sphere.userData.landmark.boneId) === kind) sphere.visible = visible && landmarksMasterOn();
+        }
+    }
+    updateBoneGhosting();
+}
+
+// Gdy kosci sa widoczne RAZEM z jakas tkanka miekka (miesnie/naczynia/narzady/...),
+// pelna opacity obu warstw naraz robi "zderzenie kolorow" zamiast czytelnych
+// warstw jak w prawdziwych atlasach anatomicznych. Automatycznie przycisz kosci
+// do polprzezroczystej "poswiaty" pod spodem, gdy cokolwiek innego tez jest wlaczone
+// - user nadal moze to nadpisac suwakiem "Przezroczystosc kosci" recznie.
+let userOverrodeBoneOpacity = false;
+transparencySlider.addEventListener("pointerdown", () => { userOverrodeBoneOpacity = true; });
+function updateBoneGhosting() {
+    if (userOverrodeBoneOpacity) return;
+    const otherLayerOn = ["muscle", "vessel", "organ", "connective", "brain", "nerve", "lymph"].some(k => layerCheckedFor(k));
+    const boneOn = layerCheckedFor("bone");
+    const opacity = (boneOn && otherLayerOn) ? 0.35 : 1;
+    for (const b of bones) {
+        if (b.kind !== "bone") continue;
+        const obj = boneObjById.get(b.id);
+        if (!obj) continue;
+        obj.traverse(child => {
+            if (child.isMesh) {
+                child.material.transparent = opacity < 1;
+                child.material.opacity = opacity;
+                child.material.depthWrite = opacity >= 0.999;
+            }
+        });
+    }
+    transparencySlider.value = Math.round(opacity * 100);
+    transparencyVal.textContent = Math.round(opacity * 100) + "%";
+}
+document.getElementById("layer-bones").addEventListener("change", (e) => setLayerVisible("bone", e.target.checked, e.target));
+document.getElementById("layer-muscles").addEventListener("change", (e) => setLayerVisible("muscle", e.target.checked, e.target));
+document.getElementById("layer-vessels").addEventListener("change", (e) => setLayerVisible("vessel", e.target.checked, e.target));
+document.getElementById("layer-organs").addEventListener("change", (e) => setLayerVisible("organ", e.target.checked, e.target));
+document.getElementById("layer-teeth").addEventListener("change", (e) => setLayerVisible("tooth", e.target.checked, e.target));
+document.getElementById("layer-connective").addEventListener("change", (e) => setLayerVisible("connective", e.target.checked, e.target));
+document.getElementById("layer-brain").addEventListener("change", (e) => setLayerVisible("brain", e.target.checked, e.target));
+document.getElementById("layer-nerves").addEventListener("change", (e) => setLayerVisible("nerve", e.target.checked, e.target));
+document.getElementById("layer-lymph").addEventListener("change", (e) => setLayerVisible("lymph", e.target.checked, e.target));
+document.getElementById("layer-landmarks").addEventListener("change", (e) => {
+    const on = e.target.checked;
+    if (isolatedBoneId !== null) {
+        for (const sphere of landmarkMeshes) sphere.visible = on && (sphere.userData.landmark.boneId === isolatedBoneId);
+    } else {
+        for (const sphere of landmarkMeshes) sphere.visible = on && layerCheckedFor(boneIdToKind.get(sphere.userData.landmark.boneId));
+    }
+});
+
+// "Skora" - NIE prawdziwe dane (takich nie ma nigdzie za darmo, sprawdzone),
+// tylko proceduralna otoczka wypukla (convex hull) po probce wierzcholkow
+// kosci+miesni, pol-przezroczysta, czysto dla wizualnego kontekstu "to jest
+// cialo" - technika z esma-dev-studio/anatomy-3d-viewer (przyblizona powloka
+// zamiast brakujacych danych skory).
+let skinMesh = null;
+async function buildSkinShell() {
+    if (skinMesh) { skinMesh.visible = true; return; }
+    if (!loadedKinds.has("muscle")) await ensureKindLoaded("muscle");
+    const points = [];
+    for (const b of bones) {
+        if (b.kind !== "bone" && b.kind !== "muscle") continue;
+        const obj = boneObjById.get(b.id);
+        if (!obj) continue;
+        obj.traverse(child => {
+            if (!child.isMesh) return;
+            const pos = child.geometry.attributes.position;
+            if (!pos) return;
+            const step = Math.max(1, Math.floor(pos.count / 30));
+            for (let i = 0; i < pos.count; i += step) {
+                points.push(new THREE.Vector3(pos.getX(i), pos.getY(i), pos.getZ(i)));
+            }
+        });
+    }
+    if (points.length < 4) return;
+    const geometry = new ConvexGeometry(points);
+    const material = new THREE.MeshStandardMaterial({
+        color: 0xd9a577, roughness: 0.75, metalness: 0.0,
+        transparent: true, opacity: 0.16, depthWrite: false,
+        side: THREE.DoubleSide,
+    });
+    skinMesh = new THREE.Mesh(geometry, material);
+    skinMesh.renderOrder = 2;
+    group.add(skinMesh);
+}
+document.getElementById("layer-skin").addEventListener("change", async (e) => {
+    if (e.target.checked) {
+        e.target.disabled = true;
+        const statusEl = document.getElementById("layers-status");
+        if (statusEl) statusEl.textContent = "budowanie powłoki…";
+        await buildSkinShell();
+        if (statusEl) statusEl.textContent = "";
+        e.target.disabled = false;
+    } else if (skinMesh) {
+        skinMesh.visible = false;
+    }
+});
+
+// ===== Przekroj plaszczyzna - three.js material.clippingPlanes odcina
+// wszystko PO JEDNEJ STRONIE plaszczyzny (normalna wskazuje strone, ktora
+// ZOSTAJE). Plaszczyzna przesuwana suwakiem wzdluz wybranej osi ciala. =====
+const sectionPlane = new THREE.Plane(new THREE.Vector3(0, 0, 1), 0);
+const sectionToggle = document.getElementById("section-toggle");
+const sectionAxis = document.getElementById("section-axis");
+const sectionSlider = document.getElementById("section-slider");
+
+function updateSectionPlane() {
+    if (!sectionToggle.checked) {
+        for (const [, obj] of boneObjById) obj.traverse(c => { if (c.isMesh) c.material.clippingPlanes = null; });
+        return;
+    }
+    const axis = sectionAxis.value;
+    const normal = axis === "x" ? [1,0,0] : axis === "y" ? [0,1,0] : [0,0,1];
+    // suwak -100..100 -> odleglosc w mm od srodka ukladu (bo group jest wysrodkowana na 0,0,0)
+    sectionPlane.normal.set(normal[0], normal[1], normal[2]);
+    sectionPlane.constant = Number(sectionSlider.value) * 10; // skala: 100 = 1000mm, z zapasem
+    for (const [, obj] of boneObjById) {
+        obj.traverse(c => { if (c.isMesh) c.material.clippingPlanes = [sectionPlane]; });
+    }
+}
+sectionToggle.addEventListener("change", () => {
+    sectionSlider.disabled = !sectionToggle.checked;
+    updateSectionPlane();
+});
+sectionAxis.addEventListener("change", updateSectionPlane);
+sectionSlider.addEventListener("input", updateSectionPlane);
+
+// ===== Pomiar odleglosci - w trybie pomiaru pierwsze 2 kliknieca (na kosc
+// LUB punkt orientacyjny) rysuja linie miedzy nimi i licza dystans w mm
+// (dane sa w mm - to jednostka BodyParts3D). Nie koliduje ze zwyklym trybem
+// zaznaczania - w trybie pomiaru normalne podswietlanie/etykiety sa pominiete. =====
+let measureMode = false;
+let measurePoints = [];
+let measureLine = null;
+const measureToggleBtn = document.getElementById("measure-toggle");
+const measureResultEl = document.getElementById("measure-result");
+const measureClearBtn = document.getElementById("measure-clear");
+
+function clearMeasurement() {
+    measurePoints = [];
+    if (measureLine) { scene.remove(measureLine); measureLine.geometry.dispose(); measureLine = null; }
+    measureResultEl.textContent = "";
+    measureClearBtn.style.display = "none";
+}
+
+measureToggleBtn.addEventListener("click", () => {
+    measureMode = !measureMode;
+    measureToggleBtn.classList.toggle("active", measureMode);
+    clearMeasurement();
+});
+measureClearBtn.addEventListener("click", clearMeasurement);
+
+function addMeasurePoint(worldPos) {
+    measurePoints.push(worldPos.clone());
+    if (measurePoints.length === 2) {
+        const geom = new THREE.BufferGeometry().setFromPoints(measurePoints);
+        measureLine = new THREE.Line(geom, new THREE.LineBasicMaterial({ color: 0xffe066, linewidth: 2 }));
+        scene.add(measureLine);
+        const distMm = measurePoints[0].distanceTo(measurePoints[1]);
+        measureResultEl.textContent = distMm.toFixed(1) + " mm";
+        measureClearBtn.style.display = "inline-block";
+    } else if (measurePoints.length > 2) {
+        clearMeasurement();
+        measurePoints.push(worldPos.clone());
+    }
+}
+
+// ===== Skalpel - w trybie skalpela klikniecie w strukture chowa ja (tylko
+// widocznosc, nie usuwa zadnych danych), zeby moc "obierac warstwy" jak przy
+// prawdziwej preparacji. Stos wycietych struktur pozwala cofac pojedynczo
+// (w kolejnosci od najnowszej) albo przywrocic wszystko naraz. =====
+let scalpelMode = false;
+let cutStack = []; // [{boneId, obj}]
+const scalpelToggleBtn = document.getElementById("scalpel-toggle");
+const scalpelStatusEl = document.getElementById("scalpel-status");
+const scalpelUndoBtn = document.getElementById("scalpel-undo");
+const scalpelRestoreAllBtn = document.getElementById("scalpel-restore-all");
+
+function updateScalpelUI() {
+    scalpelStatusEl.textContent = cutStack.length > 0 ? `wycięto: ${cutStack.length}` : "";
+    scalpelUndoBtn.style.display = cutStack.length > 0 ? "inline-block" : "none";
+    scalpelRestoreAllBtn.style.display = cutStack.length > 0 ? "inline-block" : "none";
+}
+
+function cutBone(boneId) {
+    const obj = boneObjById.get(boneId);
+    if (!obj || !obj.visible) return;
+    obj.visible = false;
+    cutStack.push({ boneId, obj });
+    updateScalpelUI();
+}
+
+scalpelToggleBtn.addEventListener("click", () => {
+    scalpelMode = !scalpelMode;
+    scalpelToggleBtn.classList.toggle("active", scalpelMode);
+});
+scalpelUndoBtn.addEventListener("click", () => {
+    const last = cutStack.pop();
+    if (last) last.obj.visible = true;
+    updateScalpelUI();
+});
+scalpelRestoreAllBtn.addEventListener("click", () => {
+    for (const { obj } of cutStack) obj.visible = true;
+    cutStack = [];
+    updateScalpelUI();
+});
+
+// ===== Zakladki (localStorage) - zapisuja pozycje/cel kamery + ew. otwarta
+// (izolowana) kosc, zeby wrocic dokladnie do tego samego kadru pozniej =====
+const BOOKMARKS_KEY = "atlas3d_bookmarks_v1";
+function loadBookmarks() {
+    try { return JSON.parse(localStorage.getItem(BOOKMARKS_KEY) || "[]"); } catch { return []; }
+}
+function saveBookmarks(list) { localStorage.setItem(BOOKMARKS_KEY, JSON.stringify(list)); }
+
+function renderBookmarkList() {
+    const listEl = document.getElementById("bookmark-list");
+    const items = loadBookmarks();
+    listEl.innerHTML = "";
+    items.forEach((bm, idx) => {
+        const row = document.createElement("div");
+        row.className = "bm-item";
+        const goBtn = document.createElement("button");
+        goBtn.className = "bm-go";
+        goBtn.textContent = bm.name;
+        goBtn.onclick = () => goToBookmark(bm);
+        const delBtn = document.createElement("button");
+        delBtn.className = "bm-del";
+        delBtn.textContent = "✕";
+        delBtn.onclick = () => { const l = loadBookmarks(); l.splice(idx, 1); saveBookmarks(l); renderBookmarkList(); };
+        row.appendChild(goBtn);
+        row.appendChild(delBtn);
+        listEl.appendChild(row);
+    });
+}
+
+async function goToBookmark(bm) {
+    if (bm.isolatedBoneId) {
+        await openBone(bm.isolatedBoneId);
+    } else if (isolatedBoneId !== null) {
+        closeBone();
+    }
+    camera.position.set(bm.camPos[0], bm.camPos[1], bm.camPos[2]);
+    controls.target.set(bm.target[0], bm.target[1], bm.target[2]);
+    controls.update();
+}
+
+document.getElementById("bookmark-save").addEventListener("click", () => {
+    const nameInput = document.getElementById("bookmark-name");
+    const name = nameInput.value.trim() || ("Widok " + (loadBookmarks().length + 1));
+    const items = loadBookmarks();
+    items.push({
+        name,
+        camPos: camera.position.toArray(),
+        target: controls.target.toArray(),
+        isolatedBoneId: isolatedBoneId,
+    });
+    saveBookmarks(items);
+    nameInput.value = "";
+    renderBookmarkList();
+});
+renderBookmarkList();
+
+// ===== Eksport zrzutu ekranu bez UI - ukryj wszystkie panele HTML, wyrenderuj
+// klatke, zapisz canvas jako PNG, przywroc UI. Renderer musi miec
+// preserveDrawingBuffer, inaczej toDataURL zwraca pusty obrazek (bufor
+// czyszczony zaraz po zlozeniu klatki). =====
+const UI_PANEL_IDS = ["left-panel", "topbar", "transparency-box", "tools-box", "label-box", "sidebar"];
+document.getElementById("screenshot-btn").addEventListener("click", () => {
+    const prevDisplay = UI_PANEL_IDS.map(id => document.getElementById(id).style.display);
+    UI_PANEL_IDS.forEach(id => { document.getElementById(id).style.display = "none"; });
+    renderer.render(scene, camera);
+    const dataUrl = renderer.domElement.toDataURL("image/png");
+    UI_PANEL_IDS.forEach((id, i) => { document.getElementById(id).style.display = prevDisplay[i]; });
+
+    const a = document.createElement("a");
+    a.href = dataUrl;
+    a.download = "atlas-3d-" + Date.now() + ".png";
+    a.click();
+});
+
+// ===== Wymowa nazwy (Web Speech API) - tanie MVP bez wlasnych nagran audio;
+// jakosc syntezy polskiej lacinskiej terminologii jest ograniczona, ale
+// wystarcza jako pomoc. Dziala tylko jesli przegladarka wspiera
+// speechSynthesis (prawie wszystkie desktopowe/mobilne). =====
+let currentSpeakName = "";
+document.getElementById("lbl-speak").addEventListener("click", () => {
+    if (!currentSpeakName || !window.speechSynthesis) return;
+    window.speechSynthesis.cancel(); // przerwij poprzednia wypowiedz jesli trwa
+    const utter = new SpeechSynthesisUtterance(currentSpeakName);
+    utter.lang = "pl-PL";
+    window.speechSynthesis.speak(utter);
+});
+
+// ===== Eksport punktow orientacyjnych do Anki (CSV, format Przod;Tyl,
+// importowalny bezposrednio w Anki: Plik -> Importuj, separator ";"). Przod =
+// nazwa PL, Tyl = nazwa EN + kosc-kontekst, jedna fiszka na kazdy punkt
+// orientacyjny (nie na cala kosc - punkty sa bardziej konkretne do nauki). =====
+document.getElementById("anki-export-btn").addEventListener("click", () => {
+    const boneById = new Map(bones.map(b => [b.id, b]));
+    const rows = allLandmarks.map(lm => {
+        const bone = boneById.get(lm.boneId);
+        const approxTag = lm.approx ? " [przybliżone]" : "";
+        const front = (lm.pl + approxTag).replace(/;/g, ",");
+        const back = `${lm.en} (${bone ? bone.pl : "?"})`.replace(/;/g, ",");
+        return `${front};${back}`;
+    });
+    const csv = rows.join("\n");
+    const blob = new Blob([csv], { type: "text/csv;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const a = document.createElement("a");
+    a.href = url;
+    a.download = "atlas-3d-punkty-anki.csv";
+    a.click();
+    URL.revokeObjectURL(url);
+});
+
+// ===== Tryb quizu - "zgadnij kosc": pokazuje nazwe PL losowej (widocznej)
+// kosci, uzytkownik klika na modelu, sprawdzamy trafienie. Dziala tylko na
+// pelnym ukladzie (nie w izolacji), bo tam "zgadywanie" nie ma sensu (widac
+// tylko 1 kosc). =====
+let quizMode = false;
+let quizTarget = null;
+let quizScore = { correct: 0, total: 0 };
+
+function pickQuizQuestion() {
+    quizTarget = bones[Math.floor(Math.random() * bones.length)];
+    document.getElementById("quiz-question").textContent = "Kliknij: " + quizTarget.pl;
+    document.getElementById("quiz-feedback").textContent = "";
+    document.getElementById("quiz-feedback").className = "";
+    document.getElementById("quiz-next").style.display = "none";
+    document.getElementById("quiz-score").textContent = `Wynik: ${quizScore.correct}/${quizScore.total}`;
+}
+
+document.getElementById("quiz-toggle").addEventListener("click", () => {
+    quizMode = !quizMode;
+    document.getElementById("quiz-toggle").classList.toggle("active", quizMode);
+    document.getElementById("quiz-box").style.display = quizMode ? "flex" : "none";
+    if (quizMode) {
+        if (isolatedBoneId !== null) closeBone();
+        quizScore = { correct: 0, total: 0 };
+        pickQuizQuestion();
+    }
+});
+document.getElementById("quiz-next").addEventListener("click", pickQuizQuestion);
+
+function submitQuizAnswer(hitBone) {
+    // Porownanie po NAZWIE, nie po ID: kosci symetryczne (np. "Strzałka" - lewa
+    // i prawa) maja identyczna nazwe PL w danych i nie sa dla uzytkownika
+    // rozroznialne po opisie pytania - trafienie w ktorakolwiek z par liczy
+    // sie jako poprawna odpowiedz.
+    quizScore.total++;
+    const feedbackEl = document.getElementById("quiz-feedback");
+    if (hitBone.pl === quizTarget.pl) {
+        quizScore.correct++;
+        feedbackEl.textContent = "✓ Dobrze!";
+        feedbackEl.className = "correct";
+    } else {
+        feedbackEl.textContent = "✗ To było: " + hitBone.pl;
+        feedbackEl.className = "wrong";
+    }
+    document.getElementById("quiz-score").textContent = `Wynik: ${quizScore.correct}/${quizScore.total}`;
+    document.getElementById("quiz-next").style.display = "block";
+}
+
+// ===== Split-screen (tryb porownawczy) - druga niezalezna kamera + OrbitControls
+// na TEJ SAMEJ scenie (nie duplikujemy modelu), zeby porownac np. przod/tyl
+// albo lewa/prawa strone jednoczesnie. Dwa OrbitControls na jednym
+// domElement musza byc "routowane" recznie - inaczej oba reagowalyby na
+// kazde przeciagniecie niezaleznie od tego, po ktorej stronie ekranu klika
+// uzytkownik. Routing robimy na fazie CAPTURE na document (nie na samym
+// canvasie), bo capture na przodku gwarantuje wykonanie PRZED wewnetrznym
+// listenerem pointerdown OrbitControls (ktory jest dodany do canvasu w fazie
+// bubble) - bez tego kolejnosc zalezalaby od kolejnosci rejestracji i byla
+// nieprzewidywalna. =====
+let splitMode = false;
+const cameraB = camera.clone();
+cameraB.up.set(0, 0, 1); // clone() kopiuje wartosc, ale jawnie dla czytelnosci - patrz gotcha przy `camera` wyzej
+const controlsB = new OrbitControls(cameraB, renderer.domElement);
+controlsB.enableDamping = true;
+controlsB.enabled = false;
+
+function pointerSplitSide(evt) {
+    const x = evt.touches ? evt.touches[0].clientX : evt.clientX;
+    return x < window.innerWidth / 2 ? "A" : "B";
+}
+document.addEventListener("pointerdown", (evt) => {
+    if (!splitMode || evt.target !== renderer.domElement) return;
+    const side = pointerSplitSide(evt);
+    controls.enabled = (side === "A");
+    controlsB.enabled = (side === "B");
+}, true);
+
+document.getElementById("split-toggle").addEventListener("click", () => {
+    splitMode = !splitMode;
+    document.getElementById("split-toggle").classList.toggle("active", splitMode);
+    document.getElementById("split-divider").style.display = splitMode ? "block" : "none";
+    if (splitMode) {
+        cameraB.position.copy(camera.position);
+        controlsB.target.copy(controls.target);
+        controlsB.update();
+        controls.enabled = true;
+        controlsB.enabled = false;
+    } else {
+        controls.enabled = true;
+        controlsB.enabled = false;
+        camera.aspect = window.innerWidth / window.innerHeight;
+        camera.updateProjectionMatrix();
+        renderer.setViewport(0, 0, window.innerWidth, window.innerHeight);
+        renderer.setScissorTest(false);
+    }
+});
+
+// Klik -> podswietl + pokaz etykiete
+const raycaster = new THREE.Raycaster();
+const pointer = new THREE.Vector2();
+
+function baseColorFor(bone) {
+    if (!bone) return BONE_COLOR;
+    if (bone.kind === "muscle") return MUSCLE_REGION_COLORS[classifyMuscleRegion(bone.en)];
+    if (bone.kind === "vessel") return /Żył/.test(bone.pl) ? VEIN_COLOR : ARTERY_COLOR;
+    if (bone.kind === "organ") return ORGAN_COLOR;
+    if (bone.kind === "tooth") return TOOTH_COLOR;
+    if (bone.kind === "connective") return CONNECTIVE_COLOR;
+    if (bone.kind === "brain") return BRAIN_COLOR;
+    if (bone.kind === "nerve") return NERVE_COLOR;
+    if (bone.kind === "lymph") return LYMPH_COLOR;
+    return BONE_COLOR;
+}
+function resetSelection() {
+    if (selectedMesh && selectedMesh.userData && selectedMesh.userData.dot) lmUnring(selectedMesh);
+    undimAll();
+    if (!selectedMesh) return;
+    const wasLandmark = !!selectedMesh.userData.landmark;
+    selectedMesh.material.color.setHex(wasLandmark ? LANDMARK_COLOR : baseColorFor(selectedMesh.userData.bone));
+    selectedMesh = null;
+}
+
+// Zoom scrollem W STRONE punktu pod kursorem (nie do stalego srodka orbity) -
+// technika z BodyExplorer. Wylaczamy domyslny zoom OrbitControls i liczymy
+// recznie, przesuwajac cel orbity w strone trafionego punktu przy zblizaniu.
+controls.enableZoom = false;
+const zoomRaycaster = new THREE.Raycaster();
+const zoomPointer = new THREE.Vector2();
+renderer.domElement.addEventListener("wheel", (event) => {
+    if (splitMode) return; // w trybie podzielonego ekranu zostaw domyslne zachowanie
+    event.preventDefault();
+    const delta = -Math.sign(event.deltaY);
+    const zoomSpeed = 0.12;
+    const offset = camera.position.clone().sub(controls.target);
+    const dist = offset.length();
+    if (delta > 0 && dist <= controls.minDistance) return;
+    if (delta < 0 && dist >= controls.maxDistance) return;
+
+    zoomPointer.x = (event.clientX / window.innerWidth) * 2 - 1;
+    zoomPointer.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    zoomRaycaster.setFromCamera(zoomPointer, camera);
+    // raycaster ignoruje .visible (patrz komentarz przy glownym click-handlerze) -
+    // bez filtra zoom potrafilby "przyciagac" do niewidocznych warstw
+    const hits = zoomRaycaster.intersectObjects(group.children, true).filter(h => {
+        const bone = h.object.userData.bone;
+        if (bone) { const p = boneObjById.get(bone.id); return p ? p.visible : false; }
+        return h.object.visible;
+    });
+
+    const factor = 1 - delta * zoomSpeed;
+    const newDist = THREE.MathUtils.clamp(dist * factor, controls.minDistance || 1, controls.maxDistance || 5000);
+    if (hits.length > 0 && delta > 0) {
+        controls.target.lerp(hits[0].point, 0.15);
+    }
+    offset.normalize().multiplyScalar(newDist);
+    camera.position.copy(controls.target).add(offset);
+    controls.update();
+}, { passive: false });
+
+// Przygaszanie wszystkiego oprocz zaznaczonej struktury - wzorzec obecny we
+// wszystkich sprawdzonych viewerach anatomicznych (BodyExplorer, jixiangying/
+// anatomy, esma-dev-studio), ulatwia skupienie sie na wybranej strukturze bez
+// gubienia jej w gestwinie innych warstw.
+const DIM_OPACITY = 0.12;
+let dimmedMeshes = [];
+function dimOthersExcept(exceptBoneId) {
+    undimAll();
+    // Przygaszaj TYLKO obiekty tego samego rodzaju co zaznaczony (np. inne
+    // kosci, gdy zaznaczono kosc) - NIE cale inne warstwy. Bez tego omylkowe
+    // trafienie w kosc (np. przez realna dziure w pokryciu miesni - wiazka
+    // raycastingu przechodzi przez luke i trafia w kosc pod spodem) gasilo
+    // caly widok miesni, co wygladalo jak powazny blad zamiast zwyklej
+    // pomylki jednego kliknięcia.
+    const exceptKind = boneIdToKind.get(exceptBoneId);
+    for (const [id, obj] of boneObjById) {
+        if (id === exceptBoneId || !obj.visible) continue; // niewidoczne warstwy i tak sie nie renderuja
+        if (boneIdToKind.get(id) !== exceptKind) continue;
+        obj.traverse(child => {
+            if (!child.isMesh) return;
+            child.userData._preDimOpacity = child.material.opacity;
+            child.userData._preDimTransparent = child.material.transparent;
+            child.material.transparent = true;
+            child.material.opacity = Math.min(child.material.opacity, DIM_OPACITY);
+            dimmedMeshes.push(child);
+        });
+    }
+}
+function undimAll() {
+    for (const child of dimmedMeshes) {
+        if (child.userData._preDimOpacity !== undefined) {
+            child.material.opacity = child.userData._preDimOpacity;
+            child.material.transparent = child.userData._preDimTransparent;
+        }
+    }
+    dimmedMeshes = [];
+}
+
+renderer.domElement.addEventListener("click", (event) => {
+    let activeCamera = camera;
+    let px = event.clientX, halfW = window.innerWidth;
+    if (splitMode) {
+        halfW = window.innerWidth / 2;
+        if (event.clientX >= halfW) { px = event.clientX - halfW; activeCamera = cameraB; }
+    }
+    pointer.x = (px / halfW) * 2 - 1;
+    pointer.y = -(event.clientY / window.innerHeight) * 2 + 1;
+    raycaster.setFromCamera(pointer, activeCamera);
+
+    // Punkty orientacyjne maja pierwszenstwo przed cala koscia - sa mniejsze i
+    // bardziej konkretne (np. "Guz piętowy" zamiast ogolnie "Kość piętowa").
+    raycaster.params.Mesh.threshold = 0; // domyslne dla siatek, ale jawnie dla czytelnosci
+    // UWAGA: Raycaster w three.js W OGOLE NIE sprawdza .visible (potwierdzone
+    // w zrodle biblioteki) - bez tego filtra klikniecie trafialoby w
+    // NIEWIDOCZNE obiekty z wylaczonych warstw (np. punkty mozgu przy
+    // wlaczonych tylko kosciach). Filtrujemy recznie po realnym stanie
+    // widocznosci kazdego trafienia.
+    const landmarkHitsRaw = raycaster.intersectObjects(landmarkMeshes, false);
+    const boneHitsRaw = raycaster.intersectObjects(group.children, true);
+    // Raycaster tez nie wie NIC o material.clippingPlanes (to efekt shadera przy
+    // rasteryzacji, nie geometrii) - bez tego filtra klikniecie trafialoby w
+    // czesc struktury odcieta (niewidoczna) przez suwak Przekroju.
+    const clipOk = (point) => !sectionToggle.checked || sectionPlane.distanceToPoint(point) >= 0;
+    const landmarkHits = landmarkHitsRaw.filter(h => h.object.visible && clipOk(h.point));
+    const boneHits = boneHitsRaw.filter(h => {
+        const bone = h.object.userData.bone;
+        if (!bone) return false;
+        const parentObj = boneObjById.get(bone.id);
+        return (parentObj ? parentObj.visible : false) && clipOk(h.point);
+    });
+
+    if (scalpelMode) {
+        const hit = boneHits[0];
+        if (hit) cutBone(hit.object.userData.bone.id);
+        return;
+    }
+
+    if (measureMode) {
+        const hit = landmarkHits[0] || boneHits[0];
+        if (hit) addMeasurePoint(hit.point);
+        return;
+    }
+
+    if (quizMode) {
+        if (boneHits.length > 0) {
+            const bone = boneHits[0].object.userData.bone;
+            submitQuizAnswer(bone);
+        }
+        return;
+    }
+
+    resetSelection();
+
+    const openBtn = document.getElementById("open-bone-btn");
+
+    if (landmarkHits.length > 0) {
+        const mesh = landmarkHits[0].object;
+        selectedMesh = mesh;
+        lmRingSelected(mesh);
+        const lm = mesh.userData.landmark;
+        document.getElementById("lbl-pl-text").textContent = lm.pl;
+        document.getElementById("lbl-en").textContent = lm.en;
+        document.getElementById("lbl-id").textContent = "ID: " + lm.boneId + " (punkt)";
+        document.getElementById("lbl-approx-warn").style.display = lm.approx ? "block" : "none";
+        currentSpeakName = lm.pl;
+        openBtn.style.display = "none";
+        document.getElementById("label-box").style.display = "block";
+        showNotesButton(document.getElementById("lbl-notes-link"), LANDMARK_NOTE_INDEX.get(lm.boneId + "|" + lm.pl), { kind: "bone", pl: lm.pl, en: lm.en });
+        if (isolatedBoneId === null) dimOthersExcept(lm.boneId);
+    } else if (boneHits.length > 0) {
+        const mesh = boneHits[0].object;
+        mesh.material.color.setHex(HIGHLIGHT_COLOR);
+        selectedMesh = mesh;
+        const bone = mesh.userData.bone;
+        document.getElementById("lbl-pl-text").textContent = bone.pl;
+        document.getElementById("lbl-en").textContent = bone.en;
+        document.getElementById("lbl-id").textContent = "ID: " + bone.id;
+        document.getElementById("lbl-approx-warn").style.display = "none";
+        currentSpeakName = bone.pl;
+        showNotesButton(document.getElementById("lbl-notes-link"), MESH_NOTE_INDEX.get(bone.id), bone);
+        if (isolatedBoneId === null) dimOthersExcept(bone.id);
+        if (isolatedBoneId === null) {
+            openBtn.style.display = "block";
+            openBtn.onclick = () => openBone(bone.id);
+        } else {
+            openBtn.style.display = "none";
+        }
+        document.getElementById("label-box").style.display = "block";
+    } else {
+        document.getElementById("label-box").style.display = "none";
+        document.getElementById("lbl-notes-link").style.display = "none";
+    }
+});
+
+window.addEventListener("resize", () => {
+    if (!window.innerWidth || !window.innerHeight) return; // nadal 0x0, nie ma czego liczyc
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    if (!everFittedProperly && isolatedBoneId === null) {
+        everFittedProperly = fitCameraToSkeleton();
+    }
+});
+
+// ===== Tryb tanca (demo/easter egg) - podpinamy 203 kosci szkieletu pod
+// uproszczony rig stawow (Hips/Spine/Arm/Leg... jak w typowym rigu motion-
+// capture) i odtwarzamy na nim ROTACJE z darmowego pliku BVH (CMU Mocap,
+// domena publiczna, "Macarena Dance" #143_35, https://mocap.cs.cmu.edu -
+// zrodlo: https://github.com/una-dinosauria/cmu-mocap, konwersja BVH
+// B. Hahne/cgspeed). Wybrany zamiast "Robot dance" bo jest czytelniejszy
+// jako taniec (skrzyzowania rak, kolysanie bioder, cwiartka obrotu) i
+// prawie nie przemieszcza root-a (~10 cm zakresu) - patrz nizej, Hips
+// celowo NIE jest translowany. Kosci nie sa
+// naszkieletowane/rigowane (BodyParts3D to statyczne, oddzielne siatki), wiec
+// budujemy WLASNA hierarchie pivotow z rzeczywistych rozmiarow naszego
+// szkieletu (a NIE z proporcji BVH) i kopiujemy z pliku BVH tylko LOKALNE
+// ROTACJE stawow (wzgledem pozy z klatki 0) - dzieki temu kosci nie
+// "rozjezdzaja sie" w stawach mimo ze mocap ma inne proporcje ciala niz nasz
+// model. Pozycja (Hips) celowo NIE jest animowana (patrz uzasadnienie przy
+// DANCE_BVH_URL) - "Macarena" jest w duzej mierze stacjonarna, wiec efekt
+// i tak czytelnie wyglada jak taniec.
+const DANCE_BVH_URL = "dance_macarena.bvh";
+
+// Kolejnosc = kolejnosc budowy (rodzic MUSI powstac przed dzieckiem).
+const DANCE_JOINT_PARENT = {
+    Hips: null,
+    LowerBack: "Hips", Spine: "LowerBack",
+    LeftShoulder: "Spine", RightShoulder: "Spine",
+    Neck: "Spine", Head: "Neck",
+    LeftArm: "LeftShoulder", RightArm: "RightShoulder",
+    LeftForeArm: "LeftArm", RightForeArm: "RightArm",
+    LeftHand: "LeftForeArm", RightHand: "RightForeArm",
+    LeftFingerBase: "LeftHand", RightFingerBase: "RightHand",
+    LeftUpLeg: "Hips", RightUpLeg: "Hips",
+    LeftLeg: "LeftUpLeg", RightLeg: "RightUpLeg",
+    LeftFoot: "LeftLeg", RightFoot: "RightLeg",
+    LeftToeBase: "LeftFoot", RightToeBase: "RightFoot",
+};
+// Dla stawow "koncowych" (koniec dlugiej kosci) pivot NIE jest centroidem
+// wlasnej grupy, tylko skrajnym punktem (gorny/dolny) BBOX innej, referencyjnej
+// grupy - np. LeftLeg (podudzie) obraca sie wokol KOLANA, czyli dolnego konca
+// KOSCI UDOWEJ (grupy LeftUpLeg), nie wokol centrum piszczeli. Wszystkie
+// pozostale stawy (Hips/LowerBack/Spine/Neck/Head/Shoulder) uzywaja centroidu
+// wlasnej grupy (skupiska kregow/klatki/czaszki/obojczyka - nie sa "koncem"
+// jednej kosci).
+const DANCE_ANCHOR_RULES = {
+    LeftUpLeg: { ref: "LeftUpLeg", end: "top" }, RightUpLeg: { ref: "RightUpLeg", end: "top" },
+    LeftLeg: { ref: "LeftUpLeg", end: "bottom" }, RightLeg: { ref: "RightUpLeg", end: "bottom" },
+    LeftFoot: { ref: "LeftLeg", end: "bottom" }, RightFoot: { ref: "RightLeg", end: "bottom" },
+    LeftToeBase: { ref: "LeftFoot", end: "bottom" }, RightToeBase: { ref: "RightFoot", end: "bottom" },
+    LeftArm: { ref: "LeftArm", end: "top" }, RightArm: { ref: "RightArm", end: "top" },
+    LeftForeArm: { ref: "LeftArm", end: "bottom" }, RightForeArm: { ref: "RightArm", end: "bottom" },
+    LeftHand: { ref: "LeftForeArm", end: "bottom" }, RightHand: { ref: "RightForeArm", end: "bottom" },
+    LeftFingerBase: { ref: "LeftHand", end: "bottom" }, RightFingerBase: { ref: "RightHand", end: "bottom" },
+};
+
+function classifyDanceJoint(en) {
+    const s = en.toLowerCase();
+    const side = /\bleft\b/.test(s) ? "Left" : /\bright\b/.test(s) ? "Right" : "";
+    if (/phalanx of .*toe/.test(s)) return side + "ToeBase";
+    if (/metatarsal/.test(s)) return side + "Foot";
+    if (/\b(talus|calcaneus|navicular|cuboid|cuneiform|sesamoid)\b/.test(s)) return side + "Foot";
+    if (/\bfemur\b/.test(s)) return side + "UpLeg";
+    if (/\b(tibia|fibula|patella)\b/.test(s)) return side + "Leg";
+    if (/phalanx of .*(finger|thumb)/.test(s)) return side + "FingerBase";
+    if (/metacarpal/.test(s)) return side + "Hand";
+    if (/\b(scaphoid|lunate|triquetral|pisiform|trapezium|trapezoid|capitate|hamate)\b/.test(s)) return side + "Hand";
+    if (/\bhumerus\b/.test(s)) return side + "Arm";
+    if (/\b(radius|ulna)\b/.test(s)) return side + "ForeArm";
+    if (/\b(clavicle|scapula)\b/.test(s)) return side + "Shoulder";
+    if (/\b(hip bone|sacrum)\b/.test(s)) return "Hips";
+    if (/lumbar vertebra/.test(s)) return "LowerBack";
+    if (/thoracic vertebra|\brib\b|sternum|manubrium|xiphoid/.test(s)) return "Spine";
+    if (/cervical vertebra|\batlas\b|\baxis\b/.test(s)) return "Neck";
+    // reszta koscii czaszki/twarzy: occipital, frontal, parietal, temporal,
+    // sphenoid, ethmoid, mandible, maxilla, zygomatic, nasal, lacrimal,
+    // palatine, inferior nasal concha, vomer, hyoid.
+    return "Head";
+}
+
+let danceActive = false;
+let danceRigReady = false;
+let danceMixer = null;
+let danceBvhBonesByName = null;
+let danceBindQuats = null; // Map<jointName, Quaternion> - poza z klatki 0 pliku BVH
+let dancePivots = null; // Map<jointName, THREE.Group>
+const danceClock = new THREE.Clock();
+
+function attachPreservingWorld(child, newParent) {
+    newParent.updateWorldMatrix(true, false);
+    child.updateWorldMatrix(true, false);
+    const parentInv = new THREE.Matrix4().copy(newParent.matrixWorld).invert();
+    const localMatrix = parentInv.multiply(child.matrixWorld);
+    newParent.add(child);
+    localMatrix.decompose(child.position, child.quaternion, child.scale);
+}
+
+function addPivotAtWorldPos(worldPos, parentObj) {
+    const pivot = new THREE.Group();
+    parentObj.updateWorldMatrix(true, false);
+    const parentInv = new THREE.Matrix4().copy(parentObj.matrixWorld).invert();
+    pivot.position.copy(worldPos).applyMatrix4(parentInv);
+    parentObj.add(pivot);
+    return pivot;
+}
+
+let danceBoneGroups = null; // jointName -> [Object3D, ...] - kosci w naszym rigu (obliczone raz, w pozycji spoczynkowej)
+
+function attachBonesToRig() {
+    for (const [jointName, objs] of danceBoneGroups) {
+        const pivot = dancePivots.get(jointName);
+        if (!pivot) continue; // nie powinno sie zdarzyc - kazdy klucz z classifyDanceJoint ma pivot
+        for (const obj of objs) attachPreservingWorld(obj, pivot);
+    }
+}
+
+function detachBonesFromRig() {
+    // Powrot do pozy spoczynkowej: kosci wracaja jako bezposrednie dzieci
+    // `group` z tozsamosciowa transformacja (dokladnie tak jak zostaly
+    // pierwotnie zaladowane w init()) - bez tego `group` zostalby "pusty" dla
+    // fitCameraToSkeleton()/box.setFromObject(group), bo kosci wisialyby pod
+    // rigiem tanca (dziecko `scene`, nie `group`) na stale.
+    for (const objs of danceBoneGroups.values()) {
+        for (const obj of objs) {
+            group.add(obj);
+            obj.position.set(0, 0, 0);
+            obj.quaternion.identity();
+            obj.scale.set(1, 1, 1);
+        }
+    }
+}
+
+async function buildDanceRig() {
+    const skeletonBones = bones.filter(b => b.kind === "bone");
+    danceBoneGroups = new Map(); // jointName -> [Object3D, ...]
+    for (const b of skeletonBones) {
+        const obj = boneObjById.get(b.id);
+        if (!obj) continue;
+        const joint = classifyDanceJoint(b.en);
+        if (!danceBoneGroups.has(joint)) danceBoneGroups.set(joint, []);
+        danceBoneGroups.get(joint).push(obj);
+    }
+    function groupBbox(jointName) {
+        const box = new THREE.Box3();
+        for (const obj of (danceBoneGroups.get(jointName) || [])) box.expandByObject(obj);
+        return box;
+    }
+    function pivotWorldPos(jointName) {
+        const rule = DANCE_ANCHOR_RULES[jointName];
+        const box = rule ? groupBbox(rule.ref) : groupBbox(jointName);
+        if (box.isEmpty()) return new THREE.Vector3();
+        const cx = (box.min.x + box.max.x) / 2, cy = (box.min.y + box.max.y) / 2;
+        const z = rule ? (rule.end === "top" ? box.max.z : box.min.z) : (box.min.z + box.max.z) / 2;
+        return new THREE.Vector3(cx, cy, z);
+    }
+
+    // WAZNE: pozycje pivotow licza sie TERAZ, zanim jakiekolwiek kosci zostana
+    // przepiete - box.expandByObject czyta AKTUALNA (spoczynkowa) pozycje
+    // siatek pod `group`.
+    dancePivots = new Map();
+    for (const jointName of Object.keys(DANCE_JOINT_PARENT)) {
+        const parentName = DANCE_JOINT_PARENT[jointName];
+        const parentObj = parentName ? dancePivots.get(parentName) : scene;
+        const pivot = addPivotAtWorldPos(pivotWorldPos(jointName), parentObj);
+        pivot.name = jointName;
+        dancePivots.set(jointName, pivot);
+    }
+    attachBonesToRig();
+
+    const loader = new BVHLoader();
+    const result = await loader.loadAsync(DANCE_BVH_URL);
+    danceBvhBonesByName = new Map();
+    result.skeleton.bones.forEach(b => danceBvhBonesByName.set(b.name, b));
+
+    danceMixer = new THREE.AnimationMixer(result.skeleton.bones[0]);
+    danceMixer.clipAction(result.clip).play();
+
+    // BIND = SREDNIA poza calego klipu per staw (a NIE klatka 0). W 143_35
+    // klatka 0 to nietypowa klatka kalibracyjna (T-poza) - realna "neutralna"
+    // poza szkieletu CMU ma na stale ~35 st. zgiecia w kostce, ~23 st. w
+    // kolanie i rozkrok w biodrze, ktorych klatka 0 NIE pokazuje. Gdybysmy
+    // odejmowali klatke 0, te offsety wchodzilyby do kazdej klatki i szkielet
+    // tanczylby na palcach w przysiadzie. Srednia kwaternionu = suma z
+    // wyrownaniem znaku + normalizacja (przyblizenie Markleya) - dla nog/stop
+    // wychodzi ich staly offset, dla rak srodek zakresu machania (a Macarena i
+    // tak nigdy nie ma rak "w dol").
+    danceBindQuats = new Map();
+    const _bindAcc = new Map(), _bindRef = new Map(), _bindTmp = new THREE.Quaternion();
+    for (const jn of dancePivots.keys()) _bindAcc.set(jn, [0, 0, 0, 0]);
+    const BIND_SAMPLES = 160;
+    for (let i = 0; i < BIND_SAMPLES; i++) {
+        danceMixer.setTime((i + 0.5) / BIND_SAMPLES * result.clip.duration);
+        for (const jn of dancePivots.keys()) {
+            danceChainQuat(jn, _bindTmp);
+            let ref = _bindRef.get(jn);
+            if (!ref) { ref = _bindTmp.clone(); _bindRef.set(jn, ref); }
+            const sgn = (_bindTmp.x * ref.x + _bindTmp.y * ref.y + _bindTmp.z * ref.z + _bindTmp.w * ref.w) < 0 ? -1 : 1;
+            const a = _bindAcc.get(jn);
+            a[0] += sgn * _bindTmp.x; a[1] += sgn * _bindTmp.y; a[2] += sgn * _bindTmp.z; a[3] += sgn * _bindTmp.w;
+        }
+    }
+    for (const jn of dancePivots.keys()) {
+        const a = _bindAcc.get(jn);
+        danceBindQuats.set(jn, new THREE.Quaternion(a[0], a[1], a[2], a[3]).normalize());
+    }
+    danceMixer.setTime(1.0); // start w srodku tanca, nie na klatce kalibracyjnej
+
+    danceRigReady = true;
+}
+
+// Nasz uproszczony rig POMIJA kilka stawow posrednich BVH (Spine1 miedzy
+// Spine a barkami/szyja, Neck1 miedzy Neck a Head, L/RHipJoint miedzy Hips a
+// udem). Ich rotacja musi zostac "zlozona" w staw-rodzica naszego rigu,
+// inaczej po prostu ginie (szkielet nie klania sie / nie skreca tulowia tak
+// jak mocap). Ponizej: dla kazdego stawu naszego rigu lista kosci BVH,
+// ktorych LOKALNE kwaterniony trzeba przemnozyc (rodzic * dziecko) zeby
+// dostac efektywna rotacje lokalna wzgledem rodzica w NASZYM rigu.
+const DANCE_JOINT_BVH_CHAIN = {
+    // Hips: [] celowo - root CMU w 143_35 obraca sie o ~150 st. w yaw juz w
+    // 1. sekundzie (cwiartki obrotu Macareny + dziwny uklad klatki 0), przez
+    // co caly szkielet wirowalby w miejscu bokiem/tylem do kamery. Zostawiamy
+    // biodra nieruchomo (tak jak pozycje) - taniec i tak czytelnie widac po
+    // rekach/tulowiu/nogach.
+    Hips: [], LowerBack: ["LowerBack"], Spine: ["Spine", "Spine1"],
+    LeftShoulder: ["LeftShoulder"], RightShoulder: ["RightShoulder"],
+    Neck: ["Neck", "Neck1"], Head: ["Head"],
+    LeftArm: ["LeftArm"], RightArm: ["RightArm"],
+    LeftForeArm: ["LeftForeArm"], RightForeArm: ["RightForeArm"],
+    LeftHand: ["LeftHand"], RightHand: ["RightHand"],
+    LeftFingerBase: ["LeftFingerBase"], RightFingerBase: ["RightFingerBase"],
+    LeftUpLeg: ["LHipJoint", "LeftUpLeg"], RightUpLeg: ["RHipJoint", "RightUpLeg"],
+    LeftLeg: ["LeftLeg"], RightLeg: ["RightLeg"],
+    LeftFoot: ["LeftFoot"], RightFoot: ["RightFoot"],
+    LeftToeBase: ["LeftToeBase"], RightToeBase: ["RightToeBase"],
+};
+
+function danceChainQuat(jointName, target) {
+    const chain = DANCE_JOINT_BVH_CHAIN[jointName] || [jointName];
+    target.identity();
+    for (const bn of chain) {
+        const b = danceBvhBonesByName.get(bn);
+        if (b) target.multiply(b.quaternion);
+    }
+    return target;
+}
+
+// BVH (CMU) uzywa konwencji Y-up (Z-do-przodu), a nasz caly model jest Z-up
+// (patrz camera.up.set(0,0,1) i konwencja osi ustalona wczesniej w projekcie:
+// X=przysrodkowo-bocznie, Y=przod-tyl, Z=gora-dol). Sama "delta" rotacji jest
+// matematycznie poprawna niezaleznie od konwencji, ALE oznacza fizycznie inny
+// obrot w zaleznosci od tego, w ktorych osiach ja interpretujemy - trzeba
+// "przeliczyc" kazda delte z ukladu BVH na nasz przez sprzezenie (similarity
+// transform) Qc*delta*Qc^-1, gdzie Qc to rotacja +90 st. wokol X mapujaca
+// BVH-Y(gora)->nasze+Z, BVH-Z(przod)->nasze-Y, BVH-X(bok)->nasze X.
+const DANCE_AXIS_FIX = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI / 2);
+const DANCE_AXIS_FIX_INV = DANCE_AXIS_FIX.clone().invert();
+const _danceDelta = new THREE.Quaternion();
+const _danceNow = new THREE.Quaternion();
+
+function updateDancePose() {
+    for (const [jointName, pivot] of dancePivots) {
+        const bind = danceBindQuats.get(jointName);
+        if (!bind) continue;
+        // rotacja lokalna stawu TERAZ (zlozona po pominietych kosciach BVH,
+        // patrz DANCE_JOINT_BVH_CHAIN).
+        danceChainQuat(jointName, _danceNow);
+        // delta = rotacja_teraz * odwrotnosc(rotacja_klatka_0) - "ile staw
+        // obrocil sie WZGLEDEM swojej pozy z klatki 0", wyrazone jeszcze w
+        // UKLADZIE BVH. (BVH nie ma pozy rest -> rest = identycznosc -> delta
+        // sklada sie w ukladzie rodzica jako premultiply.)
+        _danceDelta.copy(bind).invert().premultiply(_danceNow);
+        // Przeliczenie na nasz uklad Z-up (patrz komentarz DANCE_AXIS_FIX), i
+        // dopiero to naklada sie na pivot (ktorego wlasna poza spoczynkowa to
+        // tozsamosc - patrz attachPreservingWorld).
+        pivot.quaternion.copy(DANCE_AXIS_FIX).multiply(_danceDelta).multiply(DANCE_AXIS_FIX_INV);
+    }
+}
+
+document.getElementById("dance-toggle").addEventListener("click", async () => {
+    const btn = document.getElementById("dance-toggle");
+    if (danceActive) {
+        danceActive = false;
+        btn.classList.remove("active");
+        for (const pivot of dancePivots.values()) pivot.quaternion.identity();
+        detachBonesFromRig();
+        for (const mesh of landmarkMeshes) mesh.visible = landmarkShouldBeVisible(mesh.userData.landmark);
+        return;
+    }
+    if (isolatedBoneId !== null) closeBone();
+    if (!danceRigReady) {
+        btn.classList.add("loading");
+        btn.textContent = "⏳ Ładowanie tańca...";
+        try {
+            await buildDanceRig();
+            danceRigReady = true;
+        } catch (e) {
+            console.error("Nie udalo sie zbudowac trybu tanca:", e);
+            btn.classList.remove("loading");
+            btn.textContent = "💃 Zatańcz";
+            return;
+        }
+        btn.classList.remove("loading");
+        btn.textContent = "💃 Zatańcz";
+    } else {
+        attachBonesToRig(); // rig juz istnieje (z poprzedniego uruchomienia) - tylko podepnij kosci ponownie
+    }
+    danceActive = true;
+    btn.classList.add("active");
+    danceClock.start();
+    for (const mesh of landmarkMeshes) mesh.visible = false; // punkty orientacyjne zostaja na miejscu (nie sa czescia rigu) - ukrywamy, zeby nie "wisialy" w powietrzu
+});
+
+// ===== Etykiety ID na scenie - zamiast klikac kazda strukture osobno zeby
+// przeczytac jej ID (przydatne gdy trzeba zglosic wiele bledow naraz z jednego
+// zrzutu ekranu), rysujemy male "chmurki" z ID bezposrednio nad kazda
+// widoczna struktura, aktualizowane co klatke wg pozycji kamery. Pozycja
+// (world-space center) jest liczona raz i cache'owana - Box3().setFromObject
+// przy setce+ obiektow co klatke bylby zauwazalnie wolny. =====
+let showIdLabels = false;
+const idLabelPositionCache = new Map(); // boneId -> world-space Vector3
+const idLabelDivs = new Map(); // boneId -> HTMLElement
+const idLabelDots = new Map(); // boneId -> HTMLElement (kropka na realnym punkcie kotwicy)
+const idLabelLines = new Map(); // boneId -> SVGLineElement (leader line kotwica->etykieta)
+const idLabelsLayer = document.getElementById("id-labels-layer");
+const idLabelsLeaderLayer = document.getElementById("id-labels-leader-layer");
+document.getElementById("show-id-labels").addEventListener("change", (e) => {
+    showIdLabels = e.target.checked;
+    if (!showIdLabels) {
+        for (const div of idLabelDivs.values()) div.remove();
+        for (const dot of idLabelDots.values()) dot.remove();
+        for (const line of idLabelLines.values()) line.remove();
+        idLabelDivs.clear(); idLabelDots.clear(); idLabelLines.clear();
+    }
+});
+function getIdLabelWorldPos(boneId, obj) {
+    let pos = idLabelPositionCache.get(boneId);
+    if (!pos) {
+        const box = new THREE.Box3().setFromObject(obj);
+        pos = box.getCenter(new THREE.Vector3());
+        idLabelPositionCache.set(boneId, pos);
+    }
+    return pos;
+}
+// Etykiety "chmurki" z ID potrafily zachodzic na siebie masowo przy gestych
+// skupiskach (np. tetnice kory mozgu) - nieczytelne na zrzutach ekranu, ktore
+// sa glownym narzedziem lapania bledow pozycji (patrz WSKAZOWKI pkt 8). Zamiast
+// tego kazda etykieta ma teraz: (a) maly kropkowy znacznik DOKLADNIE na
+// realnej pozycji kotwicy, (b) sama "chmurka" wypychana promieniscie w
+// pierwsze wolne miejsce zeby nie zachodzic na juz-umieszczone etykiety w tej
+// klatce, (c) cienka linia laczaca kropke z chmurka, gdy zostala przesunieta.
+// Kolejnosc prob: promien rosnie co ~1/3 wysokosci etykiety, na kazdym
+// promieniu probujemy 10 katow - to daje ciasne, ale bez nachodzenia,
+// "rozkwitniecie" etykiet wokol gestego skupiska (user: "niech chmurki
+// uciekaja na okolo").
+function rectsOverlap(a, b, pad) {
+    return !(a.x2 + pad < b.x1 || b.x2 + pad < a.x1 || a.y2 + pad < b.y1 || b.y2 + pad < a.y1);
+}
+function findFreeLabelSpot(anchorX, anchorY, boxW, boxH, placedRects) {
+    const pad = 2;
+    const tryAt = (cx, cy) => {
+        const r = { x1: cx - boxW / 2, y1: cy - boxH / 2, x2: cx + boxW / 2, y2: cy + boxH / 2 };
+        for (const p of placedRects) if (rectsOverlap(r, p, pad)) return null;
+        return r;
+    };
+    let r = tryAt(anchorX, anchorY);
+    if (r) return { x: anchorX, y: anchorY, rect: r };
+    const ringStep = Math.max(boxH, 10);
+    const anglesPerRing = 10;
+    for (let ring = 1; ring <= 14; ring++) {
+        const radius = ring * ringStep * 0.75;
+        for (let a = 0; a < anglesPerRing; a++) {
+            const theta = (a / anglesPerRing) * Math.PI * 2 + ring * 0.35; // offset per ring zeby unikac "promieni" ustawionych w linii
+            const cx = anchorX + Math.cos(theta) * radius;
+            const cy = anchorY + Math.sin(theta) * radius;
+            r = tryAt(cx, cy);
+            if (r) return { x: cx, y: cy, rect: r };
+        }
+    }
+    return { x: anchorX, y: anchorY, rect: { x1: anchorX - boxW / 2, y1: anchorY - boxH / 2, x2: anchorX + boxW / 2, y2: anchorY + boxH / 2 } };
+}
+let lastIdLabelDeclutterAt = 0;
+function updateIdLabels() {
+    if (!showIdLabels) return;
+    // Pelne rozpychanie (spiral search po wszystkich widocznych etykietach) jest
+    // kosztowne przy setkach obiektow - odswiezamy je z throttlem (~6 razy/s),
+    // miedzy klatkami etykiety zostaja tam gdzie byly (lekkie opoznienie za
+    // kamera przy obrocie jest akceptowalne dla narzedzia debugowego).
+    const now = performance.now();
+    const doDeclutter = (now - lastIdLabelDeclutterAt) > 160;
+    if (doDeclutter) lastIdLabelDeclutterAt = now;
+    const seen = new Set();
+    const w = window.innerWidth, h = window.innerHeight;
+    const halfW = splitMode ? w / 2 : w;
+    const placedRects = [];
+    for (const [boneId, obj] of boneObjById) {
+        if (!obj.visible) continue;
+        const worldPos = getIdLabelWorldPos(boneId, obj);
+        // Etykieta ma respektowac Przekroj tak samo jak sama geometria - bez
+        // tego pokazywalaby ID rzeczy odcietych/niewidocznych suwakiem.
+        if (sectionToggle.checked && sectionPlane.distanceToPoint(worldPos) < 0) continue;
+        seen.add(boneId);
+        const proj = worldPos.clone().project(camera);
+        if (proj.z > 1 || proj.z < -1) {
+            const d = idLabelDivs.get(boneId); if (d) d.style.display = "none";
+            const dot = idLabelDots.get(boneId); if (dot) dot.style.display = "none";
+            const line = idLabelLines.get(boneId); if (line) line.style.display = "none";
+            continue;
+        }
+        const sx = (proj.x + 1) / 2 * halfW;
+        const sy = (1 - proj.y) / 2 * h;
+        let div = idLabelDivs.get(boneId);
+        if (!div) {
+            div = document.createElement("div");
+            div.className = "id-label";
+            div.textContent = boneId;
+            idLabelsLayer.appendChild(div);
+            idLabelDivs.set(boneId, div);
+        }
+        let dot = idLabelDots.get(boneId);
+        if (!dot) {
+            dot = document.createElement("div");
+            dot.className = "id-label-anchor-dot";
+            idLabelsLayer.appendChild(dot);
+            idLabelDots.set(boneId, dot);
+        }
+        let line = idLabelLines.get(boneId);
+        if (!line) {
+            line = document.createElementNS("http://www.w3.org/2000/svg", "line");
+            line.setAttribute("stroke", "rgba(123,220,255,0.55)");
+            line.setAttribute("stroke-width", "1");
+            idLabelsLeaderLayer.appendChild(line);
+            idLabelLines.set(boneId, line);
+        }
+        div.style.display = "block"; dot.style.display = "block"; line.style.display = "block";
+        dot.style.left = sx + "px"; dot.style.top = sy + "px";
+        if (doDeclutter || !div.dataset.placed) {
+            div.style.left = sx + "px"; div.style.top = sy + "px"; // tymczasowo na kotwicy, zeby zmierzyc rozmiar
+            const boxW = div.offsetWidth + 4, boxH = div.offsetHeight + 4;
+            const spot = findFreeLabelSpot(sx, sy, boxW, boxH, placedRects);
+            placedRects.push(spot.rect);
+            div.style.left = spot.x + "px"; div.style.top = spot.y + "px";
+            div.dataset.placed = "1"; div.dataset.lx = spot.x; div.dataset.ly = spot.y;
+        } else {
+            // miedzy declutterami trzymamy ostatnia znalezniona pozycje etykiety
+            // wzgledem BIEZACEJ (nowej) pozycji kotwicy nie zmieniamy - kotwica
+            // (kropka) i tak sledzi kamere co klatke, tylko sama "chmurka" laguje.
+            div.style.left = div.dataset.lx + "px"; div.style.top = div.dataset.ly + "px";
+            placedRects.push({ x1: +div.dataset.lx - div.offsetWidth/2, y1: +div.dataset.ly - div.offsetHeight/2, x2: +div.dataset.lx + div.offsetWidth/2, y2: +div.dataset.ly + div.offsetHeight/2 });
+        }
+        const lx = +div.dataset.lx, ly = +div.dataset.ly;
+        const moved = Math.hypot(lx - sx, ly - sy) > 6;
+        line.style.display = moved ? "block" : "none";
+        if (moved) { line.setAttribute("x1", sx); line.setAttribute("y1", sy); line.setAttribute("x2", lx); line.setAttribute("y2", ly); }
+    }
+    for (const [boneId, div] of idLabelDivs) {
+        if (!seen.has(boneId)) {
+            div.remove(); idLabelDivs.delete(boneId);
+            const dot = idLabelDots.get(boneId); if (dot) dot.remove(); idLabelDots.delete(boneId);
+            const line = idLabelLines.get(boneId); if (line) line.remove(); idLabelLines.delete(boneId);
+        }
+    }
+}
+
+// ===== Tryb kolokwium - lista szpilek z SZPILKI-2024-2025-lista.md pogrupowana
+// wg kategorii, dopasowana do struktur atlasu przez build_szpilki_data.js
+// (szpilki_map.json = dopasowane, szpilki_todo.json = jeszcze nie dodane).
+// Klikniecie szpilki otwiera/izoluje strukture (ta sama sciezka co wyszukiwarka
+// - openBone + selectLandmarkInSidebar), przycisk "Notatka" pokazuje parafraze
+// wykladu dla calej grupy struktur (notatki_wykladowe.json). =====
+const KOLOKWIUM_META = {
+    I:   { title: "Kolokwium I — kończyny i tułów",                              layers: ["bone", "muscle", "nerve", "connective"] },
+    II:  { title: "Kolokwium II — trzewia klatki piersiowej, brzucha i miednicy", layers: ["bone", "vessel", "organ", "connective"] },
+    III: { title: "Kolokwium III — głowa i szyja",                               layers: ["bone", "muscle", "nerve", "vessel", "organ", "connective", "tooth"] },
+    IV:  { title: "Kolokwium IV — mózg",                                         layers: ["brain", "vessel", "nerve", "organ", "connective"] },
+};
+const ALL_LAYER_KINDS = ["bone", "muscle", "vessel", "organ", "tooth", "connective", "brain", "nerve", "lymph"];
+const LAYER_CHECKBOX_ID = { bone: "layer-bones", muscle: "layer-muscles", vessel: "layer-vessels", organ: "layer-organs", tooth: "layer-teeth", connective: "layer-connective", brain: "layer-brain", nerve: "layer-nerves", lymph: "layer-lymph" };
+
+let MESH_NOTE_INDEX = new Map();
+let LANDMARK_NOTE_INDEX = new Map();
+let KOLOKWIUM_GROUPS = {}; // kolokwium -> Map(kategoria -> {noteCategory, items:[...]})
+
+function buildKolokwiumIndexes() {
+    MESH_NOTE_INDEX = new Map();
+    LANDMARK_NOTE_INDEX = new Map();
+    for (const it of szpilkiMap) {
+        if (it.linkType === "mesh") MESH_NOTE_INDEX.set(it.id, it);
+        else if (it.linkType === "landmark") LANDMARK_NOTE_INDEX.set(it.boneId + "|" + it.matchedPl, it);
+    }
+    KOLOKWIUM_GROUPS = {};
+    for (const it of szpilkiMap.concat(szpilkiTodo)) {
+        const groups = (KOLOKWIUM_GROUPS[it.kolokwium] = KOLOKWIUM_GROUPS[it.kolokwium] || new Map());
+        if (!groups.has(it.category)) groups.set(it.category, { noteCategory: it.noteCategory, items: [] });
+        groups.get(it.category).items.push(it);
+    }
+}
+
+// Wiekszosc struktur w atlasie NIE jest doslownie wymieniona jako szpilka
+// (np. sama "Kość ciemieniowa" nigdy nie jest szpilka - tylko konkretne
+// punkty NA niej sa), ale student i tak chce zobaczyc kontekst z wykladu przy
+// KAZDEJ strukturze. Ten klasyfikator to zapasowa (mniej pewna niz dokladne
+// dopasowanie szpilki) heurystyka po nazwie PL/EN + rodzaju struktury, ktora
+// zgaduje najbliższa kategorie notatki wg regionu ciala. W razie watpliwosci
+// zwraca null (brak notatki) zamiast zgadywac na sile - lepiej pokazac nic niz
+// zle dopasowana tresc.
+const NOTE_FALLBACK_RULES = {
+    bone: [
+        [/czaszk|ciemieniow|czołow|potylicz|skroniow|klinow|sitow|jarzmow|nosow|łzow|podniebienn|żuchw|szczęk|lemiesz|małżowin|gnykow/i, "III", "Czaszka — kości, otwory, kanały"],
+        [/kręg szyjny|kręg szczytow|kręg obrotow|atlas \(kręg|obrotowy \(kręg/i, "III", "Kręgosłup szyjny, opony, rdzeń kręgowy (odcinek głowowy)"],
+        [/łopatk|obojczyk|ramien|promieniow|łokciow|nadgarst|śródręcz|kość ręki|paliczek.*(ręk|palca ręki)/i, "I", "Kości, stawy, więzadła — kończyna górna"],
+        [/biodrow|kulszow|łonow|udow|rzepk|piszczel|strzałk|stęp|śródstop|kość stopy|paliczek.*stop/i, "I", "Kości, stawy, więzadła — kończyna dolna i miednica"],
+        [/żebro|mostek|kręg piersiow|kręg lędźwiow|krzyżow|guzicz/i, "I", "Kości, więzadła — klatka piersiowa, kręgosłup"],
+    ],
+    nerve: [
+        [/wzrokow|okoruchow|bloczkow|trójdziel|(^|\s)oczny|szczękow|żuchwow|odwodząc|twarzow|przedsionkow|ślimakow|językowo-gardłow|błędn|dodatkow|podjęzykow|policzkow|(^|\s)językow|zębodołow|bródkow|struna bębenkow/i, "III", "Nerwy głowy i szyi (nerw trójdzielny i twarzowy)"],
+        [/łokciow|promieniow|pośrodkow|pachow|mięśniowo-skórn|piersiow|przeponow|współczuln|międzyżebrow|biodrowo-podbrzuszn|biodrowo-pachwinow|płciowo-udow|skórny.*uda|udow|zasłonow|pośladkow|sromow|kulszow|piszczelow|strzałkow|łydkow|podeszwow/i, "I", "Nerwy"],
+    ],
+    vessel: [
+        [/zatok|opon/i, "IV", "Opony i zatoki żylne"],
+        [/mózgu|móżdżku|willisa|łącząca|podstawn(a|ej)? tętnic/i, "IV", "Naczynia mózgu"],
+        [/szyjn|twarzow|językow|potylicz|szczękow|tarczow|oczn|uszn|skroniow|gardłow|zębodołow/i, "III", "Naczynia głowy i szyi"],
+        [/aort|wieńcow|płucn|żołądkow|wątrobow|śledzion|krezkow|nerkow|biodrow|wrotn|nabrzuszn|sromow|maciczn|jądrow|jajnikow|pęcherzykow|odbytnicz|główna (dolna|górna)|nieparzyst|ramienno-głow|podobojczykow|tarczowo-szyjn/i, "II", "Tętnice i żyły — plan ogólny"],
+    ],
+    organ: [
+        [/ślinian/i, "III", "Ślinianki"],
+        [/oko\b|oczn|gałka oczna|rogówk|soczewk|twardówk|siatkówk/i, "III", "Oko"],
+        [/ucho\b|uszn|błędnik|kosteczk/i, "III", "Ucho"],
+        [/gardł|migdałek|język/i, "III", "Jama ustna, język, gardło"],
+        [/krtań|tarczyc/i, "III", "Krtań i tarczyca"],
+        [/^serce|osierdzi/i, "II", "Serce i osierdzie"],
+        [/płuc|oskrzel|tchawic|opłucn/i, "II", "Płuca, oskrzela, opłucna"],
+        [/przełyk|żołądek|żołądkow/i, "II", "Przełyk, żołądek"],
+        [/jelit|okrężnic|wyrostek robaczkow|odbytnic/i, "II", "Jelita"],
+        [/wątrob|pęcherzyk żółciow|trzustk|śledzion/i, "II", "Wątroba, trzustka, śledziona, drogi żółciowe"],
+        [/nerk|moczowod|pęcherz moczow|nadnercz/i, "II", "Nerki, moczowody, pęcherz moczowy, nadnercza"],
+        [/jądr|najądrz|nasieniowod|prąci|gruczoł krokow/i, "II", "Układ rozrodczy męski"],
+        [/jajnik|jajowod|macic|pochw/i, "II", "Układ rozrodczy żeński"],
+        [/przysadk/i, "IV", "Międzymózgowie"],
+    ],
+    brain: [
+        [/opuszka węchow|pasmo węchow|hipokamp|zakręt zębat|węchomózgowi/i, "IV", "Układ węchowy i limbiczny"],
+        [/jądro ogoniast|torebk|ciało modzelowat|sklepieni|skorup|prążkowi|przedmurz|ciało migdałowat/i, "IV", "Kresomózgowie — struktury głębokie"],
+        [/zakręt|bruzd|płat (czołow|ciemieniow|skroniow|potyliczn)|kora mózgu/i, "IV", "Kresomózgowie — zakręty i bruzdy kory"],
+        [/wzgórz|podwzgórz|szyszynk|zawzgórz|nadwzgórz/i, "IV", "Międzymózgowie"],
+        [/śródmózgowi|konar mózgu|istota czarn|wzgórek/i, "IV", "Śródmózgowie"],
+        [/^most\b|mostu\b/i, "IV", "Most"],
+        [/móżdżk/i, "IV", "Móżdżek"],
+        [/rdzeń przedłużon|piramid|oliwk|stożek rdzeniow|nić końcow/i, "IV", "Rdzeń przedłużony i przejście w rdzeń kręgowy"],
+        [/komor|splot naczyniówkow/i, "IV", "Komory mózgu i sploty naczyniówkowe"],
+        [/opon|sierp|namiot/i, "IV", "Opony i zatoki żylne"],
+    ],
+    muscle: [
+        [null, "I", null], // rozwiazywane ponizej przez classifyMuscleRegion, nie regex
+    ],
+    tooth: [
+        [/.*/i, "III", "Ząb, kość gnykowa"],
+    ],
+};
+const MUSCLE_REGION_TO_NOTE = {
+    head_neck: ["III", "Mięśnie głowy i szyi"],
+    trunk_anterior: ["I", "Mięśnie — tułów"],
+    trunk_posterior: ["I", "Mięśnie — tułów"],
+    shoulder_arm: ["I", "Mięśnie — kończyna górna"],
+    forearm_hand: ["I", "Mięśnie — kończyna górna"],
+    hip_thigh: ["I", "Mięśnie — kończyna dolna"],
+    leg_foot: ["I", "Mięśnie — kończyna dolna"],
+    other: null,
+};
+function classifyToNoteCategory(item) {
+    if (!item) return null;
+    if (item.kind === "muscle") {
+        const region = classifyMuscleRegion(item.en);
+        const mapped = MUSCLE_REGION_TO_NOTE[region];
+        return mapped ? { kolokwium: mapped[0], noteCategory: mapped[1] } : null;
+    }
+    const rules = NOTE_FALLBACK_RULES[item.kind];
+    if (!rules) return null;
+    for (const [re, kolokwium, noteCategory] of rules) {
+        if (re && re.test(item.pl)) return { kolokwium, noteCategory };
+    }
+    return null;
+}
+
+function showNotesButton(btnEl, entry, fallbackItem) {
+    if (!btnEl) return;
+    const resolved = (entry && entry.noteCategory) ? entry : classifyToNoteCategory(fallbackItem);
+    if (!resolved || !resolved.noteCategory || !(notatkiWykladowe[resolved.kolokwium] || {})[resolved.noteCategory]) {
+        btnEl.style.display = "none";
+        return;
+    }
+    btnEl.style.display = (btnEl.id === "sb-notes-link") ? "block" : "inline-block";
+    btnEl.onclick = () => openNotesModal(resolved.kolokwium, resolved.noteCategory);
+}
+
+function formatNoteText(text) {
+    const esc = (s) => s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+    return esc(text || "").replace(/\*\*(.+?)\*\*/g, "<strong>$1</strong>");
+}
+function openNotesModal(kolokwium, noteCategory) {
+    const text = (notatkiWykladowe[kolokwium] || {})[noteCategory];
+    document.getElementById("notes-modal-title").textContent = noteCategory;
+    document.getElementById("notes-modal-sub").textContent = (KOLOKWIUM_META[kolokwium] || {}).title || ("Kolokwium " + kolokwium);
+    document.getElementById("notes-modal-body").innerHTML = text ? formatNoteText(text) : "Brak jeszcze notatki dla tej grupy struktur.";
+    document.getElementById("notes-modal").style.display = "flex";
+}
+function closeNotesModal() { document.getElementById("notes-modal").style.display = "none"; }
+document.getElementById("notes-modal-close").addEventListener("click", closeNotesModal);
+document.getElementById("notes-modal").addEventListener("click", (e) => { if (e.target.id === "notes-modal") closeNotesModal(); });
+document.addEventListener("keydown", (e) => { if (e.key === "Escape") closeNotesModal(); });
+
+let activeKolokwium = null;
+let savedLayerCheckboxState = null;
+
+function setKolokwiumLayers(k) {
+    const wanted = new Set(KOLOKWIUM_META[k].layers);
+    for (const kind of ALL_LAYER_KINDS) {
+        const el = document.getElementById(LAYER_CHECKBOX_ID[kind]);
+        if (!el) continue;
+        const want = wanted.has(kind);
+        if (el.checked !== want) { el.checked = want; el.dispatchEvent(new Event("change")); }
+    }
+}
+function restoreLayers() {
+    if (!savedLayerCheckboxState) return;
+    for (const kind of ALL_LAYER_KINDS) {
+        const el = document.getElementById(LAYER_CHECKBOX_ID[kind]);
+        if (!el) continue;
+        const want = !!savedLayerCheckboxState[kind];
+        if (el.checked !== want) { el.checked = want; el.dispatchEvent(new Event("change")); }
+    }
+    savedLayerCheckboxState = null;
+}
+
+async function selectKolokwiumItem(it) {
+    if (it.linkType === "mesh") {
+        await ensureKindLoaded(it.kind);
+        await openBone(it.id);
+    } else if (it.linkType === "landmark") {
+        await ensureKindLoaded("bone");
+        await openBone(it.boneId);
+        // Dopasowanie po boneId+pl (nie po zapisanym indeksie) - bone_landmarks.json
+        // moze byc w miedzyczasie nadpisany przez rownolegla sesje (patrz
+        // WSKAZOWKI-TECHNICZNE-WSPOLNE.md pkt 3), wiec indeks moglby wskazywac
+        // na zupelnie inny punkt niz w momencie budowania szpilki_map.json.
+        const lm = allLandmarks.find(l => l.boneId === it.boneId && l.pl === it.matchedPl);
+        if (lm) selectLandmarkInSidebar(lm);
+    }
+}
+
+function renderKolokwiumPanel(k) {
+    const panel = document.getElementById("kolokwium-panel");
+    const groups = KOLOKWIUM_GROUPS[k];
+    if (!groups) { panel.style.display = "none"; return; }
+    panel.innerHTML = "";
+    const meta = KOLOKWIUM_META[k];
+    const h3 = document.createElement("h3");
+    h3.textContent = meta.title;
+    panel.appendChild(h3);
+
+    let total = 0, linked = 0;
+    for (const [, g] of groups) { total += g.items.length; linked += g.items.filter(it => it.id || it.boneId).length; }
+    const sub = document.createElement("div");
+    sub.className = "kw-sub";
+    sub.textContent = linked + "/" + total + " struktur dostępnych w atlasie — kliknij, żeby przejść do struktury";
+    panel.appendChild(sub);
+
+    for (const [category, g] of groups) {
+        const wrap = document.createElement("div");
+        wrap.className = "kw-category";
+        const header = document.createElement("div");
+        header.className = "kw-cat-header";
+        const name = document.createElement("span");
+        name.className = "kw-cat-name";
+        name.textContent = category;
+        header.appendChild(name);
+        if (g.noteCategory && (notatkiWykladowe[k] || {})[g.noteCategory]) {
+            const noteBtn = document.createElement("button");
+            noteBtn.className = "kw-note-btn";
+            noteBtn.textContent = "📝 Notatka";
+            noteBtn.onclick = () => openNotesModal(k, g.noteCategory);
+            header.appendChild(noteBtn);
+        }
+        wrap.appendChild(header);
+        for (const it of g.items) {
+            const isLinked = it.linkType === "mesh" || it.linkType === "landmark";
+            const div = document.createElement("div");
+            div.className = "kw-item" + (isLinked ? "" : " todo");
+            div.textContent = it.text;
+            if (isLinked) {
+                div.onclick = () => selectKolokwiumItem(it);
+            } else {
+                const badge = document.createElement("span");
+                badge.className = "kw-item-badge";
+                badge.textContent = "(jeszcze nie w atlasie)";
+                div.appendChild(badge);
+            }
+            wrap.appendChild(div);
+        }
+        panel.appendChild(wrap);
+    }
+    panel.style.display = "block";
+}
+
+document.querySelectorAll("#kolokwium-buttons button").forEach(btn => {
+    btn.addEventListener("click", () => {
+        const k = btn.dataset.kolokwium;
+        const statusEl = document.getElementById("kolokwium-status");
+        if (k === "off" || activeKolokwium === k) {
+            activeKolokwium = null;
+            document.querySelectorAll("#kolokwium-buttons button").forEach(b => b.classList.remove("active"));
+            document.getElementById("kolokwium-panel").style.display = "none";
+            statusEl.textContent = "";
+            if (isolatedBoneId !== null) closeBone();
+            restoreLayers();
+            return;
+        }
+        if (!KOLOKWIUM_GROUPS[k]) {
+            statusEl.textContent = "Brak danych szpilek (szpilki_map.json się nie wczytał).";
+            return;
+        }
+        if (activeKolokwium === null) {
+            savedLayerCheckboxState = {};
+            for (const kind of ALL_LAYER_KINDS) savedLayerCheckboxState[kind] = document.getElementById(LAYER_CHECKBOX_ID[kind]).checked;
+        }
+        activeKolokwium = k;
+        document.querySelectorAll("#kolokwium-buttons button").forEach(b => b.classList.toggle("active", b.dataset.kolokwium === k));
+        statusEl.textContent = "Ładowanie warstw…";
+        setKolokwiumLayers(k);
+        renderKolokwiumPanel(k);
+        statusEl.textContent = "";
+    });
+});
+
+
+// ===== hover na punkcie -> nazwa w ramce + zakreslenie kolem =====
+(function () {
+    const tip = document.getElementById("lm-tooltip");
+    let hovered = null, _last = 0;
+    const _r = new THREE.Raycaster(), _p = new THREE.Vector2();
+    function setRing(mesh, on) {
+        const spr = mesh && mesh.userData && mesh.userData.dot;
+        if (!spr) return;
+        const l = mesh.userData.landmark;
+        spr.material = lmDotMat(on ? 0xffe066
+            : (l.approx ? LANDMARK_APPROX_COLOR : LANDMARK_COLOR), l.approx, on);
+        spr.scale.setScalar(on ? 12 : 9);
+    }
+    window.addEventListener("pointermove", (e) => {
+        const now = performance.now(); if (now - _last < 25) return; _last = now;
+        _p.x = (e.clientX / window.innerWidth) * 2 - 1;
+        _p.y = -(e.clientY / window.innerHeight) * 2 + 1;
+        _r.setFromCamera(_p, camera);
+        const hits = _r.intersectObjects(landmarkMeshes, false).filter(h => h.object.visible);
+        const hit = hits[0] ? hits[0].object : null;
+        if (hit === hovered) {
+            if (hit) { tip.style.left = e.clientX + "px"; tip.style.top = e.clientY + "px"; }
+            return;
+        }
+        if (hovered && hovered !== selectedMesh) setRing(hovered, false);
+        hovered = hit;
+        if (hit) {
+            if (hit !== selectedMesh) setRing(hit, true);
+            const l = hit.userData.landmark;
+            tip.innerHTML = l.pl + (l.en ? '<span class="en">' + l.en + "</span>" : "");
+            tip.style.left = e.clientX + "px"; tip.style.top = e.clientY + "px";
+            tip.style.display = "block";
+            document.body.style.cursor = "pointer";
+        } else {
+            tip.style.display = "none";
+            document.body.style.cursor = "";
+        }
+    });
+})();
+
+
+function lmRingSelected(mesh) {
+    const spr = mesh && mesh.userData && mesh.userData.dot;
+    if (!spr) return;
+    spr.material = lmDotMat(0xffe066, false, true);
+    spr.scale.setScalar(13);
+}
+function lmUnring(mesh) {
+    const spr = mesh && mesh.userData && mesh.userData.dot;
+    if (!spr) return;
+    const l = mesh.userData.landmark;
+    spr.material = lmDotMat(l.approx ? LANDMARK_APPROX_COLOR : LANDMARK_COLOR, l.approx, false);
+    spr.scale.setScalar(9);
+}
+function lmFlyTo(mesh) {
+    const p = new THREE.Vector3(); mesh.getWorldPosition(p);
+    const dir = camera.position.clone().sub(controls.target).normalize();
+    const dist = Math.max(70, camera.position.distanceTo(controls.target) * 0.55);
+    controls.target.copy(p);
+    camera.position.copy(p).addScaledVector(dir, dist);
+    controls.update();
+}
+
+function animate() {
+    requestAnimationFrame(animate);
+    controls.update();
+    updateIdLabels();
+    if (danceActive && danceMixer) {
+        danceMixer.update(danceClock.getDelta());
+        updateDancePose();
+    }
+    if (splitMode) {
+        controlsB.update();
+        const w = window.innerWidth, h = window.innerHeight, halfW = w / 2;
+        renderer.setScissorTest(true);
+
+        camera.aspect = halfW / h;
+        camera.updateProjectionMatrix();
+        renderer.setViewport(0, 0, halfW, h);
+        renderer.setScissor(0, 0, halfW, h);
+        renderer.render(scene, camera);
+
+        cameraB.aspect = halfW / h;
+        cameraB.updateProjectionMatrix();
+        renderer.setViewport(halfW, 0, w - halfW, h);
+        renderer.setScissor(halfW, 0, w - halfW, h);
+        renderer.render(scene, cameraB);
+
+        renderer.setScissorTest(false);
+    } else {
+        renderer.render(scene, camera);
+    }
+}
+window.__dbgDance = {
+    boneObjById, THREE, dancePivotsRef: () => dancePivots, isActive: () => danceActive,
+    getMixer: () => danceMixer, getBvhNames: () => danceBvhBonesByName ? Array.from(danceBvhBonesByName.keys()) : null,
+    getClock: () => danceClock, getBvhBonesByName: () => danceBvhBonesByName, getBindQuats: () => danceBindQuats,
+    forceUpdate: (dt) => { danceMixer.update(dt); updateDancePose(); },
+};
+// TEMP DEBUG (usunac przed uznaniem za gotowe) - podglad renderu bez panelu przegladarki
+window.__dbgRender = {
+    grab: (dt) => {
+        if (dt && danceActive && danceMixer) { danceMixer.update(dt); updateDancePose(); }
+        renderer.render(scene, camera);
+        return renderer.domElement.toDataURL('image/png');
+    },
+    fitCam: () => { try { fitCameraToSkeleton(); } catch(e){} },
+    scene: () => scene, camera: () => camera, renderer: () => renderer,
+    bvhWorldQuatAtRest: () => {
+        // world rotation of each BVH bone using bind (frame-0) local quats
+        const res = {};
+        const bb = danceBvhBonesByName;
+        for (const [n,b] of bb) {
+            let q = new THREE.Quaternion(); let cur = b; const chain=[];
+            while (cur) { chain.unshift(cur); cur = cur.parent && cur.parent.isBone ? cur.parent : null; }
+            for (const c of chain) q.multiply(danceBindQuats.get(c.name) || c.quaternion);
+            const e = new THREE.Euler().setFromQuaternion(q);
+            res[n] = [e.x,e.y,e.z].map(v=>+(v*180/Math.PI).toFixed(1));
+        }
+        return res;
+    },
+};
+animate();
+</script>
+</body>
+</html>

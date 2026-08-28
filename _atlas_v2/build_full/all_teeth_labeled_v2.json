@@ -1,0 +1,194 @@
+[
+ {
+  "id": "lower_canine_l",
+  "pl": "Kieł dolny",
+  "en": "Lower canine",
+  "side": "l",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_canine_r",
+  "pl": "Kieł dolny",
+  "en": "Lower canine",
+  "side": "r",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_first_molar_tooth_l",
+  "pl": "Ząb trzonowy pierwszy dolny",
+  "en": "Lower first molar tooth",
+  "side": "l",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_first_molar_tooth_r",
+  "pl": "Ząb trzonowy pierwszy dolny",
+  "en": "Lower first molar tooth",
+  "side": "r",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_first_premolar_l",
+  "pl": "Ząb przedtrzonowy pierwszy dolny",
+  "en": "Lower first premolar",
+  "side": "l",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_first_premolar_r",
+  "pl": "Ząb przedtrzonowy pierwszy dolny",
+  "en": "Lower first premolar",
+  "side": "r",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_lateral_incisor",
+  "pl": "Siekacz boczny dolny",
+  "en": "Lower lateral incisor",
+  "side": "mid",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_medial_incisor",
+  "pl": "Siekacz przyśrodkowy dolny",
+  "en": "Lower medial incisor",
+  "side": "mid",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_second_molar_tooth_l",
+  "pl": "Ząb trzonowy drugi dolny",
+  "en": "Lower second molar tooth",
+  "side": "l",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_second_molar_tooth_r",
+  "pl": "Ząb trzonowy drugi dolny",
+  "en": "Lower second molar tooth",
+  "side": "r",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_second_premolar_l",
+  "pl": "Ząb przedtrzonowy drugi dolny",
+  "en": "Lower second premolar",
+  "side": "l",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lower_second_premolar_r",
+  "pl": "Ząb przedtrzonowy drugi dolny",
+  "en": "Lower second premolar",
+  "side": "r",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_canine_l",
+  "pl": "Kieł górny",
+  "en": "Upper canine",
+  "side": "l",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_canine_r",
+  "pl": "Kieł górny",
+  "en": "Upper canine",
+  "side": "r",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_first_molar_tooth_l",
+  "pl": "Ząb trzonowy pierwszy górny",
+  "en": "Upper first molar tooth",
+  "side": "l",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_first_molar_tooth_r",
+  "pl": "Ząb trzonowy pierwszy górny",
+  "en": "Upper first molar tooth",
+  "side": "r",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_first_premolar_l",
+  "pl": "Ząb przedtrzonowy pierwszy górny",
+  "en": "Upper first premolar",
+  "side": "l",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_first_premolar_r",
+  "pl": "Ząb przedtrzonowy pierwszy górny",
+  "en": "Upper first premolar",
+  "side": "r",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_lateral_incisor",
+  "pl": "Siekacz boczny górny",
+  "en": "Upper lateral incisor",
+  "side": "mid",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_medial_incisor",
+  "pl": "Siekacz przyśrodkowy górny",
+  "en": "Upper medial incisor",
+  "side": "mid",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_second_molar_tooth_l",
+  "pl": "Ząb trzonowy drugi górny",
+  "en": "Upper second molar tooth",
+  "side": "l",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_second_molar_tooth_r",
+  "pl": "Ząb trzonowy drugi górny",
+  "en": "Upper second molar tooth",
+  "side": "r",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_second_premolar_l",
+  "pl": "Ząb przedtrzonowy drugi górny",
+  "en": "Upper second premolar",
+  "side": "l",
+  "kind": "tooth",
+  "pl_from": "comp"
+ },
+ {
+  "id": "upper_second_premolar_r",
+  "pl": "Ząb przedtrzonowy drugi górny",
+  "en": "Upper second premolar",
+  "side": "r",
+  "kind": "tooth",
+  "pl_from": "comp"
+ }
+]

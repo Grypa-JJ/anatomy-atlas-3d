@@ -1,0 +1,227 @@
+[
+ {
+  "id": "lower_canine_l",
+  "pl": "Kieł dolny",
+  "en": "left Lower canine",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_canine_r",
+  "pl": "Kieł dolny",
+  "en": "right Lower canine",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_first_molar_tooth_l",
+  "pl": "Ząb trzonowy pierwszy dolny",
+  "en": "left Lower first molar tooth",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_first_molar_tooth_r",
+  "pl": "Ząb trzonowy pierwszy dolny",
+  "en": "right Lower first molar tooth",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_first_premolar_l",
+  "pl": "Ząb przedtrzonowy pierwszy dolny",
+  "en": "left Lower first premolar",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_first_premolar_r",
+  "pl": "Ząb przedtrzonowy pierwszy dolny",
+  "en": "right Lower first premolar",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_lateral_incisor",
+  "pl": "Siekacz boczny dolny",
+  "en": "Lower lateral incisor",
+  "side": "mid",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_medial_incisor",
+  "pl": "Siekacz przyśrodkowy dolny",
+  "en": "Lower medial incisor",
+  "side": "mid",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_second_molar_tooth_l",
+  "pl": "Ząb trzonowy drugi dolny",
+  "en": "left Lower second molar tooth",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_second_molar_tooth_r",
+  "pl": "Ząb trzonowy drugi dolny",
+  "en": "right Lower second molar tooth",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_second_premolar_l",
+  "pl": "Ząb przedtrzonowy drugi dolny",
+  "en": "left Lower second premolar",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "lower_second_premolar_r",
+  "pl": "Ząb przedtrzonowy drugi dolny",
+  "en": "right Lower second premolar",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_canine_l",
+  "pl": "Kieł górny",
+  "en": "left Upper canine",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_canine_r",
+  "pl": "Kieł górny",
+  "en": "right Upper canine",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_first_molar_tooth_l",
+  "pl": "Ząb trzonowy pierwszy górny",
+  "en": "left Upper first molar tooth",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_first_molar_tooth_r",
+  "pl": "Ząb trzonowy pierwszy górny",
+  "en": "right Upper first molar tooth",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_first_premolar_l",
+  "pl": "Ząb przedtrzonowy pierwszy górny",
+  "en": "left Upper first premolar",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_first_premolar_r",
+  "pl": "Ząb przedtrzonowy pierwszy górny",
+  "en": "right Upper first premolar",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_lateral_incisor_l",
+  "pl": "Siekacz boczny górny",
+  "en": "left Upper lateral incisor",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_lateral_incisor_r",
+  "pl": "Siekacz boczny górny",
+  "en": "right Upper lateral incisor",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_medial_incisor",
+  "pl": "Siekacz przyśrodkowy górny",
+  "en": "Upper medial incisor",
+  "side": "mid",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_second_molar_tooth_l",
+  "pl": "Ząb trzonowy drugi górny",
+  "en": "left Upper second molar tooth",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_second_molar_tooth_r",
+  "pl": "Ząb trzonowy drugi górny",
+  "en": "right Upper second molar tooth",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_second_premolar_l",
+  "pl": "Ząb przedtrzonowy drugi górny",
+  "en": "left Upper second premolar",
+  "side": "l",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ },
+ {
+  "id": "upper_second_premolar_r",
+  "pl": "Ząb przedtrzonowy drugi górny",
+  "en": "right Upper second premolar",
+  "side": "r",
+  "category": "tooth",
+  "kind": "tooth",
+  "pl_from": "tooth"
+ }
+]

@@ -1,0 +1,8959 @@
+[
+ {
+  "muscleId": "flexor_digiti_minimi_of_foot_l",
+  "en": "insertion of Flexor digiti minimi of foot",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz krótki palca małego stopy",
+  "pos": [
+   136.18,
+   -61.96,
+   12.08
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_digiti_minimi_of_foot_l",
+  "en": "insertion of Abductor digiti minimi of foot",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień odwodziciel palca małego (stopy, lewy)",
+  "pos": [
+   137.57,
+   -56.65,
+   12.43
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_head_of_flexor_hallucis_brevis_l",
+  "en": "insertion of Medial head of flexor hallucis brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz krótki palucha — głowa przyśrodkowa",
+  "pos": [
+   66.86,
+   -83.22,
+   13.8
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_hallucis_l",
+  "en": "insertion of Abductor hallucis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień odwodziciel palucha",
+  "pos": [
+   62.18,
+   -82.66,
+   16.57
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_flexor_hallucis_brevis_l",
+  "en": "insertion of Lateral head of flexor hallucis brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz krótki palucha — głowa boczna",
+  "pos": [
+   77.04,
+   -84.23,
+   12.42
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_hallucis_longus_l",
+  "en": "insertion of Extensor hallucis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik długi palucha",
+  "pos": [
+   74.75,
+   -92.8,
+   27.05
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_l",
+  "en": "insertion of Extensor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 4): Mięsień prostownik długi palców",
+  "pos": [
+   140.74,
+   -82.88,
+   16.2
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_brevis_l",
+  "en": "insertion of Flexor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zginacz krótki palców",
+  "pos": [
+   140.09,
+   -82.48,
+   10.06
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_brevis_l",
+  "en": "insertion of Extensor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień prostownik krótki palców",
+  "pos": [
+   129.73,
+   -95.45,
+   17.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_brevis_l",
+  "en": "insertion of Flexor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zginacz krótki palców",
+  "pos": [
+   116.99,
+   -110.96,
+   12.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_brevis_l",
+  "en": "insertion of Extensor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień prostownik krótki palców",
+  "pos": [
+   114.77,
+   -108.18,
+   18.81
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_brevis_l",
+  "en": "insertion of Flexor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz krótki palców",
+  "pos": [
+   100.68,
+   -115.72,
+   13.74
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_brevis_l",
+  "en": "insertion of Extensor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik krótki palców",
+  "pos": [
+   101.2,
+   -114.12,
+   20.24
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_longus_l",
+  "en": "insertion of Flexor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zginacz długi palców",
+  "pos": [
+   118.49,
+   -119.1,
+   10.55
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_l",
+  "en": "insertion of Extensor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień prostownik długi palców",
+  "pos": [
+   118.26,
+   -121.85,
+   15.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_longus_l",
+  "en": "insertion of Flexor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz długi palców",
+  "pos": [
+   102.87,
+   -124.3,
+   11.03
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_l",
+  "en": "insertion of Extensor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik długi palców",
+  "pos": [
+   103.05,
+   -126.77,
+   16.84
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_longus_l",
+  "en": "insertion of Flexor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zginacz długi palców",
+  "pos": [
+   130.46,
+   -105.76,
+   10.38
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_l",
+  "en": "insertion of Extensor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień prostownik długi palców",
+  "pos": [
+   131.97,
+   -107.16,
+   16.33
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_hallucis_longus_l",
+  "en": "insertion of Flexor hallucis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz długi palucha",
+  "pos": [
+   78.64,
+   -113.18,
+   10.53
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_longus_l",
+  "en": "insertion of Flexor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień zginacz długi palców",
+  "pos": [
+   141.68,
+   -87.16,
+   10.07
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_l",
+  "en": "insertion of Extensor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień prostownik długi palców",
+  "pos": [
+   142.55,
+   -89.16,
+   14.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digiti_minimi_of_foot_r",
+  "en": "insertion of Flexor digiti minimi of foot",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz krótki palca małego stopy",
+  "pos": [
+   -136.17,
+   -61.96,
+   12.08
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_digiti_minimi_of_foot_r",
+  "en": "insertion of Abductor digiti minimi of foot",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień odwodziciel palca małego (stopy, lewy)",
+  "pos": [
+   -137.57,
+   -56.65,
+   12.43
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "plantar_interossei_muscles_l",
+  "en": "insertion of Plantar interossei muscles",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięśnie międzykostne podeszwowe",
+  "pos": [
+   -128.39,
+   -62.68,
+   16.84
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "plantar_interossei_muscles_l",
+  "en": "insertion of Plantar interossei muscles",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięśnie międzykostne podeszwowe",
+  "pos": [
+   -115.21,
+   -74.25,
+   19.84
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "plantar_interossei_muscles_l",
+  "en": "insertion of Plantar interossei muscles",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięśnie międzykostne podeszwowe",
+  "pos": [
+   -102.71,
+   -82.05,
+   19.35
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_head_of_flexor_hallucis_brevis_r",
+  "en": "insertion of Medial head of flexor hallucis brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz krótki palucha — głowa przyśrodkowa",
+  "pos": [
+   -66.86,
+   -83.22,
+   13.8
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_hallucis_r",
+  "en": "insertion of Abductor hallucis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień odwodziciel palucha",
+  "pos": [
+   -62.18,
+   -82.66,
+   16.57
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_flexor_hallucis_brevis_r",
+  "en": "insertion of Lateral head of flexor hallucis brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz krótki palucha — głowa boczna",
+  "pos": [
+   -77.04,
+   -84.23,
+   12.42
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_hallucis_longus_r",
+  "en": "insertion of Extensor hallucis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik długi palucha",
+  "pos": [
+   -74.75,
+   -92.8,
+   27.05
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_r",
+  "en": "insertion of Extensor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 4): Mięsień prostownik długi palców",
+  "pos": [
+   -140.74,
+   -82.88,
+   16.2
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_brevis_r",
+  "en": "insertion of Flexor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zginacz krótki palców",
+  "pos": [
+   -140.09,
+   -82.48,
+   10.06
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_brevis_r",
+  "en": "insertion of Extensor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień prostownik krótki palców",
+  "pos": [
+   -129.73,
+   -95.45,
+   17.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_brevis_r",
+  "en": "insertion of Flexor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zginacz krótki palców",
+  "pos": [
+   -116.99,
+   -110.96,
+   12.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_brevis_r",
+  "en": "insertion of Extensor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień prostownik krótki palców",
+  "pos": [
+   -114.77,
+   -108.18,
+   18.81
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_brevis_r",
+  "en": "insertion of Flexor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz krótki palców",
+  "pos": [
+   -100.68,
+   -115.72,
+   13.74
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_brevis_r",
+  "en": "insertion of Extensor digitorum brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik krótki palców",
+  "pos": [
+   -101.2,
+   -114.12,
+   20.24
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_longus_r",
+  "en": "insertion of Flexor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zginacz długi palców",
+  "pos": [
+   -118.49,
+   -119.1,
+   10.55
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_r",
+  "en": "insertion of Extensor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień prostownik długi palców",
+  "pos": [
+   -118.26,
+   -121.85,
+   15.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_longus_r",
+  "en": "insertion of Flexor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz długi palców",
+  "pos": [
+   -102.87,
+   -124.3,
+   11.03
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_r",
+  "en": "insertion of Extensor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik długi palców",
+  "pos": [
+   -103.05,
+   -126.77,
+   16.84
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_longus_r",
+  "en": "insertion of Flexor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zginacz długi palców",
+  "pos": [
+   -130.46,
+   -105.76,
+   10.38
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_r",
+  "en": "insertion of Extensor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień prostownik długi palców",
+  "pos": [
+   -131.97,
+   -107.16,
+   16.33
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_hallucis_longus_r",
+  "en": "insertion of Flexor hallucis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz długi palucha",
+  "pos": [
+   -78.64,
+   -113.18,
+   10.53
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_longus_r",
+  "en": "insertion of Flexor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień zginacz długi palców",
+  "pos": [
+   -141.68,
+   -87.16,
+   10.07
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_r",
+  "en": "insertion of Extensor digitorum longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień prostownik długi palców",
+  "pos": [
+   -142.55,
+   -89.16,
+   14.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_l",
+  "en": "origin of Long plantar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Więzadło podeszwowe długie",
+  "pos": [
+   102.05,
+   -16.42,
+   31.75
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_head_of_adductor_hallucis_l",
+  "en": "insertion of Transverse head of adductor hallucis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień przywodziciel palucha — część poprzeczna",
+  "pos": [
+   112.6,
+   -59.07,
+   17.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_l",
+  "en": "origin of Oblique head of adductor hallucis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień przywodziciel palucha — część skośna",
+  "pos": [
+   98.47,
+   -16.21,
+   35.61
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_l",
+  "en": "origin of Long plantar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Więzadło podeszwowe długie",
+  "pos": [
+   96.85,
+   -23.83,
+   38.37
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_head_of_adductor_hallucis_l",
+  "en": "insertion of Transverse head of adductor hallucis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień przywodziciel palucha — część poprzeczna",
+  "pos": [
+   101.67,
+   -68.46,
+   19.22
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_l",
+  "en": "origin of Long plantar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Więzadło podeszwowe długie",
+  "pos": [
+   86.11,
+   -22.23,
+   43.43
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "opponens_digiti_minimi_muscle_of_foot_l",
+  "en": "origin of (Opponens digiti minimi muscle of foot)",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przeciwstawiacz palca małego (stopy, lewy)",
+  "pos": [
+   123.1,
+   -24.89,
+   20.41
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "fibularis_tertius_muscle_l",
+  "en": "insertion of Fibularis tertius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień strzałkowy trzeci",
+  "pos": [
+   115.74,
+   -8.27,
+   36.67
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "fibularis_brevis_muscle_l",
+  "en": "insertion of Fibularis brevis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień strzałkowy krótki",
+  "pos": [
+   113.16,
+   12.96,
+   28.69
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_head_of_adductor_hallucis_l",
+  "en": "insertion of Transverse head of adductor hallucis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień przywodziciel palucha — część poprzeczna",
+  "pos": [
+   122.68,
+   -53.18,
+   17.43
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_flexor_hallucis_brevis_l",
+  "en": "origin of Long plantar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Więzadło podeszwowe długie",
+  "pos": [
+   71.74,
+   -26.88,
+   37.09
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_flexor_hallucis_brevis_l",
+  "en": "origin of Lateral head of flexor hallucis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień zginacz krótki palucha — głowa boczna",
+  "pos": [
+   80.51,
+   -22.8,
+   40.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "tibialis_anterior_muscle_l",
+  "en": "insertion of Tibialis anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień piszczelowy przedni",
+  "pos": [
+   61.71,
+   -31.01,
+   49.79
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_r",
+  "en": "origin of Long plantar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Więzadło podeszwowe długie",
+  "pos": [
+   -102.05,
+   -16.42,
+   31.75
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_head_of_adductor_hallucis_r",
+  "en": "insertion of Transverse head of adductor hallucis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień przywodziciel palucha — część poprzeczna",
+  "pos": [
+   -112.6,
+   -59.07,
+   17.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_r",
+  "en": "origin of Oblique head of adductor hallucis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień przywodziciel palucha — część skośna",
+  "pos": [
+   -98.47,
+   -16.21,
+   35.61
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "plantar_interossei_muscles_l",
+  "en": "origin of Plantar interossei muscles",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięśnie międzykostne podeszwowe",
+  "pos": [
+   -106.45,
+   -33.2,
+   34.19
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_r",
+  "en": "origin of Long plantar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Więzadło podeszwowe długie",
+  "pos": [
+   -96.85,
+   -23.83,
+   38.37
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_head_of_adductor_hallucis_r",
+  "en": "insertion of Transverse head of adductor hallucis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień przywodziciel palucha — część poprzeczna",
+  "pos": [
+   -101.67,
+   -68.46,
+   19.22
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "plantar_interossei_muscles_l",
+  "en": "origin of Plantar interossei muscles",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięśnie międzykostne podeszwowe",
+  "pos": [
+   -98.34,
+   -43.23,
+   37.25
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_r",
+  "en": "origin of Long plantar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Więzadło podeszwowe długie",
+  "pos": [
+   -86.11,
+   -22.23,
+   43.43
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "opponens_digiti_minimi_muscle_of_foot_r",
+  "en": "origin of (Opponens digiti minimi muscle of foot)",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przeciwstawiacz palca małego (stopy, lewy)",
+  "pos": [
+   -123.1,
+   -24.89,
+   20.41
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "fibularis_tertius_muscle_r",
+  "en": "insertion of Fibularis tertius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień strzałkowy trzeci",
+  "pos": [
+   -115.74,
+   -8.27,
+   36.67
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "fibularis_brevis_muscle_r",
+  "en": "insertion of Fibularis brevis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień strzałkowy krótki",
+  "pos": [
+   -113.16,
+   12.96,
+   28.69
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_head_of_adductor_hallucis_r",
+  "en": "insertion of Transverse head of adductor hallucis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień przywodziciel palucha — część poprzeczna",
+  "pos": [
+   -122.68,
+   -53.18,
+   17.43
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "plantar_interossei_muscles_l",
+  "en": "origin of Plantar interossei muscles",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięśnie międzykostne podeszwowe",
+  "pos": [
+   -113.68,
+   -26.3,
+   26.05
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_flexor_hallucis_brevis_r",
+  "en": "origin of Long plantar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Więzadło podeszwowe długie",
+  "pos": [
+   -71.74,
+   -26.88,
+   37.09
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_flexor_hallucis_brevis_r",
+  "en": "origin of Lateral head of flexor hallucis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień zginacz krótki palucha — głowa boczna",
+  "pos": [
+   -80.51,
+   -22.8,
+   40.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "tibialis_anterior_muscle_r",
+  "en": "insertion of Tibialis anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień piszczelowy przedni",
+  "pos": [
+   -61.71,
+   -31.01,
+   49.79
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_flexor_hallucis_brevis_l",
+  "en": "origin of Lateral head of flexor hallucis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz krótki palucha — głowa boczna",
+  "pos": [
+   67.02,
+   -15.09,
+   38.43
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "tibialis_anterior_muscle_l",
+  "en": "insertion of Tibialis anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień piszczelowy przedni",
+  "pos": [
+   61.37,
+   -20.55,
+   50.21
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_l",
+  "en": "origin of Oblique head of adductor hallucis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przywodziciel palucha — część skośna",
+  "pos": [
+   94.7,
+   -6.42,
+   36.06
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_hallucis_brevis_l",
+  "en": "origin of Extensor hallucis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik krótki palucha",
+  "pos": [
+   99.64,
+   29.95,
+   52.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "plantaris_muscle_l",
+  "en": "insertion of Triceps surae muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień trójgłowy łydki",
+  "pos": [
+   69.09,
+   86.63,
+   41.18
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "quadratus_plantae_muscle_l",
+  "en": "origin of Long plantar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Więzadło podeszwowe długie",
+  "pos": [
+   80.43,
+   42.4,
+   25.79
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_hallucis_l",
+  "en": "origin of Abductor hallucis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień odwodziciel palucha",
+  "pos": [
+   80.76,
+   58.68,
+   19.33
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_brevis_l",
+  "en": "origin of Flexor digitorum brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz krótki palców",
+  "pos": [
+   76.36,
+   62.19,
+   15.15
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_flexor_hallucis_brevis_r",
+  "en": "origin of Lateral head of flexor hallucis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz krótki palucha — głowa boczna",
+  "pos": [
+   -67.02,
+   -15.09,
+   38.43
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "tibialis_anterior_muscle_r",
+  "en": "insertion of Tibialis anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień piszczelowy przedni",
+  "pos": [
+   -61.37,
+   -20.55,
+   50.21
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_r",
+  "en": "origin of Oblique head of adductor hallucis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przywodziciel palucha — część skośna",
+  "pos": [
+   -94.7,
+   -6.42,
+   36.06
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_hallucis_brevis_r",
+  "en": "origin of Extensor hallucis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik krótki palucha",
+  "pos": [
+   -99.64,
+   29.95,
+   52.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "plantaris_muscle_r",
+  "en": "insertion of Triceps surae muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień trójgłowy łydki",
+  "pos": [
+   -69.09,
+   86.63,
+   41.18
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "quadratus_plantae_muscle_r",
+  "en": "origin of Long plantar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Więzadło podeszwowe długie",
+  "pos": [
+   -80.43,
+   42.4,
+   25.79
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_hallucis_r",
+  "en": "origin of Abductor hallucis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień odwodziciel palucha",
+  "pos": [
+   -80.76,
+   58.68,
+   19.33
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_brevis_r",
+  "en": "origin of Flexor digitorum brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz krótki palców",
+  "pos": [
+   -76.36,
+   62.19,
+   15.15
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_head_of_adductor_hallucis_l",
+  "en": "origin of Transverse head of adductor hallucis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przywodziciel palucha — część poprzeczna",
+  "pos": [
+   79.58,
+   -67.99,
+   16.84
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_l",
+  "en": "insertion of Oblique head of adductor hallucis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień przywodziciel palucha — część skośna",
+  "pos": [
+   75.85,
+   -64.24,
+   16.91
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_head_of_adductor_hallucis_r",
+  "en": "origin of Transverse head of adductor hallucis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przywodziciel palucha — część poprzeczna",
+  "pos": [
+   -79.58,
+   -67.99,
+   16.84
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "oblique_head_of_adductor_hallucis_r",
+  "en": "insertion of Oblique head of adductor hallucis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień przywodziciel palucha — część skośna",
+  "pos": [
+   -75.85,
+   -64.24,
+   16.91
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "short_head_of_biceps_femoris_l",
+  "en": "insertion of Biceps femoris muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień dwugłowy uda",
+  "pos": [
+   118.71,
+   45.34,
+   410.07
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_l",
+  "en": "origin of Extensor digitorum longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień prostownik długi palców",
+  "pos": [
+   107.67,
+   37.96,
+   298.18
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "fibularis_longus_muscle_l",
+  "en": "origin of Fibularis longus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień strzałkowy długi",
+  "pos": [
+   114.21,
+   47.43,
+   335.36
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_hallucis_longus_l",
+  "en": "origin of Extensor hallucis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik długi palucha",
+  "pos": [
+   100.42,
+   35.16,
+   229.24
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_hallucis_longus_l",
+  "en": "origin of Flexor hallucis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz długi palucha",
+  "pos": [
+   100.14,
+   46.81,
+   228.73
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "fibularis_tertius_muscle_l",
+  "en": "origin of Fibularis tertius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień strzałkowy trzeci",
+  "pos": [
+   98.74,
+   42.51,
+   138.28
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "soleus_muscle_l",
+  "en": "origin of Soleus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień płaszczkowaty",
+  "pos": [
+   104.71,
+   50.65,
+   387.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "fibularis_brevis_muscle_l",
+  "en": "origin of Fibularis brevis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień strzałkowy krótki",
+  "pos": [
+   105.49,
+   53.87,
+   175.42
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "popliteus_muscle_l",
+  "en": "insertion of Popliteus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień podkolanowy",
+  "pos": [
+   72.42,
+   43.51,
+   386.1
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "semitendinosus_muscle_l",
+  "en": "insertion of Semitendinosus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień półścięgnisty",
+  "pos": [
+   53.15,
+   33.41,
+   384.96
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "vastus_medialis_muscle_l",
+  "en": "insertion of Patellar ligament",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Więzadło rzepki",
+  "pos": [
+   81.18,
+   -3.13,
+   392.92
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "semimembranosus_muscle_l",
+  "en": "insertion of Semimembranosus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień półbłoniasty",
+  "pos": [
+   46.38,
+   47.99,
+   409.34
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sartorius_muscle_l",
+  "en": "insertion of Sartorius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień krawiecki",
+  "pos": [
+   66.34,
+   9.98,
+   376.81
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_l",
+  "en": "origin of Extensor digitorum longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik długi palców",
+  "pos": [
+   110.15,
+   21.57,
+   411.24
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gracilis_muscle_l",
+  "en": "insertion of Gracilis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień smukły",
+  "pos": [
+   60.85,
+   20.36,
+   368.54
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_longus_l",
+  "en": "origin of Flexor digitorum longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz długi palców",
+  "pos": [
+   75.85,
+   34.21,
+   252.89
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "soleus_muscle_l",
+  "en": "origin of Soleus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień płaszczkowaty",
+  "pos": [
+   74.12,
+   32.27,
+   327.08
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "tibialis_posterior_muscle_l",
+  "en": "origin of Tibialis posterior muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień piszczelowy tylny",
+  "pos": [
+   96.62,
+   34.07,
+   303.21
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "tibialis_anterior_muscle_l",
+  "en": "origin of Tibialis anterior muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień piszczelowy przedni",
+  "pos": [
+   91.83,
+   15.32,
+   291.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "inferior_gemellus_muscle_l",
+  "en": "insertion of Trochanteric insertion",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Przyczep krętarzowy",
+  "pos": [
+   120.23,
+   13.14,
+   849.59
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "quadratus_femoris_muscle_l",
+  "en": "insertion of Quadratus femoris muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień czworoboczny uda",
+  "pos": [
+   113.54,
+   35.42,
+   817.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "plantaris_muscle_l",
+  "en": "origin of Plantaris muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podeszwowy",
+  "pos": [
+   93.92,
+   32.1,
+   491.11
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_head_of_gastrocnemius_l",
+  "en": "origin of Medial head of gastrocnemius",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień brzuchaty łydki — głowa przyśrodkowa",
+  "pos": [
+   57.24,
+   27.67,
+   492.12
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_gastrocnemius_l",
+  "en": "origin of Lateral head of gastrocnemius",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień brzuchaty łydki — głowa boczna",
+  "pos": [
+   106.11,
+   34.89,
+   479.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gluteus_maximus_muscle_l",
+  "en": "insertion of Gluteus maximus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień pośladkowy wielki",
+  "pos": [
+   114.86,
+   21.32,
+   753.58
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "adductor_longus_l",
+  "en": "insertion of Adductor longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień przywodziciel długi",
+  "pos": [
+   90.65,
+   3.96,
+   708.43
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "adductor_magnus_l",
+  "en": "insertion of Adductor magnus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień przywodziciel wielki",
+  "pos": [
+   84.53,
+   16.72,
+   630.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gluteus_medius_muscle_l",
+  "en": "insertion of Gluteus medius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień pośladkowy średni",
+  "pos": [
+   137.0,
+   29.95,
+   844.37
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "psoas_major_l",
+  "en": "insertion of Iliopsoas muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień biodrowo-lędźwiowy",
+  "pos": [
+   92.23,
+   24.48,
+   790.05
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "vastus_intermedius_muscle_l",
+  "en": "origin of Articularis genus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień stawowy kolana",
+  "pos": [
+   87.89,
+   -3.84,
+   502.03
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "vastus_medialis_muscle_l",
+  "en": "origin of Vastus medialis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obszerny przyśrodkowy",
+  "pos": [
+   75.16,
+   1.38,
+   590.63
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "vastus_lateralis_muscle_l",
+  "en": "origin of Vastus lateralis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obszerny boczny",
+  "pos": [
+   112.71,
+   13.3,
+   679.95
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "vastus_intermedius_muscle_l",
+  "en": "origin of Vastus intermedius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obszerny pośredni",
+  "pos": [
+   106.66,
+   -4.44,
+   654.05
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_femoris_muscle_l",
+  "en": "insertion of Quadriceps femoris muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień czworogłowy uda",
+  "pos": [
+   84.34,
+   -13.11,
+   458.36
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_femoris_muscle_l",
+  "en": "origin of Patellar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Więzadło rzepki",
+  "pos": [
+   86.49,
+   -5.99,
+   426.77
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "short_head_of_biceps_femoris_r",
+  "en": "insertion of Biceps femoris muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień dwugłowy uda",
+  "pos": [
+   -118.71,
+   45.34,
+   410.07
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_r",
+  "en": "origin of Extensor digitorum longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień prostownik długi palców",
+  "pos": [
+   -107.67,
+   37.96,
+   298.18
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "fibularis_longus_muscle_r",
+  "en": "origin of Fibularis longus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień strzałkowy długi",
+  "pos": [
+   -114.21,
+   47.43,
+   335.36
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_hallucis_longus_r",
+  "en": "origin of Extensor hallucis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik długi palucha",
+  "pos": [
+   -100.42,
+   35.16,
+   229.24
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_hallucis_longus_r",
+  "en": "origin of Flexor hallucis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz długi palucha",
+  "pos": [
+   -100.14,
+   46.81,
+   228.73
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "fibularis_tertius_muscle_r",
+  "en": "origin of Fibularis tertius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień strzałkowy trzeci",
+  "pos": [
+   -98.74,
+   42.51,
+   138.28
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "soleus_muscle_r",
+  "en": "origin of Soleus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień płaszczkowaty",
+  "pos": [
+   -104.71,
+   50.65,
+   387.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "fibularis_brevis_muscle_r",
+  "en": "origin of Fibularis brevis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień strzałkowy krótki",
+  "pos": [
+   -105.49,
+   53.87,
+   175.42
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_longus_r",
+  "en": "origin of Extensor digitorum longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik długi palców",
+  "pos": [
+   -110.15,
+   21.57,
+   411.24
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "popliteus_muscle_r",
+  "en": "insertion of Popliteus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień podkolanowy",
+  "pos": [
+   -72.42,
+   43.51,
+   386.1
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "semitendinosus_muscle_r",
+  "en": "insertion of Semitendinosus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień półścięgnisty",
+  "pos": [
+   -53.15,
+   33.41,
+   384.96
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gracilis_muscle_r",
+  "en": "insertion of Gracilis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień smukły",
+  "pos": [
+   -60.85,
+   20.36,
+   368.54
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "vastus_medialis_muscle_r",
+  "en": "insertion of Patellar ligament",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Więzadło rzepki",
+  "pos": [
+   -81.18,
+   -3.13,
+   392.92
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "semimembranosus_muscle_r",
+  "en": "insertion of Semimembranosus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień półbłoniasty",
+  "pos": [
+   -46.38,
+   47.99,
+   409.34
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sartorius_muscle_r",
+  "en": "insertion of Sartorius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień krawiecki",
+  "pos": [
+   -66.34,
+   9.98,
+   376.81
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_longus_r",
+  "en": "origin of Flexor digitorum longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz długi palców",
+  "pos": [
+   -75.85,
+   34.21,
+   252.89
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "soleus_muscle_r",
+  "en": "origin of Soleus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień płaszczkowaty",
+  "pos": [
+   -74.12,
+   32.27,
+   327.08
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "tibialis_posterior_muscle_r",
+  "en": "origin of Tibialis posterior muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień piszczelowy tylny",
+  "pos": [
+   -96.62,
+   34.07,
+   303.21
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "tibialis_anterior_muscle_r",
+  "en": "origin of Tibialis anterior muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień piszczelowy przedni",
+  "pos": [
+   -91.83,
+   15.32,
+   291.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "inferior_gemellus_muscle_r",
+  "en": "insertion of Trochanteric insertion",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Przyczep krętarzowy",
+  "pos": [
+   -120.23,
+   13.14,
+   849.59
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "popliteus_muscle_l",
+  "en": "origin of Popliteus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podkolanowy",
+  "pos": [
+   111.11,
+   46.89,
+   458.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_head_of_gastrocnemius_r",
+  "en": "origin of Medial head of gastrocnemius",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień brzuchaty łydki — głowa przyśrodkowa",
+  "pos": [
+   -57.24,
+   27.67,
+   492.12
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_gastrocnemius_r",
+  "en": "origin of Lateral head of gastrocnemius",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień brzuchaty łydki — głowa boczna",
+  "pos": [
+   -106.11,
+   34.89,
+   479.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "piriformis_muscle_l",
+  "en": "insertion of Piriformis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień gruszkowaty",
+  "pos": [
+   -125.81,
+   21.26,
+   858.42
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "quadratus_femoris_muscle_r",
+  "en": "insertion of Quadratus femoris muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień czworoboczny uda",
+  "pos": [
+   -113.54,
+   35.42,
+   817.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gluteus_maximus_muscle_r",
+  "en": "insertion of Gluteus maximus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień pośladkowy wielki",
+  "pos": [
+   -114.86,
+   21.32,
+   753.58
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "adductor_longus_r",
+  "en": "insertion of Adductor longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień przywodziciel długi",
+  "pos": [
+   -90.65,
+   3.96,
+   708.43
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "short_head_of_biceps_femoris_l",
+  "en": "insertion of Short head of biceps femoris",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień dwugłowy uda — głowa krótka",
+  "pos": [
+   -94.3,
+   22.95,
+   563.35
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "adductor_magnus_r",
+  "en": "insertion of Adductor magnus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień przywodziciel wielki",
+  "pos": [
+   -84.53,
+   16.72,
+   630.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectineus_muscle_l",
+  "en": "insertion of Pectineus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień grzebieniowy",
+  "pos": [
+   -95.69,
+   0.97,
+   755.76
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gluteus_medius_muscle_r",
+  "en": "insertion of Gluteus medius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień pośladkowy średni",
+  "pos": [
+   -136.97,
+   30.1,
+   844.41
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "psoas_major_r",
+  "en": "insertion of Iliopsoas muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień biodrowo-lędźwiowy",
+  "pos": [
+   -92.23,
+   24.48,
+   790.05
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "popliteus_muscle_r",
+  "en": "origin of Popliteus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podkolanowy",
+  "pos": [
+   -111.11,
+   46.89,
+   458.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "plantaris_muscle_r",
+  "en": "origin of Plantaris muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podeszwowy",
+  "pos": [
+   -93.92,
+   32.1,
+   491.11
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "vastus_intermedius_muscle_r",
+  "en": "origin of Articularis genus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień stawowy kolana",
+  "pos": [
+   -87.89,
+   -3.84,
+   502.03
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "vastus_medialis_muscle_r",
+  "en": "origin of Vastus medialis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obszerny przyśrodkowy",
+  "pos": [
+   -75.16,
+   1.38,
+   590.63
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "vastus_lateralis_muscle_r",
+  "en": "origin of Vastus lateralis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obszerny boczny",
+  "pos": [
+   -112.71,
+   13.3,
+   679.95
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "vastus_intermedius_muscle_r",
+  "en": "origin of Vastus intermedius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obszerny pośredni",
+  "pos": [
+   -106.66,
+   -4.44,
+   654.05
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_femoris_muscle_r",
+  "en": "insertion of Quadriceps femoris muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień czworogłowy uda",
+  "pos": [
+   -84.34,
+   -13.11,
+   458.36
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_femoris_muscle_r",
+  "en": "origin of Patellar ligament",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Więzadło rzepki",
+  "pos": [
+   -86.49,
+   -5.99,
+   426.77
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "iliacus_muscle_l",
+  "en": "origin of Iliacus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień biodrowy",
+  "pos": [
+   97.63,
+   -1.61,
+   957.37
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "quadratus_femoris_muscle_l",
+  "en": "origin of Quadratus femoris muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień czworoboczny uda",
+  "pos": [
+   64.9,
+   33.06,
+   816.88
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "semimembranosus_muscle_l",
+  "en": "origin of Semimembranosus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień półbłoniasty",
+  "pos": [
+   43.99,
+   35.56,
+   798.83
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectineus_muscle_l",
+  "en": "origin of Pectineus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień grzebieniowy",
+  "pos": [
+   34.0,
+   -42.34,
+   851.52
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_femoris_muscle_l",
+  "en": "origin of Rectus femoris muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty uda",
+  "pos": [
+   103.31,
+   -13.04,
+   902.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "semitendinosus_muscle_l",
+  "en": "origin of Semitendinosus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień półścięgnisty",
+  "pos": [
+   50.36,
+   46.78,
+   804.14
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sartorius_muscle_l",
+  "en": "origin of Sartorius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień krawiecki",
+  "pos": [
+   119.49,
+   -49.08,
+   935.09
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "obturator_externus_l",
+  "en": "origin of Obturator externus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zasłaniacz zewnętrzny",
+  "pos": [
+   38.36,
+   1.03,
+   831.94
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "inferior_gemellus_muscle_l",
+  "en": "origin of Inferior gemellus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień bliźniaczy dolny",
+  "pos": [
+   60.17,
+   55.5,
+   837.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "internal_abdominal_oblique_muscle_l",
+  "en": "origin of Internal abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Mięsień skośny wewnętrzny brzucha",
+  "pos": [
+   112.09,
+   -7.0,
+   991.52
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transversus_abdominis_muscle_l",
+  "en": "origin of Transversus abdominis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień poprzeczny brzucha",
+  "pos": [
+   104.25,
+   -7.47,
+   983.82
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_l",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   120.83,
+   -8.42,
+   992.57
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "latissimus_dorsi_muscle_l",
+  "en": "origin of Latissimus dorsi muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień najszerszy grzbietu",
+  "pos": [
+   56.8,
+   66.57,
+   981.97
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "iliocostalis_lumborum_muscle_l",
+  "en": "origin of Erector spinae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik grzbietu",
+  "pos": [
+   46.15,
+   68.42,
+   969.87
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "pubococcygeus_muscle_l",
+  "en": "origin of Levator ani",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dźwigacz odbytu",
+  "pos": [
+   20.58,
+   2.08,
+   834.18
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "obturator_internus_l",
+  "en": "origin of Obturator internus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zasłaniacz wewnętrzny",
+  "pos": [
+   44.36,
+   12.33,
+   850.5
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "superior_gemellus_muscle_l",
+  "en": "origin of Superior gemellus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień bliźniaczy górny",
+  "pos": [
+   49.33,
+   49.22,
+   868.36
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "adductor_magnus_l",
+  "en": "origin of Adductor magnus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przywodziciel wielki",
+  "pos": [
+   31.35,
+   6.64,
+   807.89
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gracilis_muscle_l",
+  "en": "origin of Gracilis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień smukły",
+  "pos": [
+   15.82,
+   -21.64,
+   819.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "adductor_longus_l",
+  "en": "origin of Adductor longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przywodziciel długi",
+  "pos": [
+   17.82,
+   -45.96,
+   837.58
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_biceps_femoris_l",
+  "en": "origin of Long head of biceps femoris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dwugłowy uda — głowa długa",
+  "pos": [
+   60.51,
+   53.05,
+   813.83
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gluteus_medius_muscle_l",
+  "en": "origin of Gluteus medius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień pośladkowy średni",
+  "pos": [
+   91.99,
+   28.44,
+   971.96
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gluteus_maximus_muscle_l",
+  "en": "origin of Gluteus maximus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień pośladkowy wielki",
+  "pos": [
+   55.29,
+   73.29,
+   950.0
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gluteus_minimus_muscle_l",
+  "en": "origin of Gluteus minimus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień pośladkowy mały",
+  "pos": [
+   95.92,
+   12.06,
+   930.96
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "tensor_fasciae_latae_l",
+  "en": "origin of Tensor fasciae latae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień napinacz powięzi szerokiej",
+  "pos": [
+   123.05,
+   -37.32,
+   948.94
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_l",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 5): Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   89.7,
+   -54.34,
+   911.89
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "iliacus_muscle_r",
+  "en": "origin of Iliacus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień biodrowy",
+  "pos": [
+   -97.63,
+   -1.61,
+   957.37
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "obturator_externus_r",
+  "en": "origin of Obturator externus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zasłaniacz zewnętrzny",
+  "pos": [
+   -38.36,
+   1.03,
+   831.94
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "inferior_gemellus_muscle_r",
+  "en": "origin of Inferior gemellus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień bliźniaczy dolny",
+  "pos": [
+   -60.17,
+   55.5,
+   837.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "internal_abdominal_oblique_muscle_r",
+  "en": "origin of Internal abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Mięsień skośny wewnętrzny brzucha",
+  "pos": [
+   -112.09,
+   -7.0,
+   991.52
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transversus_abdominis_muscle_r",
+  "en": "origin of Transversus abdominis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień poprzeczny brzucha",
+  "pos": [
+   -104.25,
+   -7.47,
+   983.82
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_r",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   -120.83,
+   -8.42,
+   992.57
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "latissimus_dorsi_muscle_r",
+  "en": "origin of Latissimus dorsi muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień najszerszy grzbietu",
+  "pos": [
+   -56.8,
+   66.57,
+   981.97
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "iliocostalis_lumborum_muscle_r",
+  "en": "origin of Erector spinae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik grzbietu",
+  "pos": [
+   -46.15,
+   68.42,
+   969.87
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "pubococcygeus_muscle_r",
+  "en": "origin of Levator ani",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dźwigacz odbytu",
+  "pos": [
+   -20.58,
+   2.08,
+   834.18
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "quadratus_femoris_muscle_r",
+  "en": "origin of Quadratus femoris muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień czworoboczny uda",
+  "pos": [
+   -64.9,
+   33.06,
+   816.88
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "semimembranosus_muscle_r",
+  "en": "origin of Semimembranosus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień półbłoniasty",
+  "pos": [
+   -43.99,
+   35.56,
+   798.83
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "obturator_internus_r",
+  "en": "origin of Obturator internus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zasłaniacz wewnętrzny",
+  "pos": [
+   -44.36,
+   12.33,
+   850.5
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "superior_gemellus_muscle_r",
+  "en": "origin of Superior gemellus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień bliźniaczy górny",
+  "pos": [
+   -49.33,
+   49.22,
+   868.36
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "adductor_magnus_r",
+  "en": "origin of Adductor magnus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przywodziciel wielki",
+  "pos": [
+   -31.35,
+   6.64,
+   807.89
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gracilis_muscle_r",
+  "en": "origin of Gracilis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień smukły",
+  "pos": [
+   -15.82,
+   -21.64,
+   819.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "adductor_longus_r",
+  "en": "origin of Adductor longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przywodziciel długi",
+  "pos": [
+   -17.82,
+   -45.96,
+   837.58
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectineus_muscle_r",
+  "en": "origin of Pectineus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień grzebieniowy",
+  "pos": [
+   -34.0,
+   -42.34,
+   851.52
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_biceps_femoris_r",
+  "en": "origin of Long head of biceps femoris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dwugłowy uda — głowa długa",
+  "pos": [
+   -60.51,
+   53.05,
+   813.83
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gluteus_medius_muscle_r",
+  "en": "origin of Gluteus medius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień pośladkowy średni",
+  "pos": [
+   -91.99,
+   28.44,
+   971.96
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gluteus_maximus_muscle_r",
+  "en": "origin of Gluteus maximus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień pośladkowy wielki",
+  "pos": [
+   -55.29,
+   73.29,
+   950.0
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_femoris_muscle_r",
+  "en": "origin of Rectus femoris muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty uda",
+  "pos": [
+   -103.31,
+   -13.04,
+   902.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "gluteus_minimus_muscle_r",
+  "en": "origin of Gluteus minimus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień pośladkowy mały",
+  "pos": [
+   -95.92,
+   12.06,
+   930.96
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "semitendinosus_muscle_r",
+  "en": "origin of Semitendinosus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień półścięgnisty",
+  "pos": [
+   -50.36,
+   46.78,
+   804.14
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "tensor_fasciae_latae_r",
+  "en": "origin of Tensor fasciae latae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień napinacz powięzi szerokiej",
+  "pos": [
+   -123.05,
+   -37.32,
+   948.94
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sartorius_muscle_r",
+  "en": "origin of Sartorius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień krawiecki",
+  "pos": [
+   -119.49,
+   -49.08,
+   935.09
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_r",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 5): Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   -89.7,
+   -54.34,
+   911.89
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_triceps_brachii_l",
+  "en": "insertion of Triceps brachii muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień trójgłowy ramienia",
+  "pos": [
+   212.17,
+   54.84,
+   1102.52
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "anconeus_muscle_l",
+  "en": "insertion of Anconeus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień łokciowy",
+  "pos": [
+   222.37,
+   50.2,
+   1055.19
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "brachialis_muscle_l",
+  "en": "insertion of Brachialis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień ramienny",
+  "pos": [
+   222.75,
+   30.91,
+   1062.23
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "ulnar_head_of_flexor_carpi_ulnaris_l",
+  "en": "origin of Extensor carpi ulnaris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik łokciowy nadgarstka",
+  "pos": [
+   229.41,
+   21.76,
+   970.8
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_indicis_l",
+  "en": "origin of Extensor indicis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik wskaziciela",
+  "pos": [
+   245.2,
+   -2.84,
+   896.3
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_pollicis_longus_l",
+  "en": "origin of Extensor pollicis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik długi kciuka",
+  "pos": [
+   238.62,
+   10.89,
+   944.92
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_pollicis_longus_l",
+  "en": "origin of Flexor pollicis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz długi kciuka",
+  "pos": [
+   226.14,
+   30.77,
+   1052.52
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "supinator_l",
+  "en": "origin of Supinator",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień odwracacz",
+  "pos": [
+   233.5,
+   37.9,
+   1052.56
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "ulnar_head_of_flexor_carpi_ulnaris_l",
+  "en": "origin of Ulnar head of flexor carpi ulnaris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz nadgarstka łokciowy — głowa łokciowa",
+  "pos": [
+   233.32,
+   16.69,
+   990.69
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "deep_head_of_pronator_teres_l",
+  "en": "insertion of Pronator teres",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień nawrotny obły",
+  "pos": [
+   262.07,
+   16.4,
+   991.99
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_pollicis_longus_l",
+  "en": "origin of Abductor pollicis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień odwodziciel długi kciuka",
+  "pos": [
+   244.38,
+   18.7,
+   985.93
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_biceps_brachii_l",
+  "en": "insertion of Biceps brachii muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień dwugłowy ramienia",
+  "pos": [
+   234.08,
+   19.3,
+   1062.75
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "brachioradialis_muscle_l",
+  "en": "insertion of Brachioradialis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień ramienno-promieniowy",
+  "pos": [
+   286.57,
+   -18.48,
+   866.59
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_pollicis_brevis_l",
+  "en": "origin of Extensor pollicis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik krótki kciuka",
+  "pos": [
+   255.71,
+   2.56,
+   919.84
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "radial_head_of_flexor_digitorum_superficialis_l",
+  "en": "origin of Flexor digitorum superficialis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz palców powierzchowny",
+  "pos": [
+   244.83,
+   14.5,
+   1031.63
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_pollicis_longus_l",
+  "en": "origin of Flexor pollicis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień zginacz długi kciuka",
+  "pos": [
+   259.17,
+   7.41,
+   962.84
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "supinator_l",
+  "en": "insertion of Supinator",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień odwracacz",
+  "pos": [
+   251.12,
+   21.96,
+   1041.16
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "ulnar_head_of_extensor_carpi_ulnaris_l",
+  "en": "insertion of Extensor carpi ulnaris",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik łokciowy nadgarstka",
+  "pos": [
+   242.61,
+   -15.78,
+   846.35
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "deep_head_of_flexor_pollicis_brevis_l",
+  "en": "origin of Deep head of flexor pollicis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz krótki kciuka — część głęboka",
+  "pos": [
+   280.55,
+   -32.34,
+   851.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_digiti_minimi_of_hand_l",
+  "en": "origin of Abductor digiti minimi of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień odwodziciel palca małego (ręki, lewy)",
+  "pos": [
+   241.73,
+   -34.08,
+   842.06
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "humeral_head_of_flexor_carpi_ulnaris_l",
+  "en": "insertion of Flexor carpi ulnaris",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz nadgarstka łokciowy",
+  "pos": [
+   243.19,
+   -32.9,
+   849.62
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digiti_minimi_of_hand_l",
+  "en": "origin of Flexor digiti minimi of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz krótki palca małego ręki",
+  "pos": [
+   251.36,
+   -31.57,
+   841.27
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "opponens_digiti_minimi_muscle_of_hand_l",
+  "en": "origin of Opponens digiti minimi muscle of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przeciwstawiacz palca małego (ręki, lewy)",
+  "pos": [
+   252.51,
+   -32.38,
+   839.23
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "opponens_pollicis_muscle_l",
+  "en": "insertion of Adductor pollicis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień przywodziciel kciuka",
+  "pos": [
+   266.67,
+   -25.76,
+   840.87
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "dorsal_interossei_muscles_of_hand_l",
+  "en": "origin of Dorsal interossei muscles of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięśnie międzykostne grzbietowe ręki",
+  "pos": [
+   245.22,
+   -26.86,
+   802.88
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "dorsal_interossei_muscles_of_hand_l",
+  "en": "origin of Dorsal interossei muscles of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięśnie międzykostne grzbietowe ręki",
+  "pos": [
+   255.85,
+   -24.54,
+   797.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "dorsal_interossei_muscles_of_hand_l",
+  "en": "origin of Dorsal interossei muscles of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięśnie międzykostne grzbietowe ręki",
+  "pos": [
+   271.18,
+   -22.6,
+   796.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_carpi_radialis_brevis_l",
+  "en": "insertion of Extensor carpi radialis brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik promieniowy krótki nadgarska",
+  "pos": [
+   272.03,
+   -12.69,
+   829.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "dorsal_interossei_muscles_of_hand_l",
+  "en": "origin of Dorsal interossei muscles of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Mięśnie międzykostne grzbietowe ręki",
+  "pos": [
+   288.66,
+   -24.43,
+   802.14
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_carpi_radialis_longus_l",
+  "en": "insertion of Extensor carpi radialis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik promieniowy długi nadgarstka",
+  "pos": [
+   284.76,
+   -17.99,
+   831.66
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "deep_head_of_flexor_pollicis_brevis_l",
+  "en": "origin of Deep head of flexor pollicis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień zginacz krótki kciuka — część głęboka",
+  "pos": [
+   305.44,
+   -40.65,
+   832.93
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "dorsal_interossei_muscles_of_hand_l",
+  "en": "origin of Dorsal interossei muscles of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Mięśnie międzykostne grzbietowe ręki",
+  "pos": [
+   292.31,
+   -26.68,
+   832.97
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_pollicis_longus_l",
+  "en": "insertion of Abductor pollicis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień odwodziciel długi kciuka",
+  "pos": [
+   296.95,
+   -28.36,
+   841.66
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_l",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik palców",
+  "pos": [
+   236.45,
+   -39.98,
+   773.71
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_digiti_minimi_of_hand_l",
+  "en": "insertion of Abductor digiti minimi of hand",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień odwodziciel palca małego (ręki, lewy)",
+  "pos": [
+   230.66,
+   -42.75,
+   780.08
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digiti_minimi_of_hand_l",
+  "en": "insertion of Flexor digiti minimi of hand",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz krótki palca małego ręki",
+  "pos": [
+   233.64,
+   -46.32,
+   781.9
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_l",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień prostownik palców",
+  "pos": [
+   254.0,
+   -37.03,
+   766.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_l",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień prostownik palców",
+  "pos": [
+   275.22,
+   -36.48,
+   762.04
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_l",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień prostownik palców",
+  "pos": [
+   297.45,
+   -35.27,
+   760.45
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_pollicis_brevis_l",
+  "en": "insertion of Extensor pollicis brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik krótki kciuka",
+  "pos": [
+   320.91,
+   -46.65,
+   807.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_head_of_adductor_pollicis_l",
+  "en": "insertion of Adductor pollicis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień przywodziciel kciuka",
+  "pos": [
+   308.78,
+   -45.76,
+   807.39
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_profundus_l",
+  "en": "insertion of Flexor digitorum superficialis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz palców powierzchowny",
+  "pos": [
+   233.04,
+   -62.83,
+   748.29
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_l",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 4): Mięsień prostownik palców",
+  "pos": [
+   231.85,
+   -57.77,
+   746.05
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "synovial_sheaths_of_digits_of_hand_l",
+  "en": "insertion of Flexor digitorum superficialis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zginacz palców powierzchowny",
+  "pos": [
+   257.5,
+   -65.15,
+   736.21
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_l",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 5): Mięsień prostownik palców",
+  "pos": [
+   256.07,
+   -60.29,
+   731.58
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "synovial_sheaths_of_digits_of_hand_l",
+  "en": "insertion of Flexor digitorum superficialis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zginacz palców powierzchowny",
+  "pos": [
+   282.07,
+   -67.31,
+   728.83
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_l",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 6): Mięsień prostownik palców",
+  "pos": [
+   281.27,
+   -60.21,
+   726.67
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "synovial_sheaths_of_digits_of_hand_l",
+  "en": "insertion of Flexor digitorum superficialis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień zginacz palców powierzchowny",
+  "pos": [
+   310.48,
+   -60.12,
+   732.3
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_l",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 7): Mięsień prostownik palców",
+  "pos": [
+   313.06,
+   -55.36,
+   729.71
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_profundus_l",
+  "en": "insertion of Flexor digitorum profundus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz palców głęboki",
+  "pos": [
+   230.22,
+   -74.0,
+   735.18
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_profundus_l",
+  "en": "insertion of Flexor digitorum profundus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zginacz palców głęboki",
+  "pos": [
+   257.76,
+   -84.75,
+   719.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_profundus_l",
+  "en": "insertion of Flexor digitorum profundus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zginacz palców głęboki",
+  "pos": [
+   285.22,
+   -83.46,
+   712.18
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_indicis_l",
+  "en": "insertion of Extensor indicis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik wskaziciela",
+  "pos": [
+   316.46,
+   -72.44,
+   715.79
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_profundus_l",
+  "en": "insertion of Flexor digitorum profundus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień zginacz palców głęboki",
+  "pos": [
+   315.28,
+   -74.65,
+   721.5
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_pollicis_longus_l",
+  "en": "insertion of Extensor pollicis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik długi kciuka",
+  "pos": [
+   328.84,
+   -61.25,
+   783.36
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_pollicis_longus_l",
+  "en": "insertion of Flexor pollicis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz długi kciuka",
+  "pos": [
+   322.68,
+   -64.32,
+   785.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_biceps_brachii_l",
+  "en": "insertion of Pectoralis major muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień piersiowy większy",
+  "pos": [
+   188.43,
+   15.71,
+   1327.48
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "superficial_head_of_pronator_teres_l",
+  "en": "origin of Pronator teres",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień nawrotny obły",
+  "pos": [
+   197.37,
+   32.67,
+   1119.18
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "anconeus_muscle_l",
+  "en": "origin of Anconeus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień łokciowy",
+  "pos": [
+   236.89,
+   49.76,
+   1109.71
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "brachialis_muscle_l",
+  "en": "origin of Brachialis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień ramienny",
+  "pos": [
+   208.93,
+   31.81,
+   1202.6
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "brachioradialis_muscle_l",
+  "en": "origin of Brachioradialis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień ramienno-promieniowy",
+  "pos": [
+   220.66,
+   45.43,
+   1185.9
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "supinator_l",
+  "en": "origin of Common extensor tendon",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Ścięgno wspólne prostowników",
+  "pos": [
+   247.97,
+   43.61,
+   1111.87
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "humero_ulnar_head_of_flexor_digitorum_superficialis_l",
+  "en": "origin of Common flexor tendon",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Ścięgno wspólne zginaczy",
+  "pos": [
+   191.01,
+   30.88,
+   1106.08
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "acromial_part_of_deltoid_muscle_l",
+  "en": "insertion of Deltoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień naramienny",
+  "pos": [
+   207.24,
+   26.61,
+   1288.48
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_carpi_radialis_longus_l",
+  "en": "origin of Extensor carpi radialis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik promieniowy długi nadgarstka",
+  "pos": [
+   236.45,
+   48.16,
+   1141.38
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "infraspinatus_muscle_l",
+  "en": "insertion of Infraspinatus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień podgrzebieniowy",
+  "pos": [
+   190.79,
+   34.83,
+   1390.98
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_triceps_brachii_l",
+  "en": "origin of Lateral head of triceps brachii",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień trójgłowy ramienia — głowa boczna",
+  "pos": [
+   196.91,
+   40.0,
+   1298.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_head_of_triceps_brachii_l",
+  "en": "origin of Medial head of triceps brachii",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień trójgłowy ramienia — głowa przyśrodkowa",
+  "pos": [
+   204.97,
+   45.66,
+   1199.83
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "subscapularis_muscle_l",
+  "en": "insertion of Subscapularis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień podłopatkowy",
+  "pos": [
+   165.22,
+   4.34,
+   1383.27
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "supraspinatus_muscle_l",
+  "en": "insertion of Supraspinatus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień nadgrzebieniowy",
+  "pos": [
+   189.37,
+   18.38,
+   1396.87
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "teres_minor_muscle_l",
+  "en": "insertion of Teres minor muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień obły mniejszy",
+  "pos": [
+   192.26,
+   32.22,
+   1376.86
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_triceps_brachii_r",
+  "en": "insertion of Triceps brachii muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień trójgłowy ramienia",
+  "pos": [
+   -212.17,
+   54.84,
+   1102.52
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "anconeus_muscle_r",
+  "en": "insertion of Anconeus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień łokciowy",
+  "pos": [
+   -222.37,
+   50.2,
+   1055.19
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "brachialis_muscle_r",
+  "en": "insertion of Brachialis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień ramienny",
+  "pos": [
+   -222.75,
+   30.91,
+   1062.23
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "ulnar_head_of_flexor_carpi_ulnaris_r",
+  "en": "origin of Extensor carpi ulnaris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik łokciowy nadgarstka",
+  "pos": [
+   -229.41,
+   21.76,
+   970.8
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_indicis_r",
+  "en": "origin of Extensor indicis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik wskaziciela",
+  "pos": [
+   -245.2,
+   -2.84,
+   896.3
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_pollicis_longus_r",
+  "en": "origin of Extensor pollicis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik długi kciuka",
+  "pos": [
+   -238.62,
+   10.89,
+   944.92
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_pollicis_longus_r",
+  "en": "origin of Flexor pollicis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz długi kciuka",
+  "pos": [
+   -226.14,
+   30.77,
+   1052.52
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pronator_quadratus_l",
+  "en": "origin of Pronator quadratus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień nawrotny czworoboczny",
+  "pos": [
+   -238.51,
+   -8.68,
+   900.35
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "supinator_r",
+  "en": "origin of Supinator",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień odwracacz",
+  "pos": [
+   -233.5,
+   37.9,
+   1052.56
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "ulnar_head_of_flexor_carpi_ulnaris_r",
+  "en": "origin of Ulnar head of flexor carpi ulnaris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz nadgarstka łokciowy — głowa łokciowa",
+  "pos": [
+   -233.32,
+   16.69,
+   990.69
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_pollicis_longus_r",
+  "en": "origin of Abductor pollicis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień odwodziciel długi kciuka",
+  "pos": [
+   -244.38,
+   18.7,
+   985.93
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_biceps_brachii_r",
+  "en": "insertion of Biceps brachii muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień dwugłowy ramienia",
+  "pos": [
+   -234.08,
+   19.3,
+   1062.75
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "brachioradialis_muscle_r",
+  "en": "insertion of Brachioradialis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień ramienno-promieniowy",
+  "pos": [
+   -286.57,
+   -18.48,
+   866.59
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_pollicis_brevis_r",
+  "en": "origin of Extensor pollicis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik krótki kciuka",
+  "pos": [
+   -255.71,
+   2.56,
+   919.84
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "radial_head_of_flexor_digitorum_superficialis_r",
+  "en": "origin of Flexor digitorum superficialis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz palców powierzchowny",
+  "pos": [
+   -244.83,
+   14.5,
+   1031.63
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_pollicis_longus_r",
+  "en": "origin of Flexor pollicis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień zginacz długi kciuka",
+  "pos": [
+   -259.17,
+   7.41,
+   962.84
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pronator_quadratus_l",
+  "en": "insertion of Pronator quadratus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień nawrotny czworoboczny",
+  "pos": [
+   -267.44,
+   -12.74,
+   890.47
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "deep_head_of_pronator_teres_r",
+  "en": "insertion of Pronator teres",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień nawrotny obły",
+  "pos": [
+   -262.07,
+   16.4,
+   991.99
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "supinator_r",
+  "en": "insertion of Supinator",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień odwracacz",
+  "pos": [
+   -251.12,
+   21.96,
+   1041.16
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "ulnar_head_of_extensor_carpi_ulnaris_r",
+  "en": "insertion of Extensor carpi ulnaris",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik łokciowy nadgarstka",
+  "pos": [
+   -242.61,
+   -15.78,
+   846.35
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "deep_head_of_flexor_pollicis_brevis_r",
+  "en": "origin of Deep head of flexor pollicis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz krótki kciuka — część głęboka",
+  "pos": [
+   -280.55,
+   -32.34,
+   851.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_digiti_minimi_of_hand_r",
+  "en": "origin of Abductor digiti minimi of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień odwodziciel palca małego (ręki, lewy)",
+  "pos": [
+   -241.73,
+   -34.08,
+   842.06
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "humeral_head_of_flexor_carpi_ulnaris_r",
+  "en": "insertion of Flexor carpi ulnaris",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz nadgarstka łokciowy",
+  "pos": [
+   -243.19,
+   -32.9,
+   849.62
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digiti_minimi_of_hand_r",
+  "en": "origin of Flexor digiti minimi of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zginacz krótki palca małego ręki",
+  "pos": [
+   -251.36,
+   -31.57,
+   841.27
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "opponens_digiti_minimi_muscle_of_hand_r",
+  "en": "origin of Opponens digiti minimi muscle of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień przeciwstawiacz palca małego (ręki, lewy)",
+  "pos": [
+   -252.51,
+   -32.38,
+   839.23
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "opponens_pollicis_muscle_r",
+  "en": "insertion of Adductor pollicis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień przywodziciel kciuka",
+  "pos": [
+   -266.67,
+   -25.76,
+   840.87
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "dorsal_interossei_muscles_of_hand_r",
+  "en": "origin of Dorsal interossei muscles of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięśnie międzykostne grzbietowe ręki",
+  "pos": [
+   -245.22,
+   -26.86,
+   802.88
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "dorsal_interossei_muscles_of_hand_r",
+  "en": "origin of Dorsal interossei muscles of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięśnie międzykostne grzbietowe ręki",
+  "pos": [
+   -255.85,
+   -24.54,
+   797.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "dorsal_interossei_muscles_of_hand_r",
+  "en": "origin of Dorsal interossei muscles of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięśnie międzykostne grzbietowe ręki",
+  "pos": [
+   -271.18,
+   -22.6,
+   796.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_carpi_radialis_brevis_r",
+  "en": "insertion of Extensor carpi radialis brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik promieniowy krótki nadgarska",
+  "pos": [
+   -272.03,
+   -12.69,
+   829.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "dorsal_interossei_muscles_of_hand_r",
+  "en": "origin of Dorsal interossei muscles of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Mięśnie międzykostne grzbietowe ręki",
+  "pos": [
+   -288.66,
+   -24.43,
+   802.14
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_carpi_radialis_longus_r",
+  "en": "insertion of Extensor carpi radialis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik promieniowy długi nadgarstka",
+  "pos": [
+   -284.76,
+   -17.99,
+   831.66
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "deep_head_of_flexor_pollicis_brevis_r",
+  "en": "origin of Deep head of flexor pollicis brevis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień zginacz krótki kciuka — część głęboka",
+  "pos": [
+   -305.44,
+   -40.65,
+   832.93
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "dorsal_interossei_muscles_of_hand_r",
+  "en": "origin of Dorsal interossei muscles of hand",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Mięśnie międzykostne grzbietowe ręki",
+  "pos": [
+   -292.31,
+   -26.68,
+   832.97
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_pollicis_longus_r",
+  "en": "insertion of Abductor pollicis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień odwodziciel długi kciuka",
+  "pos": [
+   -296.95,
+   -28.36,
+   841.66
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_r",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik palców",
+  "pos": [
+   -236.45,
+   -39.98,
+   773.71
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abductor_digiti_minimi_of_hand_r",
+  "en": "insertion of Abductor digiti minimi of hand",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień odwodziciel palca małego (ręki, lewy)",
+  "pos": [
+   -230.66,
+   -42.75,
+   780.08
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digiti_minimi_of_hand_r",
+  "en": "insertion of Flexor digiti minimi of hand",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz krótki palca małego ręki",
+  "pos": [
+   -233.64,
+   -46.32,
+   781.9
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_r",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień prostownik palców",
+  "pos": [
+   -254.0,
+   -37.03,
+   766.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_r",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień prostownik palców",
+  "pos": [
+   -275.22,
+   -36.48,
+   762.04
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_r",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień prostownik palców",
+  "pos": [
+   -297.45,
+   -35.27,
+   760.45
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_pollicis_brevis_r",
+  "en": "insertion of Extensor pollicis brevis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik krótki kciuka",
+  "pos": [
+   -320.91,
+   -46.65,
+   807.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_head_of_adductor_pollicis_r",
+  "en": "insertion of Adductor pollicis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień przywodziciel kciuka",
+  "pos": [
+   -308.78,
+   -45.76,
+   807.39
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_profundus_r",
+  "en": "insertion of Flexor digitorum superficialis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz palców powierzchowny",
+  "pos": [
+   -233.04,
+   -62.83,
+   748.29
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_r",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 4): Mięsień prostownik palców",
+  "pos": [
+   -231.85,
+   -57.77,
+   746.05
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "synovial_sheaths_of_digits_of_hand_r",
+  "en": "insertion of Flexor digitorum superficialis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zginacz palców powierzchowny",
+  "pos": [
+   -257.5,
+   -65.15,
+   736.21
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_r",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 5): Mięsień prostownik palców",
+  "pos": [
+   -256.07,
+   -60.29,
+   731.58
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "synovial_sheaths_of_digits_of_hand_r",
+  "en": "insertion of Flexor digitorum superficialis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zginacz palców powierzchowny",
+  "pos": [
+   -282.07,
+   -67.31,
+   728.83
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_r",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 6): Mięsień prostownik palców",
+  "pos": [
+   -281.27,
+   -60.21,
+   726.67
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "synovial_sheaths_of_digits_of_hand_r",
+  "en": "insertion of Flexor digitorum superficialis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień zginacz palców powierzchowny",
+  "pos": [
+   -310.48,
+   -60.12,
+   732.3
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_digitorum_r",
+  "en": "insertion of Extensor digitorum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 7): Mięsień prostownik palców",
+  "pos": [
+   -313.06,
+   -55.36,
+   729.71
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_profundus_r",
+  "en": "insertion of Flexor digitorum profundus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz palców głęboki",
+  "pos": [
+   -230.22,
+   -74.0,
+   735.18
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_profundus_r",
+  "en": "insertion of Flexor digitorum profundus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zginacz palców głęboki",
+  "pos": [
+   -257.76,
+   -84.75,
+   719.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_profundus_r",
+  "en": "insertion of Flexor digitorum profundus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zginacz palców głęboki",
+  "pos": [
+   -285.22,
+   -83.46,
+   712.18
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_indicis_r",
+  "en": "insertion of Extensor indicis",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik wskaziciela",
+  "pos": [
+   -316.46,
+   -72.44,
+   715.79
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_digitorum_profundus_r",
+  "en": "insertion of Flexor digitorum profundus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień zginacz palców głęboki",
+  "pos": [
+   -315.28,
+   -74.65,
+   721.5
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_pollicis_longus_r",
+  "en": "insertion of Extensor pollicis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prostownik długi kciuka",
+  "pos": [
+   -328.84,
+   -61.25,
+   783.36
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "flexor_pollicis_longus_r",
+  "en": "insertion of Flexor pollicis longus",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zginacz długi kciuka",
+  "pos": [
+   -322.68,
+   -64.32,
+   785.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "anconeus_muscle_r",
+  "en": "origin of Anconeus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień łokciowy",
+  "pos": [
+   -236.89,
+   49.76,
+   1109.71
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "brachialis_muscle_r",
+  "en": "origin of Brachialis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień ramienny",
+  "pos": [
+   -208.93,
+   31.81,
+   1202.6
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "brachioradialis_muscle_r",
+  "en": "origin of Brachioradialis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień ramienno-promieniowy",
+  "pos": [
+   -220.66,
+   45.43,
+   1185.9
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "supinator_r",
+  "en": "origin of Common extensor tendon",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Ścięgno wspólne prostowników",
+  "pos": [
+   -247.97,
+   43.61,
+   1111.87
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "humero_ulnar_head_of_flexor_digitorum_superficialis_r",
+  "en": "origin of Common flexor tendon",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Ścięgno wspólne zginaczy",
+  "pos": [
+   -191.01,
+   30.88,
+   1106.08
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "acromial_part_of_deltoid_muscle_r",
+  "en": "insertion of Deltoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień naramienny",
+  "pos": [
+   -207.24,
+   26.61,
+   1288.48
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "extensor_carpi_radialis_longus_r",
+  "en": "origin of Extensor carpi radialis longus",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prostownik promieniowy długi nadgarstka",
+  "pos": [
+   -236.45,
+   48.16,
+   1141.38
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "infraspinatus_muscle_r",
+  "en": "insertion of Infraspinatus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień podgrzebieniowy",
+  "pos": [
+   -190.79,
+   34.83,
+   1390.98
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "lateral_head_of_triceps_brachii_r",
+  "en": "origin of Lateral head of triceps brachii",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień trójgłowy ramienia — głowa boczna",
+  "pos": [
+   -196.91,
+   40.0,
+   1298.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_head_of_triceps_brachii_r",
+  "en": "origin of Medial head of triceps brachii",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień trójgłowy ramienia — głowa przyśrodkowa",
+  "pos": [
+   -204.97,
+   45.66,
+   1199.83
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_biceps_brachii_r",
+  "en": "insertion of Pectoralis major muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień piersiowy większy",
+  "pos": [
+   -188.43,
+   15.71,
+   1327.48
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "superficial_head_of_pronator_teres_r",
+  "en": "origin of Pronator teres",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień nawrotny obły",
+  "pos": [
+   -197.37,
+   32.67,
+   1119.18
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "subscapularis_muscle_r",
+  "en": "insertion of Subscapularis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień podłopatkowy",
+  "pos": [
+   -165.22,
+   4.34,
+   1383.27
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "supraspinatus_muscle_r",
+  "en": "insertion of Supraspinatus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień nadgrzebieniowy",
+  "pos": [
+   -189.37,
+   18.38,
+   1396.87
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "teres_minor_muscle_r",
+  "en": "insertion of Teres minor muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień obły mniejszy",
+  "pos": [
+   -192.26,
+   32.22,
+   1376.86
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_l",
+  "en": "origin of Serratus anterior muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zębaty przedni",
+  "pos": [
+   72.35,
+   100.1,
+   1327.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rhomboid_minor_muscle_l",
+  "en": "insertion of Rhomboid minor muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień równoległoboczny mniejszy",
+  "pos": [
+   62.38,
+   98.91,
+   1374.1
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rhomboid_major_muscle_l",
+  "en": "insertion of Rhomboid major muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień równoległoboczny większy",
+  "pos": [
+   70.53,
+   108.05,
+   1306.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectoralis_minor_muscle_l",
+  "en": "origin of Pectoralis minor muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień piersiowy mniejszy",
+  "pos": [
+   128.45,
+   5.47,
+   1393.6
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scapular_spinal_part_of_deltoid_muscle_l",
+  "en": "origin of Scapular spinal part of deltoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Część mięsień naramienny",
+  "pos": [
+   135.23,
+   80.98,
+   1392.61
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "latissimus_dorsi_muscle_l",
+  "en": "insertion of Latissimus dorsi muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień najszerszy grzbietu",
+  "pos": [
+   92.9,
+   106.37,
+   1262.8
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_scapulae_l",
+  "en": "insertion of Levator scapulae",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień dźwigacz łopatki",
+  "pos": [
+   74.55,
+   84.18,
+   1401.33
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "descending_part_of_trapezius_muscle_l",
+  "en": "origin of Descending part of trapezius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień czworoboczny — część zstępująca",
+  "pos": [
+   109.92,
+   86.29,
+   1389.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_part_of_trapezius_muscle_l",
+  "en": "origin of Transverse part of trapezius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień czworoboczny — część poprzeczna",
+  "pos": [
+   160.82,
+   52.36,
+   1412.53
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "teres_major_muscle_l",
+  "en": "origin of Teres major muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obły większy",
+  "pos": [
+   108.58,
+   92.73,
+   1272.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "teres_minor_muscle_l",
+  "en": "origin of Teres minor muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obły mniejszy",
+  "pos": [
+   120.64,
+   75.75,
+   1323.93
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "supraspinatus_muscle_l",
+  "en": "origin of Supraspinatus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień nadgrzebieniowy",
+  "pos": [
+   100.43,
+   77.51,
+   1385.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "infraspinatus_muscle_l",
+  "en": "origin of Infraspinatus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podgrzebieniowy",
+  "pos": [
+   95.54,
+   89.48,
+   1345.17
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "acromial_part_of_deltoid_muscle_l",
+  "en": "origin of Acromial part of deltoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień naramienny — część barkowa",
+  "pos": [
+   170.47,
+   38.99,
+   1411.78
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "coracobrachialis_muscle_l",
+  "en": "origin of Coracobrachialis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień kruczo-ramienny",
+  "pos": [
+   139.12,
+   4.27,
+   1389.12
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_triceps_brachii_l",
+  "en": "origin of Long head of triceps brachii",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień trójgłowy ramienia — głowa długa",
+  "pos": [
+   152.01,
+   42.71,
+   1359.37
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_biceps_brachii_l",
+  "en": "origin of Long head of biceps brachii",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dwugłowy ramienia — głowa długa",
+  "pos": [
+   144.15,
+   36.72,
+   1395.77
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "subscapularis_muscle_l",
+  "en": "origin of Subscapularis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podłopatkowy",
+  "pos": [
+   97.71,
+   82.85,
+   1337.66
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "omohyoid_muscle_l",
+  "en": "origin of Omohyoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień łopatkowo-gnykowy",
+  "pos": [
+   99.87,
+   56.61,
+   1394.26
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "clavicular_head_of_pectoralis_major_muscle_l",
+  "en": "origin of Pectoralis major muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień piersiowy większy",
+  "pos": [
+   59.41,
+   -34.94,
+   1402.77
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocleidomastoid_muscle_l",
+  "en": "origin of Sternocleidomastoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień mostkowo-obojczykowo-sutkowy",
+  "pos": [
+   40.01,
+   -36.68,
+   1415.15
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "ascending_part_of_trapezius_muscle_l",
+  "en": "origin of Ascending part of trapezius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień czworoboczny — część wstępująca",
+  "pos": [
+   105.67,
+   29.2,
+   1420.86
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "subclavius_muscle_l",
+  "en": "origin of Subclavius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podobojczykowy",
+  "pos": [
+   83.73,
+   -8.35,
+   1406.55
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "clavicular_part_of_deltoid_muscle_l",
+  "en": "origin of Clavicular part of deltoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień naramienny — część obojczykowa",
+  "pos": [
+   119.81,
+   18.4,
+   1415.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternohyoid_muscle_l",
+  "en": "origin of Sternohyoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień mostkowo-gnykowy",
+  "pos": [
+   16.76,
+   -28.39,
+   1401.56
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "latissimus_dorsi_muscle_r",
+  "en": "insertion of Latissimus dorsi muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień najszerszy grzbietu",
+  "pos": [
+   -92.9,
+   106.37,
+   1262.8
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_r",
+  "en": "origin of Serratus anterior muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień zębaty przedni",
+  "pos": [
+   -72.35,
+   100.1,
+   1327.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_scapulae_r",
+  "en": "insertion of Levator scapulae",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień dźwigacz łopatki",
+  "pos": [
+   -74.55,
+   84.18,
+   1401.33
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rhomboid_minor_muscle_r",
+  "en": "insertion of Rhomboid minor muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień równoległoboczny mniejszy",
+  "pos": [
+   -62.38,
+   98.91,
+   1374.1
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rhomboid_major_muscle_r",
+  "en": "insertion of Rhomboid major muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień równoległoboczny większy",
+  "pos": [
+   -70.53,
+   108.05,
+   1306.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "descending_part_of_trapezius_muscle_r",
+  "en": "origin of Descending part of trapezius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień czworoboczny — część zstępująca",
+  "pos": [
+   -109.92,
+   86.29,
+   1389.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transverse_part_of_trapezius_muscle_r",
+  "en": "origin of Transverse part of trapezius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień czworoboczny — część poprzeczna",
+  "pos": [
+   -160.82,
+   52.36,
+   1412.53
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectoralis_minor_muscle_r",
+  "en": "origin of Pectoralis minor muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień piersiowy mniejszy",
+  "pos": [
+   -128.45,
+   5.47,
+   1393.6
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "teres_major_muscle_r",
+  "en": "origin of Teres major muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obły większy",
+  "pos": [
+   -108.58,
+   92.73,
+   1272.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "teres_minor_muscle_r",
+  "en": "origin of Teres minor muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obły mniejszy",
+  "pos": [
+   -120.64,
+   75.75,
+   1323.93
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scapular_spinal_part_of_deltoid_muscle_r",
+  "en": "origin of Scapular spinal part of deltoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Część mięsień naramienny",
+  "pos": [
+   -135.23,
+   80.98,
+   1392.61
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "supraspinatus_muscle_r",
+  "en": "origin of Supraspinatus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień nadgrzebieniowy",
+  "pos": [
+   -100.43,
+   77.51,
+   1385.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "infraspinatus_muscle_r",
+  "en": "origin of Infraspinatus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podgrzebieniowy",
+  "pos": [
+   -95.54,
+   89.48,
+   1345.17
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "acromial_part_of_deltoid_muscle_r",
+  "en": "origin of Acromial part of deltoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień naramienny — część barkowa",
+  "pos": [
+   -170.47,
+   38.99,
+   1411.78
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "short_head_of_biceps_brachii_l",
+  "en": "origin of Short head of biceps brachii",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dwugłowy ramienia — głowa krótka",
+  "pos": [
+   -140.84,
+   5.39,
+   1394.47
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "coracobrachialis_muscle_r",
+  "en": "origin of Coracobrachialis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień kruczo-ramienny",
+  "pos": [
+   -139.12,
+   4.27,
+   1389.12
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_triceps_brachii_r",
+  "en": "origin of Long head of triceps brachii",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień trójgłowy ramienia — głowa długa",
+  "pos": [
+   -152.01,
+   42.71,
+   1359.37
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "long_head_of_biceps_brachii_r",
+  "en": "origin of Long head of biceps brachii",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dwugłowy ramienia — głowa długa",
+  "pos": [
+   -144.15,
+   36.72,
+   1395.77
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "subscapularis_muscle_r",
+  "en": "origin of Subscapularis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podłopatkowy",
+  "pos": [
+   -97.71,
+   82.85,
+   1337.66
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "omohyoid_muscle_r",
+  "en": "origin of Omohyoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień łopatkowo-gnykowy",
+  "pos": [
+   -99.87,
+   56.61,
+   1394.26
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "clavicular_head_of_pectoralis_major_muscle_r",
+  "en": "origin of Pectoralis major muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień piersiowy większy",
+  "pos": [
+   -59.41,
+   -34.94,
+   1402.77
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocleidomastoid_muscle_r",
+  "en": "origin of Sternocleidomastoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień mostkowo-obojczykowo-sutkowy",
+  "pos": [
+   -40.01,
+   -36.68,
+   1415.15
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "ascending_part_of_trapezius_muscle_r",
+  "en": "origin of Ascending part of trapezius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień czworoboczny — część wstępująca",
+  "pos": [
+   -105.67,
+   29.2,
+   1420.86
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "subclavius_muscle_r",
+  "en": "origin of Subclavius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podobojczykowy",
+  "pos": [
+   -83.73,
+   -8.35,
+   1406.55
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "clavicular_part_of_deltoid_muscle_r",
+  "en": "origin of Clavicular part of deltoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień naramienny — część obojczykowa",
+  "pos": [
+   -119.81,
+   18.4,
+   1415.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternohyoid_muscle_r",
+  "en": "origin of Sternohyoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień mostkowo-gnykowy",
+  "pos": [
+   -16.76,
+   -28.39,
+   1401.56
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "internal_abdominal_oblique_muscle_l",
+  "en": "origin of Internal abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień skośny wewnętrzny brzucha",
+  "pos": [
+   93.49,
+   -71.52,
+   1095.22
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "diaphragm",
+  "en": "origin of Diaphragm",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Przepona",
+  "pos": [
+   79.55,
+   -69.92,
+   1118.58
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abdominal_part_of_pectoralis_major_muscle_l",
+  "en": "origin of (Abdominal part of pectoralis major muscle)",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień piersiowy większy — część brzuszna",
+  "pos": [
+   70.34,
+   -106.01,
+   1183.77
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_abdominis_muscle_l",
+  "en": "insertion of Rectus abdominis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prosty brzucha",
+  "pos": [
+   6.16,
+   -89.53,
+   1041.42
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocostal_head_of_pectoralis_major_muscle_l",
+  "en": "insertion of Sternocostal head of pectoralis major muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień piersiowy większy — część mostkowo-żebrowa",
+  "pos": [
+   56.32,
+   -107.99,
+   1231.74
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "internal_abdominal_oblique_muscle_r",
+  "en": "origin of Internal abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień skośny wewnętrzny brzucha",
+  "pos": [
+   -93.49,
+   -71.52,
+   1095.22
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "abdominal_part_of_pectoralis_major_muscle_r",
+  "en": "origin of (Abdominal part of pectoralis major muscle)",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień piersiowy większy — część brzuszna",
+  "pos": [
+   -70.34,
+   -106.01,
+   1183.77
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_abdominis_muscle_r",
+  "en": "insertion of Rectus abdominis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prosty brzucha",
+  "pos": [
+   -6.16,
+   -89.53,
+   1041.42
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocostal_head_of_pectoralis_major_muscle_r",
+  "en": "insertion of Sternocostal head of pectoralis major muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień piersiowy większy — część mostkowo-żebrowa",
+  "pos": [
+   -56.32,
+   -107.99,
+   1231.74
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_abdominis_muscle_l",
+  "en": "origin of Rectus abdominis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty brzucha",
+  "pos": [
+   44.71,
+   -107.91,
+   1239.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_abdominis_muscle_r",
+  "en": "origin of Rectus abdominis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty brzucha",
+  "pos": [
+   -44.71,
+   -107.91,
+   1239.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transversus_thoracis_muscle_l",
+  "en": "origin of Transversus thoracis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień poprzeczny klatki piersiowej",
+  "pos": [
+   16.23,
+   -89.6,
+   1277.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocostal_head_of_pectoralis_major_muscle_l",
+  "en": "insertion of Sternocostal head of pectoralis major muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień piersiowy większy — część mostkowo-żebrowa",
+  "pos": [
+   13.6,
+   -98.13,
+   1301.98
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transversus_thoracis_muscle_r",
+  "en": "origin of Transversus thoracis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień poprzeczny klatki piersiowej",
+  "pos": [
+   -16.23,
+   -89.6,
+   1277.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocostal_head_of_pectoralis_major_muscle_r",
+  "en": "insertion of Sternocostal head of pectoralis major muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień piersiowy większy — część mostkowo-żebrowa",
+  "pos": [
+   -13.6,
+   -98.13,
+   1301.98
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transversus_thoracis_muscle_l",
+  "en": "origin of Transversus thoracis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień poprzeczny klatki piersiowej",
+  "pos": [
+   6.27,
+   -99.41,
+   1235.12
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "transversus_thoracis_muscle_r",
+  "en": "origin of Transversus thoracis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień poprzeczny klatki piersiowej",
+  "pos": [
+   -6.27,
+   -99.41,
+   1235.12
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocostal_head_of_pectoralis_major_muscle_l",
+  "en": "insertion of Sternocostal head of pectoralis major muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień piersiowy większy — część mostkowo-żebrowa",
+  "pos": [
+   20.06,
+   -64.09,
+   1372.68
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocleidomastoid_muscle_l",
+  "en": "origin of Sternocleidomastoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień mostkowo-obojczykowo-sutkowy",
+  "pos": [
+   11.27,
+   -56.63,
+   1392.37
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocostal_head_of_pectoralis_major_muscle_r",
+  "en": "insertion of Sternocostal head of pectoralis major muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień piersiowy większy — część mostkowo-żebrowa",
+  "pos": [
+   -20.06,
+   -64.09,
+   1372.68
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocleidomastoid_muscle_r",
+  "en": "origin of Sternocleidomastoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień mostkowo-obojczykowo-sutkowy",
+  "pos": [
+   -11.27,
+   -56.63,
+   1392.37
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 26): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   37.48,
+   57.96,
+   1132.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 10): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   42.64,
+   62.94,
+   1128.17
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "internal_abdominal_oblique_muscle_l",
+  "en": "origin of Internal abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skośny wewnętrzny brzucha",
+  "pos": [
+   81.97,
+   44.39,
+   1064.42
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "diaphragm",
+  "en": "origin of Diaphragm",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Przepona",
+  "pos": [
+   52.7,
+   47.61,
+   1117.52
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 4): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   44.06,
+   75.5,
+   1161.87
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 9): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   56.48,
+   77.89,
+   1158.9
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "internal_abdominal_oblique_muscle_l",
+  "en": "origin of Internal abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Mięsień skośny wewnętrzny brzucha",
+  "pos": [
+   112.1,
+   15.88,
+   1070.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "diaphragm",
+  "en": "origin of Diaphragm",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 5): Przepona",
+  "pos": [
+   112.01,
+   3.48,
+   1069.13
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 26): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -37.48,
+   57.96,
+   1132.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 10): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -42.64,
+   62.94,
+   1128.17
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_posterior_inferior_muscle_l",
+  "en": "insertion of Serratus posterior inferior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień zębaty tylny dolny",
+  "pos": [
+   -71.83,
+   61.58,
+   1090.88
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "internal_abdominal_oblique_muscle_r",
+  "en": "origin of Internal abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skośny wewnętrzny brzucha",
+  "pos": [
+   -81.97,
+   44.39,
+   1064.42
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 4): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -44.06,
+   75.5,
+   1161.87
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 9): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -56.48,
+   77.89,
+   1158.9
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_posterior_inferior_muscle_l",
+  "en": "insertion of Serratus posterior inferior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zębaty tylny dolny",
+  "pos": [
+   -87.58,
+   63.66,
+   1120.71
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "internal_abdominal_oblique_muscle_r",
+  "en": "origin of Internal abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Mięsień skośny wewnętrzny brzucha",
+  "pos": [
+   -112.1,
+   15.88,
+   1070.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_l",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 7): Mięsień zębaty przedni",
+  "pos": [
+   133.9,
+   -0.7,
+   1185.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 10): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   61.12,
+   92.94,
+   1253.53
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_l",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   133.51,
+   -1.33,
+   1176.55
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 6): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   66.02,
+   94.23,
+   1256.36
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 6): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   54.34,
+   81.15,
+   1189.09
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 8): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   62.75,
+   84.49,
+   1189.05
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "internal_abdominal_oblique_muscle_l",
+  "en": "origin of Internal abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięsień skośny wewnętrzny brzucha",
+  "pos": [
+   123.04,
+   -11.45,
+   1076.67
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 8): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   58.44,
+   90.26,
+   1222.12
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 7): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   59.77,
+   90.4,
+   1228.35
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 6): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -54.34,
+   81.15,
+   1189.09
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 8): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -62.75,
+   84.49,
+   1189.05
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "internal_abdominal_oblique_muscle_r",
+  "en": "origin of Internal abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięsień skośny wewnętrzny brzucha",
+  "pos": [
+   -123.04,
+   -11.45,
+   1076.67
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_posterior_inferior_muscle_l",
+  "en": "insertion of Serratus posterior inferior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zębaty tylny dolny",
+  "pos": [
+   -96.48,
+   68.65,
+   1151.76
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_l",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 8): Mięsień zębaty przedni",
+  "pos": [
+   -127.39,
+   29.37,
+   1165.86
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 8): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -58.44,
+   90.26,
+   1222.12
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 7): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -59.77,
+   90.4,
+   1228.35
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_posterior_inferior_muscle_l",
+  "en": "insertion of Serratus posterior inferior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zębaty tylny dolny",
+  "pos": [
+   -103.27,
+   73.66,
+   1190.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_r",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 7): Mięsień zębaty przedni",
+  "pos": [
+   -133.9,
+   -0.7,
+   1185.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 10): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -61.12,
+   92.94,
+   1253.53
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_r",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   -133.51,
+   -1.33,
+   1176.55
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 6): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -66.02,
+   94.23,
+   1256.36
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_r",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zębaty przedni",
+  "pos": [
+   111.12,
+   -0.88,
+   1359.18
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectoralis_minor_muscle_l",
+  "en": "insertion of Pectoralis minor muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień piersiowy mniejszy",
+  "pos": [
+   92.04,
+   -39.98,
+   1338.19
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 20): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   53.27,
+   60.71,
+   1408.1
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   55.21,
+   58.97,
+   1410.35
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_l",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 5): Mięsień zębaty przedni",
+  "pos": [
+   135.57,
+   -24.62,
+   1249.69
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 14): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   67.03,
+   95.61,
+   1319.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 4): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   60.1,
+   91.74,
+   1326.78
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_l",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   132.9,
+   -37.03,
+   1237.96
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_l",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 6): Mięsień zębaty przedni",
+  "pos": [
+   139.97,
+   -13.62,
+   1221.64
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 12): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   66.21,
+   94.04,
+   1284.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 5): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   66.47,
+   93.37,
+   1288.66
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_l",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   139.88,
+   -19.35,
+   1208.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 22): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   51.82,
+   43.69,
+   1428.79
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięśnie dźwigacze żeber długie",
+  "pos": [
+   51.29,
+   41.85,
+   1430.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_l",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień zębaty przedni",
+  "pos": [
+   123.6,
+   -8.38,
+   1325.81
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectoralis_minor_muscle_l",
+  "en": "insertion of Pectoralis minor muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień piersiowy mniejszy",
+  "pos": [
+   106.67,
+   -53.56,
+   1304.45
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 18): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   57.78,
+   74.47,
+   1383.95
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   56.0,
+   72.17,
+   1388.2
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_medius_muscle_l",
+  "en": "origin of Scalenus medius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień pochyły środkowy",
+  "pos": [
+   50.98,
+   7.48,
+   1425.1
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_anterior_muscle_l",
+  "en": "origin of Scalenus anterior muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień pochyły przedni",
+  "pos": [
+   51.07,
+   -3.84,
+   1415.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_l",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zębaty przedni",
+  "pos": [
+   68.52,
+   -3.97,
+   1411.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 24): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   44.2,
+   30.07,
+   1439.99
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_l",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 4): Mięsień zębaty przedni",
+  "pos": [
+   126.59,
+   -34.34,
+   1283.04
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectoralis_minor_muscle_l",
+  "en": "insertion of Pectoralis minor muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień piersiowy mniejszy",
+  "pos": [
+   112.71,
+   -65.14,
+   1270.22
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 16): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   63.1,
+   82.53,
+   1351.2
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_l",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   60.61,
+   80.69,
+   1355.13
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_l",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   120.84,
+   -49.48,
+   1267.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_l",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zębaty przedni",
+  "pos": [
+   -111.12,
+   -0.88,
+   1359.18
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_posterior_superior_muscle_l",
+  "en": "insertion of Serratus posterior superior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zębaty tylny górny",
+  "pos": [
+   -84.13,
+   53.6,
+   1400.97
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 20): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -53.27,
+   60.71,
+   1408.1
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -55.21,
+   58.97,
+   1410.35
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectoralis_minor_muscle_r",
+  "en": "insertion of Pectoralis minor muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień piersiowy mniejszy",
+  "pos": [
+   -92.04,
+   -39.98,
+   1338.19
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_r",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 5): Mięsień zębaty przedni",
+  "pos": [
+   -135.57,
+   -24.62,
+   1249.69
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 14): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -67.03,
+   95.61,
+   1319.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 4): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -60.1,
+   91.74,
+   1326.78
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_r",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   -132.9,
+   -37.03,
+   1237.96
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_r",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 6): Mięsień zębaty przedni",
+  "pos": [
+   -139.97,
+   -13.62,
+   1221.64
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 12): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -66.21,
+   94.04,
+   1284.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 5): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -66.47,
+   93.37,
+   1288.66
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_r",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   -139.88,
+   -19.35,
+   1208.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_l",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień zębaty przedni",
+  "pos": [
+   -98.33,
+   4.61,
+   1391.71
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 22): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -51.82,
+   43.69,
+   1428.79
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -51.29,
+   41.85,
+   1430.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_posterior_superior_muscle_l",
+  "en": "insertion of Serratus posterior superior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zębaty tylny górny",
+  "pos": [
+   -71.5,
+   34.67,
+   1422.69
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_r",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień zębaty przedni",
+  "pos": [
+   -123.6,
+   -8.38,
+   1325.81
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_posterior_superior_muscle_l",
+  "en": "insertion of Serratus posterior superior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień zębaty tylny górny",
+  "pos": [
+   -92.49,
+   65.18,
+   1370.67
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 18): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -57.78,
+   74.47,
+   1383.95
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -56.0,
+   72.17,
+   1388.2
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectoralis_minor_muscle_r",
+  "en": "insertion of Pectoralis minor muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień piersiowy mniejszy",
+  "pos": [
+   -106.67,
+   -53.56,
+   1304.45
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_r",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień zębaty przedni",
+  "pos": [
+   -68.52,
+   -3.97,
+   1411.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 24): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -44.2,
+   30.07,
+   1439.99
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_medius_muscle_r",
+  "en": "origin of Scalenus medius muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień pochyły środkowy",
+  "pos": [
+   -50.98,
+   7.48,
+   1425.1
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_anterior_muscle_r",
+  "en": "origin of Scalenus anterior muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień pochyły przedni",
+  "pos": [
+   -51.07,
+   -3.84,
+   1415.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_anterior_muscle_r",
+  "en": "insertion of Serratus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 4): Mięsień zębaty przedni",
+  "pos": [
+   -126.59,
+   -34.34,
+   1283.04
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "serratus_posterior_superior_muscle_l",
+  "en": "insertion of Serratus posterior superior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień zębaty tylny górny",
+  "pos": [
+   -92.09,
+   78.92,
+   1346.23
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 16): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -63.1,
+   82.53,
+   1351.2
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levatores_longi_costarum_r",
+  "en": "insertion of Levatores longi costarum",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięśnie dźwigacze żeber długie",
+  "pos": [
+   -60.61,
+   80.69,
+   1355.13
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "external_abdominal_oblique_muscle_r",
+  "en": "origin of External abdominal oblique muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skośny zewnętrzny brzucha",
+  "pos": [
+   -120.84,
+   -49.48,
+   1267.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "pectoralis_minor_muscle_r",
+  "en": "insertion of Pectoralis minor muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień piersiowy mniejszy",
+  "pos": [
+   -112.71,
+   -65.14,
+   1270.22
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   1.71,
+   63.23,
+   1031.19
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "diaphragm",
+  "en": "origin of Diaphragm",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Przepona",
+  "pos": [
+   13.1,
+   -14.76,
+   1051.97
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -1.71,
+   63.23,
+   1031.19
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   15.31,
+   51.09,
+   1074.03
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "diaphragm",
+  "en": "origin of Diaphragm",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Przepona",
+  "pos": [
+   15.63,
+   -7.49,
+   1085.15
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -15.31,
+   51.09,
+   1074.03
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   11.52,
+   59.92,
+   1097.66
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "diaphragm",
+  "en": "origin of Diaphragm",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Przepona",
+  "pos": [
+   17.52,
+   2.85,
+   1116.98
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -11.52,
+   59.92,
+   1097.66
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 25): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   38.45,
+   37.47,
+   1447.5
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 25): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -38.45,
+   37.47,
+   1447.5
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 11): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   33.28,
+   84.46,
+   1262.11
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 11): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -33.28,
+   84.46,
+   1262.11
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   21.54,
+   59.96,
+   1147.88
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 3): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -21.54,
+   59.96,
+   1147.88
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 5): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   25.18,
+   64.97,
+   1177.87
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 5): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -25.18,
+   64.97,
+   1177.87
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 7): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   32.37,
+   75.57,
+   1202.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 7): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -32.37,
+   75.57,
+   1202.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 9): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   32.14,
+   83.24,
+   1231.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 9): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -32.14,
+   83.24,
+   1231.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 13): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   35.47,
+   86.77,
+   1295.22
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 13): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -35.47,
+   86.77,
+   1295.22
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 15): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   35.39,
+   89.67,
+   1327.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 15): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -35.39,
+   89.67,
+   1327.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 17): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   36.92,
+   80.4,
+   1354.83
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 17): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -36.92,
+   80.4,
+   1354.83
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 19): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   34.84,
+   73.92,
+   1383.25
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 19): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -34.84,
+   73.92,
+   1383.25
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 21): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   33.85,
+   64.38,
+   1407.48
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 21): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -33.85,
+   64.38,
+   1407.48
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_l",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 23): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   37.0,
+   50.03,
+   1430.77
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longissimus_thoracis_muscle_r",
+  "en": "insertion of Longissimus thoracis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 23): Mięsień najdłuższy klatki piersiowej",
+  "pos": [
+   -37.0,
+   50.03,
+   1430.77
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_scapulae_l",
+  "en": "origin of Levator scapulae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień dźwigacz łopatki",
+  "pos": [
+   25.87,
+   14.29,
+   1520.46
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "splenius_colli_muscle_l",
+  "en": "insertion of Splenius colli muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień płatowaty szyi",
+  "pos": [
+   26.74,
+   13.49,
+   1519.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "obliquus_inferior_capitis_muscle_l",
+  "en": "insertion of Obliquus inferior capitis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień skośny głowy dolny",
+  "pos": [
+   3.56,
+   49.16,
+   1512.77
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_posterior_major_capitis_muscle_r",
+  "en": "insertion of Rectus posterior major capitis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prosty głowy tylny większy",
+  "pos": [
+   2.5,
+   48.75,
+   1517.27
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_scapulae_r",
+  "en": "origin of Levator scapulae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień dźwigacz łopatki",
+  "pos": [
+   -25.87,
+   14.29,
+   1520.46
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "splenius_colli_muscle_r",
+  "en": "insertion of Splenius colli muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień płatowaty szyi",
+  "pos": [
+   -26.74,
+   13.49,
+   1519.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "obliquus_inferior_capitis_muscle_r",
+  "en": "insertion of Obliquus inferior capitis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień skośny głowy dolny",
+  "pos": [
+   -3.56,
+   49.16,
+   1512.77
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_posterior_major_capitis_muscle_l",
+  "en": "insertion of Rectus posterior major capitis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prosty głowy tylny większy",
+  "pos": [
+   -2.5,
+   48.75,
+   1517.27
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_scapulae_l",
+  "en": "origin of Levator scapulae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Mięsień dźwigacz łopatki",
+  "pos": [
+   27.91,
+   10.86,
+   1492.21
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "iliocostalis_colli_muscle_l",
+  "en": "insertion of Iliocostalis colli muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień biodrowo-żebrowy szyi",
+  "pos": [
+   27.06,
+   11.89,
+   1490.02
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_anterior_muscle_r",
+  "en": "insertion of Scalenus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień pochyły przedni",
+  "pos": [
+   22.6,
+   7.81,
+   1491.25
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_scapulae_r",
+  "en": "origin of Levator scapulae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Mięsień dźwigacz łopatki",
+  "pos": [
+   -27.91,
+   10.86,
+   1492.21
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "iliocostalis_colli_muscle_r",
+  "en": "insertion of Iliocostalis colli muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień biodrowo-żebrowy szyi",
+  "pos": [
+   -27.06,
+   11.89,
+   1490.02
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_anterior_muscle_l",
+  "en": "insertion of Scalenus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień pochyły przedni",
+  "pos": [
+   -22.6,
+   7.81,
+   1491.25
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_medius_muscle_r",
+  "en": "insertion of Scalenus medius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień pochyły środkowy",
+  "pos": [
+   33.9,
+   24.87,
+   1453.01
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_medius_muscle_l",
+  "en": "insertion of Scalenus medius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień pochyły środkowy",
+  "pos": [
+   -33.9,
+   24.87,
+   1453.01
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_posterior_muscle_r",
+  "en": "insertion of Scalenus posterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień pochyły tylny",
+  "pos": [
+   29.14,
+   14.38,
+   1474.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_anterior_muscle_r",
+  "en": "insertion of Scalenus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień pochyły przedni",
+  "pos": [
+   23.64,
+   8.51,
+   1475.73
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_posterior_muscle_l",
+  "en": "insertion of Scalenus posterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień pochyły tylny",
+  "pos": [
+   -29.14,
+   14.38,
+   1474.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_anterior_muscle_l",
+  "en": "insertion of Scalenus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień pochyły przedni",
+  "pos": [
+   -23.64,
+   8.51,
+   1475.73
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_scapulae_l",
+  "en": "origin of Levator scapulae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięsień dźwigacz łopatki",
+  "pos": [
+   27.71,
+   11.67,
+   1505.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_scapulae_r",
+  "en": "origin of Levator scapulae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięsień dźwigacz łopatki",
+  "pos": [
+   -27.71,
+   11.67,
+   1505.44
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_anterior_muscle_r",
+  "en": "insertion of Scalenus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień pochyły przedni",
+  "pos": [
+   25.27,
+   9.59,
+   1460.01
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_medius_muscle_r",
+  "en": "insertion of Scalenus medius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień pochyły środkowy",
+  "pos": [
+   29.01,
+   17.74,
+   1462.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_anterior_muscle_l",
+  "en": "insertion of Scalenus anterior muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 2): Mięsień pochyły przedni",
+  "pos": [
+   -25.27,
+   9.59,
+   1460.01
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "scalenus_medius_muscle_l",
+  "en": "insertion of Scalenus medius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień pochyły środkowy",
+  "pos": [
+   -29.01,
+   17.74,
+   1462.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "splenius_colli_muscle_l",
+  "en": "insertion of Splenius colli muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień płatowaty szyi",
+  "pos": [
+   38.15,
+   14.65,
+   1537.73
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_scapulae_l",
+  "en": "origin of Levator scapulae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dźwigacz łopatki",
+  "pos": [
+   40.53,
+   13.76,
+   1537.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "obliquus_inferior_capitis_muscle_l",
+  "en": "origin of Obliquus inferior capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skośny głowy dolny",
+  "pos": [
+   38.93,
+   17.89,
+   1540.17
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_anterior_capitis_muscle_r",
+  "en": "insertion of Rectus anterior capitis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prosty przedni głowy",
+  "pos": [
+   19.81,
+   4.01,
+   1548.18
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_posterior_minor_capitis_muscle",
+  "en": "insertion of Rectus posterior minor capitis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prosty głowy tylny mniejszy",
+  "pos": [
+   1.73,
+   44.81,
+   1540.02
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "splenius_colli_muscle_r",
+  "en": "insertion of Splenius colli muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy (głowa 1): Mięsień płatowaty szyi",
+  "pos": [
+   -38.15,
+   14.65,
+   1537.73
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_scapulae_r",
+  "en": "origin of Levator scapulae",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dźwigacz łopatki",
+  "pos": [
+   -40.53,
+   13.76,
+   1537.49
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "obliquus_inferior_capitis_muscle_r",
+  "en": "origin of Obliquus inferior capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skośny głowy dolny",
+  "pos": [
+   -38.93,
+   17.89,
+   1540.17
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_anterior_capitis_muscle_l",
+  "en": "insertion of Rectus anterior capitis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień prosty przedni głowy",
+  "pos": [
+   -19.81,
+   4.01,
+   1548.18
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "piriformis_muscle_r",
+  "en": "origin of Piriformis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień gruszkowaty",
+  "pos": [
+   33.42,
+   59.63,
+   908.99
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "piriformis_muscle_l",
+  "en": "origin of Piriformis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień gruszkowaty",
+  "pos": [
+   -33.42,
+   59.63,
+   908.99
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "thyrohyoid_muscle_l",
+  "en": "insertion of Thyrohyoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień tarczowo-gnykowy",
+  "pos": [
+   15.05,
+   -12.56,
+   1474.89
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "thyrohyoid_muscle_r",
+  "en": "insertion of Thyrohyoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień tarczowo-gnykowy",
+  "pos": [
+   -15.05,
+   -12.56,
+   1474.89
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "omohyoid_muscle_l",
+  "en": "insertion of Omohyoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień łopatkowo-gnykowy",
+  "pos": [
+   14.94,
+   -29.9,
+   1495.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternohyoid_muscle_l",
+  "en": "insertion of Sternohyoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień mostkowo-gnykowy",
+  "pos": [
+   8.62,
+   -34.17,
+   1493.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "geniohyoid_muscle",
+  "en": "insertion of Geniohyoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień bródkowo-gnykowy",
+  "pos": [
+   6.13,
+   -32.28,
+   1501.22
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "thyrohyoid_muscle_l",
+  "en": "origin of Thyrohyoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień tarczowo-gnykowy",
+  "pos": [
+   13.95,
+   -26.31,
+   1494.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "omohyoid_muscle_r",
+  "en": "insertion of Omohyoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień łopatkowo-gnykowy",
+  "pos": [
+   -14.94,
+   -29.9,
+   1495.72
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "sternohyoid_muscle_r",
+  "en": "insertion of Sternohyoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień mostkowo-gnykowy",
+  "pos": [
+   -8.62,
+   -34.17,
+   1493.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "thyrohyoid_muscle_r",
+  "en": "origin of Thyrohyoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień tarczowo-gnykowy",
+  "pos": [
+   -13.95,
+   -26.31,
+   1494.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "bucinator_l",
+  "en": "origin of Bucinator",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień policzkowy",
+  "pos": [
+   30.48,
+   -55.54,
+   1525.34
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "geniohyoid_muscle",
+  "en": "origin of Geniohyoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień bródkowo-gnykowy",
+  "pos": [
+   1.42,
+   -69.49,
+   1504.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "mylohyoid_muscle",
+  "en": "origin of Mylohyoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień żuchwowo-gnykowy",
+  "pos": [
+   17.09,
+   -52.43,
+   1511.76
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "temporalis_muscle_l",
+  "en": "insertion of Temporalis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień skroniowy",
+  "pos": [
+   42.58,
+   -43.98,
+   1559.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_pterygoid_muscle_l",
+  "en": "insertion of Medial pterygoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień skrzydłowy przyśrodkowy",
+  "pos": [
+   34.71,
+   -18.42,
+   1534.57
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "orbicularis_oris_muscle_l",
+  "en": "origin of Orbicularis oris muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień okrężny ust",
+  "pos": [
+   2.41,
+   -80.48,
+   1511.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "mentalis_muscle",
+  "en": "origin of Mentalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień bródkowy",
+  "pos": [
+   5.54,
+   -79.55,
+   1501.53
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "depressor_labii_inferioris_l",
+  "en": "origin of Depressor labii inferioris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obniżacz wargi dolnej (lewy)",
+  "pos": [
+   22.47,
+   -66.51,
+   1508.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "depressor_anguli_oris_l",
+  "en": "origin of Depressor anguli oris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obniżacz kąta ust",
+  "pos": [
+   22.78,
+   -61.64,
+   1502.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "anterior_belly_of_digastric_muscle",
+  "en": "insertion of Anterior belly of digastric muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień dwubrzuścowy — brzusiec przedni",
+  "pos": [
+   9.16,
+   -65.01,
+   1501.06
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "deep_part_of_masseter_l",
+  "en": "insertion of Masseter",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień żwacz",
+  "pos": [
+   42.3,
+   -29.84,
+   1538.29
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "bucinator_r",
+  "en": "origin of Bucinator",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień policzkowy",
+  "pos": [
+   -30.48,
+   -55.54,
+   1525.34
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_pterygoid_muscle_r",
+  "en": "insertion of Medial pterygoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień skrzydłowy przyśrodkowy",
+  "pos": [
+   -34.71,
+   -18.42,
+   1534.57
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "orbicularis_oris_muscle_r",
+  "en": "origin of Orbicularis oris muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień okrężny ust",
+  "pos": [
+   -2.41,
+   -80.48,
+   1511.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "depressor_labii_inferioris_r",
+  "en": "origin of Depressor labii inferioris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obniżacz wargi dolnej (lewy)",
+  "pos": [
+   -22.47,
+   -66.51,
+   1508.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "depressor_anguli_oris_r",
+  "en": "origin of Depressor anguli oris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obniżacz kąta ust",
+  "pos": [
+   -22.78,
+   -61.64,
+   1502.7
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "temporalis_muscle_r",
+  "en": "insertion of Temporalis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień skroniowy",
+  "pos": [
+   -42.58,
+   -43.98,
+   1559.31
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "deep_part_of_masseter_r",
+  "en": "insertion of Masseter",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień żwacz",
+  "pos": [
+   -42.3,
+   -29.84,
+   1538.29
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "zygomaticus_minor_muscle_l",
+  "en": "origin of Zygomaticus minor muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień jarzmowy mniejszy",
+  "pos": [
+   47.22,
+   -63.61,
+   1572.99
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "zygomaticus_major_muscle_l",
+  "en": "origin of Zygomaticus major muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień jarzmowy większy",
+  "pos": [
+   52.79,
+   -55.37,
+   1571.6
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "superficial_part_of_masseter_l",
+  "en": "origin of Masseter",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień żwacz",
+  "pos": [
+   54.98,
+   -45.83,
+   1564.42
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_pterygoid_muscle_l",
+  "en": "origin of Lateral pterygoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skrzydłowy boczny",
+  "pos": [
+   25.23,
+   -40.02,
+   1550.62
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_pterygoid_muscle_l",
+  "en": "origin of Lateral pterygoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień skrzydłowy boczny",
+  "pos": [
+   25.76,
+   -40.64,
+   1552.78
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "bucinator_l",
+  "en": "origin of Bucinator",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień policzkowy",
+  "pos": [
+   31.37,
+   -55.47,
+   1547.23
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_labii_superioris_l",
+  "en": "origin of Levator labii superioris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dźwigacz wargi górnej (lewy)",
+  "pos": [
+   24.04,
+   -74.46,
+   1570.67
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "orbital_part_of_orbicularis_oculi_l",
+  "en": "origin of Orbital part of orbicularis oculi",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Część oczodołowa mięśnia okrężnego oka (lewy)",
+  "pos": [
+   11.51,
+   -77.64,
+   1590.59
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_nasolabialis_l",
+  "en": "origin of Levator nasolabialis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dźwigacz wargi górnej i skrzydła nosa",
+  "pos": [
+   12.84,
+   -79.12,
+   1579.6
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "depressor_septi_nasi",
+  "en": "origin of Depressor septi nasi",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień obniżacz przegrody nosa",
+  "pos": [
+   9.07,
+   -86.39,
+   1544.39
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_anguli_oris_l",
+  "en": "origin of Levator anguli oris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dźwigacz kąta ust",
+  "pos": [
+   21.24,
+   -75.04,
+   1560.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "nasalis_muscle",
+  "en": "origin of Nasalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień nosowy",
+  "pos": [
+   3.34,
+   -91.43,
+   1591.87
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "temporalis_muscle_l",
+  "en": "origin of Temporalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Mięsień skroniowy",
+  "pos": [
+   61.45,
+   -9.15,
+   1602.13
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "deep_part_of_masseter_l",
+  "en": "origin of Masseter",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień żwacz",
+  "pos": [
+   59.47,
+   -20.59,
+   1574.8
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocleidomastoid_muscle_l",
+  "en": "insertion of Sternocleidomastoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień mostkowo-obojczykowo-sutkowy",
+  "pos": [
+   56.23,
+   33.75,
+   1568.94
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "zygomaticus_minor_muscle_r",
+  "en": "origin of Zygomaticus minor muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień jarzmowy mniejszy",
+  "pos": [
+   -47.22,
+   -63.61,
+   1572.99
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "zygomaticus_major_muscle_r",
+  "en": "origin of Zygomaticus major muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień jarzmowy większy",
+  "pos": [
+   -52.79,
+   -55.37,
+   1571.6
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "superficial_part_of_masseter_r",
+  "en": "origin of Masseter",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień żwacz",
+  "pos": [
+   -54.98,
+   -45.83,
+   1564.42
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_pterygoid_muscle_r",
+  "en": "origin of Lateral pterygoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skrzydłowy boczny",
+  "pos": [
+   -25.23,
+   -40.02,
+   1550.62
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_pterygoid_muscle_r",
+  "en": "origin of Lateral pterygoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień skrzydłowy boczny",
+  "pos": [
+   -25.76,
+   -40.64,
+   1552.78
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "bucinator_r",
+  "en": "origin of Bucinator",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień policzkowy",
+  "pos": [
+   -31.37,
+   -55.47,
+   1547.23
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_labii_superioris_r",
+  "en": "origin of Levator labii superioris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dźwigacz wargi górnej (lewy)",
+  "pos": [
+   -24.04,
+   -74.46,
+   1570.67
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "orbital_part_of_orbicularis_oculi_r",
+  "en": "origin of Orbital part of orbicularis oculi",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Część oczodołowa mięśnia okrężnego oka (lewy)",
+  "pos": [
+   -11.51,
+   -77.64,
+   1590.59
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_nasolabialis_r",
+  "en": "origin of Levator nasolabialis",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dźwigacz wargi górnej i skrzydła nosa",
+  "pos": [
+   -12.84,
+   -79.12,
+   1579.6
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "levator_anguli_oris_r",
+  "en": "origin of Levator anguli oris",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień dźwigacz kąta ust",
+  "pos": [
+   -21.24,
+   -75.04,
+   1560.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "procerus_muscle",
+  "en": "insertion of Procerus muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień podłużny nosa",
+  "pos": [
+   -1.49,
+   -86.26,
+   1599.89
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "temporalis_muscle_r",
+  "en": "origin of Temporalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 4): Mięsień skroniowy",
+  "pos": [
+   -61.45,
+   -9.15,
+   1602.13
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "deep_part_of_masseter_r",
+  "en": "origin of Masseter",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień żwacz",
+  "pos": [
+   -59.47,
+   -20.59,
+   1574.8
+  ],
+  "route": "spatial",
+  "approx": false
+ },
+ {
+  "muscleId": "sternocleidomastoid_muscle_r",
+  "en": "insertion of Sternocleidomastoid muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień mostkowo-obojczykowo-sutkowy",
+  "pos": [
+   -56.23,
+   33.75,
+   1568.94
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "temporalis_muscle_l",
+  "en": "origin of Temporalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Mięsień skroniowy",
+  "pos": [
+   47.01,
+   -41.91,
+   1606.09
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_pterygoid_muscle_l",
+  "en": "origin of Medial pterygoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skrzydłowy przyśrodkowy",
+  "pos": [
+   21.18,
+   -28.01,
+   1564.74
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "temporalis_muscle_r",
+  "en": "origin of Temporalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 3): Mięsień skroniowy",
+  "pos": [
+   -47.01,
+   -41.91,
+   1606.09
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "medial_pterygoid_muscle_r",
+  "en": "origin of Medial pterygoid muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skrzydłowy przyśrodkowy",
+  "pos": [
+   -21.18,
+   -28.01,
+   1564.74
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longus_capitis_muscle_l",
+  "en": "origin of Longus capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień długi głowy",
+  "pos": [
+   5.67,
+   -2.83,
+   1567.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "ascending_part_of_trapezius_muscle_l",
+  "en": "insertion of Ascending part of trapezius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień czworoboczny — część wstępująca",
+  "pos": [
+   18.11,
+   78.46,
+   1572.6
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_anterior_capitis_muscle_r",
+  "en": "origin of Rectus anterior capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty przedni głowy",
+  "pos": [
+   6.37,
+   2.75,
+   1563.11
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_lateralis_capitis_muscle_r",
+  "en": "origin of Rectus lateralis capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty boczny głowy",
+  "pos": [
+   36.91,
+   19.36,
+   1558.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "obliquus_superior_capitis_muscle_l",
+  "en": "origin of Obliquus superior capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skośny głowy górny",
+  "pos": [
+   36.88,
+   49.46,
+   1560.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_posterior_major_capitis_muscle_r",
+  "en": "origin of Rectus posterior major capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty głowy tylny większy",
+  "pos": [
+   31.59,
+   48.27,
+   1558.21
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_posterior_minor_capitis_muscle",
+  "en": "origin of Rectus posterior minor capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty głowy tylny mniejszy",
+  "pos": [
+   14.23,
+   62.84,
+   1559.62
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "occipitalis_muscle_l",
+  "en": "origin of Occipitalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień potyliczny",
+  "pos": [
+   38.54,
+   80.81,
+   1590.78
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "spinalis_capitis_muscle_l",
+  "en": "insertion of Spinalis capitis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień kolcowy głowy",
+  "pos": [
+   22.21,
+   73.41,
+   1569.81
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "ascending_part_of_trapezius_muscle_r",
+  "en": "insertion of Ascending part of trapezius muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień czworoboczny — część wstępująca",
+  "pos": [
+   -18.11,
+   78.46,
+   1572.6
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "longus_capitis_muscle_r",
+  "en": "origin of Longus capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień długi głowy",
+  "pos": [
+   -5.67,
+   -2.83,
+   1567.65
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_anterior_capitis_muscle_l",
+  "en": "origin of Rectus anterior capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty przedni głowy",
+  "pos": [
+   -6.37,
+   2.75,
+   1563.11
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_lateralis_capitis_muscle_l",
+  "en": "origin of Rectus lateralis capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty boczny głowy",
+  "pos": [
+   -36.91,
+   19.36,
+   1558.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "obliquus_superior_capitis_muscle_r",
+  "en": "origin of Obliquus superior capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień skośny głowy górny",
+  "pos": [
+   -36.88,
+   49.46,
+   1560.29
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "rectus_posterior_major_capitis_muscle_l",
+  "en": "origin of Rectus posterior major capitis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień prosty głowy tylny większy",
+  "pos": [
+   -31.59,
+   48.27,
+   1558.21
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "occipitalis_muscle_r",
+  "en": "origin of Occipitalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień potyliczny",
+  "pos": [
+   -38.54,
+   80.81,
+   1590.78
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "spinalis_capitis_muscle_r",
+  "en": "insertion of Spinalis capitis muscle",
+  "kind": "insertion",
+  "pl": "Przyczep końcowy: Mięsień kolcowy głowy",
+  "pos": [
+   -22.21,
+   73.41,
+   1569.81
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "temporalis_muscle_l",
+  "en": "origin of Temporalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień skroniowy",
+  "pos": [
+   55.55,
+   -47.28,
+   1632.55
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "frontalis_muscle_l",
+  "en": "origin of Frontalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień czołowy",
+  "pos": [
+   23.78,
+   -80.0,
+   1613.38
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "procerus_muscle",
+  "en": "origin of Procerus muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień podłużny nosa",
+  "pos": [
+   10.29,
+   -86.75,
+   1623.75
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "temporalis_muscle_r",
+  "en": "origin of Temporalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 1): Mięsień skroniowy",
+  "pos": [
+   -55.55,
+   -47.28,
+   1632.55
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "frontalis_muscle_r",
+  "en": "origin of Frontalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy: Mięsień czołowy",
+  "pos": [
+   -23.78,
+   -80.0,
+   1613.38
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "temporalis_muscle_l",
+  "en": "origin of Temporalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięsień skroniowy",
+  "pos": [
+   68.7,
+   6.93,
+   1636.27
+  ],
+  "route": "name",
+  "approx": false
+ },
+ {
+  "muscleId": "temporalis_muscle_r",
+  "en": "origin of Temporalis muscle",
+  "kind": "origin",
+  "pl": "Przyczep początkowy (głowa 2): Mięsień skroniowy",
+  "pos": [
+   -68.7,
+   6.93,
+   1636.27
+  ],
+  "route": "name",
+  "approx": false
+ }
+]

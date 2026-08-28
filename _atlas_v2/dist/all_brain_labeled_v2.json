@@ -1,0 +1,2082 @@
+[
+ {
+  "id": "posterior_transverse_collateral_sulcus_l",
+  "pl": "Bruzda poboczna tylna poprzeczna",
+  "en": " Posterior transverse collateral sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_transverse_collateral_sulcus_r",
+  "pl": "Bruzda poboczna tylna poprzeczna",
+  "en": " Posterior transverse collateral sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "accessory_nucleus_of_oculomotor_nerve",
+  "pl": "Jądro nerw okoruchowy",
+  "en": "Accessory nucleus of oculomotor nerve",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "amygdaloid_body_l",
+  "pl": "Ciało migdałowate",
+  "en": "Amygdaloid body",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "amygdaloid_body_r",
+  "pl": "Ciało migdałowate",
+  "en": "Amygdaloid body",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "angular_gyrus_l",
+  "pl": "Zakręt kątowy",
+  "en": "Angular gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "angular_gyrus_r",
+  "pl": "Zakręt kątowy",
+  "en": "Angular gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_cochlear_nucleus",
+  "pl": "Jądro ślimakowe przednie",
+  "en": "Anterior cochlear nucleus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_commissure",
+  "pl": "Spoidło przednie",
+  "en": "Anterior commissure",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_corticospinal_tract",
+  "pl": "Droga korowo-rdzeniowa przednia",
+  "en": "Anterior corticospinal tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_fasciculus_proprius",
+  "pl": "Pęczek własny przedni",
+  "en": "Anterior fasciculus proprius",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_horn_of_spinal_cord",
+  "pl": "Róg przedni rdzenia kręgowego",
+  "en": "Anterior horn of spinal cord",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_occipital_sulcus_l",
+  "pl": "Bruzda potyliczna przednia",
+  "en": "Anterior occipital sulcus*",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_occipital_sulcus_r",
+  "pl": "Bruzda potyliczna przednia",
+  "en": "Anterior occipital sulcus*",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_quadrangular_lobule_l",
+  "pl": "Płacik czworoboczny przedni",
+  "en": "Anterior quadrangular lobule",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_quadrangular_lobule_r",
+  "pl": "Płacik czworoboczny przedni",
+  "en": "Anterior quadrangular lobule",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_root_of_spinal_nerve_l",
+  "pl": "Korzeń przedni nerwu rdzeniowego",
+  "en": "Anterior root of spinal nerve",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_root_of_spinal_nerve_r",
+  "pl": "Korzeń przedni nerwu rdzeniowego",
+  "en": "Anterior root of spinal nerve",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_spinocerebellar_tract",
+  "pl": "Droga rdzeniowo-móżdżkowa przednia",
+  "en": "Anterior spinocerebellar tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_spinothalamic_tract",
+  "pl": "Droga rdzeniowo-wzgórzowa przednia",
+  "en": "Anterior spinothalamic tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "aqueduct_of_midbrain",
+  "pl": "Wodociąg mózgu",
+  "en": "Aqueduct of midbrain",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "auditory_tube_l",
+  "pl": "Trąbka słuchowa",
+  "en": "Auditory tube",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "auditory_tube_r",
+  "pl": "Trąbka słuchowa",
+  "en": "Auditory tube",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "base_of_peduncle",
+  "pl": "Podstawa konaru mózgu",
+  "en": "Base of peduncle",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "biventral_lobule_l",
+  "pl": "Płacik dwubrzuścowy",
+  "en": "Biventral lobule",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "biventral_lobule_r",
+  "pl": "Płacik dwubrzuścowy",
+  "en": "Biventral lobule",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "calcarine_sulcus_l",
+  "pl": "Bruzda ostrogowa",
+  "en": "Calcarine sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "calcarine_sulcus_r",
+  "pl": "Bruzda ostrogowa",
+  "en": "Calcarine sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cauda_equina",
+  "pl": "Ogon koński",
+  "en": "Cauda equina",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "caudate_nucleus_l",
+  "pl": "Jądro ogoniaste",
+  "en": "Caudate nucleus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "caudate_nucleus_r",
+  "pl": "Jądro ogoniaste",
+  "en": "Caudate nucleus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "central_canal",
+  "pl": "Kanał środkowy rdzenia kręgowego",
+  "en": "Central canal",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "central_canal",
+  "pl": "Kanał środkowy rdzenia kręgowego",
+  "en": "Central canal'",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "central_lobule",
+  "pl": "Płacik środkowy",
+  "en": "Central lobule",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "central_sulcus_l",
+  "pl": "Bruzda środkowa",
+  "en": "Central sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "central_sulcus_r",
+  "pl": "Bruzda środkowa",
+  "en": "Central sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "choroid_plexus_l",
+  "pl": "Splot naczyniówkowy",
+  "en": "Choroid plexus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "choroid_plexus_r",
+  "pl": "Splot naczyniówkowy",
+  "en": "Choroid plexus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ciliary_body_curve",
+  "pl": "Ciliary body-curve",
+  "en": "Ciliary body-curve",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "none"
+ },
+ {
+  "id": "cingulate_gyrus_posteroventral_part",
+  "pl": "Zakręt obręczy",
+  "en": "Cingulate gyrus (Posteroventral part*)",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cingulate_gyrus_and_sulcus_middle_anterior_part",
+  "pl": "Zakręt i bruzda obręczy",
+  "en": "Cingulate gyrus and sulcus (Middle anterior part)",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "cingulate_gyrus_and_sulcus_middle_posterior_part",
+  "pl": "Zakręt i bruzda obręczy",
+  "en": "Cingulate gyrus and sulcus (Middle posterior part)",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "cingulate_gyrus_and_sulcus_posterior_dorsal_part",
+  "pl": "Zakręt i bruzda obręczy",
+  "en": "Cingulate gyrus and sulcus (Posterior dorsal part)",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "cingulate_sulcus_marginal_part",
+  "pl": "Bruzda obręczy",
+  "en": "Cingulate sulcus (Marginal part*)",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "circular_sulcus_of_insula_l",
+  "pl": "Bruzda okalająca wyspy",
+  "en": "Circular sulcus of insula",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "circular_sulcus_of_insula_r",
+  "pl": "Bruzda okalająca wyspy",
+  "en": "Circular sulcus of insula",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "collateral_sulcus_l",
+  "pl": "Bruzda poboczna",
+  "en": "Collateral sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "collateral_sulcus_r",
+  "pl": "Bruzda poboczna",
+  "en": "Collateral sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cornea_l",
+  "pl": "Rogówka",
+  "en": "Cornea",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cornea_r",
+  "pl": "Rogówka",
+  "en": "Cornea",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "corpus_callosum",
+  "pl": "Ciało modzelowate",
+  "en": "Corpus callosum",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "culmen",
+  "pl": "Szczyt (robak)",
+  "en": "Culmen",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "cuneate_fasciculus",
+  "pl": "Pęczek klinowaty",
+  "en": "Cuneate fasciculus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cuneus",
+  "pl": "Klinek",
+  "en": "Cuneus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "declive",
+  "pl": "Stok (robak)",
+  "en": "Declive",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "falx_cerebri",
+  "pl": "Sierp mózgu",
+  "en": "Falx cerebri",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "flocculus_l",
+  "pl": "Kłaczek",
+  "en": "Flocculus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "flocculus_r",
+  "pl": "Kłaczek",
+  "en": "Flocculus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "folium_of_vermis",
+  "pl": "Blaszka robaka",
+  "en": "Folium of vermis",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fornix_l",
+  "pl": "Sklepienie",
+  "en": "Fornix",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fornix_r",
+  "pl": "Sklepienie",
+  "en": "Fornix",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "fourth_ventricle",
+  "pl": "Komora czwarta",
+  "en": "Fourth ventricle",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "globus_pallidus_l",
+  "pl": "Gałka blada",
+  "en": "Globus pallidus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "norm"
+ },
+ {
+  "id": "globus_pallidus_r",
+  "pl": "Gałka blada",
+  "en": "Globus pallidus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "norm"
+ },
+ {
+  "id": "gracile_fasciculus",
+  "pl": "Pęczek smukły",
+  "en": "Gracile fasciculus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "gracile_lobule_l",
+  "pl": "Płacik smukły",
+  "en": "Gracile lobule",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "gracile_lobule_r",
+  "pl": "Płacik smukły",
+  "en": "Gracile lobule",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "habenula",
+  "pl": "Uzdeczka",
+  "en": "Habenula",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "hippocampal_commissure",
+  "pl": "Spoidło hipokampa",
+  "en": "Hippocampal commissure",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "hippocampus_l",
+  "pl": "Hipokamp",
+  "en": "Hippocampus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "hippocampus_r",
+  "pl": "Hipokamp",
+  "en": "Hippocampus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "hypothalamus",
+  "pl": "Podwzgórze",
+  "en": "Hypothalamus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "inferior_colliculus",
+  "pl": "Wzgórek dolny",
+  "en": "Inferior colliculus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "inferior_frontal_sulcus_l",
+  "pl": "Bruzda czołowa dolna",
+  "en": "Inferior frontal sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_frontal_sulcus_r",
+  "pl": "Bruzda czołowa dolna",
+  "en": "Inferior frontal sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_occipital_gyrus_and_sulcus_l",
+  "pl": "Zakręt i bruzda potyliczna dolna",
+  "en": "Inferior occipital gyrus and sulcus*",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "inferior_occipital_gyrus_and_sulcus_r",
+  "pl": "Zakręt i bruzda potyliczna dolna",
+  "en": "Inferior occipital gyrus and sulcus*",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "inferior_salivatory_nucleus",
+  "pl": "Jądro ślinowe dolne",
+  "en": "Inferior salivatory nucleus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_semilunar_lobule_l",
+  "pl": "Płacik półksiężycowaty dolny",
+  "en": "Inferior semilunar lobule",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "inferior_semilunar_lobule_r",
+  "pl": "Płacik półksiężycowaty dolny",
+  "en": "Inferior semilunar lobule",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "inferior_temporal_gyrus_l",
+  "pl": "Zakręt skroniowy dolny",
+  "en": "Inferior temporal gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_temporal_gyrus_r",
+  "pl": "Zakręt skroniowy dolny",
+  "en": "Inferior temporal gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_temporal_sulcus_l",
+  "pl": "Bruzda skroniowa dolna",
+  "en": "Inferior temporal sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_temporal_sulcus_r",
+  "pl": "Bruzda skroniowa dolna",
+  "en": "Inferior temporal sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "insula_subcentral_gyrus_and_ant_and_post_sulci_l",
+  "pl": "Zakręt wyspowy (wyspa)",
+  "en": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "insula_subcentral_gyrus_and_ant_and_post_sulci_r",
+  "pl": "Zakręt wyspowy (wyspa)",
+  "en": "Insula (Subcentral gyrus and ant. and post. sulci*)",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intermediolateral_nucleus",
+  "pl": "Jądro pośrednio-boczne",
+  "en": "Intermediolateral nucleus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intermediomedial_nucleus",
+  "pl": "Jądro pośrednio-przyśrodkowe",
+  "en": "Intermediomedial nucleus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "interpeduncular_fossa",
+  "pl": "Dół międzykonarowy",
+  "en": "Interpeduncular fossa",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intraparietal_sulcus_l",
+  "pl": "Bruzda śródciemieniowa",
+  "en": "Intraparietal sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intraparietal_sulcus_r",
+  "pl": "Bruzda śródciemieniowa",
+  "en": "Intraparietal sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lat_fis_ant_horizont_l",
+  "pl": "Gałąź pozioma przednia bruzdy bocznej",
+  "en": "Lat_Fis-ant-Horizont",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lat_fis_ant_horizont_r",
+  "pl": "Gałąź pozioma przednia bruzdy bocznej",
+  "en": "Lat_Fis-ant-Horizont",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lat_fis_ant_vertical_l",
+  "pl": "Gałąź wstępująca przednia bruzdy bocznej",
+  "en": "Lat_Fis-ant-Vertical",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lat_fis_ant_vertical_r",
+  "pl": "Gałąź wstępująca przednia bruzdy bocznej",
+  "en": "Lat_Fis-ant-Vertical",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lat_fis_post_l",
+  "pl": "Gałąź tylna bruzdy bocznej",
+  "en": "Lat_Fis-post",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lat_fis_post_r",
+  "pl": "Gałąź tylna bruzdy bocznej",
+  "en": "Lat_Fis-post",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lateral_corticospinal_tract",
+  "pl": "Droga korowo-rdzeniowa boczna",
+  "en": "Lateral corticospinal tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lateral_fasciculus_proprius",
+  "pl": "Pęczek własny boczny",
+  "en": "Lateral fasciculus proprius",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lateral_geniculate_body_l",
+  "pl": "Ciało kolankowate boczne",
+  "en": "Lateral geniculate body",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lateral_geniculate_body_r",
+  "pl": "Ciało kolankowate boczne",
+  "en": "Lateral geniculate body",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lateral_intermediate_substance",
+  "pl": "Istota pośrednia boczna",
+  "en": "Lateral intermediate substance",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lateral_occipital_gyrus_middle_occipital_gyrus_l",
+  "pl": "Zakręt potyliczny boczny",
+  "en": "Lateral occipital gyrus (Middle occipital gyrus*)",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_occipital_gyrus_middle_occipital_gyrus_r",
+  "pl": "Zakręt potyliczny boczny",
+  "en": "Lateral occipital gyrus (Middle occipital gyrus*)",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_occipitotemporal_gyrus_l",
+  "pl": "Zakręt potyliczno-skroniowy boczny",
+  "en": "Lateral occipitotemporal gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_occipitotemporal_gyrus_r",
+  "pl": "Zakręt potyliczno-skroniowy boczny",
+  "en": "Lateral occipitotemporal gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_reticulospinal_tract",
+  "pl": "Droga siatkowo-rdzeniowa boczna",
+  "en": "Lateral reticulospinal tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_spinothalamic_tract",
+  "pl": "Droga rdzeniowo-wzgórzowa boczna",
+  "en": "Lateral spinothalamic tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lateral_ventricle_l",
+  "pl": "Komora boczna",
+  "en": "Lateral ventricle",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_ventricle_r",
+  "pl": "Komora boczna",
+  "en": "Lateral ventricle",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_vestibulospinal_tract",
+  "pl": "Droga przedsionkowo-rdzeniowa boczna",
+  "en": "Lateral vestibulospinal tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lens_l",
+  "pl": "Soczewka",
+  "en": "Lens",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lens_r",
+  "pl": "Soczewka",
+  "en": "Lens",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lentiform_nucleus_l",
+  "pl": "Jądro soczewkowate",
+  "en": "Lentiform nucleus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lentiform_nucleus_r",
+  "pl": "Jądro soczewkowate",
+  "en": "Lentiform nucleus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lingual_gyrus_l",
+  "pl": "Zakręt językowaty",
+  "en": "Lingual gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lingual_gyrus_r",
+  "pl": "Zakręt językowaty",
+  "en": "Lingual gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lingula_of_cerebellum",
+  "pl": "Języczek móżdżku",
+  "en": "Lingula of cerebellum",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lunate_sulcus_l",
+  "pl": "Bruzda półksiężycowata",
+  "en": "Lunate sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lunate_sulcus_r",
+  "pl": "Bruzda półksiężycowata",
+  "en": "Lunate sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "mamillary_body",
+  "pl": "Ciało suteczkowate",
+  "en": "Mamillary body",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "medial_geniculate_body_l",
+  "pl": "Ciało kolankowate przyśrodkowe",
+  "en": "Medial geniculate body",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "medial_geniculate_body_r",
+  "pl": "Ciało kolankowate przyśrodkowe",
+  "en": "Medial geniculate body",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "medial_occipitotemporal_gyrus_parahippocampal_l",
+  "pl": "Zakręt potyliczno-skroniowy przyśrodkowy",
+  "en": "Medial occipitotemporal gyrus (Parahippocampal*)",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_occipitotemporal_gyrus_parahippocampal_r",
+  "pl": "Zakręt potyliczno-skroniowy przyśrodkowy",
+  "en": "Medial occipitotemporal gyrus (Parahippocampal*)",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_reticulospinal_tract",
+  "pl": "Droga siatkowo-rdzeniowa przyśrodkowa",
+  "en": "Medial reticulospinal tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_vestibulospinal_tract",
+  "pl": "Droga przedsionkowo-rdzeniowa przyśrodkowa",
+  "en": "Medial vestibulospinal tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medulla_oblongata",
+  "pl": "Rdzeń przedłużony",
+  "en": "Medulla oblongata",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "midbrain",
+  "pl": "Śródmózgowie",
+  "en": "Midbrain",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "middle_frontal_gyrus_l",
+  "pl": "Zakręt czołowy środkowy",
+  "en": "Middle frontal gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "norm"
+ },
+ {
+  "id": "middle_frontal_gyrus_r",
+  "pl": "Zakręt czołowy środkowy",
+  "en": "Middle frontal gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "norm"
+ },
+ {
+  "id": "middle_temporal_gyrus_l",
+  "pl": "Zakręt skroniowy środkowy",
+  "en": "Middle temporal gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_temporal_gyrus_r",
+  "pl": "Zakręt skroniowy środkowy",
+  "en": "Middle temporal gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "motor_nucleus_of_facial_nerve",
+  "pl": "Jądro nerwu twarzowego",
+  "en": "Motor nucleus of facial nerve",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "nerve_to_quadratus_femoris_muscle_l",
+  "pl": "Nerw mięśnia czworobocznego uda",
+  "en": "Nerve to quadratus femoris muscle",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "norm"
+ },
+ {
+  "id": "nerve_to_quadratus_femoris_muscle_r",
+  "pl": "Nerw mięśnia czworobocznego uda",
+  "en": "Nerve to quadratus femoris muscle",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "norm"
+ },
+ {
+  "id": "nodule_of_vermis",
+  "pl": "Grudka robaka",
+  "en": "Nodule of vermis",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "nucleus_ambiguus",
+  "pl": "Jądro dwuznaczne",
+  "en": "Nucleus ambiguus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "nucleus_of_abducens_nerve",
+  "pl": "Jądro nerwu odwodzącego",
+  "en": "Nucleus of abducens nerve",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "nucleus_of_accessory_nerve",
+  "pl": "Jądro nerwu dodatkowego",
+  "en": "Nucleus of accessory nerve",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "nucleus_of_oculomotor_nerve",
+  "pl": "Jądro nerwu okoruchowego",
+  "en": "Nucleus of oculomotor nerve",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "nucleus_of_solitary_tract",
+  "pl": "Jądro pasmo samotne",
+  "en": "Nucleus of solitary tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "nucleus_proprius",
+  "pl": "Jądro właściwe",
+  "en": "Nucleus proprius",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "occipital_pole_l",
+  "pl": "Biegun potyliczny",
+  "en": "Occipital pole",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "occipital_pole_r",
+  "pl": "Biegun potyliczny",
+  "en": "Occipital pole",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "occipitotemporal_sulcus_lateral_part_l",
+  "pl": "Bruzda potyliczno-skroniowa",
+  "en": "Occipitotemporal sulcus (Lateral part*)",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "occipitotemporal_sulcus_lateral_part_r",
+  "pl": "Bruzda potyliczno-skroniowa",
+  "en": "Occipitotemporal sulcus (Lateral part*)",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "olfactory_sulcus_l",
+  "pl": "Bruzda węchowa",
+  "en": "Olfactory sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "olfactory_sulcus_r",
+  "pl": "Bruzda węchowa",
+  "en": "Olfactory sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "olive",
+  "pl": "Oliwka",
+  "en": "Olive",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "opercular_part_of_inferior_frontal_gyrus_l",
+  "pl": "Część zakręt czołowy dolny",
+  "en": "Opercular part of inferior frontal gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "opercular_part_of_inferior_frontal_gyrus_r",
+  "pl": "Część zakręt czołowy dolny",
+  "en": "Opercular part of inferior frontal gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "optic_chiasm",
+  "pl": "Skrzyżowanie wzrokowe",
+  "en": "Optic chiasm",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "optic_tract_l",
+  "pl": "Pasmo wzrokowe",
+  "en": "Optic tract",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "optic_tract_r",
+  "pl": "Pasmo wzrokowe",
+  "en": "Optic tract",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "orbital_gyri_l",
+  "pl": "Zakręty oczodołowe",
+  "en": "Orbital gyri",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "orbital_gyri_r",
+  "pl": "Zakręty oczodołowe",
+  "en": "Orbital gyri",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "orbital_gyri_frontomarginal_gyrus_and_sulcus_l",
+  "pl": "Zakręty oczodołowe",
+  "en": "Orbital gyri (Frontomarginal gyrus and sulcus*)",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "orbital_gyri_frontomarginal_gyrus_and_sulcus_r",
+  "pl": "Zakręty oczodołowe",
+  "en": "Orbital gyri (Frontomarginal gyrus and sulcus*)",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "orbital_part_of_inferior_frontal_gyrus_l",
+  "pl": "Część zakręt czołowy dolny",
+  "en": "Orbital part of  inferior frontal gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "orbital_part_of_inferior_frontal_gyrus_r",
+  "pl": "Część zakręt czołowy dolny",
+  "en": "Orbital part of  inferior frontal gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "orbital_sulci_h_shaped_orbital_sulci_l",
+  "pl": "Bruzdy oczodołowe",
+  "en": "Orbital sulci (H-shaped orbital sulci*)",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "orbital_sulci_h_shaped_orbital_sulci_r",
+  "pl": "Bruzdy oczodołowe",
+  "en": "Orbital sulci (H-shaped orbital sulci*)",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "orbital_sulci_lateral_orbital_sulcus_l",
+  "pl": "Bruzdy oczodołowe",
+  "en": "Orbital sulci (Lateral Orbital sulcus*)",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "orbital_sulci_lateral_orbital_sulcus_r",
+  "pl": "Bruzdy oczodołowe",
+  "en": "Orbital sulci (Lateral Orbital sulcus*)",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "paracentral_gyrus_and_sulcus",
+  "pl": "Zakręt i bruzda okołośrodkowa",
+  "en": "Paracentral gyrus and sulcus*",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "paracentral_sulcus_l",
+  "pl": "Bruzda okołośrodkowa",
+  "en": "Paracentral sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "paracentral_sulcus_r",
+  "pl": "Bruzda okołośrodkowa",
+  "en": "Paracentral sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "parieto_occipital_sulcus_l",
+  "pl": "Bruzda ciemieniowo-potyliczna",
+  "en": "Parieto-occipital sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "parieto_occipital_sulcus_r",
+  "pl": "Bruzda ciemieniowo-potyliczna",
+  "en": "Parieto-occipital sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "peduncle_of_flocculus_l",
+  "pl": "Konar kłaczka",
+  "en": "Peduncle of flocculus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "peduncle_of_flocculus_r",
+  "pl": "Konar kłaczka",
+  "en": "Peduncle of flocculus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pons",
+  "pl": "Most",
+  "en": "Pons",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "postcentral_gyrus_l",
+  "pl": "Zakręt zaśrodkowy",
+  "en": "Postcentral gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "postcentral_gyrus_r",
+  "pl": "Zakręt zaśrodkowy",
+  "en": "Postcentral gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "postcentral_sulcus_l",
+  "pl": "Bruzda zaśrodkowa",
+  "en": "Postcentral sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "postcentral_sulcus_r",
+  "pl": "Bruzda zaśrodkowa",
+  "en": "Postcentral sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_commissure",
+  "pl": "Spoidło tylne",
+  "en": "Posterior commissure",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_fasciculus_proprius",
+  "pl": "Pęczek własny tylny",
+  "en": "Posterior fasciculus proprius",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_horn_of_spinal_cord",
+  "pl": "Róg tylny rdzenia kręgowego",
+  "en": "Posterior horn of spinal cord",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_quadrangular_lobule_l",
+  "pl": "Płacik czworoboczny tylny",
+  "en": "Posterior quadrangular lobule",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_quadrangular_lobule_r",
+  "pl": "Płacik czworoboczny tylny",
+  "en": "Posterior quadrangular lobule",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_root_of_spinal_nerve",
+  "pl": "Korzeń tylny nerwu rdzeniowego",
+  "en": "Posterior root of spinal nerve",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_spinocerebellar_tract",
+  "pl": "Droga rdzeniowo-móżdżkowa tylna",
+  "en": "Posterior spinocerebellar tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterolateral_tract",
+  "pl": "Droga tylno-boczna (Lissauera)",
+  "en": "Posterolateral tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "precentral_gyrus_l",
+  "pl": "Zakręt przedśrodkowy",
+  "en": "Precentral gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "precentral_gyrus_r",
+  "pl": "Zakręt przedśrodkowy",
+  "en": "Precentral gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "precentral_sulcus_superior_part_l",
+  "pl": "Bruzda przedśrodkowa",
+  "en": "Precentral sulcus (Superior part)*",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "precentral_sulcus_superior_part_r",
+  "pl": "Bruzda przedśrodkowa",
+  "en": "Precentral sulcus (Superior part)*",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "precentral_sulcus_inferior_part_l",
+  "pl": "Bruzda przedśrodkowa",
+  "en": "Precentral sulcus (inferior part)*",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "precentral_sulcus_inferior_part_r",
+  "pl": "Bruzda przedśrodkowa",
+  "en": "Precentral sulcus (inferior part)*",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "precuneus",
+  "pl": "Przedklinek",
+  "en": "Precuneus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "putamen_l",
+  "pl": "Skorupa",
+  "en": "Putamen",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "putamen_r",
+  "pl": "Skorupa",
+  "en": "Putamen",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pyramid_of_medulla_oblongata",
+  "pl": "Piramida rdzenia przedłużonego",
+  "en": "Pyramid of medulla oblongata",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "pyramis_of_vermis",
+  "pl": "Piramida robaka",
+  "en": "Pyramis of vermis",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "red_nucleus",
+  "pl": "Jądro czerwienne",
+  "en": "Red nucleus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "rubrospinal_tract",
+  "pl": "Droga czerwienno-rdzeniowa",
+  "en": "Rubrospinal tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sclera_l",
+  "pl": "Twardówka",
+  "en": "Sclera",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sclera_r",
+  "pl": "Twardówka",
+  "en": "Sclera",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "septal_nuclei",
+  "pl": "Jądra przegrody",
+  "en": "Septal nuclei",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "septum_pellucidum",
+  "pl": "Przegroda przezroczysta",
+  "en": "Septum pellucidum",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "spinal_dura",
+  "pl": "Opona twarda rdzenia kręgowego",
+  "en": "Spinal dura",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "spinal_reticular_process",
+  "pl": "Wyrostek siatkowaty rdzenia",
+  "en": "Spinal reticular process",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "spinotectal_tract",
+  "pl": "Droga rdzeniowo-pokrywowa",
+  "en": "Spinotectal tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "straight_gyrus_gyrus_rectus",
+  "pl": "Zakręt prosty",
+  "en": "Straight gyrus (Gyrus rectus)",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "stria_medullaris_thalami",
+  "pl": "Prążek rdzenny wzgórza",
+  "en": "Stria medullaris thalami",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "stria_terminalis",
+  "pl": "Prążek krańcowy",
+  "en": "Stria terminalis",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subparietal_sulcus",
+  "pl": "Bruzda podciemieniowa",
+  "en": "Subparietal sulcus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sulcus_interm_prim_jensen_l",
+  "pl": "Bruzda pośrednia pierwsza (Jensena)",
+  "en": "Sulcus interm_prim-Jensen",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "sulcus_interm_prim_jensen_r",
+  "pl": "Bruzda pośrednia pierwsza (Jensena)",
+  "en": "Sulcus interm_prim-Jensen",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superior_cerebellar_peduncle",
+  "pl": "Konar górny móżdżku",
+  "en": "Superior cerebellar peduncle",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_colliculus",
+  "pl": "Wzgórek górny",
+  "en": "Superior colliculus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superior_frontal_gyrus_l",
+  "pl": "Zakręt czołowy górny",
+  "en": "Superior frontal gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_frontal_gyrus_r",
+  "pl": "Zakręt czołowy górny",
+  "en": "Superior frontal gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_frontal_sulcus_l",
+  "pl": "Bruzda czołowa górna",
+  "en": "Superior frontal sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_frontal_sulcus_r",
+  "pl": "Bruzda czołowa górna",
+  "en": "Superior frontal sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_occipital_gyri_l",
+  "pl": "Zakręty potyliczne górne",
+  "en": "Superior occipital gyri",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superior_occipital_gyri_r",
+  "pl": "Zakręty potyliczne górne",
+  "en": "Superior occipital gyri",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superior_parietal_lobule_l",
+  "pl": "Płacik ciemieniowy górny",
+  "en": "Superior parietal lobule",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_parietal_lobule_r",
+  "pl": "Płacik ciemieniowy górny",
+  "en": "Superior parietal lobule",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_salivatory_nucleus",
+  "pl": "Jądro ślinowe górne",
+  "en": "Superior salivatory nucleus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_semilunar_lobule_l",
+  "pl": "Płacik półksiężycowaty górny",
+  "en": "Superior semilunar lobule",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superior_semilunar_lobule_r",
+  "pl": "Płacik półksiężycowaty górny",
+  "en": "Superior semilunar lobule",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superior_temporal_gyrus_lateral_part_l",
+  "pl": "Zakręt skroniowy górny",
+  "en": "Superior temporal gyrus (Lateral part)",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_temporal_gyrus_lateral_part_r",
+  "pl": "Zakręt skroniowy górny",
+  "en": "Superior temporal gyrus (Lateral part)",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_temporal_sulcus_l",
+  "pl": "Bruzda skroniowa górna",
+  "en": "Superior temporal sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_temporal_sulcus_r",
+  "pl": "Bruzda skroniowa górna",
+  "en": "Superior temporal sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supramarginal_gyrus_l",
+  "pl": "Zakręt nadbrzeżny",
+  "en": "Supramarginal gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supramarginal_gyrus_r",
+  "pl": "Zakręt nadbrzeżny",
+  "en": "Supramarginal gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tectospinal_tract",
+  "pl": "Droga pokrywowo-rdzeniowa",
+  "en": "Tectospinal tract",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "temporal_plane_l",
+  "pl": "Płaszczyzna skroniowa",
+  "en": "Temporal plane",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "temporal_plane_r",
+  "pl": "Płaszczyzna skroniowa",
+  "en": "Temporal plane",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "temporal_pole_l",
+  "pl": "Biegun skroniowy",
+  "en": "Temporal pole",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "temporal_pole_r",
+  "pl": "Biegun skroniowy",
+  "en": "Temporal pole",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tentorium_cerebelli_l",
+  "pl": "Namiot móżdżku",
+  "en": "Tentorium cerebelli",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "tentorium_cerebelli_r",
+  "pl": "Namiot móżdżku",
+  "en": "Tentorium cerebelli",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "thalamus",
+  "pl": "Wzgórze",
+  "en": "Thalamus",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "third_ventricle",
+  "pl": "Komora trzecia",
+  "en": "Third ventricle",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tonsil_of_cerebellum_l",
+  "pl": "Migdałek móżdżku; Kłaczek dodatkowy",
+  "en": "Tonsil of cerebellum",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tonsil_of_cerebellum_r",
+  "pl": "Migdałek móżdżku; Kłaczek dodatkowy",
+  "en": "Tonsil of cerebellum",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_frontopolar_gyrus_and_sulcus_l",
+  "pl": "Zakręt i bruzda czołowo-biegunowa poprzeczna",
+  "en": "Transverse frontopolar gyrus and sulcus*",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "transverse_frontopolar_gyrus_and_sulcus_r",
+  "pl": "Zakręt i bruzda czołowo-biegunowa poprzeczna",
+  "en": "Transverse frontopolar gyrus and sulcus*",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "transverse_occipital_sulcus_l",
+  "pl": "Bruzda potyliczna poprzeczna",
+  "en": "Transverse occipital sulcus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_occipital_sulcus_r",
+  "pl": "Bruzda potyliczna poprzeczna",
+  "en": "Transverse occipital sulcus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_temporal_gyri_l",
+  "pl": "Zakręty skroniowe poprzeczne",
+  "en": "Transverse temporal gyri",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_temporal_gyri_r",
+  "pl": "Zakręty skroniowe poprzeczne",
+  "en": "Transverse temporal gyri",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "triangular_part_of_inferior_frontal_gyrus_l",
+  "pl": "Część zakręt czołowy dolny",
+  "en": "Triangular part of inferior frontal gyrus",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "triangular_part_of_inferior_frontal_gyrus_r",
+  "pl": "Część zakręt czołowy dolny",
+  "en": "Triangular part of inferior frontal gyrus",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "comp"
+ },
+ {
+  "id": "tuber_of_vermis",
+  "pl": "Guzek robaka",
+  "en": "Tuber of vermis",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "uvula_of_vermis",
+  "pl": "Języczek robaka",
+  "en": "Uvula of vermis",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "vestibular_nuclei",
+  "pl": "Jądra przedsionkowe",
+  "en": "Vestibular nuclei",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vitreous_body_l",
+  "pl": "Ciało szkliste",
+  "en": "Vitreous body",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "vitreous_body_r",
+  "pl": "Ciało szkliste",
+  "en": "Vitreous body",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "white_matter_of_spinal_cord",
+  "pl": "Istota biała rdzenia kręgowego",
+  "en": "White matter of spinal cord",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "white_matter_of_telencephalon_l",
+  "pl": "Istota biała kresomózgowia",
+  "en": "White matter of telencephalon",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "white_matter_of_telencephalon_r",
+  "pl": "Istota biała kresomózgowia",
+  "en": "White matter of telencephalon",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "wing_of_central_lobule",
+  "pl": "Skrzydło płacika środkowego",
+  "en": "Wing of central lobule",
+  "side": "mid",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "zonular_fibres_l",
+  "pl": "Włókna obwódkowe",
+  "en": "Zonular fibres",
+  "side": "l",
+  "kind": "brain",
+  "pl_from": "exact"
+ },
+ {
+  "id": "zonular_fibres_r",
+  "pl": "Włókna obwódkowe",
+  "en": "Zonular fibres",
+  "side": "r",
+  "kind": "brain",
+  "pl_from": "exact"
+ }
+]

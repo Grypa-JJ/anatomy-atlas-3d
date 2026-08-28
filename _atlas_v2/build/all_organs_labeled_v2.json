@@ -1,0 +1,1354 @@
+[
+ {
+  "id": "anterior_papillary_muscle_of_right_ventricle",
+  "pl": "Mięsień brodawkowaty przedni (komora prawa)",
+  "en": "Anterior papillary muscle of right ventricle",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_semilunar_leaflet_of_pulmonary_valve",
+  "pl": "Płatek półksiężycowaty przedni zastawki pnia płucnego",
+  "en": "Anterior semilunar leaflet of pulmonary valve",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "coronary_sinus",
+  "pl": "Zatoka wieńcowa",
+  "en": "Coronary sinus",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_leaflet_of_right_atrioventricular_valve",
+  "pl": "Płatek dolny zastawki przedsionkowo-komorowej prawej",
+  "en": "Inferior leaflet of right atrioventricular valve",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "inferior_papillary_muscle_of_left_ventricle",
+  "pl": "Mięsień brodawkowaty przedni (komora prawa)",
+  "en": "Inferior papillary muscle of left ventricle",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "inferior_papillary_muscle_of_right_ventricle",
+  "pl": "Mięsień brodawkowaty przedni (komora prawa)",
+  "en": "Inferior papillary muscle of right ventricle",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "inferior_vein_of_left_ventricle",
+  "pl": "Żyła dolna komory lewej",
+  "en": "Inferior vein of left ventricle",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "inferior_vein_of_left_ventricle_posterior",
+  "pl": "Żyła dolna komory lewej",
+  "en": "Inferior vein of left ventricle (//Posterior '')",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "left_atrium",
+  "pl": "Przedsionek lewy",
+  "en": "Left atrium",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_coronary_leaflet",
+  "pl": "Płatek wieńcowy lewy zastawki aorty",
+  "en": "Left coronary leaflet",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "left_semilunar_leaflet_of_pulmonary_valve",
+  "pl": "Płatek półksiężycowaty lewy zastawki pnia płucnego",
+  "en": "Left semilunar leaflet of pulmonary valve",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "left_ventricle",
+  "pl": "Komora lewa",
+  "en": "Left ventricle",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_cardiac_vein",
+  "pl": "Żyła serca średnia, żyła sercowa średnia",
+  "en": "Middle cardiac vein",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "non_coronary_leaflet",
+  "pl": "Płatek niewieńcowy zastawki aorty",
+  "en": "Non-coronary leaflet",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_leaflet_of_left_atrioventricular_valve",
+  "pl": "Płatek tylny zastawki przedsionkowo-komorowej lewej",
+  "en": "Posterior leaflet of left atrioventricular valve",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "right_atrium",
+  "pl": "Przedsionek prawy",
+  "en": "Right atrium",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_coronary_leaflet",
+  "pl": "Płatek wieńcowy prawy zastawki aorty",
+  "en": "Right coronary leaflet",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "right_semilunar_leaflet_of_pulmonary_valve",
+  "pl": "Płatek półksiężycowaty prawy zastawki pnia płucnego",
+  "en": "Right semilunar leaflet of pulmonary valve",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "right_ventricle",
+  "pl": "Komora prawa",
+  "en": "Right ventricle",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "septal_leaflet_of_right_atrioventricular_valve",
+  "pl": "Płatek przegrodowy zastawki przedsionkowo-komorowej prawej",
+  "en": "Septal leaflet of right atrioventricular valve",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "septal_papillary_muscle_of_right_ventricle",
+  "pl": "Mięsień brodawkowaty przegrodowy (komora prawa)",
+  "en": "Septal papillary muscle of right ventricle",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "accessory_parotid_gland_l",
+  "pl": "Ślinianka przyuszna dodatkowa",
+  "en": "(Accessory parotid gland)",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "accessory_parotid_gland_r",
+  "pl": "Ślinianka przyuszna dodatkowa",
+  "en": "(Accessory parotid gland)",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anteromedial_basal_segmental_bronchus_of_left_lung",
+  "pl": "Oskrzele segmentowe przednio-przyśrodkowe podstawne płuca lewego",
+  "en": "(Anteromedial basal segmental bronchus of left lung)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "accessory_pancreatic_duct",
+  "pl": "Przewód trzustkowy dodatkowy",
+  "en": "Accessory pancreatic duct",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "adenohypophysis",
+  "pl": "Część gruczołowa przysadki",
+  "en": "Adenohypophysis",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_basal_segmental_bronchus_of_left_lung_bviii",
+  "pl": "Oskrzele segmentowe przednie podstawne płuca lewego (BVIII)",
+  "en": "Anterior basal segmental bronchus of left lung (BVIII)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_basal_segmental_bronchus_of_right_lung_bviii",
+  "pl": "Oskrzele segmentowe przednie podstawne płuca prawego (BVIII)",
+  "en": "Anterior basal segmental bronchus of right lung (BVIII)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_lateral_segment_of_liver_vi",
+  "pl": "Segment wątroby [VI]",
+  "en": "Anterior lateral segment of liver (VI)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_medial_segment_of_liver_v",
+  "pl": "Segment wątroby [V]",
+  "en": "Anterior medial segment of liver (V)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_segmental_bronchus_of_left_lung_biii",
+  "pl": "Oskrzele segmentowe przednie płuca lewego (BIII)",
+  "en": "Anterior segmental bronchus of left lung (BIII)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_segmental_bronchus_of_right_lung_biii",
+  "pl": "Oskrzele segmentowe przednie płuca prawego (BIII)",
+  "en": "Anterior segmental bronchus of right lung (BIII)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "apical_segmental_bronchus_of_right_lung_bi",
+  "pl": "Oskrzele segmentowe szczytowe płuca prawego (BI)",
+  "en": "Apical segmental bronchus of right lung (BI)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "apicoposterior_segmental_bronchus_of_left_lung_bi_bii",
+  "pl": "Oskrzele segmentowe szczytowo-tylne płuca lewego (BI+BII)",
+  "en": "Apicoposterior segmental bronchus of left lung (BI+BII)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "ascending_colon",
+  "pl": "Okrężnica wstępująca",
+  "en": "Ascending colon",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "bile_duct",
+  "pl": "Przewód żółciowy wspólny",
+  "en": "Bile duct",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "corpus_cavernosum_of_penis",
+  "pl": "Ciało jamiste prącia",
+  "en": "Corpus cavernosum of penis",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "corpus_spongiosum_of_penis",
+  "pl": "Ciało gąbczaste prącia",
+  "en": "Corpus spongiosum of penis",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "norm"
+ },
+ {
+  "id": "descending_colon",
+  "pl": "Okrężnica zstępująca",
+  "en": "Descending colon",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ductus_deferens_l",
+  "pl": "Nasieniowód",
+  "en": "Ductus deferens",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ductus_deferens_r",
+  "pl": "Nasieniowód",
+  "en": "Ductus deferens",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "duodenum",
+  "pl": "Dwunastnica",
+  "en": "Duodenum",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ejaculatory_duct",
+  "pl": "Przewód wytryskowy",
+  "en": "Ejaculatory duct",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "epididymis_l",
+  "pl": "Najądrze",
+  "en": "Epididymis",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "epididymis_r",
+  "pl": "Najądrze",
+  "en": "Epididymis",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "epiglottis",
+  "pl": "Nagłośnia",
+  "en": "Epiglottis",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "free_taenia",
+  "pl": "Taśma wolna okrężnicy",
+  "en": "Free taenia",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "gallbladder",
+  "pl": "Pęcherzyk żółciowy",
+  "en": "Gallbladder",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "gingiva",
+  "pl": "Dziąsło",
+  "en": "Gingiva",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "glans_penis",
+  "pl": "Żołądź prącia",
+  "en": "Glans penis",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "greater_omentum",
+  "pl": "Sieć większa",
+  "en": "Greater omentum",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_lingular_segmental_bronchus_of_left_lung_bv",
+  "pl": "Oskrzele segmentowe dolne języczkowe płuca lewego (BV)",
+  "en": "Inferior lingular segmental bronchus of left lung (BV)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_lobe_of_left_lung",
+  "pl": "Płat dolny płuca",
+  "en": "Inferior lobe of left lung",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_lobe_of_right_lung",
+  "pl": "Płat dolny płuca",
+  "en": "Inferior lobe of right lung",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_parathyroid_gland",
+  "pl": "Gruczoł przytarczyczny dolny",
+  "en": "Inferior parathyroid gland",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intermediate_bronchus",
+  "pl": "Oskrzele pośrednie",
+  "en": "Intermediate bronchus",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "jejunum",
+  "pl": "Jelito czcze",
+  "en": "Jejunum",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "kidney_l",
+  "pl": "Nerka",
+  "en": "Kidney",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "kidney_r",
+  "pl": "Nerka",
+  "en": "Kidney",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "laryngopharynx",
+  "pl": "Część krtaniowa gardła",
+  "en": "Laryngopharynx",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_basal_segmental_bronchus_of_left_lung_bix",
+  "pl": "Oskrzele segmentowe boczne podstawne płuca lewego (BIX)",
+  "en": "Lateral basal segmental bronchus of left lung (BIX)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_basal_segmental_bronchus_of_right_lung_bix",
+  "pl": "Oskrzele segmentowe boczne podstawne płuca prawego (BIX)",
+  "en": "Lateral basal segmental bronchus of right lung (BIX)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_segmental_bronchus_of_right_lung_biv",
+  "pl": "Oskrzele segmentowe boczne płuca prawego (BIV)",
+  "en": "Lateral segmental bronchus of right lung (BIV)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "left_anterior_lateral_segment_of_liver_iii",
+  "pl": "Segment wątroby [III]",
+  "en": "Left anterior lateral segment of liver (III)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "left_inferior_lobar_bronchus",
+  "pl": "Oskrzele płatowe dolne lewe",
+  "en": "Left inferior lobar bronchus",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_main_bronchus",
+  "pl": "Oskrzele główne lewe",
+  "en": "Left main bronchus",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_medial_segment_of_liver_iv",
+  "pl": "Segment wątroby [IV]",
+  "en": "Left medial segment of liver (IV)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "left_posterior_lateral_segment_of_liver_ii",
+  "pl": "Segment wątroby [II]",
+  "en": "Left posterior lateral segment of liver (II)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "left_superior_lobar_bronchus",
+  "pl": "Oskrzele płatowe górne lewe",
+  "en": "Left superior lobar bronchus",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lesser_omentum",
+  "pl": "Sieć mniejsza",
+  "en": "Lesser omentum",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "liver",
+  "pl": "Wątroba",
+  "en": "Liver",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_basal_segmental_bronchus_of_left_lung_bvii",
+  "pl": "Oskrzele segmentowe przyśrodkowe podstawne płuca lewego (BVII)",
+  "en": "Medial basal segmental bronchus of left lung (BVII)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_basal_segmental_bronchus_of_right_lung_bvii",
+  "pl": "Oskrzele segmentowe przyśrodkowe podstawne płuca prawego (BVII)",
+  "en": "Medial basal segmental bronchus of right lung (BVII)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_segmental_bronchus_of_right_lung_bv",
+  "pl": "Oskrzele segmentowe przyśrodkowe płuca prawego (BV)",
+  "en": "Medial segmental bronchus of right lung (BV)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "meso_appendix",
+  "pl": "Krezka wyrostka robaczkowego",
+  "en": "Meso-appendix",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "mesocolic_taenia",
+  "pl": "Taśma krezkowa okrężnicy",
+  "en": "Mesocolic taenia",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "mesocolon",
+  "pl": "Krezka okrężnicy",
+  "en": "Mesocolon",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_lobar_bronchus",
+  "pl": "Gałęzie płata środkowego",
+  "en": "Middle lobar bronchus",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "middle_lobe_of_right_lung",
+  "pl": "Płat środkowy płuca prawego",
+  "en": "Middle lobe of right lung",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "mucosa_of_nasal_cavity",
+  "pl": "Błona śluzowa jamy nosowej",
+  "en": "Mucosa of nasal cavity",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "nasopharynx",
+  "pl": "Część nosowa gardła",
+  "en": "Nasopharynx",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "neurohypophysis",
+  "pl": "Przysadka nerwowa",
+  "en": "Neurohypophysis",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "oesophagus",
+  "pl": "Przełyk",
+  "en": "Oesophagus",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "omental_taenia",
+  "pl": "Taśma sieciowa okrężnicy",
+  "en": "Omental taenia",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "oropharynx",
+  "pl": "Część ustna gardła",
+  "en": "Oropharynx",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pancreas",
+  "pl": "Trzustka",
+  "en": "Pancreas",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pancreatic_duct",
+  "pl": "Przewód trzustkowy",
+  "en": "Pancreatic duct",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "parotid_duct_l",
+  "pl": "Przewód ślinianki przyusznej",
+  "en": "Parotid duct",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "parotid_duct_r",
+  "pl": "Przewód ślinianki przyusznej",
+  "en": "Parotid duct",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "parotid_gland_l",
+  "pl": "Ślinianka przyuszna",
+  "en": "Parotid gland",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "parotid_gland_r",
+  "pl": "Ślinianka przyuszna",
+  "en": "Parotid gland",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pineal_gland",
+  "pl": "Szyszynka",
+  "en": "Pineal gland",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "pleura",
+  "pl": "Opłucna",
+  "en": "Pleura",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_basal_segmental_bronchus_of_left_lung_bx",
+  "pl": "Oskrzele segmentowe tylne podstawne płuca lewego (BX)",
+  "en": "Posterior basal segmental bronchus of left lung (BX)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_basal_segmental_bronchus_of_right_lung_bx",
+  "pl": "Oskrzele segmentowe tylne podstawne płuca prawego (BX)",
+  "en": "Posterior basal segmental bronchus of right lung (BX)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_lateral_segment_of_liver_vii",
+  "pl": "Segment wątroby [VII]",
+  "en": "Posterior lateral segment of liver (VII)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_medial_segment_of_liver_viii",
+  "pl": "Segment wątroby [VIII]",
+  "en": "Posterior medial segment of liver (VIII)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_segment_of_liver_i",
+  "pl": "Segment wątroby [I]",
+  "en": "Posterior segment of liver (I)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_segmental_bronchus_of_right_lung_bii",
+  "pl": "Oskrzele segmentowe tylne płuca prawego (BII)",
+  "en": "Posterior segmental bronchus of right lung (BII)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "prostate",
+  "pl": "Gruczoł krokowy (stercz)",
+  "en": "Prostate",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "renal_pelvis_l",
+  "pl": "Miedniczka nerkowa",
+  "en": "Renal pelvis",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "renal_pelvis_r",
+  "pl": "Miedniczka nerkowa",
+  "en": "Renal pelvis",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_inferior_lobar_bronchus",
+  "pl": "Oskrzele płatowe dolne prawe",
+  "en": "Right inferior lobar bronchus",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_main_bronchus",
+  "pl": "Oskrzele główne prawe",
+  "en": "Right main bronchus",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_superior_lobar_bronchus",
+  "pl": "Oskrzele płatowe górne lewe",
+  "en": "Right superior lobar bronchus",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "norm"
+ },
+ {
+  "id": "seminal_gland_l",
+  "pl": "Pęcherzyk nasienny",
+  "en": "Seminal gland",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "seminal_gland_r",
+  "pl": "Pęcherzyk nasienny",
+  "en": "Seminal gland",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sigmoid_colon",
+  "pl": "Okrężnica esowata",
+  "en": "Sigmoid colon",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "soft_palate",
+  "pl": "Podniebienie miękkie",
+  "en": "Soft palate",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "stomach",
+  "pl": "Żołądek",
+  "en": "Stomach",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sublingual_gland",
+  "pl": "Ślinianka podjęzykowa",
+  "en": "Sublingual gland",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "submandibular_duct_l",
+  "pl": "Przewód ślinianki pożuchwowej",
+  "en": "Submandibular duct",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "submandibular_duct_r",
+  "pl": "Przewód ślinianki pożuchwowej",
+  "en": "Submandibular duct",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "submandibular_gland_l",
+  "pl": "Ślinianka podżuchwowa",
+  "en": "Submandibular gland",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "submandibular_gland_r",
+  "pl": "Ślinianka podżuchwowa",
+  "en": "Submandibular gland",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_lingular_segmental_bronchus_of_left_lung_biv",
+  "pl": "Oskrzele segmentowe górne języczkowe płuca lewego (BIV)",
+  "en": "Superior lingular segmental bronchus of left lung (BIV)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_lobe_of_left_lung",
+  "pl": "Płat górny płuca",
+  "en": "Superior lobe of left lung",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_lobe_of_right_lung",
+  "pl": "Płat górny płuca",
+  "en": "Superior lobe of right lung",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_parathyroid_gland_l",
+  "pl": "Gruczoł przytarczyczny górny",
+  "en": "Superior parathyroid gland",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_parathyroid_gland_r",
+  "pl": "Gruczoł przytarczyczny górny",
+  "en": "Superior parathyroid gland",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_segmental_bronchus_of_left_lung_bvi",
+  "pl": "Oskrzele segmentowe górne płuca lewego (BVI)",
+  "en": "Superior segmental bronchus of left lung (BVI)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_segmental_bronchus_of_right_lung_bvi",
+  "pl": "Oskrzele segmentowe górne płuca prawego (BVI)",
+  "en": "Superior segmental bronchus of right lung (BVI)",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "comp"
+ },
+ {
+  "id": "suprarenal_gland_l",
+  "pl": "Nadnercze",
+  "en": "Suprarenal gland",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "suprarenal_gland_r",
+  "pl": "Nadnercze",
+  "en": "Suprarenal gland",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "testis_l",
+  "pl": "Jądro",
+  "en": "Testis",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "testis_r",
+  "pl": "Jądro",
+  "en": "Testis",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thyroid_gland",
+  "pl": "Gruczoł tarczowy",
+  "en": "Thyroid gland",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tongue",
+  "pl": "Język",
+  "en": "Tongue",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "trachea",
+  "pl": "Tchawica",
+  "en": "Trachea",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_colon",
+  "pl": "Okrężnica poprzeczna",
+  "en": "Transverse colon",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ureter_l",
+  "pl": "Moczowód",
+  "en": "Ureter",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ureter_r",
+  "pl": "Moczowód",
+  "en": "Ureter",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "urethra",
+  "pl": "Mięśnie odbytniczo-cewkowe",
+  "en": "Urethra",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "urinary_bladder",
+  "pl": "Pęcherz moczowy",
+  "en": "Urinary bladder",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "uvula_of_palate",
+  "pl": "Języczek podniebienny",
+  "en": "Uvula of palate",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "vermiform_appendix",
+  "pl": "Wyrostek robaczkowy",
+  "en": "Vermiform appendix",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ampulla_of_lacrimal_canaliculus_l",
+  "pl": "Bańka kanalika łzowego",
+  "en": "Ampulla of lacrimal canaliculus",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ampulla_of_lacrimal_canaliculus_r",
+  "pl": "Bańka kanalika łzowego",
+  "en": "Ampulla of lacrimal canaliculus",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_chamber_of_eyeball_l",
+  "pl": "Komora przednia gałki ocznej",
+  "en": "Anterior chamber of eyeball",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_chamber_of_eyeball_r",
+  "pl": "Komora przednia gałki ocznej",
+  "en": "Anterior chamber of eyeball",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_segment_of_eyeball_l",
+  "pl": "Odcinek przedni gałki ocznej",
+  "en": "Anterior segment of eyeball",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_segment_of_eyeball_r",
+  "pl": "Odcinek przedni gałki ocznej",
+  "en": "Anterior segment of eyeball",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "cochlea_l",
+  "pl": "Ślimak",
+  "en": "Cochlea",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cochlea_r",
+  "pl": "Ślimak",
+  "en": "Cochlea",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cornea_l",
+  "pl": "Rogówka",
+  "en": "Cornea",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cornea_r",
+  "pl": "Rogówka",
+  "en": "Cornea",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iris_l",
+  "pl": "Tęczówka",
+  "en": "Iris",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iris_r",
+  "pl": "Tęczówka",
+  "en": "Iris",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lacrimal_canaliculus_l",
+  "pl": "Kanalik łzowy",
+  "en": "Lacrimal canaliculus",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lacrimal_canaliculus_r",
+  "pl": "Kanalik łzowy",
+  "en": "Lacrimal canaliculus",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lacrimal_gland_l",
+  "pl": "Gruczoł łzowy",
+  "en": "Lacrimal gland",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lacrimal_gland_r",
+  "pl": "Gruczoł łzowy",
+  "en": "Lacrimal gland",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lacrimal_sac",
+  "pl": "Woreczek łzowy",
+  "en": "Lacrimal sac",
+  "side": "mid",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lens_l",
+  "pl": "Soczewka",
+  "en": "Lens",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lens_r",
+  "pl": "Soczewka",
+  "en": "Lens",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_segment_of_eyeball_l",
+  "pl": "Odcinek tylny gałki ocznej",
+  "en": "Posterior segment of eyeball",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_segment_of_eyeball_r",
+  "pl": "Odcinek tylny gałki ocznej",
+  "en": "Posterior segment of eyeball",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "retina_l",
+  "pl": "Siatkówka",
+  "en": "Retina",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "retina_r",
+  "pl": "Siatkówka",
+  "en": "Retina",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sclera_l",
+  "pl": "Twardówka",
+  "en": "Sclera",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sclera_r",
+  "pl": "Twardówka",
+  "en": "Sclera",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "suspensory_ligament_of_eyeball_l",
+  "pl": "Więzadło wieszadłowe gałki ocznej",
+  "en": "Suspensory ligament of eyeball",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "suspensory_ligament_of_eyeball_r",
+  "pl": "Więzadło wieszadłowe gałki ocznej",
+  "en": "Suspensory ligament of eyeball",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tympanic_membrane_l",
+  "pl": "Błona bębenkowa",
+  "en": "Tympanic membrane",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "tympanic_membrane_r",
+  "pl": "Błona bębenkowa",
+  "en": "Tympanic membrane",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vestibule_l",
+  "pl": "Przedsionek pochwy",
+  "en": "Vestibule",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vestibule_r",
+  "pl": "Przedsionek pochwy",
+  "en": "Vestibule",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vitreous_body_l",
+  "pl": "Ciało szkliste",
+  "en": "Vitreous body",
+  "side": "l",
+  "kind": "organ",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vitreous_body_r",
+  "pl": "Ciało szkliste",
+  "en": "Vitreous body",
+  "side": "r",
+  "kind": "organ",
+  "pl_from": "exact"
+ }
+]

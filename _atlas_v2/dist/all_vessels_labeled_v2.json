@@ -1,0 +1,5074 @@
+[
+ {
+  "id": "deep_branch_of_transverse_cervical_artery_l",
+  "pl": "Gałąź głęboka tętnicy poprzecznej szyi",
+  "en": "(Deep branch of transverse cervical artery)",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "deep_branch_of_transverse_cervical_artery_r",
+  "pl": "Gałąź głęboka tętnicy poprzecznej szyi",
+  "en": "(Deep branch of transverse cervical artery)",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superficial_branch_of_transverse_cervical_artery_l",
+  "pl": "Gałąź powierzchowna tętnicy poprzecznej szyi",
+  "en": "(Superficial branch of transverse cervical artery)",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superficial_branch_of_transverse_cervical_artery_r",
+  "pl": "Gałąź powierzchowna tętnicy poprzecznej szyi",
+  "en": "(Superficial branch of transverse cervical artery)",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "ulnar_recurrent_artery_l",
+  "pl": "Tętnica wsteczna łokciowa",
+  "en": "(Ulnar recurrent artery)",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnar_recurrent_artery_r",
+  "pl": "Tętnica wsteczna łokciowa",
+  "en": "(Ulnar recurrent artery)",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "x",
+  "pl": "?x",
+  "en": "?x",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "none"
+ },
+ {
+  "id": "abdominal_aorta",
+  "pl": "Aorta brzuszna",
+  "en": "Abdominal aorta",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "accessory_branch_of_middle_meningeal_artery_l",
+  "pl": "Gałąź tętnica oponowa środkowa",
+  "en": "Accessory branch of middle meningeal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "accessory_branch_of_middle_meningeal_artery_r",
+  "pl": "Gałąź tętnica oponowa środkowa",
+  "en": "Accessory branch of middle meningeal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "accessory_hemi_azygos_vein",
+  "pl": "Żyła nieparzysta krótka dodatkowa",
+  "en": "Accessory hemi-azygos vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "angular_artery_l",
+  "pl": "Tętnica kątowa",
+  "en": "Angular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "angular_artery_r",
+  "pl": "Tętnica kątowa",
+  "en": "Angular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "angular_vein_l",
+  "pl": "Żyła kątowa",
+  "en": "Angular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "angular_vein_r",
+  "pl": "Żyła kątowa",
+  "en": "Angular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_basal_segmental_artery_of_left_lung",
+  "pl": "Tętnica przednia podstawna płuca",
+  "en": "Anterior basal segmental artery of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_basal_segmental_artery_of_right_lung",
+  "pl": "Tętnica przednia podstawna płuca",
+  "en": "Anterior basal segmental artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_branch_of_renal_artery_l",
+  "pl": "Gałąź przednia tętnica nerkowa",
+  "en": "Anterior branch of renal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_branch_of_renal_artery_r",
+  "pl": "Gałąź przednia tętnica nerkowa",
+  "en": "Anterior branch of renal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_cerebral_artery",
+  "pl": "Tętnica przednia mózgu",
+  "en": "Anterior cerebral artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_circumflex_humeral_artery_l",
+  "pl": "Tętnica okalająca ramię przednia",
+  "en": "Anterior circumflex humeral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_circumflex_humeral_artery_r",
+  "pl": "Tętnica okalająca ramię przednia",
+  "en": "Anterior circumflex humeral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_circumflex_humeral_vein_l",
+  "pl": "Żyła okalająca ramię przednia",
+  "en": "Anterior circumflex humeral vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_circumflex_humeral_vein_r",
+  "pl": "Żyła okalająca ramię przednia",
+  "en": "Anterior circumflex humeral vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_communicating_artery",
+  "pl": "Tętnica łącząca przednia",
+  "en": "Anterior communicating artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_deep_temporal_artery_l",
+  "pl": "Tętnica skroniowa głęboka przednia",
+  "en": "Anterior deep temporal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_deep_temporal_artery_r",
+  "pl": "Tętnica skroniowa głęboka przednia",
+  "en": "Anterior deep temporal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_division_of_internal_iliac_artery_l",
+  "pl": "Podział przedni tętnicy biodrowej wewnętrznej",
+  "en": "Anterior division of internal iliac artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_division_of_internal_iliac_artery_r",
+  "pl": "Podział przedni tętnicy biodrowej wewnętrznej",
+  "en": "Anterior division of internal iliac artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_division_of_retromandibular_vein_l",
+  "pl": "Podział przedni żyły zażuchwowej",
+  "en": "Anterior division of retromandibular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_division_of_retromandibular_vein_r",
+  "pl": "Podział przedni żyły zażuchwowej",
+  "en": "Anterior division of retromandibular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_ethmoidal_artery",
+  "pl": "Tętnica sitowa przednia",
+  "en": "Anterior ethmoidal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_inferior_cerebellar_artery_l",
+  "pl": "Tętnica dolna przednia móżdżku",
+  "en": "Anterior inferior cerebellar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_inferior_cerebellar_artery_r",
+  "pl": "Tętnica dolna przednia móżdżku",
+  "en": "Anterior inferior cerebellar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_inferior_pancreaticoduodenal_artery",
+  "pl": "Tętnica trzustkowo-dwunastnicza górna przednia",
+  "en": "Anterior inferior pancreaticoduodenal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "anterior_intercavernous_sinus",
+  "pl": "Zatoka międzyjamista przednia",
+  "en": "Anterior intercavernous sinus",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_interventricular_artery",
+  "pl": "Gałąź międzykomorowa przednia",
+  "en": "Anterior interventricular artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "anterior_jugular_vein_l",
+  "pl": "Żyła szyjna przednia",
+  "en": "Anterior jugular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_jugular_vein_r",
+  "pl": "Żyła szyjna przednia",
+  "en": "Anterior jugular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_segmental_artery_of_left_lung",
+  "pl": "Tętnica przednia płuca",
+  "en": "Anterior segmental artery of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_segmental_artery_of_right_lung",
+  "pl": "Tętnica przednia płuca",
+  "en": "Anterior segmental artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_septal_branches_of_anterior_ethmoidal_artery",
+  "pl": "Gałęzie przednia tętnica sitowa przednia",
+  "en": "Anterior septal branches of anterior ethmoidal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_spinal_artery",
+  "pl": "Tętnica rdzeniowa przednia",
+  "en": "Anterior spinal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_temporal_branch_l",
+  "pl": "Gałąź skroniowa przednia",
+  "en": "Anterior temporal branch",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_temporal_branch_r",
+  "pl": "Gałąź skroniowa przednia",
+  "en": "Anterior temporal branch",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_tibial_artery_l",
+  "pl": "Tętnica piszczelowa przednia",
+  "en": "Anterior tibial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_tibial_artery_r",
+  "pl": "Tętnica piszczelowa przednia",
+  "en": "Anterior tibial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_tibial_veins_l",
+  "pl": "Żyły piszczelowe przednie",
+  "en": "Anterior tibial veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_tibial_veins_r",
+  "pl": "Żyły piszczelowe przednie",
+  "en": "Anterior tibial veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "anterior_vein_of_left_lung",
+  "pl": "Żyła przednia płuca",
+  "en": "Anterior vein of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "anterior_vein_of_right_lung",
+  "pl": "Żyła przednia płuca",
+  "en": "Anterior vein of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "aortic_arch",
+  "pl": "Łuk aorty",
+  "en": "Aortic arch",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "apical_segmental_artery_of_left_lung",
+  "pl": "Tętnica szczytowa płuca",
+  "en": "Apical segmental artery of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "apical_segmental_artery_of_right_lung",
+  "pl": "Tętnica szczytowa płuca",
+  "en": "Apical segmental artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "apical_vein_of_right_lung",
+  "pl": "Żyła szczytowa płuca",
+  "en": "Apical vein of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "apicoposterior_vein_of_left_lung",
+  "pl": "Żyła szczytowo-tylna płuca",
+  "en": "Apicoposterior vein of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "appendicular_artery",
+  "pl": "Tętnica wyrostka robaczkowego",
+  "en": "Appendicular artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "arcuate_artery_l",
+  "pl": "Tętnica łukowata",
+  "en": "Arcuate artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "arcuate_artery_r",
+  "pl": "Tętnica łukowata",
+  "en": "Arcuate artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "artery_of_central_sulcus_l",
+  "pl": "Tętnica bruzdy środkowej",
+  "en": "Artery of central sulcus",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "artery_of_central_sulcus_r",
+  "pl": "Tętnica bruzdy środkowej",
+  "en": "Artery of central sulcus",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "artery_of_precentral_sulcus_l",
+  "pl": "Tętnica bruzdy przedśrodkowej",
+  "en": "Artery of precentral sulcus",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "artery_of_precentral_sulcus_r",
+  "pl": "Tętnica bruzdy przedśrodkowej",
+  "en": "Artery of precentral sulcus",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "artery_of_pterygoid_canal_l",
+  "pl": "Tętnica kanału skrzydłowego",
+  "en": "Artery of pterygoid canal",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "artery_of_pterygoid_canal_r",
+  "pl": "Tętnica kanału skrzydłowego",
+  "en": "Artery of pterygoid canal",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ascending_aorta",
+  "pl": "Aorta wstępująca",
+  "en": "Ascending aorta",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ascending_branch_of_left_colic_artery",
+  "pl": "Gałąź wstępująca tętnicy okrężniczej lewej",
+  "en": "Ascending branch of left colic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "ascending_pharyngeal_artery_l",
+  "pl": "Tętnica gardłowa wstępująca",
+  "en": "Ascending pharyngeal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ascending_pharyngeal_artery_r",
+  "pl": "Tętnica gardłowa wstępująca",
+  "en": "Ascending pharyngeal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "axillary_artery_l",
+  "pl": "Tętnica pachowa",
+  "en": "Axillary artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "axillary_artery_r",
+  "pl": "Tętnica pachowa",
+  "en": "Axillary artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "axillary_vein_l",
+  "pl": "Żyła pachowa",
+  "en": "Axillary vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "axillary_vein_r",
+  "pl": "Żyła pachowa",
+  "en": "Axillary vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "azygos_vein",
+  "pl": "Żyła nieparzysta",
+  "en": "Azygos vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "basilar_artery",
+  "pl": "Tętnica podstawna",
+  "en": "Basilar artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "basilar_venous_plexus",
+  "pl": "Splot żylny podstawny",
+  "en": "Basilar venous plexus",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "basilic_vein_l",
+  "pl": "Żyła odłokciowa",
+  "en": "Basilic vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "basilic_vein_r",
+  "pl": "Żyła odłokciowa",
+  "en": "Basilic vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "bifurcation_of_pulmonary_trunk",
+  "pl": "Rozwidlenie pnia płucnego",
+  "en": "Bifurcation of pulmonary trunk",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "brachial_artery_l",
+  "pl": "Tętnica ramienna",
+  "en": "Brachial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachial_artery_r",
+  "pl": "Tętnica ramienna",
+  "en": "Brachial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachial_veins_l",
+  "pl": "Żyły ramienne",
+  "en": "Brachial veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachial_veins_r",
+  "pl": "Żyły ramienne",
+  "en": "Brachial veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "brachiocephalic_trunk",
+  "pl": "Pień ramienno-głowowy",
+  "en": "Brachiocephalic trunk",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "branch_to_angular_gyrus_l",
+  "pl": "Gałąź zakrętu kątowego",
+  "en": "Branch to angular gyrus",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "branch_to_angular_gyrus_r",
+  "pl": "Gałąź zakrętu kątowego",
+  "en": "Branch to angular gyrus",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "buccal_artery_l",
+  "pl": "Tetnica policzkowa",
+  "en": "Buccal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "buccal_artery_r",
+  "pl": "Tetnica policzkowa",
+  "en": "Buccal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "calcaneal_branches_of_fibular_artery_l",
+  "pl": "Gałęzie piętowe tętnicy strzałkowej",
+  "en": "Calcaneal branches of fibular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "calcaneal_branches_of_fibular_artery_r",
+  "pl": "Gałęzie piętowe tętnicy strzałkowej",
+  "en": "Calcaneal branches of fibular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "calcaneal_branches_of_posterior_tibial_artery_l",
+  "pl": "Gałęzie tętnica piszczelowa tylna",
+  "en": "Calcaneal branches of posterior tibial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "calcaneal_branches_of_posterior_tibial_artery_r",
+  "pl": "Gałęzie tętnica piszczelowa tylna",
+  "en": "Calcaneal branches of posterior tibial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "callosomarginal_artery",
+  "pl": "Tętnica spoidłowo-brzeżna",
+  "en": "Callosomarginal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cavernous_sinus",
+  "pl": "Zatoka jamista",
+  "en": "Cavernous sinus",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "central_retinal_artery_l",
+  "pl": "Tętnica środkowa siatkówki",
+  "en": "Central retinal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "central_retinal_artery_r",
+  "pl": "Tętnica środkowa siatkówki",
+  "en": "Central retinal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cephalic_vein_l",
+  "pl": "Żyła odpromieniowa",
+  "en": "Cephalic vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "cephalic_vein_r",
+  "pl": "Żyła odpromieniowa",
+  "en": "Cephalic vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "circumflex_artery_of_heart",
+  "pl": "Tętnica serca",
+  "en": "Circumflex artery of heart",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "circumflex_scapular_artery_l",
+  "pl": "Tętnica okalająca łopatki",
+  "en": "Circumflex scapular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "circumflex_scapular_artery_r",
+  "pl": "Tętnica okalająca łopatki",
+  "en": "Circumflex scapular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "circumflex_scapular_vein_l",
+  "pl": "Żyła okalająca łopatkę",
+  "en": "Circumflex scapular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "circumflex_scapular_vein_r",
+  "pl": "Żyła okalająca łopatkę",
+  "en": "Circumflex scapular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "coeliac_trunk",
+  "pl": "Pień trzewny",
+  "en": "Coeliac trunk",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "colic_branch_of_ileocolic_artery",
+  "pl": "Gałąź tętnica krętniczo-okrężnicza",
+  "en": "Colic branch of ileocolic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "common_facial_vein_l",
+  "pl": "Żyła twarzowa wspólna",
+  "en": "Common facial vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "common_facial_vein_r",
+  "pl": "Żyła twarzowa wspólna",
+  "en": "Common facial vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "common_hepatic_artery",
+  "pl": "Tętnica wątrobowa wspólna",
+  "en": "Common hepatic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_iliac_artery",
+  "pl": "Tętnica biodrowa wspólna",
+  "en": "Common iliac artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_iliac_vein",
+  "pl": "Żyła biodrowa wspólna",
+  "en": "Common iliac vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_interosseous_artery_l",
+  "pl": "Tętnica miedzykostna wspólna",
+  "en": "Common interosseous artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_interosseous_artery_r",
+  "pl": "Tętnica miedzykostna wspólna",
+  "en": "Common interosseous artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_palmar_digital_arteries_l",
+  "pl": "Tętnice dłoniowe palców wspólne",
+  "en": "Common palmar digital arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_palmar_digital_arteries_r",
+  "pl": "Tętnice dłoniowe palców wspólne",
+  "en": "Common palmar digital arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_plantar_digital_arteries_l",
+  "pl": "Tętnice podeszwowe wspólne palców",
+  "en": "Common plantar digital arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "common_plantar_digital_arteries_r",
+  "pl": "Tętnice podeszwowe wspólne palców",
+  "en": "Common plantar digital arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "coronary_sinus",
+  "pl": "Zatoka wieńcowa",
+  "en": "Coronary sinus",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "costocervical_trunk_l",
+  "pl": "Pień żebrowo-szyjny",
+  "en": "Costocervical trunk",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "costocervical_trunk_r",
+  "pl": "Pień żebrowo-szyjny",
+  "en": "Costocervical trunk",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_artery_of_penis",
+  "pl": "Tętnica głęboka prącia (m)",
+  "en": "Deep artery of penis",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "deep_brachial_artery_l",
+  "pl": "Tętnica głęboka ramienia",
+  "en": "Deep brachial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "deep_brachial_artery_r",
+  "pl": "Tętnica głęboka ramienia",
+  "en": "Deep brachial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "deep_cervical_artery_l",
+  "pl": "Tętnica szyjna głęboka",
+  "en": "Deep cervical artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_cervical_artery_r",
+  "pl": "Tętnica szyjna głęboka",
+  "en": "Deep cervical artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_dorsal_vein_of_penis",
+  "pl": "Żyła grzbietowa głęboka prącia",
+  "en": "Deep dorsal vein of penis",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_external_pudendal_artery_l",
+  "pl": "Tętnica sromowa zewnętrzna głęboka",
+  "en": "Deep external pudendal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_external_pudendal_artery_r",
+  "pl": "Tętnica sromowa zewnętrzna głęboka",
+  "en": "Deep external pudendal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_femoral_artery_l",
+  "pl": "Tętnica głęboka uda",
+  "en": "Deep femoral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "syn"
+ },
+ {
+  "id": "deep_femoral_artery_r",
+  "pl": "Tętnica głęboka uda",
+  "en": "Deep femoral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "syn"
+ },
+ {
+  "id": "deep_femoral_vein_l",
+  "pl": "Żyła głęboka uda",
+  "en": "Deep femoral vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "syn"
+ },
+ {
+  "id": "deep_femoral_vein_r",
+  "pl": "Żyła głęboka uda",
+  "en": "Deep femoral vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "syn"
+ },
+ {
+  "id": "deep_palmar_arch_l",
+  "pl": "Łuk dłoniowy głęboki",
+  "en": "Deep palmar arch",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_palmar_arch_r",
+  "pl": "Łuk dłoniowy głęboki",
+  "en": "Deep palmar arch",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_plantar_artery_l",
+  "pl": "Tętnica podeszwowa głęboka",
+  "en": "Deep plantar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_plantar_artery_r",
+  "pl": "Tętnica podeszwowa głęboka",
+  "en": "Deep plantar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_venous_palmar_arch_l",
+  "pl": "Łuk żylny dłoniowy głęboki",
+  "en": "Deep venous palmar arch",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "deep_venous_palmar_arch_r",
+  "pl": "Łuk żylny dłoniowy głęboki",
+  "en": "Deep venous palmar arch",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "descending_branch_of_lateral_circumflex_femoral_artery_l",
+  "pl": "Gałąź tętnica okalająca udo boczna",
+  "en": "Descending branch of lateral circumflex femoral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "descending_branch_of_lateral_circumflex_femoral_artery_r",
+  "pl": "Gałąź tętnica okalająca udo boczna",
+  "en": "Descending branch of lateral circumflex femoral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "descending_branch_of_left_colic_artery",
+  "pl": "Gałąź zstępująca tętnicy okrężniczej lewej",
+  "en": "Descending branch of left colic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "descending_palatine_artery_l",
+  "pl": "Tętnica podniebienna zstępująca",
+  "en": "Descending palatine artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "descending_palatine_artery_r",
+  "pl": "Tętnica podniebienna zstępująca",
+  "en": "Descending palatine artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "distal_lateral_striate_branches_l",
+  "pl": "Gałęzie dalsze boczne prążkowia",
+  "en": "Distal lateral striate branches",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "distal_lateral_striate_branches_r",
+  "pl": "Gałęzie dalsze boczne prążkowia",
+  "en": "Distal lateral striate branches",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_artery_of_penis_l",
+  "pl": "Tętnica grzbietowa prącia (m)",
+  "en": "Dorsal artery of penis",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "dorsal_artery_of_penis_r",
+  "pl": "Tętnica grzbietowa prącia (m)",
+  "en": "Dorsal artery of penis",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "dorsal_carpal_anastomosis_l",
+  "pl": "Sieć grzbietowa nadgarstka",
+  "en": "Dorsal carpal anastomosis",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_carpal_anastomosis_r",
+  "pl": "Sieć grzbietowa nadgarstka",
+  "en": "Dorsal carpal anastomosis",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_carpal_branch_of_ulnar_artery_l",
+  "pl": "Gałąź grzbietowa tętnica łokciowa",
+  "en": "Dorsal carpal branch of ulnar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "dorsal_carpal_branch_of_ulnar_artery_r",
+  "pl": "Gałąź grzbietowa tętnica łokciowa",
+  "en": "Dorsal carpal branch of ulnar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "dorsal_digital_arteries_of_foot_l",
+  "pl": "Nerwy grzbietowe palców stopy",
+  "en": "Dorsal digital arteries of foot",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "dorsal_digital_arteries_of_foot_r",
+  "pl": "Nerwy grzbietowe palców stopy",
+  "en": "Dorsal digital arteries of foot",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "dorsal_digital_arteries_of_hand_l",
+  "pl": "Tętnice grzbietowe palców ręki",
+  "en": "Dorsal digital arteries of hand",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_digital_arteries_of_hand_r",
+  "pl": "Tętnice grzbietowe palców ręki",
+  "en": "Dorsal digital arteries of hand",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_digital_veins_of_foot_l",
+  "pl": "Nerwy grzbietowe palców stopy",
+  "en": "Dorsal digital veins of foot",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "dorsal_digital_veins_of_foot_r",
+  "pl": "Nerwy grzbietowe palców stopy",
+  "en": "Dorsal digital veins of foot",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "dorsal_digital_veins_of_hand_l",
+  "pl": "Żyły grzbietowe palców ręki",
+  "en": "Dorsal digital veins of hand",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_digital_veins_of_hand_r",
+  "pl": "Żyły grzbietowe palców ręki",
+  "en": "Dorsal digital veins of hand",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "dorsal_metacarpal_arteries_l",
+  "pl": "Tętnice grzbietowe śródręcza",
+  "en": "Dorsal metacarpal arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_metacarpal_arteries_r",
+  "pl": "Tętnice grzbietowe śródręcza",
+  "en": "Dorsal metacarpal arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_metatarsal_arteries_l",
+  "pl": "Tętnice grzbietowe śródstopia",
+  "en": "Dorsal metatarsal arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_metatarsal_arteries_r",
+  "pl": "Tętnice grzbietowe śródstopia",
+  "en": "Dorsal metatarsal arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_metatarsal_veins_l",
+  "pl": "Żyły śródstopne grzbietowe",
+  "en": "Dorsal metatarsal veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_metatarsal_veins_r",
+  "pl": "Żyły śródstopne grzbietowe",
+  "en": "Dorsal metatarsal veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_venous_arch_of_foot_l",
+  "pl": "Łuk żylny grzbietowy stopy",
+  "en": "Dorsal venous arch of foot",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_venous_arch_of_foot_r",
+  "pl": "Łuk żylny grzbietowy stopy",
+  "en": "Dorsal venous arch of foot",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_venous_network_of_hand_l",
+  "pl": "Grzbietowa sieć żylna ręki",
+  "en": "Dorsal venous network of hand",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsal_venous_network_of_hand_r",
+  "pl": "Grzbietowa sieć żylna ręki",
+  "en": "Dorsal venous network of hand",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "dorsalis_pedis_artery_l",
+  "pl": "Tętnica grzbietowa stopy",
+  "en": "Dorsalis pedis artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "dorsalis_pedis_artery_r",
+  "pl": "Tętnica grzbietowa stopy",
+  "en": "Dorsalis pedis artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "external_carotid_artery_l",
+  "pl": "Tętnica szyjna zewnętrzna",
+  "en": "External carotid artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_carotid_artery_r",
+  "pl": "Tętnica szyjna zewnętrzna",
+  "en": "External carotid artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_iliac_artery_l",
+  "pl": "Tętnica biodrowa zewnętrzna",
+  "en": "External iliac artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_iliac_artery_r",
+  "pl": "Tętnica biodrowa zewnętrzna",
+  "en": "External iliac artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_iliac_vein_l",
+  "pl": "Żyła biodrowa zewnętrzna",
+  "en": "External iliac vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "external_iliac_vein_r",
+  "pl": "Żyła biodrowa zewnętrzna",
+  "en": "External iliac vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "external_jugular_vein_l",
+  "pl": "Żyła szyjna zewnętrzna",
+  "en": "External jugular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_jugular_vein_r",
+  "pl": "Żyła szyjna zewnętrzna",
+  "en": "External jugular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_pudendal_veins_l",
+  "pl": "Żyły sromowe zewnętrzne",
+  "en": "External pudendal veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "external_pudendal_veins_r",
+  "pl": "Żyły sromowe zewnętrzne",
+  "en": "External pudendal veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "facial_artery_l",
+  "pl": "Tętnica twarzowa",
+  "en": "Facial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "facial_artery_r",
+  "pl": "Tętnica twarzowa",
+  "en": "Facial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "facial_vein_l",
+  "pl": "Żyła twarzowa",
+  "en": "Facial vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "facial_vein_r",
+  "pl": "Żyła twarzowa",
+  "en": "Facial vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "femoral_artery_l",
+  "pl": "Tętnica udowa",
+  "en": "Femoral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "femoral_artery_r",
+  "pl": "Tętnica udowa",
+  "en": "Femoral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "femoral_vein_l",
+  "pl": "Żyła udowa",
+  "en": "Femoral vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "femoral_vein_r",
+  "pl": "Żyła udowa",
+  "en": "Femoral vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "fibular_artery_l",
+  "pl": "Tętnica strzałkowa",
+  "en": "Fibular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "fibular_artery_r",
+  "pl": "Tętnica strzałkowa",
+  "en": "Fibular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "fibular_veins_l",
+  "pl": "Żyły strzałkowe",
+  "en": "Fibular veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "fibular_veins_r",
+  "pl": "Żyły strzałkowe",
+  "en": "Fibular veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "first_posterior_intercostal_artery_l",
+  "pl": "Tętnica międzyżebrowa tylna pierwsza",
+  "en": "First posterior intercostal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "first_posterior_intercostal_artery_r",
+  "pl": "Tętnica międzyżebrowa tylna pierwsza",
+  "en": "First posterior intercostal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "frontal_branch_of_superficial_temporal_artery_l",
+  "pl": "Gałąź tętnica skroniowa powierzchowna",
+  "en": "Frontal branch of superficial temporal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "frontal_branch_of_superficial_temporal_artery_r",
+  "pl": "Gałąź tętnica skroniowa powierzchowna",
+  "en": "Frontal branch of superficial temporal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "frontal_branches_of_callosomarginal_artery",
+  "pl": "Gałęzie tętnica spoidłowo-brzeżna",
+  "en": "Frontal branches of callosomarginal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "gastroduodenal_artery",
+  "pl": "Tętnica żołądkowo-dwunastnicza",
+  "en": "Gastroduodenal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "genicular_veins_l",
+  "pl": "Żyły kolanowe",
+  "en": "Genicular veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "genicular_veins_r",
+  "pl": "Żyły kolanowe",
+  "en": "Genicular veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "great_cardiac_vein",
+  "pl": "Żyła serca wielka",
+  "en": "Great cardiac vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "great_saphenous_vein_l",
+  "pl": "Żyła odpiszczelowa",
+  "en": "Great saphenous vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "great_saphenous_vein_r",
+  "pl": "Żyła odpiszczelowa",
+  "en": "Great saphenous vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "greater_palatine_artery",
+  "pl": "Tetnica podniebienna większa",
+  "en": "Greater palatine artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "hemi_azygos_vein",
+  "pl": "Żyła nieparzysta krótka",
+  "en": "Hemi-azygos vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "hepatic_portal_vein",
+  "pl": "Żyła wrotna wątroby",
+  "en": "Hepatic portal vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "hepatic_veins",
+  "pl": "Żyły wątrobowe",
+  "en": "Hepatic veins",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ileal_branch_of_ileocolic_artery",
+  "pl": "Gałąź tętnica krętniczo-okrężnicza",
+  "en": "Ileal branch of ileocolic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "ileocolic_artery",
+  "pl": "Tętnica krętniczo-okrężnicza",
+  "en": "Ileocolic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliacus_branch_of_iliolumbar_artery_l",
+  "pl": "Gałąź tętnica biodrowo-lędźwiowa",
+  "en": "Iliacus branch of iliolumbar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "iliacus_branch_of_iliolumbar_artery_r",
+  "pl": "Gałąź tętnica biodrowo-lędźwiowa",
+  "en": "Iliacus branch of iliolumbar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "iliolumbar_artery_l",
+  "pl": "Tętnica biodrowo-lędźwiowa",
+  "en": "Iliolumbar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliolumbar_artery_r",
+  "pl": "Tętnica biodrowo-lędźwiowa",
+  "en": "Iliolumbar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliolumbar_vein_l",
+  "pl": "Żyła biodrowo-lędźwiowa",
+  "en": "Iliolumbar vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "iliolumbar_vein_r",
+  "pl": "Żyła biodrowo-lędźwiowa",
+  "en": "Iliolumbar vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_alveolar_artery_l",
+  "pl": "Tętnica zębodołowa dolna",
+  "en": "Inferior alveolar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_alveolar_artery_r",
+  "pl": "Tętnica zębodołowa dolna",
+  "en": "Inferior alveolar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_basal_vein_of_left_lung",
+  "pl": "Żyła dolna podstawna płuca",
+  "en": "Inferior basal vein of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_basal_vein_of_right_lung",
+  "pl": "Żyła dolna podstawna płuca",
+  "en": "Inferior basal vein of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_epigastric_artery_l",
+  "pl": "Tętnica nabrzuszna dolna",
+  "en": "Inferior epigastric artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_epigastric_artery_r",
+  "pl": "Tętnica nabrzuszna dolna",
+  "en": "Inferior epigastric artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_epigastric_vein_l",
+  "pl": "Żyła nabrzuszna dolna",
+  "en": "Inferior epigastric vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "inferior_epigastric_vein_r",
+  "pl": "Żyła nabrzuszna dolna",
+  "en": "Inferior epigastric vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "inferior_gluteal_artery_l",
+  "pl": "Tętnica pośladkowa dolna",
+  "en": "Inferior gluteal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_gluteal_artery_r",
+  "pl": "Tętnica pośladkowa dolna",
+  "en": "Inferior gluteal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_gluteal_veins_l",
+  "pl": "Żyły pośladkowe dolne",
+  "en": "Inferior gluteal veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_gluteal_veins_r",
+  "pl": "Żyły pośladkowe dolne",
+  "en": "Inferior gluteal veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_labial_artery_l",
+  "pl": "Tętnica wargowa dolna",
+  "en": "Inferior labial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "inferior_labial_artery_r",
+  "pl": "Tętnica wargowa dolna",
+  "en": "Inferior labial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "inferior_labial_veins_l",
+  "pl": "Żyła wargowa dolna",
+  "en": "Inferior labial veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "inferior_labial_veins_r",
+  "pl": "Żyła wargowa dolna",
+  "en": "Inferior labial veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "inferior_lateral_genicular_artery_l",
+  "pl": "Tętnica dolna boczna kolana",
+  "en": "Inferior lateral genicular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_lateral_genicular_artery_r",
+  "pl": "Tętnica dolna boczna kolana",
+  "en": "Inferior lateral genicular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_lingular_artery_of_left_lung",
+  "pl": "Tętnica dolna języczkowa płuca",
+  "en": "Inferior lingular artery of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_lingular_vein_of_left_lung",
+  "pl": "Żyła dolna języczkowa płuca",
+  "en": "Inferior lingular vein of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_lobar_artery_of_right_lung",
+  "pl": "Tętnica dolna płuca",
+  "en": "Inferior lobar artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "inferior_medial_genicular_artery_l",
+  "pl": "Tętnica dolna przyśrodkowa kolana",
+  "en": "Inferior medial genicular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_medial_genicular_artery_r",
+  "pl": "Tętnica dolna przyśrodkowa kolana",
+  "en": "Inferior medial genicular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_mesenteric_artery",
+  "pl": "Tętnica krezkowa dolna",
+  "en": "Inferior mesenteric artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_mesenteric_vein",
+  "pl": "Żyła krezkowa dolna",
+  "en": "Inferior mesenteric vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_ophthalmic_vein_l",
+  "pl": "Żyła oczna dolna",
+  "en": "Inferior ophthalmic vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_ophthalmic_vein_r",
+  "pl": "Żyła oczna dolna",
+  "en": "Inferior ophthalmic vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_pancreaticoduodenal_artery",
+  "pl": "Tętnica trzustkowo-dwunastnicza dolna",
+  "en": "Inferior pancreaticoduodenal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_petrosal_sinus_l",
+  "pl": "Zatoka skalista dolna",
+  "en": "Inferior petrosal sinus",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_petrosal_sinus_r",
+  "pl": "Zatoka skalista dolna",
+  "en": "Inferior petrosal sinus",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_phrenic_artery",
+  "pl": "Tętnica przeponowa dolna",
+  "en": "Inferior phrenic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_sagittal_sinus",
+  "pl": "Zatoka strzałkowa dolna",
+  "en": "Inferior sagittal sinus",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_suprarenal_artery_l",
+  "pl": "Tętnica nadnerczowa dolna",
+  "en": "Inferior suprarenal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_suprarenal_artery_r",
+  "pl": "Tętnica nadnerczowa dolna",
+  "en": "Inferior suprarenal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_thyroid_artery_l",
+  "pl": "Tętnica tarczowa dolna",
+  "en": "Inferior thyroid artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_thyroid_artery_r",
+  "pl": "Tętnica tarczowa dolna",
+  "en": "Inferior thyroid artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_ulnar_collateral_artery_l",
+  "pl": "Tętnica poboczna łokciowa dolna",
+  "en": "Inferior ulnar collateral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_ulnar_collateral_artery_r",
+  "pl": "Tętnica poboczna łokciowa dolna",
+  "en": "Inferior ulnar collateral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_vena_cava_abdominal_part",
+  "pl": "Żyła główna dolna",
+  "en": "Inferior vena cava (abdominal part)",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "inferior_vena_cava_thoracic_part",
+  "pl": "Żyła główna dolna",
+  "en": "Inferior vena cava (thoracic part)",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "infra_orbital_artery_l",
+  "pl": "Tętnica podoczodołowa",
+  "en": "Infra-orbital artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "infra_orbital_artery_r",
+  "pl": "Tętnica podoczodołowa",
+  "en": "Infra-orbital artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "insular_branches_of_middle_cerebral_artery_m2",
+  "pl": "Gałęzie tętnica środkowa mózgu",
+  "en": "Insular branches of middle cerebral artery (M2)",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "insular_branches_of_middle_cerebral_artery_m2_segment",
+  "pl": "Gałęzie tętnica środkowa mózgu",
+  "en": "Insular branches of middle cerebral artery (M2-segment)",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "intercapitular_veins_of_foot_l",
+  "pl": "Żyły międzygłówkowe stopy",
+  "en": "Intercapitular veins of foot",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intercapitular_veins_of_foot_r",
+  "pl": "Żyły międzygłówkowe stopy",
+  "en": "Intercapitular veins of foot",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "internal_carotid_artery_l",
+  "pl": "Tętnica szyjna wewnętrzna",
+  "en": "Internal carotid artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_carotid_artery_r",
+  "pl": "Tętnica szyjna wewnętrzna",
+  "en": "Internal carotid artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_iliac_artery_l",
+  "pl": "Tętnica biodrowa wewnętrzna",
+  "en": "Internal iliac artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_iliac_artery_r",
+  "pl": "Tętnica biodrowa wewnętrzna",
+  "en": "Internal iliac artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_iliac_vein_l",
+  "pl": "Żyła biodrowa wewnętrzna",
+  "en": "Internal iliac vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_iliac_vein_r",
+  "pl": "Żyła biodrowa wewnętrzna",
+  "en": "Internal iliac vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_jugular_vein_l",
+  "pl": "Żyła szyjna wewnętrzna",
+  "en": "Internal jugular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_jugular_vein_r",
+  "pl": "Żyła szyjna wewnętrzna",
+  "en": "Internal jugular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_pudendal_artery_l",
+  "pl": "Tętnica sromowa wewnętrzna",
+  "en": "Internal pudendal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_pudendal_artery_r",
+  "pl": "Tętnica sromowa wewnętrzna",
+  "en": "Internal pudendal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_pudendal_vein_l",
+  "pl": "Żyła sromowa wewnętrzna",
+  "en": "Internal pudendal vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_pudendal_vein_r",
+  "pl": "Żyła sromowa wewnętrzna",
+  "en": "Internal pudendal vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_thoracic_artery_l",
+  "pl": "Tętnica piersiowa wewnętrzna",
+  "en": "Internal thoracic artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_thoracic_artery_r",
+  "pl": "Tętnica piersiowa wewnętrzna",
+  "en": "Internal thoracic artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_thoracic_veins_l",
+  "pl": "Żyły piersiowe wewnętrzne",
+  "en": "Internal thoracic veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "internal_thoracic_veins_r",
+  "pl": "Żyły piersiowe wewnętrzne",
+  "en": "Internal thoracic veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "intrarenal_arteries_of_left_kidney",
+  "pl": "Tętnice śródnerkowe nerki lewej",
+  "en": "Intrarenal arteries of left kidney",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intrarenal_arteries_of_right_kidney",
+  "pl": "Tętnice śródnerkowe nerki prawej",
+  "en": "Intrarenal arteries of right kidney",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intrarenal_veins_of_left_kidney",
+  "pl": "Żyły śródnerkowe nerki lewej",
+  "en": "Intrarenal veins of left kidney",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "intrarenal_veins_of_right_kidney",
+  "pl": "Żyły śródnerkowe nerki prawej",
+  "en": "Intrarenal veins of right kidney",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lacrimal_artery_l",
+  "pl": "Tętnica łzowa",
+  "en": "Lacrimal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lacrimal_artery_r",
+  "pl": "Tętnica łzowa",
+  "en": "Lacrimal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_basal_segmental_artery_of_left_lung",
+  "pl": "Tętnica boczna podstawna płuca",
+  "en": "Lateral basal segmental artery of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_basal_segmental_artery_of_right_lung",
+  "pl": "Tętnica boczna podstawna płuca",
+  "en": "Lateral basal segmental artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_circumflex_femoral_artery_l",
+  "pl": "Tętnica okalająca udo boczna",
+  "en": "Lateral circumflex femoral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_circumflex_femoral_artery_r",
+  "pl": "Tętnica okalająca udo boczna",
+  "en": "Lateral circumflex femoral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_circumflex_femoral_veins_l",
+  "pl": "Żyły okalające udo boczne",
+  "en": "Lateral circumflex femoral veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_circumflex_femoral_veins_r",
+  "pl": "Żyły okalające udo boczne",
+  "en": "Lateral circumflex femoral veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_frontobasal_artery_l",
+  "pl": "Tętnica czołowo-podstawna boczna; Tętnica oczodołowo-czołowa boczna",
+  "en": "Lateral frontobasal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_frontobasal_artery_r",
+  "pl": "Tętnica czołowo-podstawna boczna; Tętnica oczodołowo-czołowa boczna",
+  "en": "Lateral frontobasal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_occipital_artery_l",
+  "pl": "Tętnica potyliczna boczna; Segment P3",
+  "en": "Lateral occipital artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_occipital_artery_r",
+  "pl": "Tętnica potyliczna boczna; Segment P3",
+  "en": "Lateral occipital artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_plantar_artery_l",
+  "pl": "Tętnica podeszwowa boczna",
+  "en": "Lateral plantar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_plantar_artery_r",
+  "pl": "Tętnica podeszwowa boczna",
+  "en": "Lateral plantar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_plantar_veins_l",
+  "pl": "Żyły podeszwowe boczne",
+  "en": "Lateral plantar veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lateral_plantar_veins_r",
+  "pl": "Żyły podeszwowe boczne",
+  "en": "Lateral plantar veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "lateral_pontine_branches_of_basilar_artery",
+  "pl": "Gałęzie boczna tętnica podstawna",
+  "en": "Lateral pontine branches of basilar artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_sacral_veins_l",
+  "pl": "Żyły krzyżowe boczne",
+  "en": "Lateral sacral veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_sacral_veins_r",
+  "pl": "Żyły krzyżowe boczne",
+  "en": "Lateral sacral veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_segmental_artery_of_right_lung",
+  "pl": "Tętnica boczna płuca",
+  "en": "Lateral segmental artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lateral_tarsal_artery_l",
+  "pl": "Tętnica stępowa boczna",
+  "en": "Lateral tarsal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_tarsal_artery_r",
+  "pl": "Tętnica stępowa boczna",
+  "en": "Lateral tarsal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_thoracic_artery_l",
+  "pl": "Tętnica piersiowa boczna",
+  "en": "Lateral thoracic artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_thoracic_artery_r",
+  "pl": "Tętnica piersiowa boczna",
+  "en": "Lateral thoracic artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_thoracic_vein_l",
+  "pl": "Żyła piersiowa boczna",
+  "en": "Lateral thoracic vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_thoracic_vein_r",
+  "pl": "Żyła piersiowa boczna",
+  "en": "Lateral thoracic vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lateral_vein_of_right_lung",
+  "pl": "Żyła boczna płuca",
+  "en": "Lateral vein of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "left_ascending_lumbar_vein",
+  "pl": "Żyła lędźwiowa wstępująca",
+  "en": "Left ascending lumbar vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "left_brachiocephalic_vein",
+  "pl": "Żyła ramienno-głowowa",
+  "en": "Left brachiocephalic vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_colic_artery",
+  "pl": "Tętnica okrężnicza lewa",
+  "en": "Left colic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_common_carotid_artery",
+  "pl": "Tętnica szyjna wspólna",
+  "en": "Left common carotid artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_coronary_artery",
+  "pl": "Tętnica wieńcowa lewa",
+  "en": "Left coronary artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_gastric_artery",
+  "pl": "Tętnica żołądkowa lewa",
+  "en": "Left gastric artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_gastro_omental_vein",
+  "pl": "Żyła żołądkowo-sieciowa lewa",
+  "en": "Left gastro-omental vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_inferior_pulmonary_vein",
+  "pl": "Żyła płucna lewa dolna",
+  "en": "Left inferior pulmonary vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_pulmonary_artery",
+  "pl": "Tętnica płucna lewa",
+  "en": "Left pulmonary artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_renal_artery",
+  "pl": "Tętnica nerkowa",
+  "en": "Left renal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_renal_vein",
+  "pl": "Żyła nerkowa",
+  "en": "Left renal vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_subclavian_artery",
+  "pl": "Tętnica podobojczykowa",
+  "en": "Left subclavian artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_subclavian_vein",
+  "pl": "Żyła podobojczykowa",
+  "en": "Left subclavian vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_subcostal_vein",
+  "pl": "Żyła podżebrowa",
+  "en": "Left subcostal vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "left_superior_intercostal_vein",
+  "pl": "Żyła międzyżebrowa górna lewa",
+  "en": "Left superior intercostal vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_superior_pulmonary_vein",
+  "pl": "Żyła płucna lewa górna",
+  "en": "Left superior pulmonary vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "left_testicular_artery",
+  "pl": "Tętnica jądrowa (m)",
+  "en": "Left testicular artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "left_testicular_vein",
+  "pl": "Żyła jądrowa lewa (m)",
+  "en": "Left testicular vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "lingual_vein_l",
+  "pl": "Żyła językowa",
+  "en": "Lingual vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lingual_vein_r",
+  "pl": "Żyła językowa",
+  "en": "Lingual vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lingular_vein_of_left_lung",
+  "pl": "Żyła języczkowa płuca",
+  "en": "Lingular vein of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "long_posterior_ciliary_arteries_l",
+  "pl": "Tętnice rzęskowe tylne długie",
+  "en": "Long posterior ciliary arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "long_posterior_ciliary_arteries_r",
+  "pl": "Tętnice rzęskowe tylne długie",
+  "en": "Long posterior ciliary arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lumbar_arteries_l",
+  "pl": "Tętnice lędźwiowe",
+  "en": "Lumbar arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lumbar_arteries_r",
+  "pl": "Tętnice lędźwiowe",
+  "en": "Lumbar arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lumbar_branch_of_iliolumbar_artery_l",
+  "pl": "Gałąź tętnica biodrowo-lędźwiowa",
+  "en": "Lumbar branch of iliolumbar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lumbar_branch_of_iliolumbar_artery_r",
+  "pl": "Gałąź tętnica biodrowo-lędźwiowa",
+  "en": "Lumbar branch of iliolumbar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "lumbar_veins_l",
+  "pl": "Żyły lędźwiowe",
+  "en": "Lumbar veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "lumbar_veins_r",
+  "pl": "Żyły lędźwiowe",
+  "en": "Lumbar veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "marginal_artery",
+  "pl": "Gałąź brzeżna lewa",
+  "en": "Marginal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "maxillary_artery_l",
+  "pl": "Tętnica szczękowa",
+  "en": "Maxillary artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "maxillary_artery_r",
+  "pl": "Tętnica szczękowa",
+  "en": "Maxillary artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "maxillary_veins_l",
+  "pl": "Żyły szczękowe",
+  "en": "Maxillary veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "maxillary_veins_r",
+  "pl": "Żyły szczękowe",
+  "en": "Maxillary veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_basal_segmental_artery_of_left_lung",
+  "pl": "Tętnica przyśrodkowa podstawna płuca",
+  "en": "Medial basal segmental artery of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_basal_segmental_artery_of_right_lung",
+  "pl": "Tętnica przyśrodkowa podstawna płuca",
+  "en": "Medial basal segmental artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_circumflex_femoral_artery_l",
+  "pl": "Tętnica okalająca udo przyśrodkowa",
+  "en": "Medial circumflex femoral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_circumflex_femoral_artery_r",
+  "pl": "Tętnica okalająca udo przyśrodkowa",
+  "en": "Medial circumflex femoral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_circumflex_femoral_veins_l",
+  "pl": "Żyły okalające udo przyśrodkowe",
+  "en": "Medial circumflex femoral veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_circumflex_femoral_veins_r",
+  "pl": "Żyły okalające udo przyśrodkowe",
+  "en": "Medial circumflex femoral veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_occipital_artery",
+  "pl": "Tętnica potyliczna przyśrodkowa; Segment P4",
+  "en": "Medial occipital artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_plantar_artery_l",
+  "pl": "Tętnica podeszwowa przyśrodkowa",
+  "en": "Medial plantar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_plantar_artery_r",
+  "pl": "Tętnica podeszwowa przyśrodkowa",
+  "en": "Medial plantar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "medial_plantar_veins_l",
+  "pl": "Żyły podeszwowe przyśrodkowe",
+  "en": "Medial plantar veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "medial_plantar_veins_r",
+  "pl": "Żyły podeszwowe przyśrodkowe",
+  "en": "Medial plantar veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "medial_pontine_branches_of_basilar_artery",
+  "pl": "Gałęzie przyśrodkowa tętnica podstawna",
+  "en": "Medial pontine branches of basilar artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_segmental_artery_of_right_lung",
+  "pl": "Tętnica przyśrodkowa płuca",
+  "en": "Medial segmental artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "medial_vein_of_right_lung",
+  "pl": "Żyła przyśrodkowa płuca",
+  "en": "Medial vein of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "median_antebrachial_vein_l",
+  "pl": "Żyła pośrodkowa przedramienia",
+  "en": "Median antebrachial vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "median_antebrachial_vein_r",
+  "pl": "Żyła pośrodkowa przedramienia",
+  "en": "Median antebrachial vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "median_cubital_vein_l",
+  "pl": "Żyła łokciowa pośrodkowa",
+  "en": "Median cubital vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "median_cubital_vein_r",
+  "pl": "Żyła łokciowa pośrodkowa",
+  "en": "Median cubital vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "median_sacral_artery",
+  "pl": "Tętnica krzyżowa pośrodkowa",
+  "en": "Median sacral artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "mental_branch_of_inferior_alveolar_artery",
+  "pl": "Gałąź tętnica zębodołowa dolna",
+  "en": "Mental branch of inferior alveolar artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "middle_cardiac_vein",
+  "pl": "Żyła serca średnia",
+  "en": "Middle cardiac vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_cerebral_artery_m1_segment_l",
+  "pl": "Tętnica środkowa mózgu",
+  "en": "Middle cerebral artery (M1-segment)",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_cerebral_artery_m1_segment_r",
+  "pl": "Tętnica środkowa mózgu",
+  "en": "Middle cerebral artery (M1-segment)",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_cerebral_artery_m3_segment",
+  "pl": "Tętnica środkowa mózgu",
+  "en": "Middle cerebral artery (M3 segment)",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_cerebral_artery_m3_segment",
+  "pl": "Tętnica środkowa mózgu",
+  "en": "Middle cerebral artery (M3-segment)",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_colic_artery",
+  "pl": "Tętnica okrężnicza środkowa",
+  "en": "Middle colic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_colic_vein",
+  "pl": "Żyła okrężnicza środkowa",
+  "en": "Middle colic vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_collateral_artery_l",
+  "pl": "Tętnica poboczna środkowa",
+  "en": "Middle collateral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "middle_collateral_artery_r",
+  "pl": "Tętnica poboczna środkowa",
+  "en": "Middle collateral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "middle_genicular_artery_l",
+  "pl": "Tętnica środkowa kolana",
+  "en": "Middle genicular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_genicular_artery_r",
+  "pl": "Tętnica środkowa kolana",
+  "en": "Middle genicular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_lobar_artery_of_right_lung",
+  "pl": "Tętnica środkowa płuca",
+  "en": "Middle lobar artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "middle_meningeal_artery_l",
+  "pl": "Tętnica oponowa środkowa",
+  "en": "Middle meningeal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "middle_meningeal_artery_r",
+  "pl": "Tętnica oponowa środkowa",
+  "en": "Middle meningeal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "musculophrenic_artery_l",
+  "pl": "Tętnica mięśniowo-przeponowa",
+  "en": "Musculophrenic artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "musculophrenic_artery_r",
+  "pl": "Tętnica mięśniowo-przeponowa",
+  "en": "Musculophrenic artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "musculophrenic_veins_l",
+  "pl": "Żyła mięśniowo-przeponowa",
+  "en": "Musculophrenic veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "musculophrenic_veins_r",
+  "pl": "Żyła mięśniowo-przeponowa",
+  "en": "Musculophrenic veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "mylohyoid_branch_of_inferior_alveolar_artery_l",
+  "pl": "Gałąź tętnica zębodołowa dolna",
+  "en": "Mylohyoid branch of inferior alveolar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "mylohyoid_branch_of_inferior_alveolar_artery_r",
+  "pl": "Gałąź tętnica zębodołowa dolna",
+  "en": "Mylohyoid branch of inferior alveolar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "obturator_artery_l",
+  "pl": "Tętnica zasłonowa",
+  "en": "Obturator artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "obturator_artery_r",
+  "pl": "Tętnica zasłonowa",
+  "en": "Obturator artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "occipital_artery_l",
+  "pl": "Tętnica potyliczna",
+  "en": "Occipital artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "occipital_artery_r",
+  "pl": "Tętnica potyliczna",
+  "en": "Occipital artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "occipital_sinus",
+  "pl": "Zatoka potyliczna",
+  "en": "Occipital sinus",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "occipital_vein_l",
+  "pl": "Żyła potyliczna",
+  "en": "Occipital vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "occipital_vein_r",
+  "pl": "Żyła potyliczna",
+  "en": "Occipital vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ophthalmic_artery_l",
+  "pl": "Tętnica oczna",
+  "en": "Ophthalmic artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ophthalmic_artery_r",
+  "pl": "Tętnica oczna",
+  "en": "Ophthalmic artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "orbitofrontal_branches_of_anterior_cerebral_artery",
+  "pl": "Gałęzie tętnica przednia mózgu",
+  "en": "Orbitofrontal branches of anterior cerebral artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "palmar_carpal_branch_of_radial_artery_l",
+  "pl": "Gałąź dłoniowa tętnica promieniowa",
+  "en": "Palmar carpal branch of radial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "palmar_carpal_branch_of_radial_artery_r",
+  "pl": "Gałąź dłoniowa tętnica promieniowa",
+  "en": "Palmar carpal branch of radial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "palmar_digital_veins_l",
+  "pl": "Żyły dłoniowe palców",
+  "en": "Palmar digital veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_digital_veins_r",
+  "pl": "Żyły dłoniowe palców",
+  "en": "Palmar digital veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_metacarpal_arteries_l",
+  "pl": "Tętnice dłoniowe śródręcza",
+  "en": "Palmar metacarpal arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "palmar_metacarpal_arteries_r",
+  "pl": "Tętnice dłoniowe śródręcza",
+  "en": "Palmar metacarpal arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "parietal_branches_of_middle_cerebral_artery_l",
+  "pl": "Gałęzie tętnica środkowa mózgu",
+  "en": "Parietal branches of middle cerebral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "parietal_branches_of_middle_cerebral_artery_r",
+  "pl": "Gałęzie tętnica środkowa mózgu",
+  "en": "Parietal branches of middle cerebral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "parieto_occipital_artery",
+  "pl": "Tętnica ciemieniowo-potyliczna",
+  "en": "Parieto-occipital artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "patellar_anastomosis_l",
+  "pl": "Sieć rzepki",
+  "en": "Patellar anastomosis",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "patellar_anastomosis_r",
+  "pl": "Sieć rzepki",
+  "en": "Patellar anastomosis",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pectoral_branches_of_thoraco_acromial_artery_l",
+  "pl": "Gałęzie tętnica piersiowo-barkowa",
+  "en": "Pectoral branches of thoraco-acromial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "pectoral_branches_of_thoraco_acromial_artery_r",
+  "pl": "Gałęzie tętnica piersiowo-barkowa",
+  "en": "Pectoral branches of thoraco-acromial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "perforating_branches_of_plantar_metatarsal_arteries_l",
+  "pl": "Gałęzie tętnice podeszwowe śródstopia",
+  "en": "Perforating branches of plantar metatarsal arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "perforating_branches_of_plantar_metatarsal_arteries_r",
+  "pl": "Gałęzie tętnice podeszwowe śródstopia",
+  "en": "Perforating branches of plantar metatarsal arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "perforating_femoral_arteries_l",
+  "pl": "Tętnice przeszywające uda",
+  "en": "Perforating femoral arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "perforating_femoral_arteries_r",
+  "pl": "Tętnice przeszywające uda",
+  "en": "Perforating femoral arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "perforating_veins_l",
+  "pl": "Żyły przeszywające",
+  "en": "Perforating veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "perforating_veins_r",
+  "pl": "Żyły przeszywające",
+  "en": "Perforating veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pericallosal_artery_l",
+  "pl": "Tętnica okołospoidłowa",
+  "en": "Pericallosal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pericallosal_artery_r",
+  "pl": "Tętnica okołospoidłowa",
+  "en": "Pericallosal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_arch_l",
+  "pl": "Łuk podeszwowy",
+  "en": "Plantar arch",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "plantar_arch_r",
+  "pl": "Łuk podeszwowy",
+  "en": "Plantar arch",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "plantar_digital_veins_l",
+  "pl": "Żyły podeszwowe palców",
+  "en": "Plantar digital veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_digital_veins_r",
+  "pl": "Żyły podeszwowe palców",
+  "en": "Plantar digital veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_metatarsal_arteries_l",
+  "pl": "Tętnice podeszwowe śródstopia",
+  "en": "Plantar metatarsal arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_metatarsal_arteries_r",
+  "pl": "Tętnice podeszwowe śródstopia",
+  "en": "Plantar metatarsal arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_metatarsal_veins_l",
+  "pl": "Żyły śródstopne podeszwowe",
+  "en": "Plantar metatarsal veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_metatarsal_veins_r",
+  "pl": "Żyły śródstopne podeszwowe",
+  "en": "Plantar metatarsal veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_venous_arch_l",
+  "pl": "Łuk żylny podeszwowy",
+  "en": "Plantar venous arch",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "plantar_venous_arch_r",
+  "pl": "Łuk żylny podeszwowy",
+  "en": "Plantar venous arch",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "popliteal_artery_l",
+  "pl": "Tętnica podkolanowa",
+  "en": "Popliteal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "popliteal_artery_r",
+  "pl": "Tętnica podkolanowa",
+  "en": "Popliteal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "popliteal_vein_l",
+  "pl": "Żyła podkolanowa",
+  "en": "Popliteal vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "popliteal_vein_r",
+  "pl": "Żyła podkolanowa",
+  "en": "Popliteal vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "postcentral_arterial_branch_l",
+  "pl": "Gałąź tętnicza zaśrodkowa",
+  "en": "Postcentral arterial branch",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "postcentral_arterial_branch_r",
+  "pl": "Gałąź tętnicza zaśrodkowa",
+  "en": "Postcentral arterial branch",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_auricular_vein_l",
+  "pl": "Żyła uszna tylna",
+  "en": "Posterior auricular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_auricular_vein_r",
+  "pl": "Żyła uszna tylna",
+  "en": "Posterior auricular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_basal_segmental_artery_of_left_lung",
+  "pl": "Tętnica tylna podstawna płuca",
+  "en": "Posterior basal segmental artery of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_basal_segmental_artery_of_right_lung",
+  "pl": "Tętnica tylna podstawna płuca",
+  "en": "Posterior basal segmental artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_branch_of_renal_artery_l",
+  "pl": "Gałąź tylna tętnica nerkowa",
+  "en": "Posterior branch of renal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_branch_of_renal_artery_r",
+  "pl": "Gałąź tylna tętnica nerkowa",
+  "en": "Posterior branch of renal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_cerebral_artery_l",
+  "pl": "Tętnica tylna mózgu",
+  "en": "Posterior cerebral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_cerebral_artery_r",
+  "pl": "Tętnica tylna mózgu",
+  "en": "Posterior cerebral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_circumflex_humeral_artery_l",
+  "pl": "Tętnica okalająca ramię tylna",
+  "en": "Posterior circumflex humeral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_circumflex_humeral_artery_r",
+  "pl": "Tętnica okalająca ramię tylna",
+  "en": "Posterior circumflex humeral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_circumflex_humeral_vein_l",
+  "pl": "Żyła okalająca ramię tylna",
+  "en": "Posterior circumflex humeral vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_circumflex_humeral_vein_r",
+  "pl": "Żyła okalająca ramię tylna",
+  "en": "Posterior circumflex humeral vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_communicating_artery",
+  "pl": "Tętnica łącząca tylna",
+  "en": "Posterior communicating artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_deep_temporal_artery_l",
+  "pl": "Tętnicą skroniowa głęboka tylna",
+  "en": "Posterior deep temporal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_deep_temporal_artery_r",
+  "pl": "Tętnicą skroniowa głęboka tylna",
+  "en": "Posterior deep temporal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_division_of_internal_iliac_artery_l",
+  "pl": "Podział tylny tętnicy biodrowej wewnętrznej",
+  "en": "Posterior division of internal iliac artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_internal_iliac_artery_r",
+  "pl": "Podział tylny tętnicy biodrowej wewnętrznej",
+  "en": "Posterior division of internal iliac artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_retromandibular_vein_l",
+  "pl": "Podział tylny żyły zażuchwowej",
+  "en": "Posterior division of retromandibular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_division_of_retromandibular_vein_r",
+  "pl": "Podział tylny żyły zażuchwowej",
+  "en": "Posterior division of retromandibular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_ethmoidal_artery_l",
+  "pl": "Tętnica sitowa tylna",
+  "en": "Posterior ethmoidal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_ethmoidal_artery_r",
+  "pl": "Tętnica sitowa tylna",
+  "en": "Posterior ethmoidal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_inferior_cerebellar_artery_l",
+  "pl": "Tętnica dolna tylna móżdżku",
+  "en": "Posterior inferior cerebellar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_inferior_cerebellar_artery_r",
+  "pl": "Tętnica dolna tylna móżdżku",
+  "en": "Posterior inferior cerebellar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_intercavernous_sinus",
+  "pl": "Zatoka międzyjamista tylna",
+  "en": "Posterior intercavernous sinus",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_intercostal_arteries_l",
+  "pl": "Tętnice międzyżebrowe tylne",
+  "en": "Posterior intercostal arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_intercostal_arteries_r",
+  "pl": "Tętnice międzyżebrowe tylne",
+  "en": "Posterior intercostal arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_interosseous_artery_l",
+  "pl": "Tętnica międzykostna tylna",
+  "en": "Posterior interosseous artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_interosseous_artery_r",
+  "pl": "Tętnica międzykostna tylna",
+  "en": "Posterior interosseous artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_lateral_nasal_branches_of_sphenopalatine_artery",
+  "pl": "Gałęzie tylna boczna tętnica klinowo-podniebienna",
+  "en": "Posterior lateral nasal branches of sphenopalatine artery.",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_parietal_artery_l",
+  "pl": "Tętnica ciemieniowa tylna",
+  "en": "Posterior parietal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_parietal_artery_r",
+  "pl": "Tętnica ciemieniowa tylna",
+  "en": "Posterior parietal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_segmental_artery_of_left_lung",
+  "pl": "Tętnica tylna płuca",
+  "en": "Posterior segmental artery of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_segmental_artery_of_right_lung",
+  "pl": "Tętnica tylna płuca",
+  "en": "Posterior segmental artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_septal_branches_of_sphenopalatine_artery",
+  "pl": "Gałęzie tylna tętnica klinowo-podniebienna",
+  "en": "Posterior septal branches of sphenopalatine artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "posterior_superior_alveolar_artery_l",
+  "pl": "Tętnica zębodołowa górna tylna",
+  "en": "Posterior superior alveolar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_superior_alveolar_artery_r",
+  "pl": "Tętnica zębodołowa górna tylna",
+  "en": "Posterior superior alveolar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "posterior_temporal_branch_l",
+  "pl": "Gałąź skroniowa tylna",
+  "en": "Posterior temporal branch",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_temporal_branch_r",
+  "pl": "Gałąź skroniowa tylna",
+  "en": "Posterior temporal branch",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_tibial_artery_l",
+  "pl": "Tętnica piszczelowa tylna",
+  "en": "Posterior tibial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_tibial_artery_r",
+  "pl": "Tętnica piszczelowa tylna",
+  "en": "Posterior tibial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_tibial_veins_l",
+  "pl": "Żyły piszczelowe tylne",
+  "en": "Posterior tibial veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_tibial_veins_r",
+  "pl": "Żyły piszczelowe tylne",
+  "en": "Posterior tibial veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "posterior_vein_of_right_lung",
+  "pl": "Żyła tylna płuca",
+  "en": "Posterior vein of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "prefrontal_artery_l",
+  "pl": "Tętnica przedczołowa",
+  "en": "Prefrontal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "prefrontal_artery_r",
+  "pl": "Tętnica przedczołowa",
+  "en": "Prefrontal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_hepatic_artery",
+  "pl": "Tętnica wątrobowa właściwa",
+  "en": "Proper hepatic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "proper_palmar_digital_arteries_l",
+  "pl": "Tętnice dłoniowe właściwe palców",
+  "en": "Proper palmar digital arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_palmar_digital_arteries_r",
+  "pl": "Tętnice dłoniowe właściwe palców",
+  "en": "Proper palmar digital arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_plantar_digital_arteries_l",
+  "pl": "Właściwe tętnice podeszwowe palców",
+  "en": "Proper plantar digital arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proper_plantar_digital_arteries_r",
+  "pl": "Właściwe tętnice podeszwowe palców",
+  "en": "Proper plantar digital arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proximal_lateral_striate_branches_l",
+  "pl": "Gałęzie bliższe boczne prążkowia",
+  "en": "Proximal lateral striate branches",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "proximal_lateral_striate_branches_r",
+  "pl": "Gałęzie bliższe boczne prążkowia",
+  "en": "Proximal lateral striate branches",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "pulmonary_trunk",
+  "pl": "Pień płucny",
+  "en": "Pulmonary trunk",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_artery_l",
+  "pl": "Tętnica promieniowa",
+  "en": "Radial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_artery_r",
+  "pl": "Tętnica promieniowa",
+  "en": "Radial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_collateral_artery_l",
+  "pl": "Tętnica poboczna promieniowa",
+  "en": "Radial collateral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_collateral_artery_r",
+  "pl": "Tętnica poboczna promieniowa",
+  "en": "Radial collateral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_veins_l",
+  "pl": "Żyły promieniowe",
+  "en": "Radial veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "radial_veins_r",
+  "pl": "Żyły promieniowe",
+  "en": "Radial veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "recurrent_interosseous_artery_l",
+  "pl": "Tętnica wsteczna międzykostna",
+  "en": "Recurrent interosseous artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "recurrent_interosseous_artery_r",
+  "pl": "Tętnica wsteczna międzykostna",
+  "en": "Recurrent interosseous artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "retromandibular_vein_l",
+  "pl": "Żyła zażuchwowa",
+  "en": "Retromandibular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "retromandibular_vein_r",
+  "pl": "Żyła zażuchwowa",
+  "en": "Retromandibular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_ascending_lumbar_vein",
+  "pl": "Żyła lędźwiowa wstępująca",
+  "en": "Right ascending lumbar vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "right_brachiocephalic_vein",
+  "pl": "Żyła ramienno-głowowa",
+  "en": "Right brachiocephalic vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_colic_artery",
+  "pl": "Tętnica okrężnicza prawa",
+  "en": "Right colic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_colic_vein",
+  "pl": "Żyła okrężnicza prawa",
+  "en": "Right colic vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_common_carotid_artery",
+  "pl": "Tętnica szyjna wspólna",
+  "en": "Right common carotid artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_coronary_artery",
+  "pl": "Tętnica wieńcowa prawa",
+  "en": "Right coronary artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_gastro_omental_vein",
+  "pl": "Żyła żołądkowo-sieciowa prawa",
+  "en": "Right gastro-omental vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_inferior_pulmonary_vein",
+  "pl": "Żyła płucna prawa dolna",
+  "en": "Right inferior pulmonary vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_inferolateral_branch_of_right_coronary_artery",
+  "pl": "Gałąź tylno-boczna (t. wieńcowej prawej)",
+  "en": "Right inferolateral branch of right coronary artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "right_pulmonary_artery",
+  "pl": "Tętnica płucna prawa",
+  "en": "Right pulmonary artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_renal_artery",
+  "pl": "Tętnica nerkowa",
+  "en": "Right renal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_renal_vein",
+  "pl": "Żyła nerkowa",
+  "en": "Right renal vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_subclavian_artery",
+  "pl": "Tętnica podobojczykowa",
+  "en": "Right subclavian artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_subclavian_vein",
+  "pl": "Żyła podobojczykowa",
+  "en": "Right subclavian vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_subcostal_vein",
+  "pl": "Żyła podżebrowa",
+  "en": "Right subcostal vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "right_superior_intercostal_vein",
+  "pl": "Żyła międzyżebrowa górna prawa",
+  "en": "Right superior intercostal vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_superior_phrenic_vein",
+  "pl": "Żyły przeponowe górne",
+  "en": "Right superior phrenic vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "right_superior_pulmonary_vein",
+  "pl": "Żyła płucna prawa górna",
+  "en": "Right superior pulmonary vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "right_testicular_artery",
+  "pl": "Tętnica jądrowa (m)",
+  "en": "Right testicular artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "right_testicular_vein",
+  "pl": "Żyła jądrowa lewa (m)",
+  "en": "Right testicular vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "second_posterior_intercostal_artery_l",
+  "pl": "Tętnica międzyżebrowa tylna druga",
+  "en": "Second posterior intercostal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "second_posterior_intercostal_artery_r",
+  "pl": "Tętnica międzyżebrowa tylna druga",
+  "en": "Second posterior intercostal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "septal_branches_of_anterior_interventricular_artery",
+  "pl": "Gałęzie przegrodowe gałęzi międzykomorowej przedniej",
+  "en": "Septal branches of anterior interventricular artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "septal_branches_of_posterior_ethmoidal_artery",
+  "pl": "Gałęzie tętnica sitowa tylna",
+  "en": "Septal branches of posterior ethmoidal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "short_posterior_ciliary_arteries_l",
+  "pl": "Tętnice rzęskowe tylne krótkie",
+  "en": "Short posterior ciliary arteries",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "short_posterior_ciliary_arteries_r",
+  "pl": "Tętnice rzęskowe tylne krótkie",
+  "en": "Short posterior ciliary arteries",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sigmoid_arteries",
+  "pl": "Tętnice esicze",
+  "en": "Sigmoid arteries",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sigmoid_sinus_l",
+  "pl": "Zatoka esowata",
+  "en": "Sigmoid sinus",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sigmoid_sinus_r",
+  "pl": "Zatoka esowata",
+  "en": "Sigmoid sinus",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "sigmoid_veins",
+  "pl": "Żyły esicze",
+  "en": "Sigmoid veins",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "small_saphenous_vein_l",
+  "pl": "Żyła odstrzałkowa",
+  "en": "Small saphenous vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "small_saphenous_vein_r",
+  "pl": "Żyła odstrzałkowa",
+  "en": "Small saphenous vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "norm"
+ },
+ {
+  "id": "spinal_branch_of_iliolumbar_artery_l",
+  "pl": "Gałąź tętnica biodrowo-lędźwiowa",
+  "en": "Spinal branch of iliolumbar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "spinal_branch_of_iliolumbar_artery_r",
+  "pl": "Gałąź tętnica biodrowo-lędźwiowa",
+  "en": "Spinal branch of iliolumbar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "splenic_artery",
+  "pl": "Tętnica śledzionowa",
+  "en": "Splenic artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "splenic_vein",
+  "pl": "Żyła śledzionowa",
+  "en": "Splenic vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "straight_sinus",
+  "pl": "Zatoka prosta",
+  "en": "Straight sinus",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subcostal_artery_l",
+  "pl": "Tętnica podżebrowa",
+  "en": "Subcostal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subcostal_artery_r",
+  "pl": "Tętnica podżebrowa",
+  "en": "Subcostal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "submental_artery_l",
+  "pl": "Tętnica podbródkowa",
+  "en": "Submental artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "submental_artery_r",
+  "pl": "Tętnica podbródkowa",
+  "en": "Submental artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "submental_vein_l",
+  "pl": "Żyła podbródkowa",
+  "en": "Submental vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "submental_vein_r",
+  "pl": "Żyła podbródkowa",
+  "en": "Submental vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subscapular_artery_l",
+  "pl": "Tętnica podłopatkowa",
+  "en": "Subscapular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subscapular_artery_r",
+  "pl": "Tętnica podłopatkowa",
+  "en": "Subscapular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subscapular_vein_l",
+  "pl": "Żyła podłopatkowa",
+  "en": "Subscapular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "subscapular_vein_r",
+  "pl": "Żyła podłopatkowa",
+  "en": "Subscapular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_branch_of_medial_plantar_artery_l",
+  "pl": "Gałąź powierzchowna tętnica podeszwowa przyśrodkowa",
+  "en": "Superficial branch of medial plantar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superficial_branch_of_medial_plantar_artery_r",
+  "pl": "Gałąź powierzchowna tętnica podeszwowa przyśrodkowa",
+  "en": "Superficial branch of medial plantar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superficial_dorsal_veins_of_penis",
+  "pl": "Żyły grzbietowe powierzchowne prącia ♂",
+  "en": "Superficial dorsal veins of penis",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "superficial_epigastric_artery_l",
+  "pl": "Tętnica nabrzuszna powierzchowna",
+  "en": "Superficial epigastric artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_epigastric_artery_r",
+  "pl": "Tętnica nabrzuszna powierzchowna",
+  "en": "Superficial epigastric artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_epigastric_vein_l",
+  "pl": "Żyła nabrzuszna powierzchowna",
+  "en": "Superficial epigastric vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_epigastric_vein_r",
+  "pl": "Żyła nabrzuszna powierzchowna",
+  "en": "Superficial epigastric vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_external_pudendal_artery_l",
+  "pl": "Tętnica sromowa zewnętrzna powierzchowna",
+  "en": "Superficial external pudendal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superficial_external_pudendal_artery_r",
+  "pl": "Tętnica sromowa zewnętrzna powierzchowna",
+  "en": "Superficial external pudendal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "ovr"
+ },
+ {
+  "id": "superficial_palmar_arch_l",
+  "pl": "Łuk dłoniowy powierzchowny",
+  "en": "Superficial palmar arch",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_palmar_arch_r",
+  "pl": "Łuk dłoniowy powierzchowny",
+  "en": "Superficial palmar arch",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_temporal_artery_l",
+  "pl": "Tętnica skroniowa powierzchowna",
+  "en": "Superficial temporal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_temporal_artery_r",
+  "pl": "Tętnica skroniowa powierzchowna",
+  "en": "Superficial temporal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_temporal_veins_l",
+  "pl": "Żyły skroniowe powierzchowne",
+  "en": "Superficial temporal veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_temporal_veins_r",
+  "pl": "Żyły skroniowe powierzchowne",
+  "en": "Superficial temporal veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_venous_palmar_arch_l",
+  "pl": "Łuk żylny dłoniowy powierzchowny",
+  "en": "Superficial venous palmar arch",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superficial_venous_palmar_arch_r",
+  "pl": "Łuk żylny dłoniowy powierzchowny",
+  "en": "Superficial venous palmar arch",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_anorectal_artery",
+  "pl": "Tętnica odbytnicza górna",
+  "en": "Superior anorectal artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "superior_basal_vein_of_left_lung",
+  "pl": "Żyła górna podstawna płuca",
+  "en": "Superior basal vein of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_basal_vein_of_right_lung",
+  "pl": "Żyła górna podstawna płuca",
+  "en": "Superior basal vein of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_cerebellar_artery_l",
+  "pl": "Tętnica górna móżdżku",
+  "en": "Superior cerebellar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_cerebellar_artery_r",
+  "pl": "Tętnica górna móżdżku",
+  "en": "Superior cerebellar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_epigastric_artery_l",
+  "pl": "Tętnica nabrzuszna górna",
+  "en": "Superior epigastric artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_epigastric_artery_r",
+  "pl": "Tętnica nabrzuszna górna",
+  "en": "Superior epigastric artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_epigastric_veins_l",
+  "pl": "Żyła nabrzuszna górna",
+  "en": "Superior epigastric veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_epigastric_veins_r",
+  "pl": "Żyła nabrzuszna górna",
+  "en": "Superior epigastric veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_gluteal_artery_l",
+  "pl": "Tętnica pośladkowa górna",
+  "en": "Superior gluteal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_gluteal_artery_r",
+  "pl": "Tętnica pośladkowa górna",
+  "en": "Superior gluteal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_gluteal_veins_l",
+  "pl": "Żyły pośladkowe górne",
+  "en": "Superior gluteal veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_gluteal_veins_r",
+  "pl": "Żyły pośladkowe górne",
+  "en": "Superior gluteal veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_labial_artery_l",
+  "pl": "Tętnica wargowa górna",
+  "en": "Superior labial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_labial_artery_r",
+  "pl": "Tętnica wargowa górna",
+  "en": "Superior labial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_labial_vein_l",
+  "pl": "Żyła wargowa górna",
+  "en": "Superior labial vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_labial_vein_r",
+  "pl": "Żyła wargowa górna",
+  "en": "Superior labial vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_lateral_genicular_artery_l",
+  "pl": "Tętnica górna boczna kolana",
+  "en": "Superior lateral genicular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_lateral_genicular_artery_r",
+  "pl": "Tętnica górna boczna kolana",
+  "en": "Superior lateral genicular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_lingular_artery_of_left_lung",
+  "pl": "Tętnica górna języczkowa płuca",
+  "en": "Superior lingular artery of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_lingular_vein_of_left_lung",
+  "pl": "Żyła górna języczkowa płuca",
+  "en": "Superior lingular vein of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_lobar_artery_of_right_lung",
+  "pl": "Tętnica górna płuca",
+  "en": "Superior lobar artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_medial_genicular_artery_l",
+  "pl": "Tętnica górna przyśrodkowa kolana",
+  "en": "Superior medial genicular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_medial_genicular_artery_r",
+  "pl": "Tętnica górna przyśrodkowa kolana",
+  "en": "Superior medial genicular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_mesenteric_artery",
+  "pl": "Tętnica krezkowa górna",
+  "en": "Superior mesenteric artery",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_mesenteric_vein",
+  "pl": "Żyła krezkowa górna",
+  "en": "Superior mesenteric vein",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_ophthalmic_vein_l",
+  "pl": "Żyła oczna górna",
+  "en": "Superior ophthalmic vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "superior_ophthalmic_vein_r",
+  "pl": "Żyła oczna górna",
+  "en": "Superior ophthalmic vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "fuzzy"
+ },
+ {
+  "id": "superior_petrosal_sinus_l",
+  "pl": "Zatoka skalista górna",
+  "en": "Superior petrosal sinus",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_petrosal_sinus_r",
+  "pl": "Zatoka skalista górna",
+  "en": "Superior petrosal sinus",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_phrenic_arteries",
+  "pl": "Tętnice przeponowe górne",
+  "en": "Superior phrenic arteries",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_sagittal_sinus",
+  "pl": "Zatoka strzałkowa górna",
+  "en": "Superior sagittal sinus",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_segmental_artery_of_left_lung",
+  "pl": "Tętnica górna płuca",
+  "en": "Superior segmental artery of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_segmental_artery_of_right_lung",
+  "pl": "Tętnica górna płuca",
+  "en": "Superior segmental artery of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_thyroid_vein_l",
+  "pl": "Żyła tarczowa górna",
+  "en": "Superior thyroid vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_thyroid_vein_r",
+  "pl": "Żyła tarczowa górna",
+  "en": "Superior thyroid vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_ulnar_collateral_artery_l",
+  "pl": "Tętnica poboczna łokciowa górna",
+  "en": "Superior ulnar collateral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_ulnar_collateral_artery_r",
+  "pl": "Tętnica poboczna łokciowa górna",
+  "en": "Superior ulnar collateral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "superior_vein_of_left_lung",
+  "pl": "Żyła górna płuca",
+  "en": "Superior vein of left lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_vein_of_right_lung",
+  "pl": "Żyła górna płuca",
+  "en": "Superior vein of right lung",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "superior_vena_cava",
+  "pl": "Żyła główna górna",
+  "en": "Superior vena cava",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supra_orbital_artery_l",
+  "pl": "Tętnica nadoczodołowa",
+  "en": "Supra-orbital artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supra_orbital_artery_r",
+  "pl": "Tętnica nadoczodołowa",
+  "en": "Supra-orbital artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "suprascapular_artery_l",
+  "pl": "Tętnica nadłopatkowa",
+  "en": "Suprascapular artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "suprascapular_artery_r",
+  "pl": "Tętnica nadłopatkowa",
+  "en": "Suprascapular artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "suprascapular_vein_l",
+  "pl": "Żyła nadłopatkowa",
+  "en": "Suprascapular vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "suprascapular_vein_r",
+  "pl": "Żyła nadłopatkowa",
+  "en": "Suprascapular vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supratrochlear_artery_l",
+  "pl": "Tętnica nadbloczkowa",
+  "en": "Supratrochlear artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supratrochlear_artery_r",
+  "pl": "Tętnica nadbloczkowa",
+  "en": "Supratrochlear artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supreme_intercostal_artery_l",
+  "pl": "Tętnica międzyżebrowa najwyższa",
+  "en": "Supreme intercostal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "supreme_intercostal_artery_r",
+  "pl": "Tętnica międzyżebrowa najwyższa",
+  "en": "Supreme intercostal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "temporal_branches_of_middle_cerebral_artery_l",
+  "pl": "Gałęzie tętnica środkowa mózgu",
+  "en": "Temporal branches of middle cerebral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "temporal_branches_of_middle_cerebral_artery_r",
+  "pl": "Gałęzie tętnica środkowa mózgu",
+  "en": "Temporal branches of middle cerebral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "comp"
+ },
+ {
+  "id": "temporo_occipital_branch_l",
+  "pl": "Gałąź skroniowo-potyliczna",
+  "en": "Temporo-occipital branch",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "temporo_occipital_branch_r",
+  "pl": "Gałąź skroniowo-potyliczna",
+  "en": "Temporo-occipital branch",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thoracic_aorta",
+  "pl": "Aorta piersiowa",
+  "en": "Thoracic aorta",
+  "side": "mid",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thoraco_acromial_artery_l",
+  "pl": "Tętnica piersiowo-barkowa",
+  "en": "Thoraco-acromial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thoraco_acromial_artery_r",
+  "pl": "Tętnica piersiowo-barkowa",
+  "en": "Thoraco-acromial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thoracodorsal_artery_l",
+  "pl": "Tętnica piersiowo-grzbietowa",
+  "en": "Thoracodorsal artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thoracodorsal_artery_r",
+  "pl": "Tętnica piersiowo-grzbietowa",
+  "en": "Thoracodorsal artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thoracodorsal_vein_l",
+  "pl": "Żyła piersiowo-grzbietowa",
+  "en": "Thoracodorsal vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thoracodorsal_vein_r",
+  "pl": "Żyła piersiowo-grzbietowa",
+  "en": "Thoracodorsal vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thyrocervical_trunk_l",
+  "pl": "Pień tarczowo-szyjny",
+  "en": "Thyrocervical trunk",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "thyrocervical_trunk_r",
+  "pl": "Pień tarczowo-szyjny",
+  "en": "Thyrocervical trunk",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_cervical_artery_l",
+  "pl": "Tętnica poprzeczna szyi",
+  "en": "Transverse cervical artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_cervical_artery_r",
+  "pl": "Tętnica poprzeczna szyi",
+  "en": "Transverse cervical artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_facial_artery_l",
+  "pl": "Tętnica poprzeczna twarzy",
+  "en": "Transverse facial artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_facial_artery_r",
+  "pl": "Tętnica poprzeczna twarzy",
+  "en": "Transverse facial artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_sinus_l",
+  "pl": "Zatoka poprzeczna",
+  "en": "Transverse sinus",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "transverse_sinus_r",
+  "pl": "Zatoka poprzeczna",
+  "en": "Transverse sinus",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnar_artery_l",
+  "pl": "Tętnica łokciowa",
+  "en": "Ulnar artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnar_artery_r",
+  "pl": "Tętnica łokciowa",
+  "en": "Ulnar artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnar_veins_l",
+  "pl": "Żyły łokciowe",
+  "en": "Ulnar veins",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "ulnar_veins_r",
+  "pl": "Żyły łokciowe",
+  "en": "Ulnar veins",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vertebral_artery_l",
+  "pl": "Tętnica kręgowa",
+  "en": "Vertebral artery",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vertebral_artery_r",
+  "pl": "Tętnica kręgowa",
+  "en": "Vertebral artery",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vertebral_vein_l",
+  "pl": "Żyła kręgowa",
+  "en": "Vertebral vein",
+  "side": "l",
+  "kind": "vessel",
+  "pl_from": "exact"
+ },
+ {
+  "id": "vertebral_vein_r",
+  "pl": "Żyła kręgowa",
+  "en": "Vertebral vein",
+  "side": "r",
+  "kind": "vessel",
+  "pl_from": "exact"
+ }
+]
