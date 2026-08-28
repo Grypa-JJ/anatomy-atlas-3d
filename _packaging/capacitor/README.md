@@ -1,84 +1,79 @@
 # Atlas 3D — powłoka Android (Capacitor)
 
-Pakuje `_packaging/web/` w APK do **sideloadu** (poza sklepem) + aktualizacje OTA
-warstwy web przez `@capgo/capacitor-updater` (self-host na R2, bez płatnej chmury Capgo).
+Pakuje `_packaging/web/` w APK do **sideloadu** (poza sklepem). Stan: **działa** —
+`atlas-anatomiczny-3d-0.1.0.apk` (~79 MB) buduje się lokalnie, podpisany, renderuje offline.
 
-## Wymagania jednorazowe (maszyna do buildu)
+Android używa własnego WebView opartego na Chromium — **nie ma buga WebGL z WebView2** (patrz
+`_packaging/README.md`), więc atlas renderuje się poprawnie.
 
-- **Node 18+**, **JDK 17**
-- **Android Studio** + Android SDK (API 34+), albo samo `cmdline-tools` + `platform-tools`
-- Zmienna `ANDROID_HOME` / `ANDROID_SDK_ROOT`
+## Toolchain (jednorazowo)
 
-## Pierwsze uruchomienie
+- **Node 18+**
+- **JDK 21** — `winget install EclipseAdoptium.Temurin.21.JDK`
+  ⚠️ JDK 23+ psuje AGP 8.7 ("Unsupported class file major version"). JDK 17 też działa.
+- **Android SDK** — cmdline-tools + `platform-tools` + `platforms;android-35` + `build-tools;35.0.0`
+  (bez Android Studio: rozpakuj `commandlinetools-win-*.zip` do
+  `%LOCALAPPDATA%\Android\Sdk\cmdline-tools\latest\`, potem
+  `sdkmanager --licenses` i `sdkmanager "platform-tools" "platforms;android-35" "build-tools;35.0.0"`)
+- `ANDROID_HOME` = ścieżka do SDK
+
+## Keystore (jednorazowo, POZA repo)
 
 ```bash
-cd _packaging/capacitor
-npm install
-node ../assemble.mjs          # zbuduj bundle web/
-npx cap add android           # tworzy android/ (jest w .gitignore)
-npx cap sync android          # kopiuje web/ + pluginy do android/
-npx cap open android          # otwiera w Android Studio
+keytool -genkeypair -v -keystore %USERPROFILE%\.android-keys\atlas3d.keystore \
+  -alias atlas3d -keyalg RSA -keysize 2048 -validity 10000 \
+  -storepass <hasło> -dname "CN=Grypa-JJ, O=Grypa-JJ, C=PL"
+```
+(PKCS12 → store i key mają to samo hasło). Zapisz `android/keystore.properties` (gitignore):
+```
+storeFile=C:/Users/<user>/.android-keys/atlas3d.keystore
+storePassword=<hasło>
+keyAlias=atlas3d
+keyPassword=<hasło>
 ```
 
 ## Build APK
 
 ```bash
-npm run sync                  # assemble + cap sync
-cd android
-gradlew.bat assembleDebug     # android/app/build/outputs/apk/debug/app-debug.apk
-# albo podpisany release:
-gradlew.bat assembleRelease
+cd _packaging/capacitor
+npm install
+npm run add        # cap add android + patch-android.mjs (signing + lint off + local.properties)
+# skopiuj keystore.properties do android/  (rm -rf android przy npm run add je czyści)
+npm run apk        # = sync + gradlew assembleRelease --no-daemon
 ```
 
-### Podpis release (raz)
+APK: `android/app/build/outputs/apk/release/app-release.apk`.
 
-```bash
-keytool -genkey -v -keystore atlas3d.keystore -alias atlas3d -keyalg RSA -keysize 2048 -validity 10000
-```
-
-`android/key.properties` (NIE commituj):
-```
-storeFile=../../atlas3d.keystore
-storePassword=...
-keyAlias=atlas3d
-keyPassword=...
-```
-i w `android/app/build.gradle` dodaj `signingConfigs` czytające `key.properties`
-(standardowy snippet Capacitora/Androida).
-
-## Sideload u użytkownika
-
-1. Wrzuć `app-release.apk` do **GitHub Releases** (tag `atlas-vX.Y.Z`).
-2. User: pobiera APK → przy otwarciu Android pyta o zgodę „Instaluj nieznane aplikacje"
-   dla przeglądarki/menedżera plików → instaluje.
+`patch-android.mjs` (idempotentny, wołany z `npm run add` i `npm run sync`) nakłada na
+świeżo wygenerowany `android/`:
+- `signingConfigs.release` czytający `keystore.properties` lub `ANDROID_KEYSTORE_*`
+- `lint { checkReleaseBuilds false }` — `lintVitalReportRelease` wywala się na spacji w
+  ścieżce projektu ("projekt w budowie")
+- `local.properties` z `sdk.dir` (**forward-slashe** — backslashe łamią parser `.properties`)
 
 ## Aktualizacje
 
-Dwa poziomy:
+### A. Warstwa web (GLB, JS, HTML) — OTA, bez reinstalacji
 
-### A. Warstwa web (GLB, JS, HTML, szpilki) — OTA, bez reinstalacji
+`@capgo/capacitor-updater` (wpięty, `autoUpdate: false`). `updater.js` przy nowej wersji w
+`latest.json` woła `CapacitorUpdater.download({url: web.url})` → `set()` → restart do nowej paczki.
+Paczkę web (`web-X.Y.Z.zip`) wgraj na R2 / GitHub Release, URL w `latest.json` → `web.url`.
 
-1. `npm run sync` na nowej wersji, spakuj **zawartość `android/app/src/main/assets/public/`**
-   (to jest to, co robi `cap sync`) do ZIP-a — albo prościej: spakuj `../web/` do
-   `web-X.Y.Z.zip` w formacie oczekiwanym przez Capgo (płaski zip roota).
-2. Wgraj ZIP na R2: `atlas/updates/web-X.Y.Z.zip`.
-3. W `latest.json` na R2 ustaw `web.url` na ten ZIP + `version`.
-4. Klient: `updater.js` wykrywa nową `version`, woła
-   `CapacitorUpdater.download({url})` → `set(bundle)` → restart do nowej paczki.
+### B. Powłoka natywna (nowy plugin) — nowy APK
 
-> Uwaga: `@capgo/capacitor-updater` OTA-uje TYLKO assety web. Kod natywny (pluginy) — tylko nowy APK.
+`latest.json` → `android.url` na nowy APK. Baner „Zaktualizuj" otworzy link → user instaluje ręcznie.
 
-### B. Powłoka natywna (nowy plugin, bump Capacitora) — nowy APK
+## Sideload u użytkownika
 
-`latest.json` → `android.url` na nowy APK w GitHub Releases. `updater.js` pokaże baner,
-„Zaktualizuj" otworzy link → user instaluje APK ręcznie (jak przy pierwszej instalacji).
+Pobiera `.apk` → przy otwarciu Android pyta o „Instaluj nieznane aplikacje" dla przeglądarki →
+Zainstaluj. Min. Android 6.0 (API 23). Wymaga WebGL2 (Chrome/WebView ≥ 75 — praktycznie każdy
+telefon z 2019+).
 
 ## Znane pułapki
 
-- **`speechSynthesis`** w Android System WebView bywa pusty (brak silnika Google TTS →
-  `getVoices()` = []). Jeśli mowa ma działać pewnie na Androidzie: dodaj
-  `@capacitor-community/text-to-speech` i podepnij pod przycisk 🔈 w atlasie (glue-faza).
-- WebGL2 działa w nowoczesnym WebView (Chrome ≥ 75). Stare tablety (WebView < 75) — brak.
-- 108 MB assetów w APK jest OK dla sideloadu. Gdyby przeszkadzało: chudy APK + pobranie
-  paczki GLB przy pierwszym starcie tym samym mechanizmem co OTA.
-- `allowMixedContent: false` — wszystkie zdalne zasoby (R2) muszą być https (są).
+- **`speechSynthesis`** w Android WebView bywa pusty (brak silnika Google TTS →
+  `getVoices()` = []). Jeśli mowa ma działać pewnie: `@capacitor-community/text-to-speech`
+  pod przycisk 🔈 (glue-faza).
+- 79 MB APK. Gdyby przeszkadzało: chudy APK + pobranie paczki GLB przy 1. starcie tym samym
+  mechanizmem co OTA.
+- `allowMixedContent: false` — zdalne zasoby (R2) muszą być https (są).

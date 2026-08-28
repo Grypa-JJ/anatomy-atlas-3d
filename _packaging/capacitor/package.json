@@ -5,9 +5,10 @@
   "description": "Powloka Android (Capacitor) dla atlasu anatomicznego 3D.",
   "scripts": {
     "assemble": "node ../fetch-assets.mjs && node ../assemble.mjs",
-    "sync": "node ../fetch-assets.mjs && node ../assemble.mjs && cap sync android",
+    "add": "cap add android && node patch-android.mjs",
+    "sync": "node ../fetch-assets.mjs && node ../assemble.mjs && cap sync android && node patch-android.mjs",
     "open": "cap open android",
-    "apk": "npm run sync && cd android && gradlew.bat assembleRelease"
+    "apk": "npm run sync && cd android && gradlew.bat assembleRelease --no-daemon"
   },
   "devDependencies": {
     "@capacitor/cli": "^7"

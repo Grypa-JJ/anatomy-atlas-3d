@@ -69,7 +69,7 @@ jobs:
       - uses: actions/setup-node@v4
         with: { node-version: 20 }
       - uses: actions/setup-java@v4
-        with: { distribution: temurin, java-version: '17' }
+        with: { distribution: temurin, java-version: '21' }
       - uses: android-actions/setup-android@v3
 
       - name: npm ci (capacitor)
@@ -86,25 +86,24 @@ jobs:
           node ../assemble.mjs
           npx cap add android
           npx cap sync android
+          node patch-android.mjs
 
-      - name: Keystore z sekretu
+      - name: Keystore + keystore.properties z sekretów
         working-directory: _packaging/capacitor/android
         env:
           KS_B64: ${{ secrets.ANDROID_KEYSTORE_BASE64 }}
-        run: echo "$KS_B64" | base64 -d > atlas3d.keystore
-
-      - name: Build APK (release, podpisany)
-        working-directory: _packaging/capacitor/android
-        env:
           KS_PASS: ${{ secrets.ANDROID_KEYSTORE_PASSWORD }}
           KS_ALIAS: ${{ secrets.ANDROID_KEY_ALIAS }}
           KEY_PASS: ${{ secrets.ANDROID_KEY_PASSWORD }}
         run: |
-          ./gradlew assembleRelease \
-            -Pandroid.injected.signing.store.file=$PWD/atlas3d.keystore \
-            -Pandroid.injected.signing.store.password="$KS_PASS" \
-            -Pandroid.injected.signing.key.alias="$KS_ALIAS" \
-            -Pandroid.injected.signing.key.password="$KEY_PASS"
+          echo "$KS_B64" | base64 -d > atlas3d.keystore
+          printf 'storeFile=%s/atlas3d.keystore\nstorePassword=%s\nkeyAlias=%s\nkeyPassword=%s\n' \
+            "$PWD" "$KS_PASS" "$KS_ALIAS" "$KEY_PASS" > keystore.properties
+
+      - name: Build APK (release, podpisany)
+        working-directory: _packaging/capacitor/android
+        run: |
+          ./gradlew assembleRelease --no-daemon
           mv app/build/outputs/apk/release/app-release.apk \
              app/build/outputs/apk/release/atlas-${{ github.ref_name }}.apk
 
