@@ -84,7 +84,7 @@ await walk(path.join(ANDROID, 'app', 'src', 'main', 'java'));
 
 for (const ma of maFiles) {
   let src = await fs.readFile(ma, 'utf8');
-  if (src.includes('setLoadWithOverviewMode')) { console.log('patch-android: MainActivity już naniesione.'); continue; }
+  if (src.includes('setBuiltInZoomControls(false)')) { console.log('patch-android: MainActivity już naniesione.'); continue; }
   const pkg = (src.match(/package\s+([\w.]+);/) || [])[1] || 'com.grypajj.atlas3d';
   src = `package ${pkg};
 
@@ -97,10 +97,12 @@ public class MainActivity extends BridgeActivity {
         super.onStart();
         try {
             WebSettings s = this.bridge.getWebView().getSettings();
-            s.setUseWideViewPort(true);        // strony bez <meta viewport> -> szeroki layout (~980px)
-            s.setLoadWithOverviewMode(true);   // ...przeskalowany do szerokości ekranu (jak Chrome)
-            s.setBuiltInZoomControls(true);    // pinch-zoom w UI (panele atlasu są desktopowe)
-            s.setDisplayZoomControls(false);   // ...ale bez brzydkich przycisków +/-
+            // atlas ma <meta viewport width=device-width> + responsywny layout;
+            // to tylko asekuracja, gdyby jakas strona go nie miala. WebView-owy
+            // pinch-zoom celowo WYLACZONY - atlas ma wlasny (canvas: touch-action:none).
+            s.setUseWideViewPort(true);
+            s.setLoadWithOverviewMode(true);
+            s.setBuiltInZoomControls(false);
         } catch (Exception ignored) {}
     }
 }

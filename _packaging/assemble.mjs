@@ -66,15 +66,10 @@ async function patch(file, fn) {
 
 function injectCommon(html) {
   if (html.includes('data-atlas-injected')) return html;
-  // viewport: atlas_pilot_v3.html go nie ma i nie ma responsywnego CSS (panele na
-  // sztywno 240-280px). Wymuszamy layout 980px, a skalowanie do ekranu robi:
-  //  - w przegladarce: to i tak domyslne zachowanie mobilnego Chrome
-  //  - w APK: MainActivity (setUseWideViewPort + setLoadWithOverviewMode, patch-android.mjs)
-  // Strony z wlasnym viewportem (atlas.html, _organ_compare) zostawiamy nietkniete.
-  const viewport = /<meta[^>]+name=["']viewport["']/i.test(html)
-    ? ''
-    : '\n<meta name="viewport" content="width=980">';
-  const tag = `${viewport}
+  // atlas_pilot_v3.html i _organ_compare maja juz wlasny <meta viewport> + responsywny
+  // layout dotykowy (klasa html.touch-layout) i Pointer Events - nie wstrzykujemy tu
+  // zadnych hackow mobilnych. Tylko manifest + updater + rejestracja SW (PWA/https).
+  const tag = `
 <link rel="manifest" href="/manifest.webmanifest" data-atlas-injected>
 <meta name="theme-color" content="#1a1a1a">
 <script src="/updater.js" defer></script>
@@ -82,34 +77,6 @@ function injectCommon(html) {
   if ('serviceWorker' in navigator && location.protocol === 'https:' && !window.__TAURI__ && !window.Capacitor) {
     addEventListener('load', function () { navigator.serviceWorker.register('/sw.js').catch(function () {}); });
   }
-  // Dotyk: menedzer okien atlasu slucha tylko mouse* -> na telefonie nie da sie
-  // przeciagnac panelu za pasek tytulu. Tlumaczymy touch -> mouse tylko dla .winbar
-  // (przewijanie tresci panelu i przyciski dzialaja bez zmian).
-  (function () {
-    var dragging = false;
-    function xy(e) { var t = e.touches && e.touches[0] || e.changedTouches && e.changedTouches[0]; return t ? { x: t.clientX, y: t.clientY } : null; }
-    function fire(type, p, target) {
-      (target || document).dispatchEvent(new MouseEvent(type, { bubbles: true, cancelable: true, view: window, clientX: p ? p.x : 0, clientY: p ? p.y : 0 }));
-    }
-    document.addEventListener('touchstart', function (e) {
-      var bar = e.target.closest && e.target.closest('.winbar');
-      if (!bar || (e.target.classList && e.target.classList.contains('wb-x'))) return;
-      var p = xy(e); if (!p) return;
-      dragging = true;
-      fire('mousedown', p, e.target);
-    }, { passive: true });
-    document.addEventListener('touchmove', function (e) {
-      if (!dragging) return;
-      var p = xy(e); if (!p) return;
-      e.preventDefault();
-      fire('mousemove', p);
-    }, { passive: false });
-    document.addEventListener('touchend', function () {
-      if (!dragging) return;
-      dragging = false;
-      fire('mouseup', null);
-    });
-  })();
 </script>`;
   return html.includes('</head>') ? html.replace('</head>', tag + '\n</head>') : tag + html;
 }
