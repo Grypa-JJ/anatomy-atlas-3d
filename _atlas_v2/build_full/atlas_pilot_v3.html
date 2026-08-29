@@ -2,9 +2,29 @@
 <html lang="pl">
 <head>
 <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
 <title>Atlas 3D — szkielet (prototyp)</title>
+<script>
+  // Layout dotykowy: telefon/tablet w pionie. Oparte na rozmiarze + realnym
+  // dotyku (navigator.maxTouchPoints), nie na @media (hover/pointer) - te bywają
+  // niestabilne w WebView/podglądach. Klasa html.touch-layout steruje CSS-em;
+  // skrypt modułowy niżej czyta ją do logiki JS.
+  window.__detectTouchLayout = function () {
+    var w = window.innerWidth || document.documentElement.clientWidth || 0;
+    var h = window.innerHeight || document.documentElement.clientHeight || 0;
+    if (!w || !h) return null;                       // rozmiar jeszcze nieznany
+    var touch = (navigator.maxTouchPoints || 0) > 0;
+    var mobile = Math.min(w, h) <= 560 || (w <= 820 && touch);
+    document.documentElement.classList.toggle("touch-layout", mobile);
+    return mobile;
+  };
+  window.__detectTouchLayout();
+  window.addEventListener("DOMContentLoaded", window.__detectTouchLayout);
+</script>
 <style>
-    html, body { margin: 0; height: 100%; background: #1a1a1a; overflow: hidden; font-family: system-ui, sans-serif; }
+    html, body { margin: 0; height: 100%; background: #1a1a1a; overflow: hidden; font-family: system-ui, sans-serif;
+        overscroll-behavior: none; -webkit-tap-highlight-color: transparent; }
+    #canvas-wrap canvas { touch-action: none; }
     #canvas-wrap { position: absolute; inset: 0; }
     #label-box {
         position: absolute; top: 16px; left: 16px; z-index: 10;
@@ -233,6 +253,114 @@
   #winmenu .wm-drop hr { border: none; border-top: 1px solid #333b48; margin: 5px 2px; }
   #winmenu .wm-reset { color: #7ec8ff; padding: 5px 7px; border-radius: 5px; cursor: pointer; }
   #winmenu .wm-reset:hover { background: #242c38; }
+
+  .win > .winbar { touch-action: none; }
+
+  /* ===================== UKŁAD MOBILNY / DOTYKOWY =====================
+     Aktywowany klasą html.touch-layout (ustawianą przez skrypt w <head> na
+     podstawie rozmiaru ekranu + navigator.maxTouchPoints - pewniejsze niż
+     media (hover/pointer), które bywają niestabilne). Zagnieżdżenie CSS -
+     wspierane przez Chromium 120+ (Electron/WebView Androida). */
+  html.touch-layout {
+    /* link "wróć do wyboru trybu" -> mała ikona domku, prawy-górny, pod paskiem statusu */
+    body > a[title="Wróć do wyboru trybu"] {
+      left: auto !important; right: 8px !important; transform: none !important;
+      top: env(safe-area-inset-top, 0px) !important;
+      padding: 9px 11px !important; border-radius: 0 0 10px 10px !important;
+      font-size: 0 !important; line-height: 1 !important;
+    }
+    body > a[title="Wróć do wyboru trybu"]::before { content: "🏠"; font-size: 16px; }
+
+    /* menu "Okna" -> lewy-górny pod paskiem statusu, większe cele */
+    #winmenu { top: calc(env(safe-area-inset-top, 0px)) !important; left: 8px; }
+    #winmenu > button { padding: 10px 13px; font-size: 13px; }
+    #winmenu .wm-drop { min-width: min(74vw, 300px); padding: 8px; }
+    #winmenu .wm-drop label { padding: 11px 9px; font-size: 14px; }
+    #winmenu .wm-drop hr { margin: 8px 2px; }
+    #winmenu .wm-reset { padding: 11px 9px; font-size: 14px; }
+
+    /* topbar (szukajka + widoki) -> pasek u góry, pełna szerokość, pod paskiem statusu */
+    #topbar, #topbar.win {
+      position: fixed !important; top: calc(env(safe-area-inset-top, 0px)) !important;
+      left: 0 !important; right: 0 !important; width: auto !important; transform: none !important;
+      flex-direction: column; gap: 6px; padding: 46px 8px 6px !important;
+      background: linear-gradient(#1a1a1aE6 70%, #1a1a1a00); z-index: 55; align-items: stretch;
+    }
+    #topbar.win > .winbar { display: none; }        /* nie chowamy topbara na mobile */
+    #search-wrap { width: 100% !important; }
+    #search-input { padding: 12px 14px; font-size: 15px; }
+    /* 7 przycisków widoku w jednym rzędzie z przewijaniem poziomym - oszczędza wysokość */
+    #view-presets { display: flex; flex-wrap: nowrap; gap: 5px; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; }
+    #view-presets button { flex: 0 0 auto; padding: 9px 13px; font-size: 12.5px; }
+    #search-results { max-height: 45vh; }
+    #search-results .res-item { padding: 12px 14px; font-size: 14px; }
+
+    /* pozostałe panele (.win oprócz topbara) -> arkusze wysuwane od dołu */
+    .win:not(#topbar) {
+      position: fixed !important; z-index: 70 !important;
+      left: 0 !important; right: 0 !important; top: auto !important; bottom: 0 !important;
+      width: auto !important; max-width: 100vw !important;
+      height: auto !important; max-height: 62vh !important;
+      border-radius: 18px 18px 0 0 !important;
+      padding: 46px 16px calc(14px + env(safe-area-inset-bottom, 0px)) !important;
+      overflow-y: auto !important; resize: none !important;
+      box-shadow: 0 -10px 34px rgba(0,0,0,0.55);
+      background: #16181e !important;
+    }
+    .win:not(#topbar) > .winbar {
+      height: 40px; font-size: 13px; padding: 0 14px;
+      background: rgba(30,34,44,0.98); cursor: default;
+    }
+    .win:not(#topbar) > .winbar::before {
+      content: ""; position: absolute; top: 7px; left: 50%; transform: translateX(-50%);
+      width: 40px; height: 4px; border-radius: 2px; background: #4a5462;
+    }
+    .win > .winbar .wb-x { font-size: 22px; padding: 2px 10px; margin-left: auto; }
+
+    /* większe cele dotknięcia w treści paneli */
+    #layers-box { flex-direction: column; align-items: stretch; gap: 0; }
+    #layers-box label { padding: 10px 8px; min-height: 42px; border-radius: 8px; font-size: 14px; border-bottom: 1px solid #262a33; }
+    #layers-box label:last-of-type { border-bottom: none; }
+    #layers-box label:active { background: rgba(59,123,255,0.22); }
+    #layers-box label[style*="border-left"] { border-left: none !important; margin-left: 0 !important; padding-left: 8px !important; }
+    #left-panel { gap: 14px; }
+    #left-panel button, #tools-box button, #sidebar button, #label-box button, #kolokwium-panel button {
+      padding: 12px 12px !important; font-size: 14px !important; min-height: 46px;
+    }
+    #kolokwium-buttons button { flex: 1 1 44%; }
+    #tools-box { gap: 12px; }
+    #tools-box .tools-row { flex-wrap: wrap; gap: 10px; }
+    #section-slider, #transparency-box input[type="range"] { flex: 1; min-width: 140px; height: 34px; }
+    #transparency-box { flex-wrap: wrap; }
+
+    /* karta struktury / lista punktów -> arkusze od dołu */
+    #label-box, #sidebar {
+      position: fixed !important; z-index: 72 !important;
+      left: 0 !important; right: 0 !important;
+      top: auto !important; bottom: 0 !important; width: auto !important;
+      min-width: 0 !important; max-width: 100vw !important; max-height: 60vh !important;
+      border-radius: 18px 18px 0 0 !important; overflow-y: auto;
+      padding: 18px 18px calc(18px + env(safe-area-inset-bottom, 0px)) !important;
+      pointer-events: auto; background: #16181e !important;
+    }
+    #sidebar .lm-item { padding: 12px 12px; font-size: 14px; }
+    #label-box .pl { font-size: 18px; }
+
+    #kolokwium-panel {
+      left: 0 !important; right: 0 !important; top: auto !important; bottom: 0 !important;
+      width: auto !important; max-width: 100vw !important; max-height: 66vh !important;
+      border-radius: 18px 18px 0 0 !important; z-index: 72 !important; background: #16181e !important;
+      padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px)) !important;
+    }
+    .kw-item { padding: 11px 10px; }
+    .kw-note-btn { padding: 8px 12px; font-size: 12px; }
+
+    #credit { font-size: 8.5px; max-width: 60vw; line-height: 1.3; z-index: 2 !important;
+      bottom: calc(2px + env(safe-area-inset-bottom, 0px)); opacity: 0.55; }
+    #lm-tooltip { font-size: 14px; max-width: 70vw; white-space: normal; }
+    #notes-modal-card { width: 94vw; padding: 20px; padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
+    #id-labels-layer .id-label { font-size: 11px; }
+  }
 </style>
 </head>
 <body>
@@ -417,6 +545,11 @@ const KIND_TO_GLB = {
 };
 const DRACO_DECODER_PATH = "./vendor/addons/libs/draco/gltf/";
 
+// Layout dotykowy/telefon: panele jako arkusze dolne (patrz @media). Uzywane w
+// kilku miejscach, zeby np. nie pokazywac naraz label-box i sidebar (na desktopie
+// sa w przeciwnych rogach, na mobile obie leca na dol i nachodzilyby).
+const IS_TOUCH_LAYOUT = (window.__detectTouchLayout && window.__detectTouchLayout()) || document.documentElement.classList.contains("touch-layout");
+
 const scene = new THREE.Scene();
 scene.background = new THREE.Color(0x1a1a1a);
 
@@ -436,6 +569,9 @@ camera.up.set(0, 0, 1);
 camera.position.set(600, 0, 0);
 
 const renderer = new THREE.WebGLRenderer({ antialias: true, preserveDrawingBuffer: true });
+// Bez tego canvas renderuje w CSS-px (na telefonie/retinie = rozmyty). Cap 2 -
+// przy dpr 3 (typowy flagowiec) 3x piksele to zbedny narzut na WebGL.
+renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
 renderer.setSize(window.innerWidth || 1280, window.innerHeight || 720);
 renderer.localClippingEnabled = true; // wymagane, zeby material.clippingPlanes w ogole dzialalo (patrz przekroj nizej)
 renderer.shadowMap.enabled = true;
@@ -449,6 +585,13 @@ wrap.appendChild(renderer.domElement);
 
 const controls = new OrbitControls(camera, renderer.domElement);
 controls.enableDamping = true;
+// Dotyk: 1 palec = obrot, 2 palce = przesuniecie (zoom pinch obslugiwany osobno
+// nizej - spojnie z zoomem scrolla "w strone punktu"). OrbitControls i tak
+// ustawia touch-action:none na canvasie.
+controls.touches = { ONE: THREE.TOUCH.ROTATE, TWO: THREE.TOUCH.PAN };
+controls.enablePan = true;
+controls.panSpeed = 0.8;
+controls.rotateSpeed = 0.9;
 
 // Wieloswiatlowy rig (ambient + key/fill/rim/hemisphere) zamiast plaskich
 // 2 swiatel kierunkowych - daje wyrazniejsza forme/glebie na siatkach.
@@ -1235,10 +1378,16 @@ async function openBone(boneId) {
     const boxCenter = box.getCenter(new THREE.Vector3());
     const size = box.getSize(new THREE.Vector3());
     const maxDim = Math.max(size.x, size.y, size.z) || 1;
-    const fitDist = (maxDim * 0.9) / Math.tan((camera.fov * Math.PI / 180) / 2);
+    // na telefonie dolne ~55% ekranu zasłania arkusz z listą punktów - kadrujemy
+    // luźniej i przesuwamy cel w dół (oś Z = pionowa ciała), żeby kość wypadła w
+    // górnej, widocznej połowie
+    const fitMul = IS_TOUCH_LAYOUT ? 1.35 : 0.9;
+    const fitDist = (maxDim * fitMul) / Math.tan((camera.fov * Math.PI / 180) / 2);
     const dir = new THREE.Vector3(1, 0.3, 0.2).normalize();
-    camera.position.copy(boxCenter).addScaledVector(dir, fitDist);
-    controls.target.copy(boxCenter);
+    const aim = boxCenter.clone();
+    if (IS_TOUCH_LAYOUT) aim.z -= size.z * 0.35 + maxDim * 0.15;
+    camera.position.copy(aim).addScaledVector(dir, fitDist);
+    controls.target.copy(aim);
     controls.update();
 
     document.getElementById("lbl-pl-text").textContent = "";
@@ -1282,6 +1431,9 @@ async function openBone(boneId) {
         }
     }
     document.getElementById("sidebar").style.display = "block";
+    // na mobile sidebar (arkusz dolny) niesie już nazwę w nagłówku - label-box
+    // (też arkusz dolny) tylko by go zasłaniał
+    if (IS_TOUCH_LAYOUT) document.getElementById("label-box").style.display = "none";
 }
 
 function closeBone() {
@@ -1901,6 +2053,60 @@ renderer.domElement.addEventListener("wheel", (event) => {
     controls.update();
 }, { passive: false });
 
+// ===== Pinch-to-zoom (dotyk) - dwa palce; ten sam efekt co scroll (przyblizanie
+// w strone srodka szczypania). OrbitControls robi rownolegle PAN po srodku
+// dwoch palcow, wiec "szczypnij i przesun" dziala naturalnie. =====
+(function () {
+    let pinchPrev = 0;
+    const pinchPointer = new THREE.Vector2();
+    const pinchRay = new THREE.Raycaster();
+    function dist2(t) {
+        const dx = t[0].clientX - t[1].clientX, dy = t[0].clientY - t[1].clientY;
+        return Math.hypot(dx, dy);
+    }
+    renderer.domElement.addEventListener("touchstart", (e) => {
+        if (e.touches.length === 2) pinchPrev = dist2(e.touches);
+    }, { passive: true });
+    renderer.domElement.addEventListener("touchmove", (e) => {
+        if (e.touches.length !== 2 || splitMode) return;
+        const d = dist2(e.touches);
+        if (!pinchPrev) { pinchPrev = d; return; }
+        let ratio = d / pinchPrev;
+        pinchPrev = d;
+        if (Math.abs(ratio - 1) < 0.002) return;
+        // czulosc 0.7 + twardy limit na zdarzenie - przy szybkim rozjezdzie palcow
+        // surowy ratio potrafi przeskoczyc caly model w kilku klatkach
+        ratio = 1 + (ratio - 1) * 0.7;
+        ratio = THREE.MathUtils.clamp(ratio, 0.9, 1.12);
+
+        const offset = camera.position.clone().sub(controls.target);
+        const curDist = offset.length();
+        let newDist = curDist / ratio; // palce dalej od siebie -> blizej modelu
+        newDist = THREE.MathUtils.clamp(newDist, controls.minDistance || 1, controls.maxDistance || 5000);
+
+        // przyblizanie w strone punktu miedzy palcami
+        if (ratio > 1) {
+            const cx = (e.touches[0].clientX + e.touches[1].clientX) / 2;
+            const cy = (e.touches[0].clientY + e.touches[1].clientY) / 2;
+            pinchPointer.x = (cx / window.innerWidth) * 2 - 1;
+            pinchPointer.y = -(cy / window.innerHeight) * 2 + 1;
+            pinchRay.setFromCamera(pinchPointer, camera);
+            const hits = pinchRay.intersectObjects(group.children, true).filter(h => {
+                const bone = h.object.userData.bone;
+                if (bone) { const p = boneObjById.get(bone.id); return p ? p.visible : false; }
+                return h.object.visible;
+            });
+            if (hits.length) controls.target.lerp(hits[0].point, 0.08);
+        }
+        offset.normalize().multiplyScalar(newDist);
+        camera.position.copy(controls.target).add(offset);
+        controls.update();
+    }, { passive: true });
+    renderer.domElement.addEventListener("touchend", (e) => {
+        if (e.touches.length < 2) pinchPrev = 0;
+    }, { passive: true });
+})();
+
 // Przygaszanie wszystkiego oprocz zaznaczonej struktury - wzorzec obecny we
 // wszystkich sprawdzonych viewerach anatomicznych (BodyExplorer, jixiangying/
 // anatomy, esma-dev-studio), ulatwia skupienie sie na wybranej strukturze bez
@@ -2037,6 +2243,7 @@ window.addEventListener("resize", () => {
     if (!window.innerWidth || !window.innerHeight) return; // nadal 0x0, nie ma czego liczyc
     camera.aspect = window.innerWidth / window.innerHeight;
     camera.updateProjectionMatrix();
+    renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, 2));
     renderer.setSize(window.innerWidth, window.innerHeight);
     if (!everFittedProperly && isolatedBoneId === null) {
         everFittedProperly = fitCameraToSkeleton();
@@ -2575,10 +2782,26 @@ window.__dbgRender = {
         "tools-box": "Narzędzia",
         "transparency-box": "Przezroczystość",
     };
+    const isMobile = document.documentElement.classList.contains("touch-layout");
+    const SHEETS = ["left-panel", "layers-box", "tools-box", "transparency-box"]; // arkusze dolne (bez topbara)
     let state;
     try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { state = {}; }
     const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
     const S = (id) => (state[id] = state[id] || {});
+
+    // Na telefonie panele to arkusze wysuwane od dołu i nachodziłyby na siebie -
+    // domyślnie schowane (user otwiera z menu "Okna"), i tylko jeden naraz.
+    if (isMobile) {
+        for (const id of SHEETS) if (!(id in state)) state[id] = { hidden: true };
+    }
+    function soloOnMobile(openId) {
+        if (!isMobile) return;
+        for (const id of SHEETS) {
+            if (id === openId) continue;
+            state[id] = state[id] || {};
+            if (!state[id].hidden) { state[id].hidden = true; applyOne(id); }
+        }
+    }
 
     function applyOne(id) {
         const el = document.getElementById(id);
@@ -2615,32 +2838,41 @@ window.__dbgRender = {
         }).observe(el);
     }
 
+    // Pointer Events (mysz + dotyk + rysik jednym API) + setPointerCapture, zeby
+    // przeciaganie nie gubilo sie, gdy palec wyjedzie poza pasek. Na mobile panele
+    // sa i tak zadokowane do dolu (patrz @media) - drag glownie dla desktopu.
     let drag = null, zTop = 12;
-    document.addEventListener("mousedown", (e) => {
-        const bar = e.target.closest(".winbar");
+    document.addEventListener("pointerdown", (e) => {
+        if (isMobile) return; // na telefonie panele to zadokowane arkusze - nie przeciagamy
+        const bar = e.target.closest && e.target.closest(".winbar");
         if (!bar || e.target.classList.contains("wb-x")) return;
+        if (e.pointerType === "mouse" && e.button !== 0) return;
         const el = bar.parentElement;
         const r = el.getBoundingClientRect();
         el.style.transform = "none";
         el.style.left = r.left + "px"; el.style.top = r.top + "px";
         el.style.right = "auto"; el.style.bottom = "auto";
         el.style.zIndex = Math.min(28, ++zTop);
-        drag = { el, dx: e.clientX - r.left, dy: e.clientY - r.top };
+        drag = { el, dx: e.clientX - r.left, dy: e.clientY - r.top, id: e.pointerId };
         el.classList.add("dragging");
+        try { bar.setPointerCapture(e.pointerId); } catch (_) {}
         e.preventDefault();
     });
-    document.addEventListener("mousemove", (e) => {
-        if (!drag) return;
+    document.addEventListener("pointermove", (e) => {
+        if (!drag || e.pointerId !== drag.id) return;
         drag.el.style.left = Math.max(0, Math.min(window.innerWidth - 60, e.clientX - drag.dx)) + "px";
         drag.el.style.top = Math.max(0, Math.min(window.innerHeight - 28, e.clientY - drag.dy)) + "px";
+        e.preventDefault();
     });
-    document.addEventListener("mouseup", () => {
-        if (!drag) return;
+    function endDrag(e) {
+        if (!drag || (e && e.pointerId !== drag.id)) return;
         const st = S(drag.el.id);
         st.left = drag.el.style.left; st.top = drag.el.style.top;
         drag.el.classList.remove("dragging");
         drag = null; save();
-    });
+    }
+    document.addEventListener("pointerup", endDrag);
+    document.addEventListener("pointercancel", endDrag);
 
     const menu = document.getElementById("winmenu");
     document.getElementById("wm-btn").addEventListener("click", (e) => { e.stopPropagation(); menu.classList.toggle("open"); });
@@ -2648,24 +2880,78 @@ window.__dbgRender = {
     document.querySelectorAll("#wm-drop [data-win]").forEach((cb) => {
         cb.addEventListener("change", () => {
             S(cb.dataset.win).hidden = !cb.checked;
+            if (cb.checked) soloOnMobile(cb.dataset.win);
             applyOne(cb.dataset.win); save();
+            if (isMobile) menu.classList.remove("open");
         });
     });
     document.getElementById("wm-reset").addEventListener("click", () => {
         state = {};
         try { localStorage.removeItem(KEY); } catch (e) {}
+        if (isMobile) { for (const id of SHEETS) state[id] = { hidden: true }; }
         for (const id of PANELS) {
             const el = document.getElementById(id);
             if (!el) continue;
             el.style.left = el.style.top = el.style.right = el.style.bottom = "";
             el.style.width = el.style.height = el.style.transform = el.style.zIndex = "";
-            el.classList.remove("win-hidden");
+            const hidden = !!(state[id] && state[id].hidden);
+            el.classList.toggle("win-hidden", hidden);
             const cb = document.querySelector(`#wm-drop [data-win="${id}"]`);
-            if (cb) cb.checked = true;
+            if (cb) cb.checked = !hidden;
         }
         menu.classList.remove("open");
     });
 })();
+
+// ===== Mobile: przyciski zamknięcia + gest "przeciągnij w dół" dla arkuszy dolnych
+// (karta struktury / lista punktów). Na desktopie te panele są w rogach i mają
+// własne "wróć"/klik-w-tło - tu potrzeba wyraźnego ✕ i standardowego swipe-down. =====
+if (IS_TOUCH_LAYOUT) {
+    const dismissLabel = () => {
+        resetSelection();
+        document.getElementById("label-box").style.display = "none";
+        document.getElementById("lbl-notes-link").style.display = "none";
+    };
+    const sheets = [
+        { el: document.getElementById("label-box"), close: dismissLabel },
+        { el: document.getElementById("sidebar"), close: () => { try { closeBone(); } catch (e) {} } },
+    ];
+    for (const { el, close } of sheets) {
+        if (!el) continue;
+        const bar = document.createElement("div");
+        bar.style.cssText = "position:sticky;top:0;z-index:5;display:flex;justify-content:flex-end;margin:-8px -8px 4px;padding:4px;background:linear-gradient(#16181e 60%,transparent)";
+        const x = document.createElement("button");
+        x.textContent = "✕";
+        x.setAttribute("aria-label", "Zamknij");
+        x.style.cssText = "background:rgba(255,255,255,0.09);color:#cdd4de;border:none;border-radius:50%;width:36px;height:36px;font-size:16px;line-height:1;cursor:pointer;padding:0";
+        x.addEventListener("click", (e) => { e.stopPropagation(); close(); });
+        bar.appendChild(x);
+        el.insertBefore(bar, el.firstChild);
+
+        // swipe-down na górnych ~60px arkusza -> zamknij
+        let sy = 0, active = false;
+        el.addEventListener("touchstart", (e) => {
+            if (e.touches.length !== 1) return;
+            const top = el.getBoundingClientRect().top;
+            active = (e.touches[0].clientY - top) < 64;
+            sy = e.touches[0].clientY;
+            if (active) el.style.transition = "none";
+        }, { passive: true });
+        el.addEventListener("touchmove", (e) => {
+            if (!active) return;
+            const dy = e.touches[0].clientY - sy;
+            if (dy > 0) el.style.transform = "translateY(" + dy + "px)";
+        }, { passive: true });
+        el.addEventListener("touchend", (e) => {
+            if (!active) return;
+            active = false;
+            const dy = (e.changedTouches[0].clientY - sy);
+            el.style.transition = "transform .18s ease";
+            el.style.transform = "";
+            if (dy > 80) close();
+        });
+    }
+}
 
 animate();
 </script>
