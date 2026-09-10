@@ -10,7 +10,7 @@
  *
  * Gdzie wgrac (wybierz jedno, oba za darmo, bez limitu transferu):
  *   A) GitHub Release:  gh release create atlas-assets _packaging/atlas-assets.tar.gz --notes "assety atlasu"
- *      URL:  https://github.com/Grypa-JJ/medstudy/releases/download/atlas-assets/atlas-assets.tar.gz
+ *      URL:  https://github.com/Grypa-JJ/anatomy-atlas-3d/releases/download/atlas-assets/atlas-assets.tar.gz
  *   B) Cloudflare R2:   atlas/assets/atlas-assets-<hash>.tar.gz
  * Ten URL -> secret CI  ATLAS_ASSETS_URL  (+ opcjonalnie ATLAS_ASSETS_SHA256 z pliku obok).
  */
@@ -53,4 +53,4 @@ console.log(`  sha256 ${sha}`);
 console.log(`\n  najprosciej (GitHub Release, bez R2):`);
 console.log(`    gh release create atlas-assets _packaging/atlas-assets.tar.gz --notes "assety atlasu (build-time)"`);
 console.log(`  potem secret ATLAS_ASSETS_URL =`);
-console.log(`    https://github.com/Grypa-JJ/medstudy/releases/download/atlas-assets/atlas-assets.tar.gz`);
+console.log(`    https://github.com/Grypa-JJ/anatomy-atlas-3d/releases/download/atlas-assets/atlas-assets.tar.gz`);

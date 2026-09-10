@@ -35,7 +35,7 @@
       "installerLanguages": ["pl_PL", "en_US"]
     },
     "publish": [
-      { "provider": "github", "owner": "Grypa-JJ", "repo": "medstudy" }
+      { "provider": "github", "owner": "Grypa-JJ", "repo": "anatomy-atlas-3d" }
     ]
   }
 }

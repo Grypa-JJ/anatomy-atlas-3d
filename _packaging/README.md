@@ -40,7 +40,7 @@ lokalnie; oba renderują atlas poprawnie i offline. Do wydania publicznego braku
 **Hosting bez opłat za transfer:**
 | Co | Gdzie | Rozmiar / częstość |
 |---|---|---|
-| instalator `.exe`, `.apk` | GitHub Releases (`Grypa-JJ/medstudy`, tag `atlas-vX.Y.Z`) | ~110 MB, co wydanie |
+| instalator `.exe`, `.apk` | GitHub Releases (`Grypa-JJ/anatomy-atlas-3d`, tag `atlas-vX.Y.Z`) | ~110 MB, co wydanie |
 | `atlas-assets.tar.gz` (**tylko dla buildu w CI**) | GitHub Release `atlas-assets` (lub R2) | ~103 MB, rzadko |
 | `latest.json` | GitHub raw lub R2 | kilka KB |
 | paczki OTA Android `web-X.Y.Z.zip` (opcjonalne) | R2 lub GitHub Release | ~40–100 MB, co wydanie |
@@ -96,7 +96,7 @@ Wgraj gdziekolwiek za darmo bez limitu transferu — najprościej **GitHub Relea
 ```bash
 gh release create atlas-assets _packaging/atlas-assets.tar.gz --notes "assety atlasu (build-time)"
 ```
-URL (`https://github.com/Grypa-JJ/medstudy/releases/download/atlas-assets/atlas-assets.tar.gz`)
+URL (`https://github.com/Grypa-JJ/anatomy-atlas-3d/releases/download/atlas-assets/atlas-assets.tar.gz`)
 → sekret CI `ATLAS_ASSETS_URL` (+ opcjonalnie `ATLAS_ASSETS_SHA256`). Ponów po regeneracji GLB.
 
 ## CI — `.github/workflows/atlas-release.yml`
