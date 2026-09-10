@@ -22,493 +22,593 @@
   window.addEventListener("DOMContentLoaded", window.__detectTouchLayout);
 </script>
 <style>
-    html, body { margin: 0; height: 100%; background: #1a1a1a; overflow: hidden; font-family: system-ui, sans-serif;
-        overscroll-behavior: none; -webkit-tap-highlight-color: transparent; }
-    #canvas-wrap canvas { touch-action: none; }
-    #canvas-wrap { position: absolute; inset: 0; }
-    #label-box {
-        position: absolute; top: 16px; left: 16px; z-index: 10;
-        background: rgba(20,20,20,0.85); color: #fff; padding: 14px 18px;
-        border-radius: 10px; min-width: 240px; border: 1px solid #444;
-        pointer-events: none;
-    }
-    #label-box .pl { font-size: 20px; font-weight: 600; }
-    #label-box .en { font-size: 14px; color: #9cf; margin-top: 2px; }
-    #label-box .hint { font-size: 12px; color: #888; margin-top: 8px; }
-    #label-box button {
-        pointer-events: auto; margin-top: 10px; background: #3b7bff; color: #fff; border: none;
-        padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer; width: 100%;
-    }
-    #label-box button:hover { background: #5590ff; }
-    #label-box .pl { display: flex; align-items: center; gap: 8px; }
-    #label-box #lbl-speak {
-        pointer-events: auto; width: auto; margin-top: 0; padding: 2px 8px;
-        font-size: 14px; background: transparent; border: 1px solid #555;
-    }
-    #label-box #lbl-speak:hover { background: #333; }
-    #sidebar {
-        position: absolute; top: 16px; right: 16px; z-index: 10; width: 280px;
-        background: rgba(20,20,20,0.9); color: #fff; border-radius: 10px; border: 1px solid #444;
-        padding: 14px 18px; display: none; max-height: 80vh; overflow-y: auto;
-    }
-    #sidebar h3 { margin: 0 0 4px; font-size: 18px; }
-    #sidebar .en-title { font-size: 13px; color: #9cf; margin-bottom: 12px; }
-    #sidebar .lm-item {
-        padding: 8px 10px; border-radius: 6px; cursor: pointer; margin-bottom: 4px; font-size: 14px;
-    }
-    #sidebar .lm-item:hover { background: rgba(59,179,255,0.2); }
-    #sidebar .lm-item.active { background: rgba(59,179,255,0.4); }
-    #sidebar .lm-empty { color: #888; font-size: 13px; font-style: italic; }
-    #sidebar button {
-        margin-top: 14px; background: #444; color: #fff; border: none;
-        padding: 8px 14px; border-radius: 6px; font-size: 13px; cursor: pointer; width: 100%;
-    }
-    #sidebar button:hover { background: #555; }
-    #credit {
-        position: absolute; bottom: 8px; left: 16px; z-index: 10;
-        color: #666; font-size: 11px; max-width: 500px;
-    }
-    #loading {
-        position: absolute; inset: 0; display: flex; align-items: center; justify-content: center;
-        color: #ccc; font-size: 16px; z-index: 20;
-    }
-    #topbar {
-        position: absolute; top: 16px; left: 50%; transform: translateX(-50%); z-index: 15;
-        display: flex; gap: 10px; align-items: flex-start;
-    }
-    #search-wrap { position: relative; width: 320px; }
-    #search-input {
-        width: 100%; box-sizing: border-box; background: rgba(20,20,20,0.9); color: #fff;
-        border: 1px solid #444; border-radius: 8px; padding: 10px 14px; font-size: 14px; outline: none;
-    }
-    #search-input:focus { border-color: #3b7bff; }
-    #search-results {
-        position: absolute; top: calc(100% + 4px); left: 0; right: 0; max-height: 320px; overflow-y: auto;
-        background: rgba(20,20,20,0.97); border: 1px solid #444; border-radius: 8px; display: none;
-    }
-    #search-results .res-item { padding: 8px 14px; cursor: pointer; font-size: 13px; color: #fff; }
-    #search-results .res-item:hover, #search-results .res-item.sel { background: rgba(59,179,255,0.25); }
-    #search-results .res-item .res-en { color: #9cf; font-size: 11px; }
-    #search-results .res-item .res-kind { color: #888; font-size: 10px; float: right; }
-    #view-presets { display: flex; gap: 4px; }
-    #view-presets button {
-        background: rgba(20,20,20,0.9); color: #fff; border: 1px solid #444; border-radius: 8px;
-        padding: 10px 12px; font-size: 12px; cursor: pointer; white-space: nowrap;
-    }
-    #view-presets button:hover { background: rgba(59,179,255,0.25); border-color: #3b7bff; }
-    #transparency-box {
-        position: absolute; bottom: 8px; right: 16px; z-index: 10;
-        background: rgba(20,20,20,0.85); color: #fff; padding: 8px 14px; border-radius: 8px;
-        border: 1px solid #444; font-size: 12px; display: flex; align-items: center; gap: 8px;
-    }
-    #transparency-box input[type="range"] { width: 120px; }
-    #layers-box {
-        position: absolute; bottom: 44px; left: 16px; z-index: 10;
-        background: rgba(20,20,20,0.85); color: #fff; padding: 8px 14px; border-radius: 8px;
-        border: 1px solid #444; font-size: 12px; display: flex; align-items: center; gap: 10px;
-    }
-    #layers-box label { display: flex; align-items: center; gap: 4px; cursor: pointer; }
-    #tools-box {
-        position: absolute; bottom: 44px; right: 16px; z-index: 10;
-        background: rgba(20,20,20,0.85); color: #fff; padding: 10px 14px; border-radius: 8px;
-        border: 1px solid #444; font-size: 12px; display: flex; flex-direction: column; gap: 8px;
-    }
-    #tools-box .tools-row { display: flex; align-items: center; gap: 8px; }
-    #tools-box select { background: #222; color: #fff; border: 1px solid #444; border-radius: 4px; padding: 4px; }
-    #section-slider { width: 100px; }
-    #measure-toggle {
-        background: #333; color: #fff; border: 1px solid #444; border-radius: 6px;
-        padding: 6px 10px; font-size: 12px; cursor: pointer;
-    }
-    #measure-toggle.active { background: #3b7bff; border-color: #3b7bff; }
-    #measure-clear { background: #444; color: #fff; border: none; border-radius: 4px; padding: 4px 8px; cursor: pointer; }
-    #scalpel-toggle {
-        background: #333; color: #fff; border: 1px solid #444; border-radius: 6px;
-        padding: 6px 10px; font-size: 12px; cursor: pointer;
-    }
-    #scalpel-toggle.active { background: #d4392c; border-color: #d4392c; }
-    #scalpel-undo, #scalpel-restore-all { background: #444; color: #fff; border: none; border-radius: 4px; padding: 4px 8px; cursor: pointer; }
-    .id-label {
-        position: absolute; transform: translate(-50%, -50%);
-        background: rgba(0,0,0,0.75); color: #7bdcff; font-family: monospace;
-        font-size: 10px; padding: 1px 4px; border-radius: 3px; white-space: nowrap;
-        border: 1px solid rgba(123,220,255,0.4);
-    }
-    .id-label-anchor-dot {
-        position: absolute; width: 4px; height: 4px; margin: -2px 0 0 -2px;
-        background: #7bdcff; border-radius: 50%; box-shadow: 0 0 3px rgba(123,220,255,0.9);
-    }
-    #measure-result { color: #ffe066; font-weight: 600; min-width: 70px; }
-    #split-toggle {
-        background: #333; color: #fff; border: 1px solid #444; border-radius: 6px;
-        padding: 6px 10px; font-size: 12px; cursor: pointer;
-    }
-    #split-toggle.active { background: #3b7bff; border-color: #3b7bff; }
-    #split-divider {
-        position: absolute; top: 0; bottom: 0; left: 50%; width: 2px;
-        background: #444; z-index: 5; pointer-events: none;
-    }
-    #left-panel {
-        position: absolute; top: 48px; left: 16px; z-index: 10; width: 220px;
-        background: rgba(20,20,20,0.85); color: #fff; border-radius: 8px; border: 1px solid #444;
-        padding: 10px 14px; font-size: 12px; display: flex; flex-direction: column; gap: 10px;
-    }
-    #left-panel h4 { margin: 0 0 4px; font-size: 12px; color: #9cf; text-transform: uppercase; letter-spacing: 0.05em; }
-    #left-panel button, #left-panel .lp-row { width: 100%; }
-    #left-panel button {
-        background: #333; color: #fff; border: 1px solid #444; border-radius: 6px;
-        padding: 6px 8px; font-size: 12px; cursor: pointer; text-align: left;
-    }
-    #left-panel button:hover { background: #444; }
-    #bookmark-name { width: 100%; box-sizing: border-box; background: #222; color: #fff; border: 1px solid #444; border-radius: 4px; padding: 4px 6px; font-size: 12px; }
-    #bookmark-list { display: flex; flex-direction: column; gap: 3px; max-height: 120px; overflow-y: auto; }
-    .bm-item { display: flex; align-items: center; gap: 4px; }
-    .bm-item .bm-go { flex: 1; text-align: left; }
-    .bm-item .bm-del { width: auto; padding: 4px 7px; background: #522; }
-    #quiz-toggle.active { background: #3b7bff; border-color: #3b7bff; }
-    #quiz-box { display: none; flex-direction: column; gap: 6px; }
-    #quiz-question { font-size: 13px; }
-    #quiz-feedback { font-weight: 600; min-height: 16px; }
-    #quiz-feedback.correct { color: #6f6; }
-    #quiz-feedback.wrong { color: #f66; }
-    #quiz-score { color: #888; font-size: 11px; }
-    #kolokwium-buttons { display: flex; flex-wrap: wrap; gap: 4px; }
-    #kolokwium-buttons button { flex: 1 1 40%; }
-    #kolokwium-buttons button.active { background: #3b7bff; border-color: #3b7bff; }
-    #kolokwium-status { font-size: 11px; color: #9cf; margin-top: 2px; }
-    #kolokwium-panel {
-        position: absolute; top: 16px; left: 250px; z-index: 10; width: 340px;
-        background: rgba(20,20,20,0.93); color: #fff; border-radius: 10px; border: 1px solid #444;
-        padding: 14px 16px; max-height: 88vh; overflow-y: auto; display: none; font-size: 13px;
-    }
-    #kolokwium-panel h3 { margin: 0 0 2px; font-size: 16px; }
-    #kolokwium-panel .kw-sub { color: #9cf; font-size: 12px; margin-bottom: 10px; }
-    .kw-category { margin-top: 14px; }
-    .kw-category:first-of-type { margin-top: 4px; }
-    .kw-cat-header { display: flex; align-items: center; justify-content: space-between; gap: 6px; border-bottom: 1px solid #444; padding-bottom: 4px; margin-bottom: 6px; }
-    .kw-cat-header .kw-cat-name { font-weight: 600; color: #ddd; font-size: 12.5px; text-transform: uppercase; letter-spacing: 0.03em; }
-    .kw-note-btn { background: #2a4d6e; color: #bfe3ff; border: 1px solid #3b7bff; border-radius: 5px; padding: 2px 7px; font-size: 11px; cursor: pointer; white-space: nowrap; }
-    .kw-note-btn:hover { background: #3b7bff; color: #fff; }
-    .kw-item { padding: 5px 8px; border-radius: 5px; cursor: pointer; margin-bottom: 2px; }
-    .kw-item:hover { background: rgba(59,179,255,0.2); }
-    .kw-item.todo { color: #777; font-style: italic; cursor: default; }
-    .kw-item .kw-item-badge { font-size: 10px; color: #666; margin-left: 4px; }
-    #notes-modal {
-        position: fixed; inset: 0; z-index: 30; background: rgba(0,0,0,0.6);
-        display: none; align-items: center; justify-content: center;
-    }
-    #notes-modal-card {
-        background: #1e1e1e; color: #eee; width: min(680px, 90vw); max-height: 82vh; overflow-y: auto;
-        border-radius: 12px; border: 1px solid #3b7bff; padding: 22px 26px; box-shadow: 0 12px 40px rgba(0,0,0,0.6);
-    }
-    #notes-modal-card h2 { margin: 0 0 4px; font-size: 19px; color: #fff; }
-    #notes-modal-card .nm-sub { color: #9cf; font-size: 12.5px; margin-bottom: 14px; }
-    #notes-modal-card .nm-body { font-size: 14px; line-height: 1.6; color: #ddd; white-space: pre-line; }
-    #notes-modal-card .nm-body strong { color: #ffe066; }
-    #notes-modal-close { margin-top: 18px; background: #3b7bff; color: #fff; border: none; border-radius: 6px; padding: 8px 16px; font-size: 13px; cursor: pointer; }
-    #notes-modal-close:hover { background: #5590ff; }
-    #lbl-notes-link { display: none; margin-top: 8px; background: #a8862b; }
-    #lbl-notes-link:hover { background: #c79f36; }
-    #sb-notes-link { display: none; background: #a8862b; }
-    #sb-notes-link:hover { background: #c79f36; }
+  /* ============================================================
+     ATLAS 3D — powłoka UI (rebuild 2026-09). Jeden responsywny
+     layout: telefon = arkusz dolny + dock, desktop = panel z
+     prawej. Silnik three.js (moduł niżej) nietknięty - te same
+     ID kontrolek, tylko inne opakowanie i style.
+     ============================================================ */
+  :root {
+    --bg: #0d0f13;
+    --surface: #16191f;
+    --surface-2: #1e222b;
+    --surface-3: #262b36;
+    --line: #2c313d;
+    --text: #e9ebef;
+    --text-dim: #949aa6;
+    --text-faint: #6b7280;
+    --accent: #6c8cff;
+    --accent-soft: rgba(108,140,255,0.16);
+    --danger: #e0705f;
+    --ok: #57c98b;
+    --r-lg: 18px;
+    --r-md: 12px;
+    --r-sm: 9px;
+    --tap: 46px;
+    --sat: env(safe-area-inset-top, 0px);
+    --sab: env(safe-area-inset-bottom, 0px);
+    --sal: env(safe-area-inset-left, 0px);
+    --sar: env(safe-area-inset-right, 0px);
+    --dock-h: 64px;
+    --ease: cubic-bezier(.32, .72, 0, 1);
+    color-scheme: dark;
+  }
+  * { box-sizing: border-box; -webkit-tap-highlight-color: transparent; }
+  html, body {
+    margin: 0; height: 100%; overflow: hidden;
+    background: #1a1a1a; color: var(--text);
+    font: 15px/1.45 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+    overscroll-behavior: none;
+  }
+  button, input, select { font: inherit; color: inherit; }
+  button { cursor: pointer; border: none; background: none; }
+  #canvas-wrap { position: absolute; inset: 0; }
+  #canvas-wrap canvas { touch-action: none; display: block; }
 
+  /* ---------- loading ---------- */
+  #loading {
+    position: fixed; inset: 0; z-index: 400; display: flex; gap: 14px;
+    align-items: center; justify-content: center; flex-direction: column;
+    color: var(--text-dim); font-size: 15px; background: #1a1a1a;
+    letter-spacing: .01em;
+  }
+  #loading::before {
+    content: ""; width: 34px; height: 34px; border-radius: 50%;
+    border: 3px solid var(--surface-3); border-top-color: var(--accent);
+    animation: spin .8s linear infinite;
+  }
+  @keyframes spin { to { transform: rotate(360deg); } }
+
+  /* ---------- pływające przyciski górne ---------- */
+  .fab {
+    position: fixed; z-index: 120; width: var(--tap); height: var(--tap);
+    display: grid; place-items: center; border-radius: 50%;
+    background: rgba(22,25,31,0.82); backdrop-filter: blur(10px);
+    border: 1px solid var(--line); color: var(--text);
+    font-size: 19px; box-shadow: 0 4px 18px rgba(0,0,0,.35);
+    transition: background .15s;
+  }
+  .fab:active { background: var(--surface-3); }
+  #home-fab { top: calc(10px + var(--sat)); left: calc(10px + var(--sal)); text-decoration: none; }
+
+  /* ---------- wyszukiwarka ---------- */
+  #search {
+    position: fixed; z-index: 120;
+    top: calc(10px + var(--sat));
+    left: calc(70px + var(--sal)); right: calc(10px + var(--sar));
+    max-width: 460px;
+  }
+  #search-input {
+    width: 100%; height: var(--tap); padding: 0 16px 0 42px;
+    background: rgba(22,25,31,0.82); backdrop-filter: blur(10px);
+    border: 1px solid var(--line); border-radius: var(--r-md);
+    outline: none; font-size: 15px; box-shadow: 0 4px 18px rgba(0,0,0,.3);
+  }
+  #search-input::placeholder { color: var(--text-faint); }
+  #search-input:focus { border-color: var(--accent); }
+  #search::before {
+    content: "🔍"; position: absolute; left: 14px; top: 50%;
+    transform: translateY(-50%); font-size: 14px; opacity: .7; pointer-events: none;
+  }
+  #search-results {
+    display: none; margin-top: 6px; max-height: min(52vh, 460px); overflow-y: auto;
+    background: var(--surface); border: 1px solid var(--line);
+    border-radius: var(--r-md); box-shadow: 0 12px 40px rgba(0,0,0,.5);
+    -webkit-overflow-scrolling: touch;
+  }
+  #search-results .res-item {
+    padding: 12px 14px; font-size: 14px; cursor: pointer; border-bottom: 1px solid var(--line);
+    display: flex; flex-direction: column; gap: 2px;
+  }
+  #search-results .res-item:last-child { border-bottom: none; }
+  #search-results .res-item:hover, #search-results .res-item.sel { background: var(--accent-soft); }
+  #search-results .res-item .res-en { color: var(--accent); font-size: 12px; }
+  #search-results .res-item .res-kind {
+    align-self: flex-start; color: var(--text-faint); font-size: 10px;
+    text-transform: uppercase; letter-spacing: .04em;
+  }
+
+  /* ---------- dock (dolny pasek) ---------- */
+  #dock {
+    position: fixed; z-index: 110; left: 0; right: 0; bottom: 0;
+    height: calc(var(--dock-h) + var(--sab)); padding: 0 4px var(--sab);
+    display: flex; align-items: stretch;
+    background: linear-gradient(rgba(13,15,19,0) , rgba(13,15,19,.92) 34%);
+    backdrop-filter: blur(8px);
+  }
+  #dock button {
+    flex: 1; display: flex; flex-direction: column; align-items: center;
+    justify-content: center; gap: 3px; padding: 6px 2px;
+    color: var(--text-dim); font-size: 10.5px; font-weight: 500;
+    border-radius: var(--r-sm); transition: color .12s, background .12s;
+  }
+  #dock button .ic { font-size: 20px; line-height: 1; }
+  #dock button.active { color: var(--accent); background: var(--accent-soft); }
+  #dock button:active { background: var(--surface-3); }
+
+  /* ---------- arkusz / panel ---------- */
+  #scrim {
+    position: fixed; inset: 0; z-index: 190; background: rgba(0,0,0,.44);
+    opacity: 0; pointer-events: none; transition: opacity .22s;
+  }
+  #scrim.show { opacity: 1; pointer-events: auto; }
+
+  .sheet {
+    position: fixed; z-index: 200; left: 0; right: 0; bottom: 0;
+    max-height: 76vh; display: flex; flex-direction: column;
+    background: var(--surface); color: var(--text);
+    border-radius: var(--r-lg) var(--r-lg) 0 0;
+    border-top: 1px solid var(--line);
+    box-shadow: 0 -14px 44px rgba(0,0,0,.5);
+    transform: translateY(101%); transition: transform .3s var(--ease);
+    padding-bottom: var(--sab);
+  }
+  .sheet.open { transform: translateY(0); }
+  .sheet__grip {
+    flex: none; padding: 8px 0 4px; display: flex; justify-content: center;
+    cursor: grab; touch-action: none;
+  }
+  .sheet__grip::before {
+    content: ""; width: 40px; height: 4px; border-radius: 3px; background: var(--surface-3);
+  }
+  .sheet__head {
+    flex: none; display: flex; align-items: center; gap: 10px;
+    padding: 2px 12px 10px 18px; border-bottom: 1px solid var(--line);
+  }
+  .sheet__title { flex: 1; font-size: 16px; font-weight: 650; }
+  .sheet__x {
+    width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+    background: var(--surface-2); color: var(--text-dim); font-size: 15px;
+  }
+  .sheet__x:active { background: var(--surface-3); }
+  .sheet__body {
+    flex: 0 1 auto; min-height: 0; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    padding: 14px 18px calc(20px + var(--sab));
+  }
+
+  /* sekcje w ciele arkusza - tylko jedna widoczna naraz (JS: .hidden) */
+  #sheet-body > section { display: block; }
+  #sheet-body > section.hidden { display: none; }
+
+  .grp { margin-bottom: 20px; }
+  .grp:last-child { margin-bottom: 0; }
+  .grp > h4 {
+    margin: 0 0 8px; font-size: 11px; font-weight: 700; letter-spacing: .07em;
+    text-transform: uppercase; color: var(--text-faint);
+  }
+
+  /* przełączniki (warstwy, checkboxy w wierszu) */
+  #layers-box {
+    display: grid; grid-template-columns: 1fr 1fr; gap: 2px 6px;
+  }
+  #layers-box label, label.row {
+    display: flex; align-items: center; gap: 10px; min-height: 42px;
+    padding: 4px 8px; border-radius: var(--r-sm); font-size: 14px; cursor: pointer;
+  }
+  #layers-box > label:has(#layer-landmarks), /* punkty orientacyjne - pełna szerokość */
+  #layers-box > #layers-status { grid-column: 1 / -1; }
+  #layers-box label:active, label.row:active { background: var(--accent-soft); }
+  #layers-box input[type=checkbox], label.row input[type=checkbox] {
+    width: 22px; height: 22px; accent-color: var(--accent); flex: none; margin: 0;
+  }
+  #layers-status, #scalpel-status {
+    display: block; margin: 8px 0 0 10px; font-size: 12px; color: var(--text-dim);
+  }
+
+  /* przyciski akcji */
+  .btn, #tools-box button, #sheet-body button:not(#view-presets button):not(#kolokwium-buttons button),
+  #open-bone-btn, #close-bone-btn, #lbl-notes-link, #sb-notes-link,
+  #kolokwium-buttons button, #notes-modal-close {
+    display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+    min-height: var(--tap); padding: 10px 16px; width: 100%;
+    background: var(--surface-2); border: 1px solid var(--line);
+    border-radius: var(--r-md); font-size: 14.5px; font-weight: 550;
+    transition: background .12s, border-color .12s;
+  }
+  .btn:active, #tools-box button:active, #sheet-body button:active { background: var(--surface-3); }
+  .btn--primary, #open-bone-btn, #lbl-notes-link, #sb-notes-link, #notes-modal-close {
+    background: var(--accent); border-color: var(--accent); color: #fff;
+  }
+  .btn--primary:active { filter: brightness(.92); }
+  .btn.is-on, #tools-box button.active, #measure-toggle.active,
+  #scalpel-toggle.active, #split-toggle.active, #quiz-toggle.active {
+    background: var(--accent-soft); border-color: var(--accent); color: var(--accent);
+  }
+  #scalpel-toggle.active { background: rgba(224,112,95,.16); border-color: var(--danger); color: var(--danger); }
+
+  #tools-box .tools-row { display: flex; flex-wrap: wrap; gap: 10px; margin-bottom: 12px; align-items: center; }
+  #tools-box .tools-row:last-child { margin-bottom: 0; }
+  #tools-box .tools-row > * { flex: 0 1 auto; }
+  #tools-box .tools-row button { width: auto; flex: 1 1 46%; }
+  #section-axis {
+    height: var(--tap); padding: 0 10px; background: var(--surface-2);
+    border: 1px solid var(--line); border-radius: var(--r-sm);
+  }
+  input[type=range] {
+    flex: 1 1 140px; min-width: 130px; height: var(--tap); accent-color: var(--accent);
+    background: transparent;
+  }
+  #tools-box .tools-row label, #transparency-box label {
+    display: flex; align-items: center; gap: 10px; min-height: var(--tap);
+    flex: 1 1 auto;
+  }
+  #transparency-val { color: var(--text-dim); font-variant-numeric: tabular-nums; min-width: 44px; }
+
+  #kolokwium-buttons { display: flex; flex-wrap: wrap; gap: 8px; }
+  #kolokwium-buttons button { width: auto; flex: 1 1 44%; }
+  #kolokwium-buttons button[data-kolokwium="off"] { flex-basis: 100%; background: transparent; color: var(--text-dim); }
+  #kolokwium-buttons button.active { background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+  #kolokwium-status { margin-top: 10px; font-size: 13px; color: var(--accent); }
+
+  #bookmark-name {
+    flex: 1; height: var(--tap); padding: 0 12px; background: var(--surface-2);
+    border: 1px solid var(--line); border-radius: var(--r-sm); outline: none;
+  }
+  #bookmark-name:focus { border-color: var(--accent); }
+  #left-panel .lp-row { display: flex; gap: 8px; margin-bottom: 8px; }
+  #bookmark-save { width: auto !important; flex: none; padding: 0 16px; }
+  #bookmark-list { display: flex; flex-direction: column; gap: 6px; margin-top: 4px; }
+  #bookmark-list .bm-item { display: flex; gap: 6px; }
+  #bookmark-list .bm-go { flex: 1; }
+  #bookmark-list .bm-del { width: auto !important; flex: none; padding: 0 14px; background: rgba(224,112,95,.14); border-color: transparent; }
+  #quiz-box { display: none; margin-top: 10px; flex-direction: column; gap: 8px; }
+  #quiz-question { font-size: 14px; }
+  #quiz-feedback { font-weight: 650; min-height: 18px; }
+  #quiz-feedback.correct { color: var(--ok); }
+  #quiz-feedback.wrong { color: var(--danger); }
+  #quiz-score { font-size: 12px; color: var(--text-dim); }
+  #screenshot-btn, #anki-export-btn, #quiz-toggle { margin-top: 8px; }
+
+  /* ---------- karta struktury / lista punktów ---------- */
+  #label-box, #sidebar {
+    position: fixed; z-index: 210; left: 0; right: 0; bottom: 0;
+    background: var(--surface); border-top: 1px solid var(--line);
+    border-radius: var(--r-lg) var(--r-lg) 0 0;
+    box-shadow: 0 -14px 44px rgba(0,0,0,.5);
+    max-height: 62vh; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    padding: 20px 18px calc(20px + var(--sab));
+    animation: sheetin .3s var(--ease);
+  }
+  @keyframes sheetin { from { transform: translateY(60px); opacity: .3; } }
+  #label-box { display: none; }
+  .struct-x {
+    position: absolute; top: 12px; right: 12px; width: 34px; height: 34px;
+    border-radius: 50%; display: grid; place-items: center;
+    background: var(--surface-2); color: var(--text-dim); font-size: 15px; z-index: 3;
+  }
+  #lbl-pl-text, #sb-pl { display: block; font-size: 21px; font-weight: 700; padding-right: 44px; }
+  #sb-pl { margin: 0; }
+  #lbl-en, #sb-en { color: var(--accent); font-size: 13.5px; margin-top: 3px; }
+  #lbl-id, #sb-id { font-family: ui-monospace, monospace; font-size: 11px; color: var(--text-faint); margin: 4px 0 0; }
+  #lbl-speak {
+    position: absolute; top: 14px; right: 54px; width: 34px; height: 34px;
+    border-radius: 50%; background: var(--surface-2); display: grid; place-items: center;
+    font-size: 14px; opacity: .5;
+  }
+  #lbl-hint { display: none; }
+  #lbl-notes-link, #sb-notes-link, #open-bone-btn { margin-top: 14px; }
+  #close-bone-btn { margin-top: 10px; background: transparent; color: var(--text-dim); }
+  #sb-landmarks { margin-top: 14px; }
+  #sb-landmarks .lm-item {
+    padding: 13px 12px; border-radius: var(--r-sm); cursor: pointer;
+    font-size: 14.5px; border-bottom: 1px solid var(--line);
+  }
+  #sb-landmarks .lm-item:last-child { border-bottom: none; }
+  #sb-landmarks .lm-item:hover, #sb-landmarks .lm-item.active { background: var(--accent-soft); }
+  #sb-landmarks .lm-empty { color: var(--text-faint); font-style: italic; padding: 8px 0; }
+
+  /* ---------- panel kolokwium (silnik renderuje do #kolokwium-panel) ---------- */
+  #kolokwium-panel {
+    position: fixed; z-index: 205; left: 0; right: 0; bottom: 0;
+    max-height: 66vh; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    background: var(--surface); border-top: 1px solid var(--line);
+    border-radius: var(--r-lg) var(--r-lg) 0 0;
+    box-shadow: 0 -14px 44px rgba(0,0,0,.5);
+    padding: 20px 18px calc(20px + var(--sab));
+    display: none;
+  }
+  #kolokwium-panel h3 { margin: 0 0 2px; font-size: 18px; padding-right: 40px; }
+  #kolokwium-panel .kw-sub { color: var(--accent); font-size: 12.5px; margin-bottom: 12px; }
+  .kw-category { margin-top: 16px; }
+  .kw-cat-header {
+    display: flex; flex-direction: column; align-items: stretch; gap: 8px;
+    border-bottom: 1px solid var(--line); padding-bottom: 8px; margin-bottom: 6px;
+  }
+  .kw-cat-name { font-weight: 700; font-size: 12px; letter-spacing: .04em; text-transform: uppercase; color: var(--text-dim); }
+  .kw-note-btn { align-self: flex-start; width: auto; padding: 8px 14px; font-size: 12px;
+    background: var(--accent-soft); border: 1px solid var(--accent); color: var(--accent); border-radius: var(--r-sm); }
+  .kw-item { padding: 12px 10px; border-radius: var(--r-sm); cursor: pointer; font-size: 14px; border-bottom: 1px solid var(--line); }
+  .kw-item:last-child { border-bottom: none; }
+  .kw-item:hover { background: var(--accent-soft); }
+  .kw-item.todo { color: var(--text-faint); font-style: italic; cursor: default; }
+  .kw-item .kw-item-badge { font-size: 10px; color: var(--text-faint); margin-left: 4px; }
+
+  /* ---------- modal notatki ---------- */
+  #notes-modal {
+    position: fixed; inset: 0; z-index: 300; display: none;
+    align-items: flex-end; justify-content: center; background: rgba(0,0,0,.55);
+  }
+  #notes-modal.show { display: flex; }
+  #notes-modal-card {
+    background: var(--surface); width: 100%; max-width: 640px;
+    max-height: 90vh; overflow-y: auto; -webkit-overflow-scrolling: touch;
+    border-radius: var(--r-lg) var(--r-lg) 0 0; border-top: 1px solid var(--line);
+    padding: 44px 20px calc(22px + var(--sab)); position: relative;
+    animation: sheetin .3s var(--ease);
+  }
+  #notes-modal-card h2 { margin: 0 0 4px; font-size: 19px; padding-right: 40px; }
+  #notes-modal-card .nm-sub { color: var(--accent); font-size: 12.5px; margin-bottom: 14px; }
+  #notes-modal-card .nm-body { font-size: 14.5px; line-height: 1.62; color: var(--text); white-space: pre-line; }
+  #notes-modal-card .nm-body strong { color: #ffd479; }
+  #notes-modal-close { margin-top: 20px; }
+
+  /* ---------- widoki / presety kamery (chip-y w arkuszu Widok) ---------- */
+  #view-presets { display: flex; flex-wrap: wrap; gap: 8px; }
+  #view-presets button {
+    flex: 1 1 28%; min-height: var(--tap); padding: 8px 6px;
+    background: var(--surface-2); border: 1px solid var(--line);
+    border-radius: var(--r-sm); font-size: 13px; font-weight: 550;
+  }
+  #view-presets button:active { background: var(--surface-3); }
+  #view-presets button[data-view="reset"] { flex-basis: 100%; background: var(--accent-soft); border-color: var(--accent); color: var(--accent); }
+
+  /* ---------- tooltip punktu / ID / kredyt / split ---------- */
   #lm-tooltip {
-    position: fixed; z-index: 40; pointer-events: none; display: none;
-    background: rgba(20,22,28,0.97); color: #f2f3f5; border: 1.5px solid #e0952e;
-    border-radius: 7px; padding: 5px 11px; font: 600 13.5px/1.3 system-ui, sans-serif;
-    box-shadow: 0 6px 22px rgba(0,0,0,0.55); max-width: 280px;
-    transform: translate(-50%, calc(-100% - 16px)); white-space: nowrap;
+    position: fixed; z-index: 130; pointer-events: none; display: none;
+    background: rgba(20,22,28,.97); color: #f2f3f5; border: 1.5px solid #e0952e;
+    border-radius: 8px; padding: 6px 12px; font: 600 14px/1.35 system-ui, sans-serif;
+    box-shadow: 0 8px 24px rgba(0,0,0,.55); max-width: 76vw;
+    transform: translate(-50%, calc(-100% - 14px));
   }
-  #lm-tooltip .en { color: #97a0ad; font-size: 11px; font-weight: 400; display:block; white-space:normal; }
-
-  /* ===== menedżer okien: panele ruchome / zamykane / przywracalne ===== */
-  .win { padding-top: 26px !important; resize: both; overflow: auto; }
-  #topbar.win { resize: none; overflow: visible; }
-  .win > .winbar {
-    position: absolute; top: 0; left: 0; right: 0; height: 22px;
-    display: flex; align-items: center; gap: 6px; padding: 0 6px;
-    background: rgba(40,46,60,0.95); border-bottom: 1px solid #2b3444;
-    border-radius: 8px 8px 0 0; cursor: move; user-select: none;
-    font-size: 11px; font-weight: 600; color: #b9c2d0;
+  #lm-tooltip .en { color: #97a0ad; font-size: 11.5px; font-weight: 400; display: block; }
+  #split-divider { position: fixed; top: 0; bottom: 0; left: 50%; width: 2px; background: var(--line); z-index: 6; pointer-events: none; }
+  #credit {
+    position: fixed; left: 8px; bottom: calc(var(--dock-h) + var(--sab) + 4px); z-index: 3;
+    color: var(--text-faint); font-size: 8.5px; line-height: 1.35; max-width: 58vw;
+    opacity: .5; pointer-events: none;
   }
-  .win > .winbar .wb-title { overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
-  .win > .winbar .wb-x { margin-left: auto; cursor: pointer; color: #8a94a4; padding: 0 5px; font-size: 13px; line-height: 1; }
-  .win > .winbar .wb-x:hover { color: #ff7b72; }
-  .win.win-hidden { display: none !important; }
-  .win.dragging { opacity: 0.92; }
-  #winmenu { position: fixed; top: 10px; left: 16px; z-index: 60; font: 12px system-ui, sans-serif; }
-  #winmenu > button {
-    background: rgba(20,20,20,0.85); border: 1px solid #444; color: #dfe6ef;
-    border-radius: 8px; padding: 6px 11px; cursor: pointer; font-size: 12px;
+  .id-label {
+    position: absolute; transform: translate(-50%, -50%);
+    background: rgba(0,0,0,.78); color: #7bdcff; font: 10px ui-monospace, monospace;
+    padding: 1px 5px; border-radius: 3px; white-space: nowrap; border: 1px solid rgba(123,220,255,.4);
   }
-  #winmenu > button:hover { border-color: #3b7bff; }
-  #winmenu .wm-drop {
-    display: none; position: absolute; top: calc(100% + 4px); left: 0;
-    background: rgba(20,22,28,0.98); border: 1px solid #333b48; border-radius: 8px;
-    padding: 6px; min-width: 220px;
-  }
-  #winmenu.open .wm-drop { display: block; }
-  #winmenu .wm-drop label { display: flex; align-items: center; gap: 7px; padding: 5px 7px; border-radius: 5px; cursor: pointer; white-space: nowrap; color: #dfe6ef; }
-  #winmenu .wm-drop label:hover { background: #242c38; }
-  #winmenu .wm-drop hr { border: none; border-top: 1px solid #333b48; margin: 5px 2px; }
-  #winmenu .wm-reset { color: #7ec8ff; padding: 5px 7px; border-radius: 5px; cursor: pointer; }
-  #winmenu .wm-reset:hover { background: #242c38; }
+  .id-label-anchor-dot { position: absolute; width: 4px; height: 4px; margin: -2px 0 0 -2px; background: #7bdcff; border-radius: 50%; box-shadow: 0 0 3px rgba(123,220,255,.9); }
+  #measure-clear, #scalpel-undo, #scalpel-restore-all { width: auto !important; flex: none; padding: 0 14px; }
+  #measure-result { color: #ffd479; font-weight: 650; }
 
-  .win > .winbar { touch-action: none; }
+  .hidden { display: none !important; }
 
-  /* ===================== UKŁAD MOBILNY / DOTYKOWY =====================
-     Aktywowany klasą html.touch-layout (ustawianą przez skrypt w <head> na
-     podstawie rozmiaru ekranu + navigator.maxTouchPoints - pewniejsze niż
-     media (hover/pointer), które bywają niestabilne). Zagnieżdżenie CSS -
-     wspierane przez Chromium 120+ (Electron/WebView Androida). */
-  html.touch-layout {
-    /* link "wróć do wyboru trybu" -> mała ikona domku, prawy-górny, pod paskiem statusu */
-    body > a[title="Wróć do wyboru trybu"] {
-      left: auto !important; right: 8px !important; transform: none !important;
-      top: env(safe-area-inset-top, 0px) !important;
-      padding: 9px 11px !important; border-radius: 0 0 10px 10px !important;
-      font-size: 0 !important; line-height: 1 !important;
+  /* ============================================================
+     DESKTOP / szeroki ekran (≥ 900px, brak touch-layout):
+     arkusz -> panel zadokowany z prawej, karta struktury -> lewy dół
+     ============================================================ */
+  @media (min-width: 900px) {
+    html:not(.touch-layout) #search { left: auto; right: 380px; width: 420px; }
+    html:not(.touch-layout) #dock {
+      top: 50%; bottom: auto; left: auto; right: 10px; height: auto;
+      transform: translateY(-50%); flex-direction: column; width: 74px;
+      background: rgba(22,25,31,.9); border: 1px solid var(--line);
+      border-radius: var(--r-lg); padding: 6px; gap: 4px; backdrop-filter: blur(10px);
+      transition: transform .3s var(--ease);
     }
-    body > a[title="Wróć do wyboru trybu"]::before { content: "🏠"; font-size: 16px; }
-
-    /* menu "Okna" -> lewy-górny pod paskiem statusu, większe cele */
-    #winmenu { top: calc(env(safe-area-inset-top, 0px)) !important; left: 8px; }
-    #winmenu > button { padding: 10px 13px; font-size: 13px; }
-    #winmenu .wm-drop { min-width: min(74vw, 300px); padding: 8px; }
-    #winmenu .wm-drop label { padding: 11px 9px; font-size: 14px; }
-    #winmenu .wm-drop hr { margin: 8px 2px; }
-    #winmenu .wm-reset { padding: 11px 9px; font-size: 14px; }
-
-    /* topbar (szukajka + widoki) -> pasek u góry, pełna szerokość, pod paskiem statusu */
-    #topbar, #topbar.win {
-      position: fixed !important; top: calc(env(safe-area-inset-top, 0px)) !important;
-      left: 0 !important; right: 0 !important; width: auto !important; transform: none !important;
-      flex-direction: column; gap: 6px; padding: 46px 8px 6px !important;
-      background: linear-gradient(#1a1a1aE6 70%, #1a1a1a00); z-index: 55; align-items: stretch;
+    html:not(.touch-layout).sheet-open #dock { transform: translate(-370px, -50%); }
+    html:not(.touch-layout) #dock button { flex: none; padding: 10px 4px; }
+    html:not(.touch-layout) #scrim { display: none; }
+    html:not(.touch-layout) .sheet {
+      top: 0; bottom: 0; right: 0; left: auto; width: 360px; max-height: none;
+      border-radius: 0; border-left: 1px solid var(--line); border-top: none;
+      transform: translateX(101%);
     }
-    #topbar.win > .winbar { display: none; }        /* nie chowamy topbara na mobile */
-    #search-wrap { width: 100% !important; }
-    #search-input { padding: 12px 14px; font-size: 15px; }
-    /* 7 przycisków widoku w jednym rzędzie z przewijaniem poziomym - oszczędza wysokość */
-    #view-presets { display: flex; flex-wrap: nowrap; gap: 5px; overflow-x: auto; -webkit-overflow-scrolling: touch; padding-bottom: 2px; }
-    #view-presets button { flex: 0 0 auto; padding: 9px 13px; font-size: 12.5px; }
-    #search-results { max-height: 45vh; }
-    #search-results .res-item { padding: 12px 14px; font-size: 14px; }
-
-    /* pozostałe panele (.win oprócz topbara) -> arkusze wysuwane od dołu */
-    .win:not(#topbar) {
-      position: fixed !important; z-index: 70 !important;
-      left: 0 !important; right: 0 !important; top: auto !important; bottom: 0 !important;
-      width: auto !important; max-width: 100vw !important;
-      height: auto !important; max-height: 62vh !important;
-      border-radius: 18px 18px 0 0 !important;
-      padding: 46px 16px calc(14px + env(safe-area-inset-bottom, 0px)) !important;
-      overflow-y: auto !important; resize: none !important;
-      box-shadow: 0 -10px 34px rgba(0,0,0,0.55);
-      background: #16181e !important;
+    html:not(.touch-layout) .sheet.open { transform: translateX(0); }
+    html:not(.touch-layout) .sheet__body { flex: 1 1 auto; }
+    html:not(.touch-layout) .sheet__grip { display: none; }
+    html:not(.touch-layout) #label-box, html:not(.touch-layout) #sidebar {
+      left: 14px; right: auto; bottom: 14px; width: 340px;
+      border: 1px solid var(--line); border-radius: var(--r-lg); max-height: 74vh;
     }
-    .win:not(#topbar) > .winbar {
-      height: 40px; font-size: 13px; padding: 0 14px;
-      background: rgba(30,34,44,0.98); cursor: default;
+    html:not(.touch-layout) #kolokwium-panel {
+      left: 14px; right: auto; bottom: 14px; width: 380px;
+      border: 1px solid var(--line); border-radius: var(--r-lg); max-height: 80vh;
     }
-    .win:not(#topbar) > .winbar::before {
-      content: ""; position: absolute; top: 7px; left: 50%; transform: translateX(-50%);
-      width: 40px; height: 4px; border-radius: 2px; background: #4a5462;
-    }
-    .win > .winbar .wb-x { font-size: 22px; padding: 2px 10px; margin-left: auto; }
-
-    /* większe cele dotknięcia w treści paneli */
-    #layers-box { flex-direction: column; align-items: stretch; gap: 0; }
-    #layers-box label { padding: 10px 8px; min-height: 42px; border-radius: 8px; font-size: 14px; border-bottom: 1px solid #262a33; }
-    #layers-box label:last-of-type { border-bottom: none; }
-    #layers-box label:active { background: rgba(59,123,255,0.22); }
-    #layers-box label[style*="border-left"] { border-left: none !important; margin-left: 0 !important; padding-left: 8px !important; }
-    #left-panel { gap: 14px; }
-    #left-panel button, #tools-box button, #sidebar button, #label-box button, #kolokwium-panel button {
-      padding: 12px 12px !important; font-size: 14px !important; min-height: 46px;
-    }
-    #kolokwium-buttons button { flex: 1 1 44%; }
-    #tools-box { gap: 12px; }
-    #tools-box .tools-row { flex-wrap: wrap; gap: 10px; }
-    #section-slider, #transparency-box input[type="range"] { flex: 1; min-width: 140px; height: 34px; }
-    #transparency-box { flex-wrap: wrap; }
-
-    /* karta struktury / lista punktów -> arkusze od dołu */
-    #label-box, #sidebar {
-      position: fixed !important; z-index: 72 !important;
-      left: 0 !important; right: 0 !important;
-      top: auto !important; bottom: 0 !important; width: auto !important;
-      min-width: 0 !important; max-width: 100vw !important; max-height: 60vh !important;
-      border-radius: 18px 18px 0 0 !important; overflow-y: auto;
-      padding: 18px 18px calc(18px + env(safe-area-inset-bottom, 0px)) !important;
-      pointer-events: auto; background: #16181e !important;
-    }
-    #sidebar .lm-item { padding: 12px 12px; font-size: 14px; }
-    #label-box .pl { font-size: 18px; }
-
-    #kolokwium-panel {
-      left: 0 !important; right: 0 !important; top: auto !important; bottom: 0 !important;
-      width: auto !important; max-width: 100vw !important; max-height: 66vh !important;
-      border-radius: 18px 18px 0 0 !important; z-index: 72 !important; background: #16181e !important;
-      padding-bottom: calc(16px + env(safe-area-inset-bottom, 0px)) !important;
-    }
-    .kw-item { padding: 11px 10px; }
-    .kw-note-btn { padding: 8px 12px; font-size: 12px; }
-
-    #credit { font-size: 8.5px; max-width: 60vw; line-height: 1.3; z-index: 2 !important;
-      bottom: calc(2px + env(safe-area-inset-bottom, 0px)); opacity: 0.55; }
-    #lm-tooltip { font-size: 14px; max-width: 70vw; white-space: normal; }
-    #notes-modal-card { width: 94vw; padding: 20px; padding-bottom: calc(20px + env(safe-area-inset-bottom, 0px)); }
-    #id-labels-layer .id-label { font-size: 11px; }
+    html:not(.touch-layout) #notes-modal { align-items: center; }
+    html:not(.touch-layout) #notes-modal-card { border-radius: var(--r-lg); }
+    html:not(.touch-layout) #credit { bottom: 8px; max-width: 40vw; }
   }
 </style>
 </head>
 <body>
-<a href="../../atlas.html" style="position:fixed;top:0;left:50%;transform:translateX(-50%);z-index:9999;background:#3f5b86;color:#fff;font:11px sans-serif;padding:2px 12px;border-radius:0 0 6px 6px;text-decoration:none" title="Wróć do wyboru trybu">🏠 Atlas — całe ciało (Z-Anatomy) · wybór trybu</a>
-<div id="winmenu">
-    <button id="wm-btn">🪟 Okna ▾</button>
-    <div class="wm-drop" id="wm-drop">
-        <label><input type="checkbox" data-win="left-panel" checked> Panel boczny (zakładki / nauka / kolokwia)</label>
-        <label><input type="checkbox" data-win="topbar" checked> Wyszukiwarka + widoki</label>
-        <label><input type="checkbox" data-win="layers-box" checked> Warstwy</label>
-        <label><input type="checkbox" data-win="tools-box" checked> Narzędzia (przekrój / skalpel / pomiar)</label>
-        <label><input type="checkbox" data-win="transparency-box" checked> Przezroczystość</label>
-        <hr>
-        <div class="wm-reset" id="wm-reset">↺ Reset układu okien</div>
-    </div>
-</div>
-<div id="loading">Ładowanie kości (203 struktury)...</div>
+<div id="loading">Ładowanie kości (203 struktury)…</div>
 <div id="canvas-wrap"></div>
-<div id="left-panel">
-    <div>
-        <h4>Zakładki</h4>
-        <div class="lp-row" style="display:flex; gap:4px;">
-            <input id="bookmark-name" type="text" placeholder="nazwa widoku...">
-            <button id="bookmark-save" style="width:auto;">💾</button>
+
+<a id="home-fab" class="fab" href="../../atlas.html" title="Wróć do wyboru trybu" aria-label="Wróć do wyboru trybu">🏠</a>
+
+<div id="search">
+  <input id="search-input" type="text" placeholder="Szukaj struktury (PL / EN)…" autocomplete="off">
+  <div id="search-results"></div>
+</div>
+
+<svg id="id-labels-leader-layer" style="position:fixed;inset:0;pointer-events:none;z-index:4;overflow:hidden"></svg>
+<div id="id-labels-layer" style="position:fixed;inset:0;pointer-events:none;z-index:5;overflow:hidden"></div>
+<div id="split-divider" style="display:none"></div>
+<div id="lm-tooltip"></div>
+
+<div id="credit">
+  Geometria: BodyParts3D © The Database Center for Life Science, CC BY-SA 2.1 JP · Z-Anatomy, CC BY-SA.
+  Nazewnictwo PL: Słownik mian anatomicznych, UMed Łódź.
+</div>
+
+<!-- ===== dock ===== -->
+<nav id="dock">
+  <button data-sheet="layers"><span class="ic">🩻</span>Warstwy</button>
+  <button data-sheet="view"><span class="ic">🧭</span>Widok</button>
+  <button data-sheet="tools"><span class="ic">🛠️</span>Narzędzia</button>
+  <button data-sheet="kolokwia"><span class="ic">📌</span>Kolokwia</button>
+  <button data-sheet="more"><span class="ic">⋯</span>Więcej</button>
+</nav>
+
+<!-- ===== arkusz / panel ===== -->
+<div id="scrim"></div>
+<aside id="sheet" class="sheet" aria-hidden="true">
+  <div class="sheet__grip"></div>
+  <div class="sheet__head">
+    <span class="sheet__title" id="sheet-title">Warstwy</span>
+    <button class="sheet__x" id="sheet-x" aria-label="Zamknij">✕</button>
+  </div>
+  <div class="sheet__body" id="sheet-body">
+
+    <section data-panel="layers">
+      <div id="layers-box">
+        <label><input type="checkbox" id="layer-bones" checked> Kości</label>
+        <label><input type="checkbox" id="layer-muscles"> Mięśnie</label>
+        <label title="Powięzi, troczki, rozcięgna, kaletki, pochewki ścięgien, przegrody międzymięśniowe."><input type="checkbox" id="layer-fascia"> Powięzi</label>
+        <label><input type="checkbox" id="layer-vessels"> Naczynia</label>
+        <label><input type="checkbox" id="layer-organs"> Narządy</label>
+        <label><input type="checkbox" id="layer-teeth"> Zęby</label>
+        <label><input type="checkbox" id="layer-connective"> Tkanka łączna</label>
+        <label><input type="checkbox" id="layer-brain"> Mózg</label>
+        <label><input type="checkbox" id="layer-nerves"> Nerwy</label>
+        <label><input type="checkbox" id="layer-lymph"> Układ chłonny</label>
+        <label><input type="checkbox" id="layer-landmarks"> Punkty orientacyjne (widok ogólny)</label>
+        <span id="layers-status"></span>
+      </div>
+      <div class="grp" style="margin-top:18px">
+        <h4>Przezroczystość kości</h4>
+        <div id="transparency-box">
+          <label class="row"><input type="range" id="transparency-slider" min="0" max="100" value="100"><span id="transparency-val">100%</span></label>
+          <label class="row hidden"><input type="checkbox" id="show-id-labels"> ID na scenie</label>
         </div>
-        <div id="bookmark-list"></div>
-    </div>
-    <div>
-        <h4>Eksport</h4>
-        <button id="screenshot-btn">📷 Zrzut ekranu (bez UI)</button>
-        <button id="anki-export-btn" style="margin-top:6px;">🗂️ Eksport punktów do Anki (CSV)</button>
-    </div>
-    <div>
-        <h4>Nauka</h4>
-        <button id="quiz-toggle">🎯 Tryb quizu</button>
-        <div id="quiz-box">
+      </div>
+    </section>
+
+    <section data-panel="view" class="hidden">
+      <div id="view-presets">
+        <button data-view="front">Przód</button>
+        <button data-view="back">Tył</button>
+        <button data-view="left">Lewo</button>
+        <button data-view="right">Prawo</button>
+        <button data-view="top">Góra</button>
+        <button data-view="bottom">Dół</button>
+        <button data-view="reset">⟲ Reset widoku</button>
+      </div>
+    </section>
+
+    <section data-panel="tools" class="hidden">
+      <div id="tools-box">
+        <div class="tools-row">
+          <label class="row"><input type="checkbox" id="section-toggle"> Przekrój</label>
+          <select id="section-axis"><option value="x">oś X</option><option value="y">oś Y</option><option value="z" selected>oś Z</option></select>
+        </div>
+        <div class="tools-row"><input type="range" id="section-slider" min="-100" max="100" value="0" disabled></div>
+        <div class="tools-row">
+          <button id="measure-toggle">📏 Pomiar odległości</button>
+          <button id="measure-clear" style="display:none">✕</button>
+          <span id="measure-result"></span>
+        </div>
+        <div class="tools-row">
+          <button id="scalpel-toggle" title="Włącz i klikaj struktury, żeby je chować z widoku">🔪 Skalpel</button>
+          <button id="scalpel-undo" style="display:none">↩ Cofnij</button>
+          <button id="scalpel-restore-all" style="display:none">♻ Przywróć wszystko</button>
+          <span id="scalpel-status"></span>
+        </div>
+        <div class="tools-row"><button id="split-toggle">🔲 Porównaj (podziel ekran)</button></div>
+      </div>
+    </section>
+
+    <section data-panel="kolokwia" class="hidden">
+      <div id="kolokwium-buttons">
+        <button data-kolokwium="I">I — kończyny / tułów</button>
+        <button data-kolokwium="II">II — trzewia</button>
+        <button data-kolokwium="III">III — głowa / szyja</button>
+        <button data-kolokwium="IV">IV — mózg</button>
+        <button data-kolokwium="off">✕ Wyłącz tryb kolokwium</button>
+      </div>
+      <div id="kolokwium-status"></div>
+    </section>
+
+    <section data-panel="more" class="hidden">
+      <div id="left-panel">
+        <div class="grp">
+          <h4>Zakładki</h4>
+          <div class="lp-row">
+            <input id="bookmark-name" type="text" placeholder="nazwa widoku…">
+            <button id="bookmark-save">💾</button>
+          </div>
+          <div id="bookmark-list"></div>
+        </div>
+        <div class="grp">
+          <h4>Nauka</h4>
+          <button id="quiz-toggle">🎯 Tryb quizu</button>
+          <div id="quiz-box">
             <div id="quiz-question"></div>
             <div id="quiz-feedback"></div>
             <button id="quiz-next" style="display:none">Następne pytanie →</button>
             <div id="quiz-score"></div>
+          </div>
         </div>
-    </div>
-    <div>
-        <h4>📌 Kolokwia</h4>
-        <div id="kolokwium-buttons">
-            <button data-kolokwium="I">I — kończyny/tułów</button>
-            <button data-kolokwium="II">II — trzewia</button>
-            <button data-kolokwium="III">III — głowa/szyja</button>
-            <button data-kolokwium="IV">IV — mózg</button>
-            <button data-kolokwium="off" style="flex-basis:100%;">✕ Wyłącz tryb kolokwium</button>
+        <div class="grp">
+          <h4>Eksport</h4>
+          <button id="screenshot-btn">📷 Zrzut ekranu (bez UI)</button>
+          <button id="anki-export-btn">🗂️ Eksport punktów do Anki (CSV)</button>
         </div>
-        <div id="kolokwium-status"></div>
-    </div>
-</div>
-<div id="kolokwium-panel"></div>
-<div id="topbar">
-    <div id="search-wrap">
-        <input id="search-input" type="text" placeholder="🔎 Szukaj struktury (PL/EN)..." autocomplete="off">
-        <div id="search-results"></div>
-    </div>
-    <div id="view-presets">
-        <button data-view="front">Przód</button>
-        <button data-view="back">Tył</button>
-        <button data-view="right">Prawo</button>
-        <button data-view="left">Lewo</button>
-        <button data-view="top">Góra</button>
-        <button data-view="bottom">Dół</button>
-        <button data-view="reset">⟲ Reset</button>
-    </div>
-</div>
-<div id="transparency-box">
-    Przezroczystość kości
-    <input type="range" id="transparency-slider" min="0" max="100" value="100">
-    <span id="transparency-val">100%</span>
-    <label style="margin-left:14px;" title="Pokazuje ID kazdej widocznej struktury bezposrednio na scenie, bez potrzeby klikania"><input type="checkbox" id="show-id-labels"> 🏷️ Pokaż ID na scenie</label>
-</div>
-<svg id="id-labels-leader-layer" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:4; overflow:hidden;"></svg>
-<div id="id-labels-layer" style="position:fixed; top:0; left:0; width:100%; height:100%; pointer-events:none; z-index:5; overflow:hidden;"></div>
-<div id="layers-box">
-    Warstwy:
-    <label><input type="checkbox" id="layer-bones" checked> Kości</label>
-    <label><input type="checkbox" id="layer-muscles"> Mięśnie</label>
-    <label title="Powięzi, troczki, rozcięgna, kaletki, pochewki ścięgien, przegrody międzymięśniowe. Domyślnie wyłączone - płachty powięzi zasłaniają mięśnie."><input type="checkbox" id="layer-fascia"> Powięzi ⓘ</label>
-    <label><input type="checkbox" id="layer-vessels"> Naczynia</label>
-    <label><input type="checkbox" id="layer-organs"> Narządy</label>
-    <label><input type="checkbox" id="layer-teeth"> Zęby</label>
-    <label><input type="checkbox" id="layer-connective"> Tkanka łączna</label>
-    <label><input type="checkbox" id="layer-brain"> Mózg</label>
-    <label><input type="checkbox" id="layer-nerves"> Nerwy</label>
-    <label><input type="checkbox" id="layer-lymph"> Układ chłonny</label>
-    <label style="margin-left:14px; padding-left:14px; border-left:1px solid #555;" title="Domyślnie punkty pokazują się automatycznie po kliknięciu struktury i wejściu w jej podgląd. Zaznacz, żeby pokazać je wszystkie naraz w widoku ogólnym."><input type="checkbox" id="layer-landmarks"> Punkty orientacyjne (w widoku ogólnym)</label>
-    <span id="layers-status" style="opacity:0.7; font-size:0.85em; margin-left:6px;"></span>
-</div>
-<div id="tools-box">
-    <div class="tools-row">
-        <label><input type="checkbox" id="section-toggle"> Przekrój</label>
-        <select id="section-axis">
-            <option value="x">oś X</option>
-            <option value="y">oś Y</option>
-            <option value="z" selected>oś Z</option>
-        </select>
-        <input type="range" id="section-slider" min="-100" max="100" value="0" disabled>
-    </div>
-    <div class="tools-row">
-        <button id="measure-toggle">📏 Pomiar odległości</button>
-        <span id="measure-result"></span>
-        <button id="measure-clear" style="display:none">✕</button>
-    </div>
-    <div class="tools-row">
-        <button id="scalpel-toggle" title="Włącz i klikaj struktury, żeby je usuwać z widoku (nie ma to wpływu na dane, tylko na widoczność)">🔪 Skalpel</button>
-        <span id="scalpel-status" style="opacity:0.7; font-size:0.85em;"></span>
-        <button id="scalpel-undo" style="display:none" title="Przywróć ostatnio wyciętą strukturę">↩ Cofnij cięcie</button>
-        <button id="scalpel-restore-all" style="display:none" title="Przywróć wszystkie wycięte struktury">♻ Przywróć wszystko</button>
-    </div>
-    <div class="tools-row">
-        <button id="split-toggle">🔲 Porównaj (podziel ekran)</button>
-    </div>
-</div>
-<div id="split-divider" style="display:none"></div>
-<div id="lm-tooltip"></div>
+      </div>
+    </section>
+
+  </div>
+</aside>
+
+<!-- ===== karta struktury / lista punktów (silnik: style.display) ===== -->
 <div id="label-box" style="display:none">
-    <div class="pl" id="lbl-pl"><span id="lbl-pl-text"></span><button id="lbl-speak" title="Odsłuchaj nazwę">🔊</button></div>
-    <div class="en" id="lbl-en"></div>
-    <div id="lbl-id" style="font-size:11px; color:#888; font-family:monospace; margin-top:2px;"></div>
-    <button id="lbl-notes-link">📝 Notatka wykładowa</button>
-    <div class="hint" id="lbl-hint">kliknij inną kość, żeby zmienić / przeciągnij, żeby obrócić</div>
-    <button id="open-bone-btn" style="display:none">🔍 Otwórz tę kość</button>
+  <button class="struct-x" data-close="label" aria-label="Zamknij">✕</button>
+  <button id="lbl-speak" title="Odsłuchaj nazwę">🔊</button>
+  <div id="lbl-pl-text"></div>
+  <div id="lbl-en"></div>
+  <div id="lbl-id"></div>
+  <button id="open-bone-btn" style="display:none">🔍 Otwórz tę strukturę</button>
+  <button id="lbl-notes-link">📝 Notatka</button>
+  <div id="lbl-hint">kliknij inną kość, żeby zmienić / przeciągnij, żeby obrócić</div>
 </div>
-<div id="sidebar">
-    <h3 id="sb-pl"></h3>
-    <div class="en-title" id="sb-en"></div>
-    <div id="sb-id" style="font-size:11px; color:#888; font-family:monospace; margin-bottom:6px;"></div>
-    <div id="sb-landmarks"></div>
-    <button id="sb-notes-link">📝 Notatka wykładowa</button>
-    <button id="close-bone-btn">← Wróć do całego układu</button>
+
+<div id="sidebar" style="display:none">
+  <button class="struct-x" data-close="sidebar" aria-label="Zamknij">✕</button>
+  <h3 id="sb-pl"></h3>
+  <div id="sb-en"></div>
+  <div id="sb-id"></div>
+  <button id="sb-notes-link">📝 Notatka</button>
+  <div id="sb-landmarks"></div>
+  <button id="close-bone-btn">← Wróć do całego układu</button>
 </div>
+
+<div id="kolokwium-panel"></div>
+
+<!-- ===== modal notatki ===== -->
 <div id="notes-modal">
-    <div id="notes-modal-card">
-        <h2 id="notes-modal-title"></h2>
-        <div class="nm-sub" id="notes-modal-sub"></div>
-        <div class="nm-body" id="notes-modal-body"></div>
-        <button id="notes-modal-close">Zamknij</button>
-    </div>
-</div>
-<div id="credit">
-    Geometria: BodyParts3D, (c) The Database Center for Life Science, licencja CC BY-SA 2.1 Japan.
-    Nazewnictwo PL: Słownik polsko-angielski mian anatomicznych, Uniwersytet Medyczny w Łodzi.
-    <br>🔵 niebieskie kropki = punkty orientacyjne NA kości (guzowatości, powierzchnie stawowe...)
+  <div id="notes-modal-card">
+    <button class="struct-x" id="notes-modal-x" aria-label="Zamknij">✕</button>
+    <h2 id="notes-modal-title"></h2>
+    <div class="nm-sub" id="notes-modal-sub"></div>
+    <div class="nm-body" id="notes-modal-body"></div>
+    <button id="notes-modal-close">Zamknij</button>
+  </div>
 </div>
 
 <script type="importmap">
@@ -2768,191 +2868,142 @@ window.__dbgRender = {
     scene: () => scene, camera: () => camera, renderer: () => renderer,
 };
 
-// ===== menedżer okien: panele ruchome / skalowalne / zamykane / przywracalne =====
-// Spójny z przeglądarką narządów (_organ_compare/index.html): pasek tytułu do
-// przeciągania, ✕ do zamknięcia, menu "🪟 Okna" do przywrócenia. Układ zapisany
-// w localStorage per-przeglądarka.
-(function initWindowManager() {
-    const KEY = "atlas_v3_layout";
-    const PANELS = ["left-panel", "topbar", "layers-box", "tools-box", "transparency-box"];
-    const TITLES = {
-        "left-panel": "Panel boczny",
-        "topbar": "Wyszukiwarka + widoki",
-        "layers-box": "Warstwy",
-        "tools-box": "Narzędzia",
-        "transparency-box": "Przezroczystość",
-    };
-    const isMobile = document.documentElement.classList.contains("touch-layout");
-    const SHEETS = ["left-panel", "layers-box", "tools-box", "transparency-box"]; // arkusze dolne (bez topbara)
-    let state;
-    try { state = JSON.parse(localStorage.getItem(KEY)) || {}; } catch (e) { state = {}; }
-    const save = () => { try { localStorage.setItem(KEY, JSON.stringify(state)); } catch (e) {} };
-    const S = (id) => (state[id] = state[id] || {});
+// ===== POWŁOKA UI (rebuild 2026-09): dock + arkusz + karty struktur =====
+// Zastępuje dawny menedżer pływających okien. Silnik (wyżej) nietknięty -
+// te same ID kontrolek, tylko przeniesione do arkusza / kart.
+(function initShell() {
+  const sheet = document.getElementById("sheet");
+  const scrim = document.getElementById("scrim");
+  const body  = document.getElementById("sheet-body");
+  const title = document.getElementById("sheet-title");
+  const dock  = document.getElementById("dock");
+  const lbox  = document.getElementById("label-box");
+  const sbar  = document.getElementById("sidebar");
+  const kpan  = document.getElementById("kolokwium-panel");
+  const sections = [...body.querySelectorAll("section[data-panel]")];
+  const TITLES = { layers: "Warstwy", view: "Widok kamery", tools: "Narzędzia", kolokwia: "Kolokwia", more: "Więcej" };
+  let openName = null;
 
-    // Na telefonie panele to arkusze wysuwane od dołu i nachodziłyby na siebie -
-    // domyślnie schowane (user otwiera z menu "Okna"), i tylko jeden naraz.
-    if (isMobile) {
-        for (const id of SHEETS) if (!(id in state)) state[id] = { hidden: true };
-    }
-    function soloOnMobile(openId) {
-        if (!isMobile) return;
-        for (const id of SHEETS) {
-            if (id === openId) continue;
-            state[id] = state[id] || {};
-            if (!state[id].hidden) { state[id].hidden = true; applyOne(id); }
-        }
-    }
+  function hideLabel() {
+    try { resetSelection(); } catch (e) {}
+    lbox.style.display = "none";
+    const nl = document.getElementById("lbl-notes-link"); if (nl) nl.style.display = "none";
+  }
+  function hideSidebar() { try { closeBone(); } catch (e) { sbar.style.display = "none"; } }
+  function hideStructCards() {
+    if (lbox.style.display !== "none") hideLabel();
+    if (sbar.style.display !== "none") hideSidebar();
+  }
 
-    function applyOne(id) {
-        const el = document.getElementById(id);
-        if (!el) return;
-        const s = state[id] || {};
-        if (s.left != null) { el.style.left = s.left; el.style.right = "auto"; el.style.transform = "none"; }
-        if (s.top != null) { el.style.top = s.top; el.style.bottom = "auto"; }
-        if (s.width) el.style.width = s.width;
-        if (s.height) el.style.height = s.height;
-        el.classList.toggle("win-hidden", !!s.hidden);
-        const cb = document.querySelector(`#wm-drop [data-win="${id}"]`);
-        if (cb) cb.checked = !s.hidden;
-    }
+  function openSheet(name) {
+    if (openName === name) { closeSheet(); return; }
+    openName = name;
+    sections.forEach(s => s.classList.toggle("hidden", s.dataset.panel !== name));
+    title.textContent = TITLES[name] || "";
+    sheet.classList.add("open"); sheet.setAttribute("aria-hidden", "false");
+    document.documentElement.classList.add("sheet-open");
+    scrim.classList.add("show");
+    [...dock.children].forEach(b => b.classList.toggle("active", b.dataset.sheet === name));
+    hideStructCards();
+  }
+  function closeSheet() {
+    openName = null;
+    sheet.classList.remove("open"); sheet.setAttribute("aria-hidden", "true");
+    document.documentElement.classList.remove("sheet-open");
+    scrim.classList.remove("show");
+    [...dock.children].forEach(b => b.classList.remove("active"));
+  }
 
-    for (const id of PANELS) {
-        const el = document.getElementById(id);
-        if (!el) continue;
-        el.classList.add("win");
-        const bar = document.createElement("div");
-        bar.className = "winbar";
-        bar.innerHTML = '<span class="wb-title"></span><span class="wb-x" title="Zamknij (przywrócisz z menu 🪟 Okna)">✕</span>';
-        bar.querySelector(".wb-title").textContent = TITLES[id];
-        el.insertBefore(bar, el.firstChild);
-        bar.querySelector(".wb-x").addEventListener("click", (e) => {
-            e.stopPropagation();
-            S(id).hidden = true; applyOne(id); save();
-        });
-        applyOne(id);
-        new ResizeObserver(() => {
-            if (el.classList.contains("win-hidden")) return;
-            if (!el.style.width && !el.style.height) return; // tylko realny resize użytkownika
-            S(id).width = el.style.width; S(id).height = el.style.height;
-            clearTimeout(el._wmT); el._wmT = setTimeout(save, 400);
-        }).observe(el);
-    }
+  dock.addEventListener("click", e => {
+    const b = e.target.closest("button[data-sheet]");
+    if (b) openSheet(b.dataset.sheet);
+  });
+  document.getElementById("sheet-x").addEventListener("click", closeSheet);
+  scrim.addEventListener("click", closeSheet);
+  window.addEventListener("keydown", e => {
+    if (e.key !== "Escape") return;
+    if (openName) closeSheet();
+    else hideStructCards();
+    try { closeNotesModal(); } catch (er) {}
+  });
 
-    // Pointer Events (mysz + dotyk + rysik jednym API) + setPointerCapture, zeby
-    // przeciaganie nie gubilo sie, gdy palec wyjedzie poza pasek. Na mobile panele
-    // sa i tak zadokowane do dolu (patrz @media) - drag glownie dla desktopu.
-    let drag = null, zTop = 12;
-    document.addEventListener("pointerdown", (e) => {
-        if (isMobile) return; // na telefonie panele to zadokowane arkusze - nie przeciagamy
-        const bar = e.target.closest && e.target.closest(".winbar");
-        if (!bar || e.target.classList.contains("wb-x")) return;
-        if (e.pointerType === "mouse" && e.button !== 0) return;
-        const el = bar.parentElement;
-        const r = el.getBoundingClientRect();
-        el.style.transform = "none";
-        el.style.left = r.left + "px"; el.style.top = r.top + "px";
-        el.style.right = "auto"; el.style.bottom = "auto";
-        el.style.zIndex = Math.min(28, ++zTop);
-        drag = { el, dx: e.clientX - r.left, dy: e.clientY - r.top, id: e.pointerId };
-        el.classList.add("dragging");
-        try { bar.setPointerCapture(e.pointerId); } catch (_) {}
-        e.preventDefault();
+  // ✕ na kartach struktur (data-close) + modal notatki
+  document.body.addEventListener("click", e => {
+    const x = e.target.closest("[data-close]");
+    if (!x) return;
+    e.stopPropagation();
+    if (x.dataset.close === "label") hideLabel();
+    else if (x.dataset.close === "sidebar") hideSidebar();
+  }, true);
+  const nmx = document.getElementById("notes-modal-x");
+  if (nmx) nmx.addEventListener("click", () => { try { closeNotesModal(); } catch (e) {} });
+
+  // otwarcie karty struktury -> zamknij arkusz dock (żeby się nie nakładały)
+  const closeSheetIfCardShown = () => {
+    if (openName && (lbox.style.display !== "none" || sbar.style.display !== "none")) closeSheet();
+  };
+  new MutationObserver(closeSheetIfCardShown).observe(lbox, { attributes: true, attributeFilter: ["style"] });
+  new MutationObserver(closeSheetIfCardShown).observe(sbar, { attributes: true, attributeFilter: ["style"] });
+
+  // panel kolokwium (silnik renderuje treść) -> doklej ✕
+  new MutationObserver(() => {
+    const shown = kpan.style.display && kpan.style.display !== "none";
+    if (shown && !kpan.querySelector(".struct-x")) {
+      const x = document.createElement("button");
+      x.className = "struct-x"; x.textContent = "✕"; x.setAttribute("aria-label", "Zamknij");
+      x.addEventListener("click", () => {
+        const off = document.querySelector('#kolokwium-buttons [data-kolokwium="off"]');
+        if (off) off.click(); else kpan.style.display = "none";
+      });
+      kpan.appendChild(x);
+    }
+  }).observe(kpan, { attributes: true, attributeFilter: ["style"], childList: true });
+
+  // wybór kolokwium z arkusza -> zwiń arkusz (panel kolokwium pokaże się sam)
+  document.getElementById("kolokwium-buttons").addEventListener("click", e => {
+    if (e.target.closest("button")) setTimeout(closeSheet, 50);
+  });
+
+  // gest "przeciągnij w dół" (mobile) dla arkusza i kart
+  function swipeDown(handleEl, moveEl, done) {
+    let y0 = 0, act = false;
+    handleEl.addEventListener("touchstart", e => {
+      if (e.touches.length !== 1) return;
+      const top = moveEl.getBoundingClientRect().top;
+      act = (e.touches[0].clientY - top) < 76;
+      y0 = e.touches[0].clientY;
+      if (act) moveEl.style.transition = "none";
+    }, { passive: true });
+    handleEl.addEventListener("touchmove", e => {
+      if (!act) return;
+      const dy = e.touches[0].clientY - y0;
+      if (dy > 0) moveEl.style.transform = "translateY(" + dy + "px)";
+    }, { passive: true });
+    handleEl.addEventListener("touchend", e => {
+      if (!act) return; act = false;
+      const dy = e.changedTouches[0].clientY - y0;
+      moveEl.style.transition = "transform .2s cubic-bezier(.32,.72,0,1)";
+      moveEl.style.transform = "";
+      if (dy > 90) done();
     });
-    document.addEventListener("pointermove", (e) => {
-        if (!drag || e.pointerId !== drag.id) return;
-        drag.el.style.left = Math.max(0, Math.min(window.innerWidth - 60, e.clientX - drag.dx)) + "px";
-        drag.el.style.top = Math.max(0, Math.min(window.innerHeight - 28, e.clientY - drag.dy)) + "px";
-        e.preventDefault();
-    });
-    function endDrag(e) {
-        if (!drag || (e && e.pointerId !== drag.id)) return;
-        const st = S(drag.el.id);
-        st.left = drag.el.style.left; st.top = drag.el.style.top;
-        drag.el.classList.remove("dragging");
-        drag = null; save();
-    }
-    document.addEventListener("pointerup", endDrag);
-    document.addEventListener("pointercancel", endDrag);
+  }
+  swipeDown(sheet.querySelector(".sheet__grip"), sheet, closeSheet);
+  swipeDown(lbox, lbox, hideLabel);
+  swipeDown(sbar, sbar, hideSidebar);
+  swipeDown(kpan, kpan, () => {
+    const off = document.querySelector('#kolokwium-buttons [data-kolokwium="off"]');
+    if (off) off.click();
+  });
 
-    const menu = document.getElementById("winmenu");
-    document.getElementById("wm-btn").addEventListener("click", (e) => { e.stopPropagation(); menu.classList.toggle("open"); });
-    document.addEventListener("click", (e) => { if (!menu.contains(e.target)) menu.classList.remove("open"); });
-    document.querySelectorAll("#wm-drop [data-win]").forEach((cb) => {
-        cb.addEventListener("change", () => {
-            S(cb.dataset.win).hidden = !cb.checked;
-            if (cb.checked) soloOnMobile(cb.dataset.win);
-            applyOne(cb.dataset.win); save();
-            if (isMobile) menu.classList.remove("open");
-        });
-    });
-    document.getElementById("wm-reset").addEventListener("click", () => {
-        state = {};
-        try { localStorage.removeItem(KEY); } catch (e) {}
-        if (isMobile) { for (const id of SHEETS) state[id] = { hidden: true }; }
-        for (const id of PANELS) {
-            const el = document.getElementById(id);
-            if (!el) continue;
-            el.style.left = el.style.top = el.style.right = el.style.bottom = "";
-            el.style.width = el.style.height = el.style.transform = el.style.zIndex = "";
-            const hidden = !!(state[id] && state[id].hidden);
-            el.classList.toggle("win-hidden", hidden);
-            const cb = document.querySelector(`#wm-drop [data-win="${id}"]`);
-            if (cb) cb.checked = !hidden;
-        }
-        menu.classList.remove("open");
-    });
+  // wyszukiwarka: pokaż wyniki tylko gdy coś wpisano / focus
+  const si = document.getElementById("search-input");
+  const sr = document.getElementById("search-results");
+  const syncResults = () => { sr.style.display = (sr.children.length && document.activeElement === si) ? "block" : sr.style.display; };
+  si.addEventListener("focus", () => { if (sr.children.length) sr.style.display = "block"; });
+  document.addEventListener("click", e => {
+    if (!e.target.closest("#search")) sr.style.display = "none";
+  });
 })();
-
-// ===== Mobile: przyciski zamknięcia + gest "przeciągnij w dół" dla arkuszy dolnych
-// (karta struktury / lista punktów). Na desktopie te panele są w rogach i mają
-// własne "wróć"/klik-w-tło - tu potrzeba wyraźnego ✕ i standardowego swipe-down. =====
-if (IS_TOUCH_LAYOUT) {
-    const dismissLabel = () => {
-        resetSelection();
-        document.getElementById("label-box").style.display = "none";
-        document.getElementById("lbl-notes-link").style.display = "none";
-    };
-    const sheets = [
-        { el: document.getElementById("label-box"), close: dismissLabel },
-        { el: document.getElementById("sidebar"), close: () => { try { closeBone(); } catch (e) {} } },
-    ];
-    for (const { el, close } of sheets) {
-        if (!el) continue;
-        const bar = document.createElement("div");
-        bar.style.cssText = "position:sticky;top:0;z-index:5;display:flex;justify-content:flex-end;margin:-8px -8px 4px;padding:4px;background:linear-gradient(#16181e 60%,transparent)";
-        const x = document.createElement("button");
-        x.textContent = "✕";
-        x.setAttribute("aria-label", "Zamknij");
-        x.style.cssText = "background:rgba(255,255,255,0.09);color:#cdd4de;border:none;border-radius:50%;width:36px;height:36px;font-size:16px;line-height:1;cursor:pointer;padding:0";
-        x.addEventListener("click", (e) => { e.stopPropagation(); close(); });
-        bar.appendChild(x);
-        el.insertBefore(bar, el.firstChild);
-
-        // swipe-down na górnych ~60px arkusza -> zamknij
-        let sy = 0, active = false;
-        el.addEventListener("touchstart", (e) => {
-            if (e.touches.length !== 1) return;
-            const top = el.getBoundingClientRect().top;
-            active = (e.touches[0].clientY - top) < 64;
-            sy = e.touches[0].clientY;
-            if (active) el.style.transition = "none";
-        }, { passive: true });
-        el.addEventListener("touchmove", (e) => {
-            if (!active) return;
-            const dy = e.touches[0].clientY - sy;
-            if (dy > 0) el.style.transform = "translateY(" + dy + "px)";
-        }, { passive: true });
-        el.addEventListener("touchend", (e) => {
-            if (!active) return;
-            active = false;
-            const dy = (e.changedTouches[0].clientY - sy);
-            el.style.transition = "transform .18s ease";
-            el.style.transform = "";
-            if (dy > 80) close();
-        });
-    }
-}
-
 animate();
 </script>
 </body>
