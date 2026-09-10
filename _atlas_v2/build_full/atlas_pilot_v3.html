@@ -125,6 +125,10 @@
     letter-spacing: -0.02em; color: #f1f3f5;
     text-shadow: 0 1px 10px rgba(0,0,0,0.65);
   }
+  #brand-ver {
+    font-size: 10px; font-weight: 600; color: #8b95a1; letter-spacing: .02em;
+    vertical-align: 2px; margin-left: 2px;
+  }
 
   /* ---------- pływające przyciski (home) ---------- */
   .fab {
@@ -538,13 +542,33 @@
   }
   #lm-tooltip .en { color: #9aa4b0; font-size: 11px; font-weight: 400; display: block; }
   #split-divider { position: fixed; top: 0; bottom: 0; left: 50%; width: 1px; background: var(--line-strong); z-index: 6; pointer-events: none; }
+  /* atrybucja: mała ikonka "i" w rogu, pełny tekst dopiero po kliknięciu */
   #credit {
-    position: fixed; left: 12px; z-index: 3;
-    bottom: calc(var(--hero-h) + var(--dock-h) + var(--sab) + 8px);
-    color: rgba(210,215,221,0.6); font-size: 8px; line-height: 1.4; max-width: 64vw;
-    pointer-events: none;
-    display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden;
+    position: fixed; z-index: 45;
+    right: calc(10px + var(--sar));
+    bottom: calc(var(--dock-h) + var(--sab) + 8px);
+    transition: opacity .2s;
   }
+  #credit-toggle {
+    position: relative; pointer-events: auto; width: 26px; height: 26px; border-radius: 50%;
+    display: grid; place-items: center; font-size: 13px; font-style: normal;
+    color: #9aa2ac; background: rgba(18,22,28,0.5);
+    -webkit-backdrop-filter: blur(8px); backdrop-filter: blur(8px);
+    border: 1px solid rgba(255,255,255,0.12); font-family: Georgia, "Times New Roman", serif;
+  }
+  #credit-toggle::before { content: "i"; }
+  #credit-toggle::after { content: ""; position: absolute; inset: -11px; } /* powiększony obszar dotyku */
+  #credit-toggle:active, #credit.open #credit-toggle { background: rgba(18,22,28,0.85); color: #d6dbe1; }
+  #credit-body {
+    display: none; position: absolute; right: 0; bottom: 32px; width: 258px;
+    font-size: 10px; line-height: 1.55; text-align: right;
+    color: rgba(214,219,225,0.85); background: rgba(18,22,28,0.82);
+    -webkit-backdrop-filter: blur(14px); backdrop-filter: blur(14px);
+    border: 1px solid rgba(255,255,255,0.1); border-radius: 10px; padding: 10px 12px;
+    box-shadow: var(--shadow-pop);
+  }
+  #credit-body b { color: #eef0f2; font-weight: 600; }
+  #credit.open #credit-body { display: block; }
   .id-label {
     position: absolute; transform: translate(-50%, -50%);
     background: rgba(27,32,39,.9); color: #8fe0ff; font: 10px ui-monospace, monospace;
@@ -606,7 +630,8 @@
     }
     html:not(.touch-layout) #notes-modal { align-items: center; }
     html:not(.touch-layout) #notes-modal-card { border-radius: var(--r-lg); }
-    html:not(.touch-layout) #credit { bottom: 8px; max-width: 36vw; }
+    html:not(.touch-layout) #credit { bottom: 14px; right: calc(16px + var(--sar)); }
+    html:not(.touch-layout).sheet-open #credit { opacity: 0; pointer-events: none; }
     html:not(.touch-layout) #brand { top: calc(16px + var(--sat)); left: calc(18px + var(--sal)); }
   }
 
@@ -622,7 +647,7 @@
 
 <div id="brand">
   <div class="eyebrow">Atlas anatomiczny</div>
-  <h1>Całe ciało · 3D</h1>
+  <h1>Całe ciało · 3D <span id="brand-ver">v0.1.1</span></h1>
 </div>
 
 <a id="home-fab" class="fab" href="../../atlas.html" title="Wróć do wyboru trybu" aria-label="Wróć do wyboru trybu">⌂</a>
@@ -638,8 +663,12 @@
 <div id="lm-tooltip"></div>
 
 <div id="credit">
-  Geometria: BodyParts3D © The Database Center for Life Science, CC BY-SA 2.1 JP · Z-Anatomy, CC BY-SA.
-  Nazewnictwo PL: Słownik mian anatomicznych, UMed Łódź.
+  <button id="credit-toggle" aria-expanded="false" aria-controls="credit-body" aria-label="Źródła i licencje" title="Źródła i licencje"></button>
+  <div id="credit-body">
+    Geometria: <b>BodyParts3D</b> © The Database Center for Life Science, CC BY-SA 2.1 JP · <b>Z-Anatomy</b>, CC BY-SA.<br>
+    Nazewnictwo PL: Słownik mian anatomicznych, UMed Łódź.<br>
+    <span style="opacity:.7">Atlas 3D · wersja 0.1.1</span>
+  </div>
 </div>
 
 <div id="scene-caption"><span id="scene-caption-text">Dorosły człowiek</span></div>
@@ -3321,6 +3350,19 @@ window.__dbgRender = {
     const off = document.querySelector('#kolokwium-buttons [data-kolokwium="off"]');
     if (off) off.click();
   });
+
+  // credits: schowane pod przyciskiem "ⓘ Źródła i licencje" (nie zasłaniają kadru)
+  const creditWrap = document.getElementById("credit");
+  const creditBtn = document.getElementById("credit-toggle");
+  if (creditBtn && creditWrap) {
+    creditBtn.addEventListener("click", () => {
+      const open = creditWrap.classList.toggle("open");
+      creditBtn.setAttribute("aria-expanded", open ? "true" : "false");
+    });
+    document.addEventListener("click", (e) => {
+      if (!e.target.closest("#credit")) { creditWrap.classList.remove("open"); creditBtn.setAttribute("aria-expanded", "false"); }
+    });
+  }
 
   // wyszukiwarka: pokaż wyniki tylko gdy coś wpisano / focus
   const si = document.getElementById("search-input");

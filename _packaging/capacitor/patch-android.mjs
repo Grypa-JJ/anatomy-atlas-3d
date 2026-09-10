@@ -62,6 +62,20 @@ def _ksKeyPass = _ksProps['keyPassword'] ?: System.getenv('ANDROID_KEY_PASSWORD'
   console.log('patch-android: build.gradle zaktualizowany.');
 }
 
+// versionName/versionCode z shared/app-version.json (android/ jest regenerowany,
+// więc wersję trzeba nakładać patchem przy każdym buildzie)
+try {
+  const av = JSON.parse(await fs.readFile(path.join(HERE, '..', 'shared', 'app-version.json'), 'utf8'));
+  const ver = String(av.version || '0.1.0');
+  const m = ver.split('.').map(n => parseInt(n, 10) || 0);
+  const code = (m[0] || 0) * 10000 + (m[1] || 0) * 100 + (m[2] || 0); // 0.1.1 -> 101
+  let gv = await fs.readFile(GRADLE, 'utf8');
+  const gv2 = gv
+    .replace(/versionCode\s+\d+/, 'versionCode ' + code)
+    .replace(/versionName\s+"[^"]*"/, 'versionName "' + ver + '"');
+  if (gv2 !== gv) { await fs.writeFile(GRADLE, gv2); console.log('patch-android: wersja -> ' + ver + ' (code ' + code + ')'); }
+} catch (e) { console.warn('patch-android: nie udało się ustawić wersji:', e.message); }
+
 // local.properties
 const lp = path.join(ANDROID, 'local.properties');
 const sdk = process.env.ANDROID_HOME || process.env.ANDROID_SDK_ROOT;
