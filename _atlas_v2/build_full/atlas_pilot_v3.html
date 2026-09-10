@@ -510,6 +510,11 @@
         <button data-view="bottom">Dół</button>
         <button data-view="reset">⟲ Reset widoku</button>
       </div>
+      <div class="grp" style="margin-top:18px">
+        <h4>Rozłóż warstwy</h4>
+        <label class="row"><input type="range" id="explode-slider" min="0" max="100" value="0"><span id="explode-val">0%</span></label>
+        <div style="font-size:12px;color:var(--text-faint);margin-top:2px">Odsuwa mięśnie, naczynia, nerwy i narządy od szkieletu.</div>
+      </div>
     </section>
 
     <section data-panel="tools" class="hidden">
@@ -1469,6 +1474,7 @@ async function openBone(boneId) {
         if (statusEl) statusEl.textContent = "";
     }
     isolatedBoneId = boneId;
+    try { _explode.reapply(); } catch (e) {}  // guard w apply() wymusi 0 przy izolacji
 
     for (const [id, obj] of boneObjById) obj.visible = (id === boneId);
     for (const sphere of landmarkMeshes) sphere.visible = (sphere.userData.landmark.boneId === boneId);
@@ -1556,6 +1562,7 @@ function closeBone() {
         obj.visible = !!layerChecked[b.kind];
     }
     for (const sphere of landmarkMeshes) sphere.visible = landmarksMasterOn() && !!layerChecked[boneIdToKind.get(sphere.userData.landmark.boneId)];
+    try { _explode.reapply(); } catch (e) {}
     resetSelection();
     document.getElementById("sidebar").style.display = "none";
     camera.position.copy(fullViewCamera.position);
@@ -2838,6 +2845,56 @@ document.querySelectorAll("#kolokwium-buttons button").forEach(btn => {
             document.body.style.cursor = "";
         }
     });
+})();
+
+
+// ===== "Rozłóż warstwy" — odsuwa każdą warstwę tkanki od szkieletu wzdłuż
+// własnego kierunku wachlarza (oś Z = pionowa oś ciała). Idea z
+// ashemag/human-atlas (faza "systems fan" suwaka Explode). Kość zostaje w osi.
+const _explode = (() => {
+    const slider = document.getElementById("explode-slider");
+    const valEl = document.getElementById("explode-val");
+    const ORDER = ["muscle", "fascia", "vessel", "nerve", "lymph", "organ", "brain", "connective", "tooth"];
+    const DIRS = new Map();
+    ORDER.forEach((k, i) => {
+        const a = (i / ORDER.length) * Math.PI * 2;
+        DIRS.set(k, new THREE.Vector3(Math.cos(a), Math.sin(a), (i % 2 ? 0.12 : -0.12)).normalize());
+    });
+    const ZERO = new THREE.Vector3(0, 0, 0);
+    DIRS.set("bone", ZERO);
+    let spread = 0, cur = 0;
+    const kindOf = new Map();
+    function dirFor(id) {
+        let k = kindOf.get(id);
+        if (k === undefined) { const b = bones.find(x => x.id === id); k = b ? b.kind : "bone"; kindOf.set(id, k); }
+        return DIRS.get(k) || ZERO;
+    }
+    function apply(amount) {
+        cur = amount;
+        if (typeof isolatedBoneId !== "undefined" && isolatedBoneId !== null) amount = 0;
+        if (!spread) {
+            const s = new THREE.Box3().setFromObject(group).getSize(new THREE.Vector3());
+            spread = (Math.max(s.x, s.y, s.z) || 1000) * 0.55;
+        }
+        for (const [id, obj] of boneObjById) {
+            if (!obj.userData._homePos) obj.userData._homePos = obj.position.clone();
+            obj.position.copy(obj.userData._homePos).addScaledVector(dirFor(id), amount * spread);
+        }
+        for (const m of landmarkMeshes) {
+            if (!m.userData._homePos) m.userData._homePos = m.position.clone();
+            const bid = m.userData.landmark && m.userData.landmark.boneId;
+            m.position.copy(m.userData._homePos).addScaledVector(bid ? dirFor(bid) : ZERO, amount * spread);
+        }
+    }
+    slider.addEventListener("input", () => {
+        valEl.textContent = slider.value + "%";
+        apply(Number(slider.value) / 100);
+    });
+    return {
+        reapply: () => apply(cur),
+        reset: () => { slider.value = 0; valEl.textContent = "0%"; apply(0); },
+        get value() { return cur; },
+    };
 })();
 
 
