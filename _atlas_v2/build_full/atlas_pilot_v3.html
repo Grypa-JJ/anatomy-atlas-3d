@@ -2245,7 +2245,35 @@ function undimAll() {
     dimmedMeshes = [];
 }
 
+// ===== Odróżnienie "stuknięcia" od obrotu / pinch / pan / przeciągnięcia.
+// Wzorzec z ashemag/human-atlas (pointer-tap.ts). Bez tego "click" po
+// przeciągnięciu palcem/myszą wybierał przypadkową strukturę.
+const _tap = (() => {
+    const active = new Map();
+    let blocked = false;
+    const el = renderer.domElement;
+    const thr = (type) => (type === "touch" ? 12 : 5);
+    el.addEventListener("pointerdown", (e) => {
+        if (active.size === 0) blocked = false;
+        active.set(e.pointerId, { x: e.clientX, y: e.clientY, t: thr(e.pointerType) });
+        if (active.size > 1) blocked = true;
+    }, { passive: true });
+    el.addEventListener("pointermove", (e) => {
+        const s = active.get(e.pointerId);
+        if (s && Math.hypot(e.clientX - s.x, e.clientY - s.y) > s.t) blocked = true;
+    }, { passive: true });
+    const end = (e) => {
+        const s = active.get(e.pointerId);
+        if (s && Math.hypot(e.clientX - s.x, e.clientY - s.y) > s.t) blocked = true;
+        active.delete(e.pointerId);
+    };
+    el.addEventListener("pointerup", end, { passive: true });
+    el.addEventListener("pointercancel", (e) => { active.delete(e.pointerId); blocked = true; }, { passive: true });
+    return { get valid() { return !blocked; } };
+})();
+
 renderer.domElement.addEventListener("click", (event) => {
+    if (!_tap.valid) return;
     let activeCamera = camera;
     let px = event.clientX, halfW = window.innerWidth;
     if (splitMode) {
