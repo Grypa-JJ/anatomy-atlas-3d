@@ -142,6 +142,10 @@
   }
   .fab:active { transform: scale(.94); }
   #home-fab { top: calc(14px + var(--sat)); right: calc(14px + var(--sar)); left: auto; }
+  #lang-toggle {
+    top: calc(14px + var(--sat)); right: calc(62px + var(--sar)); left: auto;
+    font-size: 12px; font-weight: 700; letter-spacing: .02em;
+  }
 
   /* ---------- wyszukiwarka ---------- */
   #search {
@@ -589,6 +593,7 @@
     html:not(.touch-layout) #search { left: auto; right: calc(84px + var(--sar)); width: 340px; max-width: 340px; top: calc(16px + var(--sat)); transition: opacity .2s, transform .2s; }
     html:not(.touch-layout).sheet-open #search { opacity: 0; pointer-events: none; transform: translateX(20px); }
     html:not(.touch-layout) #home-fab { right: calc(16px + var(--sar)); }
+    html:not(.touch-layout) #lang-toggle { right: calc(64px + var(--sar)); }
 
     html:not(.touch-layout) #hero {
       left: 0; right: 0; bottom: 26px; height: auto;
@@ -651,6 +656,7 @@
 </div>
 
 <a id="home-fab" class="fab" href="../../atlas.html" title="Wróć do wyboru trybu" aria-label="Wróć do wyboru trybu">⌂</a>
+<button id="lang-toggle" class="fab" title="Change language / Zmień język" aria-label="Change language / Zmień język">PL</button>
 
 <div id="search">
   <input id="search-input" type="text" placeholder="Szukaj struktury (PL / EN)…" autocomplete="off">
@@ -882,6 +888,206 @@ const DRACO_DECODER_PATH = "./vendor/addons/libs/draco/gltf/";
 // kilku miejscach, zeby np. nie pokazywac naraz label-box i sidebar (na desktopie
 // sa w przeciwnych rogach, na mobile obie leca na dol i nachodzilyby).
 const IS_TOUCH_LAYOUT = (window.__detectTouchLayout && window.__detectTouchLayout()) || document.documentElement.classList.contains("touch-layout");
+
+// ===== Język interfejsu (PL/EN) — wszystkie ~2800 struktur + 1385 punktów mają
+// już nazwę angielską (dane źródłowe Z-Anatomy), więc EN działa bez generowania
+// nowych danych. Treść programowa (kolokwia, notatki wykładowe) zostaje po
+// polsku - to opis polskiego programu studiów, nie da się tego sensownie
+// przetłumaczyć bez zmiany znaczenia. Łacina: NIE dodana - w danych źródłowych
+// nie ma mianownictwa łacińskiego, a zgadywanie ~2000 terminów byłoby ryzykiem
+// błędu wobec studentów - to osobne zadanie wymagające realnego źródła
+// (Terminologia Anatomica), nie tego przebiegu.
+let LANG = (function () {
+    try { const v = localStorage.getItem("atlas_lang"); if (v === "en" || v === "pl") return v; } catch (e) {}
+    return "pl";
+})();
+function primaryName(x) { return (LANG === "en" ? x.en : x.pl) || x.pl || x.en || ""; }
+function secondaryName(x) { return (LANG === "en" ? x.pl : x.en) || ""; }
+const KIND_LABEL_EN = { bone: "bone", muscle: "muscle", fascia: "fascia", vessel: "vessel", organ: "organ", tooth: "tooth", connective: "connective tissue", brain: "brain", nerve: "nerve", lymph: "lymphatic" };
+const KIND_NAME_PL = { bone: "Kość", muscle: "Mięsień", fascia: "Powięź", vessel: "Naczynie", organ: "Narząd", tooth: "Ząb", connective: "Tkanka łączna", brain: "Mózgowie", nerve: "Nerw", lymph: "Naczynie chłonne" };
+const KIND_NAME_EN = { bone: "Bone", muscle: "Muscle", fascia: "Fascia", vessel: "Vessel", organ: "Organ", tooth: "Tooth", connective: "Connective tissue", brain: "Brain", nerve: "Nerve", lymph: "Lymphatic vessel" };
+function kindShortLabel(kind) { return (LANG === "en" ? KIND_LABEL_EN[kind] : KIND_LABEL_PL[kind]) || (LANG === "en" ? "structure" : "struktura"); }
+function kindName(kind) { return (LANG === "en" ? KIND_NAME_EN[kind] : KIND_NAME_PL[kind]) || (LANG === "en" ? "Structure" : "Struktura"); }
+
+const STRINGS = {
+    pl: {
+        brandEyebrow: "Atlas anatomiczny", brandTitle: "Całe ciało · 3D",
+        searchPlaceholder: "Szukaj struktury (PL / EN)…",
+        homeFabTitle: "Wróć do wyboru trybu",
+        dockLayers: "Warstwy", dockView: "Widok", dockTools: "Narzędzia", dockKolokwia: "Kolokwia", dockMore: "Więcej",
+        sheetTitle: { layers: "Warstwy", view: "Widok kamery", tools: "Narzędzia", kolokwia: "Kolokwia", more: "Więcej" },
+        layerBones: "Kości", layerMuscles: "Mięśnie", layerFascia: "Powięzi",
+        layerFasciaTitle: "Powięzi, troczki, rozcięgna, kaletki, pochewki ścięgien, przegrody międzymięśniowe.",
+        layerVessels: "Naczynia", layerOrgans: "Narządy", layerTeeth: "Zęby", layerConnective: "Tkanka łączna",
+        layerBrain: "Mózg", layerNerves: "Nerwy", layerLymph: "Układ chłonny",
+        layerLandmarks: "Punkty orientacyjne (widok ogólny)",
+        boneTransparency: "Przezroczystość kości", idOnScene: "ID na scenie",
+        heroExplode: "Rozłóż warstwy", heroCollapsed: "Złożone", heroExpanded: "Rozsunięte", heroResetTitle: "Złóż z powrotem",
+        heroHint: "Odsuwa mięśnie, naczynia, nerwy i narządy od szkieletu.",
+        viewFront: "Przód", viewBack: "Tył", viewLeft: "Lewo", viewRight: "Prawo", viewTop: "Góra", viewBottom: "Dół", viewReset: "⟲ Reset widoku",
+        sectionToggle: "Przekrój", axisX: "oś X", axisY: "oś Y", axisZ: "oś Z",
+        measureToggle: "📏 Pomiar odległości",
+        scalpelToggle: "🔪 Skalpel", scalpelToggleTitle: "Włącz i klikaj struktury, żeby je chować z widoku",
+        scalpelUndo: "↩ Cofnij", scalpelRestoreAll: "♻ Przywróć wszystko", scalpelCut: (n) => "wycięto: " + n,
+        splitToggle: "🔲 Porównaj (podziel ekran)",
+        kolokwium1: "I — kończyny / tułów", kolokwium2: "II — trzewia", kolokwium3: "III — głowa / szyja", kolokwium4: "IV — mózg", kolokwiumOff: "✕ Wyłącz tryb kolokwium",
+        kolokwiumNote: "Kolokwia i notatki wykładowe opisują program polskich studiów medycznych i zostają po polsku.",
+        kolokwiumSub: (linked, total) => linked + "/" + total + " struktur dostępnych w atlasie — kliknij, żeby przejść do struktury",
+        kolokwiumTodoBadge: "(jeszcze nie w atlasie)", kolokwiumNoteBtn: "📝 Notatka",
+        bookmarksHeading: "Zakładki", bookmarkPlaceholder: "nazwa widoku…",
+        studyHeading: "Nauka", quizToggle: "🎯 Tryb quizu", quizNext: "Następne pytanie →",
+        quizAsk: (name) => "Kliknij: " + name, quizCorrect: "✓ Dobrze!", quizWrong: (name) => "✗ To było: " + name, quizScore: (c, t) => `Wynik: ${c}/${t}`,
+        exportHeading: "Eksport", screenshotBtn: "📷 Zrzut ekranu (bez UI)", ankiExportBtn: "🗂️ Eksport punktów do Anki (CSV)",
+        closeAria: "Zamknij", speakTitle: "Odsłuchaj nazwę",
+        structureEyebrowDefault: "Struktura", landmarkEyebrow: "Punkt orientacyjny",
+        openBoneBtn: "Otwórz tę strukturę →", notesLink: "📝 Notatka teoretyczna",
+        labelHint: "kliknij inną kość, żeby zmienić / przeciągnij, żeby obrócić",
+        closeBoneBtn: "← Wróć do całego układu", notesModalClose: "Zamknij",
+        creditToggleTitle: "Źródła i licencje",
+        creditBody: 'Geometria: <b>BodyParts3D</b> © The Database Center for Life Science, CC BY-SA 2.1 JP · <b>Z-Anatomy</b>, CC BY-SA.<br>Nazewnictwo PL: Słownik mian anatomicznych, UMed Łódź.<br><span style="opacity:.7">Atlas 3D · wersja 0.1.1</span>',
+        sceneCaptionDefault: "Dorosły człowiek", sceneCaptionIsolate: "Izolacja", sceneCaptionExplode: "Rozsunięte warstwy",
+        loading: (n) => `Ładowanie kości (${n} struktury)…`,
+        loadingLayer: "ładowanie warstwy…", loadingLayers: "Ładowanie warstw…",
+        approxLandmark: " ⚠ przybliżone położenie", approxLandmarkTitle: "Punkt przybliżony",
+        landmarkKindPoint: "punkt", structureKindFallback: "struktura",
+    },
+    en: {
+        brandEyebrow: "Anatomy atlas", brandTitle: "Whole body · 3D",
+        searchPlaceholder: "Search structure (EN / PL)…",
+        homeFabTitle: "Back to mode selection",
+        dockLayers: "Layers", dockView: "View", dockTools: "Tools", dockKolokwia: "Exams", dockMore: "More",
+        sheetTitle: { layers: "Layers", view: "Camera view", tools: "Tools", kolokwia: "Practical exams", more: "More" },
+        layerBones: "Bones", layerMuscles: "Muscles", layerFascia: "Fascia",
+        layerFasciaTitle: "Fascia, retinacula, aponeuroses, bursae, tendon sheaths, intermuscular septa.",
+        layerVessels: "Vessels", layerOrgans: "Organs", layerTeeth: "Teeth", layerConnective: "Connective tissue",
+        layerBrain: "Brain", layerNerves: "Nerves", layerLymph: "Lymphatic system",
+        layerLandmarks: "Landmarks (whole-body view)",
+        boneTransparency: "Bone transparency", idOnScene: "Show ID in scene",
+        heroExplode: "Explode layers", heroCollapsed: "Assembled", heroExpanded: "Separated", heroResetTitle: "Reassemble",
+        heroHint: "Fans muscles, vessels, nerves and organs away from the skeleton.",
+        viewFront: "Front", viewBack: "Back", viewLeft: "Left", viewRight: "Right", viewTop: "Top", viewBottom: "Bottom", viewReset: "⟲ Reset view",
+        sectionToggle: "Cross-section", axisX: "X axis", axisY: "Y axis", axisZ: "Z axis",
+        measureToggle: "📏 Measure distance",
+        scalpelToggle: "🔪 Scalpel", scalpelToggleTitle: "Turn on, then click structures to hide them",
+        scalpelUndo: "↩ Undo", scalpelRestoreAll: "♻ Restore all", scalpelCut: (n) => "hidden: " + n,
+        splitToggle: "🔲 Compare (split screen)",
+        kolokwium1: "I — limbs / trunk", kolokwium2: "II — viscera", kolokwium3: "III — head / neck", kolokwium4: "IV — brain", kolokwiumOff: "✕ Turn off exam mode",
+        kolokwiumNote: "The practical-exam sets and lecture notes describe a Polish medical curriculum and stay in Polish.",
+        kolokwiumSub: (linked, total) => linked + "/" + total + " structures available in the atlas — click to jump to a structure",
+        kolokwiumTodoBadge: "(not in the atlas yet)", kolokwiumNoteBtn: "📝 Notes",
+        bookmarksHeading: "Bookmarks", bookmarkPlaceholder: "view name…",
+        studyHeading: "Study", quizToggle: "🎯 Quiz mode", quizNext: "Next question →",
+        quizAsk: (name) => "Click: " + name, quizCorrect: "✓ Correct!", quizWrong: (name) => "✗ That was: " + name, quizScore: (c, t) => `Score: ${c}/${t}`,
+        exportHeading: "Export", screenshotBtn: "📷 Screenshot (no UI)", ankiExportBtn: "🗂️ Export landmarks to Anki (CSV)",
+        closeAria: "Close", speakTitle: "Read name aloud",
+        structureEyebrowDefault: "Structure", landmarkEyebrow: "Landmark",
+        openBoneBtn: "Open this structure →", notesLink: "📝 Study notes",
+        labelHint: "click another bone to change / drag to rotate",
+        closeBoneBtn: "← Back to whole system", notesModalClose: "Close",
+        creditToggleTitle: "Sources & licenses",
+        creditBody: 'Geometry: <b>BodyParts3D</b> © The Database Center for Life Science, CC BY-SA 2.1 JP · <b>Z-Anatomy</b>, CC BY-SA.<br>English names: source dataset (Z-Anatomy). Polish names: Słownik mian anatomicznych, Medical University of Łódź.<br><span style="opacity:.7">Atlas 3D · v0.1.1</span>',
+        sceneCaptionDefault: "Adult human", sceneCaptionIsolate: "Isolated", sceneCaptionExplode: "Layers separated",
+        loading: (n) => `Loading bones (${n} structures)…`,
+        loadingLayer: "loading layer…", loadingLayers: "Loading layers…",
+        approxLandmark: " ⚠ approximate position", approxLandmarkTitle: "Approximate point",
+        landmarkKindPoint: "landmark", structureKindFallback: "structure",
+    },
+};
+function t(key) { return STRINGS[LANG][key]; }
+
+function applyLangUI() {
+    document.documentElement.lang = LANG;
+    const set = (id, prop, val) => { const el = document.getElementById(id); if (el) el[prop] = val; };
+    const setAttr = (id, attr, val) => { const el = document.getElementById(id); if (el) el.setAttribute(attr, val); };
+    const langBtn = document.getElementById("lang-toggle"); if (langBtn) langBtn.textContent = LANG.toUpperCase();
+    set("loading", "textContent", t("loading")(203));
+    const openPanel = document.querySelector('#sheet-body section[data-panel]:not(.hidden)');
+    if (openPanel) set("sheet-title", "textContent", (STRINGS[LANG].sheetTitle || {})[openPanel.dataset.panel] || "");
+    document.getElementById("brand").querySelector(".eyebrow").textContent = t("brandEyebrow");
+    document.getElementById("brand-ver").previousSibling.textContent = t("brandTitle") + " ";
+    setAttr("home-fab", "title", t("homeFabTitle")); setAttr("home-fab", "aria-label", t("homeFabTitle"));
+    set("search-input", "placeholder", t("searchPlaceholder"));
+    document.querySelector('#dock button[data-sheet="layers"]').lastChild.textContent = t("dockLayers");
+    document.querySelector('#dock button[data-sheet="view"]').lastChild.textContent = t("dockView");
+    document.querySelector('#dock button[data-sheet="tools"]').lastChild.textContent = t("dockTools");
+    document.querySelector('#dock button[data-sheet="kolokwia"]').lastChild.textContent = t("dockKolokwia");
+    document.querySelector('#dock button[data-sheet="more"]').lastChild.textContent = t("dockMore");
+    document.querySelectorAll(".sheet__x, .struct-x, #notes-modal-x").forEach(b => b.setAttribute("aria-label", t("closeAria")));
+    const layerLabel = (id, text) => { const cb = document.getElementById(id); if (cb) cb.parentElement.lastChild.textContent = " " + text; };
+    layerLabel("layer-bones", t("layerBones")); layerLabel("layer-muscles", t("layerMuscles"));
+    layerLabel("layer-vessels", t("layerVessels")); layerLabel("layer-organs", t("layerOrgans"));
+    layerLabel("layer-teeth", t("layerTeeth")); layerLabel("layer-connective", t("layerConnective"));
+    layerLabel("layer-brain", t("layerBrain")); layerLabel("layer-nerves", t("layerNerves"));
+    layerLabel("layer-lymph", t("layerLymph")); layerLabel("layer-landmarks", t("layerLandmarks"));
+    const fasciaCb = document.getElementById("layer-fascia");
+    if (fasciaCb) { fasciaCb.parentElement.lastChild.textContent = " " + t("layerFascia"); fasciaCb.parentElement.title = t("layerFasciaTitle"); }
+    const grpH4 = document.querySelectorAll('section[data-panel="layers"] .grp h4'); if (grpH4[0]) grpH4[0].textContent = t("boneTransparency");
+    layerLabel("show-id-labels", t("idOnScene"));
+    document.querySelector('label[for="explode-slider"]').textContent = t("heroExplode");
+    document.getElementById("explode-slider").setAttribute("aria-label", t("heroExplode"));
+    const heroEnds = document.querySelectorAll("#hero .hero-ends span"); if (heroEnds[0]) heroEnds[0].textContent = t("heroCollapsed"); if (heroEnds[1]) heroEnds[1].textContent = t("heroExpanded");
+    setAttr("hero-reset", "title", t("heroResetTitle")); setAttr("hero-reset", "aria-label", t("heroResetTitle"));
+    const vp = document.getElementById("view-presets");
+    if (vp) {
+        const btns = vp.querySelectorAll("button");
+        const map = { front: "viewFront", back: "viewBack", left: "viewLeft", right: "viewRight", top: "viewTop", bottom: "viewBottom", reset: "viewReset" };
+        btns.forEach(b => { const k = map[b.dataset.view]; if (k) b.textContent = t(k); });
+    }
+    const sectionLabel = document.querySelector('label:has(#section-toggle)'); if (sectionLabel) sectionLabel.lastChild.textContent = " " + t("sectionToggle");
+    const axisSel = document.getElementById("section-axis");
+    if (axisSel) { axisSel.options[0].textContent = t("axisX"); axisSel.options[1].textContent = t("axisY"); axisSel.options[2].textContent = t("axisZ"); }
+    set("measure-toggle", "textContent", t("measureToggle"));
+    set("scalpel-toggle", "textContent", t("scalpelToggle")); setAttr("scalpel-toggle", "title", t("scalpelToggleTitle"));
+    set("scalpel-undo", "textContent", t("scalpelUndo")); set("scalpel-restore-all", "textContent", t("scalpelRestoreAll"));
+    set("split-toggle", "textContent", t("splitToggle"));
+    const kb = document.getElementById("kolokwium-buttons");
+    if (kb) {
+        kb.querySelector('[data-kolokwium="I"]').textContent = t("kolokwium1");
+        kb.querySelector('[data-kolokwium="II"]').textContent = t("kolokwium2");
+        kb.querySelector('[data-kolokwium="III"]').textContent = t("kolokwium3");
+        kb.querySelector('[data-kolokwium="IV"]').textContent = t("kolokwium4");
+        kb.querySelector('[data-kolokwium="off"]').textContent = t("kolokwiumOff");
+    }
+    let kNote = document.getElementById("kolokwia-i18n-note");
+    const kSection = document.querySelector('section[data-panel="kolokwia"]');
+    if (kSection && !kNote && LANG === "en") {
+        kNote = document.createElement("div"); kNote.id = "kolokwia-i18n-note";
+        kNote.style.cssText = "font-size:12px;color:var(--text-faint);margin-top:14px;line-height:1.5";
+        kSection.appendChild(kNote);
+    }
+    if (kNote) { if (LANG === "en") kNote.textContent = t("kolokwiumNote"); else kNote.remove(); }
+    const grpH4s = document.querySelectorAll('section[data-panel="more"] .grp h4');
+    if (grpH4s[0]) grpH4s[0].textContent = t("bookmarksHeading");
+    if (grpH4s[1]) grpH4s[1].textContent = t("studyHeading");
+    if (grpH4s[2]) grpH4s[2].textContent = t("exportHeading");
+    set("bookmark-name", "placeholder", t("bookmarkPlaceholder"));
+    set("quiz-toggle", "textContent", t("quizToggle")); set("quiz-next", "textContent", t("quizNext"));
+    set("screenshot-btn", "textContent", t("screenshotBtn")); set("anki-export-btn", "textContent", t("ankiExportBtn"));
+    setAttr("lbl-speak", "title", t("speakTitle"));
+    const openBtn = document.getElementById("open-bone-btn"); if (openBtn) openBtn.textContent = t("openBoneBtn");
+    set("lbl-notes-link", "textContent", t("notesLink")); set("sb-notes-link", "textContent", t("notesLink"));
+    set("lbl-hint", "textContent", t("labelHint"));
+    set("close-bone-btn", "textContent", t("closeBoneBtn"));
+    set("notes-modal-close", "textContent", t("notesModalClose"));
+    setAttr("credit-toggle", "aria-label", t("creditToggleTitle")); setAttr("credit-toggle", "title", t("creditToggleTitle"));
+    set("credit-body", "innerHTML", t("creditBody"));
+    // jeśli jakaś struktura jest aktualnie pokazana/izolowana, przełóż jej nazwę
+    // na nowo wybrany język zamiast czekać na kolejny klik
+    try {
+        if (typeof isolatedBoneId !== "undefined" && isolatedBoneId !== null) {
+            const b = bones.find(x => x.id === isolatedBoneId);
+            if (b) { set("sb-pl", "textContent", primaryName(b)); set("sb-en", "textContent", secondaryName(b)); }
+        }
+    } catch (e) {}
+    try {
+        if (typeof selectedMesh !== "undefined" && selectedMesh && document.getElementById("label-box").style.display !== "none") {
+            const ud = selectedMesh.userData, obj = ud.landmark || ud.bone;
+            if (obj) { set("lbl-pl-text", "textContent", primaryName(obj)); set("lbl-en", "textContent", secondaryName(obj)); currentSpeakName = primaryName(obj); }
+        }
+    } catch (e) {}
+    try { refreshStructEyebrow("label-box", "lbl-eyebrow"); refreshStructEyebrow("sidebar", "sb-eyebrow"); } catch (e) {}
+    try { setSceneCaption(); } catch (e) {}
+}
 
 const scene = new THREE.Scene();
 // "Graphite studio" backdrop — jasny interfejs (wzorzec z ashemag/human-atlas),
@@ -1700,7 +1906,7 @@ async function openBone(boneId) {
     const bone = bones.find(b => b.id === boneId);
     if (bone && !loadedKinds.has(bone.kind)) {
         const statusEl = document.getElementById("layers-status");
-        if (statusEl) statusEl.textContent = "ładowanie warstwy…";
+        if (statusEl) statusEl.textContent = t("loadingLayer");
         await ensureKindLoaded(bone.kind);
         if (statusEl) statusEl.textContent = "";
     }
@@ -1731,9 +1937,9 @@ async function openBone(boneId) {
     document.getElementById("label-box").style.display = "none";
 
     const boneLandmarks = allLandmarks.filter(lm => lm.boneId === boneId);
-    try { setStructMeta("sidebar", "sb-eyebrow", bone.kind, null); } catch (e) {}
-    document.getElementById("sb-pl").textContent = bone.pl;
-    document.getElementById("sb-en").textContent = bone.en;
+    try { setStructMeta("sidebar", "sb-eyebrow", bone.kind, false); } catch (e) {}
+    document.getElementById("sb-pl").textContent = primaryName(bone);
+    document.getElementById("sb-en").textContent = secondaryName(bone);
     document.getElementById("sb-id").textContent = "ID: " + bone.id;
     showNotesButton(document.getElementById("sb-notes-link"), MESH_NOTE_INDEX.get(bone.id), bone);
     const listEl = document.getElementById("sb-landmarks");
@@ -1741,15 +1947,17 @@ async function openBone(boneId) {
     if (boneLandmarks.length === 0) {
         const empty = document.createElement("div");
         empty.className = "lm-empty";
-        empty.textContent = "Brak jeszcze dodanych punktów orientacyjnych dla tej kości.";
+        empty.textContent = LANG === "en" ? "No landmarks added yet for this structure." : "Brak jeszcze dodanych punktów orientacyjnych dla tej kości.";
         listEl.appendChild(empty);
     } else {
         for (const lm of boneLandmarks) {
             const item = document.createElement("div");
             item.className = "lm-item";
             item.dataset.landmarkKey = lm.pl + "|" + lm.boneId;
-            item.textContent = lm.pl + " — " + lm.en + (lm.approx ? " ⚠ przybliżone położenie" : "");
-            if (lm.approx) item.title = "Punkt przybliżony: dołączony do najbliższej znanej struktury na podstawie sąsiedztwa w słowniku, nie zmierzony geometrycznie.";
+            item.textContent = primaryName(lm) + " — " + secondaryName(lm) + (lm.approx ? t("approxLandmark") : "");
+            if (lm.approx) item.title = LANG === "en"
+                ? "Approximate point: attached to the nearest known structure by dictionary proximity, not geometrically measured."
+                : "Punkt przybliżony: dołączony do najbliższej znanej struktury na podstawie sąsiedztwa w słowniku, nie zmierzony geometrycznie.";
             item.onclick = () => {
                 document.querySelectorAll("#sb-landmarks .lm-item").forEach(el => el.classList.remove("active"));
                 item.classList.add("active");
@@ -1758,9 +1966,9 @@ async function openBone(boneId) {
                     resetSelection();
                     selectedMesh = sphere;
                     lmRingSelected(sphere);
-                    document.getElementById("lbl-pl-text").textContent = lm.pl;
-                    document.getElementById("lbl-en").textContent = lm.en;
-                    document.getElementById("lbl-id").textContent = "ID: " + lm.boneId + " (punkt)";
+                    document.getElementById("lbl-pl-text").textContent = primaryName(lm);
+                    document.getElementById("lbl-en").textContent = secondaryName(lm);
+                    document.getElementById("lbl-id").textContent = "ID: " + lm.boneId + (LANG === "en" ? " (landmark)" : " (punkt)");
                     const lb = document.getElementById("label-box"); if (lb) lb.style.display = "block";
                 }
                 showNotesButton(document.getElementById("sb-notes-link"), LANDMARK_NOTE_INDEX.get(lm.boneId + "|" + lm.pl), { kind: "bone", pl: lm.pl, en: lm.en });
@@ -1847,19 +2055,19 @@ function runSearch(query) {
             results.push({ kind: "landmark", isLandmark: true, boneId: lm.boneId, pl: lm.pl, en: lm.en, landmark: lm });
         }
     }
-    results.sort((a, b) => a.pl.length - b.pl.length); // krotsze/celniejsze trafienia pierwsze
+    results.sort((a, b) => primaryName(a).length - primaryName(b).length); // krotsze/celniejsze trafienia pierwsze
     const top = results.slice(0, 25);
 
     searchResultsEl.innerHTML = "";
     if (!top.length) {
-        searchResultsEl.innerHTML = '<div class="res-item" style="color:#888;font-style:italic">Brak wyników</div>';
+        searchResultsEl.innerHTML = `<div class="res-item" style="color:#888;font-style:italic">${LANG === "en" ? "No results" : "Brak wyników"}</div>`;
     } else {
         for (const r of top) {
             const div = document.createElement("div");
             div.className = "res-item";
-            const approxBadge = r.landmark && r.landmark.approx ? ' <span style="color:#e0c040" title="Punkt przybliżony">⚠</span>' : '';
-            const kindLabel = r.isLandmark ? "punkt" : (KIND_LABEL_PL[r.kind] || "struktura");
-            div.innerHTML = `<span class="res-kind">${kindLabel}</span>${r.pl}${approxBadge}<div class="res-en">${r.en}</div>`;
+            const approxBadge = r.landmark && r.landmark.approx ? ` <span style="color:#e0c040" title="${t("approxLandmarkTitle")}">⚠</span>` : '';
+            const kLabel = r.isLandmark ? t("landmarkKindPoint") : kindShortLabel(r.kind);
+            div.innerHTML = `<span class="res-kind">${kLabel}</span>${primaryName(r)}${approxBadge}<div class="res-en">${secondaryName(r)}</div>`;
             div.onclick = () => goToSearchResult(r);
             searchResultsEl.appendChild(div);
         }
@@ -1950,7 +2158,7 @@ async function setLayerVisible(kind, visible, checkboxEl) {
     if (visible && !loadedKinds.has(kind)) {
         if (checkboxEl) checkboxEl.disabled = true;
         const statusEl = document.getElementById("layers-status");
-        if (statusEl) statusEl.textContent = "ładowanie warstwy…";
+        if (statusEl) statusEl.textContent = t("loadingLayer");
         await ensureKindLoaded(kind);
         if (statusEl) statusEl.textContent = "";
         if (checkboxEl) checkboxEl.disabled = false;
@@ -2096,7 +2304,7 @@ const scalpelUndoBtn = document.getElementById("scalpel-undo");
 const scalpelRestoreAllBtn = document.getElementById("scalpel-restore-all");
 
 function updateScalpelUI() {
-    scalpelStatusEl.textContent = cutStack.length > 0 ? `wycięto: ${cutStack.length}` : "";
+    scalpelStatusEl.textContent = cutStack.length > 0 ? t("scalpelCut")(cutStack.length) : "";
     scalpelUndoBtn.style.display = cutStack.length > 0 ? "inline-block" : "none";
     scalpelRestoreAllBtn.style.display = cutStack.length > 0 ? "inline-block" : "none";
 }
@@ -2207,7 +2415,7 @@ document.getElementById("lbl-speak").addEventListener("click", () => {
     if (!currentSpeakName || !window.speechSynthesis) return;
     window.speechSynthesis.cancel(); // przerwij poprzednia wypowiedz jesli trwa
     const utter = new SpeechSynthesisUtterance(currentSpeakName);
-    utter.lang = "pl-PL";
+    utter.lang = LANG === "en" ? "en-US" : "pl-PL";
     window.speechSynthesis.speak(utter);
 });
 
@@ -2244,11 +2452,11 @@ let quizScore = { correct: 0, total: 0 };
 
 function pickQuizQuestion() {
     quizTarget = bones[Math.floor(Math.random() * bones.length)];
-    document.getElementById("quiz-question").textContent = "Kliknij: " + quizTarget.pl;
+    document.getElementById("quiz-question").textContent = t("quizAsk")(primaryName(quizTarget));
     document.getElementById("quiz-feedback").textContent = "";
     document.getElementById("quiz-feedback").className = "";
     document.getElementById("quiz-next").style.display = "none";
-    document.getElementById("quiz-score").textContent = `Wynik: ${quizScore.correct}/${quizScore.total}`;
+    document.getElementById("quiz-score").textContent = t("quizScore")(quizScore.correct, quizScore.total);
 }
 
 document.getElementById("quiz-toggle").addEventListener("click", () => {
@@ -2270,15 +2478,15 @@ function submitQuizAnswer(hitBone) {
     // sie jako poprawna odpowiedz.
     quizScore.total++;
     const feedbackEl = document.getElementById("quiz-feedback");
-    if (hitBone.pl === quizTarget.pl) {
+    if (primaryName(hitBone) === primaryName(quizTarget)) {
         quizScore.correct++;
-        feedbackEl.textContent = "✓ Dobrze!";
+        feedbackEl.textContent = t("quizCorrect");
         feedbackEl.className = "correct";
     } else {
-        feedbackEl.textContent = "✗ To było: " + hitBone.pl;
+        feedbackEl.textContent = t("quizWrong")(primaryName(hitBone));
         feedbackEl.className = "wrong";
     }
-    document.getElementById("quiz-score").textContent = `Wynik: ${quizScore.correct}/${quizScore.total}`;
+    document.getElementById("quiz-score").textContent = t("quizScore")(quizScore.correct, quizScore.total);
     document.getElementById("quiz-next").style.display = "block";
 }
 
@@ -2512,20 +2720,31 @@ const _tap = (() => {
     return { get valid() { return !blocked; } };
 })();
 
-// Nagłówek karty struktury: rodzaj po polsku + pasek akcentu koloru układu
-// (sygnatura designu z ashemag/human-atlas).
-const KIND_PL = { bone: "Kość", muscle: "Mięsień", fascia: "Powięź", vessel: "Naczynie", organ: "Narząd", tooth: "Ząb", connective: "Tkanka łączna", brain: "Mózgowie", nerve: "Nerw", lymph: "Naczynie chłonne" };
-function setStructMeta(boxId, eyebrowId, kind, label) {
+// Nagłówek karty struktury: rodzaj (KIND_NAME_PL/EN, patrz wyżej) + pasek
+// akcentu koloru układu (sygnatura designu z ashemag/human-atlas).
+function setStructMeta(boxId, eyebrowId, kind, isLandmark) {
     const box = document.getElementById(boxId);
     if (box) {
         box.className = box.className.replace(/\bkind-\w+/g, "").trim();
         if (kind) box.classList.add("kind-" + kind);
+        box.dataset.i18nKind = kind || "";
+        box.dataset.i18nLandmark = isLandmark ? "1" : "";
     }
-    const eb = document.getElementById(eyebrowId);
-    if (eb) eb.textContent = label || KIND_PL[kind] || "Struktura";
-    // po tym wywołaniu wołający ustawia .style.display = "block" - podpis sceny
-    // czyta widoczność karty, więc odświeżamy w następnym ticku
-    setTimeout(() => { try { setSceneCaption(); } catch (e) {} }, 0);
+    // po tym wywołaniu wołający ustawia .style.display = "block" - eyebrow
+    // (sprawdza widoczność karty) i podpis sceny czytają ten stan, więc obie
+    // odświeżamy w następnym ticku
+    refreshStructEyebrow(boxId, eyebrowId);
+    setTimeout(() => { refreshStructEyebrow(boxId, eyebrowId); try { setSceneCaption(); } catch (e) {} }, 0);
+}
+// wołane przy wyborze struktury ORAZ przy zmianie języka (żeby "Mięsień" -> "Muscle"
+// przełożyło się na już otwartą kartę, nie tylko na domyślny stan)
+function refreshStructEyebrow(boxId, eyebrowId) {
+    const box = document.getElementById(boxId), eb = document.getElementById(eyebrowId);
+    if (!box || !eb) return;
+    if (box.style.display === "none") { eb.textContent = t("structureEyebrowDefault"); return; }
+    if (box.dataset.i18nLandmark === "1") { eb.textContent = t("landmarkEyebrow"); return; }
+    const k = box.dataset.i18nKind;
+    eb.textContent = k ? kindName(k) : t("structureEyebrowDefault");
 }
 
 renderer.domElement.addEventListener("click", (event) => {
@@ -2591,11 +2810,11 @@ renderer.domElement.addEventListener("click", (event) => {
         selectedMesh = mesh;
         lmRingSelected(mesh);
         const lm = mesh.userData.landmark;
-        document.getElementById("lbl-pl-text").textContent = lm.pl;
-        document.getElementById("lbl-en").textContent = lm.en;
-        document.getElementById("lbl-id").textContent = "ID: " + lm.boneId + " (punkt)";
-        currentSpeakName = lm.pl;
-        setStructMeta("label-box", "lbl-eyebrow", "bone", "Punkt orientacyjny");
+        document.getElementById("lbl-pl-text").textContent = primaryName(lm);
+        document.getElementById("lbl-en").textContent = secondaryName(lm);
+        document.getElementById("lbl-id").textContent = "ID: " + lm.boneId + (LANG === "en" ? " (landmark)" : " (punkt)");
+        currentSpeakName = primaryName(lm);
+        setStructMeta("label-box", "lbl-eyebrow", "bone", true);
         openBtn.style.display = "none";
         document.getElementById("label-box").style.display = "block";
         showNotesButton(document.getElementById("lbl-notes-link"), LANDMARK_NOTE_INDEX.get(lm.boneId + "|" + lm.pl), { kind: "bone", pl: lm.pl, en: lm.en });
@@ -2605,11 +2824,11 @@ renderer.domElement.addEventListener("click", (event) => {
         mesh.material.color.setHex(HIGHLIGHT_COLOR);
         selectedMesh = mesh;
         const bone = mesh.userData.bone;
-        document.getElementById("lbl-pl-text").textContent = bone.pl;
-        document.getElementById("lbl-en").textContent = bone.en;
+        document.getElementById("lbl-pl-text").textContent = primaryName(bone);
+        document.getElementById("lbl-en").textContent = secondaryName(bone);
         document.getElementById("lbl-id").textContent = "ID: " + bone.id;
-        currentSpeakName = bone.pl;
-        setStructMeta("label-box", "lbl-eyebrow", bone.kind, null);
+        currentSpeakName = primaryName(bone);
+        setStructMeta("label-box", "lbl-eyebrow", bone.kind, false);
         showNotesButton(document.getElementById("lbl-notes-link"), MESH_NOTE_INDEX.get(bone.id), bone);
         if (isolatedBoneId === null) dimOthersExcept(bone.id);
         if (isolatedBoneId === null) {
@@ -2987,8 +3206,14 @@ function renderKolokwiumPanel(k) {
     for (const [, g] of groups) { total += g.items.length; linked += g.items.filter(it => it.id || it.boneId).length; }
     const sub = document.createElement("div");
     sub.className = "kw-sub";
-    sub.textContent = linked + "/" + total + " struktur dostępnych w atlasie — kliknij, żeby przejść do struktury";
+    sub.textContent = t("kolokwiumSub")(linked, total);
     panel.appendChild(sub);
+    if (LANG === "en") {
+        const note = document.createElement("div");
+        note.style.cssText = "font-size:11.5px;color:var(--text-faint);margin:-8px 0 14px;line-height:1.5";
+        note.textContent = t("kolokwiumNote");
+        panel.appendChild(note);
+    }
 
     for (const [category, g] of groups) {
         const wrap = document.createElement("div");
@@ -3002,7 +3227,7 @@ function renderKolokwiumPanel(k) {
         if (g.noteCategory && (notatkiWykladowe[k] || {})[g.noteCategory]) {
             const noteBtn = document.createElement("button");
             noteBtn.className = "kw-note-btn";
-            noteBtn.textContent = "📝 Notatka";
+            noteBtn.textContent = t("kolokwiumNoteBtn");
             noteBtn.onclick = () => openNotesModal(k, g.noteCategory);
             header.appendChild(noteBtn);
         }
@@ -3017,7 +3242,7 @@ function renderKolokwiumPanel(k) {
             } else {
                 const badge = document.createElement("span");
                 badge.className = "kw-item-badge";
-                badge.textContent = "(jeszcze nie w atlasie)";
+                badge.textContent = t("kolokwiumTodoBadge");
                 div.appendChild(badge);
             }
             wrap.appendChild(div);
@@ -3050,7 +3275,7 @@ document.querySelectorAll("#kolokwium-buttons button").forEach(btn => {
         }
         activeKolokwium = k;
         document.querySelectorAll("#kolokwium-buttons button").forEach(b => b.classList.toggle("active", b.dataset.kolokwium === k));
-        statusEl.textContent = "Ładowanie warstw…";
+        statusEl.textContent = t("loadingLayers");
         setKolokwiumLayers(k);
         renderKolokwiumPanel(k);
         statusEl.textContent = "";
@@ -3087,7 +3312,7 @@ document.querySelectorAll("#kolokwium-buttons button").forEach(btn => {
         if (hit) {
             if (hit !== selectedMesh) setRing(hit, true);
             const l = hit.userData.landmark;
-            tip.innerHTML = l.pl + (l.en ? '<span class="en">' + l.en + "</span>" : "");
+            tip.innerHTML = primaryName(l) + (secondaryName(l) ? '<span class="en">' + secondaryName(l) + "</span>" : "");
             tip.style.left = e.clientX + "px"; tip.style.top = e.clientY + "px";
             tip.style.display = "block";
             document.body.style.cursor = "pointer";
@@ -3160,10 +3385,10 @@ function setSceneCaption() {
     const sb = document.getElementById("sidebar");
     const lb = document.getElementById("label-box");
     const shown = (n) => n && n.style.display && n.style.display !== "none";
-    let txt = "Dorosły człowiek";
-    if (shown(sb)) txt = "Izolacja · " + (document.getElementById("sb-pl").textContent || "struktura");
+    let txt = t("sceneCaptionDefault");
+    if (shown(sb)) txt = t("sceneCaptionIsolate") + " · " + (document.getElementById("sb-pl").textContent || t("structureEyebrowDefault"));
     else if (shown(lb)) txt = document.getElementById("lbl-pl-text").textContent || txt;
-    else { try { if (_explode && _explode.value > 0.001) txt = "Rozsunięte warstwy"; } catch (e) {} }
+    else { try { if (_explode && _explode.value > 0.001) txt = t("sceneCaptionExplode"); } catch (e) {} }
     el.textContent = txt;
 }
 
@@ -3236,7 +3461,6 @@ window.__dbgRender = {
   const sbar  = document.getElementById("sidebar");
   const kpan  = document.getElementById("kolokwium-panel");
   const sections = [...body.querySelectorAll("section[data-panel]")];
-  const TITLES = { layers: "Warstwy", view: "Widok kamery", tools: "Narzędzia", kolokwia: "Kolokwia", more: "Więcej" };
   let openName = null;
 
   function hideLabel() {
@@ -3255,7 +3479,7 @@ window.__dbgRender = {
     if (openName === name) { closeSheet(); return; }
     openName = name;
     sections.forEach(s => s.classList.toggle("hidden", s.dataset.panel !== name));
-    title.textContent = TITLES[name] || "";
+    title.textContent = (STRINGS[LANG].sheetTitle || {})[name] || "";
     sheet.classList.add("open"); sheet.setAttribute("aria-hidden", "false");
     document.documentElement.classList.add("sheet-open");
     scrim.classList.add("show");
@@ -3373,6 +3597,21 @@ window.__dbgRender = {
     if (!e.target.closest("#search")) sr.style.display = "none";
   });
 })();
+
+// ===== Przełącznik języka (PL/EN) — patrz blok STRINGS/applyLangUI na górze
+// pliku. Dane anatomiczne mają EN dla 100% struktur i punktów (źródło
+// Z-Anatomy), więc przełącznik działa od razu, bez generowania nowych danych.
+(function initLangToggle() {
+    const btn = document.getElementById("lang-toggle");
+    if (!btn) return;
+    btn.addEventListener("click", () => {
+        LANG = LANG === "pl" ? "en" : "pl";
+        try { localStorage.setItem("atlas_lang", LANG); } catch (e) {}
+        applyLangUI();
+    });
+    applyLangUI();
+})();
+
 animate();
 </script>
 </body>
