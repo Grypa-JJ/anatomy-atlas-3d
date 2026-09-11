@@ -1,5 +1,5 @@
 {
-  "version": "0.1.1",
+  "version": "0.1.2",
   "channel": "beta",
   "update_manifest_url": "https://REPLACE-ME.r2.dev/atlas/updates/latest.json",
   "built_at": null

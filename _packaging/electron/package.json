@@ -1,7 +1,7 @@
 {
   "name": "atlas3d-electron",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Powloka Windows (Electron) dla atlasu anatomicznego 3D — silnik Chromium, renderuje jak przegladarka.",
   "main": "main.js",
   "scripts": {

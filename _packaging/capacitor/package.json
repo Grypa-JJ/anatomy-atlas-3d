@@ -1,7 +1,7 @@
 {
   "name": "atlas3d-capacitor",
   "private": true,
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "Powloka Android (Capacitor) dla atlasu anatomicznego 3D.",
   "scripts": {
     "assemble": "node ../fetch-assets.mjs && node ../assemble.mjs",
