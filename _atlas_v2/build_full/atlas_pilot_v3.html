@@ -888,6 +888,11 @@ const DRACO_DECODER_PATH = "./vendor/addons/libs/draco/gltf/";
 // kilku miejscach, zeby np. nie pokazywac naraz label-box i sidebar (na desktopie
 // sa w przeciwnych rogach, na mobile obie leca na dol i nachodzilyby).
 const IS_TOUCH_LAYOUT = (window.__detectTouchLayout && window.__detectTouchLayout()) || document.documentElement.classList.contains("touch-layout");
+// Tryb "kolokwium" (I-IV) nawiguje po strukturze polskiego egzaminu praktycznego
+// - ma sens tylko na wewnętrznej kopii dla naszego roku, nie w wersji publicznej
+// (anatomy-atlas-3d.netlify.app), gdzie widz nie zna tego podziału. Notatki
+// teoretyczne (ta sama baza co kolokwium) zostają - to osobna, wartościowa treść.
+const IS_PUBLIC_BUILD = /(^|\.)anatomy-atlas-3d\.netlify\.app$/.test(location.hostname);
 
 // ===== Język interfejsu (PL/EN) — wszystkie ~2800 struktur + 1385 punktów mają
 // już nazwę angielską (dane źródłowe Z-Anatomy), więc EN działa bez generowania
@@ -1010,7 +1015,7 @@ function applyLangUI() {
     document.querySelector('#dock button[data-sheet="layers"]').lastChild.textContent = t("dockLayers");
     document.querySelector('#dock button[data-sheet="view"]').lastChild.textContent = t("dockView");
     document.querySelector('#dock button[data-sheet="tools"]').lastChild.textContent = t("dockTools");
-    document.querySelector('#dock button[data-sheet="kolokwia"]').lastChild.textContent = t("dockKolokwia");
+    const kolokwiaBtn = document.querySelector('#dock button[data-sheet="kolokwia"]'); if (kolokwiaBtn) kolokwiaBtn.lastChild.textContent = t("dockKolokwia");
     document.querySelector('#dock button[data-sheet="more"]').lastChild.textContent = t("dockMore");
     document.querySelectorAll(".sheet__x, .struct-x, #notes-modal-x").forEach(b => b.setAttribute("aria-label", t("closeAria")));
     const layerLabel = (id, text) => { const cb = document.getElementById(id); if (cb) cb.parentElement.lastChild.textContent = " " + text; };
@@ -3460,6 +3465,10 @@ window.__dbgRender = {
   const lbox  = document.getElementById("label-box");
   const sbar  = document.getElementById("sidebar");
   const kpan  = document.getElementById("kolokwium-panel");
+  if (IS_PUBLIC_BUILD) {
+    document.querySelector('#dock button[data-sheet="kolokwia"]')?.remove();
+    document.querySelector('section[data-panel="kolokwia"]')?.remove();
+  }
   const sections = [...body.querySelectorAll("section[data-panel]")];
   let openName = null;
 
@@ -3540,7 +3549,8 @@ window.__dbgRender = {
   }).observe(kpan, { attributes: true, attributeFilter: ["style"], childList: true });
 
   // wybór kolokwium z arkusza -> zwiń arkusz (panel kolokwium pokaże się sam)
-  document.getElementById("kolokwium-buttons").addEventListener("click", e => {
+  // (element usunięty w IS_PUBLIC_BUILD - patrz start initShell)
+  document.getElementById("kolokwium-buttons")?.addEventListener("click", e => {
     if (e.target.closest("button")) setTimeout(closeSheet, 50);
   });
 
