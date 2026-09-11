@@ -1,5 +1,5 @@
 <!-- SEO / discoverability: interactive 3D human anatomy atlas, web-based, Three.js / WebGL,
-     full body, ~2500 structures, Polish + Latin anatomical nomenclature, exam preparation,
+     full body, ~2500 structures, English + Polish anatomical nomenclature, exam preparation,
      offline desktop (Windows) and Android app. -->
 
 # Anatomy Atlas 3D
@@ -7,9 +7,10 @@
 **An interactive, web-based 3D atlas of human anatomy.** Rotate a full-body model of
 ~2,500 individually selectable structures across ten anatomical layers (bones, muscles,
 fascia, vessels, organs, teeth, connective tissue, brain, nerves, lymphatics), read every
-name in **Polish and Latin/English**, explode the layers apart, take a cross-section,
-isolate a single structure with all of its named landmarks, and study for anatomy
-practicals ("kolokwia") with the built-in pin-point ("szpilki") sets.
+name and the whole interface in **English or Polish** (one tap to switch), explode the
+layers apart, take a cross-section, isolate a single structure with all of its named
+landmarks, and study for anatomy practicals ("kolokwia") with the built-in pin-point
+("szpilki") sets.
 
 Runs in any modern browser (Three.js / WebGL2, Draco-compressed geometry). Also ships as
 an **offline desktop app for Windows** (Electron) and an **Android APK** (Capacitor) that
@@ -24,7 +25,7 @@ carry the whole model inside — no download, no account, works on a plane.
 | | |
 |---|---|
 | **Full-body model** | ~2,500 structures, 10 toggleable layers, Draco-GLB (~29 MB total) |
-| **Polish + Latin nomenclature** | every structure named per *Terminologia Anatomica* and the UMed Łódź Polish dictionary |
+| **English / Polish** | one-tap language switch — every structure name and the whole UI change together |
 | **Explode view** | one slider fans every tissue layer away from the skeleton |
 | **Isolate structure** | open a single bone/muscle full-screen with all of its named landmarks listed |
 | **Cross-section** | clipping plane on any axis |
